@@ -302,7 +302,7 @@ All four sections are now reachable from the shared top navigation on every root
 | F2 | Site polish — clean, user-friendly dashboard (simple tables, category organization, filters, mobile) | done | arena/5bf2fb99 | index.html, flagged.html, site/assets/style.css, site/assets/site.js | Filters added to 3 dashboard tables (progressive enhancement); nav scrollable on mobile; all rows still source-linked, no inferred values |
 | F3 | Cross-check all data files + site build (build_site.py + check_links.py + research + coverage-guide validators) | done | arena/5bf2fb99 | scripts/check_links.py, data/*.json | build_site.py → 11 pages rebuilt; check_links.py → 47 pages, 264 rows (7 flagged), 40 sources, All checks passed; research PASS (52 findings), coverage-guide PASS (65 rows) |
 | F4 | Flagged-for-Review consolidation (single entry point linking all 4 flagged pages) | done | arena/5bf2fb99 | flagged.html | Central hub added linking 5 registers (F-01..F-10, W-01..W-13, FL-01..FL-11, research, coverage-guide); policy restated; no blocking |
-| F5 | PR → main → merge → confirm GitHub Pages built | in progress | arena/5bf2fb99 | .github/workflows/pages.yml, git PR/merge | Branch pushed (25b8352); PR opening next; will merge without waiting and verify Pages built |
+| F5 | PR → main → merge → confirm GitHub Pages built | done | arena/5bf2fb99 | .github/workflows/pages.yml, git PR/merge | PR #12 opened, merged without waiting (merge commit `88741cd`); Pages API status `built`, Deploy GitHub Pages workflow succeeded on main |
 
 ### Scope lock
 
@@ -321,10 +321,10 @@ All four sections are now reachable from the shared top navigation on every root
 ### Deployment record (arena/5bf2fb99) — F5
 
 - **PR:** https://github.com/buffedlizard55-lab/MaltaProj8/pull/12 — opened from `arena/5bf2fb99-maltaproj8` → `main`. **MERGED without waiting for approval** (per task instructions; flagged/unverified items do not block merge).
-- **Merge commit:** `main` tip after merge (see PR #12 for SHA).
-- **GitHub Pages:** confirmed rebuilt and live at https://buffedlizard55-lab.github.io/MaltaProj8/ after the merge — Pages API `status: built`, no build error; `pages build and deployment` + `Deploy GitHub Pages` workflows succeeded on the merge commit.
+- **Merge commit:** `88741cd` (Merge pull request #12). Note: after this merge, PR #14 (arena/39e27f40) and PR #11 (arena/9285d712) also merged; `main` tip then advanced to `b725a01`, which includes this session's changes as ancestors. All work preserved.
+- **GitHub Pages:** confirmed **rebuilt and live** at https://buffedlizard55-lab.github.io/MaltaProj8/ after the merge — Pages API `status: built` (latest build commit `b725a01`, no error); `pages build and deployment` + `Deploy GitHub Pages` workflows **succeeded** on main. Live files verified in `main` tree: `verify-5bf2fb99.html`, `site/assets/site.js`, `flagged.html`, `index.html` (with `paths-table` filter).
 - **Scope of this merge:** only `index.html` (dashboard filters), `flagged.html` (consolidated flagged hub), `site/assets/style.css`, `site/assets/site.js`, `verify-5bf2fb99.html`, `COORDINATION.md`, plus the `build_site.py` re-render of shared markers. Other sessions' pages/data (research/**, coverage-guide/**, docs/**, data/*.json, verify-*.html from other sessions) are preserved unchanged.
-- **Verification after merge:** all 48 pages present, every table row links to an official source, 7 flagged/unverified rows remain blank + published on `flagged.html`, no broken internal links or anchors.
+- **Verification after merge:** all 48 pages present, every table row links to an official source, 7 flagged/unverified rows remain blank + published on `flagged.html`, no broken internal links or anchors. `scripts/check_links.py` → 48 pages, 264 rows, 40 sources, All checks passed. Research + coverage-guide validators PASS.
 
 ---
 
