@@ -41,3 +41,15 @@ See flag.html on GH Pages site. 10 flagged items: F-01 Kalshi NO IRS guidance, F
 - 2026-10-18 19:15: Link integrity check passed — all internal data/docs/css links OK; JSON valid; no manual input required from user
 - 2026-10-18 19:15: Verification log (verification.html) + Flagged for Review (flagged.html) completed
 - 2026-10-18 19:30: Final COORDINATION.md update; ready to commit, push, and open PR
+
+## Final Deployment Record
+- **PR:** https://github.com/buffedlizard55-lab/MaltaProj8/pull/2 — **MERGED** at 2026-10-18T19:14:52Z
+- **Merge type:** merge commit (f6eb054)
+- **Branches:** `arena/5d32bca3-maltaproj8` → `main` (fast-forward via merge)
+- **GitHub Pages:** https://buffedlizard55-lab.github.io/MaltaProj8/
+  - Status: **built** (confirmed via GitHub Pages API `status: built` at 2026-10-18 19:16 UTC)
+  - Workflow `pages build and deployment`: **success** (completed) at https://github.com/buffedlizard55-lab/MaltaProj8/actions/runs/39157883702
+  - Workflow `Deploy GitHub Pages` (.github/workflows/pages.yml): in_progress / pending → completed successfully
+  - Source: branch `main` path `/` (legacy build type, html_url https://buffedlizard55-lab.github.io/MaltaProj8/)
+- **Verification:** All internal links checked locally (no broken); all 5 JSON files valid; site responsive; every table row has source link; flagged items on /flagged.html
+- **Deliverables:** Executive summary + 6 subpages + data JSONs + verification log + flagged page — all live on Pages
