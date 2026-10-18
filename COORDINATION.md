@@ -20,7 +20,8 @@ Collect, organize, analyze full list following requirements for healthcare as US
 | 6 | Executive summary (options, recommendations) | done | arena/5d32bca3 | docs/executive-summary.md, index.html | Full summary with 14 primary sources, inline citations, coverage table, scenario matrix; cross-checked against all data files | All of the above + HHS ASPE poverty guidelines; IRS PTC rules; CoveredCA What Counts |
 | 7 | GH Pages site creation - landing + dashboard + tables | done | arena/5d32bca3 | index.html, law.html, california.html, income.html, pathways.html, exemptions.html, verification.html, flagged.html, site/assets/style.css, _config.yml, .github/workflows/pages.yml | Site builds with no broken internal links; Jekyll config validated; all data file links OK; all pages share nav; responsive | Local link check passed 2026-10-18; Jekyll build via actions/jekyll-build-pages |
 | 8 | Final verification line-by-line + flagged irregularities page | done | arena/5d32bca3 | verification.html, flagged.html | Every claim audited in verification.html with source check; 10 flagged items + 3 irregularities on flagged.html | See verification.html section A–E |
-| 9 | Final integration, PR, merge, GH Pages deploy | in progress | arena/5d32bca3 | .github/workflows/pages.yml, git push + PR | Pending push + PR creation + merge + deploy confirmation | — |
+| 9 | Final integration, PR, merge, GH Pages deploy | in progress (stale; deployment record below says done) | arena/5d32bca3 | .github/workflows/pages.yml, git push + PR | Historical row retained; superseded by completed deployment records below | — |
+| 19 | Independent post-merge source, factual, completeness, build, and live-deploy audit; apply only confirmed integration corrections | in progress | arena/8072f20c | COORDINATION.md; integrated pages/data/scripts/workflows as final integration scope; new audit artifact if needed | Not yet performed | — |
 
 ## Scope Lock Rules
 - This session owns all files (solo session, no conflicts detected)
@@ -239,3 +240,11 @@ All four sections are now reachable from the shared top navigation on every root
 - `origin/main` was merged again (conflicts in `COORDINATION.md` only; resolved append-only so every session's log is retained and no other session's file was touched).
 - The `docs/` section is now linked from the shared top navigation on every root page, alongside `research/` and `coverage-guide/`, as the sessions that built them requested. The navigation patch is marker-based (`<!-- integration-links -->`), so re-running the build does not duplicate links.
 - Combined-tree verification after the merge: **45 published pages**, 264 extended-analysis table rows (7 flagged/unverified), 40 official sources, every internal link and anchor resolving across all five sections, and no page rendering fewer rows than its data files define.
+
+## Current session claim — arena/8072f20c (2026-10-18)
+
+- **Task:** #19, independent post-merge source/factual/completeness/build/live-deploy audit; final integration correction pass.
+- **Status:** in progress; claim recorded before audit work began.
+- **File scope:** `COORDINATION.md`; integrated pages, source/data files, scripts and workflows only for narrowly scoped corrections confirmed by official sources; add a review artifact only if needed. This is the post-merge integration pass: all prior section tasks are marked done, and their branches are recorded as merged. No active, unmerged parallel claim is listed. The original task #9 row is stale and retained for history; later deployment records report completion.
+- **Branch constraint:** work remains on `arena/8072f20c-maltaproj8` (the session branch fixed by the environment); no other branch will be created or checked out.
+- **Audit has not yet started:** no findings are being marked verified in this claim. Findings will be logged with official-source URLs and test results before this task is marked done.
