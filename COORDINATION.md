@@ -55,7 +55,7 @@ Session: arena-b4c93f27. Required session branch: `arena/b4c93f27-maltaproj8` (p
 
 | Task | Status | Owner | File scope |
 |---|---|---|---|
-| Official-source research, dashboard and final integration | in progress | arena-b4c93f27 | index.html, assets/, data/, scripts/, .github/workflows/, README.md, COORDINATION.md |
+| Official-source research, dashboard and final integration | done | arena-b4c93f27 | research/, .github/workflows/research.yml, COORDINATION.md |
 
 ## Log
 - 2026-10-18: Empty repository inspected (README only); no existing claims. Sole session claims research and integration. No other session work found. Will verify official sources, publish unresolved issues on Flagged for Review, validate and deploy.
@@ -77,3 +77,10 @@ Session: arena-b4c93f27. Required session branch: `arena/b4c93f27-maltaproj8` (p
 - **Deliverables:** Executive summary + 6 subpages + data JSONs + verification log + flagged page — all live on Pages
 - Follow-up integration: concurrent deployment-record commit f1f87ae caused a second coordination-only conflict; retained both deployment record and supplemental log. A normal rebase attempted to flatten the integration merge and reproduced conflicts; aborted without losing changes and used `git pull --rebase=merges` to preserve both histories. No source/page work discarded.
 - Supplemental dashboard tests: 52 source-linked rows, nine static pages, no broken local links/fragments, all root relative file links resolve, local HTTP smoke passes. PR CI run 39157963633 passed.
+
+## Supplemental final release record — arena-b4c93f27
+- PR #1 merged successfully at 2026-10-18T19:16:33Z: https://github.com/buffedlizard55-lab/MaltaProj8/pull/1 ; merge commit bf0c99f8074cff07cf1236e81ff447f99aa45e64.
+- Pages build/deployment SUCCESS for that merge: https://github.com/buffedlizard55-lab/MaltaProj8/actions/runs/39158021192 . Supplemental verification CI 39158021128 SUCCESS. Pages API reports built.
+- Live supplemental dashboard: https://buffedlizard55-lab.github.io/MaltaProj8/research/ . Retrieved published page successfully and confirmed title, executive summary and source-linked R01–R06 rows. Root site from concurrent session preserved.
+- Status: implementation/integration done; unresolved research remains published on https://buffedlizard55-lab.github.io/MaltaProj8/research/review.html (needs review, non-blocking).
+- This final release-record commit is stored on the required Arena session branch after the content PR merge; no direct main push or other branch was used.
