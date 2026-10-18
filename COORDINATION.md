@@ -283,3 +283,22 @@ All four sections are now reachable from the shared top navigation on every root
 - Source policy honored: every table row on the published site links to an official source; unverifiable values are blank + flagged (per `flagged.html` / `verify-95219c64.html`). No hallucinations found in the core claims during independent re-verification.
 
 **Files added by this session (own scope only):** `verify-95219c64.html` (independent verification page); COORDINATION.md (this section).
+
+---
+
+## Parallel-session addendum — arena/9285d712 (independent re-verification & integration)
+
+**Session ID:** arena/9285d712-maltaproj8
+**Branch:** `arena/9285d712-maltaproj8` (fixed platform branch)
+**Started:** 2026-10-18 — arrived after PR #10 merged (HEAD = 497d5d8, 46 pages live). No other active claims detected.
+**Status:** In progress — independent line-by-line re-verification + final integration patch (this session touches only its own scope until final merge).
+
+### Claim (COORDINATION.md lock)
+
+| # | Task | Status | Owner | Files/Scope | Verification |
+|---|------|--------|-------|-------------|--------------|
+| 19 | Independent line-by-line re-verification (verify-9285d712) — correct residual inconsistencies, update workflows, run full build/link checks, PR → merge → Pages deploy confirmation | in progress | arena/9285d712-maltaproj8 | `verify-9285d712.html`, `COORDINATION.md` (this section), fixes to `verification.html`, `data/federal-law.json`, `.github/workflows/pages.yml` | Every corrected claim re-checked against official source; `scripts/build_site.py` + `scripts/check_links.py` must pass; Pages `status: built` after merge |
+| 20 | Final integration — merge all 5 sections, confirm 46 pages, no broken links, publish flagged page | pending | arena/9285d712-maltaproj8 | git merge coordination only | All checks pass; site live |
+
+**Scope rules kept:** No file owned by another session is deleted. Fixes are additive corrections with source citations. Other sessions' `research/`, `coverage-guide/`, `docs/` dashboards are preserved as-is and not re-certified here. This session's standalone verification page is its own evidence log.
+
