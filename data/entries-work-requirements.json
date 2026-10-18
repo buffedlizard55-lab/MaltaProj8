@@ -20,10 +20,13 @@
       },
       {
         "item": "Effective date",
-        "value": "No sooner than January 1, 2027 (states may implement sooner)",
-        "detail": "California's statute mirrors this: \"No sooner than January 1, 2027 … an applicable individual shall demonstrate work or community engagement,\" and only after DHCS confirms systems are programmed. CMS's interim final rule was issued June 1, 2026 and published June 3, 2026.",
+        "value": "Statute: effective beginning December 31, 2026, or sooner at state option. CMS requires states to implement by January 1, 2027. California: January 1, 2027",
+        "detail": "California's statute mirrors this: \"No sooner than January 1, 2027 … an applicable individual shall demonstrate work or community engagement,\" and only after DHCS confirms systems are programmed. CMS's interim final rule was issued June 1, 2026 and published June 3, 2026. The Congressional Research Service states the requirement is \"effective beginning December 31, 2026, or sooner at state option\" (CRS R48633); CMS's interim final rule requires states to have the requirement in place by January 1, 2027. California chose January 1, 2027.",
         "source": "S13",
-        "verified": true
+        "verified": true,
+        "also": [
+          "S18"
+        ]
       },
       {
         "item": "Who the law protects",
@@ -253,9 +256,12 @@
       {
         "item": "High-unemployment county",
         "value": "Exempt for the month",
-        "detail": "A county with an unemployment rate at or above the lesser of 8% or 1.5 times the national unemployment rate. This depends on where you live, and DHCS says it will send a separate notice if your county qualifies.",
+        "detail": "A county with an unemployment rate at or above the lesser of 8% or 1.5 times the national unemployment rate. This depends on where you live, and DHCS says it will send a separate notice if your county qualifies. The statutory standard is confirmed by CRS R48633; CMS has not yet published how it will be applied.",
         "source": "S12",
-        "verified": true
+        "verified": true,
+        "also": [
+          "S18"
+        ]
       },
       {
         "item": "Travel outside your community for medical care",

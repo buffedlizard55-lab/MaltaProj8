@@ -1,15 +1,7 @@
-/* Small progressive enhancements: mobile nav toggle + per-table row filter. */
+/* Progressive enhancement: per-table row filter. Everything else on the page
+   works without JavaScript. */
 (function () {
   "use strict";
-
-  var toggle = document.querySelector(".nav-toggle");
-  var nav = document.getElementById("site-nav");
-  if (toggle && nav) {
-    toggle.addEventListener("click", function () {
-      var open = nav.classList.toggle("open");
-      toggle.setAttribute("aria-expanded", open ? "true" : "false");
-    });
-  }
 
   document.querySelectorAll("[data-filter-for]").forEach(function (input) {
     var table = document.getElementById(input.getAttribute("data-filter-for"));

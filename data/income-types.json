@@ -1,0 +1,108 @@
+{
+  "note": "How different income types are classified for IRS, Medi-Cal MAGI eligibility, and work requirement satisfaction. Verified 2026-10-18.",
+  "income_types": [
+    {
+      "type": "Rental income (net)",
+      "irs_classification": "Unearned income (IRS Publication 525, Instructions for Form 1040 Schedule E)",
+      "irs_earned": false,
+      "magi_counts": true,
+      "magi_detail": "Net rental income (gross rents minus allowable expenses: mortgage interest, taxes, repairs, depreciation) counts as MAGI. Rental losses can reduce MAGI. If actively managing >=20 hrs/week, may be considered earned/self-employment (Schedule C) in some state Medicaid manuals.",
+      "work_requirement_counts": true,
+      "work_detail": "Counts toward $580/month income threshold. CMS and DHCS: includes rental income, dividends, retirement, etc.",
+      "evidence": "https://www.irs.gov/publications/p525 ; https://www.dhcs.ca.gov/wp-content/uploads/2025/10/MAGI20Income20Sources2009-05-13.pdf",
+      "verified": true
+    },
+    {
+      "type": "Savings account interest",
+      "irs_classification": "Unearned income (IRS Topic: Interest Income, Form 1099-INT)",
+      "irs_earned": false,
+      "magi_counts": true,
+      "magi_detail": "Both taxable and tax-exempt interest count toward MAGI (tax-exempt added back). Count gross amount.",
+      "work_requirement_counts": true,
+      "work_detail": "Counts toward $580 threshold per DHCS ACWDL 25-30: includes interest, dividends, retirement income etc.",
+      "evidence": "https://www.irs.gov/instructions/i1040 ; https://www.dhcs.ca.gov/wp-content/uploads/2026/04/25-30.pdf ; https://www.dhcs.ca.gov/wp-content/uploads/2026/07/MAGI-INCOME-AND-DEDUCTION-TYPES.pdf",
+      "verified": true
+    },
+    {
+      "type": "Kalshi event contracts - Capital gains treatment (common practitioner position)",
+      "irs_classification": "Capital gains/losses (Schedule D / Form 8949). Short-term if held <=1 yr (most Kalshi trades are short-term). Netting of gains/losses allowed; up to $3k net capital loss deductible per year.",
+      "irs_earned": false,
+      "magi_counts": true,
+      "magi_detail": "Net capital gains count in MAGI. Net capital losses reduce MAGI (subject to $3k annual limit carried forward).",
+      "work_requirement_counts": true,
+      "work_detail": "If reported as capital gains, counts as income for $580 work requirement threshold (capital gains are listed as countable income sources per DHCS and Covered CA job aids).",
+      "evidence": "https://www.dhcs.ca.gov/wp-content/uploads/2025/10/MAGI20Income20Sources2009-05-13.pdf ; https://www.irs.gov/forms/forms-and-instructions",
+      "verified": true,
+      "flag": "IRS has issued NO formal guidance on Kalshi classification as of 2026-10-18. Capital treatment is majority practitioner consensus, not official."
+    },
+    {
+      "type": "Kalshi event contracts - Gambling treatment (risk position for sports contracts)",
+      "irs_classification": "Gambling winnings (Schedule 1 Line 8b, losses Schedule A up to 90% of losses from 2026 under OBBBA Sec 70114, only if itemizing)",
+      "irs_earned": false,
+      "magi_counts": true,
+      "magi_detail": "Gambling winnings count in MAGI at gross amount (before losses). Losses are itemized deductions and do NOT reduce MAGI (MAGI uses AGI, which includes gross winnings but losses are below-the-line deductions on Schedule A). This is DISADVANTAGEOUS.",
+      "work_requirement_counts": true,
+      "work_detail": "Gambling income generally counts as income for work requirement purposes, but official CMS/DHCS lists do not explicitly mention gambling winnings; inclusion inferred from any income language in ACWDL.",
+      "evidence": "https://www.irs.gov/publications/p525 ; https://www.congress.gov/bill/119th-congress/house-bill/1/text",
+      "verified": true,
+      "flag": "Gambling classification is highest-risk for sports event contracts. Creates phantom income problem: $100k winnings + $100k losses = $10k taxable phantom income after 90% cap from 2026. IRS has NOT ruled."
+    },
+    {
+      "type": "Kalshi event contracts - Section 1256 treatment (aggressive position)",
+      "irs_classification": "Section 1256 contracts (Form 6781) - 60% long-term / 40% short-term regardless of holding period, mark-to-market at year-end, 3-year carryback of net losses",
+      "irs_earned": false,
+      "magi_counts": true,
+      "magi_detail": "Net Section 1256 gains count in MAGI (60/40 blended rate). Mark-to-market may create phantom year-end income on open positions.",
+      "work_requirement_counts": true,
+      "work_detail": "Counts as income for work requirement threshold.",
+      "evidence": "https://www.irs.gov/publications/p550 ; CFTC DCM status does NOT automatically confer Section 1256 status per IRC 1256(g)(1).",
+      "verified": false,
+      "flag": "UNVERIFIED / AGGRESSIVE: CFTC DCM registration alone does not establish Section 1256 status. Requires daily mark-to-market settlement test. Kalshi has argued for it; IRS has not confirmed. Flagged for review."
+    },
+    {
+      "type": "Property management fees (self-employment)",
+      "irs_classification": "Earned income / Self-employment income (Schedule C, subject to SE tax 15.3% if net >= $400)",
+      "irs_earned": true,
+      "magi_counts": true,
+      "magi_detail": "Net self-employment profit (gross fees minus ordinary/necessary business expenses) counts in MAGI.",
+      "work_requirement_counts": true,
+      "work_detail": "Qualifies as WORK hours AND income. 80 hrs of self-employment satisfies requirement; also income threshold.",
+      "evidence": "https://www.irs.gov/businesses/small-businesses-self-employed/self-employed-individuals-tax-center ; https://www.irs.gov/pub/irs-pdf/i1040sc.pdf",
+      "verified": true
+    },
+    {
+      "type": "Unemployment compensation (EDD)",
+      "irs_classification": "Unearned income (Form 1099-G, federal taxable only, NOT taxable in CA)",
+      "irs_earned": false,
+      "magi_counts": true,
+      "magi_detail": "Counts in MAGI (federal taxable amount).",
+      "work_requirement_counts": true,
+      "work_detail": "Explicitly counts toward $580 per DHCS ACWDL 25-30 (lists unemployment benefits as qualifying income source).",
+      "evidence": "https://www.irs.gov/individuals/information-for-employees ; https://www.dhcs.ca.gov/wp-content/uploads/2026/04/25-30.pdf",
+      "verified": true
+    },
+    {
+      "type": "Social Security / SSDI / Retirement",
+      "irs_classification": "Unearned income",
+      "irs_earned": false,
+      "magi_counts": true,
+      "magi_detail": "Taxable portion counts in MAGI; non-taxable Social Security added back to MAGI per 42 CFR 435.603.",
+      "work_requirement_counts": true,
+      "work_detail": "Counts toward $580. Listed in DHCS qualifying income sources.",
+      "evidence": "https://www.medicaid.gov/federal-policy-guidance/downloads/cib12082025.pdf",
+      "verified": true
+    },
+    {
+      "type": "Gifts / Inheritance / SNAP / SSI / Child support RECEIVED / Workers comp",
+      "irs_classification": "Generally not taxable / not earned",
+      "irs_earned": false,
+      "magi_counts": false,
+      "magi_detail": "NOT counted in MAGI per federal MAGI rules. Excluded from AGI add-back.",
+      "work_requirement_counts": false,
+      "work_detail": "Not counted as income for work requirement income test. Does not help meet $580 threshold.",
+      "evidence": "https://www.medicaid.gov/state-resource-center/mac-learning-collaboratives/downloads/part-2-income.pdf",
+      "verified": true
+    }
+  ],
+  "key_principle": "For Medi-Cal MAGI eligibility, the question is NET MAGI relative to 138% FPL ($22,025/year single 2026). For WORK REQUIREMENT, the question is GROSS monthly income >= $580 from ANY countable source OR 80 hrs activity. Unearned income (rental, interest, capital gains) satisfies the work requirement even though IRS calls it unearned and even if the individual has ZERO earned income."
+}

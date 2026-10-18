@@ -65,6 +65,13 @@
         "detail": "If you do not pay the premium, \"your Medi-Cal will change to restricted-scope, which covers: Emergency care; Pregnancy-related care; Nursing home care.\" Children, pregnant people, and former foster youth under 26 are exempt from the premium and keep full dental.",
         "source": "S20",
         "verified": true
+      },
+      {
+        "item": "October 1, 2026 — section 71109 federal funding rule",
+        "value": "Federal Medicaid money may only cover citizens, permanent residents, Cuban/Haitian entrants and COFA residents",
+        "detail": "Section 71109 bars federal Medicaid funding for people who are residents of the U.S. but fall outside those four categories, and extends the bar to CHIP. It also ends federal Medicaid funding for refugees and asylees (who can qualify as permanent residents after one year). A lawful permanent resident is inside the categories that keep funding, so this provision does not cut you off; it is the federal rule behind the state-funded full-scope coverage California offers certain other groups until June 30, 2027.",
+        "source": "S18",
+        "verified": true
       }
     ],
     "work-rule": [

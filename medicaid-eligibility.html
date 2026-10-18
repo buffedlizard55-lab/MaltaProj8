@@ -9,25 +9,26 @@
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
-<header class="site-header">
-  <div class="wrap header-inner">
+<div class="topbar">
+  <div class="topbar-inner">
     <div class="brand">
-      <a href="index.html" class="brand-link">
-        <span class="brand-mark" aria-hidden="true">CA</span>
-        <span class="brand-text">
-          <strong>California Health Coverage Options</strong>
-          <span>No earned income · permanent resident · 0 wage income</span>
-        </span>
-      </a>
+      <div class="brand-badge">CA</div>
+      <div>
+        <h1><a class="brand-link" href="index.html">California Healthcare &amp; Work Requirements</a></h1>
+        <p>Extended analysis · no earned income · every value linked to an official source</p>
+      </div>
     </div>
-    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+    <nav class="nav" aria-label="Main"><a href="index.html">Dashboard</a><a href="law.html">The Law</a><a href="california.html">California</a><a href="income.html">Income Types</a><a href="pathways.html">0-Earned Playbook</a><a href="exemptions.html">Exemptions</a><a href="verification.html">Verification</a><a href="overview.html" class="active">Extended Analysis</a><a href="flagged.html">Flagged for Review</a></nav>
   </div>
-  <nav id="site-nav" class="site-nav" aria-label="Main">
-    <div class="wrap nav-inner"><a href="index.html">Overview</a><a href="options.html">Options</a><a href="work-requirements.html">Work Rules</a><a href="income-counting.html">Income</a><a href="medicaid-eligibility.html" class="active">Medi-Cal</a><a href="covered-california.html">Covered CA</a><a href="immigration-status.html">Status</a><a href="california-changes.html">2026–27 Changes</a><a href="timeline.html">Timeline</a><a href="apply.html">Apply</a><a href="flagged.html">Flagged</a><a href="sources.html">Sources</a></div>
-  </nav>
-</header>
+</div>
+<div class="subbar">
+  <div class="topbar-inner">
+    <span class="subbar-label">Extended analysis</span>
+    <nav class="nav nav-sub" aria-label="Extended analysis pages"><a href="overview.html">Overview</a><a href="options.html">Options</a><a href="work-requirements.html">Work Rules</a><a href="income-counting.html">Income Counting</a><a href="medicaid-eligibility.html" class="active">Medi-Cal</a><a href="covered-california.html">Covered CA</a><a href="immigration-status.html">Immigration Status</a><a href="california-changes.html">2026–27 Changes</a><a href="timeline.html">Timeline</a><a href="apply.html">Apply</a><a href="sources.html">Sources</a></nav>
+  </div>
+</div>
 
-<main id="main" class="wrap">
+<div class="wrap" id="main">
   <h1>Medi-Cal eligibility</h1>
   <p class="lede">Coverage groups, 2026 income limits, asset rules, and which programs are not subject to the work requirement.</p>
   <section class="card" id="groups">
@@ -38,6 +39,69 @@
 <table id="groups" class="data">
 <thead><tr><th>Item</th><th>Value</th><th>Details</th><th>Source</th></tr></thead>
 <tbody>
+<tr class="row">
+<td><span class="item">Medi-Cal for Adults (ACA adult group / MAGI New Adult Group), ages 19–64</span>
+</td>
+<td class="value">Income at or below 138% FPL — $22,025 for 1 person in 2026</td>
+<td><p>DHCS's program chart: "138% FPL = ACA New Adults Ages 19-64." This is the group the 2027 work rule applies to. Covered California: "Most adults qualify for Medi-Cal with household income up to 138% of the federal poverty level."</p></td>
+<td><a class="src" href="https://www.dhcs.ca.gov/services/medi-cal/eligibility/letters/Pages/ACWDL2601-Enclosure3.aspx" target="_blank" rel="noopener noreferrer">ACWDL 26-01 Enclosure 3 — Program Descriptions by FPL <span class="pub">DHCS</span></a><br><a class="src" href="https://www.coveredca.com/coverage-basics/medi-cal" target="_blank" rel="noopener noreferrer">Medi-Cal (program overview and eligibility) <span class="pub">Covered California</span></a><br><a class="src" href="https://www.dhcs.ca.gov/medi-cal/qualify/qualify-for-medi-cal-eligibility-chart/" target="_blank" rel="noopener noreferrer">Medi-Cal — Eligibility by Federal Poverty Level (chart) <span class="pub">California Department of Health Care Services (DHCS)</span></a></td>
+</tr>
+<tr class="row">
+<td><span class="item">Medi-Cal for Children, ages 0–18</span>
+</td>
+<td class="value">Income at or below 266% FPL</td>
+<td><p>DHCS's chart: "266% FPL = ACA OTLIC." Covered California: "Children qualify with household income up to 266% of the FPL."</p></td>
+<td><a class="src" href="https://www.dhcs.ca.gov/services/medi-cal/eligibility/letters/Pages/ACWDL2601-Enclosure3.aspx" target="_blank" rel="noopener noreferrer">ACWDL 26-01 Enclosure 3 — Program Descriptions by FPL <span class="pub">DHCS</span></a><br><a class="src" href="https://www.coveredca.com/coverage-basics/medi-cal" target="_blank" rel="noopener noreferrer">Medi-Cal (program overview and eligibility) <span class="pub">Covered California</span></a></td>
+</tr>
+<tr class="row">
+<td><span class="item">Medi-Cal during pregnancy</span>
+</td>
+<td class="value">Full scope at or below 213% FPL; MCAP from over 213% to 322% FPL</td>
+<td><p>DHCS's chart: "213% FPL = Full-Scope Coverage for ACA Pregnant Persons"; "Above 213% to 322% FPL = Medi-Cal Access Program (MCAP)."</p></td>
+<td><a class="src" href="https://www.dhcs.ca.gov/services/medi-cal/eligibility/letters/Pages/ACWDL2601-Enclosure3.aspx" target="_blank" rel="noopener noreferrer">ACWDL 26-01 Enclosure 3 — Program Descriptions by FPL <span class="pub">DHCS</span></a></td>
+</tr>
+<tr class="row">
+<td><span class="item">FPL Program for Aged & Disabled</span>
+</td>
+<td class="value">138% FPL</td>
+<td><p>DHCS's chart lists "138% FPL = ACA New Adults Ages 19-64; and = FPL Program for Aged & Disabled." This is a non-MAGI program, so members of it are not subject to the work rule. Asset limits do apply — see the assets table.</p></td>
+<td><a class="src" href="https://www.dhcs.ca.gov/services/medi-cal/eligibility/letters/Pages/ACWDL2601-Enclosure3.aspx" target="_blank" rel="noopener noreferrer">ACWDL 26-01 Enclosure 3 — Program Descriptions by FPL <span class="pub">DHCS</span></a></td>
+</tr>
+<tr class="row">
+<td><span class="item">Disabled individuals in the New Adult Group</span>
+</td>
+<td class="value">128% FPL</td>
+<td><p>Listed in DHCS's program chart as "128% FPL = Disabled Individuals in New Adult Group."</p></td>
+<td><a class="src" href="https://www.dhcs.ca.gov/services/medi-cal/eligibility/letters/Pages/ACWDL2601-Enclosure3.aspx" target="_blank" rel="noopener noreferrer">ACWDL 26-01 Enclosure 3 — Program Descriptions by FPL <span class="pub">DHCS</span></a></td>
+</tr>
+<tr class="row">
+<td><span class="item">Working Disabled Program (250% FDP)</span>
+</td>
+<td class="value">250% FPL — for a disabled person who works</td>
+<td><p>DHCS: countable assets must not exceed $130,000 for one person and $65,000 for each additional person (up to 10). This program is for people who are working, so it does not fit a zero-earned-income situation.</p></td>
+<td><a class="src" href="https://www.dhcs.ca.gov/services/Pages/TPLRD_WD_cont.aspx" target="_blank" rel="noopener noreferrer">Working Disabled Program (250% FPL) <span class="pub">DHCS</span></a><br><a class="src" href="https://www.dhcs.ca.gov/medi-cal/help/asset-limit-frequently-asked-questions/" target="_blank" rel="noopener noreferrer">Asset Limit Frequently Asked Questions <span class="pub">DHCS</span></a></td>
+</tr>
+<tr class="row">
+<td><span class="item">Medicare Savings Programs (QMB, SLMB, QI-1)</span>
+</td>
+<td class="value">100% / 120% / 135% FPL — for people on or eligible for Medicare</td>
+<td><p>DHCS's chart: 100% FPL = QMB; 120% FPL = SLMB; 135% FPL = QI-1. These require Medicare enrollment and therefore an age of 65 or a disability determination. Asset limits apply from January 1, 2026: $130,000 for an individual, $65,000 per additional household member.</p></td>
+<td><a class="src" href="https://www.dhcs.ca.gov/individuals/medicare-savings-programs-in-california/" target="_blank" rel="noopener noreferrer">Medicare Savings Programs in California <span class="pub">DHCS</span></a></td>
+</tr>
+<tr class="row">
+<td><span class="item">Transitional Medi-Cal</span>
+</td>
+<td class="value">185% FPL (pre-ACA) / 202% FPL (post-ACA) — for people who recently lost ACA coverage because income rose</td>
+<td><p>Listed in DHCS's program chart. It is a short-term safety net: you get a set number of months of Medi-Cal after your household income moves above 138% FPL.</p></td>
+<td><a class="src" href="https://www.dhcs.ca.gov/services/medi-cal/eligibility/letters/Pages/ACWDL2601-Enclosure3.aspx" target="_blank" rel="noopener noreferrer">ACWDL 26-01 Enclosure 3 — Program Descriptions by FPL <span class="pub">DHCS</span></a></td>
+</tr>
+<tr class="row">
+<td><span class="item">Unsubsidized coverage</span>
+</td>
+<td class="value">400%+ FPL</td>
+<td><p>DHCS's chart: "400+% FPL = Unsubsidized Coverage." This is marketplace coverage with no financial help.</p></td>
+<td><a class="src" href="https://www.dhcs.ca.gov/services/medi-cal/eligibility/letters/Pages/ACWDL2601-Enclosure3.aspx" target="_blank" rel="noopener noreferrer">ACWDL 26-01 Enclosure 3 — Program Descriptions by FPL <span class="pub">DHCS</span></a></td>
+</tr>
 </tbody></table></div>
 </section>
 <section class="card" id="limits">
@@ -47,6 +111,69 @@
 <table id="limits" class="data">
 <thead><tr><th>Item</th><th>Value</th><th>Details</th><th>Source</th></tr></thead>
 <tbody>
+<tr class="row">
+<td><span class="item">1 person</span>
+</td>
+<td class="value">$22,025 per year — $1,836 per month</td>
+<td><p>138% FPL, 2026. Effective January 1, 2026 for MAGI determinations.</p></td>
+<td><a class="src" href="https://www.dhcs.ca.gov/medi-cal/qualify/qualify-for-medi-cal-eligibility-chart/" target="_blank" rel="noopener noreferrer">Medi-Cal — Eligibility by Federal Poverty Level (chart) <span class="pub">California Department of Health Care Services (DHCS)</span></a></td>
+</tr>
+<tr class="row">
+<td><span class="item">2 people</span>
+</td>
+<td class="value">$29,864 per year — $2,490 per month</td>
+<td><p>ACWDL 26-01 Enclosure 2 lists $29,864. DHCS's public eligibility chart shows $29,863 for this row — see the note below.</p></td>
+<td><a class="src" href="https://www.dhcs.ca.gov/services/medi-cal-resources/medi-cal-eligibility-division/all-county-welfare-directors-medi-cal-eligibility-division-information-letters/2026-fpl-calculation-chart-annual-values-enclosure-2/" target="_blank" rel="noopener noreferrer">ACWDL 26-01 Enclosure 2 — 2026 FPL annual values <span class="pub">DHCS</span></a></td>
+</tr>
+<tr class="row">
+<td><span class="item">3 people</span>
+</td>
+<td class="value">$37,702 per year — $3,143 per month</td>
+<td><p>ACWDL 26-01 Enclosure 2.</p></td>
+<td><a class="src" href="https://www.dhcs.ca.gov/services/medi-cal-resources/medi-cal-eligibility-division/all-county-welfare-directors-medi-cal-eligibility-division-information-letters/2026-fpl-calculation-chart-annual-values-enclosure-2/" target="_blank" rel="noopener noreferrer">ACWDL 26-01 Enclosure 2 — 2026 FPL annual values <span class="pub">DHCS</span></a></td>
+</tr>
+<tr class="row">
+<td><span class="item">4 people</span>
+</td>
+<td class="value">$45,540 per year — $3,795 per month</td>
+<td><p>ACWDL 26-01 Enclosure 2.</p></td>
+<td><a class="src" href="https://www.dhcs.ca.gov/services/medi-cal-resources/medi-cal-eligibility-division/all-county-welfare-directors-medi-cal-eligibility-division-information-letters/2026-fpl-calculation-chart-annual-values-enclosure-2/" target="_blank" rel="noopener noreferrer">ACWDL 26-01 Enclosure 2 — 2026 FPL annual values <span class="pub">DHCS</span></a></td>
+</tr>
+<tr class="row">
+<td><span class="item">5 people</span>
+</td>
+<td class="value">$53,379 per year — $4,450 per month</td>
+<td><p>ACWDL 26-01 Enclosure 2 lists $53,379. DHCS's public eligibility chart shows $53,378 for this row.</p></td>
+<td><a class="src" href="https://www.dhcs.ca.gov/services/medi-cal-resources/medi-cal-eligibility-division/all-county-welfare-directors-medi-cal-eligibility-division-information-letters/2026-fpl-calculation-chart-annual-values-enclosure-2/" target="_blank" rel="noopener noreferrer">ACWDL 26-01 Enclosure 2 — 2026 FPL annual values <span class="pub">DHCS</span></a></td>
+</tr>
+<tr class="row">
+<td><span class="item">6 people</span>
+</td>
+<td class="value">$61,217 per year — $5,102 per month</td>
+<td><p>ACWDL 26-01 Enclosure 2.</p></td>
+<td><a class="src" href="https://www.dhcs.ca.gov/services/medi-cal-resources/medi-cal-eligibility-division/all-county-welfare-directors-medi-cal-eligibility-division-information-letters/2026-fpl-calculation-chart-annual-values-enclosure-2/" target="_blank" rel="noopener noreferrer">ACWDL 26-01 Enclosure 2 — 2026 FPL annual values <span class="pub">DHCS</span></a></td>
+</tr>
+<tr class="row">
+<td><span class="item">7 people</span>
+</td>
+<td class="value">$69,056 per year — $5,755 per month</td>
+<td><p>ACWDL 26-01 Enclosure 2 lists $69,056. DHCS's public eligibility chart shows $69,055 for this row.</p></td>
+<td><a class="src" href="https://www.dhcs.ca.gov/services/medi-cal-resources/medi-cal-eligibility-division/all-county-welfare-directors-medi-cal-eligibility-division-information-letters/2026-fpl-calculation-chart-annual-values-enclosure-2/" target="_blank" rel="noopener noreferrer">ACWDL 26-01 Enclosure 2 — 2026 FPL annual values <span class="pub">DHCS</span></a></td>
+</tr>
+<tr class="row">
+<td><span class="item">8 people</span>
+</td>
+<td class="value">$76,894 per year — $6,409 per month</td>
+<td><p>ACWDL 26-01 Enclosure 2.</p></td>
+<td><a class="src" href="https://www.dhcs.ca.gov/services/medi-cal-resources/medi-cal-eligibility-division/all-county-welfare-directors-medi-cal-eligibility-division-information-letters/2026-fpl-calculation-chart-annual-values-enclosure-2/" target="_blank" rel="noopener noreferrer">ACWDL 26-01 Enclosure 2 — 2026 FPL annual values <span class="pub">DHCS</span></a></td>
+</tr>
+<tr class="row">
+<td><span class="item">Each additional person</span>
+</td>
+<td class="value">+$7,839 per year — +$655 per month</td>
+<td><p>ACWDL 26-01 Enclosures 1 and 2.</p></td>
+<td><a class="src" href="https://www.dhcs.ca.gov/services/medi-cal-resources/medi-cal-eligibility-division/all-county-welfare-directors-medi-cal-eligibility-division-information-letters/2026-fpl-calculation-chart-annual-values-enclosure-2/" target="_blank" rel="noopener noreferrer">ACWDL 26-01 Enclosure 2 — 2026 FPL annual values <span class="pub">DHCS</span></a></td>
+</tr>
 </tbody></table></div>
 </section>
 <section class="card" id="assets">
@@ -57,6 +184,79 @@
 <table id="assets" class="data">
 <thead><tr><th>Item</th><th>Value</th><th>Details</th><th>Source</th></tr></thead>
 <tbody>
+<tr class="row">
+<td><span class="item">Who is subject to an asset test</span>
+</td>
+<td class="value">People 65 or older, people with a disability (physical, mental, or developmental), people in a nursing home, and families whose income is too high to qualify under federal tax rules</td>
+<td><p>DHCS's asset-limit FAQ lists exactly these four groups. "Medi-Cal started counting your assets (things you own) on January 1, 2026, to decide if you can get or keep coverage."</p></td>
+<td><a class="src" href="https://www.dhcs.ca.gov/medi-cal/help/asset-limit-frequently-asked-questions/" target="_blank" rel="noopener noreferrer">Asset Limit Frequently Asked Questions <span class="pub">DHCS</span></a><br><a class="src" href="https://www.dhcs.ca.gov/wp-content/uploads/2026/05/DHCS-HR1-Implementation-Plan.pdf" target="_blank" rel="noopener noreferrer">Implementation Plan for New Federal Eligibility and Enrollment Changes under H.R. 1 <span class="pub">DHCS</span></a></td>
+</tr>
+<tr class="row">
+<td><span class="item">Who is not subject</span>
+</td>
+<td class="value">Adults 19–64 in the MAGI New Adult Group (and other MAGI-based groups)</td>
+<td><p>The asset limits apply to non-MAGI programs; MAGI-based eligibility is determined on income alone. If you are 19–64 and eligible as a Medi-Cal adult, your savings and rental property are not counted against your Medi-Cal eligibility.</p></td>
+<td><a class="src" href="https://www.dhcs.ca.gov/medi-cal/help/asset-limit-frequently-asked-questions/" target="_blank" rel="noopener noreferrer">Asset Limit Frequently Asked Questions <span class="pub">DHCS</span></a></td>
+</tr>
+<tr class="row">
+<td><span class="item">Asset limit through June 30, 2027</span>
+</td>
+<td class="value">$130,000 for one person, plus $65,000 for each additional household member (up to 10)</td>
+<td><p>DHCS asset-limit FAQ. Countable: bank accounts, cash, second vehicles, second homes, other financial resources. Not counted: your main home, your main vehicle, household items, and retirement funds if you are taking regular payments.</p></td>
+<td><a class="src" href="https://www.dhcs.ca.gov/medi-cal/help/asset-limit-frequently-asked-questions/" target="_blank" rel="noopener noreferrer">Asset Limit Frequently Asked Questions <span class="pub">DHCS</span></a></td>
+</tr>
+<tr class="row">
+<td><span class="item">Asset limit starting July 1, 2027</span>
+</td>
+<td class="value">$21,000 for one person, $31,000 for two, plus $1,550 per additional person (up to 10)</td>
+<td><p>DHCS asset-limit FAQ. DHCS has proposed aligning the limit to the federal SSI resource limit.</p></td>
+<td><a class="src" href="https://www.dhcs.ca.gov/medi-cal/help/asset-limit-frequently-asked-questions/" target="_blank" rel="noopener noreferrer">Asset Limit Frequently Asked Questions <span class="pub">DHCS</span></a></td>
+</tr>
+<tr class="row">
+<td><span class="item">Why this matters to you only if you have a disability</span>
+</td>
+<td class="value">An asset test plus the non-MAGI pathway is the one route out of the work rule</td>
+<td><p>If you have a qualifying disability, the Aged & Disabled FPL program (138% FPL) is a non-MAGI program, and non-MAGI members are excluded from work and community engagement requirements — but your assets are then counted. With $130,000 of countable assets allowed through June 2027, most households with one home, one car and normal savings are under the limit.</p></td>
+<td><a class="src" href="https://www.dhcs.ca.gov/wp-content/uploads/2026/04/25-30.pdf" target="_blank" rel="noopener noreferrer">ACWDL 25-30 — Work and Community Engagement Requirements for New Adult Group <span class="pub">DHCS</span></a></td>
+</tr>
+</tbody></table></div>
+</section>
+<section class="card" id="cost-sharing">
+<h2>Cost sharing from October 1, 2028 (section 71120)</h2>
+<p class="section-intro">The same federal law that added the work requirement also changes cost sharing for expansion adults above 100% FPL, starting in 2028. It does not change your 2026 or 2027 costs, and it is a separate rule from the work requirement.</p>
+<div class="table-wrap">
+<div class="table-tools"><label class="search"><span class="vh">Filter rows</span><input type="search" data-filter-for="cost-sharing" placeholder="Filter rows…" aria-label="Filter rows in this table"></label><span class="rowcount" data-count-for="cost-sharing"></span></div>
+<table id="cost-sharing" class="data">
+<thead><tr><th>Item</th><th>Value</th><th>Details</th><th>Source</th></tr></thead>
+<tbody>
+<tr class="row">
+<td><span class="item">Who would pay cost sharing</span>
+</td>
+<td class="value">Expansion adults with MAGI above 100% FPL, from October 1, 2028</td>
+<td><p>Section 71120 requires states to impose cost sharing greater than $0 and not more than $35 per service for ACA expansion enrollees above 100% FPL, beginning October 1, 2028, and prohibits states from imposing premiums or enrollment fees for those enrollees. Below 100% FPL this provision does not require cost sharing.</p></td>
+<td><a class="src" href="https://www.congress.gov/crs-product/R48633" target="_blank" rel="noopener noreferrer">CRS Report R48633 — Health Provisions in P.L. 119-21, the FY2025 Reconciliation Law <span class="pub">Congressional Research Service (Congress.gov)</span></a><br><a class="src" href="https://www.congress.gov/bill/119th-congress/house-bill/1/text" target="_blank" rel="noopener noreferrer">H.R. 1 (119th Congress) — enrolled text, Public Law 119-21 <span class="pub">Congress.gov</span></a></td>
+</tr>
+<tr class="row">
+<td><span class="item">Services excluded from cost sharing</span>
+</td>
+<td class="value">Primary care, mental health, substance use disorder, FQHC, certified community behavioral health clinic, rural health clinic</td>
+<td><p>The statute lists these services as excluded from the cost sharing that section 71120 requires. The aggregate out-of-pocket cap for most enrollees also continues to apply.</p></td>
+<td><a class="src" href="https://www.congress.gov/crs-product/R48633" target="_blank" rel="noopener noreferrer">CRS Report R48633 — Health Provisions in P.L. 119-21, the FY2025 Reconciliation Law <span class="pub">Congressional Research Service (Congress.gov)</span></a></td>
+</tr>
+<tr class="row">
+<td><span class="item">Prescription drugs</span>
+</td>
+<td class="value">Still subject to cost sharing</td>
+<td><p>Prescription drugs are not on the excluded list; the specified enrollees remain subject to the prescription drug cost-sharing rules and to the aggregate out-of-pocket cap.</p></td>
+<td><a class="src" href="https://www.congress.gov/crs-product/R48633" target="_blank" rel="noopener noreferrer">CRS Report R48633 — Health Provisions in P.L. 119-21, the FY2025 Reconciliation Law <span class="pub">Congressional Research Service (Congress.gov)</span></a></td>
+</tr>
+<tr class="row">
+<td><span class="item">Does this affect you before 2028?</span>
+</td>
+<td class="value">No</td>
+<td><p>The change begins October 1, 2028, and only reaches enrollees above 100% FPL. It does not change your 2026 or 2027 premium or cost-sharing position, and it is separate from the work requirement.</p></td>
+<td><a class="src" href="https://www.congress.gov/crs-product/R48633" target="_blank" rel="noopener noreferrer">CRS Report R48633 — Health Provisions in P.L. 119-21, the FY2025 Reconciliation Law <span class="pub">Congressional Research Service (Congress.gov)</span></a></td>
+</tr>
 </tbody></table></div>
 </section>
 <section class="card" id="not-subject">
@@ -66,6 +266,41 @@
 <table id="not-subject" class="data">
 <thead><tr><th>Item</th><th>Value</th><th>Details</th><th>Source</th></tr></thead>
 <tbody>
+<tr class="row">
+<td><span class="item">Non-MAGI Medi-Cal programs (aged, blind, disabled, long-term care, ABD FPL, Medicare Savings Programs)</span>
+</td>
+<td class="value">Excluded from the work rule</td>
+<td><p>"Members who receive Medi-Cal under other coverage groups such as Non-MAGI … Mandatory Children's Group, or Pregnancy Group are excluded from work and community engagement requirements."</p></td>
+<td><a class="src" href="https://www.dhcs.ca.gov/wp-content/uploads/2026/04/25-30.pdf" target="_blank" rel="noopener noreferrer">ACWDL 25-30 — Work and Community Engagement Requirements for New Adult Group <span class="pub">DHCS</span></a></td>
+</tr>
+<tr class="row">
+<td><span class="item">Mandatory Children's Group (children)</span>
+</td>
+<td class="value">Excluded</td>
+<td><p>Also excused from the six-month renewal rule.</p></td>
+<td><a class="src" href="https://www.dhcs.ca.gov/wp-content/uploads/2026/09/MEDIL-I26-25.pdf" target="_blank" rel="noopener noreferrer">MEDIL I 26-25 — Six-Month Renewals and Work and Community Engagement Rules (outreach letter, incl. 'Dear Medi-Cal Member' notice dated 2026-08-31) <span class="pub">DHCS, Medi-Cal Eligibility Division</span></a></td>
+</tr>
+<tr class="row">
+<td><span class="item">Pregnancy Group and postpartum coverage</span>
+</td>
+<td class="value">Excluded</td>
+<td><p>Pregnant individuals and those in the 12 months postpartum are excluded from both the work rule and the six-month renewal rule.</p></td>
+<td><a class="src" href="https://www.dhcs.ca.gov/wp-content/uploads/2026/09/MEDIL-I26-25.pdf" target="_blank" rel="noopener noreferrer">MEDIL I 26-25 — Six-Month Renewals and Work and Community Engagement Rules (outreach letter, incl. 'Dear Medi-Cal Member' notice dated 2026-08-31) <span class="pub">DHCS, Medi-Cal Eligibility Division</span></a></td>
+</tr>
+<tr class="row">
+<td><span class="item">Restricted-scope (emergency) Medi-Cal and pregnancy-only services</span>
+</td>
+<td class="value">Excluded</td>
+<td><p>"Individuals eligible for restricted-scope (emergency) Medi-Cal or pregnancy services are also not subject to work and community engagement requirements." Restricted-scope covers emergency care, pregnancy care and nursing home care only — it is not full coverage.</p></td>
+<td><a class="src" href="https://www.dhcs.ca.gov/wp-content/uploads/2026/04/25-30.pdf" target="_blank" rel="noopener noreferrer">ACWDL 25-30 — Work and Community Engagement Requirements for New Adult Group <span class="pub">DHCS</span></a></td>
+</tr>
+<tr class="row">
+<td><span class="item">People who move out of the MAGI New Adult Group</span>
+</td>
+<td class="value">The county stops applying the work rule</td>
+<td><p>When a member moves to a coverage group that is not subject to the requirement, "the county shall stop applying the work and community engagement requirement as of the effective date of the eligibility determination." DHCS gives the example of a member whose income drop moves them to the Parent/Caretaker group.</p></td>
+<td><a class="src" href="https://www.dhcs.ca.gov/wp-content/uploads/2026/04/25-30.pdf" target="_blank" rel="noopener noreferrer">ACWDL 25-30 — Work and Community Engagement Requirements for New Adult Group <span class="pub">DHCS</span></a></td>
+</tr>
 </tbody></table></div>
 </section>
 <section class="card" id="apply-when">
@@ -75,16 +310,44 @@
 <table id="apply-when" class="data">
 <thead><tr><th>Item</th><th>Value</th><th>Details</th><th>Source</th></tr></thead>
 <tbody>
+<tr class="row">
+<td><span class="item">When you can apply</span>
+</td>
+<td class="value">Any time of year</td>
+<td><p>"You can apply any time of year. Your health insurance can start quickly, and in some cases right away." Covered California, Medi-Cal. Medi-Cal enrollment is not limited to open enrollment.</p></td>
+<td><a class="src" href="https://www.coveredca.com/coverage-basics/medi-cal" target="_blank" rel="noopener noreferrer">Medi-Cal (program overview and eligibility) <span class="pub">Covered California</span></a></td>
+</tr>
+<tr class="row">
+<td><span class="item">How you apply</span>
+</td>
+<td class="value">One application, four ways</td>
+<td><p>Online through BenefitsCal or Covered California, by mail, by phone, or in person at your county office. Covered California: "One application checks your eligibility for both Medi-Cal and Covered California."</p></td>
+<td><a class="src" href="https://www.dhcs.ca.gov/medi-cal/apply/" target="_blank" rel="noopener noreferrer">Apply for Medi-Cal (four ways to apply) <span class="pub">DHCS</span></a></td>
+</tr>
+<tr class="row">
+<td><span class="item">What it costs</span>
+</td>
+<td class="value">Free or low-cost for most people</td>
+<td><p>"Medi-Cal covers health, dental and vision care for you and your children, often at little or no cost." Separate premium rules begin July 1, 2027 for some people with certain immigration statuses (see the 2026–27 changes page).</p></td>
+<td><a class="src" href="https://www.coveredca.com/coverage-basics/medi-cal" target="_blank" rel="noopener noreferrer">Medi-Cal (program overview and eligibility) <span class="pub">Covered California</span></a></td>
+</tr>
+<tr class="row">
+<td><span class="item">How to see if you qualify before applying</span>
+</td>
+<td class="value">DHCS screening tool and Covered California Shop and Compare</td>
+<td><p>DHCS's Qualify page is "only an estimate. It is not an application for Medi-Cal." Covered California offers Shop and Compare at apply.coveredca.com.</p></td>
+<td><a class="src" href="https://www.dhcs.ca.gov/medi-cal/qualify/" target="_blank" rel="noopener noreferrer">Qualify for Medi-Cal (screening tool and eligibility chart) <span class="pub">DHCS</span></a></td>
+</tr>
 </tbody></table></div>
 </section>
-</main>
+</div>
 
-<footer class="site-footer">
-  <div class="wrap">
+<div class="footer">
+  <div class="wrap footer-inner">
     <p><strong>Research brief, not legal, tax or immigration advice.</strong> Every value on this site is linked to the official source it came from. If a value could not be confirmed, it is left blank and listed on the <a href="flagged.html">Flagged for Review</a> page.</p>
-    <p class="muted">Source list: <a href="sources.html">all official sources</a> · Page generated 2026-10-18.</p>
+    <p class="muted">Source list: <a href="sources.html">all official sources</a> · <a href="index.html">dashboard</a> · <a href="verification.html">verification log</a> · Page generated 2026-10-18.</p>
   </div>
-</footer>
+</div>
 <script src="assets/site.js" defer></script>
 </body>
 </html>

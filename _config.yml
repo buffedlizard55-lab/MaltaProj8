@@ -1,0 +1,12 @@
+title: "California Healthcare & Work Requirements — 2026 Guide"
+description: "Executive summary and verified analysis of Medicaid/Medi-Cal work requirements (H.R.1 / P.L. 119-21) for a California resident with zero earned income from Kalshi trading, rental income, and savings interest."
+theme: minima
+url: "https://buffedlizard55-lab.github.io"
+baseurl: "/MaltaProj8"
+markdown: kramdown
+kramdown:
+  input: GFM
+  auto_ids: true
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag

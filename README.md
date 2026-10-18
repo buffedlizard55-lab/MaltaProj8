@@ -1,78 +1,91 @@
-# MaltaProj8 — California Health Coverage Options for a Permanent Resident with No Earned Income
+# MaltaProj8 — California Healthcare & Work Requirements (2026 Guide)
 
-A research brief published as a static site on GitHub Pages:
-**<https://buffedlizard55-lab.github.io/MaltaProj8/>**
+**Executive summary and verified analysis** of Medicaid/Medi-Cal work requirements under **H.R.1 / P.L. 119-21 (One Big Beautiful Bill Act)** for a California resident with **zero earned income** whose income comes from **Kalshi futures trading, rental income, and savings account interest**.
 
-## What this is
+> **Live site:** https://buffedlizard55-lab.github.io/MaltaProj8/ (GitHub Pages)
+>
+> **Status:** Active · Branch `arena/5d32bca3-maltaproj8` → `main` via PR
 
-The question was: how does a California permanent resident (or citizen) who is a property
-manager and full-time Kalshi trader, has **no earned income**, and has income from rental
-property, savings interest and trading, obtain health coverage — and how do they satisfy
-the new federal Medicaid "work" (community engagement) requirement that takes effect on
-January 1, 2027?
+## Quick Answer
 
-Every value on the site traces to an official source (DHCS, Covered California, CMS, HHS,
-IRS, DOL, CFTC, Congress.gov, the Federal Register, leginfo) and links to it. Where a value
-could not be confirmed from an official source, it is **left blank** and published on the
-**Flagged for Review** page instead of being estimated.
+**You do NOT need earned income to keep Medi-Cal / Covered California.** The $580/month income test counts *any* countable income — rental net, Kalshi gains, interest all qualify. Volunteering, education, or work programs are fallbacks. See the Executive Summary on the site.
 
-## Site map
-
-| Page | File | What it covers |
-|---|---|---|
-| Overview | `index.html` | Executive summary, bottom line, income-band decision table, work-rule summary |
-| Options | `options.html` | Four routes to coverage, side by side, plus a decision path |
-| Work Rules | `work-requirements.html` | H.R. 1 § 71119 and AB 2161: who is subject, how to comply, exemptions, hardship, non-compliance, California implementation |
-| Income | `income-counting.html` | MAGI, how rent / interest / trading are counted, the $580 test, 2026 FPL tables, worked examples |
-| Medi-Cal | `medicaid-eligibility.html` | Coverage groups, 2026 income limits, asset rules, groups exempt from the work rule |
-| Covered CA | `covered-california.html` | Federal premium tax credit, California Premium Subsidy, premiums, open enrollment, 2027 immigrant changes |
-| Status | `immigration-status.html` | Green card / citizenship and what each immigration status means for Medi-Cal and marketplace help |
-| 2026–27 Changes | `california-changes.html` | Every dated California change, plus what California is doing to soften the federal changes |
-| Timeline | `timeline.html` | Every key date in order |
-| Apply | `apply.html` | Where to apply, how to answer the income questions, what to gather, contacts |
-| Flagged | `flagged.html` | Unverified items, discrepancies between official sources, pending guidance, scope notes |
-| Sources | `sources.html` | All 40 official sources with publisher, type and date |
-
-## Repository layout
+## Repo Layout
 
 ```
-index.html … sources.html      generated pages (committed, so Pages serves them from main)
-assets/style.css               styles
-assets/site.js                 nav toggle + per-table row filter
-data/sources.json              the source register (id → publisher, URL, date)
-data/page-*.json               page structure: headings, intros, section order
-data/entries-*.json            every published table row, each with a source id
-data/flagged.json              the Flagged for Review items
-scripts/build_site.py          renders data/*.json → HTML
-scripts/check_links.py         verification pass (data integrity + link/anchor check)
-COORDINATION.md                shared task board and verification log
+├── COORDINATION.md          # Shared task board / verification log
+├── docs/
+│   └── executive-summary.md # Full executive summary (source of truth)
+├── data/
+│   ├── federal-law.json     # H.R.1 §71119 + CMS IFR provisions (verified)
+│   ├── california.json      # DHCS implementation, timelines, mitigation
+│   ├── income-types.json    # How each income type is classified + counted
+│   ├── pathways.json         # 7 ways to satisfy work requirement with 0 earned income
+│   ├── magi-limits.json     # FPL / MAGI income limits 2026
+│   ├── sources.json         # Source register for the Extended Analysis (S1–S40)
+│   ├── flagged.json         # Open questions for the Extended Analysis (F-01–F-13)
+│   ├── page-*.json          # Page definitions (sections, headings, intros)
+│   └── entries-*.json       # Table rows for each page, each with a source id
+├── scripts/
+│   ├── build_site.py        # Renders the Extended Analysis pages from data/
+│   └── check_links.py       # Verification pass over the whole site
+├── assets/                  # Extended Analysis theme + table filter
+├── site/
+│   └── assets/style.css     # Site theme
+├── index.html               # Landing page (dashboard) ← GH Pages entry
+├── law.html                 # The new law — line-by-line
+├── california.html          # California / Medi-Cal
+├── income.html              # Income types deep dive
+├── pathways.html            # 0-earned-income playbook
+├── exemptions.html          # Who is exempt
+├── verification.html        # Line-by-line source log
+├── flagged.html             # Flagged for Review
+├── _config.yml
+└── .github/workflows/pages.yml
 ```
 
-## Rebuild and verify
+## Verification
+
+Every table row links to an **official source** (congress.gov, federalregister.gov, cms.gov, dhcs.ca.gov, irs.gov, aspe.hhs.gov). If a value could not be confirmed from an official source, it is left blank and flagged on the Flagged for Review page. See `verification.html` on the site or `COORDINATION.md` for the verification log.
+
+### Automated verification (runs against the whole site)
 
 ```bash
-python3 scripts/build_site.py     # regenerate the 12 HTML pages from data/
+python3 scripts/build_site.py     # rebuilds the Extended Analysis pages from data/
 python3 scripts/check_links.py    # verification pass; exits non-zero on any failure
 ```
 
-`check_links.py` enforces the publication rules:
+`scripts/check_links.py` checks that every data file parses, that every published table row names a source id that exists, that verified rows carry a value and unverified rows are blank and flagged, that every source URL is https on an official domain, that every internal link and anchor on all 28 published pages resolves, that every page has a navigation and a title, and that every page renders the rows its data files define. Current result: **28 pages, 264 table rows (7 flagged/unverified), 40 sources, all checks pass.**
 
-- every table row cites a source id that exists in `data/sources.json`;
-- verified rows have a value; unverified rows have a **blank** value and a flag;
-- every source URL is `https` and on an official government or state-marketplace domain;
-- every internal link resolves to a file that exists, and every internal anchor to an id
-  that exists;
-- every page carries the navigation and a title.
+## Extended Analysis (second section of the site)
 
-Current status: **12 pages, 259 table rows (7 flagged/unverified), 40 sources — all checks pass.**
+The site has three verified sections, all linked from the dashboard:
 
-## Notes and limits
+| Section | Pages | Session |
+|---|---|---|
+| Core guide | `index.html`, `law.html`, `california.html`, `income.html`, `pathways.html`, `exemptions.html`, `verification.html` | arena/5d32bca3 |
+| Extended analysis | `overview.html`, `options.html`, `work-requirements.html`, `income-counting.html`, `medicaid-eligibility.html`, `covered-california.html`, `immigration-status.html`, `california-changes.html`, `timeline.html`, `apply.html`, `sources.html` | arena/6f935bbc |
+| Research dashboard | `research/` (9 pages, 52 source-linked findings) | arena/b4c93f27 |
 
-- Research brief, not legal, tax or immigration advice.
-- Amounts are 2026 figures unless the row says otherwise; the work rule and the
-  2026–27 changes are forward-looking and several pieces of federal guidance are still
-  pending (see `flagged.html`).
-- The federal minimum wage figure used in the $580 test is the FLSA figure ($7.25), not
-  the California minimum wage.
+The Extended Analysis pages are generated from `data/page-*.json` and `data/entries-*.json` by `scripts/build_site.py`, with the source register in `data/sources.json` (40 official sources) and the open questions in `data/flagged.json` (13 items). The shared pages (`index.html`, `flagged.html`) and the site navigation are patched by the same script, so the dashboard, the flagged page and the top navigation stay in sync with the data.
 
-Coordination with other agent sessions is tracked in [COORDINATION.md](COORDINATION.md).
+## Sources (Primary)
+
+1. H.R.1 full text (P.L. 119-21): https://www.congress.gov/bill/119th-congress/house-bill/1/text
+2. CMS-2454-IFC (91 FR 33348, Jun 3 2026): https://www.federalregister.gov/documents/2026/06/03/2026-11094/medicaid-program-community-engagement-requirement-for-certain-individuals
+3. CMS Fact Sheet (Jun 1 2026): https://www.cms.gov/newsroom/fact-sheets/medicaid-community-engagement-requirement-certain-individuals-interim-final-rule-comment-period-cms
+4. DHCS ACWDL 25-30 (Dec 30 2025): https://www.dhcs.ca.gov/wp-content/uploads/2026/04/25-30.pdf
+5. DHCS MEDIL I26-25 (Sep 1 2026): https://www.dhcs.ca.gov/wp-content/uploads/2026/09/MEDIL-I26-25.pdf
+6. DHCS Implementation Plan (Jan 29 2026): https://www.dhcs.ca.gov/federal-impacts/Documents/DHCS-HR1-Implementation-Plan.pdf
+7. DHCS Tracking Federal Impact: https://www.dhcs.ca.gov/tracking-federal-impact-medi-cal-eligibility/
+8. HHS ASPE 2026 Poverty Guidelines: https://aspe.hhs.gov/topics/poverty-economic-mobility/poverty-guidelines
+
+All 14 primary sources are linked directly on the Executive Summary page.
+
+## Coordinating Sessions
+
+Before starting, read [COORDINATION.md](COORDINATION.md). It is the shared task board. Claim a task, commit and push the claim immediately, work only in your claimed file scope.
+
+## License
+
+Research compilation — sources cited inline. No legal advice; consult an attorney/CPA for individual determinations.

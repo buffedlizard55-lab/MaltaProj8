@@ -19,6 +19,12 @@
       "table": "assets"
     },
     {
+      "id": "cost-sharing",
+      "heading": "Cost sharing from October 1, 2028 (section 71120)",
+      "intro": "The same federal law that added the work requirement also changes cost sharing for expansion adults above 100% FPL, starting in 2028. It does not change your 2026 or 2027 costs, and it is a separate rule from the work requirement.",
+      "table": "cost-sharing"
+    },
+    {
       "id": "not-subject",
       "heading": "Medi-Cal groups that are not subject to the work rule",
       "table": "not-subject"

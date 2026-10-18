@@ -246,6 +246,39 @@
         "source": "S31",
         "verified": true
       }
+    ],
+    "cost-sharing": [
+      {
+        "item": "Who would pay cost sharing",
+        "value": "Expansion adults with MAGI above 100% FPL, from October 1, 2028",
+        "detail": "Section 71120 requires states to impose cost sharing greater than $0 and not more than $35 per service for ACA expansion enrollees above 100% FPL, beginning October 1, 2028, and prohibits states from imposing premiums or enrollment fees for those enrollees. Below 100% FPL this provision does not require cost sharing.",
+        "source": "S18",
+        "verified": true,
+        "also": [
+          "S19"
+        ]
+      },
+      {
+        "item": "Services excluded from cost sharing",
+        "value": "Primary care, mental health, substance use disorder, FQHC, certified community behavioral health clinic, rural health clinic",
+        "detail": "The statute lists these services as excluded from the cost sharing that section 71120 requires. The aggregate out-of-pocket cap for most enrollees also continues to apply.",
+        "source": "S18",
+        "verified": true
+      },
+      {
+        "item": "Prescription drugs",
+        "value": "Still subject to cost sharing",
+        "detail": "Prescription drugs are not on the excluded list; the specified enrollees remain subject to the prescription drug cost-sharing rules and to the aggregate out-of-pocket cap.",
+        "source": "S18",
+        "verified": true
+      },
+      {
+        "item": "Does this affect you before 2028?",
+        "value": "No",
+        "detail": "The change begins October 1, 2028, and only reaches enrollees above 100% FPL. It does not change your 2026 or 2027 premium or cost-sharing position, and it is separate from the work requirement.",
+        "source": "S18",
+        "verified": true
+      }
     ]
   }
 }
