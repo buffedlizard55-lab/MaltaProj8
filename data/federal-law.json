@@ -24,7 +24,7 @@
     {
       "section": "Sec. 71119 - Applicable Individuals",
       "title": "Who Is Subject",
-      "summary": "Applies to nonpregnant, nondisabled adults aged 19-64 eligible for Medicaid under ACA expansion group (1902(a)(10)(A)(i)(VIII)) or Section 1115 waiver providing minimum essential coverage. Excludes children, seniors 65+, pregnant/postpartum, aged/blind/disabled, those entitled to Medicare. Applies in 41 expansion states + DC + certain waiver states (43 jurisdictions). U.S. territories not subject.",
+      "summary": "Applies to nonpregnant, nondisabled adults aged 19-64 eligible for Medicaid under ACA expansion group (1902(a)(10)(A)(i)(VIII)) or Section 1115 waiver providing minimum essential coverage. Excludes children, seniors 65+, pregnant/postpartum, aged/blind/disabled, those entitled to Medicare. 40 states and DC have adopted the ACA expansion; 10 states have not. The requirement applies to the states and DC that have it (expansion/waiver MEC population). U.S. territories not subject. (Corrected per CRS R48633; cf. prior '43 jurisdictions' phrasing.)",
       "source": "https://www.congress.gov/bill/119th-congress/house-bill/1/text",
       "verified": true,
       "verified_date": "2026-10-18"

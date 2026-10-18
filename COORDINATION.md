@@ -283,3 +283,54 @@ All four sections are now reachable from the shared top navigation on every root
 - Source policy honored: every table row on the published site links to an official source; unverifiable values are blank + flagged (per `flagged.html` / `verify-95219c64.html`). No hallucinations found in the core claims during independent re-verification.
 
 **Files added by this session (own scope only):** `verify-95219c64.html` (independent verification page); COORDINATION.md (this section).
+
+---
+
+## Parallel-session addendum — arena/9285d712 (independent re-verification & integration)
+
+**Session ID:** arena/9285d712-maltaproj8
+**Branch:** `arena/9285d712-maltaproj8` (fixed platform branch)
+**Started:** 2026-10-18 — arrived after PR #10 merged (HEAD = 497d5d8, 46 pages live). No other active claims detected.
+**Status:** In progress — independent line-by-line re-verification + final integration patch (this session touches only its own scope until final merge).
+
+### Claim (COORDINATION.md lock)
+
+| # | Task | Status | Owner | Files/Scope | Verification |
+|---|------|--------|-------|-------------|--------------|
+| 19 | Independent line-by-line re-verification (verify-9285d712) — correct residual inconsistencies, update workflows, run full build/link checks, PR → merge → Pages deploy confirmation | in progress | arena/9285d712-maltaproj8 | `verify-9285d712.html`, `COORDINATION.md` (this section), fixes to `verification.html`, `data/federal-law.json`, `.github/workflows/pages.yml` | Every corrected claim re-checked against official source; `scripts/build_site.py` + `scripts/check_links.py` must pass; Pages `status: built` after merge |
+| 20 | Final integration — merge all 5 sections, confirm 46 pages, no broken links, publish flagged page | pending | arena/9285d712-maltaproj8 | git merge coordination only | All checks pass; site live |
+
+**Scope rules kept:** No file owned by another session is deleted. Fixes are additive corrections with source citations. Other sessions' `research/`, `coverage-guide/`, `docs/` dashboards are preserved as-is and not re-certified here. This session's standalone verification page is its own evidence log.
+
+
+### Verification log (arena/9285d712) — independent re-verification complete
+
+Every claim below was checked against the URL it cites. No new legal claim was introduced in this session — the two fixes are alignments to official sources that the site already cited elsewhere.
+
+| # | Claim | Official source checked | Verdict |
+|---|-------|-------------------------|---------|
+| C-1 | H.R.1 §71119 creates Medicaid community-engagement requirement; signed Jul 4 2025 as P.L. 119-21 | congress.gov H.R.1 text + CRS R48633 | Verified |
+| C-2 | Paths (A)–(G): work/service/program 80h, half-time education, combination, $580 income (80×$7.25), 6-mo seasonal avg | H.R.1 §71119(A)–(G) enrolled text + DOL FLSA | Verified |
+| C-3 | Subject: 19–64 expansion adults (1902(a)(10)(A)(i)(VIII)/1115 MEC); excludes children, 65+, pregnancy, ABD, Medicare | CMS Fact Sheet + CRS R48633 + 91 FR 33348; CA = M1 per ACWDL 25-30 | Verified |
+| C-4 | Effective Jan 1 2027 CA (first quarter after Dec 31 2026); good-faith delay to Dec 31 2028 possible | Statute §71119(e) + CMS IFC + CRS R48633 + DHCS Implementation Plan | Verified |
+| C-5 | $580 test counts “income from any source” — rental net, interest, Kalshi gains all count; 6-mo averaging for irregular | DHCS ACWDL 25-30 p.7 + MEDIL I26-25 member notice + AB 2161 (MAGI methods) | Verified (nuance N-1: gross vs MAGI wording flagged) |
+| C-6 | Ex parte first, 30-day cure, coverage continues | 91 FR 33348 §§435.149(c)(2),(d) + ACWDL 25-30 | Verified |
+| C-7 | FPL single $15,960 → 138% $22,025 Medi-Cal cap; 400% $63,840 cliff (enhanced credits expired Dec 31 2025) | HHS ASPE 2026 + 91 FR 2026-00755 + IRS PTC rules | Verified |
+| C-8 | §70114 caps gambling-loss deduction at 90% post-2025 ($100k/$100k → $10k phantom example) | H.R.1 §70114 + IRS 165(d) | Verified |
+| C-9 | No IRS guidance specific to Kalshi as of Oct 2026 (capital vs gambling vs §1256 vs ordinary are practitioner arguments) | Convergent practitioner negative searches (Monaco CPA, Camuso, CountDeFi, awaken) | Verified absence — flagged F-01…F-03 |
+| C-10 | CMS-2454-IFC = 91 FR 33348 (Jun 3 2026), effective Jul 31 2026, states by Jan 1 2027 | Federal Register + CMS Fact Sheet | Verified |
+| C-11 | Site builds clean: 47 pages, 264 rows, 40 sources, all links/anchors resolve (`scripts/check_links.py` passes) | `scripts/build_site.py` + `scripts/check_links.py` | Verified |
+| C-12 | Pages legacy mode (branch `main`, path `/`) — `.github/workflows/pages.yml` deploys on push to `main` | Repo settings + workflow file | Verified |
+| C-13 | 40 states + DC have adopted expansion; 10 have not (corrected) | CRS R48633 | Verified (fix C-15) |
+
+**Result:** Site's central thesis — a CA resident with $0 earned income satisfies Medi-Cal work requirement via $580/mo income test counting income from ANY source (rental, Kalshi gains, interest) — **verified** against DHCS ACWDL 25-30 + MEDIL I26-25. **No hallucinations found in core claims.** Six nuances (N-1…N-6) are presentation items published on `verify-9285d712.html` and consistent with `flagged.html`.
+
+**Corrections applied (re-verified):**
+- C-14: `verification.html` cost-sharing row: §71109/KFF → §71120/CRS R48633 (KFF context link retained as context, not source).
+- C-15: `data/federal-law.json` "43 jurisdictions (41+DC)" → "40+DC have adopted, 10 have not — requirement applies to states+DC that have it (expansion/waiver MEC)" per CRS R48633, aligning JSON with `law.html` correction C-01.
+- C-16: `.github/workflows/pages.yml` `branches: [main, arena/5d32bca3-maltaproj8]` → `branches: [main]` (deploy on merge to main only; PR validation via separate `pull_request` workflows).
+
+**Build/link check before PR:** `python3 scripts/build_site.py` → 11 extended pages + 8 shared pages patched, index page-index now includes both independent checks. `python3 scripts/check_links.py` → "All checks passed" (47 pages, 264 rows, 40 sources).
+
+### Deployment record (arena/9285d712) — pending PR creation below
+
