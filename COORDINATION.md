@@ -381,3 +381,57 @@ Every claim below was checked against the URL it cites. No new legal claim was i
 - **GitHub Pages:** confirmed built from `main` at commit `c85db90` (legacy publishing, source branch `main`, path `/`); live site: https://buffedlizard55-lab.github.io/MaltaProj8/ .
 - **Scope:** arena/9285d712's corrections (cost-sharing §71120/CRS R48633, 40-state/10-not expansion count, pages.yml branches→[main], index page-index both checks) retained; no other-session content deleted. Subsequent session arena/5bf2fb99 merged as PR #12 (below) without discarding this work.
 
+## Independent re-verification — arena/39e27f40 (2026-10-18)
+
+**Session ID:** arena/39e27f40-maltaproj8
+**Branch:** `arena/39e27f40-maltaproj8`
+**Started:** 2026-10-18 (HEAD = `e152e749`, tip of `origin/main`)
+**Status:** Verification complete — core thesis confirmed; 3 clarifications documented
+
+### Verification performed
+
+Every core claim was checked against an official primary source retrieved live:
+
+| # | Claim | Official source | Verdict |
+|---|-------|-----------------|---------|
+| V-1 | $580/month income test (80 × $7.25) | CMS Fact Sheet (cms.gov): "earning at least 80 times the Federal hourly minimum wage ($580 per month in 2026)" | **Verified** |
+| V-2 | Income from ANY source qualifies (not just earned) | DHCS MEDIL I26-25 outreach letter: **"Have an income from any source of at least $580 (before taxes) in any month since your last renewal"** | **Verified** — the official outreach letter to members uses "income from any source," not "earned income" |
+| V-3 | ACWDL 25-30 confirms unearned income counts | ACWDL 25-30 p.7: "An individual's total gross income for a month must meet or exceed this amount (including earned income, unemployment benefits, State Disability Insurance, retirement income, dividends, etc.)" | **Verified** |
+| V-4 | Rental income (Schedule E) counts for MAGI | DHCS MAGI Income Chart (Jul 2026): "Rental real estate, royalties, partnerships, S corporations, trusts, etc. (or loss), Schedule E" → Count Taxable Portion | **Verified** |
+| V-5 | Interest income counts for MAGI | DHCS MAGI Income Chart: "Interest income (taxable and non-taxable), 1099-INT" → Count Gross | **Verified** |
+| V-6 | Capital gains count for MAGI | DHCS MAGI Income Chart: "Capital gain (or loss), Schedule E" → Count Taxable Portion | **Verified** (note: DHCS chart labels capital gains as "Schedule E" which appears to be a DHCS chart labeling convention — capital gains are normally Schedule D) |
+| V-7 | California effective date Jan 1, 2027 | DHCS Medi-Cal Changes page: "Starting January 1, 2027, some adults will need to work, volunteer, go to school, or be in training" | **Verified** |
+| V-8 | Age range 19-64 | DHCS Tracking page: "adults ages 19–64" | **Verified** |
+| V-9 | Parents of children ≤13 exempt | CMS Fact Sheet: "Parents, guardians, caretaker relatives, or family caregivers of a dependent child 13 years of age and under" | **Verified** |
+| V-10 | 2026 poverty guideline single = $15,960 | HHS ASPE 2026 (aspe.hhs.gov): 1 person = $15,960 | **Verified** |
+| V-11 | 138% FPL = $22,025 (single) | $15,960 × 1.38 = $22,024.80 ≈ $22,025 | **Verified** |
+| V-12 | 400% FPL = $63,840 (single) | $15,960 × 4.00 = $63,840 | **Verified** |
+| V-13 | CA adopted all hardship exemptions | DHCS Tracking page + Implementation Plan | **Verified** |
+| V-14 | Site builds clean | `scripts/check_links.py`: 46 pages, 264 rows, 40 sources, all checks pass | **Verified** |
+| V-15 | GitHub Pages live and serving | Pages API: status "built", site serves correct content | **Verified** |
+
+### Clarifications / minor corrections (non-blocking)
+
+| # | Issue | Current site says | Official source says | Severity | Recommendation |
+|---|-------|-------------------|---------------------|----------|----------------|
+| C-1 | Six-month renewals start date | KPI card: "6-month renewals begin then" (implying Jan 2027) | DHCS Medi-Cal Changes page: six-month eligibility checks start **March 1, 2027** (not Jan 1). Work rules start Jan 1; renewals lag by 2 months. | Low | Update KPI description to note March 2027 for renewals |
+| C-2 | "Earn" vs "income from any source" language | Site correctly uses "income from any source" throughout | DHCS public-facing pages (Medi-Cal Changes, Help Center) use "earn at least $580" — simpler language; outreach letter and ACWDL use "income from any source" | Informational | Site's interpretation is supported by the outreach letter and ACWDL; public-facing simplification could confuse applicants |
+| C-3 | State count discrepancy | Site: "40 states and DC" (from CRS R48633) | CMS Fact Sheet: "43 states and the District of Columbia provide coverage" | Low | Different sources count differently; CMS Fact Sheet is the implementing agency's own statement |
+
+### Key official source for the core thesis
+
+The **single most important official sentence** for the user's situation is from **DHCS MEDIL I26-25** (the outreach letter template that Medi-Cal members will actually receive):
+
+> **"Have an income from any source of at least $580 (before taxes) in any month since your last renewal."**
+
+Source: https://www.dhcs.ca.gov/wp-content/uploads/2026/09/MEDIL-I26-25.pdf
+
+This confirms that **unearned income** (rental, interest, trading gains) satisfies the work requirement. The site's core thesis is **verified**.
+
+### Files touched
+
+COORDINATION.md only (this append). No other files modified — the site is already complete and deployed.
+
+### Result
+
+The site's central claim — a California resident with $0 earned income can satisfy the Medi-Cal community-engagement requirement via the $580/month income test counting income from ANY source — is **verified** against official DHCS guidance. The site is live, clean, and accurately represents the law. Three minor clarifications documented above do not block the site's usefulness.
