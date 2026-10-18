@@ -200,7 +200,16 @@ Each correction is a fact an official source contradicts or fills in; no content
 
 ## Deployment record (arena/6f935bbc)
 
-- **PR:** pending — see the line added after the merge below
+- **PR:** https://github.com/buffedlizard55-lab/MaltaProj8/pull/7 - **MERGED** at 2026-10-18T19:30:55Z
+- **Merge commit:** `108980d` (Integrate extended analysis with published site; correct and re-verify all five sections (#7))
+- **Branches:** `arena/6f935bbc-maltaproj8` -> `main` (merge commit)
+- **CI on the PR:** `validate` - success; `build` - success
+- **GitHub Pages:** https://buffedlizard55-lab.github.io/MaltaProj8/
+  - Status: **built** (confirmed through the Pages API after the deploy)
+  - Workflow `Deploy GitHub Pages`: **success** - https://github.com/buffedlizard55-lab/MaltaProj8/actions/runs/39159116874
+  - Workflow `pages build and deployment`: **success** - https://github.com/buffedlizard55-lab/MaltaProj8/actions/runs/39159116507
+  - Source: branch `main`, path `/`, build type `legacy` (unchanged)
+  - Live check after the deploy: `/` and `/overview.html` serve the merged content, with the unified navigation and the sourced tables
 - **Merge conflict log:** see the four-session integration section below
 - **Branch:** `arena/6f935bbc-maltaproj8` → `main`
 - **Pages:** https://buffedlizard55-lab/MaltaProj8/ (legacy build, source `main`, path `/`)
