@@ -272,8 +272,14 @@ All four sections are now reachable from the shared top navigation on every root
 
 **PR / merge record:**
 - Branch: `arena/95219c64-maltaproj8` → `main`.
-- PR: (recorded after creation — see Deployment record below).
+- **PR: https://github.com/buffedlizard55-lab/MaltaProj8/pull/9 — MERGED 2026-10-18T20:04:06Z (merge commit `e152e7490a97ac82390e632c6d31527752851069`).**
 - Merge: performed without waiting for approval (per task instructions). Flagged/unverified items do not block merge; they remain published on `flagged.html` and `verify-95219c64.html`.
-- GitHub Pages: confirmed rebuilt and live at https://buffedlizard55-lab.github.io/MaltaProj8/ after the merge (Pages API build status "built").
+- GitHub Pages: confirmed rebuilt and live at https://buffedlizard55-lab.github.io/MaltaProj8/ after the merge (Pages API build for commit `e152e74` → status **"built"**, no error; live page `verify-95219c64.html` serves the verified content).
+
+**Deployment record (arena/95219c64):**
+- PR #9 merged into `main`; merge commit `e152e749`.
+- `pages.yml` (Jekyll) workflow triggered on the merge → build for commit `e152e74` = **built** (no error).
+- Live site: https://buffedlizard55-lab.github.io/MaltaProj8/ (and /verify-95219c64.html).
+- Source policy honored: every table row on the published site links to an official source; unverifiable values are blank + flagged (per `flagged.html` / `verify-95219c64.html`). No hallucinations found in the core claims during independent re-verification.
 
 **Files added by this session (own scope only):** `verify-95219c64.html` (independent verification page); COORDINATION.md (this section).
