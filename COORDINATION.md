@@ -550,3 +550,17 @@ The site's central claim — a California resident with $0 earned income can sat
 - Branch: `arena/9ba14c05-maltaproj8` → `main`.
 - **PR: https://github.com/buffedlizard55-lab/MaltaProj8/pull/19** — opened 2026-10-18.
 - Merge: performed without waiting for approval, per the standing instruction. Flagged items do not block merge; they are published on `flagged.html`.
+
+**Merge and deployment result (recorded after the merge):**
+- **PR #19 — MERGED 2026-10-18T22:24:52Z**, merge commit `83968ef1e0af76f1592750a468f2b5340d7493ce`.
+- Merge performed without waiting for approval. Required checks `build` and `validate` both **passed** before merge.
+- "Deploy GitHub Pages" workflow run [39172116606](https://github.com/buffedlizard55-lab/MaltaProj8/actions/runs/39172116606) → **completed / success**.
+- Pages API: build for commit `83968ef` → status **built**, no error, updated 2026-10-18T22:25:14Z.
+- Live verification: fetched `https://buffedlizard55-lab.github.io/MaltaProj8/?v=83968ef` after deployment. It serves the new dashboard ("Verified dashboard — $0 earned income", "three independent routes", `$1,836 / month`, `Mar 1, 2027`), not the superseded 7-path page. The old page carried `$1,835/mo`; the live page now carries `$1,836`.
+- Known limitation of this record: the 40 source URLs were checked by document review, not by an automated HTTP sweep. `check_links.py` validates internal links and anchors only; `check_core.py` validates that every URL is official https and that every source id resolves.
+
+**Open items handed to any later session:**
+1. Re-fetch the 33 register sources not directly re-read in this session (S01, S02, S05, S06, S07, S08, S11, S12, S13, S17, S19, S24–S27, S29–S32, S34, S36–S40) and confirm date/URL freshness.
+2. The 11 register-only sources (S08, S24–S27, S30, S31, S34, S36, S38, S39) support context but are not cited by a table row; either cite them or drop them from the register.
+3. The Kalshi federal tax classification remains genuinely unsettled; do not let any page present one treatment as IRS-approved.
+4. DHCS publishes both January 1, 2027 (work rules) and March 1, 2027 (first six-month renewals; and the member letter's loose "March 2027" wording). Keep both dates visible.
