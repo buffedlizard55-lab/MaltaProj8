@@ -320,6 +320,54 @@
       "url": "https://www.dhcs.ca.gov/individuals/medicare-savings-programs-in-california/",
       "date": "2026-09-14",
       "type": "state agency"
+    },
+    {
+      "id": "S41",
+      "name": "2026 Open Enrollment Dashboard, Financial Details — 400% FPL = $62,600 (one person)",
+      "publisher": "Covered California / HBEX",
+      "url": "https://hbex.coveredca.com/data-research/dashboards/OE_Dashboard.pdf",
+      "date": "2026-10-18",
+      "type": "state exchange"
+    },
+    {
+      "id": "S42",
+      "name": "MAGI Income and Deduction Types (July 2026)",
+      "publisher": "California Department of Health Care Services (DHCS)",
+      "url": "https://www.dhcs.ca.gov/wp-content/uploads/2026/07/MAGI-INCOME-AND-DEDUCTION-TYPES.pdf",
+      "date": "2026-07-01",
+      "type": "state agency"
+    },
+    {
+      "id": "S43",
+      "name": "Tracking Federal Impact on Medi-Cal Eligibility (Jan/Mar 2027 dates)",
+      "publisher": "California Department of Health Care Services (DHCS)",
+      "url": "https://www.dhcs.ca.gov/tracking-federal-impact-medi-cal-eligibility/",
+      "date": "2026-10-18",
+      "type": "state agency"
+    },
+    {
+      "id": "S44",
+      "name": "Publication 550 — general investment income and expenses (not a Kalshi classification)",
+      "publisher": "Internal Revenue Service (IRS)",
+      "url": "https://www.irs.gov/publications/p550",
+      "date": "2026-10-18",
+      "type": "federal agency"
+    },
+    {
+      "id": "S45",
+      "name": "Eligibility for the Premium Tax Credit (conditions and exceptions)",
+      "publisher": "Internal Revenue Service (IRS)",
+      "url": "https://www.irs.gov/affordable-care-act/individuals-and-families/eligibility-for-the-premium-tax-credit",
+      "date": "2026-10-18",
+      "type": "federal agency"
+    },
+    {
+      "id": "S46",
+      "name": "Financial Help, APTC and Enhanced Silver cost-sharing",
+      "publisher": "Covered California",
+      "url": "https://www.coveredca.com/costs/financial-help/",
+      "date": "2026-10-18",
+      "type": "state exchange"
     }
   ]
 }

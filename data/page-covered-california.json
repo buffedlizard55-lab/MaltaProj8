@@ -9,17 +9,18 @@
     {
       "id": "ptc",
       "heading": "Federal premium tax credit rules",
-      "table": "ptc"
+      "table": "ptc",
+      "intro": "2026 and 2027 marketplace plan years have different 400% FPL one-person references ($62,600 and $63,840 respectively). Income alone does not establish PTC eligibility. <a href=\"accuracy-93fdc24b.html#limits\">Dated source table</a>."
     },
     {
       "id": "premiums",
-      "heading": "What you would pay on the benchmark Silver plan (2027)",
+      "heading": "2027 benchmark Silver contribution schedules (only for eligible enrollees)",
       "table": "premiums"
     },
     {
       "id": "state-subsidy",
       "heading": "The California Premium Subsidy (state money)",
-      "note": "This is the part of the 2027 answer that is purely California. It applies on top of, not instead of, the federal credit.",
+      "note": "California's 2027 state help reaches 200% FPL for eligible marketplace enrollees; it supplements federal APTC, not an automatic plan for anyone disqualified from Medi-Cal. <a href=\"https://www.dhcs.ca.gov/wp-content/uploads/2026/09/MEDIL-I26-25.pdf\">DHCS notice</a>.",
       "table": "state-subsidy"
     },
     {

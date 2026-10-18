@@ -46,7 +46,7 @@
     {
       "program": "MAGI Medi-Cal, adult expansion",
       "coverage_year": 2027,
-      "poverty_guideline_reference_year": 2027,
+      "poverty_guideline_reference_year": null,
       "fpl_percent": 138,
       "annual_usd": null,
       "monthly_usd": null,

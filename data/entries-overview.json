@@ -2,21 +2,26 @@
   "tables": {
     "at-a-glance": [
       {
-        "item": "Your \"$0 income\" is almost certainly not $0 for health-program purposes",
-        "value": "Rental income, savings interest and trading income all count as household income",
-        "detail": "Medi-Cal and Covered California measure income using modified adjusted gross income (MAGI) — the tax-return concept. HealthCare.gov lists capital gains, investment income (interest and dividends), rental and royalty income, and self-employment income among the income types to count. The MAGI rules are the same ones written into 42 CFR 435.603, which California applies for most adults.",
-        "source": "S24",
-        "verified": true,
+        "item": "No wages does not establish zero countable healthcare income",
+        "value": "",
+        "detail": "DHCS lists taxable interest and taxable rental income as countable MAGI items; IRS rental rules determine allowable expenses. CFTC exchange status does not establish Kalshi tax characterization or this person's realized amount.",
+        "source": "S42",
+        "verified": false,
         "also": [
-          "S35"
-        ]
+          "S33",
+          "S44"
+        ],
+        "flag": "The individual's tax character, household size and actual countable monthly/annual amounts are unknown. Do not treat deposits or gross payouts as verified income."
       },
       {
-        "item": "If your MAGI is at or below 138% of the federal poverty level, Medi-Cal is the answer — $0 or low cost",
-        "value": "$22,025/yr ($1,836/mo) for a 1-person household, 2026",
-        "detail": "Most adults qualify for Medi-Cal with household income up to 138% FPL. For 2026 that is $22,025 a year for one person. You can apply any time of year, and the same application screens you for Medi-Cal and Covered California.",
-        "source": "S1",
-        "verified": true
+        "item": "2026 one-person MAGI Medi-Cal income reference (not a personal finding)",
+        "value": "$22,025/year; $1,836/month (2026)",
+        "detail": "California publishes these figures for a one-person household for 2026. Whether a particular adult qualifies depends on actual household and other eligibility facts; 2027 Medi-Cal FPL is not established here.",
+        "source": "S4",
+        "verified": true,
+        "also": [
+          "S31"
+        ]
       },
       {
         "item": "New federal law: Medicaid \"community engagement\" (work) requirement begins January 1, 2027",
@@ -27,47 +32,72 @@
       },
       {
         "item": "The $580 test does not require earned income",
-        "value": "\"an income from any source of at least $580 (before taxes)\"",
-        "detail": "The member notice DHCS mails to Medi-Cal members says an income \"from any source\" of at least $580 in any month since your last renewal satisfies the rule. County policy guidance describes it as total gross income, and notes that for fluctuating income (dividends, retirement income, and similar) you can average the prior 6 months. California law defines the test using MAGI-based financial methods.",
-        "source": "S12",
-        "verified": true
+        "value": "$580 total monthly MAGI-based household income; no wages-only gate",
+        "detail": "California Welfare & Institutions Code §14005.69(e)(6) uses MAGI-based financial methods for the household. DHCS's member notice says income \"from any source\"; earlier county guidance uses \"gross\" but was preliminary. Averaging under §(e)(7) is reserved for seasonal workers; actual qualification is unknown.",
+        "source": "S13",
+        "verified": true,
+        "also": [
+          "S15",
+          "S12"
+        ]
       }
     ],
     "decision": [
       {
-        "item": "Household income at or below 138% FPL ($22,025 for 1 person)",
-        "value": "Medi-Cal (full scope, no premium for most)",
-        "detail": "Medi-Cal covers health, dental and vision. Apply any time of year. If you are 19–64 you are in the MAGI New Adult Group, which is subject to the work requirement starting 1/1/2027 and to six-month renewals.",
-        "source": "S7",
-        "verified": true
+        "item": "If otherwise eligible: 2026 MAGI Medi-Cal one-person 138% limit",
+        "value": "2026 reference: $22,025/year; $1,836/month",
+        "detail": "MAGI Medi-Cal may be available without wages or a property limit in the applicable group; no individual eligibility is assumed. Work rule starts Jan 2027 for affected adults; six-month financial eligibility checks begin Mar 2027.",
+        "source": "S4",
+        "verified": true,
+        "also": [
+          "S43"
+        ]
       },
       {
-        "item": "Household income above 138% FPL and at or below 400% FPL",
-        "value": "Covered California with federal premium tax credit",
-        "detail": "Federal premium tax credits require household income of at least 100% and not more than 400% of the FPL. Add the California Premium Subsidy (state money) if your income is at or below 200% FPL in 2027.",
-        "source": "S25",
-        "verified": true
+        "item": "Marketplace plan: federal premium help only if all criteria are met",
+        "value": "2026 400% FPL: $62,600; 2027: $63,840 (one person)",
+        "detail": "Different FPL reference years apply. Annual household MAGI and other IRS tax-credit eligibility conditions control; no automatic APTC throughout a 138–400% band. 2027 state premium assistance extends to 200% FPL ($31,920 one person) for eligible enrollees.",
+        "source": "S41",
+        "verified": true,
+        "also": [
+          "S6",
+          "S45",
+          "S9"
+        ]
       },
       {
-        "item": "Household income above 400% FPL",
-        "value": "Unsubsidized Covered California coverage",
-        "detail": "The 2026 FPL chart lists \"400+% FPL = Unsubsidized Coverage\". No premium tax credit; you pay the full premium.",
-        "source": "S6",
-        "verified": true
+        "item": "Marketplace plan above the applicable plan-year subsidy reference",
+        "value": "Plan-specific full-price quote — not available here",
+        "detail": "The 2026 one-person marketplace 400% FPL reference is $62,600; 2027 is $63,840. A plan can be purchased subject to enrollment rules, but a personal quote is not provided by the FPL chart.",
+        "source": "S41",
+        "verified": true,
+        "also": [
+          "S6",
+          "S45"
+        ]
       },
       {
-        "item": "Household income below 100% FPL ($15,960 for 1 person)",
-        "value": "Medi-Cal — no marketplace subsidy available",
-        "detail": "The IRS states a premium tax credit requires household income of at least 100% of the FPL. Below that, the answer in California is Medi-Cal, not a marketplace plan.",
-        "source": "S25",
-        "verified": true
+        "item": "Income below marketplace 100% FPL, or Medicaid unavailable for other reasons",
+        "value": "Medi-Cal screening; exceptions to the federal PTC floor can apply",
+        "detail": "A zero/low-income applicant is not automatically in an expansion aid code. IRS lists special circumstances below 100% FPL; why Medicaid is unavailable matters, especially a community-engagement failure.",
+        "source": "S45",
+        "verified": true,
+        "also": [
+          "S31",
+          "S12"
+        ]
       },
       {
-        "item": "Household income 0%–138% FPL but you are not eligible for Medi-Cal for another reason",
-        "value": "Covered California premium contribution is 0% of income",
-        "detail": "The 2027 FPL chart shows the premium contribution for the benchmark Silver plan is 0% of household income below 138% FPL and from 138% to 150% FPL.",
-        "source": "S6",
-        "verified": true
+        "item": "Marketplace assistance after other Medi-Cal ineligibility",
+        "value": "",
+        "detail": "The 2027 FPL chart shows percentages for eligible applicants, not a guarantee for everyone denied Medi-Cal. DHCS warns of lost marketplace help after work-rule disqualification.",
+        "source": "S12",
+        "verified": false,
+        "flag": "No blanket 0%-premium marketplace fallback exists. Work-rule Medicaid disqualification may bar Covered California financial assistance; personal outcome depends on the reason for denial and all IRS/marketplace criteria.",
+        "also": [
+          "S45",
+          "S6"
+        ]
       }
     ],
     "work-summary": [
@@ -87,10 +117,13 @@
       },
       {
         "item": "Way 1 — income",
-        "value": "$580 in a month (or averaged over 6 months if income fluctuates)",
-        "detail": "\"Have an income from any source of at least $580 (before taxes) in any month since your last renewal.\" Federal minimum wage $7.25 × 80 hours = $580.",
-        "source": "S12",
-        "verified": true
+        "value": "$580 monthly MAGI-based household income; seasonal averaging only for seasonal workers",
+        "detail": "At application the previous month is assessed; at redetermination, a month since the previous determination. California §14005.69(e)(6)–(7) limits the prior-six-month average to seasonal workers. The individual's countable amount is unknown.",
+        "source": "S13",
+        "verified": true,
+        "also": [
+          "S15"
+        ]
       },
       {
         "item": "Way 2 — hours",
@@ -101,10 +134,13 @@
       },
       {
         "item": "Way 3 — school",
-        "value": "Enrolled at least part time",
-        "detail": "\"Go to school at least part time in any month since your last renewal.\" Students attending less than part time can combine class and school-activity hours with work, community service or job training.",
-        "source": "S12",
-        "verified": true
+        "value": "Enrolled at least half-time in a qualifying program",
+        "detail": "The statutory half-time enrollment alternative depends on program rules. Do not equate plain-language \"part time\" with every part-time credit load.",
+        "source": "S13",
+        "verified": true,
+        "also": [
+          "S15"
+        ]
       },
       {
         "item": "Way 4 — exemption or short-term hardship",
@@ -115,10 +151,13 @@
       },
       {
         "item": "When it is checked",
-        "value": "One month before your application month; then at each 6-month renewal",
-        "detail": "At a renewal, participation in one or more months since the last determination (they need not be consecutive) is enough.",
-        "source": "S10",
-        "verified": true
+        "value": "Preceding month at application; any month since determination at redetermination",
+        "detail": "The two work-rule look-backs differ. DHCS dates the new six-month financial eligibility checks to March 1, 2027; the work-rule start is January 1, 2027.",
+        "source": "S13",
+        "verified": true,
+        "also": [
+          "S43"
+        ]
       },
       {
         "item": "If you do not comply",
