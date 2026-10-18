@@ -39,5 +39,16 @@ def main():
         pages.append({'page':str(rel),'data_rows':len(parser.rows),'rows_without_direct_official_link':count})
     report={'date':'2026-10-18','scope':'All published HTML data rows; direct external official-domain link presence ONLY. Links via source registers are not resolved. A link is not proof of content, availability, or legal accuracy. Missing links include editorial/status rows, not necessarily substantive errors.','pages':pages,'total_data_rows':total,'rows_without_direct_official_link':len(missing),'needs_review':missing}
     out=ROOT/'audit-6fc18b58.json'; out.write_text(json.dumps(report,indent=2)+'\n')
+    # Publish every exception as a readable list, not an unsupported claim table.
+    from html import escape
+    page = ROOT/'audit-6fc18b58.html'
+    if page.exists():
+        text = page.read_text()
+        start = '<!-- row-inventory:start -->'; end = '<!-- row-inventory:end -->'
+        if start in text and end in text:
+            items = ''.join('<li><a href="'+escape(r['page'], quote=True)+'">'+escape(r['page'])+'</a>, data row '+str(r['data_row'])+': '+escape(r['claim_excerpt'])+'</li>' for r in missing)
+            block = '<p><strong>'+str(len(pages))+' pages / '+str(total)+' data rows / '+str(len(missing))+' rows without a direct official-domain row link.</strong> These are structural review flags, not established factual errors. Each excerpt below identifies a row for review. No missing authority is invented.</p><details><summary>Show every row-link exception ('+str(len(missing))+')</summary><ol>'+items+'</ol></details>'
+            a=text.index(start)+len(start); b=text.index(end,a)
+            page.write_text(text[:a]+'\n'+block+'\n'+text[b:])
     print(f"{len(pages)} pages; {total} data rows; {len(missing)} lack direct official-domain row links. Full inventory: {out.name}")
 if __name__=='__main__': main()

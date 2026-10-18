@@ -225,7 +225,12 @@
     {
       "page": "verification.html",
       "data_rows": 45,
-      "rows_without_direct_official_link": 17
+      "rows_without_direct_official_link": 16
+    },
+    {
+      "page": "verify-9285d712.html",
+      "data_rows": 22,
+      "rows_without_direct_official_link": 10
     },
     {
       "page": "verify-95219c64.html",
@@ -238,8 +243,8 @@
       "rows_without_direct_official_link": 0
     }
   ],
-  "total_data_rows": 870,
-  "rows_without_direct_official_link": 71,
+  "total_data_rows": 892,
+  "rows_without_direct_official_link": 80,
   "needs_review": [
     {
       "page": "california.html",
@@ -616,15 +621,6 @@
     },
     {
       "page": "verification.html",
-      "data_row": 12,
-      "claim_excerpt": "Cost sharing $35/service for expansion 100-138% FPL from Oct 1 2028 (\u00a771109) Cost-sharing provision KFF summary of health provisions + congress.gov \u00a771109 text \u2713 Verified KFF \u2192",
-      "external_links": [
-        "https://www.kff.org/medicaid/health-provisions-in-the-2025-federal-budget-reconciliation-law/"
-      ],
-      "status": "needs review: no direct official-domain link in this row"
-    },
-    {
-      "page": "verification.html",
       "data_row": 21,
       "claim_excerpt": "4.8M in M1 scope; 1.1M projected loss (DHCS May 2026 via CHCF) Enrollment scope + loss projection CHCF Policy @ a Glance Jun 2026 citing DHCS May 2026 estimate: \"4.8 million ... subject\" / \"1.1 million ... expected to lo",
       "external_links": [
@@ -736,6 +732,83 @@
       "page": "verification.html",
       "data_row": 45,
       "claim_excerpt": "DHCS M1 enrollment figure shifts slightly by month in different DHCS documents (4.8M vs. \"up to 5M\" depending on snapshot) Figure is point-in-time, not fixed Site cites \"as of May 2026\" with CHCF source",
+      "external_links": [],
+      "status": "needs review: no direct official-domain link in this row"
+    },
+    {
+      "page": "verify-9285d712.html",
+      "data_row": 10,
+      "claim_excerpt": "C-10 No IRS Revenue Ruling, Regulation, Notice, PLR or FAQ specific to Kalshi/prediction-market event contracts as of Oct 2026 \u2014 classification (capital vs gambling vs \u00a71256 vs ordinary) is practitioner argument, not IRS",
+      "external_links": [
+        "https://www.monacocpa.cpa/post/prediction-market-taxes-kalshi-polymarket-robinhood",
+        "https://camusocpa.com/kalshi-tax-reporting/"
+      ],
+      "status": "needs review: no direct official-domain link in this row"
+    },
+    {
+      "page": "verify-9285d712.html",
+      "data_row": 12,
+      "claim_excerpt": "C-12 Site builds clean (46 pages, 264 extended-analysis rows, 40 official sources) with all internal links/anchors resolving; build + verification scripts pass Ran python3 scripts/build_site.py \u2192 11 extended pages + 8 sh",
+      "external_links": [
+        "https://github.com/buffedlizard55-lab/MaltaProj8/actions"
+      ],
+      "status": "needs review: no direct official-domain link in this row"
+    },
+    {
+      "page": "verify-9285d712.html",
+      "data_row": 13,
+      "claim_excerpt": "C-13 GitHub Pages live from main / (root) legacy type Existing Pages publish mode is legacy branch build; .github/workflows/pages.yml + research.yml + coverage-guide.yml provide PR/branch validation \u2014 no secrets required",
+      "external_links": [
+        "https://github.com/buffedlizard55-lab/MaltaProj8/settings/pages"
+      ],
+      "status": "needs review: no direct official-domain link in this row"
+    },
+    {
+      "page": "verify-9285d712.html",
+      "data_row": 16,
+      "claim_excerpt": "C-16 .github/workflows/pages.yml branches: [main, arena/5d32bca3-maltaproj8] \u2014 only one prior session's branch triggered the deploy workflow branches: [main] on push (deploy on merge to main only \u2014 the correct long-term ",
+      "external_links": [],
+      "status": "needs review: no direct official-domain link in this row"
+    },
+    {
+      "page": "verify-9285d712.html",
+      "data_row": 17,
+      "claim_excerpt": "N-1 Gross vs MAGI income wording. AB 2161 (WIC 14005.69(e)(6)) says \"total monthly income, using MAGI-based financial methods\"; ACWDL 25-30 says \"total gross income (including earned, UI, SDI, retirement, dividends, etc.",
+      "external_links": [],
+      "status": "needs review: no direct official-domain link in this row"
+    },
+    {
+      "page": "verify-9285d712.html",
+      "data_row": 18,
+      "claim_excerpt": "N-2 March 2027 vs Jan 1 2027. MEDIL I26-25 \"Dear Medi-Cal Member\" letter says \"these rules will not go into effect until March 2027\" while ACWDL 25-30 + AB 2161 + DHCS Medi-Cal Changes page say Jan 1 2027 (with renewals ",
+      "external_links": [],
+      "status": "needs review: no direct official-domain link in this row"
+    },
+    {
+      "page": "verify-9285d712.html",
+      "data_row": 19,
+      "claim_excerpt": "N-3 \"Lead plaintiff\" wording for Massachusetts v. Oz (23+ states + DC, filed Jun 29 2026 challenging the IFC) CA is a participant in the multi-state challenge; the exact caption role (\"lead\" vs signatory) varies by press",
+      "external_links": [],
+      "status": "needs review: no direct official-domain link in this row"
+    },
+    {
+      "page": "verify-9285d712.html",
+      "data_row": 20,
+      "claim_excerpt": "N-4 $1.1B GF 2026-27 for HR1 Medi-Cal implementation costs Characterization depends on budget vintage; the figure comes from the Governor's Jan 2026 proposal via CalHHS webinar/LAO analysis. Cited with source and flagged",
+      "external_links": [],
+      "status": "needs review: no direct official-domain link in this row"
+    },
+    {
+      "page": "verify-9285d712.html",
+      "data_row": 21,
+      "claim_excerpt": "N-5 Kalshi federal tax treatment still un-ruled No IRS ruling exists as of Oct 2026 \u2014 site correctly does not assert one. Every Kalshi claim is presented as a flagged possibility with practitioner citations, and F-01\u2026F-0",
+      "external_links": [],
+      "status": "needs review: no direct official-domain link in this row"
+    },
+    {
+      "page": "verify-9285d712.html",
+      "data_row": 22,
+      "claim_excerpt": "N-6 Non-official context links. A handful of rows cite KFF, CHCF, CalMatters/LA Times (for coverage-loss projections only) and practitioner tax commentary (for the documented absence of IRS guidance on Kalshi). Each is e",
       "external_links": [],
       "status": "needs review: no direct official-domain link in this row"
     },
