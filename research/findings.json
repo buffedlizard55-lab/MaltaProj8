@@ -588,7 +588,7 @@
           "id": "X3",
           "title": "Child caregiver",
           "value": "Parent, guardian, caretaker relative or qualifying family caregiver of a dependent child age 13 or younger is an exclusion category.",
-          "note": "13 is included. A public DHCS overview elsewhere says “under 13”; the CMS rule and detailed current changes page support 13 and younger. Exact family-caregiver relationship criteria still matter.",
+          "note": "13 is included; CMS and the detailed DHCS changes page support 13 and younger. Exact family-caregiver relationship criteria still matter.",
           "sources": [
             "S1",
             "S3",
