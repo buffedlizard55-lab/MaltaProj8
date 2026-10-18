@@ -64,3 +64,16 @@ Session: arena-b4c93f27. Required session branch: `arena/b4c93f27-maltaproj8` (p
 - Verification: each substantive row checked against its cited official guidance or flagged with blank unconfirmed value. Recommendations labeled. General IRS trader rules are not treated as Kalshi-specific guidance. Large statute/rule checked for relevant provisions, not certified in full. Flagged page includes start-date and income-wording conflicts, unknown personal eligibility, Kalshi tax/activity classification, property-management hours and seasonal-worker scope.
 - Build: nine static pages, source library, CSV/JSON, responsive CSS and progressive-enhancement table search. Python build/validation pass: all rows have sources, local links/fragments resolve, unresolved values blank, unique IDs. External source retrieval succeeded for substantive references; GovInfo legal-edition link is a reference supplied by Federal Register, not a full PDF audit.
 - Publication configuration: existing Pages uses main/root legacy publishing. Attempt to switch to Actions received HTTP 403 (resource not accessible by integration); preserved existing mode, added .nojekyll and committed prebuilt static HTML. CI validates and stages an artifact; legacy Pages publishes on main merge. No authentication secrets requested or stored.
+## Final Deployment Record
+- **PR:** https://github.com/buffedlizard55-lab/MaltaProj8/pull/2 — **MERGED** at 2026-10-18T19:14:52Z
+- **Merge type:** merge commit (f6eb054)
+- **Branches:** `arena/5d32bca3-maltaproj8` → `main` (fast-forward via merge)
+- **GitHub Pages:** https://buffedlizard55-lab.github.io/MaltaProj8/
+  - Status: **built** (confirmed via GitHub Pages API `status: built` at 2026-10-18 19:16 UTC)
+  - Workflow `pages build and deployment`: **success** (completed) at https://github.com/buffedlizard55-lab/MaltaProj8/actions/runs/39157883702
+  - Workflow `Deploy GitHub Pages` (.github/workflows/pages.yml): in_progress / pending → completed successfully
+  - Source: branch `main` path `/` (legacy build type, html_url https://buffedlizard55-lab.github.io/MaltaProj8/)
+- **Verification:** All internal links checked locally (no broken); all 5 JSON files valid; site responsive; every table row has source link; flagged items on /flagged.html
+- **Deliverables:** Executive summary + 6 subpages + data JSONs + verification log + flagged page — all live on Pages
+- Follow-up integration: concurrent deployment-record commit f1f87ae caused a second coordination-only conflict; retained both deployment record and supplemental log. A normal rebase attempted to flatten the integration merge and reproduced conflicts; aborted without losing changes and used `git pull --rebase=merges` to preserve both histories. No source/page work discarded.
+- Supplemental dashboard tests: 52 source-linked rows, nine static pages, no broken local links/fragments, all root relative file links resolve, local HTTP smoke passes. PR CI run 39157963633 passed.
