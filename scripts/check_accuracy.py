@@ -17,8 +17,17 @@ from urllib.parse import urlparse
 ROOT = Path(__file__).resolve().parents[1]
 OWNED_PAGES = (
     "index.html",
-    "accuracy-93fdc24b.html",
+    "executive-summary.html",
+    "work-rules.html",
+    "coverage-options.html",
+    "findings.html",
+    "verification.html",
     "flagged.html",
+    "archives.html",
+    "accuracy-93fdc24b.html",
+    "law.html",
+    "california.html",
+    "exemptions.html",
     "income.html",
     "pathways.html",
     "overview.html",
@@ -165,6 +174,13 @@ def main() -> None:
         print("Other independently maintained pages still have direct-row-link gaps (not certified here):")
         for rel, count in legacy:
             print(f"  {rel}: {count}")
+        hub = (ROOT / "flagged.html").read_text(encoding="utf-8")
+        total = sum(count for _rel, count in legacy)
+        if f"{total} archived table rows" not in hub:
+            errors.append("Flagged hub does not display the current archival row-link gap total")
+        for rel, _count in legacy:
+            if f'href="{rel}"' not in hub:
+                errors.append(f"Flagged hub does not link to archived gap page {rel}")
     if errors:
         for error in errors:
             print("ERROR:", error)

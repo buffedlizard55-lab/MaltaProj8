@@ -8,9 +8,9 @@ Rules enforced (matching the build guard and the site's published promise):
   3. an unverified record has an empty value (never inferred, never filled);
   4. source ids, finding ids and flag ids are unique and sequential;
   5. every source URL is https and on an official domain allowlist;
-  6. every source is used by at least one record (no dead register entries);
-  7. generated pages exist, contain the expected table ids, and contain no
-     None/NaN/TODO placeholders.
+  6. warn on registered sources not used by a factual record;
+  7. all eight generated pages exist, have direct official row citations,
+     unique ids, working table filters and no None/NaN/TODO placeholders.
 
 Exit code 0 = pass. Non-zero = failure, with the reasons printed.
 Usage: python3 scripts/check_core.py
@@ -42,7 +42,6 @@ OFFICIAL_HOSTS = (
     "healthcare.gov",
     "house.gov",
     "hrsa.gov",
-    "kalshi.com",
 )
 
 PAGES = {
@@ -100,7 +99,7 @@ def main():
             if not s.get(field):
                 errors.append(f"{sid}: missing {field}")
         url = s.get("url", "")
-        if not host_ok(url):
+        if not host_ok(url) or s.get("official") is not True:
             errors.append(f"{sid}: not an official https URL: {url}")
         if url in seen_urls:
             errors.append(f"{sid}: duplicate URL also used by {seen_urls[url]}")
@@ -122,6 +121,23 @@ def main():
                 errors.append(f"{section}/{label}: unknown source {sid}")
             else:
                 used.add(sid)
+            for extra in row.get("also", []):
+                if extra not in sources:
+                    errors.append(f"{section}/{label}: unknown additional source {extra}")
+                else:
+                    used.add(extra)
+
+    # Cross-program FPL years must not silently be interchanged by the builder.
+    kpis = {r["label"]: r for r in data["key_numbers"]}
+    cc26 = kpis.get("Covered CA subsidy cliff (single, 2026)", {})
+    cc27 = kpis.get("Covered CA 400% reference (single, 2027)", {})
+    if cc26.get("value") != "$62,600 / year" or cc26.get("source") != "S41":
+        errors.append("2026 marketplace 400% FPL must use the $62,600 Covered CA plan-year source")
+    if cc27.get("value") != "$63,840 / year" or cc27.get("source") != "S43":
+        errors.append("2027 marketplace 400% FPL must be separately labelled $63,840")
+    seasonal = next((p for p in data["pathways"] if p["id"] == "P4"), {})
+    if "seasonal worker" not in seasonal.get("what", "") or "lumpy Kalshi" not in seasonal.get("fit", ""):
+        errors.append("seasonal averaging must not be offered solely for fluctuating trading")
 
     for row in data["findings"]:
         fid = row.get("id", "?")
@@ -178,6 +194,15 @@ def main():
         if f'id="{table_id}"' not in text:
             errors.append(f"{name}: missing table id {table_id}")
 
+    # A registered source elsewhere on the page is not a citation for this row.
+    # Navigational directories are lists; every factual table row needs its own
+    # official primary link. Importing here also checks unique IDs/filter targets.
+    from check_accuracy import audit_page
+    for name in (*PAGES, "archives.html"):
+        if os.path.exists(os.path.join(ROOT, name)):
+            _count, missing = audit_page(name)
+            errors.extend(f"{name}: {issue}" for issue in missing)
+
     return report(errors, data, warnings)
 
 
@@ -193,7 +218,7 @@ def report(errors, data=None, warnings=None):
           f"{len(data['flags'])} flags, {len(data['pathways'])} pathways, "
           f"{len(data['options'])} coverage options, {len(data['timeline'])} timeline events.")
     print("      All source ids resolve, all verified rows carry values, all unverified rows are blank,")
-    print("      every URL is official https, every source is used, and all 7 pages are present.")
+    print("      every registered URL is official https, all 8 pages are present, and every factual table row has a direct official link.")
     return 0
 
 

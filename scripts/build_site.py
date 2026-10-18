@@ -454,6 +454,11 @@ INTEGRATION_LINKS = [
 ]
 
 
+def is_core_generated(html):
+    """The primary core owns these pages; do not append stale legacy blocks."""
+    return 'generated from <a href="data/core.json">' in html
+
+
 def patch_shared_nav():
     """Add the section links to the shared top navigation.
 
@@ -467,6 +472,8 @@ def patch_shared_nav():
         if not os.path.exists(path):
             continue
         html = read(path)
+        if is_core_generated(html):
+            continue
         start = html.find('<nav class="nav"')
         end = html.find("</nav>", start)
         if start == -1 or end == -1:
@@ -504,6 +511,8 @@ def patch_index(sources):
     if not os.path.exists(path):
         return False
     html = read(path)
+    if is_core_generated(html):
+        return False
     block = build_page_index_block()
     start = "<!-- PAGE-INDEX:START -->"
     end = "<!-- PAGE-INDEX:END -->"
@@ -524,8 +533,10 @@ def patch_flagged(sources):
     path = os.path.join(OUT, "flagged.html")
     if not os.path.exists(path):
         return False
-    flags = load_json("flagged.json")
     html = read(path)
+    if is_core_generated(html):
+        return False
+    flags = load_json("flagged.json")
     block = []
     block.append('<h3 class="section-title">🚩 Extended analysis — flagged items (W-01 to W-13)</h3>')
     block.append('<div class="alert warn">Independently authored extended-analysis flags. Some older wording is broader than the enacted MAGI-based methodology. If claims differ, the <a href="accuracy-93fdc24b.html">dated accuracy update</a> and newer official text govern the current guide.</div>')
