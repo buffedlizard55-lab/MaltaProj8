@@ -52,6 +52,7 @@ PRIMARY_NAV = [
     ("overview.html", "Extended Analysis"),
     ("research/index.html", "Research Dashboard"),
     ("coverage-guide/index.html", "Coverage Guide"),
+    ("docs/index.html", "Docs Dashboard"),
     ("flagged.html", "Flagged for Review"),
 ]
 
@@ -119,6 +120,7 @@ PAGE_INDEX = [
             ("flagged.html", "Flagged for Review", "Everything that could not be confirmed, and where two official sources disagree."),
             ("research/index.html", "Research dashboard", "A second, independently sourced dashboard: 52 source-linked findings."),
             ("coverage-guide/index.html", "Coverage guide", "A third, independently sourced dashboard: 65 findings with locators and excerpts."),
+            ("docs/index.html", "Docs dashboard", "A fourth dashboard: 10 pages, 76 sourced rows on income taxes, coverage and the new laws."),
         ],
     ),
 ]
@@ -431,15 +433,23 @@ def patch_between(text, start_marker, end_marker, block):
 # Links added to the shared top navigation so that every section of the site
 # is reachable from every page. The two supplemental dashboards were requested
 # by the sessions that built them.
+NAV_START = "<!-- integration-links -->"
+NAV_END = "<!-- /integration-links -->"
+
 INTEGRATION_LINKS = [
     ("overview.html", "Extended Analysis"),
     ("research/index.html", "Research Dashboard"),
     ("coverage-guide/index.html", "Coverage Guide"),
+    ("docs/index.html", "Docs Dashboard"),
 ]
 
 
 def patch_shared_nav():
-    """Add the section links to the shared top navigation."""
+    """Add the section links to the shared top navigation.
+
+    Only the navigation block is touched, and the inserted links are wrapped in
+    markers so the patch can be re-run without duplicating them.
+    """
     changed = []
     block = "".join('<a href="{}">{}</a>'.format(href, label) for href, label in INTEGRATION_LINKS)
     for name in SHARED_PAGES:
@@ -447,11 +457,16 @@ def patch_shared_nav():
         if not os.path.exists(path):
             continue
         html = read(path)
-        if 'href="coverage-guide/index.html"' in html:
+        start = html.find('<nav class="nav"')
+        end = html.find("</nav>", start)
+        if start == -1 or end == -1:
             continue
-        if "</nav>" not in html:
-            continue
-        html = html.replace("</nav>", block + "</nav>", 1)
+        nav = html[start:end]
+        for href, _label in INTEGRATION_LINKS:
+            nav = re.sub(r'<a href="{}">[^<]*</a>\s*'.format(re.escape(href)), "", nav)
+        nav = nav.replace(NAV_START, "").replace(NAV_END, "")
+        nav = nav.rstrip() + "\n      " + NAV_START + block + NAV_END + "\n    "
+        html = html[:start] + nav + html[end:]
         write(path, html)
         changed.append(name)
     return changed
