@@ -1,0 +1,263 @@
+{
+  "task": "T4",
+  "owner": "c8487e35",
+  "verified_on": "2026-10-18",
+  "sections": [
+    {
+      "id": "laws",
+      "title": "The New Law — P.L. 119-21 (H.R.1, \"One Big Beautiful Bill\" / \"Working Families Tax Cut\") and What California Is Doing",
+      "blurb": "Signed July 4, 2025. Three provisions drive everything in this report: (1) expiry of enhanced ACA premium tax credits after 2025, (2) uncapped APTC repayment from the 2026 tax year, and (3) new Medicaid work/community-engagement requirements effective January 1, 2027. California's response is targeted state subsidy money and a specific implementation posture.",
+      "rows": [
+        {
+          "id": "LAW-01",
+          "topic": "The statute",
+          "finding": "H.R.1 (Public Law 119-21) was signed July 4, 2025. CMS refers to it as the \"Working Families Tax Cut\" (WFTC) legislation; it is the budget-reconciliation law containing the Medicaid and ACA tax-credit changes described on this page.",
+          "value": "P.L. 119-21, July 4, 2025",
+          "effective": "Provisions phased 2026–2028",
+          "status": "verified",
+          "source_label": "Congress.gov — H.R.1 (119th Congress); CMS press release Jun 1, 2026",
+          "source_url": "https://www.congress.gov/bill/119th-congress/house-bill/1",
+          "note": "CMS release: https://www.cms.gov/newsroom/press-releases/cms-launches-nationwide-framework-implement-medicaid-work-requirements"
+        },
+        {
+          "id": "LAW-02",
+          "topic": "Enhanced premium tax credits expired",
+          "finding": "The ARPA (2021)/IRA (2022) enhanced PTCs — which raised credit amounts, set 0% contributions up to 150% FPL and removed the 400% FPL cap — expired December 31, 2025 and were not renewed. For 2026 federal law returns to the pre-2021 structure (credit ends at 400% FPL).",
+          "value": "Expired 12/31/2025",
+          "effective": "Jan 1, 2026",
+          "status": "verified",
+          "source_label": "IRS — Working Families Tax Cuts; Covered California — Important Changes",
+          "source_url": "https://www.irs.gov/newsroom/working-families-tax-cuts",
+          "note": "Covered CA: https://www.coveredca.com/important-changes — \"that help ended on Dec. 31, 2025.\""
+        },
+        {
+          "id": "LAW-03",
+          "topic": "APTC repayment cap repealed",
+          "finding": "For tax years beginning after Dec 31, 2025, there is no longer a cap on repaying excess advance premium tax credit. If your actual MAGI greatly exceeds your estimate, the full excess is repaid via Form 8962.",
+          "value": "Uncapped clawback from TY2026",
+          "effective": "Tax year 2026 (filed 2027)",
+          "status": "verified",
+          "source_label": "IRS — Working Families Tax Cuts (\"Removal of limitations on repayment…\")",
+          "source_url": "https://www.irs.gov/newsroom/working-families-tax-cuts",
+          "note": "Covered CA states the same on its Important Changes page."
+        },
+        {
+          "id": "LAW-04",
+          "topic": "Medicaid work requirement — what it is",
+          "finding": "Section 71119 of H.R.1 adds a work/community-engagement condition for certain Medicaid adults: non-pregnant adults 19–64, not on Medicare, eligible under the ACA adult-expansion group. To enroll or renew they must meet ONE of: ≥80 hours in a month of work, community service or a work program (or any combination); enrollment at least half-time in an educational program; OR monthly income not less than 80 × the federal minimum wage ($580/month in 2026).",
+          "value": "80 hrs/mo or $580/mo or half-time school",
+          "effective": "Jan 1, 2027 (states may go earlier)",
+          "status": "verified",
+          "source_label": "CMS — Medicaid Community Engagement Requirement IFR fact sheet (CMS-2454-IFC)",
+          "source_url": "https://www.cms.gov/newsroom/fact-sheets/medicaid-community-engagement-requirement-certain-individuals-interim-final-rule-comment-period-cms",
+          "note": "CMS Interim Final Rule issued June 1, 2026 with comment period. Applies to the 43–44 expansion states incl. California."
+        },
+        {
+          "id": "LAW-05",
+          "topic": "How compliance is tested — timing",
+          "finding": "States verify at application and at renewal (optionally more often). New applicants must have met the requirement for at least the one month before their application month; current enrollees must show one or more qualifying months between renewals. If the state can't verify, a 30-day cure window follows a non-compliance notice; if disenrolled, the person may reapply at any time and is re-assessed.",
+          "value": "1-month look-back; 30-day cure; reapply anytime",
+          "effective": "From Jan 1, 2027",
+          "status": "verified",
+          "source_label": "CMS — IFR fact sheet (\"Assessing Community Engagement\")",
+          "source_url": "https://www.cms.gov/newsroom/fact-sheets/medicaid-community-engagement-requirement-certain-individuals-interim-final-rule-comment-period-cms",
+          "note": ""
+        },
+        {
+          "id": "LAW-06",
+          "topic": "Who is EXEMPT",
+          "finding": "Exempt from the requirement: pregnant/postpartum; disabled or medically frail; parents/caretakers/family caregivers of a dependent child ≤13 or a person with a disability; former foster youth (under 26); American Indians/Alaska Natives; veterans with a total disability rating; people meeting TANF work rules or in SNAP-able households not exempt from SNAP work rules; people in drug/alcohol treatment; current inmates. States may also grant short-term hardship exceptions (inpatient care, county unemployment ≥8% or 1.5× national, disasters, travel for specialized care).",
+          "value": "11 exemption categories + hardship options",
+          "effective": "From Jan 1, 2027",
+          "status": "verified",
+          "source_label": "CMS — IFR fact sheet (Exemptions table)",
+          "source_url": "https://www.cms.gov/newsroom/fact-sheets/medicaid-community-engagement-requirement-certain-individuals-interim-final-rule-comment-period-cms",
+          "note": ""
+        },
+        {
+          "id": "LAW-07",
+          "topic": "Does the $580 \"income\" test accept NON-wage income?",
+          "finding": "The CMS fact sheet phrases the alternative as \"monthly income that is not less than the federal minimum wage multiplied by 80 hours\" — not explicitly \"earned income.\" Whether rent, interest and net trading income satisfy it is not resolved on the pages published in this review. Treat as PLAUSIBLE-BUT-UNCONFIRMED until DHCS's California procedure letters (MEDIL/ACWDL series) say otherwise.",
+          "value": "(blank — unconfirmed)",
+          "effective": "—",
+          "status": "flagged",
+          "source_label": "CMS — IFR fact sheet; DHCS ACWDL 25-30",
+          "source_url": "https://www.dhcs.ca.gov/wp-content/uploads/2026-04-25-30.pdf",
+          "note": "Flag FL-02. Track DHCS implementation letters and the Federal Register IFR text (CMS-2454-IFC) for the definition of \"income\" used for this test."
+        },
+        {
+          "id": "LAW-08",
+          "topic": "Does full-time trading count as \"work\" (80 hours)?",
+          "finding": "The federal fact sheet lists employment, work programs, community service and education. Whether self-directed securities/event-contract trading is reportable \"work\" is not addressed in the sources verified here. Do not assume it counts.",
+          "value": "(blank — unconfirmed)",
+          "effective": "—",
+          "status": "flagged",
+          "source_label": "CMS — IFR fact sheet (Work Requirement Activities)",
+          "source_url": "https://www.cms.gov/newsroom/fact-sheets/medicaid-community-engagement-requirement-certain-individuals-interim-final-rule-comment-period-cms",
+          "note": "Flag FL-03. DHCS will publish California verification procedures; request confirmation via county office or (800) 300-1506 if you plan to rely on this."
+        },
+        {
+          "id": "LAW-09",
+          "topic": "Marketplace financial help: NO work requirement",
+          "finding": "The new work condition attaches to the Medicaid adult-expansion group. Covered California's published eligibility criteria for plans and financial help (residency, citizenship, household size, income) contain no work or employment condition for 2026–2027.",
+          "value": "Covered CA aid is work-test-free",
+          "effective": "2026–2027",
+          "status": "verified",
+          "source_label": "Covered California — Eligibility Guidelines; CMS fact sheet (scope = Medicaid adults)",
+          "source_url": "https://www.coveredca.com/enrollment/eligibility",
+          "note": "Framing: verified as \"no such criterion in published eligibility rules\" rather than a federal statement that none can ever exist."
+        },
+        {
+          "id": "LAW-10",
+          "topic": "California implementation posture",
+          "finding": "DHCS published Medi-Cal Eligibility Division Information Letter MEDIL I 25-18 (overview of H.R.1 provisions affecting Medi-Cal) and All-County Welfare Directors Letter ACWDL 25-30 (Apr 2026) instructing counties on the work requirement for the MAGI New Adult Group (aid code M1). DHCS's public Medi-Cal Changes site tells members most will see no changes; affected adults get six-month eligibility checks starting March 1, 2027. State agencies (e.g., Dept. of Developmental Services) are running preparation outreach.",
+          "value": "Rules in prep; 6-month checks Mar 1, 2027",
+          "effective": "2026–2027",
+          "status": "verified",
+          "source_label": "DHCS — Medi-Cal Changes; DHCS ACWDL 25-30; DDS CA notice",
+          "source_url": "https://www.dhcs.ca.gov/medi-cal/updates/medi-cal-changes/",
+          "note": "ACWDL 25-30: https://www.dhcs.ca.gov/wp-content/uploads/2026-04-25-30.pdf ; DDS: https://www.dds.ca.gov/newsletter/how-california-is-preparing-for-new-federal-work-requirements/"
+        },
+        {
+          "id": "LAW-11",
+          "topic": "California's affordability response (money, not litigation-free)",
+          "finding": "State budget actions replaced lapsed federal help for the lowest incomes: $190M HCARF for the 2026 California Premium Subsidy (≤165% FPL), raised to $300M for 2027 (≤200% FPL, ~500,000 projected recipients, ~200,000 with $0-premium Silver options). Covered CA's 2027 rate filing (avg +9.9% proposed vs +14% national median) is framed by the state as offsetting federal cuts.",
+          "value": "$190M (2026) → $300M (2027)",
+          "effective": "PY2026 & PY2027",
+          "status": "verified",
+          "source_label": "Covered CA press releases (Feb 26 & Jul 21, 2026); HBEX policy explainers",
+          "source_url": "https://hbex.coveredca.com/stakeholders/PDFs/2026-02_StatePremiumSub_PolicyExplainer-Final.pdf",
+          "note": "Explainer: https://hbex.coveredca.com/stakeholders/PDFs/2026-02_StatePremiumSub_PolicyExplainer-Final.pdf ; 2027: https://hbex.coveredca.com/stakeholders/PDFs/2026-03_StatePremiumSub2027_Insight_Final.pdf"
+        },
+        {
+          "id": "LAW-12",
+          "topic": "Programs for zero-income Californians not covered here",
+          "finding": "No separate California program grants health coverage on a \"$0 earned income\" basis beyond Medi-Cal/Covered CA (this is the primary route). County-only programs (e.g., My Health LA in LA County) exist but were not verified for statewide applicability in this review, so they are not asserted here.",
+          "value": "Medi-Cal IS the zero-earned-income route",
+          "effective": "Current",
+          "status": "flagged",
+          "source_label": "DHCS — Medi-Cal program pages",
+          "source_url": "https://www.dhcs.ca.gov/medi-cal/",
+          "note": "Flag FL-08 for county programs; tell DHCS/county if you need a county-specific safety net listed."
+        },
+        {
+          "id": "LAW-13",
+          "topic": "Federal individual mandate remains $0",
+          "finding": "The Tax Cuts and Jobs Act (Dec 2017) reduced the federal shared-responsibility payment to $0 for months after Dec 31, 2018 — no federal penalty for being uninsured, and no federal exemption filing needed. California's own mandate (next section) still applies to you.",
+          "value": "Federal penalty = $0 since 2019",
+          "effective": "Since TY2019",
+          "status": "verified",
+          "source_label": "IRS — Q&A on the individual shared responsibility provision",
+          "source_url": "https://www.irs.gov/affordable-care-act/individuals-and-families/questions-and-answers-on-the-individual-shared-responsibility-provision",
+          "note": "Also on CMS: https://www.cms.gov/marketplace/health-plans-issuers/minimum-essential-coverage"
+        },
+        {
+          "id": "LAW-14",
+          "topic": "Other 2027+ federal changes touching Medi-Cal (awareness)",
+          "finding": "DHCS's H.R.1 implementation plan warns of increased administrative workload and \"procedural/paperwork discontinuances,\" shorter retroactive-coverage windows, and more verification friction for everyone in the expansion group. Practical takeaway: keep addresses current, answer renewal mailers within the window, and keep proof of income status on file.",
+          "value": "Higher paperwork risk from 2027",
+          "effective": "2026–2027 rollout",
+          "status": "verified",
+          "source_label": "DHCS — Implementation Plan for New Federal Eligibility & Enrollment Changes (H.R.1)",
+          "source_url": "https://www.dhcs.ca.gov/federal-impacts/Documents/DHCS-HR1-Implementation-Plan.pdf",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "mandate",
+      "title": "California Individual Mandate (Exempt Surcharge) — Exemptions When You Have No Wages",
+      "blurb": "California requires minimum essential coverage (MEC) or a penalty on your state return. Coverage via Medi-Cal or a Marketplace plan satisfies it; several exemptions are income-based, which matters with zero wages.",
+      "rows": [
+        {
+          "id": "MND-01",
+          "topic": "The requirement",
+          "finding": "Since Jan 1, 2020 California residents (and spouses/domestic partners and dependents) must have MEC each month, hold an exemption, or pay the Individual Shared Responsibility penalty with the state return. Medi-Cal and Covered CA plans are MEC — covered all year means simply checking the box on Form 540 (line 92 for 2025).",
+          "value": "MEC or exemption or penalty",
+          "effective": "2020–present",
+          "status": "verified",
+          "source_label": "FTB — Personal Health Care Mandate",
+          "source_url": "https://www.ftb.ca.gov/file/personal/filing-situations/health-care-mandate/personal.html",
+          "note": ""
+        },
+        {
+          "id": "MND-02",
+          "topic": "Penalty amounts (tax year 2025, latest published figures)",
+          "finding": "Greater of: $950 per uninsured adult + $475 per dependent child under 18 (capped at 3× the adult amount = $2,850 household cap for families) OR 2.5% of gross income above the federal filing threshold. FTB example: an individual making less than $57,580 pays the flat $950 if uninsured all year and not exempt.",
+          "value": "$950 adult / $475 child (2025)",
+          "effective": "TY2025 (filed 2026)",
+          "status": "verified",
+          "source_label": "FTB — Personal Health Care Mandate; Covered CA Individual Mandate Quick Guide",
+          "source_url": "https://www.ftb.ca.gov/file/personal/filing-situations/health-care-mandate/personal.html",
+          "note": "Quick guide: https://hbex.coveredca.com/toolkit/downloads/Individual_Mandate_and_Penalty_Quick_Guide.pdf . TY2026 indexed amounts: not yet published on the reviewed pages (flag FL-04)."
+        },
+        {
+          "id": "MND-03",
+          "topic": "FTB correction (irregularity caught & fixed)",
+          "finding": "FTB published an incorrect 2025 child penalty ($450) from a rounding error and issued an April 2026 Tax News Flash correcting it to $475, updating its estimator. This is why this site dates every figure.",
+          "value": "$450 → $475 corrected",
+          "effective": "Corrected Apr 2026",
+          "status": "verified",
+          "source_label": "FTB — Tax News Flash, Correction to ISR Child Dependent Penalty Amount",
+          "source_url": "https://www.ftb.ca.gov/about-ftb/newsroom/tax-news/flash/2026/04.html",
+          "note": "Recorded as a verified irregularity (see Flagged page)."
+        },
+        {
+          "id": "MND-04",
+          "topic": "Exemption: income below the tax filing threshold",
+          "finding": "A household whose income is below the federal tax filing threshold is exempt from the mandate penalty — claimed on the state return (FTB 3853). With $0 earned income, whether you qualify depends on total gross income (gains, rent, interest) vs the threshold (e.g., $16,100 single for TY2026).",
+          "value": "Income < filing threshold = exempt",
+          "effective": "Current",
+          "status": "verified",
+          "source_label": "FTB — Personal Health Care Mandate (exemptions table)",
+          "source_url": "https://www.ftb.ca.gov/file/personal/filing-situations/health-care-mandate/personal.html",
+          "note": "See INC-14 for threshold figures."
+        },
+        {
+          "id": "MND-05",
+          "topic": "Exemption: unaffordable coverage",
+          "finding": "Coverage is deemed unaffordable (full-year exemption for the household) if the lowest-priced available plan's required contribution exceeds 7.28% of household income for the 2025 tax year (7.97% for 2024; FTB indexes annually). With investment-only income, a single person at, e.g., $30,000/yr is exempt if the benchmark exceeds ~$2,184/yr — Marketplace premiums typically exceed that at low incomes only when the person is INELIGIBLE for subsidies (above 400% FPL), so this exemption mainly helps high-income-no-subsidy households.",
+          "value": ">7.28% of income (2025)",
+          "effective": "TY2025 figures",
+          "status": "verified",
+          "source_label": "FTB — Personal Health Care Mandate; Covered CA — Penalty Details and Exemptions",
+          "source_url": "https://www.coveredca.com/learning-center/tax-penalty-details-and-exemptions/exemptions/",
+          "note": "Percentages per FTB page (2024: 7.97%; 2025: 7.28%)."
+        },
+        {
+          "id": "MND-06",
+          "topic": "Exemption: short coverage gap",
+          "finding": "A gap of three consecutive months or less in a year is exempt (once per lifetime) — claimable on the state return. Relevant if you lapse between a 2026 policy ending and a 2027 start you delayed past the enrollment windows.",
+          "value": "≤3 consecutive months",
+          "effective": "Current",
+          "status": "verified",
+          "source_label": "FTB — Personal Health Care Mandate",
+          "source_url": "https://www.ftb.ca.gov/file/personal/filing-situations/health-care-mandate/personal.html",
+          "note": ""
+        },
+        {
+          "id": "MND-07",
+          "topic": "Two ways to claim exemptions",
+          "finding": "Either claim exemptions retroactively on the state tax return via Form FTB 3853 (based on actual prior-year facts), or prospectively during the year via Covered California, which reviews and issues an Exemption Certificate Number (ECN) to put on FTB 3853. Covered CA processes hardship, religious, affordability and similar exemptions.",
+          "value": "FTB 3853 now / Covered CA ECN in-year",
+          "effective": "Current",
+          "status": "verified",
+          "source_label": "Covered California — Penalty Details and Exemptions",
+          "source_url": "https://www.coveredca.com/learning-center/tax-penalty-details-and-exemptions/exemptions/",
+          "note": "FTB 3853 instructions: https://www.ftb.ca.gov/forms/2025/2025-3853-instructions.pdf"
+        },
+        {
+          "id": "MND-08",
+          "topic": "Why enrolling usually moots the penalty entirely",
+          "finding": "If you hold Medi-Cal or a Marketplace plan all 12 months (both count as MEC), the mandate is satisfied — no penalty, no exemption filing; just check the full-year coverage box. For a zero-earned-income Californian, obtaining coverage is therefore also the cheapest way to avoid the surcharge.",
+          "value": "Full-year MEC = box checked, done",
+          "effective": "Current",
+          "status": "verified",
+          "source_label": "FTB — 2025 Personal Income Tax Booklet (Line 92 guidance)",
+          "source_url": "https://www.ftb.ca.gov/forms/2025/2025-540-booklet.html",
+          "note": "MEC definition includes Medicaid, Marketplace, Medicare, most employer plans (see healthcare.gov glossary)."
+        }
+      ]
+    }
+  ]
+}
