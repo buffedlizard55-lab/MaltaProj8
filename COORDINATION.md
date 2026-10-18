@@ -42,6 +42,28 @@ See flag.html on GH Pages site. 10 flagged items: F-01 Kalshi NO IRS guidance, F
 - 2026-10-18 19:15: Verification log (verification.html) + Flagged for Review (flagged.html) completed
 - 2026-10-18 19:30: Final COORDINATION.md update; ready to commit, push, and open PR
 
+## Parallel-session addendum — arena-b4c93f27
+- Concurrent main change discovered after PR #1 opened: PR #2, commit f6eb054, from arena/5d32bca3. Both sessions started from the empty initial commit and independently claimed all files before either claim was visible on main.
+- Stopped overlapping root-page edits. Preserved ALL other-session root pages, data, docs, README, workflow and styling without overwriting them. This session's dashboard is isolated to `research/`; verification-only CI is `.github/workflows/research.yml`. Only COORDINATION.md required textual conflict resolution; both logs are retained below. README delete/modify conflict resolved by retaining other session's root README and this session's research/README.md.
+- Integration request to root-site owner: optionally link `/research/` from root navigation. No claimed root navigation file edited by this session.
+- PR #1: https://github.com/buffedlizard55-lab/MaltaProj8/pull/1 . It now adds a supplemental research dashboard, not a replacement for PR #2. Its own source register has 52 findings; other-session findings are retained as independently authored material, not newly certified by this session.
+
+### Original arena-b4c93f27 log (retained)
+# Coordination
+
+Session: arena-b4c93f27. Required session branch: `arena/b4c93f27-maltaproj8` (platform constraint overrides requested session branch convention).
+
+| Task | Status | Owner | File scope |
+|---|---|---|---|
+| Official-source research, dashboard and final integration | in progress | arena-b4c93f27 | index.html, assets/, data/, scripts/, .github/workflows/, README.md, COORDINATION.md |
+
+## Log
+- 2026-10-18: Empty repository inspected (README only); no existing claims. Sole session claims research and integration. No other session work found. Will verify official sources, publish unresolved issues on Flagged for Review, validate and deploy.
+- 2026-10-18: Initial pull of session branch failed because remote branch did not yet exist. Pulled/rebased main before first session-branch push; no conflicts or other session changes.
+- Research: 52 row register, 16 official references. CMS July 2026 slide 12 confirms MAGI-based monthly household income; DHCS MEDIL I26-25 enclosure confirms income from any source. Sources: https://www.medicaid.gov/medicaid/downloads/ce-requirement-ifc-deck.pdf ; https://www.dhcs.ca.gov/wp-content/uploads/2026/09/MEDIL-I26-25.pdf . Remaining official URLs and review locators are in data/findings.json and sources.html.
+- Verification: each substantive row checked against its cited official guidance or flagged with blank unconfirmed value. Recommendations labeled. General IRS trader rules are not treated as Kalshi-specific guidance. Large statute/rule checked for relevant provisions, not certified in full. Flagged page includes start-date and income-wording conflicts, unknown personal eligibility, Kalshi tax/activity classification, property-management hours and seasonal-worker scope.
+- Build: nine static pages, source library, CSV/JSON, responsive CSS and progressive-enhancement table search. Python build/validation pass: all rows have sources, local links/fragments resolve, unresolved values blank, unique IDs. External source retrieval succeeded for substantive references; GovInfo legal-edition link is a reference supplied by Federal Register, not a full PDF audit.
+- Publication configuration: existing Pages uses main/root legacy publishing. Attempt to switch to Actions received HTTP 403 (resource not accessible by integration); preserved existing mode, added .nojekyll and committed prebuilt static HTML. CI validates and stages an artifact; legacy Pages publishes on main merge. No authentication secrets requested or stored.
 ## Final Deployment Record
 - **PR:** https://github.com/buffedlizard55-lab/MaltaProj8/pull/2 — **MERGED** at 2026-10-18T19:14:52Z
 - **Merge type:** merge commit (f6eb054)
@@ -53,3 +75,5 @@ See flag.html on GH Pages site. 10 flagged items: F-01 Kalshi NO IRS guidance, F
   - Source: branch `main` path `/` (legacy build type, html_url https://buffedlizard55-lab.github.io/MaltaProj8/)
 - **Verification:** All internal links checked locally (no broken); all 5 JSON files valid; site responsive; every table row has source link; flagged items on /flagged.html
 - **Deliverables:** Executive summary + 6 subpages + data JSONs + verification log + flagged page — all live on Pages
+- Follow-up integration: concurrent deployment-record commit f1f87ae caused a second coordination-only conflict; retained both deployment record and supplemental log. A normal rebase attempted to flatten the integration merge and reproduced conflicts; aborted without losing changes and used `git pull --rebase=merges` to preserve both histories. No source/page work discarded.
+- Supplemental dashboard tests: 52 source-linked rows, nine static pages, no broken local links/fragments, all root relative file links resolve, local HTTP smoke passes. PR CI run 39157963633 passed.
