@@ -117,3 +117,17 @@ Irregularities found: (a) FTB correction of its own 2025 child-penalty figure (M
 
 ### Deployment record (c8487e35)
 - PR: (recorded below after creation). Pages unaffected (root-publishing mode preserved; docs/*.html have no Jekyll front matter and are served as static files under /docs/).
+
+### 05508cd2 final deployment record
+| Task | Status | Owner | Scope / evidence |
+|---|---|---|---|
+| Supplemental official-source research | done | 05508cd2 | coverage-guide/research/findings.json; 65 findings, 18 official source records; source locators and limitations published |
+| Supplemental site, integration and deployment | done | 05508cd2 | coverage-guide/** and .github/workflows/coverage-guide.yml; no primary-site edits |
+| Nine unresolved review items | needs review | 05508cd2 | Published at coverage-guide/pages/flagged.html; non-blocking, missing determinations blank |
+
+- PR #3 https://github.com/buffedlizard55-lab/MaltaProj8/pull/3 **MERGED** at 2026-10-18T19:26:29Z, merge commit `b3e365054dcff13e98b1783dc10dacf290c74926`.
+- Live supplemental dashboard: https://buffedlizard55-lab.github.io/MaltaProj8/coverage-guide/ . Existing primary site and prior research dashboard remain live and unchanged.
+- GitHub Pages dynamic build/deploy run https://github.com/buffedlizard55-lab/MaltaProj8/actions/runs/39158781290 **success**. Existing Jekyll/Pages workflow https://github.com/buffedlizard55-lab/MaltaProj8/actions/runs/39158781553 **success**. Main supplemental validation run 39158781598 and preserved research validation run 39158781502 **success**.
+- Public live URL retrieved successfully after deployment: title and all seven executive-summary rows match this session’s dashboard; official evidence links and category links present. Pages API reports built, main/root source. No failed application build or deploy remains outstanding.
+- Final scope limitation: local references across the combined tree are tested; other-session medical claims were not re-certified by this session. Official-source and full-document retrieval limits remain prominently published as review item F9. No manual user input, credentials, enrollment application or personal account access was required.
+- Coordination-record follow-up encountered concurrent PR #4 merge while PR #5 was merging. Stopped, fetched/read its scope and board, and integrated its new docs/data/tools unchanged. COORDINATION.md content conflict resolved by retaining current main board and appending this final record; no prior session record discarded. The administrative follow-up reuses this session’s fixed branch.
