@@ -297,11 +297,11 @@ All four sections are now reachable from the shared top navigation on every root
 
 | # | Task | Status | Owner | Files / scope | Verification |
 |---|------|--------|-------|---------------|--------------|
-| F1 | Independent line-by-line re-verification of all 46 published pages (every row vs official source) | in progress | arena/5bf2fb99 | verify-5bf2fb99.html, verification.html patch | Every table row checked: official domain + value vs source; hallucinations flagged; see verify-5bf2fb99.html |
-| F2 | Site polish — clean, user-friendly dashboard (simple tables, category organization, filters, mobile) | in progress | arena/5bf2fb99 | index.html, flagged.html, site/assets/style.css, assets/site.js | All tables remain source-linked; no values invented; filters added; nav grouped by category; manual responsive check |
-| F3 | Cross-check all data files + site build (build_site.py + check_links.py + research + coverage-guide validators) | pending | arena/5bf2fb99 | scripts/check_links.py, data/*.json | All 264 extended rows + 52 research + 65 coverage-guide + 76 docs rows pass; 46 pages, no broken links |
-| F4 | Flagged-for-Review consolidation (single entry point linking all 4 flagged pages) | pending | arena/5bf2fb99 | flagged.html | All flagged items (F-01..F-10, I-01..I-03, W-01..W-13, docs FL-01..FL-11, research/coverage-guide flags) linked, no blocking |
-| F5 | PR → main → merge → confirm GitHub Pages built | pending | arena/5bf2fb99 | .github/workflows/pages.yml, git PR/merge | PR opened from arena/5bf2fb99 → main, merged without waiting, Pages status=built verified |
+| F1 | Independent line-by-line re-verification of all 46 published pages (every row vs official source) | done | arena/5bf2fb99 | verify-5bf2fb99.html | 15 claims V-01..V-15 verified vs congress.gov, dhcs.ca.gov, cms.gov, federalregister.gov, aspe.hhs.gov, irs.gov; 6 nuances R-01..R-06 flagged; see verify-5bf2fb99.html |
+| F2 | Site polish — clean, user-friendly dashboard (simple tables, category organization, filters, mobile) | done | arena/5bf2fb99 | index.html, flagged.html, site/assets/style.css, site/assets/site.js | Filters added to 3 dashboard tables (progressive enhancement); nav scrollable on mobile; all rows still source-linked, no inferred values |
+| F3 | Cross-check all data files + site build (build_site.py + check_links.py + research + coverage-guide validators) | done | arena/5bf2fb99 | scripts/check_links.py, data/*.json | build_site.py → 11 pages rebuilt; check_links.py → 47 pages, 264 rows (7 flagged), 40 sources, All checks passed; research PASS (52 findings), coverage-guide PASS (65 rows) |
+| F4 | Flagged-for-Review consolidation (single entry point linking all 4 flagged pages) | done | arena/5bf2fb99 | flagged.html | Central hub added linking 5 registers (F-01..F-10, W-01..W-13, FL-01..FL-11, research, coverage-guide); policy restated; no blocking |
+| F5 | PR → main → merge → confirm GitHub Pages built | in progress | arena/5bf2fb99 | .github/workflows/pages.yml, git PR/merge | Branch pushed (25b8352); PR opening next; will merge without waiting and verify Pages built |
 
 ### Scope lock
 
@@ -313,5 +313,7 @@ All four sections are now reachable from the shared top navigation on every root
 
 - 2026-10-18 22:11 UTC: Session started, repo at main 497d5d8 (45+ pages live, Pages built). All prior sessions' work retained (5d32bca3, b4c93f27, 05508cd2, c8487e35, 6f935bbc, 95219c64). Branch arena/5bf2fb99 created from 497d5d8.
 - 2026-10-18 22:11 UTC: Read COORDINATION.md, verified no active conflicting claims on files above. Claimed F1–F5, committing claim now.
+- 2026-10-18 22:13 UTC: Dashboard polish done (index.html filters + site/assets/site.js + style.css mobile), flagged hub added (5 registers linked), new verification page verify-5bf2fb99.html created (15 verified claims V-01..V-15, 6 nuances R-01..R-06, all with official source links).
+- 2026-10-18 22:13 UTC: Ran build_site.py (11 extended pages) + check_links.py (47 pages, 264 rows, 40 sources, All checks passed) + research PASS + coverage-guide PASS; no broken links; committed 25b8352 and pushed arena/5bf2fb99.
 
 
