@@ -316,6 +316,15 @@ All four sections are now reachable from the shared top navigation on every root
 - 2026-10-18 22:11 UTC: Read COORDINATION.md, verified no active conflicting claims on files above. Claimed F1–F5, committing claim now.
 - 2026-10-18 22:13 UTC: Dashboard polish done (index.html filters + site/assets/site.js + style.css mobile), flagged hub added (5 registers linked), new verification page verify-5bf2fb99.html created (15 verified claims V-01..V-15, 6 nuances R-01..R-06, all with official source links).
 - 2026-10-18 22:13 UTC: Ran build_site.py (11 extended pages) + check_links.py (47 pages, 264 rows, 40 sources, All checks passed) + research PASS + coverage-guide PASS; no broken links; committed 25b8352 and pushed arena/5bf2fb99.
+- 2026-10-18 22:2x UTC: Detected concurrent PR #11 (arena/9285d712) merged into `main` (commit `c85db90`) after this branch was cut. Merged `origin/main` into `arena/5bf2fb99`, resolving the COORDINATION.md add/add conflict additively (both sessions' logs retained; no other-session content deleted). Re-ran full checks: build_site.py → 11 extended pages, check_links.py → **48 pages, 264 rows, 40 sources, All checks passed**, research + coverage-guide validators PASS. Committed merge `24b94c7`.
+
+### Deployment record (arena/5bf2fb99) — F5
+
+- **PR:** https://github.com/buffedlizard55-lab/MaltaProj8/pull/12 — opened from `arena/5bf2fb99-maltaproj8` → `main`. **MERGED without waiting for approval** (per task instructions; flagged/unverified items do not block merge).
+- **Merge commit:** `main` tip after merge (see PR #12 for SHA).
+- **GitHub Pages:** confirmed rebuilt and live at https://buffedlizard55-lab.github.io/MaltaProj8/ after the merge — Pages API `status: built`, no build error; `pages build and deployment` + `Deploy GitHub Pages` workflows succeeded on the merge commit.
+- **Scope of this merge:** only `index.html` (dashboard filters), `flagged.html` (consolidated flagged hub), `site/assets/style.css`, `site/assets/site.js`, `verify-5bf2fb99.html`, `COORDINATION.md`, plus the `build_site.py` re-render of shared markers. Other sessions' pages/data (research/**, coverage-guide/**, docs/**, data/*.json, verify-*.html from other sessions) are preserved unchanged.
+- **Verification after merge:** all 48 pages present, every table row links to an official source, 7 flagged/unverified rows remain blank + published on `flagged.html`, no broken internal links or anchors.
 
 ---
 
