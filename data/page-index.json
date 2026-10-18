@@ -1,0 +1,44 @@
+{
+  "page": "index",
+  "sections": [
+    {
+      "id": "at-a-glance",
+      "heading": "Your situation at a glance",
+      "intro": "Four findings decide everything else on this site. Each one is quoted from an official source, linked in the table.",
+      "table": "at-a-glance"
+    },
+    {
+      "id": "decision-table",
+      "heading": "What you can get, by income band",
+      "intro": "Medi-Cal and Covered California use the same application and the same household-income measure (MAGI). Find the row that matches your household income. Amounts are 2026 Federal Poverty Level based.",
+      "table": "decision"
+    },
+    {
+      "id": "work-requirement-summary",
+      "heading": "The 2027 work requirement in one table",
+      "intro": "Full detail, exemptions and California implementation are on the <a href=\"work-requirements.html\">Work &amp; Community Engagement Rules</a> page.",
+      "table": "work-summary"
+    },
+    {
+      "id": "do-now",
+      "heading": "What to do now",
+      "list": [
+        "<strong>Estimate your MAGI household income for 2026</strong> (not just your paychecks): net rental income, savings interest, and any net trading gains count. See <a href=\"income-counting.html\">Income counting</a>. If it is $22,025 or less for a one-person household, you are inside the Medi-Cal limit ($1,836/month).",
+        "<strong>Apply to Medi-Cal (or Covered California) right now.</strong> Medi-Cal can be applied for at any time of year — not just during open enrollment. One application screens you for both programs. See <a href=\"apply.html\">Apply</a>.",
+        "<strong>Count your monthly income against the $580 test.</strong> You do not need earned income. The rule accepts \"an income from any source of at least $580 (before taxes) in any month\" — rental income, interest and trading income all count. See <a href=\"work-requirements.html\">Work rules</a>.",
+        "<strong>Line up a fallback of 80 hours.</strong> If a month falls under $580, volunteering, community service, a work program, or half-time school in that month satisfies the rule. School can be combined with the other hours.",
+        "<strong>Check for an exemption.</strong> A qualifying disability, caregiving for a child 13 or younger or a disabled person, pregnancy, CalFresh or CalWORKs work-requirement compliance, veteran with a total disability, tribal membership, and high-unemployment-county residence can excuse you entirely."
+      ]
+    },
+    {
+      "id": "limits",
+      "heading": "What this site does and does not do",
+      "list": [
+        "Every number on this site comes from a federal, state, or Covered California source and links to it.",
+        "Your own income figures, county of residence, age, disability status, and immigration history are facts I cannot see. The tables are built around the thresholds, not around assumptions about you.",
+        "Values that could not be confirmed from an official source are left blank and listed on the <a href=\"flagged.html\">Flagged for Review</a> page rather than estimated.",
+        "This is research, not legal, tax, or immigration advice. For your own case, ask your county Medi-Cal office (DHCS: <a href=\"https://www.dhcs.ca.gov/medi-cal/contact/find-a-county-office/\">find a county office</a>) and a tax professional."
+      ]
+    }
+  ]
+}

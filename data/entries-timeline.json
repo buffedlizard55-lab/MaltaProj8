@@ -1,0 +1,131 @@
+{
+  "tables": {
+    "timeline": [
+      {
+        "item": "November 4, 2020",
+        "value": "CFTC designates KalshiEX LLC as a contract market",
+        "detail": "Release 8302-20. Kalshi event contracts are treated by the CFTC as swaps under the Commodity Exchange Act.",
+        "source": "S29",
+        "verified": true,
+        "also": [
+          "S19"
+        ]
+      },
+      {
+        "item": "July 4, 2025",
+        "value": "H.R. 1 (Public Law 119-21) is signed",
+        "detail": "Section 71119 creates the Medicaid community engagement requirement; section 71107 creates six-month redeterminations; section 71112 shortens retroactive coverage.",
+        "source": "S16",
+        "verified": true
+      },
+      {
+        "item": "December 8, 2025",
+        "value": "CMS issues its implementation bulletin and slide deck",
+        "detail": "The Information Bulletin for states plus the summary deck that defines applicable individuals, the qualifying activities, and the exclusions.",
+        "source": "S17",
+        "verified": true
+      },
+      {
+        "item": "December 30, 2025",
+        "value": "DHCS issues ACWDL 25-30 and ACWDL 25-31",
+        "detail": "County policy for the work and community engagement requirements and for six-month renewals for the New Adult Group. Both are labelled preliminary guidance.",
+        "source": "S10",
+        "verified": true
+      },
+      {
+        "item": "January 13, 2026",
+        "value": "2026 Federal Poverty Level guidelines take effect",
+        "detail": "Published January 15, 2026 at 91 FR 1797. $15,960 for one person; $22,025 at 138% FPL.",
+        "source": "S27",
+        "verified": true,
+        "also": [
+          "S26"
+        ]
+      },
+      {
+        "item": "January 1, 2026",
+        "value": "Asset limits return for non-MAGI Medi-Cal; adult immigrant enrollment freeze takes effect",
+        "detail": "$130,000 for one person plus $65,000 per additional person. Adults 19+ without a qualifying immigration status can no longer newly enroll in full-scope Medi-Cal.",
+        "source": "S22",
+        "verified": true
+      },
+      {
+        "item": "March 12, 2026",
+        "value": "DHCS issues ACWDL 26-07 on retroactive coverage",
+        "detail": "From January 1, 2027: 1 month of retroactive coverage for the MAGI New Adult Group, 2 months for all other groups.",
+        "source": "S23",
+        "verified": true
+      },
+      {
+        "item": "June 1, 2026",
+        "value": "CMS issues the interim final rule (CMS-2454-IFC)",
+        "detail": "Published in the Federal Register June 3, 2026. States must generally implement no later than January 1, 2027.",
+        "source": "S15",
+        "verified": true
+      },
+      {
+        "item": "July 21, 2026",
+        "value": "Covered California announces 2027 rates and plans",
+        "detail": "$300 million for the California Premium Subsidy, reaching up to 200% FPL; more than 500,000 projected to receive it.",
+        "source": "S9",
+        "verified": true
+      },
+      {
+        "item": "August 31 / September 11, 2026",
+        "value": "DHCS mails the member outreach letter (MEDIL I 26-25)",
+        "detail": "\"Dear Medi-Cal Member\" letters dated August 31, 2026, issued September 11, 2026. Mailed to New Adult Group members from late August 2026.",
+        "source": "S12",
+        "verified": true
+      },
+      {
+        "item": "September 14–15, 2026",
+        "value": "AB 2161 is chaptered (Chapter 209, Statutes of 2026)",
+        "detail": "Signed by the Governor September 14, 2026; filed and chaptered September 15, 2026. It is the California implementation of the federal work rule.",
+        "source": "S13",
+        "verified": true
+      },
+      {
+        "item": "October 1 – December 31, 2026",
+        "value": "Counties must include the work-rule outreach letter in every application packet",
+        "detail": "MEDIL I 26-25 outreach requirement for new and returning members.",
+        "source": "S12",
+        "verified": true
+      },
+      {
+        "item": "October 2026",
+        "value": "Federal reclassification of certain immigration statuses",
+        "detail": "Affected people get state-funded full-scope Medi-Cal until June 30, 2027.",
+        "source": "S20",
+        "verified": true
+      },
+      {
+        "item": "November 1, 2026 – January 31, 2027",
+        "value": "Covered California open enrollment for 2027 coverage",
+        "detail": "Current members can renew or switch from October 1, 2026.",
+        "source": "S9",
+        "verified": true
+      },
+      {
+        "item": "January 1, 2027",
+        "value": "Work and community engagement requirements begin; six-month renewals begin; FFS transition; shorter retroactive coverage",
+        "detail": "All four take effect on the same date. Applications dated on or before December 31, 2026 are not assessed for the work rule until the member's next renewal in 2027.",
+        "source": "S10",
+        "verified": true
+      },
+      {
+        "item": "July 1, 2027",
+        "value": "Asset limits drop to $21,000 / $31,000; dental reductions and monthly premiums for some members",
+        "detail": "Affected groups: people who are undocumented, some green card holders in the five-year bar, and PRUCOL residents.",
+        "source": "S20",
+        "verified": true
+      },
+      {
+        "item": "July 1, 2029",
+        "value": "DHCS deadline to adopt regulations for Welfare and Institutions Code § 14005.69",
+        "detail": "WIC § 14005.69(o)(2). The section remains operative only while the federal provision is operative.",
+        "source": "S13",
+        "verified": true
+      }
+    ]
+  }
+}

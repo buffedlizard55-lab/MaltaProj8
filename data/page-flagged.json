@@ -1,0 +1,10 @@
+{
+  "page": "flagged",
+  "sections": [
+    {
+      "id": "flags",
+      "heading": "Flagged for review",
+      "table": "flags"
+    }
+  ]
+}

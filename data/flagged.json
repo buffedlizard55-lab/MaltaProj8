@@ -1,0 +1,135 @@
+{
+  "intro": "Everything on this page is something this analysis could not confirm from an official source, found in two official sources that disagree, or that depends on facts I do not have. Nothing here is a guess. Items are published rather than hidden so you can review them and ask for changes.",
+  "items": [
+    {
+      "id": "F-01",
+      "title": "Tax treatment of Kalshi trading gains",
+      "category": "Unverified",
+      "issue": "The site does not state how gains and losses on Kalshi event contracts are reported for tax purposes.",
+      "known": "KalshiEX LLC is a CFTC-designated contract market (CFTC Release 8302-20, 4 Nov 2020), and the CFTC treats the event contracts it lists as swaps under the Commodity Exchange Act. Trading is not employment, so the income is investment activity rather than earned income. No IRS guidance specific to Kalshi, or to event contracts, was located on IRS.gov during this review.",
+      "why": "The exact character of the income (capital gain, other investment income, or something else) affects the MAGI figure used for Medi-Cal and Covered California, and therefore which program you land in.",
+      "action": "Report your trading results on the application as investment income, keep your own trade records, and confirm the reporting treatment with a tax professional. Do not rely on a guess about the character of the income.",
+      "sources": ["S29"]
+    },
+    {
+      "id": "F-02",
+      "title": "Whether your property-management work is self-employment income or rental income",
+      "category": "Unverified — depends on facts",
+      "issue": "The two are treated differently, and which one applies depends on facts I do not have.",
+      "known": "HealthCare.gov lists self-employment income (\"the income you expect to make from your business after expenses\") and rental and royalty income (\"use net rental and royalty income\") as separate countable income types. IRS Publication 527 governs rental income and expenses.",
+      "why": "If you are paid to manage property as a trade or business, the income is earned (self-employment) income, which is not the same as passive rent — and it would change both the MAGI figure and the work-requirement analysis.",
+      "action": "Ask a tax professional whether your property management is a trade or business for federal tax purposes, and how it is reported. Use your answer consistently on the application and the tax return.",
+      "sources": ["S24", "S33"]
+    },
+    {
+      "id": "F-03",
+      "title": "Three official descriptions of the $580 income test use different language",
+      "category": "Irregularity — definitional",
+      "issue": "The statute, the county guidance, and the member notice describe the same $580 test differently.",
+      "known": "Statute (WIC § 14005.69(e)(6)): \"total monthly income, using modified adjusted gross income (MAGI)-based financial methods.\" County guidance (ACWDL 25-30, expressly labelled preliminary): \"An individual's total gross income for a month must meet or exceed this amount,\" and for fluctuating income, an average of the prior six months of gross income \"including earned income, unemployment benefits, State Disability Insurance, retirement income, dividends, etc.\" Member notice (MEDIL I 26-25): \"an income from any source of at least $580 (before taxes) in any month since your last renewal.\"",
+      "why": "Materially this rarely changes the answer for a person whose income is well above or well below $580 — and all three descriptions are satisfied by rental, interest and trading income. But if your income sits near the line, the measurement basis could matter, and the three sources do not use the same words.",
+      "action": "Ask your county which method it applies if your monthly income is near $580.",
+      "sources": ["S13", "S10", "S12"]
+    },
+    {
+      "id": "F-04",
+      "title": "Member notice says the rules start in March 2027; the policy letters say January 1, 2027",
+      "category": "Irregularity — date",
+      "issue": "The letter DHCS is mailing to members and the letters county staff work from give different start dates.",
+      "known": "The member notice (MEDIL I 26-25, \"Dear Medi-Cal Member\" dated 31 Aug 2026) says: \"We are sending you information now, but these rules will not go into effect until March 2027.\" ACWDL 25-30 says the requirement is effective 1 January 2027 and that \"Counties will not assess work and community engagement requirements for MAGI New Adult Group members with an application date of December 31, 2026, or prior until their next scheduled renewal in 2027.\" AB 2161 (WIC § 14005.69(d)) says \"No sooner than January 1, 2027.\" The same member notice also says, separately, \"Beginning January 2027, this rule says that adults, ages 19-64, will get their Medi-Cal eligibility renewed every 6 months.\"",
+      "why": "The renewal cycle and the work-rule assessment are tied together, so a mismatch in dates could affect when your first assessment happens.",
+      "action": "Plan on the January 1, 2027 date, which is what the statute and the county policy letters say, and confirm with your county when your first work-rule assessment will occur.",
+      "sources": ["S12", "S10", "S13"]
+    },
+    {
+      "id": "F-05",
+      "title": "One-dollar differences between DHCS's 138% FPL chart and ACWDL 26-01",
+      "category": "Irregularity — rounding",
+      "issue": "Two official DHCS publications give slightly different 138% FPL annual limits for some household sizes.",
+      "known": "ACWDL 26-01 Enclosure 2 lists 2 people $29,864, 5 people $53,379, 7 people $69,056. DHCS's public \"Eligibility by Federal Poverty Level\" chart lists 2 people $29,863, 5 people $53,378, 7 people $69,055. Rows for 1, 3, 4, 6, 8 and \"each extra person\" agree.",
+      "why": "Immaterial in practice, but it is a real inconsistency between two official figures.",
+      "action": "This site uses the ACWDL 26-01 values. If you are within a few dollars of a threshold, the county will use its own letter.",
+      "sources": ["S3", "S1"]
+    },
+    {
+      "id": "F-06",
+      "title": "Federal guidance still pending on several operational points",
+      "category": "Pending federal guidance",
+      "issue": "DHCS lists the items it is still waiting on.",
+      "known": "ACWDL 25-30 states DHCS is awaiting additional CMS guidance on: the definition of \"medically frail\"; standards for self-attestation; acceptable forms of verification; criteria for exemptions and work activities; and accelerated enrollment.",
+      "why": "These determine whether a particular exemption claim or a particular piece of evidence is accepted.",
+      "action": "Re-check before your first renewal, and ask your county what it will accept.",
+      "sources": ["S10"]
+    },
+    {
+      "id": "F-07",
+      "title": "What counts as a \"work program\" and what counts as \"community service\"",
+      "category": "Pending state guidance",
+      "issue": "DHCS has not yet published the definitions.",
+      "known": "ACWDL 25-30: for the work-program criterion, \"DHCS will provide additional guidance of what constitutes a work program in a future letter,\" and the same for community service. California statute defines \"work program\" by reference to section 2015(o)(1) of Title 7 (the SNAP work-program definition) and \"educational program\" broadly.",
+      "why": "You cannot be sure a specific activity will count until the follow-up letter issues.",
+      "action": "Ask your county which programs it will treat as qualifying, and keep written proof of whatever you do.",
+      "sources": ["S10", "S13"]
+    },
+    {
+      "id": "F-08",
+      "title": "The high-unemployment-county hardship exemption depends on where you live",
+      "category": "Unverified — county-specific",
+      "issue": "The exemption exists but cannot be confirmed for your county from a national source.",
+      "known": "The exemption applies in a county with an unemployment rate at or above the lesser of 8% or 1.5 times the national unemployment rate. DHCS says it will send a separate notice if your county qualifies.",
+      "why": "If your county qualifies, you would be exempt for that month without doing anything.",
+      "action": "Wait for DHCS's notice, or ask your county office directly.",
+      "sources": ["S12", "S13"]
+    },
+    {
+      "id": "F-09",
+      "title": "Public charge: sourced to Covered California only",
+      "category": "Partially verified",
+      "issue": "The public-charge statement on the immigration page comes from the state marketplace, not from the federal rule itself.",
+      "known": "Covered California states that a federal rule finalised beginning September 2026 changes how public charge is determined; that getting financial help through Covered California may affect a green card application; and that \"Most consumers who are eligible for financial help in 2027 may not be subject to the public charge rule when they apply for admission or a green card,\" with listed exceptions for asylum, refugee, U visa, T visa, VAWA and Special Immigrant Juvenile Status applicants.",
+      "why": "The underlying federal rule, and how it treats Medi-Cal as distinct from marketplace financial help, were not independently reviewed against the Federal Register or DHS guidance in this session.",
+      "action": "If you are still in the process of obtaining permanent residence or citizenship, talk to an immigration attorney before relying on this point.",
+      "sources": ["S8"]
+    },
+    {
+      "id": "F-10",
+      "title": "AB 2161 contains a deferral clause",
+      "category": "Watch item",
+      "issue": "Individual pieces of California's implementation can be delayed if an appropriation is missing.",
+      "known": "WIC § 14005.69(r): if a change creates a fiscal impact requiring an additional appropriation that has not been made, \"the department may defer implementation of the change until that additional appropriation is made,\" and DHCS must notify the fiscal and policy committees and publish the notice on its website.",
+      "why": "A deferral would change dates, not the substance of your rights — but it is the mechanism to watch for changes to the 2027 timeline.",
+      "action": "Watch dhcs.ca.gov for any deferral notice published under this section.",
+      "sources": ["S13"]
+    },
+    {
+      "id": "F-11",
+      "title": "California applies the work rule to state-funded adults; federal law does not require it",
+      "category": "Irregularity — policy note",
+      "issue": "The state's rule is broader than the federal minimum.",
+      "known": "Federal law requires states to apply the community engagement requirement to federally funded adults in the ACA adult group. California law (WIC § 14005.69(b)(1)(B)) and DHCS policy (ACWDL 25-30) extend it to state-funded Medi-Cal adults meeting the same criteria, \"regardless of immigration status.\"",
+      "why": "If you are a permanent resident who has not completed the five-year bar, your Medi-Cal is state-funded, and California is the reason the work rule reaches you.",
+      "action": "No action other than planning for the requirement. If you believe your coverage is federally funded, say so when you apply.",
+      "sources": ["S13", "S10", "S16"]
+    },
+    {
+      "id": "F-12",
+      "title": "The operative county letter for 2027 may be a later one than the letter reviewed here",
+      "category": "Needs review",
+      "issue": "DHCS's letter reviewed here is expressly preliminary and refers to later letters.",
+      "known": "ACWDL 25-30 (30 Dec 2025) states on its face: \"This ACWDL represents preliminary guidance and is subject to change based on developing federal policy guidance and state legislative changes.\" A California legislative briefing references an \"ACWDL 26-30: Work and Community Engagement Requirements for New Adult Group.\" That later letter was not retrieved in this review, and DHCS's letter index was not searched exhaustively.",
+      "why": "If a later letter changed the procedures, this site could be describing superseded guidance.",
+      "action": "Confirm with your county which letter it is applying for your renewal.",
+      "sources": ["S10", "S11", "S38"]
+    },
+    {
+      "id": "F-13",
+      "title": "Out of scope for this analysis",
+      "category": "Scope note",
+      "issue": "Adjacent programs and rules were not analysed.",
+      "known": "Not covered here: Medicare Savings Programs in depth (they require Medicare eligibility — age 65 or disability); CalFresh and CalWORKs (relevant mainly because compliance with their work requirements is itself a Medi-Cal work-rule exemption); IHSS; long-term care and the 30-month look-back; the ACA \"family glitch\" and dependent-coverage rules; how Medi-Cal household composition is derived from tax household rules; and county-level implementation detail, which varies. Also not covered: the specific county office, local cost-sharing, and Medi-Cal managed care plan choices by county.",
+      "why": "Scope discipline: these are real and may matter, but they are not what was asked, and a partial treatment would be worse than an explicit boundary.",
+      "action": "Ask about these separately if they matter to your situation.",
+      "sources": ["S40", "S7"]
+    }
+  ]
+}

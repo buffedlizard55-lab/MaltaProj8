@@ -1,0 +1,31 @@
+{
+  "page": "apply",
+  "sections": [
+    {
+      "id": "how",
+      "heading": "How to apply",
+      "table": "how"
+    },
+    {
+      "id": "income-section",
+      "heading": "How to answer the income questions",
+      "note": "This is where most applications for someone in your situation go wrong. Report your income truthfully and completely, including the non-wage income — and expect the county to see your tax return.",
+      "table": "income-section"
+    },
+    {
+      "id": "gather",
+      "heading": "What to gather before you apply",
+      "table": "gather"
+    },
+    {
+      "id": "after",
+      "heading": "What to do after you apply",
+      "table": "after"
+    },
+    {
+      "id": "contacts",
+      "heading": "Contacts",
+      "table": "contacts"
+    }
+  ]
+}

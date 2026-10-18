@@ -1,0 +1,181 @@
+{
+  "tables": {
+    "comparison": [
+      {
+        "item": "Option A — Medi-Cal (MAGI New Adult Group)",
+        "value": "Best when your MAGI is at or below 138% FPL ($22,025 for one person, 2026)",
+        "detail": "Free or low cost. Dental and vision included. Year-round enrollment. Subject to the work rule and six-month renewals from 2027 if you are 19–64 and not exempt.",
+        "source": "S7",
+        "verified": true
+      },
+      {
+        "item": "Option B — Medi-Cal, Aged & Disabled FPL program",
+        "value": "Best if you have a qualifying disability and countable assets under the limit",
+        "detail": "138% FPL income limit, non-MAGI rules, assets counted. Not subject to the work rule or the six-month renewal cycle.",
+        "source": "S5",
+        "verified": true
+      },
+      {
+        "item": "Option C — Covered California with federal credit and California Premium Subsidy",
+        "value": "Best when your MAGI is above 138% FPL and at or below 400% FPL",
+        "detail": "Premium help only. Open enrollment November 1, 2026 – January 31, 2027. California state help up to 200% FPL in 2027.",
+        "source": "S6",
+        "verified": true
+      },
+      {
+        "item": "Option D — Covered California, unsubsidized",
+        "value": "Best when you are above 400% FPL, or you lost Medi-Cal for work-rule non-compliance",
+        "detail": "You pay the full premium. You can still buy coverage at any time if you have a qualifying life event.",
+        "source": "S12",
+        "verified": true
+      }
+    ],
+    "option-a": [
+      {
+        "item": "What it is",
+        "value": "California's Medicaid program, for adults 19–64 with household income up to 138% FPL",
+        "detail": "\"The MAGI New Adult Group … extends Medicaid eligibility to all adults aged 19 to 64, including those without dependent children and parents with income over 109% but at or below 138% of the federal poverty level.\" No asset test for this group.",
+        "source": "S10",
+        "verified": true
+      },
+      {
+        "item": "Why it is the leading option for a zero-earned-income household",
+        "value": "Your income is not $0 — it is your rental, interest and trading income, and that is what Medi-Cal measures",
+        "detail": "There is no separate \"no income\" Medi-Cal program and no earned-income requirement. If your MAGI lands at or under 138% FPL, you qualify regardless of where the money comes from.",
+        "source": "S24",
+        "verified": true
+      },
+      {
+        "item": "What it costs",
+        "value": "Free or low cost for most people",
+        "detail": "Health, dental and vision. Separate premium rules start July 1, 2027 for some people with certain immigration statuses.",
+        "source": "S7",
+        "verified": true
+      },
+      {
+        "item": "The catch",
+        "value": "From January 1, 2027: 80 hours or $580 per month, and renewals twice a year",
+        "detail": "This is the rule that changes everything for you. Use the $580 income test (rental, interest, and trading income count) or the 80-hour route, or claim an exemption.",
+        "source": "S13",
+        "verified": true
+      },
+      {
+        "item": "How to sign up",
+        "value": "Any time of year, one application for Medi-Cal and Covered California",
+        "detail": "Online via BenefitsCal or Covered California, by mail, by phone, or in person.",
+        "source": "S30",
+        "verified": true
+      }
+    ],
+    "option-b": [
+      {
+        "item": "What it is",
+        "value": "The FPL Program for Aged & Disabled — 138% FPL, non-MAGI rules",
+        "detail": "DHCS's program chart lists \"138% FPL = ACA New Adults Ages 19-64; and = FPL Program for Aged & Disabled.\"",
+        "source": "S5",
+        "verified": true,
+        "also": [
+          "S22"
+        ]
+      },
+      {
+        "item": "The advantage",
+        "value": "Not subject to the work and community engagement requirements",
+        "detail": "\"Members who receive Medi-Cal under other coverage groups such as Non-MAGI … are excluded from work and community engagement requirements.\" A person who moves out of the MAGI New Adult Group stops being assessed for the work rule as of the effective date of the new determination.",
+        "source": "S10",
+        "verified": true
+      },
+      {
+        "item": "The cost of that route",
+        "value": "Assets are counted: $130,000 for one person through June 30, 2027",
+        "detail": "Plus $65,000 per additional household member. From July 1, 2027: $21,000 for one person and $31,000 for two. Countable assets include bank accounts, cash, second vehicles and second homes; your main home, main vehicle and household items are excluded.",
+        "source": "S22",
+        "verified": true
+      },
+      {
+        "item": "Also excluded from the six-month renewal rule",
+        "value": "Aged, blind and disabled members keep their annual renewal cycle",
+        "detail": "DHCS's briefing lists \"Aged, Blind, or Disabled people (including individuals who receive SSI)\" among those not subject to the six-month redetermination requirement.",
+        "source": "S38",
+        "verified": true,
+        "also": [
+          "S38"
+        ]
+      },
+      {
+        "item": "Who should pursue this",
+        "value": "Anyone who has a condition that meets the Social Security Administration's definition of blindness or disability",
+        "detail": "The work-rule exclusion for \"medically frail or otherwise has special medical needs\" expressly includes \"an individual who is blind or disabled, as defined in Section 1382c of Title 42.\" Whether you qualify is a determination for SSA, DHCS, or your county — not something this site can decide.",
+        "source": "S13",
+        "verified": true
+      }
+    ],
+    "option-c": [
+      {
+        "item": "What it is",
+        "value": "A private health plan from Covered California with federal premium tax credits and, if you qualify, the California Premium Subsidy",
+        "detail": "Covered California is the state marketplace; the federal credit is applied through your tax return.",
+        "source": "S7",
+        "verified": true
+      },
+      {
+        "item": "Who qualifies",
+        "value": "Household income from 100% to 400% FPL, and not eligible for Medi-Cal",
+        "detail": "If you are eligible for Medi-Cal, the marketplace will route you to Medi-Cal instead. \"Most consumers up to 138% FPL will be eligible for Medi-Cal.\"",
+        "source": "S25",
+        "verified": true
+      },
+      {
+        "item": "What it costs in 2027",
+        "value": "0% of income up to 150% FPL; 2.8%–5.28% from 150% to 200% FPL (with the California Premium Subsidy)",
+        "detail": "0% of income up to 150% FPL; 2.8%–5.28% from 150% to 200% FPL (with the California Premium Subsidy). Above 200% FPL the chart shows 6.78%–8.66% (200–250%), 8.66%–10.22% (250–300%) and 10.22% (300–400%), and no state help applies above 200% FPL.",
+        "source": "S6",
+        "verified": true
+      },
+      {
+        "item": "When to enroll",
+        "value": "November 1, 2026 – January 31, 2027 for 2027 coverage",
+        "detail": "Outside that window you need a qualifying life event.",
+        "source": "S9",
+        "verified": true
+      },
+      {
+        "item": "Why you might not need this",
+        "value": "If your MAGI is at or below 138% FPL, Medi-Cal is free and you keep more money",
+        "detail": "The work rule is the trade-off: Medi-Cal is cheaper, but from 2027 it comes with the compliance requirement.",
+        "source": "S7",
+        "verified": true
+      }
+    ],
+    "option-d": [
+      {
+        "item": "When it applies",
+        "value": "Household income above 400% FPL, or after a Medi-Cal work-rule termination",
+        "detail": "\"400+% FPL = Unsubsidized Coverage\" in DHCS's program chart.",
+        "source": "S5",
+        "verified": true
+      },
+      {
+        "item": "The consequence to plan around",
+        "value": "Losing Medi-Cal for non-compliance removes your marketplace financial help as well",
+        "detail": "\"If you lose Medi-Cal because you did not meet these rules, you cannot get financial help to pay for a health plan through Covered California. That means you would have to pay the full cost of new health insurance.\"",
+        "source": "S12",
+        "verified": true
+      },
+      {
+        "item": "The safety valve in the law",
+        "value": "The county must check every other basis of eligibility before denying, and you get a hearing",
+        "detail": "WIC § 14005.69(k)(1)(E) and (n). This is why the work-rule consequences are less severe than they first appear: a termination cannot be automatic.",
+        "source": "S13",
+        "verified": true
+      },
+      {
+        "item": "Re-applying",
+        "value": "Allowed at any time, with compliance assessed on the new application",
+        "detail": "CMS: \"Individuals who are disenrolled may reapply at any time and will be assessed for compliance upon reapplication.\"",
+        "source": "S14",
+        "verified": true
+      }
+    ]
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "page": "medicaid-eligibility",
+  "sections": [
+    {
+      "id": "groups",
+      "heading": "Which Medi-Cal program you land in",
+      "intro": "The coverage group you are in determines your income limit, whether assets are counted, and whether the 2027 work rule applies to you.",
+      "table": "groups"
+    },
+    {
+      "id": "limits",
+      "heading": "2026 MAGI income limits (Medi-Cal for Adults, 138% FPL)",
+      "table": "limits"
+    },
+    {
+      "id": "assets",
+      "heading": "Assets: who is subject, who is not",
+      "intro": "California reinstated asset limits for non-MAGI programs on January 1, 2026. Adults in the MAGI New Adult Group are not subject to an asset test.",
+      "table": "assets"
+    },
+    {
+      "id": "not-subject",
+      "heading": "Medi-Cal groups that are not subject to the work rule",
+      "table": "not-subject"
+    },
+    {
+      "id": "apply-when",
+      "heading": "When you can apply and what it costs",
+      "table": "apply-when"
+    }
+  ]
+}

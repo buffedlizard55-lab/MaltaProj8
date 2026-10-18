@@ -1,0 +1,183 @@
+{
+  "tables": {
+    "how": [
+      {
+        "item": "Online — BenefitsCal",
+        "value": "Apply with your county office, find programs that can help you qualify, manage and renew your Medi-Cal online",
+        "detail": "The state's official benefits portal.",
+        "source": "S30",
+        "verified": true
+      },
+      {
+        "item": "Online — Covered California",
+        "value": "One application screens you for Medi-Cal and for Covered California plans",
+        "detail": "If you do not qualify for Medi-Cal you can shop for low-cost health plans in the same application. Covered California: \"One application checks your eligibility for both Medi-Cal and Covered California.\"",
+        "source": "S7",
+        "verified": true
+      },
+      {
+        "item": "By mail",
+        "value": "Download the application in your language",
+        "detail": "DHCS publishes the Single Streamlined Application in English, Spanish, Arabic, Armenian, Chinese, Farsi, Hmong, Khmer, Korean, Russian, Tagalog and Vietnamese.",
+        "source": "S30",
+        "verified": true
+      },
+      {
+        "item": "By phone or in person",
+        "value": "Call your county office, or visit one",
+        "detail": "DHCS publishes a county office finder. The Medi-Cal Helpline is 800-541-5555.",
+        "source": "S12",
+        "verified": true
+      },
+      {
+        "item": "Timing",
+        "value": "Medi-Cal: any time of year. Covered California: open enrollment November 1, 2026 – January 31, 2027, or a qualifying life event.",
+        "detail": "Medi-Cal coverage \"can start quickly, and in some cases right away.\"",
+        "source": "S7",
+        "verified": true
+      }
+    ],
+    "income-section": [
+      {
+        "item": "Report your real income, not just your paychecks",
+        "value": "Net rental income, interest, and your trading results all go in the income section",
+        "detail": "The application asks for expected household income for the year of coverage. HealthCare.gov lists capital gains, investment income, rental and royalty income, and self-employment income among the types to count. Leaving these out risks a redetermination later.",
+        "source": "S24",
+        "verified": true
+      },
+      {
+        "item": "\"$0 earned income\" is a fine answer to the right question",
+        "value": "If you have no wages, say you have no wages — and fill in the other income boxes",
+        "detail": "The rule is not a wage test. The $580 test accepts \"an income from any source.\"",
+        "source": "S12",
+        "verified": true
+      },
+      {
+        "item": "Your household includes everyone on your tax return",
+        "value": "List everyone in your household regardless of immigration status or whether they are applying",
+        "detail": "\"Household size and income are needed to calculate program eligibility and financial help.\"",
+        "source": "S8",
+        "verified": true
+      },
+      {
+        "item": "Expect the county to check",
+        "value": "Counties verify income electronically where they can",
+        "detail": "This is why the numbers you put in should be the numbers you would report on your tax return. If your trading income is genuinely hard to project, ask the county what evidence they will accept rather than guessing.",
+        "source": "S24",
+        "verified": true
+      },
+      {
+        "item": "Ask about the work-rule insert",
+        "value": "From October 1, 2026, every application packet includes the work-rule letter",
+        "detail": "It lists the ways to comply and the exemptions. Read it before you submit.",
+        "source": "S12",
+        "verified": true
+      }
+    ],
+    "gather": [
+      {
+        "item": "Identity and immigration documents",
+        "value": "Photo ID; green card if you have one; Social Security number if you have one",
+        "detail": "Covered California: \"List everyone in your household on the application, regardless of immigration status or whether they are applying for insurance.\" Applying will not affect your immigration status.",
+        "source": "S8",
+        "verified": true
+      },
+      {
+        "item": "California residency",
+        "value": "Proof that you live in California",
+        "detail": "A standard Medi-Cal eligibility requirement; the DHCS screening tool asks how many people live in your home.",
+        "source": "S31",
+        "verified": true
+      },
+      {
+        "item": "Income records",
+        "value": "Lease agreements and receipts for rental income; a 1099 or your own ledger; bank statements showing interest; your trading records and realized gains/losses",
+        "detail": "Net rental income, interest and trading results are all MAGI income. Keep your own records; the county may ask for proof.",
+        "source": "S24",
+        "verified": true
+      },
+      {
+        "item": "If you are claiming an exemption",
+        "value": "Evidence for it",
+        "detail": "For example a disability determination, proof of a child 13 or younger in your care, CalFresh/CalWORKs award letters, veteran disability rating, tribal membership, or jail-release records. \"Exemption determinations … apply retroactively to the date of application\" when you provide self-attestation or verification.",
+        "source": "S10",
+        "verified": true
+      },
+      {
+        "item": "Work-hour evidence",
+        "value": "",
+        "detail": "DHCS lists \"acceptable forms of verification\" as one of the areas still awaiting federal guidance, so ask your county what it will accept before you rely on a particular document.",
+        "source": "S10",
+        "verified": false,
+        "flag": "Acceptable forms of verification for work hours are listed by DHCS as pending federal guidance, so the exact documents accepted are not confirmable from an official source today. Confirm with your county before the first renewal."
+      }
+    ],
+    "after": [
+      {
+        "item": "Keep your contact information current",
+        "value": "Mailing address, phone number and email with your county office",
+        "detail": "DHCS's member letter makes this its first instruction: \"Make sure your county Medi-Cal office has your current contact information.\" Counties mail, email or text you about these rules.",
+        "source": "S12",
+        "verified": true
+      },
+      {
+        "item": "Create a BenefitsCal account",
+        "value": "Track benefits, complete forms, report changes, upload documents, read notifications",
+        "detail": "DHCS recommends it in the member letter, and notes that the county may ask for renewal forms, pay stubs and more — and that you risk losing coverage if you do not respond.",
+        "source": "S12",
+        "verified": true
+      },
+      {
+        "item": "Watch for the renewal notice",
+        "value": "Renew on time, every six months once 2027 starts",
+        "detail": "\"If your Medi-Cal ends, you have three months to sign up again\" (for the immigration-status freeze). Missing a renewal is the most common way to lose coverage.",
+        "source": "S20",
+        "verified": true
+      },
+      {
+        "item": "Keep evidence of your qualifying hours or income",
+        "value": "Month by month, in advance",
+        "detail": "One qualifying month in each six-month window is enough, and the months do not have to be consecutive. Keeping the evidence makes the county's job easy and protects you at redetermination.",
+        "source": "S10",
+        "verified": true
+      }
+    ],
+    "contacts": [
+      {
+        "item": "Your county Medi-Cal office",
+        "value": "DHCS county office finder",
+        "detail": "This is the office that decides your eligibility, verifies your hours and income, and handles notices, hearings and appeals.",
+        "source": "S32",
+        "verified": true
+      },
+      {
+        "item": "Medi-Cal Helpline",
+        "value": "800-541-5555",
+        "detail": "Listed on the DHCS member outreach letter.",
+        "source": "S12",
+        "verified": true
+      },
+      {
+        "item": "Covered California",
+        "value": "800-300-1506",
+        "detail": "Covered California's contact number, listed on the Covered California Medi-Cal page.",
+        "source": "S7",
+        "verified": true
+      },
+      {
+        "item": "DHCS work-rules page",
+        "value": "dhcs.ca.gov/workrules",
+        "detail": "The member portal referenced in DHCS's text messages and outreach letter.",
+        "source": "S12",
+        "verified": true
+      },
+      {
+        "item": "BenefitsCal",
+        "value": "benefitscal.com",
+        "detail": "The official portal for forms, renewals, documents and notifications.",
+        "source": "S12",
+        "verified": true
+      }
+    ]
+  }
+}

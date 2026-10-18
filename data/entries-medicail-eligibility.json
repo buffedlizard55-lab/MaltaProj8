@@ -1,0 +1,251 @@
+{
+  "tables": {
+    "groups": [
+      {
+        "item": "Medi-Cal for Adults (ACA adult group / MAGI New Adult Group), ages 19–64",
+        "value": "Income at or below 138% FPL — $22,025 for 1 person in 2026",
+        "detail": "DHCS's program chart: \"138% FPL = ACA New Adults Ages 19-64.\" This is the group the 2027 work rule applies to. Covered California: \"Most adults qualify for Medi-Cal with household income up to 138% of the federal poverty level.\"",
+        "source": "S5",
+        "verified": true,
+        "also": [
+          "S7",
+          "S1"
+        ]
+      },
+      {
+        "item": "Medi-Cal for Children, ages 0–18",
+        "value": "Income at or below 266% FPL",
+        "detail": "DHCS's chart: \"266% FPL = ACA OTLIC.\" Covered California: \"Children qualify with household income up to 266% of the FPL.\"",
+        "source": "S5",
+        "verified": true,
+        "also": [
+          "S7"
+        ]
+      },
+      {
+        "item": "Medi-Cal during pregnancy",
+        "value": "Full scope at or below 213% FPL; MCAP from over 213% to 322% FPL",
+        "detail": "DHCS's chart: \"213% FPL = Full-Scope Coverage for ACA Pregnant Persons\"; \"Above 213% to 322% FPL = Medi-Cal Access Program (MCAP).\"",
+        "source": "S5",
+        "verified": true
+      },
+      {
+        "item": "FPL Program for Aged & Disabled",
+        "value": "138% FPL",
+        "detail": "DHCS's chart lists \"138% FPL = ACA New Adults Ages 19-64; and = FPL Program for Aged & Disabled.\" This is a non-MAGI program, so members of it are not subject to the work rule. Asset limits do apply — see the assets table.",
+        "source": "S5",
+        "verified": true
+      },
+      {
+        "item": "Disabled individuals in the New Adult Group",
+        "value": "128% FPL",
+        "detail": "Listed in DHCS's program chart as \"128% FPL = Disabled Individuals in New Adult Group.\"",
+        "source": "S5",
+        "verified": true
+      },
+      {
+        "item": "Working Disabled Program (250% FDP)",
+        "value": "250% FPL — for a disabled person who works",
+        "detail": "DHCS: countable assets must not exceed $130,000 for one person and $65,000 for each additional person (up to 10). This program is for people who are working, so it does not fit a zero-earned-income situation.",
+        "source": "S34",
+        "verified": true,
+        "also": [
+          "S22"
+        ]
+      },
+      {
+        "item": "Medicare Savings Programs (QMB, SLMB, QI-1)",
+        "value": "100% / 120% / 135% FPL — for people on or eligible for Medicare",
+        "detail": "DHCS's chart: 100% FPL = QMB; 120% FPL = SLMB; 135% FPL = QI-1. These require Medicare enrollment and therefore an age of 65 or a disability determination. Asset limits apply from January 1, 2026: $130,000 for an individual, $65,000 per additional household member.",
+        "source": "S40",
+        "verified": true
+      },
+      {
+        "item": "Transitional Medi-Cal",
+        "value": "185% FPL (pre-ACA) / 202% FPL (post-ACA) — for people who recently lost ACA coverage because income rose",
+        "detail": "Listed in DHCS's program chart. It is a short-term safety net: you get a set number of months of Medi-Cal after your household income moves above 138% FPL.",
+        "source": "S5",
+        "verified": true
+      },
+      {
+        "item": "Unsubsidized coverage",
+        "value": "400%+ FPL",
+        "detail": "DHCS's chart: \"400+% FPL = Unsubsidized Coverage.\" This is marketplace coverage with no financial help.",
+        "source": "S5",
+        "verified": true
+      }
+    ],
+    "limits": [
+      {
+        "item": "1 person",
+        "value": "$22,025 per year — $1,836 per month",
+        "detail": "138% FPL, 2026. Effective January 1, 2026 for MAGI determinations.",
+        "source": "S1",
+        "verified": true
+      },
+      {
+        "item": "2 people",
+        "value": "$29,864 per year — $2,490 per month",
+        "detail": "ACWDL 26-01 Enclosure 2 lists $29,864. DHCS's public eligibility chart shows $29,863 for this row — see the note below.",
+        "source": "S3",
+        "verified": true
+      },
+      {
+        "item": "3 people",
+        "value": "$37,702 per year — $3,143 per month",
+        "detail": "ACWDL 26-01 Enclosure 2.",
+        "source": "S3",
+        "verified": true
+      },
+      {
+        "item": "4 people",
+        "value": "$45,540 per year — $3,795 per month",
+        "detail": "ACWDL 26-01 Enclosure 2.",
+        "source": "S3",
+        "verified": true
+      },
+      {
+        "item": "5 people",
+        "value": "$53,379 per year — $4,450 per month",
+        "detail": "ACWDL 26-01 Enclosure 2 lists $53,379. DHCS's public eligibility chart shows $53,378 for this row.",
+        "source": "S3",
+        "verified": true
+      },
+      {
+        "item": "6 people",
+        "value": "$61,217 per year — $5,102 per month",
+        "detail": "ACWDL 26-01 Enclosure 2.",
+        "source": "S3",
+        "verified": true
+      },
+      {
+        "item": "7 people",
+        "value": "$69,056 per year — $5,755 per month",
+        "detail": "ACWDL 26-01 Enclosure 2 lists $69,056. DHCS's public eligibility chart shows $69,055 for this row.",
+        "source": "S3",
+        "verified": true
+      },
+      {
+        "item": "8 people",
+        "value": "$76,894 per year — $6,409 per month",
+        "detail": "ACWDL 26-01 Enclosure 2.",
+        "source": "S3",
+        "verified": true
+      },
+      {
+        "item": "Each additional person",
+        "value": "+$7,839 per year — +$655 per month",
+        "detail": "ACWDL 26-01 Enclosures 1 and 2.",
+        "source": "S3",
+        "verified": true
+      }
+    ],
+    "assets": [
+      {
+        "item": "Who is subject to an asset test",
+        "value": "People 65 or older, people with a disability (physical, mental, or developmental), people in a nursing home, and families whose income is too high to qualify under federal tax rules",
+        "detail": "DHCS's asset-limit FAQ lists exactly these four groups. \"Medi-Cal started counting your assets (things you own) on January 1, 2026, to decide if you can get or keep coverage.\"",
+        "source": "S22",
+        "verified": true,
+        "also": [
+          "S38"
+        ]
+      },
+      {
+        "item": "Who is not subject",
+        "value": "Adults 19–64 in the MAGI New Adult Group (and other MAGI-based groups)",
+        "detail": "The asset limits apply to non-MAGI programs; MAGI-based eligibility is determined on income alone. If you are 19–64 and eligible as a Medi-Cal adult, your savings and rental property are not counted against your Medi-Cal eligibility.",
+        "source": "S22",
+        "verified": true
+      },
+      {
+        "item": "Asset limit through June 30, 2027",
+        "value": "$130,000 for one person, plus $65,000 for each additional household member (up to 10)",
+        "detail": "DHCS asset-limit FAQ. Countable: bank accounts, cash, second vehicles, second homes, other financial resources. Not counted: your main home, your main vehicle, household items, and retirement funds if you are taking regular payments.",
+        "source": "S22",
+        "verified": true
+      },
+      {
+        "item": "Asset limit starting July 1, 2027",
+        "value": "$21,000 for one person, $31,000 for two, plus $1,550 per additional person (up to 10)",
+        "detail": "DHCS asset-limit FAQ. DHCS has proposed aligning the limit to the federal SSI resource limit.",
+        "source": "S22",
+        "verified": true
+      },
+      {
+        "item": "Why this matters to you only if you have a disability",
+        "value": "An asset test plus the non-MAGI pathway is the one route out of the work rule",
+        "detail": "If you have a qualifying disability, the Aged & Disabled FPL program (138% FPL) is a non-MAGI program, and non-MAGI members are excluded from work and community engagement requirements — but your assets are then counted. With $130,000 of countable assets allowed through June 2027, most households with one home, one car and normal savings are under the limit.",
+        "source": "S10",
+        "verified": true
+      }
+    ],
+    "not-subject": [
+      {
+        "item": "Non-MAGI Medi-Cal programs (aged, blind, disabled, long-term care, ABD FPL, Medicare Savings Programs)",
+        "value": "Excluded from the work rule",
+        "detail": "\"Members who receive Medi-Cal under other coverage groups such as Non-MAGI … Mandatory Children's Group, or Pregnancy Group are excluded from work and community engagement requirements.\"",
+        "source": "S10",
+        "verified": true
+      },
+      {
+        "item": "Mandatory Children's Group (children)",
+        "value": "Excluded",
+        "detail": "Also excused from the six-month renewal rule.",
+        "source": "S12",
+        "verified": true
+      },
+      {
+        "item": "Pregnancy Group and postpartum coverage",
+        "value": "Excluded",
+        "detail": "Pregnant individuals and those in the 12 months postpartum are excluded from both the work rule and the six-month renewal rule.",
+        "source": "S12",
+        "verified": true
+      },
+      {
+        "item": "Restricted-scope (emergency) Medi-Cal and pregnancy-only services",
+        "value": "Excluded",
+        "detail": "\"Individuals eligible for restricted-scope (emergency) Medi-Cal or pregnancy services are also not subject to work and community engagement requirements.\" Restricted-scope covers emergency care, pregnancy care and nursing home care only — it is not full coverage.",
+        "source": "S10",
+        "verified": true
+      },
+      {
+        "item": "People who move out of the MAGI New Adult Group",
+        "value": "The county stops applying the work rule",
+        "detail": "When a member moves to a coverage group that is not subject to the requirement, \"the county shall stop applying the work and community engagement requirement as of the effective date of the eligibility determination.\" DHCS gives the example of a member whose income drop moves them to the Parent/Caretaker group.",
+        "source": "S10",
+        "verified": true
+      }
+    ],
+    "apply-when": [
+      {
+        "item": "When you can apply",
+        "value": "Any time of year",
+        "detail": "\"You can apply any time of year. Your health insurance can start quickly, and in some cases right away.\" Covered California, Medi-Cal. Medi-Cal enrollment is not limited to open enrollment.",
+        "source": "S7",
+        "verified": true
+      },
+      {
+        "item": "How you apply",
+        "value": "One application, four ways",
+        "detail": "Online through BenefitsCal or Covered California, by mail, by phone, or in person at your county office. Covered California: \"One application checks your eligibility for both Medi-Cal and Covered California.\"",
+        "source": "S30",
+        "verified": true
+      },
+      {
+        "item": "What it costs",
+        "value": "Free or low-cost for most people",
+        "detail": "\"Medi-Cal covers health, dental and vision care for you and your children, often at little or no cost.\" Separate premium rules begin July 1, 2027 for some people with certain immigration statuses (see the 2026–27 changes page).",
+        "source": "S7",
+        "verified": true
+      },
+      {
+        "item": "How to see if you qualify before applying",
+        "value": "DHCS screening tool and Covered California Shop and Compare",
+        "detail": "DHCS's Qualify page is \"only an estimate. It is not an application for Medi-Cal.\" Covered California offers Shop and Compare at apply.coveredca.com.",
+        "source": "S31",
+        "verified": true
+      }
+    ]
+  }
+}
