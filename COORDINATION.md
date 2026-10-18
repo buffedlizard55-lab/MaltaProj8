@@ -467,12 +467,12 @@ The site's central claim — a California resident with $0 earned income can sat
 
 **PR / merge record:**
 - Branch: `arena/a9c46f9b-maltaproj8` → `main`.
-- **PR: https://github.com/buffedlizard55-lab/MaltaProj8/pull/11 — MERGED 2026-10-18T[MergedAt] (merge commit [mergeCommit]).**
+- **PR: https://github.com/buffedlizard55-lab/MaltaProj8/pull/13 — MERGED 2026-10-18T22:17:34Z (merge commit b725a0167174d97db9ed6ba5710196f14b9a5f2c).**
 - Merge: performed without waiting for approval (per task instructions). Flagged/unverified items do not block merge; they remain published on `flagged.html` and `verify-a9c46f9b.html`.
 - GitHub Pages: confirmed rebuilt and live at https://buffedlizard55-lab.github.io/MaltaProj8/ after the merge (Pages API build → status “built”, no error; live page `verify-a9c46f9b.html` serves the verified content).
 
 **Deployment record (arena/a9c46f9b):**
-- PR #11 merged into `main`; merge commit [mergeCommit].
+- PR #13 merged into `main`; merge commit b725a01.
 - `pages.yml` workflow on merge → build = **built** (no error).
 - Live site: https://buffedlizard55-lab.github.io/MaltaProj8/ (and /verify-a9c46f9b.html).
 - Source policy honored: every table row links to an official source; unverifiable values blank + flagged. No hallucinations found in core claims during independent re-verification.
