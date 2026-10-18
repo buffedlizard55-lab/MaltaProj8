@@ -1,4 +1,4 @@
-name: Validate evidence and site
+name: Validate supplemental coverage guide
 on:
   push:
     branches: [main, arena/05508cd2-maltaproj8]
@@ -14,8 +14,8 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
-      - run: python scripts/check.py
+      - run: python coverage-guide/scripts/check.py
       - name: Confirm editorial register matches JSON
         run: |
-          python scripts/seed_research.py
-          git diff --exit-code -- research/findings.json
+          python coverage-guide/scripts/seed_research.py
+          git diff --exit-code -- coverage-guide/research/findings.json
