@@ -1,0 +1,58 @@
+{
+  "title": "Federal Law: H.R.1 One Big Beautiful Bill Act (P.L. 119-21) - Medicaid Provisions",
+  "enacted": "2025-07-04",
+  "publicLaw": "P.L. 119-21",
+  "congress": "119th Congress",
+  "effective": "2027-01-01",
+  "sections": [
+    {
+      "section": "Sec. 71119",
+      "title": "Requirement for States to Establish Medicaid Community Engagement Requirements",
+      "summary": "Requires states to condition Medicaid eligibility for applicable individuals (ACA expansion adults 19-64) on completing 80 hours/month of qualifying activities or meeting income threshold. Must be implemented no later than first quarter after Dec 31, 2026 (i.e., Jan 1, 2027), at state option earlier. Optional good-faith delay to Dec 31, 2028 at Secretary discretion.",
+      "source": "https://www.congress.gov/bill/119th-congress/house-bill/1/text",
+      "verified": true,
+      "verified_date": "2026-10-18"
+    },
+    {
+      "section": "Sec. 71119 - Qualifying Activities",
+      "title": "What Counts as Community Engagement",
+      "summary": "Individual meets requirement if in the month they: (A) work >=80 hrs; (B) complete >=80 hrs community service; (C) participate in work program >=80 hrs; (D) enrolled at least half-time in educational program; (E) any combination totaling >=80 hrs; (F) have monthly income >= federal minimum wage x 80 hrs ($580 at $7.25); (G) seasonal/irregular income: average monthly income over prior 6 months >= $580.",
+      "source": "https://www.congress.gov/bill/119th-congress/house-bill/1/text",
+      "verified": true,
+      "verified_date": "2026-10-18"
+    },
+    {
+      "section": "Sec. 71119 - Applicable Individuals",
+      "title": "Who Is Subject",
+      "summary": "Applies to nonpregnant, nondisabled adults aged 19-64 eligible for Medicaid under ACA expansion group (1902(a)(10)(A)(i)(VIII)) or Section 1115 waiver providing minimum essential coverage. Excludes children, seniors 65+, pregnant/postpartum, aged/blind/disabled, those entitled to Medicare. Applies in 41 expansion states + DC + certain waiver states (43 jurisdictions). U.S. territories not subject.",
+      "source": "https://www.congress.gov/bill/119th-congress/house-bill/1/text",
+      "verified": true,
+      "verified_date": "2026-10-18"
+    },
+    {
+      "section": "Sec. 71119 - Mandatory Exemptions",
+      "title": "Excluded Individuals (No Work Requirement)",
+      "summary": "Must be exempted: parents/guardians/caretaker relatives/family caregivers of dependent child age 13 or under OR disabled individual; veterans with total disability rating; medically frail or special medical needs; those complying with TANF work requirements; SNAP recipients not exempt from SNAP work; inmates; those in last 90 days after release; pregnant/postpartum 12mo; American Indians/Alaska Natives; certain former foster youth; those entitled/enrolled in Medicare Part A or B.",
+      "source": "https://www.cms.gov/newsroom/fact-sheets/medicaid-community-engagement-requirement-certain-individuals-interim-final-rule-comment-period-cms",
+      "verified": true,
+      "verified_date": "2026-10-18"
+    },
+    {
+      "section": "CMS-2454-IFC",
+      "title": "CMS Interim Final Rule (IFR)",
+      "summary": "CMS issued IFC June 1, 2026, published June 3, 2026 (91 FR 33348), effective July 31, 2026. Verification: at application (look-back 1-3 consecutive months prior) and between redeterminations (>=1 month). Must use ex parte data matching BEFORE asking enrollee. 30-day cure period after notice of noncompliance.",
+      "source": "https://www.federalregister.gov/documents/2026/06/03/2026-11094/medicaid-program-community-engagement-requirement-for-certain-individuals",
+      "verified": true,
+      "verified_date": "2026-10-18"
+    }
+  ],
+  "key_numbers": {
+    "income_threshold_2026": "$580/month (federal minimum wage $7.25 x 80 hrs)",
+    "hours_required": "80 hrs/month",
+    "age_range": "19-64",
+    "renewal_frequency": "Every 6 months (was 12)",
+    "days_to_cure": "30 days",
+    "lookback_application": "1-3 consecutive months before application",
+    "lookback_renewal": "1+ months between redeterminations"
+  }
+}
