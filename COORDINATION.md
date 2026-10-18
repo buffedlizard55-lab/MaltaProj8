@@ -283,3 +283,35 @@ All four sections are now reachable from the shared top navigation on every root
 - Source policy honored: every table row on the published site links to an official source; unverifiable values are blank + flagged (per `flagged.html` / `verify-95219c64.html`). No hallucinations found in the core claims during independent re-verification.
 
 **Files added by this session (own scope only):** `verify-95219c64.html` (independent verification page); COORDINATION.md (this section).
+
+
+## Final integration + polish — arena/5bf2fb99-maltaproj8 (2026-10-18)
+
+**Session ID:** arena/5bf2fb99-maltaproj8
+**Branch:** arena/5bf2fb99-maltaproj8 (session is tied to this branch per platform)
+**Base:** main at 497d5d8 (Merge PR #10)
+**Status:** in progress → claimed
+**Role:** Final integration + independent re-verification + site polish for GH Pages (clean dashboard, tables, flagged page)
+
+### Task board (this session)
+
+| # | Task | Status | Owner | Files / scope | Verification |
+|---|------|--------|-------|---------------|--------------|
+| F1 | Independent line-by-line re-verification of all 46 published pages (every row vs official source) | in progress | arena/5bf2fb99 | verify-5bf2fb99.html, verification.html patch | Every table row checked: official domain + value vs source; hallucinations flagged; see verify-5bf2fb99.html |
+| F2 | Site polish — clean, user-friendly dashboard (simple tables, category organization, filters, mobile) | in progress | arena/5bf2fb99 | index.html, flagged.html, site/assets/style.css, assets/site.js | All tables remain source-linked; no values invented; filters added; nav grouped by category; manual responsive check |
+| F3 | Cross-check all data files + site build (build_site.py + check_links.py + research + coverage-guide validators) | pending | arena/5bf2fb99 | scripts/check_links.py, data/*.json | All 264 extended rows + 52 research + 65 coverage-guide + 76 docs rows pass; 46 pages, no broken links |
+| F4 | Flagged-for-Review consolidation (single entry point linking all 4 flagged pages) | pending | arena/5bf2fb99 | flagged.html | All flagged items (F-01..F-10, I-01..I-03, W-01..W-13, docs FL-01..FL-11, research/coverage-guide flags) linked, no blocking |
+| F5 | PR → main → merge → confirm GitHub Pages built | pending | arena/5bf2fb99 | .github/workflows/pages.yml, git PR/merge | PR opened from arena/5bf2fb99 → main, merged without waiting, Pages status=built verified |
+
+### Scope lock
+
+- This session works ONLY on arena/5bf2fb99-maltaproj8 and pushes ONLY there.
+- Files claimed: index.html (+ shared topbar/nav), flagged.html, site/assets/style.css, assets/site.js, verify-5bf2fb99.html, COORDINATION.md (this section only). Other-session files (research/**, coverage-guide/**, docs/**, data/*.json) are read-only for verification; no deletions or recertifications.
+- If another session is active, its claimed scope is not edited — request logged here instead.
+
+### Log
+
+- 2026-10-18 22:11 UTC: Session started, repo at main 497d5d8 (45+ pages live, Pages built). All prior sessions' work retained (5d32bca3, b4c93f27, 05508cd2, c8487e35, 6f935bbc, 95219c64). Branch arena/5bf2fb99 created from 497d5d8.
+- 2026-10-18 22:11 UTC: Read COORDINATION.md, verified no active conflicting claims on files above. Claimed F1–F5, committing claim now.
+
+
