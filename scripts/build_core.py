@@ -859,6 +859,7 @@ def archives(data, sources):
             ("verify-9285d712.html", "Independent check (9285d712)"),
             ("verify-95219c64.html", "Independent check (95219c64)"),
             ("verify-a9c46f9b.html", "Independent check (a9c46f9b)"),
+            ("verify-e071bffc.html", "Source sweep + enacted-statute check (e071bffc)"),
         ], "Built by other sessions. Preserved as supplementary material. Their own validators were run by those sessions; this session did not re-certify every claim."),
     ]
     blocks = ""

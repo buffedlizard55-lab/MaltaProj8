@@ -1,0 +1,646 @@
+{
+  "meta": {
+    "session": "arena/e071bffc-maltaproj8",
+    "task": "22-23 — source-liveness sweep and re-verification against the codified regulation",
+    "performed": "2026-10-18",
+    "method": "Every URL marked 'fetched' below was retrieved and read in this session. Status 'not-refetched' means this session did NOT retrieve it; the value it supports is carried from an earlier session's log and is NOT re-certified here. Nothing is marked verified without a fetch in this session. Findings E-01 to E-20 rest on the codified federal regulation in the eCFR; E-21 to E-26 rest on the enacted California statute AB 2161 (Chapter 209), which this session located and read in full and which no earlier session had.",
+    "honesty_note": "24 of the 40 register sources were not re-fetched in this session and are left as 'not-refetched' rather than being reported as verified.",
+    "official_only": true
+  },
+  "register_sweep": [
+    {
+      "id": "S01",
+      "url": "https://www.congress.gov/bill/119th-congress/house-bill/1/text",
+      "status": "fetched",
+      "locator": "H.R.1 overview + Statute at Large text",
+      "confirmed": "139 Stat. 72; Public Law 119-21; became law 07/04/2025; sponsor Rep. Arrington"
+    },
+    {
+      "id": "S02",
+      "url": "https://www.congress.gov/crs-product/R48633",
+      "status": "fetched",
+      "locator": "CRS product page, contents list",
+      "confirmed": "CRS R48633 'Health Provisions in P.L. 119-21', publication date 08/18/2025; contents include Section 71119 (community engagement) and Section 71120 (cost sharing)"
+    },
+    {
+      "id": "S03",
+      "url": "https://www.federalregister.gov/documents/2026/06/03/2026-11094/medicaid-program-community-engagement-requirement-for-certain-individuals",
+      "status": "fetched",
+      "locator": "Document Details",
+      "confirmed": "CMS-2454-IFC; 91 FR 33348; pages 33348-33482 (135); published 06/03/2026; effective 2026-07-31; RIN 0938-AV98; corrected by a document published 06/29/2026"
+    },
+    {
+      "id": "S04",
+      "url": "https://www.federalregister.gov/documents/2026/06/29/C1-2026-11094/medicaid-program-community-engagement-requirement-for-certain-individuals",
+      "status": "fetched",
+      "locator": "Document Details",
+      "confirmed": "Correction; 91 FR 39028; pages 39028-39031 (4); published 06/29/2026; document number C1-2026-11094. NOTE: the URL in the repo uses the /2026/06/29/ date path, which resolves correctly; the hyphenated /2026-06-29/ form returns 404 and is not used anywhere in the repo (checked at byte level)"
+    },
+    {
+      "id": "S05",
+      "url": "https://www.cms.gov/newsroom/fact-sheets/medicaid-community-engagement-requirement-certain-individuals-interim-final-rule-comment-period-cms",
+      "status": "fetched",
+      "locator": "Fact sheet, Jun 01 2026",
+      "confirmed": "IFC issued June 1 2026; 80 hours/month; states implement no later than January 1 2027; '43 states and the District of Columbia'; '$580 per month in 2026'; 'for seasonal workers, there is a different calculation'"
+    },
+    {
+      "id": "S06",
+      "url": "https://www.medicaid.gov/federal-policy-guidance/downloads/cib12082025.pdf",
+      "status": "not-refetched",
+      "locator": "",
+      "confirmed": ""
+    },
+    {
+      "id": "S07",
+      "url": "https://www.medicaid.gov/medicaid/downloads/ce-requirement-ifc-deck.pdf",
+      "status": "not-refetched",
+      "locator": "",
+      "confirmed": ""
+    },
+    {
+      "id": "S08",
+      "url": "https://www.medicaid.gov/resources-for-states/working-families-tax-cut-legislation/community-engagement",
+      "status": "not-refetched",
+      "locator": "",
+      "confirmed": ""
+    },
+    {
+      "id": "S09",
+      "url": "https://www.dhcs.ca.gov/wp-content/uploads/2026/04/25-30.pdf",
+      "status": "fetched",
+      "locator": "ACWDL 25-30, Purpose / Policy / Exemptions / Qualifying Activities / How to Verify Compliance",
+      "confirmed": "Dated December 30 2025; expressly 'preliminary guidance and is subject to change'; effective January 1 2027 for the MAGI New Adult Group (aid code M1); income test 'An individual's total gross income for a month must meet or exceed this amount'; averaging row is written for 'individuals with fluctuating income'; look-back month is the month immediately preceding application; renewal is satisfied by participation in any one month since the last determination"
+    },
+    {
+      "id": "S10",
+      "url": "https://www.dhcs.ca.gov/wp-content/uploads/2026/09/MEDIL-I26-25.pdf",
+      "status": "fetched",
+      "locator": "MEDIL I 26-25 body + enclosed 'Dear Medi-Cal Member' letter dated August 31 2026",
+      "confirmed": "Dated September 11 2026. Member letter: 'Have an income from any source of at least $580 (before taxes) in any month since your last renewal'; 'People whose hours change frequently or who have seasonal jobs can average at least $580 per month from any source over 6 months'; letter states the rules 'will not go into effect until March 2027' while the MEDIL body states January 1 2027; letter warns of consequences for Medi-Cal AND Covered California subsidies"
+    },
+    {
+      "id": "S11",
+      "url": "https://www.dhcs.ca.gov/medi-cal/updates/medi-cal-changes/",
+      "status": "fetched",
+      "locator": "Medi-Cal Changes page",
+      "confirmed": "Page resolves and carries the current change list (immigrant coverage changes, January 2027 fee-for-service transition, July 2027 dental and premium changes, asset limits)"
+    },
+    {
+      "id": "S12",
+      "url": "https://www.dhcs.ca.gov/tracking-federal-impact-medi-cal-eligibility/",
+      "status": "not-refetched",
+      "locator": "",
+      "confirmed": ""
+    },
+    {
+      "id": "S13",
+      "url": "https://www.dhcs.ca.gov/wp-content/uploads/2026/05/DHCS-HR1-Implementation-Plan.pdf",
+      "status": "fetched",
+      "locator": "Title page + Key Medi-Cal Eligibility Changes",
+      "confirmed": "'California H.R.1 Implementation Plan - DHCS (1-29-2026)', January 29 2026; Work Reporting Requirements effective January 1 2027 ('work, study or volunteer at least 80 hours per month unless exempt'); Six-Month Renewals effective January 1 2027; retroactive coverage reduced to one month for the New Adult Group; cost sharing effective October 1 2028; Medi-Cal covers roughly 14.7 million individuals as of June 2025. The README variant URL /federal-impacts/Documents/DHCS-HR1-Implementation-Plan.pdf also resolves (DHCS redirects to the same document)"
+    },
+    {
+      "id": "S14",
+      "url": "https://www.dhcs.ca.gov/services/medi-cal/eligibility/letters/Documents/26-01.pdf",
+      "status": "not-refetched",
+      "locator": "",
+      "confirmed": ""
+    },
+    {
+      "id": "S15",
+      "url": "https://www.dhcs.ca.gov/services/medi-cal-resources/medi-cal-eligibility-division/all-county-welfare-directors-medi-cal-eligibility-division-information-letters/2026-fpl-calculation-chart-monthly-values-enclosure-1/",
+      "status": "fetched",
+      "locator": "2026 FPL Calculation Chart (Monthly Values) Enclosure 1, family size 1",
+      "confirmed": "Family size 1: annual FPL 15960, monthly FPL 1330, 133% = 1769, 135% = 1796, 138% = 1836, 200% = 2660, 250% = 3325, 400% = 5320. Monthly values are 'rounded up to next higher dollar'. This confirms the $1,836/month figure at 138% FPL"
+    },
+    {
+      "id": "S16",
+      "url": "https://www.dhcs.ca.gov/medi-cal/qualify/qualify-for-medi-cal-eligibility-chart/",
+      "status": "fetched",
+      "locator": "Eligibility by Federal Poverty Level table",
+      "confirmed": "138% FPL income limit, family size 1 = $22,025; size 2 = $29,863; each extra person add $7,839"
+    },
+    {
+      "id": "S17",
+      "url": "https://aspe.hhs.gov/topics/poverty-economic-mobility/poverty-guidelines",
+      "status": "fetched",
+      "locator": "HHS Poverty Guidelines for 2026, 48 contiguous states and DC",
+      "confirmed": "2026 guideline, 1 person = $15,960; 2 = $21,640; each additional +$5,680. Page also states that because of the October 2025 federal government shutdown BLS did not publish CPI-U for that month, so the 2026 guidelines compare 11 available months of 2025 with all 12 months of 2024"
+    },
+    {
+      "id": "S18",
+      "url": "https://hbex.coveredca.com/stakeholders/PDFs/2026-02_StatePremiumSub_PolicyExplainer-Final.pdf",
+      "status": "not-refetched",
+      "locator": "",
+      "confirmed": ""
+    },
+    {
+      "id": "S19",
+      "url": "https://www.coveredca.com/important-changes",
+      "status": "not-refetched",
+      "locator": "",
+      "confirmed": ""
+    },
+    {
+      "id": "S20",
+      "url": "https://www.coveredca.com/press-releases/2026-07-21/covered-california-rates-and-plans-for-2027-california-continues-fight-for-health-insurance-affordability-and-access",
+      "status": "not-refetched",
+      "locator": "",
+      "confirmed": ""
+    },
+    {
+      "id": "S21",
+      "url": "https://help.kalshi.com/en/articles/13823849-what-tax-documentation-does-kalshi-provide",
+      "status": "not-refetched",
+      "locator": "",
+      "confirmed": "",
+      "note": "Vendor help-centre page, not an official government source. It cannot be used to state a tax value"
+    },
+    {
+      "id": "S22",
+      "url": "https://oag.ca.gov/news/press-releases/attorney-general-bonta-sues-trump-administration-over-unlawful-implementation",
+      "status": "fetched",
+      "locator": "Press release, Monday June 29 2026",
+      "confirmed": "'Co-leading a coalition of 24 attorneys general and two governors'; lawsuit co-led by AG Bonta (CA), AG Campbell (MA) and AG Davenport (NJ), joined by the AGs of AZ, CO, CT, DE, DC, HI, IL, ME, MD, MI, MN, NV, NM, NY, NC, OR, RI, VT, VA, WA and WI and the governors of Kentucky and Pennsylvania; challenges the interim final rule published June 3 2026; states had to notify recipients by August 31 2026. California is a CO-LEAD, not the sole or lead plaintiff"
+    },
+    {
+      "id": "S23",
+      "url": "https://www.dhcs.ca.gov/wp-content/uploads/2026/07/DHCS-FY-2026-27-Budget-Act-Highlights.pdf",
+      "status": "fetched",
+      "locator": "Major Budget Issues, 'H.R. 1 of 2025'",
+      "confirmed": "July 1 2026. 'The Budget reflects costs of approximately $1.3 billion General Fund in 2026-27. The Budget projects total H.R. 1 disenrollment of 44,000 in 2026-27 and 1.3 million by 2029-30.' Work and Community Engagement Requirement: reduction of $357.6M ($90.3M GF) in 2026-27 and $9.6B ($2.4B GF) by 2029-30; projected disenrollments 43,000 in 2026-27 and 1.1 million by 2029-30. County Medi-Cal Administration: one-time $709M ($196.8M GF) in 2026-27. Total DHCS budget $226.3 billion"
+    },
+    {
+      "id": "S24",
+      "url": "https://ebudget.ca.gov/2026-27/pdf/BudgetSummary/HealthandHumanServices.pdf",
+      "status": "not-refetched",
+      "locator": "",
+      "confirmed": ""
+    },
+    {
+      "id": "S25",
+      "url": "https://lao.ca.gov/Publications/Report/5146",
+      "status": "not-refetched",
+      "locator": "",
+      "confirmed": ""
+    },
+    {
+      "id": "S26",
+      "url": "https://abgt.assembly.ca.gov/system/files/2026-06/floor-report-of-the-2026-27-budget-june-27-2026_5.pdf",
+      "status": "not-refetched",
+      "locator": "",
+      "confirmed": ""
+    },
+    {
+      "id": "S27",
+      "url": "https://www.irs.gov/publications/p527",
+      "status": "not-refetched",
+      "locator": "",
+      "confirmed": ""
+    },
+    {
+      "id": "S28",
+      "url": "https://www.irs.gov/publications/p525",
+      "status": "not-refetched",
+      "locator": "",
+      "confirmed": ""
+    },
+    {
+      "id": "S29",
+      "url": "https://www.irs.gov/publications/p550",
+      "status": "not-refetched",
+      "locator": "",
+      "confirmed": ""
+    },
+    {
+      "id": "S30",
+      "url": "https://www.irs.gov/taxtopics/tc409",
+      "status": "not-refetched",
+      "locator": "",
+      "confirmed": ""
+    },
+    {
+      "id": "S31",
+      "url": "https://www.irs.gov/affordable-care-act/individuals-and-families/eligibility-for-the-premium-tax-credit",
+      "status": "not-refetched",
+      "locator": "",
+      "confirmed": ""
+    },
+    {
+      "id": "S32",
+      "url": "https://www.healthcare.gov/income-and-household-information/income/",
+      "status": "fetched",
+      "locator": "'What's included as income' / MAGI definition and count-do-not-count lists",
+      "confirmed": "MAGI = adjusted gross income (Form 1040 line 11) plus untaxed foreign income, non-taxable Social Security benefits and tax-exempt interest. COUNT: capital gains; investment income including expected interest and dividends and tax-exempt interest; 'Rental and royalty income — use net rental and royalty income'; self-employment income after expenses; unemployment compensation. DO NOT COUNT: child support, gifts, loan proceeds, SSI, veterans' disability payments, worker's compensation"
+    },
+    {
+      "id": "S33",
+      "url": "https://www.ecfr.gov/current/title-42/chapter-IV/subchapter-C/part-435/subpart-G/section-435.603",
+      "status": "fetched",
+      "locator": "42 CFR 435.603(d), (e), (f)",
+      "confirmed": "(d)(1) household income is the sum of the MAGI-based income of every individual in the household. (e) MAGI-based income means income calculated using the same financial methodologies used to determine modified adjusted gross income as defined in section 36B(d)(2)(B) of the Code, with exceptions including (e)(1) 'An amount received as a lump sum is counted as income only in the month received'. (d)(4) a 5-percentage-point FPL disregard applies only for the highest MAGI eligibility group"
+    },
+    {
+      "id": "S34",
+      "url": "https://www.congress.gov/crs-product/R48755",
+      "status": "not-refetched",
+      "locator": "",
+      "confirmed": ""
+    },
+    {
+      "id": "S35",
+      "url": "https://www.congress.gov/bill/119th-congress/house-bill/10357/text",
+      "status": "not-refetched",
+      "locator": "",
+      "confirmed": ""
+    },
+    {
+      "id": "S36",
+      "url": "https://titus.house.gov/news/documentsingle.aspx?DocumentID=5932",
+      "status": "not-refetched",
+      "locator": "",
+      "confirmed": ""
+    },
+    {
+      "id": "S37",
+      "url": "https://www.cftc.gov/PressRoom/PressReleases/8302-20",
+      "status": "not-refetched",
+      "locator": "",
+      "confirmed": ""
+    },
+    {
+      "id": "S38",
+      "url": "https://www.dhcs.ca.gov/file/h-r-1-implementation-fact-sheet-pdf/",
+      "status": "not-refetched",
+      "locator": "",
+      "confirmed": ""
+    },
+    {
+      "id": "S39",
+      "url": "https://hbex.coveredca.com/toolkit/downloads/Financial_Help_Basics.pdf",
+      "status": "not-refetched",
+      "locator": "",
+      "confirmed": ""
+    },
+    {
+      "id": "S40",
+      "url": "https://bphc.hrsa.gov/compliance/compliance-manual/chapter9",
+      "status": "not-refetched",
+      "locator": "",
+      "confirmed": ""
+    }
+  ],
+  "additional_official_sources_fetched": [
+    {
+      "id": "X1",
+      "url": "https://www.ecfr.gov/current/title-42/part-435/section-435.552",
+      "title": "42 CFR 435.552 — Demonstrating community engagement",
+      "status": "fetched",
+      "confirmed": "Codified regulatory text. (a)(1)-(7) list the seven ways to demonstrate community engagement for a month. (a)(6) monthly income not less than the FLSA section 6 minimum wage multiplied by 80 hours. (a)(7) six-month average AND is a seasonal worker as described in 26 U.S.C. 45R(d)(5)(B). (b) defines community service, educational program, work (including unpaid work other than community service) and work program. (c) enrolment status is determined by the school. (d) less-than-half-time hours = credit hours x 3 x 4.33. (e)(1) States may not combine education hours with another activity if enrolled at least half-time. (f)(2) 'The agency must determine the monthly income based on the individual's MAGI-based income, for their MAGI-based household, as defined at 435.603'. (g)(1) seasonal-worker averaging path; (g)(2) same MAGI-based household measure",
+      "locator": "42 CFR 435.552(a)(1)-(7), (b) definitions, (c), (d)(1), (e)(1), (f)(1)-(2), (g)(1)-(2)"
+    },
+    {
+      "id": "X2",
+      "url": "https://www.ecfr.gov/current/title-42/part-435/section-435.551",
+      "title": "42 CFR 435.551 — Applicable individual",
+      "status": "fetched",
+      "confirmed": "An applicable individual is not a specified excluded individual under 435.554 and is eligible/enrolled under 435.119 (adult group) or in a qualifying 1115(a)(2) demonstration, and is at least 19 and under 65, not pregnant, and not entitled to or enrolled in Medicare Part A or enrolled in Part B",
+      "locator": "42 CFR 435.551 opening sentence and (a), (b)(1)-(4)"
+    },
+    {
+      "id": "X3",
+      "url": "https://www.ecfr.gov/current/title-42/part-435/section-435.554",
+      "title": "42 CFR 435.554 — Specified excluded individuals",
+      "status": "fetched",
+      "confirmed": "'Dependent child' means a child 13 years of age or under. 'Disabled individual' uses the ADA definition at 28 CFR 35.108. Exclusions include former foster care youth, Indians as defined at 447.51, parents/guardians/caretaker relatives/family caregivers of a dependent child or disabled individual, veterans with a VA disability rated 100 percent (total) under 38 U.S.C. 1155, and individuals who are medically frail or otherwise have special medical needs",
+      "locator": "42 CFR 435.554(a) definitions of dependent child and disabled individual; (b); (c)(1)-(5)"
+    },
+    {
+      "id": "X4",
+      "url": "https://www.ecfr.gov/current/title-42/part-435/section-435.556",
+      "title": "42 CFR 435.556 — Assessing compliance",
+      "status": "fetched",
+      "confirmed": "(a)(1) applicants: demonstration of community engagement for at least one, but not more than 3 consecutive months, as specified in the State plan, immediately preceding the month of application. (a)(2) enrolled members: 1 or more months between the most recent determination and the renewal due date, whether or not consecutive. (b) a State must not require demonstration for a longer period. (c) the requirement may not be applied to a specified excluded individual",
+      "locator": "42 CFR 435.556(a)(1), (a)(2)(i)-(iii), (b), (c)"
+    },
+    {
+      "id": "X5",
+      "url": "https://www.govinfo.gov/content/pkg/USCODE-2023-title26/html/USCODE-2023-title26-subtitleA-chap1-subchapterD-partIV-subpartD-sec45R.htm",
+      "title": "26 U.S.C. 45R(d)(5)(B) — definition of seasonal worker",
+      "status": "not-refetched",
+      "confirmed": "",
+      "note": "uscode.house.gov was under maintenance during this session and the govinfo HTML was not fetched. The definition was read via the Cornell LII reproduction of 26 U.S.C. 45R(d)(5)(B) and 26 CFR 1.45R-1(a)(16): 'a worker who performs labor or services on a seasonal basis as defined by the Secretary of Labor, including workers covered by section 500.20(s)(1) of title 29, Code of Federal Regulations and retail workers employed exclusively during holiday seasons.' Because Cornell LII is not a government site, this cross-reference is left UNVERIFIED against an official host and is flagged rather than asserted"
+    },
+    {
+      "id": "X6",
+      "url": "https://leginfo.legislature.ca.gov/faces/billTextClient.xhtml?bill_id=202520260AB2161",
+      "title": "AB 2161 (2025-2026), Chapter 209 - Medi-Cal eligibility: work or community engagement (Welf. & Inst. Code 14005.69)",
+      "status": "fetched",
+      "locator": "Chaptered text: heading and approval date; 14005.69(d)(1)-(2), (e)(1)-(7), (f), (g), (h)(1)-(4), (i), (j), (k)(1)",
+      "confirmed": "ENACTED California statute. 'An act to amend Section 14005.69 of the Welfare and Institutions Code, relating to Medi-Cal.' Approved by the Governor and filed with the Secretary of State September 14, 2026; author Bonta; Chapter 209. Operative text: (d) 'No sooner than January 1, 2027 ... an applicable individual shall demonstrate work or community engagement.' (d)(1) an applicant must demonstrate it 'for one month immediately preceding the month during which the individual applies'. (d)(2) an enrolled member must demonstrate it 'for any one month during the period between the individual's most recent determination or redetermination ... and their next regularly scheduled redetermination'. (e)(6) the income alternative is 'a total monthly income, using modified adjusted gross income (MAGI)-based financial methods, as specified in Section 1396a(e)(14) of Title 42 of the United States Code, for their individual MAGI-based household budget, that is no less than the applicable minimum wage requirement under Section 206 of Title 29 ... multiplied by 80 hours'. (e)(7) the six-month average requires the same MAGI-based household budget AND that the individual 'is a seasonal worker, as described in Section 45R(d)(5)(B) of the federal Internal Revenue Code of 1986'. (k)(1)(B) 30 calendar days from receipt of the notice of noncompliance; (k)(1)(C)(i) Medi-Cal services continue during that period. (i) where reliable data sources conflict and the conflict adversely impacts eligibility, the county must ask the person to confirm information before any adverse action"
+    }
+  ],
+  "findings": [
+    {
+      "id": "E-01",
+      "topic": "Seven ways to satisfy the requirement for a month",
+      "value": "80 hours of work; 80 hours of community service; 80 hours in a work program; enrolment in an educational programme at least half-time; a combination of those activities totalling 80 hours; monthly income of at least the federal minimum wage x 80 ($580 in 2026); or, for a seasonal worker only, a six-month average monthly income of at least $580",
+      "source": "https://www.ecfr.gov/current/title-42/part-435/section-435.552",
+      "verdict": "verified"
+    },
+    {
+      "id": "E-02",
+      "topic": "What income the $580 test actually measures",
+      "value": "MAGI-based income for the MAGI-based household, as defined at 42 CFR 435.603 — not 'gross income'",
+      "source": "https://www.ecfr.gov/current/title-42/part-435/section-435.552",
+      "verdict": "verified",
+      "note": "42 CFR 435.552(f)(2) and (g)(2) both require the MAGI-based household measure. DHCS ACWDL 25-30 (preliminary, December 30 2025) says 'total gross income'; the codified federal rule (effective July 31 2026) says MAGI-based household income. For a property owner these differ, because MAGI uses NET rental income"
+    },
+    {
+      "id": "E-03",
+      "topic": "Does unearned income count toward the $580",
+      "value": "Yes. Capital gains, interest (including tax-exempt interest), dividends and NET rental and royalty income are all included in MAGI, and MAGI is the measure the rule requires",
+      "source": "https://www.healthcare.gov/income-and-household-information/income/",
+      "verdict": "verified",
+      "note": "This is the load-bearing answer for a person with $0 earned income: no wages are required. It also means a trading LOSS or rental expenses reduce the figure, and gross rents overstate it"
+    },
+    {
+      "id": "E-04",
+      "topic": "Is the six-month averaging path available to a trader with irregular gains",
+      "value": "No, not on the federal rule. 42 CFR 435.552(a)(7) and (g)(1) require that the individual IS a seasonal worker as described in 26 U.S.C. 45R(d)(5)(B)",
+      "source": "https://www.ecfr.gov/current/title-42/part-435/section-435.552",
+      "verdict": "verified",
+      "note": "The CMS fact sheet agrees in substance: '$580 per month in 2026; for seasonal workers, there is a different calculation.' DHCS's member-facing letter is broader ('people whose hours change frequently or who have seasonal jobs'). The federal regulation is the operative text and is narrower; the divergence is flagged, not resolved. Own-account trading is not seasonal labour"
+    },
+    {
+      "id": "E-05",
+      "topic": "Lump-sum treatment",
+      "value": "'An amount received as a lump sum is counted as income only in the month received'",
+      "source": "https://www.ecfr.gov/current/title-42/part-435/section-435.603",
+      "verdict": "verified",
+      "note": "Directly relevant to irregular trading settlements: a large settlement counts in the month received, which can satisfy that month's $580 test on its own"
+    },
+    {
+      "id": "E-06",
+      "topic": "Who is subject at all",
+      "value": "An 'applicable individual' — not a specified excluded individual, and eligible/enrolled in the adult group (42 CFR 435.119) or a qualifying 1115 demonstration, aged at least 19 and under 65, not pregnant, not entitled to or enrolled in Medicare Part A or enrolled in Part B",
+      "source": "https://www.ecfr.gov/current/title-42/part-435/section-435.551",
+      "verdict": "verified"
+    },
+    {
+      "id": "E-07",
+      "topic": "How long a window a State may test at application",
+      "value": "At least one, but not more than 3 consecutive months, as specified in the State plan, immediately preceding the month of application",
+      "source": "https://www.ecfr.gov/current/title-42/part-435/section-435.556",
+      "verdict": "verified",
+      "note": "This resolves the earlier '1 month vs 3 months' ambiguity on the site: it is a State-plan choice inside a federal 1-to-3-month band. California's preliminary ACWDL 25-30 uses the single month immediately preceding application, which is inside the band"
+    },
+    {
+      "id": "E-08",
+      "topic": "Renewal window for an existing member",
+      "value": "1 or more months between the most recent determination or redetermination and the date the renewal is due, whether or not consecutive",
+      "source": "https://www.ecfr.gov/current/title-42/part-435/section-435.556",
+      "verdict": "verified",
+      "note": "Matches DHCS MEDIL I26-25: 'in any month since your last renewal'"
+    },
+    {
+      "id": "E-09",
+      "topic": "Does unpaid work count",
+      "value": "Yes. 'Work' means work in exchange for money, work in exchange for goods or services (in-kind work), and unpaid work other than community service",
+      "source": "https://www.ecfr.gov/current/title-42/part-435/section-435.552",
+      "verdict": "verified",
+      "note": "Relevant to a property manager: unpaid work is expressly inside the definition of work. Whether managing one's OWN property is 'work' for this purpose is not settled by any official source reviewed and is left unverified"
+    },
+    {
+      "id": "E-10",
+      "topic": "What counts as community service",
+      "value": "Unpaid work, voluntary or court-ordered, with a structured programme, for the direct benefit of the community, under the auspices of public or non-profit organisations, which must provide oversight, must not serve a partisan purpose, and must track the activity type, dates, hours and a point of contact who can confirm the hours",
+      "source": "https://www.ecfr.gov/current/title-42/part-435/section-435.552",
+      "verdict": "verified"
+    },
+    {
+      "id": "E-11",
+      "topic": "Education route",
+      "value": "At least half-time enrolment is its own route; enrolment status is determined by the school. Less-than-half-time enrolment converts to hours as credit hours x 3 x 4.33 weeks",
+      "source": "https://www.ecfr.gov/current/title-42/part-435/section-435.552",
+      "verdict": "verified"
+    },
+    {
+      "id": "E-12",
+      "topic": "Combining activities",
+      "value": "Activities may be combined to reach 80 hours, but States are NOT permitted to combine educational programme hours with another activity if the individual is already enrolled at least half-time",
+      "source": "https://www.ecfr.gov/current/title-42/part-435/section-435.552",
+      "verdict": "verified",
+      "note": "42 CFR 435.552(a)(5) and (e)(1). A detail the site's earlier 'any mix of the above' row did not carry"
+    },
+    {
+      "id": "E-13",
+      "topic": "2026 income figures for a single person",
+      "value": "100% FPL annual $15,960; 138% FPL annual $22,025; 138% FPL monthly $1,836; 400% FPL monthly $5,320",
+      "source": "https://aspe.hhs.gov/topics/poverty-economic-mobility/poverty-guidelines",
+      "verdict": "verified",
+      "note": "Cross-checked against the DHCS 2026 FPL Calculation Chart (monthly values, rounded up to the next higher dollar) and the DHCS Eligibility by Federal Poverty Level table. All three official sources agree"
+    },
+    {
+      "id": "E-14",
+      "topic": "Why the 2026 guidelines look unusual",
+      "value": "Because of the October 2025 federal government shutdown, BLS did not publish CPI-U for that month, so the 2026 guidelines compare the average CPI-U for the 11 available months of 2025 (excluding October) with the average for all 12 months of 2024",
+      "source": "https://aspe.hhs.gov/topics/poverty-economic-mobility/poverty-guidelines",
+      "verdict": "verified",
+      "note": "New detail not previously published on the site. It matters because the 2026 FPL figures drive every threshold above"
+    },
+    {
+      "id": "E-15",
+      "topic": "The multi-state lawsuit",
+      "value": "Commonwealth of Massachusetts et al. v. Mehmet Oz, filed June 29 2026, co-led by California, Massachusetts and New Jersey; 24 attorneys general plus the governors of Kentucky and Pennsylvania",
+      "source": "https://oag.ca.gov/news/press-releases/attorney-general-bonta-sues-trump-administration-over-unlawful-implementation",
+      "verdict": "verified",
+      "note": "California is a co-lead, not the lead plaintiff. The complaint targets the IFC's narrowing of the 'medically frail' protection and other APA and coercion claims"
+    },
+    {
+      "id": "E-16",
+      "topic": "California budget impact",
+      "value": "Approximately $1.3 billion General Fund in 2026-27 for H.R.1 costs; total projected H.R.1 disenrollment 44,000 in 2026-27 and 1.3 million by 2029-30; the work and community engagement requirement alone projects 43,000 and 1.1 million; county administration one-time augmentation $709M including $196.8M General Fund",
+      "source": "https://www.dhcs.ca.gov/wp-content/uploads/2026/07/DHCS-FY-2026-27-Budget-Act-Highlights.pdf",
+      "verdict": "verified",
+      "note": "These are DHCS budget PROJECTIONS, not realised counts"
+    },
+    {
+      "id": "E-17",
+      "topic": "How many states are affected",
+      "value": "",
+      "source": "",
+      "verdict": "unverified",
+      "note": "Official sources disagree. The CMS fact sheet says '43 states and the District of Columbia provide coverage to these populations'; CRS R48633 (as previously logged on this site) counts 40 expansion states plus DC. Both are official. The number is therefore left BLANK here rather than choosing one"
+    },
+    {
+      "id": "E-18",
+      "topic": "Age of a dependent child for the caregiver exclusion",
+      "value": "",
+      "source": "",
+      "verdict": "unverified",
+      "note": "CMS's own fact sheet is internally inconsistent: its prose says 'children under 14 years of age' while its exemption table says 'a dependent child 13 years of age and under'. The codified rule is unambiguous — 42 CFR 435.554 defines 'dependent child' as a child 13 years of age or under, and DHCS ACWDL 25-30 says 'age 13 years of age and under'. Left blank because the CMS document contradicts itself; the codified value is 13 or under"
+    },
+    {
+      "id": "E-19",
+      "topic": "When the rule takes effect in California",
+      "value": "",
+      "source": "",
+      "verdict": "unverified",
+      "note": "DHCS publishes both dates. ACWDL 25-30 and the MEDIL I26-25 body say January 1 2027; the enclosed member letter says the rules 'will not go into effect until March 2027'; the DHCS Medi-Cal Changes page separates the work rule (January 1) from the first six-month eligibility checks (March 1). Left blank as a single date; both are published on the site"
+    },
+    {
+      "id": "E-20",
+      "topic": "Federal tax treatment of Kalshi event contracts",
+      "value": "",
+      "source": "",
+      "verdict": "unverified",
+      "note": "No IRS guidance on event contracts was located. uscode.house.gov was under maintenance during this session. Left blank and flagged; no treatment is asserted"
+    },
+    {
+      "id": "E-21",
+      "topic": "California has ENACTED its own work-rule statute",
+      "value": "AB 2161, Chapter 209 (2025-2026), amending Welfare & Institutions Code section 14005.69; approved by the Governor and filed with the Secretary of State on September 14, 2026",
+      "source": "https://leginfo.legislature.ca.gov/faces/billTextClient.xhtml?bill_id=202520260AB2161",
+      "verdict": "verified",
+      "note": "This is the single most important source for a California reader and it postdates every document the site was originally built on: DHCS ACWDL 25-30 (December 30 2025, expressly preliminary), the federal interim final rule (June 3 2026, effective July 31 2026) and DHCS MEDIL I 26-25 (September 11 2026, an outreach letter). Where ACWDL 25-30 and the enacted statute differ, the enacted statute governs. Earlier sessions did not have this source"
+    },
+    {
+      "id": "E-22",
+      "topic": "What the $580 income test measures, under enacted California law",
+      "value": "'A total monthly income, using modified adjusted gross income (MAGI)-based financial methods ... for their individual MAGI-based household budget' of at least the federal minimum wage multiplied by 80 hours",
+      "source": "https://leginfo.legislature.ca.gov/faces/billTextClient.xhtml?bill_id=202520260AB2161",
+      "verdict": "verified",
+      "note": "Welf. & Inst. Code 14005.69(e)(6). This settles the gross-versus-MAGI question that DHCS ACWDL 25-30 left open, and it matches the federal rule at 42 CFR 435.552(f)(2) exactly. For a property owner MAGI means NET rent after expenses, not gross receipts. Earned income is still not required - MAGI includes capital gains, interest and net rental income"
+    },
+    {
+      "id": "E-23",
+      "topic": "Is six-month averaging available for irregular trading income, under enacted California law",
+      "value": "No. It requires that the individual 'is a seasonal worker, as described in Section 45R(d)(5)(B) of the federal Internal Revenue Code of 1986'",
+      "source": "https://leginfo.legislature.ca.gov/faces/billTextClient.xhtml?bill_id=202520260AB2161",
+      "verdict": "verified",
+      "note": "Welf. & Inst. Code 14005.69(e)(7), identical in effect to 42 CFR 435.552(g)(1). Two independent authorities - the enacted state statute and the codified federal regulation - both limit the averaging path to seasonal workers. ACWDL 25-30's 'fluctuating income' row and MEDIL I 26-25's 'people whose hours change frequently' wording are outreach simplifications that the enacted text does not support. Own-account Kalshi trading is not seasonal labour under 26 U.S.C. 45R(d)(5)(B)"
+    },
+    {
+      "id": "E-24",
+      "topic": "How far back California looks at application, and at renewal",
+      "value": "At application: exactly one month immediately preceding the month of application. At renewal: any one month between the most recent determination or redetermination and the next regularly scheduled redetermination",
+      "source": "https://leginfo.legislature.ca.gov/faces/billTextClient.xhtml?bill_id=202520260AB2161",
+      "verdict": "verified",
+      "note": "Welf. & Inst. Code 14005.69(d)(1) and (d)(2). This resolves the earlier site ambiguity about whether the federal band of 'at least one, but not more than 3 consecutive months' (42 CFR 435.556(a)(1)) meant California might look back three months. California chose ONE month. For renewal the months need not be consecutive, which matches MEDIL I 26-25's 'in any month since your last renewal'"
+    },
+    {
+      "id": "E-25",
+      "topic": "What happens if the county cannot verify compliance",
+      "value": "The county must issue a notice of noncompliance and give 30 calendar days from the date the notice is RECEIVED; Medi-Cal services continue during that 30-day period for an enrolled member",
+      "source": "https://leginfo.legislature.ca.gov/faces/billTextClient.xhtml?bill_id=202520260AB2161",
+      "verdict": "verified",
+      "note": "Welf. & Inst. Code 14005.69(k)(1)(A)-(C)(i). The 30 days run from receipt, not from the date on the notice - a materially better protection than a mailing-date reading, and worth knowing before missing a deadline"
+    },
+    {
+      "id": "E-26",
+      "topic": "What if the county's own data sources disagree",
+      "value": "Where there is a conflict in reliable data sources that adversely impacts eligibility, the county must ask the applicant or beneficiary to confirm the information BEFORE taking any adverse action on the application or renewal",
+      "source": "https://leginfo.legislature.ca.gov/faces/billTextClient.xhtml?bill_id=202520260AB2161",
+      "verdict": "verified",
+      "note": "Welf. & Inst. Code 14005.69(i). This is a California-specific protection with no federal equivalent in 42 CFR 435.556. For someone whose income is irregular and whose data-match results may conflict (FTB, EDD, IRS), this is the provision to cite"
+    }
+  ],
+  "corrections_applied": [],
+  "change_requests": [
+    {
+      "id": "CR-01",
+      "file": "pathways.html",
+      "owner": "arena/93fdc24b (active claim at the time of writing - NOT edited by this session)",
+      "severity": "high",
+      "issue": "The page tells the reader the six-month averaging path is their safety net for irregular trading income. Line 28: 'If seasonal/lumpy, average >= $580 over prior 6 months.' Line 100: 'if your 6-month average (prior 6) >= $580 -> PASS via seasonal rule.' Line 136: 'Apr/May pass via 6-mo average. No hours needed.' Line 139: 'The 6-month average rule is your safety net for months with vacancies or no trading.'",
+      "requested": "Qualify every averaging statement with the federal limit: 42 CFR 435.552(a)(7) and (g)(1) allow the six-month average only for a seasonal worker as described in 26 U.S.C. 45R(d)(5)(B). Own-account Kalshi trading is not seasonal labour. Keep the DHCS member-letter wording visible but label it as broader than the federal rule and flagged.",
+      "source": "https://www.ecfr.gov/current/title-42/part-435/section-435.552"
+    },
+    {
+      "id": "CR-02",
+      "file": "pathways.html",
+      "owner": "arena/93fdc24b",
+      "severity": "medium",
+      "issue": "Line 19 and line 28 describe the income test as 'gross monthly >= $580' and 'Gross countable monthly income'. Line 93 quotes ACWDL 25-30's 'total gross income'",
+      "requested": "State that the operative federal measure is MAGI-based household income (42 CFR 435.552(f)(2), 435.603(e)) and that for rental property this is NET rent, not gross receipts. Keep the ACWDL quote but label it preliminary state guidance that differs from the codified federal rule.",
+      "source": "https://www.ecfr.gov/current/title-42/part-435/section-435.552"
+    },
+    {
+      "id": "CR-03",
+      "file": "data/pathways.json",
+      "owner": "arena/93fdc24b",
+      "severity": "medium",
+      "issue": "pathways[0].how reads 'Have gross monthly income >= $580 from any source ... For seasonal/irregular income ...'",
+      "requested": "Same two corrections as CR-01 and CR-02 at the data layer, so a rebuild does not reintroduce them",
+      "source": "https://www.ecfr.gov/current/title-42/part-435/section-435.552"
+    },
+    {
+      "id": "CR-04",
+      "file": "docs/executive-summary.md",
+      "owner": "arena/93fdc24b",
+      "severity": "low",
+      "issue": "Section 6 is headed 'Lead plaintiff in federal lawsuit' and states 'California is lead plaintiff in Commonwealth of Massachusetts et al. v. Mehmet Oz, M.D. et al. (June 2026)', sourced to the DHCS tracking page",
+      "requested": "Change to co-lead with Massachusetts and New Jersey, filed June 29 2026, 24 attorneys general plus the governors of Kentucky and Pennsylvania, and cite the California Attorney General press release",
+      "source": "https://oag.ca.gov/news/press-releases/attorney-general-bonta-sues-trump-administration-over-unlawful-implementation"
+    },
+    {
+      "id": "CR-05",
+      "file": "california.html; data/california.json",
+      "owner": "arena/93fdc24b (PR #21 rewrites these files)",
+      "severity": "medium",
+      "issue": "The lawsuit card on california.html still reads 'Lead plaintiff in Massachusetts et al. v. Oz (June 2026)', and data/california.json still dates the suit 2026-06-06 with the caption 'California v. Mehmet Oz'. PR #21's diff does not appear to touch either of those two specific items",
+      "requested": "Adopt the Attorney General's own wording: California CO-LEADS with Massachusetts and New Jersey; filed June 29 2026; 24 attorneys general plus the governors of Kentucky and Pennsylvania; cite the oag.ca.gov press release rather than the DHCS tracking page. Note that california.html's own timeline row (June 29 2026) already says co-leads, so the page currently contradicts itself",
+      "source": "https://oag.ca.gov/news/press-releases/attorney-general-bonta-sues-trump-administration-over-unlawful-implementation"
+    },
+    {
+      "id": "CR-06",
+      "file": "scripts/build_core.py (archives list); index.html",
+      "owner": "arena/9ba14c05 (complete, PRs #19/#20 merged) / arena/93fdc24b (PR #21 open)",
+      "severity": "resolved",
+      "issue": "RESOLVED BY THIS SESSION. verify-e071bffc.html was published but not linked from archives.html, because archives.html is generated by scripts/build_core.py from a hard-coded list of audit pages",
+      "requested": "Done: one line added to the 'Supplementary dashboards' list in scripts/build_core.py and archives.html regenerated, so the sweep is reachable from the archive index. This session made the change itself because arena/9ba14c05 is complete (PRs #19/#20 merged, deployment recorded, items explicitly handed to any later session) and the edit is a single isolated list entry",
+      "source": "https://www.ecfr.gov/current/title-42/part-435/section-435.552"
+    },
+    {
+      "id": "CR-07",
+      "file": "scripts/build_site.py; scripts/build_core.py",
+      "owner": "arena/6f935bbc (build_site.py) / arena/9ba14c05 (build_core.py)",
+      "severity": "medium",
+      "issue": "Two competing generators write the SAME pages. Running scripts/build_site.py after scripts/build_core.py silently re-injects superseded content into the pages arena/9ba14c05 deliberately rebuilt from data/core.json: it adds an 'integration-links' nav block and an 'EXTENDED-FLAGS' W-01..W-13 block to flagged.html, a large legacy block to index.html, and nav patches to verification.html. Observed directly in this session: 82 insertions across 3 files, all reverted. .github/workflows/pages.yml runs NEITHER generator - it builds with Jekyll only - so whichever output happens to be committed is what ships to GitHub Pages. A well-meaning later session that runs every script in scripts/ will regress the dashboard without any check failing",
+      "requested": "Retire the shared-page patch step in scripts/build_site.py (or make it skip index.html, flagged.html and verification.html now that build_core.py owns them), and/or have scripts/check_core.py fail if a page it generates contains an 'integration-links' or 'EXTENDED-FLAGS' marker. Not done by this session because both scripts are inside PR #21's open diff",
+      "source": "https://www.ecfr.gov/current/title-42/part-435/section-435.552"
+    }
+  ],
+  "retracted": [
+    {
+      "id": "R-01",
+      "claim": "That the Federal Register correction URL used on the site (S04) is a dead 404 link",
+      "status": "RETRACTED - not a defect",
+      "explanation": "An early grep in this session appeared to show the hyphenated date path /documents/2026/06/29/C1-2026-11094/, which does return 404. A byte-level check (od -c) of data/core.json line 42 shows the repository actually stores /documents/2026/06/29/C1-2026-11094/, which resolves correctly and is the URL this session fetched successfully (91 FR 39028). A repository-wide byte-level search for any hyphenated Federal Register date path returns zero matches. The apparent defect was an artefact of how the URL was rendered in terminal output, not a problem in the repository. Recorded here so the false finding is not repeated by a later session."
+    }
+  ],
+  "corroborated_corrections": [
+    {
+      "id": "CC-01",
+      "issue": "california.html and pathways.html presented the six-month averaging path as available for irregular Kalshi income",
+      "independent_basis_this_session": "42 CFR 435.552(a)(7) and (g)(1) limit it to a seasonal worker as described in 26 U.S.C. 45R(d)(5)(B); and enacted Welf. & Inst. Code 14005.69(e)(7) says the same",
+      "resolution": "PR #21 (arena/93fdc24b, open at the time of writing) rewrites these rows to the seasonal-worker-only position. This session reached the same conclusion independently from the codified federal rule before seeing the PR, then REVERTED its own edits to california.html and data/california.json so the two sessions would not produce a conflicting edit of the same lines",
+      "source": "https://leginfo.legislature.ca.gov/faces/billTextClient.xhtml?bill_id=202520260AB2161"
+    },
+    {
+      "id": "CC-02",
+      "issue": "california.html and pathways.html described the $580 test as 'gross monthly income'",
+      "independent_basis_this_session": "42 CFR 435.552(f)(2) requires MAGI-based income for the MAGI-based household as defined at 435.603; enacted Welf. & Inst. Code 14005.69(e)(6) requires 'MAGI-based financial methods ... for their individual MAGI-based household budget'",
+      "resolution": "Same as CC-01: corrected by PR #21; this session's duplicate edits reverted",
+      "source": "https://leginfo.legislature.ca.gov/faces/billTextClient.xhtml?bill_id=202520260AB2161"
+    },
+    {
+      "id": "CC-03",
+      "issue": "california.html mitigation card 5 and data/california.json said California is 'lead plaintiff' in Massachusetts et al. v. Mehmet Oz, and the data file dated the suit 2026-06-06 with the caption 'California v. Mehmet Oz'",
+      "independent_basis_this_session": "The California Attorney General's own press release is dated Monday June 29 2026 and says California was 'Co-leading a coalition of 24 attorneys general and two governors', co-led by AG Bonta (CA), AG Campbell (MA) and AG Davenport (NJ), joined by the governors of Kentucky and Pennsylvania",
+      "resolution": "This session corrected california.html and data/california.json, then reverted both to avoid conflicting with PR #21, which rewrites the same lines. The correction still needs to land - see CR-05",
+      "source": "https://oag.ca.gov/news/press-releases/attorney-general-bonta-sues-trump-administration-over-unlawful-implementation"
+    }
+  ]
+}
