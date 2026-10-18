@@ -1,0 +1,435 @@
+{
+  "task": "T3",
+  "owner": "c8487e35",
+  "verified_on": "2026-10-18",
+  "sections": [
+    {
+      "id": "medicaid",
+      "title": "Medi-Cal (California Medicaid)",
+      "blurb": "Free comprehensive coverage for Californians with MAGI up to 138% FPL. The most important fact for you: eligibility is based on total countable income (tax rules), there is NO asset/savings test, and no work requirement is in effect until January 1, 2027.",
+      "rows": [
+        {
+          "id": "MED-01",
+          "topic": "Who qualifies (Adults / ACA expansion)",
+          "finding": "Adults ages 19–64, California residents, with MAGI up to 138% of the federal poverty level. Applies whether or not you have children, and with or without any job.",
+          "value": "19–64, ≤138% FPL, no job test",
+          "effective": "Current",
+          "status": "verified",
+          "source_label": "DHCS — Medi-Cal: Eligibility by Federal Poverty Level / Qualify",
+          "source_url": "https://www.dhcs.ca.gov/medi-cal/qualify/qualify-for-medi-cal-eligibility-chart/",
+          "note": "DHCS is the state Medicaid agency."
+        },
+        {
+          "id": "MED-02",
+          "topic": "2026 income limit (household of 1)",
+          "finding": "DHCS publishes $22,025/year ($1,836/month) at 138% FPL for a household of one for 2026 (based on the 2026 HHS poverty guideline of $15,960; 138% = $22,024.80, rounded).",
+          "value": "$22,025/yr · $1,836/mo (1 person)",
+          "effective": "Jan 1, 2026 (DHCS ACWDL 26-01)",
+          "status": "verified",
+          "source_label": "DHCS Eligibility-by-FPL chart; HHS ASPE 2026 Poverty Guidelines",
+          "source_url": "https://www.dhcs.ca.gov/medi-cal/qualify/qualify-for-medi-cal-eligibility-chart/",
+          "note": "2026 FPL source: https://aspe.hhs.gov/topics/poverty-economic-mobility/poverty-guidelines (also Federal Register 91 FR, Jan 15, 2026)."
+        },
+        {
+          "id": "MED-03",
+          "topic": "138% FPL by household size (2026)",
+          "finding": "1p $22,025 · 2p $29,863 · 3p $37,702 · 4p $45,540 · 5p $53,378 · 6p $61,217 · 7p $69,055 · 8p $76,894; +$7,839 each extra person.",
+          "value": "Table as published by DHCS",
+          "effective": "2026",
+          "status": "verified",
+          "source_label": "DHCS Eligibility by FPL chart",
+          "source_url": "https://www.dhcs.ca.gov/medi-cal/qualify/qualify-for-medi-cal-eligibility-chart/",
+          "note": ""
+        },
+        {
+          "id": "MED-04",
+          "topic": "No asset or savings test (MAGI categories)",
+          "finding": "For MAGI Medi-Cal (adults 19–64, children, parents, pregnant), DHCS's own comparison table says \"No property limits\" — bank balances, savings, cars and investment accounts are NOT counted. Only non-MAGI categories (65+, blind/disabled, long-term care) test property, and even there California raised limits to $130,000 (single)/$195,000 (couple) effective Jan 1, 2026.",
+          "value": "Assets ignored for adults 19–64",
+          "effective": "Current; AB 116 senior limits Jan 1, 2026",
+          "status": "verified",
+          "source_label": "DHCS — Medi-Cal Help Center (MAGI vs Non-MAGI table); DHCS Medi-Cal Changes",
+          "source_url": "https://www.dhcs.ca.gov/medi-cal/help/",
+          "note": "Changes page: https://www.dhcs.ca.gov/medi-cal/updates/medi-cal-changes/"
+        },
+        {
+          "id": "MED-05",
+          "topic": "Work requirement status in 2026",
+          "finding": "No work/community-engagement requirement applies to Medi-Cal adults in 2026. The new federal requirement (H.R.1 §71119, P.L. 119-21) first applies January 1, 2027 — see the New Laws page for exactly how you could satisfy it with non-wage income.",
+          "value": "None in effect until Jan 1, 2027",
+          "effective": "As of Oct 2026",
+          "status": "verified",
+          "source_label": "CMS — Community Engagement IFR fact sheet (Jun 1, 2026)",
+          "source_url": "https://www.cms.gov/newsroom/fact-sheets/medicaid-community-engagement-requirement-certain-individuals-interim-final-rule-comment-period-cms",
+          "note": ""
+        },
+        {
+          "id": "MED-06",
+          "topic": "Cost & benefits",
+          "finding": "Medi-Cal is free or low-cost coverage. Most members keep the full benefit set: doctor, hospital, emergency, prescriptions, mental health/addiction care, checkups/vaccines, long-term care, rides to appointments, dentist, eye exams/glasses.",
+          "value": "$0 typical premium for adults expansion group",
+          "effective": "Current",
+          "status": "verified",
+          "source_label": "DHCS — Medi-Cal Changes (benefits summary)",
+          "source_url": "https://www.dhcs.ca.gov/medi-cal/updates/medi-cal-changes/",
+          "note": "Covered CA also describes Medi-Cal as 'free or low-cost': https://www.coveredca.com/health/medi-cal/"
+        },
+        {
+          "id": "MED-07",
+          "topic": "When you can apply",
+          "finding": "Medi-Cal enrollment is year-round — no open-enrollment deadline. You can qualify and be enrolled immediately based on current monthly income (e.g., after a trading losing streak or seasonal dip in rent rolls).",
+          "value": "Any time of year",
+          "effective": "Current",
+          "status": "verified",
+          "source_label": "Covered California — Medi-Cal vs Covered CA table; HealthCare.gov",
+          "source_url": "https://www.coveredca.com/health/medi-cal/",
+          "note": "Federal Medicaid rule: applicants are tested on current monthly household income — 42 CFR 435.603(h)(1): https://www.ecfr.gov/current/title-42/chapter-IV/subchapter-C/part-435/subpart-G/section-435.603"
+        },
+        {
+          "id": "MED-08",
+          "topic": "One application for both programs",
+          "finding": "A single Covered California application determines whether you get subsidized private coverage or Medi-Cal; households can be split across programs (\"mixed-program family\"). Apply at apply.coveredca.com or your county social services office.",
+          "value": "1 form → both programs screened",
+          "effective": "Current",
+          "status": "verified",
+          "source_label": "Covered California — Open Enrollment (\"One application covers both\")",
+          "source_url": "https://www.coveredca.com/enrollment/open-enrollment",
+          "note": ""
+        },
+        {
+          "id": "MED-09",
+          "topic": "Related Medi-Cal FPL bands (2027 chart)",
+          "finding": "Children (0–18) eligible up to 266% FPL; pregnant individuals up to 213% FPL; Medi-Cal Access Program (MCAP) covers higher incomes for pregnant individuals; 2026 single-person amounts: 213% = $33,995, 266% = $42,454 (Covered CA 2027 chart, DHCS ACWDL 26-01 figures).",
+          "value": "Kids 266% · Pregnancy 213%",
+          "effective": "2026 figures, 2027 plan-year chart",
+          "status": "verified",
+          "source_label": "Covered California — Program Eligibility by FPL chart (PDF)",
+          "source_url": "https://www.coveredca.com/pdfs/FPL-chart.pdf",
+          "note": ""
+        },
+        {
+          "id": "MED-10",
+          "topic": "Ages 60–69 note",
+          "finding": "DHCS eligibility letters (e.g., MEDIL 24-02) reference an ACA group covering adults 19–64 at 138% FPL and separate treatment for older adults; California also runs Medi-Cal access for low-income seniors 65+ without share-of-cost. If you are age 60+, confirm your exact group with the county/DHCS.",
+          "value": "(not fully verified this session)",
+          "effective": "—",
+          "status": "flagged",
+          "source_label": "DHCS MEDIL 24-02 (eligibility groups PDF)",
+          "source_url": "https://dhcs.ca.gov/services/medi-cal/eligibility/letters/Documents/24-02.pdf",
+          "note": "Flag FL-09. Do not rely on this row for an age-based plan until confirmed."
+        },
+        {
+          "id": "MED-11",
+          "topic": "2026 immigration-status changes (not applicable to U.S. citizens)",
+          "finding": "Effective Jan 1, 2026 California froze new full-scope Medi-Cal sign-ups for certain non-citizen groups, with fee-for-service transition, restricted dental and monthly premiums for those groups in 2027. A U.S. citizen is not subject to any of these; listed so you can rule it out.",
+          "value": "N/A to citizens",
+          "effective": "Jan 2026 – Jul 2027 (phased)",
+          "status": "verified",
+          "source_label": "DHCS — Medi-Cal Changes",
+          "source_url": "https://www.dhcs.ca.gov/medi-cal/updates/medi-cal-changes/",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "covered-ca",
+      "title": "Covered California (the state Marketplace)",
+      "blurb": "Subsidized private plans when income is above the Medi-Cal line. This is where the 2026 federal subsidy changes hit hardest — and where California has substituted state money for lower-income enrollees.",
+      "rows": [
+        {
+          "id": "MKT-01",
+          "topic": "Basic eligibility for U.S. citizens",
+          "finding": "To buy a plan: be a California resident, be a U.S. citizen/national (lawfully present residents also qualify), not be incarcerated, and meet income thresholds for help. There is NO employment or work requirement for Marketplace financial help.",
+          "value": "Citizenship + residency + income; no job test",
+          "effective": "Current",
+          "status": "verified",
+          "source_label": "Covered California — Eligibility Guidelines",
+          "source_url": "https://www.coveredca.com/enrollment/eligibility",
+          "note": "Eligibility factors published: household, income, residency, citizenship/immigration, current coverage, age/disability factors."
+        },
+        {
+          "id": "MKT-02",
+          "topic": "Federal APTC income band, 2026",
+          "finding": "Advance Premium Tax Credit is available with income 100%–400% FPL. The pre-2021 \"subsidy cliff\" is back: above 400% FPL there is no federal premium tax credit for 2026 (and no state backfill for that band this year).",
+          "value": "100%–400% FPL; >400% = $0 help",
+          "effective": "Jan 1, 2026",
+          "status": "verified",
+          "source_label": "Covered California — What is financial help? + 2027 FPL chart note",
+          "source_url": "https://www.coveredca.com/pdfs/FPL-chart.pdf",
+          "note": "FPL-chart PDF footnote: \"Consumers with income above 400% FPL are not eligible for a federal premium tax credit.\""
+        },
+        {
+          "id": "MKT-03",
+          "topic": "Enhanced federal subsidies expired",
+          "finding": "The ARPA/IRA enhanced premium tax credits (which set contribution as low as 0% to 150% FPL and removed the 400% cliff) expired Dec 31, 2025 and were not renewed by Congress. Covered CA: \"Monthly costs may be higher now, but some plans still cost as little as $10 per month.\"",
+          "value": "Expired 12/31/2025",
+          "effective": "Jan 1, 2026",
+          "status": "verified",
+          "source_label": "Covered California — Important Changes",
+          "source_url": "https://www.coveredca.com/important-changes",
+          "note": "Also stated in Covered CA's 2026 open-enrollment press release (Feb 26, 2026)."
+        },
+        {
+          "id": "MKT-04",
+          "topic": "2026 federal applicable percentages (what you pay)",
+          "finding": "For 2026, required share of benchmark premium (before CA supplement): 2.10% (≤138% FPL band), 3.14–4.19% (>138–150%), 4.19–4.91% (>150–165%), 4.91–6.60% (>165–200%), 6.60–8.44% (>200–250%), 8.44–9.96% (>250–300%), 9.96% (300–400%), 100% (no help) above 400%.",
+          "value": "2.10% → 9.96% sliding scale",
+          "effective": "Plan year 2026",
+          "status": "verified",
+          "source_label": "Covered California HBEX — Financial Help Basics Quick Guide (official stakeholder doc)",
+          "source_url": "https://hbex.coveredca.com/toolkit/downloads/Financial_Help_Basics.pdf",
+          "note": "\"Applicable Percentages — 2026 ACA\" column."
+        },
+        {
+          "id": "MKT-05",
+          "topic": "California Premium Subsidy 2026 (state money replacing lost federal help)",
+          "finding": "For 2026 California appropriated $190M (Health Care Affordability Reserve Fund) to hold the line for low-income enrollees: households ≤165% FPL who get APTC also get the state subsidy; required share is held at 0% of income up to 150% FPL and 3.19%–3.91% for 150–165% (vs the federal 4.19–4.91%). State subsidy is reconciled with the California FTB at tax time.",
+          "value": "0% ≤150% FPL; ≤165% FPL band",
+          "effective": "Jan 1, 2026",
+          "status": "verified",
+          "source_label": "Covered CA State Premium Subsidy Policy Explainer (Feb 2026) + HBEX Financial Help Basics",
+          "source_url": "https://hbex.coveredca.com/stakeholders/PDFs/2026-02_StatePremiumSub_PolicyExplainer-Final.pdf",
+          "note": "Program requires applying through the subsidized Covered CA application and being APTC-eligible."
+        },
+        {
+          "id": "MKT-06",
+          "topic": "California Premium Subsidy 2027 — expanded",
+          "finding": "For 2027 the Legislature raised HCARF funding to $300M and expanded the state subsidy to households up to 200% FPL (2026-guideline figures: $31,920 individual / $66,000 family of 4). 2027 required-share schedule: 0% up to 138% and 138–150% FPL; 2.8%–5.28% (>150–200%); 6.78%–8.66% (>200–250%); 8.66%–10.22% (>250–300%); 10.22% (300–400%); no help above 400%. ~200,000 people can choose Silver plans with a $0 premium.",
+          "value": "0% ≤150%; state help ≤200% FPL",
+          "effective": "Jan 1, 2027",
+          "status": "verified",
+          "source_label": "Covered CA 2027 FPL chart + Rates & Plans press release (Jul 21, 2026) + 2027 subsidy insight",
+          "source_url": "https://www.coveredca.com/press-releases/2026-07-21/covered-california-rates-and-plans-for-2027-california-continues-fight-for-health-insurance-affordability-and-access",
+          "note": "Percentages from https://www.coveredca.com/pdfs/FPL-chart.pdf (\"Percent of income paid for premiums\" table). 2027 rates (avg +9.9%) are preliminary pending DHCO review — see flag FL-07."
+        },
+        {
+          "id": "MKT-07",
+          "topic": "Cost-sharing reductions (Silver plans)",
+          "finding": "Household income ≤250% FPL buying a Silver plan gets Enhanced Silver lower deductibles/copays (Silver 94 at 100–150%, Silver 87 at 150–200%, Silver 73 at 200–250%). CSR applies to out-of-pocket costs, not premiums; only available with Silver plans.",
+          "value": "CSR ≤250% FPL, Silver only",
+          "effective": "Current",
+          "status": "verified",
+          "source_label": "Covered California — 2027 FPL chart & What is financial help?",
+          "source_url": "https://www.coveredca.com/costs/financial-help",
+          "note": ""
+        },
+        {
+          "id": "MKT-08",
+          "topic": "Open Enrollment window",
+          "finding": "Open enrollment runs Nov 1 – Jan 31 each year. For 2027 coverage: applications open Nov 1, 2026; enroll by Dec 31, 2026 for a Jan 1, 2027 start; enroll in January 2027 for Feb 1 start. The 2026 period (Nov 1, 2025–Jan 31, 2026) closed with 1.9M+ sign-ups/renewals.",
+          "value": "Nov 1 – Jan 31",
+          "effective": "OEP for 2027 starts Nov 1, 2026",
+          "status": "verified",
+          "source_label": "Covered California — Open Enrollment; Feb 26, 2026 press release",
+          "source_url": "https://www.coveredca.com/enrollment/open-enrollment",
+          "note": "2026 OEP results: https://www.coveredca.com/press-releases/2026-02-26/as-enhanced-federal-subsidies-expire-covered-california-ends-open-enrollment-with-state-subsidies-keeping-renewals-steady-for-now-and-new-signups-down"
+        },
+        {
+          "id": "MKT-09",
+          "topic": "Special Enrollment Period (off-cycle sign-up)",
+          "finding": "Outside open enrollment you can enroll after major life changes (losing coverage, marriage, move to California, etc.) — normally 60 days from the event. Moving to California from another state is a qualifying move.",
+          "value": "60 days after event",
+          "effective": "Current",
+          "status": "verified",
+          "source_label": "Covered California — Open Enrollment (SEP section); HealthCare.gov SEP glossary",
+          "source_url": "https://www.healthcare.gov/glossary/special-enrollment-period/",
+          "note": "Covered CA page: https://www.coveredca.com/enrollment/open-enrollment ; life changes: https://www.coveredca.com/enrollment/major-life-changes"
+        },
+        {
+          "id": "MKT-10",
+          "topic": "You report ESTIMATED income — volatile trading years matter",
+          "finding": "Financial help is based on the household income you project for the coverage year. If you under-estimate, you may have to repay excess credit at tax time (Form 8962 with 1040; 1095-A from the insurer); over-estimating costs you subsidy you were owed. Covered CA's guidance: keep income updated during the year.",
+          "value": "Projected MAGI drives advance help",
+          "effective": "Current",
+          "status": "verified",
+          "source_label": "Covered California — What is financial help? (steps 1–4)",
+          "source_url": "https://www.coveredca.com/costs/financial-help",
+          "note": ""
+        },
+        {
+          "id": "MKT-11",
+          "topic": "NEW: APTC repayment is no longer capped",
+          "finding": "From the 2026 tax year (returns filed in 2027), excess advance premium tax credit must be repaid IN FULL — the old income-based repayment caps were repealed (P.L. 119-21). For traders this raises the stakes of under-estimating a winning year: if actual MAGI ends up far above the estimate, the clawback is unlimited.",
+          "value": "Uncapped repayment from TY2026",
+          "effective": "Jan 1, 2027 (filing 2026 return)",
+          "status": "verified",
+          "source_label": "Covered California — Important Changes; IRS — Working Families Tax Cuts overview",
+          "source_url": "https://www.irs.gov/newsroom/working-families-tax-cuts",
+          "note": "IRS overview: \"Removal of limitations on repayment of excess advance payment of the premium tax credit for tax years beginning after Dec. 31, 2025.\""
+        },
+        {
+          "id": "MKT-12",
+          "topic": "Strategy: take the credit at tax time instead of monthly",
+          "finding": "Applicants may reduce or decline advance monthly assistance and claim the full Premium Tax Credit when filing (Form 8962 + 1095-A); you can also change the APTC amount applied monthly at any time during the year. Useful when you can't predict trading results: you buy at full monthly premium and true-up via the credit, avoiding a large repayment.",
+          "value": "APTC % is adjustable / can take lump sum",
+          "effective": "Current",
+          "status": "verified",
+          "source_label": "Covered California HBEX — Financial Help Basics Quick Guide",
+          "source_url": "https://hbex.coveredca.com/toolkit/downloads/Financial_Help_Basics.pdf",
+          "note": "IRS Pub 974 (Premium Tax Credit) also referenced there: https://www.irs.gov/publications/p974"
+        },
+        {
+          "id": "MKT-13",
+          "topic": "NEW: income documentation rules arrive for 2028",
+          "finding": "Beginning with the 2028 plan year (effective Jan 1, 2028 per Covered CA), consumers must prove eligibility for financial help before it is applied, and those who don't confirm/update information will not be auto re-enrolled with financial help.",
+          "value": "Verification-before-help from 2028",
+          "effective": "Jan 1, 2028",
+          "status": "verified",
+          "source_label": "Covered California — Important Changes",
+          "source_url": "https://www.coveredca.com/important-changes",
+          "note": ""
+        },
+        {
+          "id": "MKT-14",
+          "topic": "Under 30 / catastrophic option",
+          "finding": "Applicants under 30 (no age limit for hardship exemption) may buy a Minimum Coverage (catastrophic) plan; for 2026 in California it qualifies as an HDHP (HSA-eligible) and receives the $1/month state premium credit but not APTC/CSR.",
+          "value": "Catastrophic <30, no APTC",
+          "effective": "2026",
+          "status": "verified",
+          "source_label": "Covered California — Eligibility Guidelines & HBEX Financial Help Basics",
+          "source_url": "https://hbex.coveredca.com/toolkit/downloads/Financial_Help_Basics.pdf",
+          "note": "Eligibility page under-30 link: https://www.coveredca.com/enrollment/eligibility"
+        },
+        {
+          "id": "MKT-15",
+          "topic": "Above 400% FPL in 2026–27: full price",
+          "finding": "The Covered CA board's 2026 program design explored (but did not adopt, within the $190M budget) a 15% premium cap for incomes 400–420% FPL; adopted 2026 and 2027 designs concentrate state money at ≤165%/≤200% FPL. If your projected MAGI exceeds 400% FPL ($63,840 for 1 person at 2026 guidelines), expect no premium help for 2026 and 2027.",
+          "value": ">400% FPL: no subsidy",
+          "effective": "2026 and 2027 plan years",
+          "status": "verified",
+          "source_label": "Covered CA Board — July 2025 Plan Management Advisory Committee deck",
+          "source_url": "https://hbex.coveredca.com/pdfs/July%202025%20Plan%20Advisory%20Meeting%20Slide%20Deck.Final.pdf",
+          "note": "400% = $63,840 from 2026 HHS guidelines ($15,960 × 4)."
+        },
+        {
+          "id": "MKT-16",
+          "topic": "Immigrant eligibility changes (not applicable to you)",
+          "finding": "From Jan 1, 2027 Covered CA financial help will be limited to an \"Eligible Non-Citizen\" definition (LPR/green card, Cuban/Haitian entrant, Freely Associated States citizens, etc.). U.S. citizens' eligibility is unaffected.",
+          "value": "N/A to citizens",
+          "effective": "Jan 1, 2027",
+          "status": "verified",
+          "source_label": "Covered CA HBEX — Financial Help Basics; Covered CA Important Changes",
+          "source_url": "https://www.coveredca.com/important-changes",
+          "note": "Listed so you can confirm the change does not apply to your status."
+        }
+      ]
+    },
+    {
+      "id": "action-plan",
+      "title": "Action Plan (sequenced, each step sourced)",
+      "blurb": "The concrete path from where you are today (Oct 18, 2026 — after the 2026 window closed, before the 2027 window opens Nov 1) to coverage, plus how to handle the work requirement when it arrives.",
+      "rows": [
+        {
+          "id": "ACT-01",
+          "topic": "Step 1 — Estimate your 2027 MAGI now",
+          "finding": "Build a projection of 2027 tax-basis income: expected net Kalshi gains/losses (net of losses; note the $3,000 cap on net loss against other income), net Schedule E rental income (after deductions and any allowed $25k special allowance), and taxable interest. Compare to $22,025 (Medi-Cal line, current figures) and to the subsidy bands.",
+          "value": "One number decides your route",
+          "effective": "Before Nov 1, 2026",
+          "status": "verified",
+          "source_label": "IRS Topic 409; DHCS FPL chart; Covered CA financial help",
+          "source_url": "https://www.dhcs.ca.gov/medi-cal/qualify/qualify-for-medi-cal-eligibility-chart/",
+          "note": ""
+        },
+        {
+          "id": "ACT-02",
+          "topic": "Step 2A — If estimated MAGI ≤ 138% FPL: Medi-Cal, apply anytime",
+          "finding": "You don't have to wait for open enrollment. Apply through Covered CA's single application (or county office) and you'll be routed to Medi-Cal; coverage can start immediately on current monthly income.",
+          "value": "apply.coveredca.com → Medi-Cal",
+          "effective": "Now",
+          "status": "verified",
+          "source_label": "Covered California — Open Enrollment / Medi-Cal",
+          "source_url": "https://www.coveredca.com/health/medi-cal/",
+          "note": "Application: https://apply.coveredca.com/static/lw-web/account-creation/choose-application"
+        },
+        {
+          "id": "ACT-03",
+          "topic": "Step 2B — If 138%–200% FPL: Covered CA with 0%–~5% contributions",
+          "finding": "During open enrollment (Nov 1, 2026 – Jan 31, 2027), select a plan; at ≤150% FPL the 2027 state program keeps the benchmark share at 0% (two $0-premium Silver options in most areas), and 150–200% pays 2.8–5.28% of income. Choose Enhanced Silver (94/87) for low deductibles.",
+          "value": "$0 plans available in this band",
+          "effective": "Plan year 2027",
+          "status": "verified",
+          "source_label": "Covered CA 2027 rates press release + FPL chart",
+          "source_url": "https://www.coveredca.com/pdfs/FPL-chart.pdf",
+          "note": ""
+        },
+        {
+          "id": "ACT-04",
+          "topic": "Step 2C — If >200% FPL: compare subsidized (to 400%) vs full price",
+          "finding": "300–400% FPL pays a 10.22% income share of the benchmark for 2027; above 400% no help — pay full premium. For a high-income year, consider: enroll unsubsidized (or with reduced APTC) in a Bronze/HDHP and route premiums through an HSA (HSA contributions remain deductible even with no earned income, reducing AGI/MAGI — potentially back into a subsidy band).",
+          "value": "Bronze+HSA for big-gain years",
+          "effective": "Plan year 2027",
+          "status": "verified",
+          "source_label": "Covered CA FPL chart; Covered CA Important Changes (HSA); IRS Pub 969",
+          "source_url": "https://www.coveredca.com/important-changes",
+          "note": "HSA mechanics verified on irs.gov Pub 969 / Rev. Proc. 2025-19; confirm plan-level HDHP qualification with the carrier before funding."
+        },
+        {
+          "id": "ACT-05",
+          "topic": "Step 3 — Enroll by the right date",
+          "finding": "Enroll by Dec 31, 2026 for a Jan 1, 2027 effective date; enroll Jan 1–31, 2027 for Feb 1 start. Miss the window entirely and you wait for a Special Enrollment Period (60 days after a qualifying event) or the next OEP.",
+          "value": "Dec 31 deadline (for Jan 1 start)",
+          "effective": "OEP 2027",
+          "status": "verified",
+          "source_label": "Covered California — Open Enrollment",
+          "source_url": "https://www.coveredca.com/enrollment/open-enrollment",
+          "note": ""
+        },
+        {
+          "id": "ACT-06",
+          "topic": "Step 4 — Set the APTC dial for volatility",
+          "finding": "If you can't predict your trading year, either (a) apply with a conservative-but-honest estimate and promptly report expected changes, or (b) take less/no advance credit monthly and claim the credit at filing — now that repayment is uncapped from the 2026 tax year, err toward accuracy.",
+          "value": "Adjust APTC in account anytime",
+          "effective": "From TY2026",
+          "status": "verified",
+          "source_label": "Covered CA HBEX Financial Help Basics; Covered CA Important Changes",
+          "source_url": "https://www.coveredca.com/important-changes",
+          "note": ""
+        },
+        {
+          "id": "ACT-07",
+          "topic": "Step 5 — Reconcile both credits at tax time",
+          "finding": "Use the insurer's Form 1095-A to file IRS Form 8962 (federal APTC) and reconcile the California Premium Subsidy with the Franchise Tax Board on your CA return, per Covered CA's program design. Keep Kalshi P&L statements + 1099s as the income record.",
+          "value": "8962 (federal) + FTB reconciliation (state)",
+          "effective": "File spring 2027 for 2026; spring 2028 for 2027",
+          "status": "verified",
+          "source_label": "Covered CA HBEX Financial Help Basics Quick Guide",
+          "source_url": "https://hbex.coveredca.com/toolkit/downloads/Financial_Help_Basics.pdf",
+          "note": "IRS Form 8962: https://www.irs.gov/forms-pubs/about-form-8962"
+        },
+        {
+          "id": "ACT-08",
+          "topic": "Step 6 — Prepare for the 2027 Medi-Cal work rule (if enrolled)",
+          "finding": "If you get Medi-Cal and remain in the adult expansion group, from Jan 1, 2027 you must satisfy the requirement or be exempt. Safest routes for you: (1) keep countable monthly income ≥ $580 (80 × $7.25 federal min wage) — the rule is written in terms of \"monthly income,\" though whether unearned income fully qualifies is flagged; (2) document any exemption (disability, medically frail, caregiver of young child, etc.); (3) 80 hrs/month of documented work/community service/education. Renewals for affected members run every 6 months in California starting Mar 1, 2027.",
+          "value": "$580/mo, or 80 hrs, or exemption",
+          "effective": "Jan 1, 2027 (6-mo checks from Mar 1, 2027)",
+          "status": "verified",
+          "source_label": "CMS IFR fact sheet; DHCS Medi-Cal Changes; DHCS ACWDL 25-30",
+          "source_url": "https://www.cms.gov/newsroom/fact-sheets/medicaid-community-engagement-requirement-certain-individuals-interim-final-rule-comment-period-cms",
+          "note": "DHCS ACWDL 25-30: https://www.dhcs.ca.gov/wp-content/uploads/2026-04-25-30.pdf — see flags FL-02/FL-03 on income source and trading-as-work."
+        },
+        {
+          "id": "ACT-09",
+          "topic": "Step 7 — Use free help and official screening tools",
+          "finding": "Covered CA: Shop & Compare estimates costs before applying; certified enrollers assist free of charge ((800) 300-1506). DHCS publishes an eligibility estimator and county office directory. No fee — avoid paid \"navigator\" services.",
+          "value": "Shop & Compare + county help",
+          "effective": "Now",
+          "status": "verified",
+          "source_label": "Covered CA — Get help; DHCS — Qualify / Find a county office",
+          "source_url": "https://www.dhcs.ca.gov/medi-cal/qualify/",
+          "note": "Covered CA help: https://www.coveredca.com/get-help"
+        },
+        {
+          "id": "ACT-10",
+          "topic": "Step 8 — Keep California's individual mandate satisfied",
+          "finding": "Whichever route you take, full-year Medi-Cal or a Marketplace plan is minimum essential coverage → no state penalty (check line 92 box on Form 540). If uninsured for part of a year, the \"unaffordable coverage\" and \"below filing threshold\" exemptions may still zero it — claim exemptions on FTB Form 3853 or via a Covered CA exemption certificate.",
+          "value": "MEC = no CA penalty",
+          "effective": "TY2026+",
+          "status": "verified",
+          "source_label": "FTB — Personal Health Care Mandate",
+          "source_url": "https://www.ftb.ca.gov/file/personal/filing-situations/health-care-mandate/personal.html",
+          "note": "See Mandate page for amounts/exemptions."
+        }
+      ]
+    }
+  ]
+}
