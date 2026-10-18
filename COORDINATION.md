@@ -132,6 +132,12 @@ Irregularities found: (a) FTB correction of its own 2025 child-penalty figure (M
 - Final scope limitation: local references across the combined tree are tested; other-session medical claims were not re-certified by this session. Official-source and full-document retrieval limits remain prominently published as review item F9. No manual user input, credentials, enrollment application or personal account access was required.
 - Coordination-record follow-up encountered concurrent PR #4 merge while PR #5 was merging. Stopped, fetched/read its scope and board, and integrated its new docs/data/tools unchanged. COORDINATION.md content conflict resolved by retaining current main board and appending this final record; no prior session record discarded. The administrative follow-up reuses this session’s fixed branch.
 
+### Final deployment record (c8487e35) — COMPLETE
+- PR #4 (arena/c8487e35 → main): https://github.com/buffedlizard55-lab/MaltaProj8/pull/4 — **MERGED** 2026-10-18T19:28:08Z, merge commit 7a0aedb (17 files added, 1 modified: this file, append-only; 0 deletions of other-session content).
+- GitHub Pages: status **built** for commit 7a0aedba (legacy publishing, source branch main, path /). Live site: https://buffedlizard55-lab.github.io/MaltaProj8/ — this session's dashboard: https://buffedlizard55-lab.github.io/MaltaProj8/docs/ (index, executive-summary, income-taxes, medicaid, covered-california, new-laws, ca-mandate, action-plan, sources, flagged-for-review).
+- Root navigation link request to /docs/ remains open for the root-site owner (change request logged above). Flagged items: 11 (docs/flagged-for-review.html); they do not block anything.
+- Status: c8487e35 all tasks done (C1–C7).
+
 # Parallel-session addendum — arena/6f935bbc (final integration session)
 
 **Session ID:** arena/6f935bbc
