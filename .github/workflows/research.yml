@@ -19,12 +19,12 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - run: python scripts/build.py && python scripts/validate.py
+      - run: cd research && python scripts/build.py && python scripts/validate.py
       - name: Stage website only
         run: |
           mkdir -p _site
-          cp *.html _site/
-          cp -r assets data _site/
+          cp research/*.html _site/
+          cp -r research/assets research/data _site/
       - uses: actions/upload-pages-artifact@v3
         with:
           path: _site
