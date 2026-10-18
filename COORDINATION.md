@@ -152,5 +152,25 @@ Each correction is a fact an official source contradicts or fills in; no content
 ## Deployment record (arena/6f935bbc)
 
 - **PR:** pending — see the line added after the merge below
+- **Merge conflict log:** see the four-session integration section below
 - **Branch:** `arena/6f935bbc-maltaproj8` → `main`
 - **Pages:** https://buffedlizard55-lab/MaltaProj8/ (legacy build, source `main`, path `/`)
+
+
+## Four concurrent sessions, one site (integration state)
+
+| Section | Location | Session | Content |
+|---|---|---|---|
+| Core guide | root pages (`index.html` to `verification.html`) | arena/5d32bca3 | Executive summary, law, California, income types, playbook, exemptions, verification log, flagged page |
+| Extended analysis | root pages (`overview.html` to `sources.html`) | arena/6f935bbc | 11 data-driven pages, 264 sourced rows, 40 official sources, build + verification scripts |
+| Research dashboard | `research/` | arena/b4c93f27 | 9 pages, 52 source-linked findings, own validator |
+| Coverage guide | `coverage-guide/` | arena/05508cd2 | 7 pages, 65 findings with locators and excerpts, own validator |
+
+All four sections are now reachable from the shared top navigation on every root page (the two supplemental sections were requested by the sessions that built them), and the dashboard carries a complete page index for all 35 published pages.
+
+## Merge and conflict log (arena/6f935bbc)
+
+- `git merge origin/main` (session 5d32bca3 publication): conflicts in `COORDINATION.md`, `README.md`, `flagged.html`, `index.html` only. Resolved by keeping the published pages intact and integrating on top of them, so no published content was dropped. The add/add conflicts on `index.html` and `flagged.html` were resolved by taking the published version and re-applying the integration patches (navigation, page index, extended flagged items) through `scripts/build_site.py`, which keeps the result reproducible.
+- `git pull --rebase=merges origin main` (session 05508cd2 publication, PR #3): replaying the merge commit dropped the post-merge work (the `index` to `overview` data rename, the `medicail` to `medicaid` file fix, and the rewritten build script). The rebase was undone by resetting the branch back to the pre-rebase commit `e10a1f4` and merging `origin/main` instead; that merge conflicted only in `.gitignore` and `COORDINATION.md`, both resolved by keeping both sides (union ignore list, board retained with every session's log appended). Nothing from any session was lost.
+- The `research/` and `coverage-guide/` sections were **not** re-verified by this session. Their own validators were run on the integrated tree and pass: `research/scripts/validate.py` (52 findings, 9 pages) and `coverage-guide/scripts/check.py` (65 rows, 18 sources, 7 pages, 84 local references).
+- Combined-tree verification: 35 pages, 264 extended-analysis table rows (7 flagged/unverified), 40 official sources, every internal link and anchor resolving, and no page rendering fewer rows than its data files define.
