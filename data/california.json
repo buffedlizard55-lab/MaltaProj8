@@ -1,0 +1,37 @@
+{
+  "state": "California - Medi-Cal",
+  "program": "Medi-Cal (California Medicaid)",
+  "timeline": [
+    {"date": "2027-01-01", "event": "Work and community engagement requirements begin for MAGI New Adult Group (Aid Code M1)", "source": "https://www.dhcs.ca.gov/wp-content/uploads/2026/04/25-30.pdf"},
+    {"date": "2027-01-01", "event": "Six-month renewals begin (was annual). Exempt populations remain annual.", "source": "https://www.dhcs.ca.gov/wp-content/uploads/2026/09/MEDIL-I26-25.pdf"},
+    {"date": "2026-06-06", "event": "Multi-state lawsuit filed: California v. Mehmet Oz challenging IFR provisions", "source": "https://www.dhcs.ca.gov/tracking-federal-impact-medi-cal-eligibility/"},
+    {"date": "2026-02-05", "event": "DHCS HR1 Implementation Plan webinar released", "source": "https://www.dhcs.ca.gov/federal-impacts/Documents/HR1-Implementation-Plan-on-Eligibility-Webinar.pdf"},
+    {"date": "2026-09-01", "event": "DHCS MEDIL I26-25 outreach letter template to members", "source": "https://www.dhcs.ca.gov/wp-content/uploads/2026/09/MEDIL-I26-25.pdf"}
+  ],
+  "who_subject": "Adults 19-64 enrolled under MAGI New Adult Group (ACA expansion). Estimated 4.8M Californians in this category as of May 2026 (DHCS).",
+  "who_not_subject": ["Children 0-18","Adults 65+","Pregnant people (pregnancy + 12mo postpartum)","Parents/caregivers of child 0-13","People with disabilities / medically frail / serious health condition / SUD","People on Medicare Part A or B","American Indians/Alaska Natives","Former foster youth under 26","Foster youth","Recently incarcerated (last 90 days)"],
+  "qualifying_activities": [
+    {"activity": "Income >= $580/month from ANY source", "detail": "Monthly gross income before taxes >= $580. Seasonal/fluctuating: average >=$580 over prior 6 months. Includes wages, self-employment net, unemployment, SSDI, retirement, dividends, rental net, etc.", "source": "https://www.dhcs.ca.gov/wp-content/uploads/2026/04/25-30.pdf"},
+    {"activity": "Work >=80 hrs/month", "detail": "Paid employment, self-employment, gig work. Includes all jobs.", "source": "https://www.dhcs.ca.gov/medi-cal/updates/medi-cal-changes/"},
+    {"activity": "Community service / volunteering >=80 hrs/month", "detail": "Volunteer, community service hours", "source": "https://www.dhcs.ca.gov/medi-cal/updates/medi-cal-changes/"},
+    {"activity": "Work program >=80 hrs/month", "detail": "Job training, workforce development program", "source": "https://www.dhcs.ca.gov/medi-cal/updates/medi-cal-changes/"},
+    {"activity": "Education at least half-time", "detail": "Enrolled at least half-time in educational or career/technical education program. Less than half-time can combine hours to reach 80.", "source": "https://www.dhcs.ca.gov/wp-content/uploads/2026/04/25-30.pdf"},
+    {"activity": "Combination", "detail": "Any mix of above totaling >=80 hrs/month, or income equivalent", "source": "https://www.dhcs.ca.gov/wp-content/uploads/2026/04/25-30.pdf"}
+  ],
+  "how_verified": "Counties must first check ex parte via existing data (employment, income, program participation). If not verifiable, enrollee gets notice and 30 days to provide documentation. Renewal frequency changes to every 6 months for M1 population at next renewal after Jan 1, 2027.",
+  "coverage_loss_estimates": [
+    {"source": "DHCS May 2026", "estimate": "1.1M lose coverage by 2029-30 due to work requirement", "link": "https://www.chcf.org/resource/2026/06/05/hr1-work-requirement-affect-californians-medi-cal-policy-at-a-glance/"},
+    {"source": "DHCS Implementation Plan", "estimate": "233K by June 2027, 1M by Jan 2028, 1.4M by June 2028", "link": "https://www.dhcs.ca.gov/federal-impacts/Documents/HR1-Implementation-Plan-on-Eligibility-Webinar.pdf"},
+    {"source": "Urban Institute (CalMatters citation)", "estimate": "1.2-1.4M (approx 1/3 of those subject)", "link": "https://calmatters.org/health/2025/05/medicaid-work-requirement-california-congress/"},
+    {"source": "LA Times / state officials", "estimate": "Up to 3.4M via verification labyrinth", "link": "https://www.latimes.com/california/story/2025-08-07/medi-cal-work-requirements"}
+  ],
+  "california_mitigation": [
+    "Ex parte verification via existing state data before asking enrollee",
+    "Implement ALL optional short-term hardship exemptions (emergency, high unemployment county, inpatient care, medical travel)",
+    "Outreach letters at least 3 months before first look-back period (MEDIL I26-25 template)",
+    "Retain coverage during 30-day verification period",
+    "Lead plaintiff in multi-state lawsuit Commonwealth of Massachusetts et al. v. Mehmet Oz (June 2026) challenging IFR",
+    "Counties instructed to accept multiple forms of verification",
+    "$1.1B General Fund allocated in 2026-27 budget for HR1 Medi-Cal costs"
+  ]
+}
