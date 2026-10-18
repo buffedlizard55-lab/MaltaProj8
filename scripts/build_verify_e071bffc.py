@@ -104,16 +104,18 @@ def build():
 
     p.append('<div class="hero"><div class="hero-card">')
     p.append(f'<div class="eyebrow">{n_fetched} of {n_all} official sources re-fetched and read &middot; '
-             f'{n_verified} findings verified &middot; {n_blank} left blank &middot; {len(corrections)} corrections &middot; '
+             f'{n_verified} findings verified &middot; {n_blank} left blank &middot; {len(corroborated)} corrections corroborated &middot; '
              f'{len(requests)} change requests</div>')
     p.append('<h2>Two things the codified regulation settles &mdash; and a fetch-level sweep of every source</h2>')
     p.append('<p class="lead">Earlier sessions verified this site against the <em>Federal Register preamble</em>, the '
              '<em>CMS fact sheet</em> and <em>DHCS guidance</em>. This pass goes one level down and reads the '
              '<strong>codified regulation itself</strong> &mdash; 42 CFR 435.551, 435.552, 435.554, 435.556 and 435.603, '
-             'as published in the eCFR &mdash; because that is the text a county must actually apply. It found two '
-             'statements on a live page that the codified text contradicts, and it corrected them. It also completed the '
-             'hand-off item left by the previous integration session: actually <strong>fetching</strong> the official '
-             'sources rather than reviewing them on paper.</p>')
+             'as published in the eCFR &mdash; because that is the text a county must actually apply. It found three '
+             'statements on live pages that the codified text contradicts. It also surfaced a source no earlier session '
+             'had: <strong>AB 2161, Chapter 209 (2025-2026)</strong>, the California statute that actually implements '
+             'the work rule, signed on <strong>September 14, 2026</strong> &mdash; later than every document this site '
+             'was originally built on. And it completed the hand-off item left by the previous integration session: '
+             'actually <strong>fetching</strong> the official sources rather than reviewing them on paper.</p>')
     p.append('<div class="kpis">'
              f'<div class="kpi"><div class="k">Sources fetched</div><div class="v">{n_fetched}</div>'
              f'<div class="d">Of {n_all} in scope. The other {n_all - n_fetched} are labelled not re-fetched, not verified.</div></div>'
