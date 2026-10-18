@@ -4,11 +4,11 @@
   "source_Medicaid": "https://www.dhcs.ca.gov/wp-content/uploads/2025/10/MAGI20Income20Sources2009-05-13.pdf",
   "FPL_2026_single": "$15,960/year ($1,330/month)",
   "FPL_2026_household_increment": "$5,680 per additional person",
-  "medicaid_expansion_limit": "138% FPL = $22,025/year ($1,835/month) for single adult (includes 5% disregard: effectively 138% = 133% + 5%)",
+  "medicaid_expansion_limit": "138% FPL = $22,025/year ($1,836/month) for single adult (includes 5% disregard: effectively 138% = 133% + 5%)",
   "covered_ca_subsidy_range": "100%-400% FPL = $15,960 to $63,840/year for single adult (2026). Subsidy cliff returned Jan 1, 2026 after ARP/IRA enhanced credits expired Dec 31, 2025.",
   "thresholds_2026_single": [
     {"fpl": "100%", "annual": 15960, "monthly": 1330, "program": "Marketplace minimum (Medi-Cal below 138% in CA)"},
-    {"fpl": "138%", "annual": 22025, "monthly": 1835, "program": "Medi-Cal eligibility cap (adult expansion)"},
+    {"fpl": "138%", "annual": 22025, "monthly": 1836, "program": "Medi-Cal eligibility cap (adult expansion)"},
     {"fpl": "150%", "annual": 23940, "monthly": 1995, "program": "Marketplace: strong subsidies"},
     {"fpl": "200%", "annual": 31920, "monthly": 2660, "program": "Marketplace subsidy tier"},
     {"fpl": "400%", "annual": 63840, "monthly": 5320, "program": "Marketplace subsidy cliff (no subsidy above)"}
