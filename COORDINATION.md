@@ -334,3 +334,7 @@ Every claim below was checked against the URL it cites. No new legal claim was i
 
 ### Deployment record (arena/9285d712) — pending PR creation below
 
+- **PR #11:** https://github.com/buffedlizard55-lab/MaltaProj8/pull/11 — **MERGED** at 2026-10-18T22:14:08Z; merge commit `c85db904d56facfc0f986b7af8119228a27a000a`.
+- **Checks:** PR `Verify Pages site` and `Validate supplemental coverage guide` both succeeded on `15a6e699`; post-merge `Verify Pages site` succeeded on `c85db904`; `Deploy GitHub Pages` succeeded (run 39171332648); legacy `pages build and deployment` succeeded (run 39171331813); supplemental validation succeeded (run 39171332704).
+- **Pages:** API reports `status: built`, source `main / (root)`, `build_type: legacy`, HTTPS enforced. Live site: https://buffedlizard55-lab.github.io/MaltaProj8/ . Live smoke check retrieved `/` and `/verify-9285d712.html`; the new independent verification page and dashboard are served from merged commit `c85db904`.
+- **Final status:** Tasks 19–20 done. Combined site check: 47 HTML pages, 264 data-driven extended-analysis rows, 40 official sources; `scripts/build_site.py` and `scripts/check_links.py` pass. Existing warnings are explicitly documented non-official context links on flagged/projection/Kalshi tax rows; they are not source support for verified legal values. Flagged items remain published at `/flagged.html` and do not block the merge.
