@@ -1,7 +1,7 @@
 name: Deploy GitHub Pages
 on:
   push:
-    branches: [main, arena/5d32bca3-maltaproj8]
+    branches: [main]
   workflow_dispatch:
 permissions:
   contents: read

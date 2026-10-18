@@ -824,6 +824,8 @@ def archives(data, sources):
             ("work-rules.html", "Work Rules"),
             ("coverage-options.html", "Coverage Options"),
             ("findings.html", "All Findings"),
+            ("verification.html", "Verification log"),
+            ("flagged.html", "Flagged for Review"),
             ("archives.html", "Archive (this page)"),
         ], "Generated from data/core.json. Fully re-verified in this session."),
         ("Detailed reference pages", "Preserved", [
@@ -832,8 +834,8 @@ def archives(data, sources):
             ("income.html", "Income & MAGI"),
             ("pathways.html", "0-Earned Playbook"),
             ("exemptions.html", "Exemptions"),
-            ("verification.html", "Verification Log"),
-            ("flagged.html", "Flagged for Review"),
+            ("verification-detailed.html", "Verification log (detail, superseded)"),
+            ("flagged-detailed.html", "Flagged for Review (detail, superseded)"),
         ], "Earlier sessions' pages. Preserved and patched for navigation; key factual corrections are logged in verification.html and flagged.html. Not re-certified row by row by this session."),
         ("Extended analysis", "Preserved", [
             ("overview.html", "Overview"),
@@ -852,7 +854,11 @@ def archives(data, sources):
             ("research/index.html", "Research dashboard (9 pages)"),
             ("coverage-guide/index.html", "Coverage guide (7 pages)"),
             ("docs/index.html", "Docs dashboard (10 pages)"),
-            ("verify-95219c64.html", "Independent verification page"),
+            ("audit-6fc18b58.html", "Independent audit (6fc18b58)"),
+            ("verify-5bf2fb99.html", "Independent check (5bf2fb99)"),
+            ("verify-9285d712.html", "Independent check (9285d712)"),
+            ("verify-95219c64.html", "Independent check (95219c64)"),
+            ("verify-a9c46f9b.html", "Independent check (a9c46f9b)"),
         ], "Built by other sessions. Preserved as supplementary material. Their own validators were run by those sessions; this session did not re-certify every claim."),
     ]
     blocks = ""
@@ -872,10 +878,10 @@ def archives(data, sources):
         "Archive · preserved detailed pages and supplementary dashboards",
         "",
         [
-            {"label": "Primary pages", "value": "6", "detail": "Verified core, generated from data/core.json."},
-            {"label": "Detailed reference pages", "value": "7", "detail": "Preserved and navigation-patched."},
+            {"label": "Primary pages", "value": "8", "detail": "Verified core, generated from data/core.json."},
+            {"label": "Detailed reference pages", "value": "7", "detail": "Preserved; two are the superseded originals."},
             {"label": "Extended analysis pages", "value": "11", "detail": "Preserved generated reference."},
-            {"label": "Supplementary pages", "value": "4 sections", "detail": "Research, coverage guide, docs, independent verification."},
+            {"label": "Supplementary sections", "value": "8 pages", "detail": "Research, coverage guide, docs, and five independent checks."},
         ],
         [("archive", "Page index"), ("build", "Build and verification"), ("policy", "Status policy")],
         [
@@ -963,6 +969,21 @@ def flagged(data, sources):
     body += section("Corrections closed on this site", "closed",
                     table(heads, closed_rows, table_id="flags-closed"),
                     "Earlier pages carried these errors. They were corrected at the data layer, so every generated page now shows the corrected value.")
+    body += section("Other flagged registers on this site", "registers", (
+        '<div class="card"><p>Earlier sessions published their own flagged-item registers inside the supplementary dashboards. '
+        'They are preserved and linked here so no flagged item is reachable only by accident.</p>'
+        '<div class="table-wrap"><table><thead><tr><th>Register</th><th>Covers</th><th>Page</th></tr></thead><tbody>'
+        '<tr><td><strong>Docs dashboard flags (FL-01 to FL-11)</strong></td><td>Taxes, subsidies, mandate penalties</td>'
+        '<td><a href="docs/flagged-for-review.html">docs/flagged-for-review.html</a></td></tr>'
+        '<tr><td><strong>Research flags (9 items)</strong></td><td>Income classification, public charge, enforcement gaps</td>'
+        '<td><a href="research/review.html">research/review.html</a></td></tr>'
+        '<tr><td><strong>Coverage-guide flags (9 items)</strong></td><td>Dates, Kalshi hours, property-management hours, FPL rounding</td>'
+        '<td><a href="coverage-guide/pages/flagged.html">coverage-guide/pages/flagged.html</a></td></tr>'
+        '<tr><td><strong>Independent audits</strong></td><td>Fresh row-link inventories and corrections by later sessions</td>'
+        '<td><a href="audit-6fc18b58.html">audit-6fc18b58.html</a> · <a href="archives.html#archive">all checks</a></td></tr>'
+        '</tbody></table></div>'
+        '<p class="hint">This page remains the primary register: 24 flags generated from <code>data/core.json</code>.</p></div>'
+    ))
     body += section("What a flag means", "policy", (
         '<div class="card"><ul class="big-list">'
         '<li><strong>Open</strong> — two official sources conflict, or the legal question is not settled. Both readings are shown and the reader is told which decision-maker resolves it.</li>'

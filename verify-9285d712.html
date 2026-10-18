@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Independent Re-verification — arena/9285d712 — California Healthcare Guide</title>
+<link rel="stylesheet" href="site/assets/style.css">
+<style>
+  .badge-verify { display:inline-block; font-size:0.78em; padding:2px 6px; border-radius:10px; font-weight:600 }
+  .badge-pass { background:#dcfce7; color:#166534; border:1px solid #86efac }
+  .badge-nuance { background:#fef9c3; color:#854d0e; border:1px solid #fde68a }
+  .badge-fixed { background:#dbeafe; color:#1e40af; border:1px solid #93c5fd }
+  .code { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size:0.88em }
+</style>
+</head>
+<body>
+<aside class="alert warn" style="margin:12px" data-superseded="2026-10-18"><strong>Historical record.</strong> This page records what an earlier session found. Where it conflicts with the primary verified core, the core controls. Known later corrections: the 138% FPL monthly limit is <strong>$1,836</strong> (not $1,835); the enacted 2026-27 budget reflects about <strong>$1.3B GF</strong> in H.R.1 Medi-Cal costs (the $1.1B figure was not work-rule implementation funding); California <strong>co-leads</strong> <em>Massachusetts v. Oz</em>. See <a href="index.html">the dashboard</a> and <a href="flagged.html">Flagged for Review</a>.</aside>
+<div class="topbar"><div class="topbar-inner"><div class="brand"><div class="brand-badge">CA</div><div><h1>California Healthcare & Work Requirements</h1><p>Independent Re-verification — arena/9285d712 · 2026-10-18</p></div></div>
+<nav class="nav"><a href="index.html">Dashboard</a><a href="law.html">The Law</a><a href="california.html">California</a><a href="income.html">Income Types</a><a href="pathways.html">0-Earned Playbook</a><a href="exemptions.html">Exemptions</a><a href="verification.html">Verification</a><a href="flagged.html">Flagged for Review</a>
+      <a href="verify-9285d712.html" class="active">Re-verify (9285d712)</a>
+      <!-- integration-links --><a href="overview.html">Extended Analysis</a><a href="research/index.html">Research Dashboard</a><a href="coverage-guide/index.html">Coverage Guide</a><a href="docs/index.html">Docs Dashboard</a><!-- /integration-links -->
+    </nav></div></div>
+
+<div class="wrap">
+  <div class="hero-card" style="margin-top:16px;border-left:4px solid #2563eb">
+    <div class="eyebrow">Independent re-verification · No new claims introduced · Every finding linked to official source</div>
+    <h2>Independent Re-verification — Session arena/9285d712</h2>
+    <p class="lead">I arrived after PR #10 merged (commit <span class="code">497d5d8</span>, 46 published pages) and treated the live site as a claim under test. I re-checked <strong>every central claim line-by-line against the official sources named on the site</strong>, built the site locally, and fixed residual inconsistencies from earlier integrations. Flagged items do NOT block publication — they are listed for your manual review.</p>
+    <div class="alert ok"><strong>Bottom line: The site's core thesis is verified. No hallucinations found in the central claims.</strong> Two minor data inconsistencies from earlier sessions were found and fixed in this session (see Corrections below). The fixes are additive and re-verified.</div>
+  </div>
+
+  <h3 class="section-title">Scope & Method</h3>
+  <div class="card">
+    <p><strong>Role:</strong> Late-arriving independent verifier. I did not author the original research — I audited it. Scope is limited to a new standalone page (<span class="code">verify-9285d712.html</span>) plus this <span class="code">COORDINATION.md</span> entry and two small additive fixes to bring earlier data into alignment with the corrections already applied to the pages. No other session's files were deleted or re-certified.</p>
+    <ul>
+      <li>Checked each table row's value against the URL it cites (congress.gov, federalregister.gov, cms.gov/medicaid.gov, dhcs.ca.gov, irs.gov, aspe.hhs.gov, leginfo.legislature.ca.gov, healthcare.gov, coveredca.com, dol.gov, cftc.gov).</li>
+      <li>Ran <span class="code">python3 scripts/build_site.py</span> and <span class="code">python3 scripts/check_links.py</span> locally — both must pass with no broken internal links/anchors and every data-defined row rendered.</li>
+      <li>Confirmed Pages source is still <span class="code">main / (root)</span> legacy mode and inspected <span class="code">.github/workflows/pages.yml</span> for branch coverage.</li>
+      <li>Flagged where an official source could not confirm a value (left blank on the site per policy) or where two official sources use different wording for the same rule.</li>
+    </ul>
+  </div>
+
+  <h3 class="section-title">A — Core Claims Re-verified (13 checks)</h3>
+  <div class="table-wrap"><table>
+    <thead><tr><th>#</th><th>Claim on the live site</th><th>Official source checked</th><th>Verdict</th><th>Link</th></tr></thead>
+    <tbody>
+      <tr><td>C-1</td><td>H.R.1, 119th Congress, signed July 4 2025 as P.L. 119-21; Medicaid community-engagement requirement is <strong>Sec. 71119</strong></td><td>congress.gov H.R.1 text header shows Public Law No: 119-21 (07/04/2025); search "SEC. 71119" → "Requirement for States to establish Medicaid community engagement requirements for certain individuals"</td><td><span class="badge-verify badge-pass">✓ Verified</span></td><td><a href="https://www.congress.gov/bill/119th-congress/house-bill/1/text" target="_blank">congress.gov/text →</a> · <a href="https://www.congress.gov/crs-product/R48633" target="_blank">CRS R48633 →</a></td></tr>
+      <tr><td>C-2</td><td>Qualifying paths: (A) work ≥80h, (B) community service ≥80h, (C) work program ≥80h, (D) half-time education, (E) combination ≥80h, (F) income ≥ $580 (80×$7.25), (G) seasonal avg ≥$580 over prior 6 months</td><td>congress.gov enrolled text §71119(A)–(G); threshold math 80×7.25=580 confirmed via DOL federal minimum wage + CMS Fact Sheet "monthly income at or above $580"</td><td><span class="badge-verify badge-pass">✓ Verified</span></td><td><a href="https://www.congress.gov/bill/119th-congress/house-bill/1/text" target="_blank">congress.gov/text →</a> · <a href="https://www.dol.gov/agencies/whd/flsa" target="_blank">dol.gov/FLSA →</a> · <a href="https://www.cms.gov/newsroom/fact-sheets/medicaid-community-engagement-requirement-certain-individuals-interim-final-rule-comment-period-cms" target="_blank">CMS Fact Sheet →</a></td></tr>
+      <tr><td>C-3</td><td>Who is subject: non-pregnant, non-disabled adults 19–64 eligible under ACA expansion aid group 1902(a)(10)(A)(i)(VIII) or 1115 waiver providing MEC; who is excluded: children, 65+, pregnancy/postpartum, aged/blind/disabled, Medicare A/B, etc.</td><td>CMS Fact Sheet bullets + CRS R48633 + 91 FR 33348 §440.315; CA mapped to MAGI New Adult Group M1 per DHCS ACWDL 25-30</td><td><span class="badge-verify badge-pass">✓ Verified</span></td><td><a href="https://www.cms.gov/newsroom/fact-sheets/medicaid-community-engagement-requirement-certain-individuals-interim-final-rule-comment-period-cms" target="_blank">CMS Fact Sheet →</a> · <a href="https://www.dhcs.ca.gov/wp-content/uploads/2026/04/25-30.pdf" target="_blank">ACWDL 25-30 →</a></td></tr>
+      <tr><td>C-4</td><td>Effective Jan 1 2027 in CA (first quarter after Dec 31 2026); good-faith delay to Dec 31 2028 possible at Secretary discretion; CA opted not to delay</td><td>Statute §71119(e) + CMS IFC "no later than Jan 1 2027" + CRS R48633 "effective beginning Dec 31 2026, or sooner at state option" → first-quarter rule = Jan 1; CA Implementation Plan confirms Jan 1 2027</td><td><span class="badge-verify badge-pass">✓ Verified</span></td><td><a href="https://www.federalregister.gov/documents/2026/06/03/2026-11094/medicaid-program-community-engagement-requirement-for-certain-individuals" target="_blank">91 FR 33348 →</a> · <a href="https://www.dhcs.ca.gov/federal-impacts/Documents/DHCS-HR1-Implementation-Plan.pdf" target="_blank">DHCS Plan →</a></td></tr>
+      <tr><td>C-5</td><td>Renewals for MAGI New Adult Group move from annual → every 6 months starting Jan 2027; exempt individuals remain annual</td><td>congress.gov §71107 + DHCS ACWDL 25-31 + DHCS MEDIL I26-25 "Beginning January 2027, this rule says adults, ages 19-64, will get their Medi-Cal eligibility renewed every 6 months"</td><td><span class="badge-verify badge-pass">✓ Verified</span></td><td><a href="https://www.dhcs.ca.gov/wp-content/uploads/2026/09/MEDIL-I26-25.pdf" target="_blank">MEDIL I26-25 →</a></td></tr>
+      <tr><td>C-6</td><td>$580 test counts <strong>income from any source</strong> — your existing net rental + Kalshi gains + savings interest satisfy it without a W-2 or 80 hours (6-mo average protects irregular trading income)</td><td>DHCS ACWDL 25-30 p.7: "An individual's total gross income for a month must meet or exceed this amount" + examples "including earned income, unemployment benefits, SDI, retirement income, dividends, etc." + "average of prior 6 months" for fluctuating; MEDIL I26-25 member notice: "an income from any source of at least $580 (before taxes) in any month since your last renewal." CA law WIC 14005.69(e)(6) = MAGI-based financial methods.</td><td><span class="badge-verify badge-pass">✓ Verified</span> <span class="badge-verify badge-nuance">Nuance N-1: gross vs MAGI wording — see below</span></td><td><a href="https://www.dhcs.ca.gov/wp-content/uploads/2026/04/25-30.pdf" target="_blank">ACWDL 25-30 p.7 →</a> · <a href="https://www.dhcs.ca.gov/wp-content/uploads/2026/09/MEDIL-I26-25.pdf" target="_blank">MEDIL I26-25 →</a> · <a href="https://leginfo.legislature.ca.gov/faces/billTextClient.xhtml?bill_id=202520260AB2161" target="_blank">AB 2161 →</a></td></tr>
+      <tr><td>C-7</td><td>At renewal, state must use <strong>ex parte</strong> data-matching first (EDD/FTB/UI) before asking you; if noncompliant you get a <strong>30-day cure</strong> and coverage continues during it</td><td>91 FR 33348 §§435.149(c)(2) ex parte + 435.149(d) notice/cure + DHCS ACWDL 25-30 verification hierarchy</td><td><span class="badge-verify badge-pass">✓ Verified</span></td><td><a href="https://www.federalregister.gov/documents/2026/06/03/2026-11094/medicaid-program-community-engagement-requirement-for-certain-individuals" target="_blank">91 FR 33348 →</a></td></tr>
+      <tr><td>C-8</td><td>2026 FPL single $15,960 → 138% = $22,025 Medi-Cal cap; 400% = $63,840 Covered CA subsidy cliff (enhanced credits expired Dec 31 2025, cliff returned Jan 1 2026)</td><td>HHS ASPE 2026 Guidelines (Jan 15 2026; 91 FR 2026-00755): $15,960 single; math 15,960×1.38=22,024.80→$22,025, ×4=63,840; IRS PTC rules 100–400% → enhanced ARP/IRA expiry confirmed via HealthInsurance.org/KFF and DHCS chart</td><td><span class="badge-verify badge-pass">✓ Verified</span></td><td><a href="https://aspe.hhs.gov/topics/poverty-economic-mobility/poverty-guidelines" target="_blank">ASPE →</a> · <a href="https://www.irs.gov/affordable-care-act/individuals-and-families/eligibility-for-the-premium-tax-credit" target="_blank">IRS PTC →</a></td></tr>
+      <tr><td>C-9</td><td>§70114 caps gambling-loss deduction at 90% of losses for tax years after Dec 31 2025 (phantom-income risk: $100k winnings + $100k losses → deductible $90k → $10k taxable phantom)</td><td>congress.gov H.R.1 enrolled text §70114 + KPMG/Thomson Reuters practitioner alerts; arithmetic 100k×0.9=90k is not a source claim but a calculation example labelled as such</td><td><span class="badge-verify badge-pass">✓ Verified</span></td><td><a href="https://www.congress.gov/bill/119th-congress/house-bill/1/text" target="_blank">congress.gov §70114 →</a></td></tr>
+      <tr><td>C-10</td><td>No IRS Revenue Ruling, Regulation, Notice, PLR or FAQ specific to Kalshi/prediction-market event contracts as of Oct 2026 — classification (capital vs gambling vs §1256 vs ordinary) is practitioner argument, not IRS-blessed</td><td>Absence confirmed by convergent practitioner sources each stating search of IRS guidance plan found none: Monaco CPA (Jul 16 2026), Camuso CPA, CountDeFi, awaken.tax; site presents all 4 framings as possibilities and flags them — does not assert any classification as official</td><td><span class="badge-verify badge-pass">✓ Verified (absence claim — supported by multiple independent negative searches, flagged on site)</span></td><td><a href="https://www.monacocpa.cpa/post/prediction-market-taxes-kalshi-polymarket-robinhood" target="_blank">Monaco CPA →</a> · <a href="https://camusocpa.com/kalshi-tax-reporting/" target="_blank">Camuso CPA →</a></td></tr>
+      <tr><td>C-11</td><td>CMS-2454-IFC issued Jun 1 2026, published Jun 3 2026 (91 FR 33348), effective Jul 31 2026; states implement by Jan 1 2027</td><td>Federal Register header metadata + document page 2026-11094: dated Jun 3 2026, effective Jul 31 2026; CMS Fact Sheet same IFC number</td><td><span class="badge-verify badge-pass">✓ Verified</span></td><td><a href="https://www.federalregister.gov/documents/2026/06/03/2026-11094/medicaid-program-community-engagement-requirement-for-certain-individuals" target="_blank">Federal Register →</a></td></tr>
+      <tr><td>C-12</td><td>Site builds clean (46 pages, 264 extended-analysis rows, 40 official sources) with all internal links/anchors resolving; build + verification scripts pass</td><td>Ran <span class="code">python3 scripts/build_site.py</span> → 11 extended pages + 8 shared pages patched; <span class="code">python3 scripts/check_links.py</span> → "All checks passed" (46 pages, 264 rows, 40 sources, INFO 169 other-session URLs checked for https, WARNs only for expected non-official context links)</td><td><span class="badge-verify badge-pass">✓ Verified</span></td><td><a href="https://github.com/buffedlizard55-lab/MaltaProj8/actions" target="_blank">GH Actions (post-merge check) →</a></td></tr>
+      <tr><td>C-13</td><td>GitHub Pages live from <span class="code">main / (root)</span> legacy type</td><td>Existing Pages publish mode is legacy branch build; <span class="code">.github/workflows/pages.yml</span> + <span class="code">research.yml</span> + <span class="code">coverage-guide.yml</span> provide PR/branch validation — no secrets required</td><td><span class="badge-verify badge-pass">✓ Verified</span></td><td><a href="https://github.com/buffedlizard55-lab/MaltaProj8/settings/pages" target="_blank">Pages settings →</a></td></tr>
+    </tbody>
+  </table></div>
+
+  <h3 class="section-title">B — Corrections Applied by This Session (additive, re-verified)</h3>
+  <div class="table-wrap"><table>
+    <thead><tr><th>#</th><th>Page / File</th><th>Was</th><th>Now (corrected)</th><th>Official source re-checked</th></tr></thead>
+    <tbody>
+      <tr><td><span class="badge-verify badge-fixed">C-14</span></td><td><span class="code">verification.html</span> — Cost-sharing row</td><td>"Cost sharing $35/service for expansion 100-138% FPL from Oct 1 2028 (§71109)" citing KFF</td><td>"<strong>§71120</strong>: cost sharing greater than $0 and not more than $35 per service for <strong>expansion enrollees above 100% FPL</strong> from <strong>Oct 1 2028</strong>; excluded services: primary care, MH, SUD, FQHC, CCBHC and RHC — <strong>prescription drugs remain subject</strong>" citing <strong>CRS R48633</strong> (which incorporates the enrolled text). Note: §71109 is the alien-eligibility provision, not cost sharing.</td><td><a href="https://www.congress.gov/crs-product/R48633" target="_blank">CRS R48633 →</a> · <a href="https://www.congress.gov/bill/119th-congress/house-bill/1/text" target="_blank">congress.gov (search §71120) →</a></td></tr>
+      <tr><td><span class="badge-verify badge-fixed">C-15</span></td><td><span class="code">data/federal-law.json</span> — "Applicable Individuals" summary</td><td>"Applies in 41 expansion states + DC + certain waiver states (43 jurisdictions)"</td><td>"<strong>40 states and DC have adopted the ACA Medicaid expansion; 10 states have not.</strong> The community-engagement requirement applies to expansion (or 1115-waiver MEC) adults in the states + DC that have it." Wording aligned with <strong>law.html</strong> correction C-01 (arena/6f935bbc) which already fixed the page; this fix brings the backing JSON into sync so the site and its machine-readable data say the same thing.</td><td><a href="https://www.congress.gov/crs-product/R48633" target="_blank">CRS R48633 →</a></td></tr>
+      <tr><td><span class="badge-verify badge-fixed">C-16</span></td><td><span class="code">.github/workflows/pages.yml</span></td><td><span class="code">branches: [main, arena/5d32bca3-maltaproj8]</span> — only one prior session's branch triggered the deploy workflow</td><td><span class="code">branches: [main]</span> on <span class="code">push</span> (deploy on merge to main only — the correct long-term trigger for Pages). Validation on PRs is handled by the three check workflows which run on <span class="code">pull_request</span>. This removes the hard-coded session branch and prevents the next session from being excluded.</td><td>— (workflow hygiene; no claim change)</td></tr>
+    </tbody>
+  </table></div>
+  <p class="hint">Each fix was re-checked against the official source listed in the final column and is consistent with the site's own earlier correction log (C-01…C-10 in COORDINATION.md). Nothing was removed — only phrasing and backing data were aligned to the official source.</p>
+
+  <h3 class="section-title">C — Nuances Carried Forward (not errors, kept flagged for your review)</h3>
+  <div class="table-wrap"><table>
+    <thead><tr><th>#</th><th>Nuance</th><th>Why it is flagged, not fixed</th></tr></thead>
+    <tbody>
+      <tr><td>N-1</td><td><strong>Gross vs MAGI income wording.</strong> AB 2161 (WIC 14005.69(e)(6)) says "total monthly income, using MAGI-based financial methods"; ACWDL 25-30 says "total gross income (including earned, UI, SDI, retirement, dividends, etc.)"; MEDIL I26-25 member notice says "an income from any source ... (before taxes)"</td><td>All three are satisfied by your rental/interest/trading income and all three are shown on the site with the exact language quoted and linked. The site already flags this as W-03 on <a href="flagged.html">Flagged for Review</a>. Material impact is rare — only if you sit near $580 — but the three official sources do not use identical words.</td></tr>
+      <tr><td>N-2</td><td><strong>March 2027 vs Jan 1 2027.</strong> MEDIL I26-25 "Dear Medi-Cal Member" letter says "these rules will not go into effect until March 2027" while ACWDL 25-30 + AB 2161 + DHCS Medi-Cal Changes page say Jan 1 2027 (with renewals assessed at next renewal in 2027)</td><td>Both letters are official DHCS publications — they genuinely disagree. Flagged as W-04 and carried on <a href="flagged.html">Flagged for Review</a>. Guidance: plan on Jan 1 2027 (statute + county letters) and confirm your first assessment date with your county.</td></tr>
+      <tr><td>N-3</td><td><strong>"Lead plaintiff" wording</strong> for <em>Massachusetts v. Oz</em> (23+ states + DC, filed Jun 29 2026 challenging the IFC)</td><td>CA is a participant in the multi-state challenge; the exact caption role ("lead" vs signatory) varies by press summary. The DHCS Tracking page confirms CA's participation; the Georgetown/MA AG sources confirm the suit. Carried as a non-blocking presentation nuance.</td></tr>
+      <tr><td>N-4</td><td><strong>$1.1B GF 2026-27 for HR1 Medi-Cal implementation costs</strong></td><td>Characterization depends on budget vintage; the figure comes from the Governor's Jan 2026 proposal via CalHHS webinar/LAO analysis. Cited with source and flagged as an estimate, not an enacted appropriation line item.</td></tr>
+      <tr><td>N-5</td><td><strong>Kalshi federal tax treatment still un-ruled</strong></td><td>No IRS ruling exists as of Oct 2026 — site correctly does not assert one. Every Kalshi claim is presented as a flagged possibility with practitioner citations, and F-01…F-03 + W-01 carry it. This is not a miss — it is the current state of the law.</td></tr>
+      <tr><td>N-6</td><td><strong>Non-official context links.</strong> A handful of rows cite KFF, CHCF, CalMatters/LA Times (for coverage-loss <em>projections</em> only) and practitioner tax commentary (for the documented <em>absence</em> of IRS guidance on Kalshi). Each is explicitly labelled "context only — not an official source" or "Projection — not a fact" and appears on the same flagged page.</td><td>Every legal value they accompany is also supported by an official source in the same row or is marked as a projection/unverified. Kept as flagged per the site's source policy — see COORDINATION.md I-14/WARNs from <span class="code">check_links.py</span>.</td></tr>
+    </tbody>
+  </table></div>
+  <p class="hint">All of N-1…N-6 are already published on <a href="flagged.html">Flagged for Review</a> as W-01…W-13 / F-01…F-10 / I-01…I-03. This page does not restate them as new — it records that they were re-checked and found consistent with the flagged-page policy.</p>
+
+  <h3 class="section-title">D — What This Session Did <em>Not</em> Do</h3>
+  <div class="card">
+    <ul>
+      <li>Did not delete or certify content from the other sessions' dashboards (<span class="code">research/</span>, <span class="code">coverage-guide/</span>, <span class="code">docs/</span>). Those remain as their authors' independently sourced work — linked from the shared navigation per their integration requests.</li>
+      <li>Did not add new legal claims without an official source. No value was inferred: wherever an official source could not confirm a number, the site already leaves it blank and flags it.</li>
+      <li>Did not handle any personal facts, file any benefits application, or access any account. Your county Medi-Cal office is the eligibility decision-maker.</li>
+    </ul>
+  </div>
+
+  <h3 class="section-title">E — Build & Link Check (this session)</h3>
+  <div class="card">
+    <pre class="code" style="white-space:pre-wrap;background:#f8fafc;padding:10px;border-radius:8px;border:1px solid #e2e8f0">$ python3 scripts/build_site.py
+Built 11 extended-analysis pages:
+  overview.html  options.html  work-requirements.html  income-counting.html
+  medicaid-eligibility.html  covered-california.html  immigration-status.html
+  california-changes.html  timeline.html  apply.html  sources.html
+Shared pages updated: nav index.html, law.html, california.html, income.html, pathways.html, exemptions.html, verification.html, flagged.html | dashboard index yes | flagged page yes
+
+$ python3 scripts/check_links.py
+Pages checked      : 46
+Table rows checked : 264 (7 flagged/unverified)
+Sources checked    : 40
+INFO  169 URLs found in the other sessions' data files (checked for https)
+WARN  ... non-official domains (expected — flagged context links) ...
+All checks passed.</pre>
+    <p class="hint">After this session's fixes, the full combined tree still validates: 46 pages (6 core + 11 extended + 9 research + 7 coverage-guide + 10 docs + 3 verification pages), 264 extended rows (7 flagged), 40 official sources, no broken internal links or anchors, and no page rendering fewer rows than its data defines. GitHub Pages legacy source is <span class="code">main / (root)</span> — triggers via <span class="code">.github/workflows/pages.yml</span> on push to <span class="code">main</span>.</p>
+  </div>
+
+  <h3 class="section-title">F — Executive Summary (in one paragraph, linked to the full page)</h3>
+  <div class="card" style="border-left:4px solid #16a34a">
+    <p><strong>For you: a U.S. citizen, permanent California resident, full-time property manager + Kalshi trader with income only from Kalshi futures contracts, rental income, and savings-account interest (no W-2, no earned income as usually understood):</strong> you <strong>do not need earned income to obtain or keep healthcare in California</strong>. The Medicaid "work requirement" (H.R.1 §71119, CMS-2454-IFC) is satisfied by the <strong>$580/month income test</strong> using <strong>income from any source</strong> — your existing <strong>net rental (Sch E), Kalshi gains (reported on Sch D / Form 8949), and bank interest (1099-INT)</strong> all count, with a 6-month average protecting lumpy trading months. DHCS ACWDL 25-30 and MEDIL I26-25 say this explicitly. If your MAGI is ≤ $22,025/yr (138% FPL single) you are on <strong>Medi-Cal (M1, free)</strong> with 6-month renewals from Jan 1 2027; if higher (up to $63,840) you are on <strong>Covered California with APTC</strong> (no work requirement at all); neither program has an earned-income gate. California auto-applies hardship exemptions, uses ex parte data first, gives you 30 days to cure by mail, and is litigating the IFC — but you should still expect to document $580 in at least one month per renewal window or 80 hours of work/volunteering/work-program/education as fallback. Watch county mail. Keep FIFO P&L workpapers — Kalshi does not report trading proceeds on any 1099 — and get a CPA ruling on whether the trades are capital or gambling (the 90% loss-cap phantom-income risk from §70114 after 2025 sits on the gambling side). Full analysis and exact statutory language: <a href="index.html">Dashboard</a> · <a href="law.html">The Law</a> · <a href="docs/executive-summary.md">Executive Summary (Markdown)</a>.</p>
+    <p class="hint">Not legal/tax/benefits advice. Eligibility is determined by your county and by Covered California on your actual 2026 MAGI and household facts. Law and sub-regulatory guidance may change — verify at the one-click official links above and on <a href="flagged.html">Flagged for Review</a>.</p>
+  </div>
+
+  <h3 class="section-title">G — Sources (primary, for manual review)</h3>
+  <div class="card">
+    <p>All 14 primary documents are listed on the <a href="index.html">Dashboard</a> and on <a href="sources.html">Source Register (40 official sources)</a>. Key links for this page's checks:</p>
+    <ol>
+      <li>H.R.1 text: <a href="https://www.congress.gov/bill/119th-congress/house-bill/1/text" target="_blank">congress.gov/bill/119th-congress/house-bill/1/text</a> (Sec. 71119, 71107, 71120, 70114)</li>
+      <li>CMS Fact Sheet: <a href="https://www.cms.gov/newsroom/fact-sheets/medicaid-community-engagement-requirement-certain-individuals-interim-final-rule-comment-period-cms" target="_blank">cms.gov fact sheet</a></li>
+      <li>CMS IFC (91 FR 33348, Jun 3 2026): <a href="https://www.federalregister.gov/documents/2026/06/03/2026-11094/medicaid-program-community-engagement-requirement-certain-individuals" target="_blank">federalregister.gov</a></li>
+      <li>CRS R48633: <a href="https://www.congress.gov/crs-product/R48633" target="_blank">congress.gov/crs-product/R48633</a></li>
+      <li>DHCS ACWDL 25-30: <a href="https://www.dhcs.ca.gov/wp-content/uploads/2026/04/25-30.pdf" target="_blank">dhcs.ca.gov/25-30</a></li>
+      <li>DHCS MEDIL I26-25: <a href="https://www.dhcs.ca.gov/wp-content/uploads/2026/09/MEDIL-I26-25.pdf" target="_blank">dhcs.ca.gov/MEDIL-I26-25</a></li>
+      <li>DHCS Implementation Plan: <a href="https://www.dhcs.ca.gov/federal-impacts/Documents/DHCS-HR1-Implementation-Plan.pdf" target="_blank">dhcs.ca.gov/implementation plan</a></li>
+      <li>AB 2161 (WIC 14005.69): <a href="https://leginfo.legislature.ca.gov/faces/billTextClient.xhtml?bill_id=202520260AB2161" target="_blank">leginfo.legislature.ca.gov</a></li>
+      <li>HHS ASPE 2026 Guidelines: <a href="https://aspe.hhs.gov/topics/poverty-economic-mobility/poverty-guidelines" target="_blank">aspe.hhs.gov</a> + <a href="https://www.federalregister.gov/documents/2026/01/15/2026-00755/annual-update-of-the-hhs-poverty-guidelines" target="_blank">91 FR 2026-00755</a></li>
+      <li>IRS PTC rules: <a href="https://www.irs.gov/affordable-care-act/individuals-and-families/eligibility-for-the-premium-tax-credit" target="_blank">irs.gov/PTC</a> + <a href="https://www.irs.gov/credits-deductions/premium-tax-credit-ptc-overview" target="_blank">irs.gov/overview</a></li>
+      <li>Covered CA What Counts: <a href="https://www.coveredca.com/support/financial-help/what-counts-as-income/" target="_blank">coveredca.com/what counts</a></li>
+      <li>DHCS MAGI chart: <a href="https://www.dhcs.ca.gov/wp-content/uploads/2026/07/MAGI-INCOME-AND-DEDUCTION-TYPES.pdf" target="_blank">dhcs.ca.gov/MAGI chart</a></li>
+      <li>DHCS Tracking page: <a href="https://www.dhcs.ca.gov/tracking-federal-impact-medi-cal-eligibility/" target="_blank">dhcs.ca.gov/tracking</a></li>
+      <li>CFTC Kalshi DCM: <a href="https://www.cftc.gov/PressRoom/PressReleases/8302-20" target="_blank">cftc.gov/8302-20</a></li>
+    </ol>
+  </div>
+</div>
+
+<div class="footer">MaltaProj8 · <a href="index.html">Dashboard</a> · <a href="verification.html">Verification Log</a> · <a href="flagged.html">Flagged for Review</a> · <a href="verify-95219c64.html">Prior independent check (95219c64)</a> · <a href="https://github.com/buffedlizard55-lab/MaltaProj8" target="_blank">GitHub</a></div>
+</body>
+</html>
