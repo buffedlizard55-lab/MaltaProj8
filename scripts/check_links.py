@@ -46,6 +46,7 @@ ALLOWED_DOMAINS = {
     "ecfr.gov", "www.ecfr.gov", "ssa.gov", "www.ssa.gov",
     "leginfo.legislature.ca.gov", "benefitscal.com", "www.benefitscal.com",
     "chhs.ca.gov", "www.chhs.ca.gov",
+    "hrsa.gov", "www.hrsa.gov", "bphc.hrsa.gov",
 }
 
 # Links to these hosts are navigation, not evidence (repo, issues). They are
@@ -228,14 +229,12 @@ def main():
 
     # ---- 5/6/7. published HTML -----------------------------------------
     page_files = []
-    for fname in sorted(os.listdir(ROOT)):
-        if fname.endswith(".html"):
-            page_files.append(fname)
-    research_dir = os.path.join(ROOT, "research")
-    if os.path.isdir(research_dir):
-        for fname in sorted(os.listdir(research_dir)):
+    for dirpath, dirnames, filenames in os.walk(ROOT):
+        dirnames[:] = [d for d in dirnames if d not in (".git", "node_modules", "__pycache__")]
+        for fname in sorted(filenames):
             if fname.endswith(".html"):
-                page_files.append(os.path.join("research", fname))
+                rel = os.path.relpath(os.path.join(dirpath, fname), ROOT)
+                page_files.append(rel)
 
     pages = {}
     for rel in page_files:

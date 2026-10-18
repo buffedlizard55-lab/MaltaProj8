@@ -50,6 +50,8 @@ PRIMARY_NAV = [
     ("exemptions.html", "Exemptions"),
     ("verification.html", "Verification"),
     ("overview.html", "Extended Analysis"),
+    ("research/index.html", "Research Dashboard"),
+    ("coverage-guide/index.html", "Coverage Guide"),
     ("flagged.html", "Flagged for Review"),
 ]
 
@@ -116,6 +118,7 @@ PAGE_INDEX = [
             ("sources.html", "Source register", "All 40 official sources used in this section, with publisher and date."),
             ("flagged.html", "Flagged for Review", "Everything that could not be confirmed, and where two official sources disagree."),
             ("research/index.html", "Research dashboard", "A second, independently sourced dashboard: 52 source-linked findings."),
+            ("coverage-guide/index.html", "Coverage guide", "A third, independently sourced dashboard: 65 findings with locators and excerpts."),
         ],
     ),
 ]
@@ -425,19 +428,30 @@ def patch_between(text, start_marker, end_marker, block):
     return text
 
 
+# Links added to the shared top navigation so that every section of the site
+# is reachable from every page. The two supplemental dashboards were requested
+# by the sessions that built them.
+INTEGRATION_LINKS = [
+    ("overview.html", "Extended Analysis"),
+    ("research/index.html", "Research Dashboard"),
+    ("coverage-guide/index.html", "Coverage Guide"),
+]
+
+
 def patch_shared_nav():
-    """Add the Extended Analysis link to the shared top navigation."""
+    """Add the section links to the shared top navigation."""
     changed = []
+    block = "".join('<a href="{}">{}</a>'.format(href, label) for href, label in INTEGRATION_LINKS)
     for name in SHARED_PAGES:
         path = os.path.join(OUT, name)
         if not os.path.exists(path):
             continue
         html = read(path)
-        if 'href="overview.html"' in html:
+        if 'href="coverage-guide/index.html"' in html:
             continue
         if "</nav>" not in html:
             continue
-        html = html.replace("</nav>", '<a href="overview.html">Extended Analysis</a></nav>', 1)
+        html = html.replace("</nav>", block + "</nav>", 1)
         write(path, html)
         changed.append(name)
     return changed
