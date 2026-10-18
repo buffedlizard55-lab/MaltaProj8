@@ -509,3 +509,44 @@ The site's central claim — a California resident with $0 earned income can sat
 - **Deployment succeeded:** https://github.com/buffedlizard55-lab/MaltaProj8/actions/runs/39171648459 — Jekyll build and Pages deploy both successful. Legacy Pages run 39171648114 was superseded/cancelled by a concurrent main build, not a code/build defect; subsequent legacy run 39171670000 succeeded and Pages API returned built with no error for f840cc24463b322fd6219c808b416ca726d96416 (includes this audit).
 - **Live content fetched and confirmed:** https://buffedlizard55-lab.github.io/MaltaProj8/audit-6fc18b58.html serves this session's executive summary, exact any-source DHCS quotation, 32 source-linked rows and unverified-value flags. Pages API status built; source main / root. Dashboard and flagged hub link to the audit. No manual user action required to publish.
 - **Final task status:** audit/integration/publication done. A1–A7 and all whole-site row-link exceptions remain needs review (published; nonblocking). No blanket certification of inherited legal claims or external URL uptime; this limit is prominent on the live page. All prior sessions' files/logs and UI additions retained.
+
+## Verified core rebuild + final integration — arena/9ba14c05 (2026-10-18)
+
+**Role:** Late integration session (branch `arena/9ba14c05-maltaproj8`, based on `497d5d8`, merged with `origin/main` at `ec5403e`). Arrived after ten prior merges and five supplementary dashboards. Did not delete or rewrite another session's research; replaced only the primary root pages, the primary data layer and the primary validators.
+
+**Scope claimed:** `data/core.json`; `scripts/build_core.py`; `scripts/check_core.py`; root `index.html`, `executive-summary.html`, `work-rules.html`, `coverage-options.html`, `findings.html`, `verification.html`, `flagged.html`, `archives.html`; `site/assets/style.css` (append only); `california.html`, `verification-detailed.html`, `verify-95219c64.html`, `data/california.json`, `data/magi-limits.json` (corrections only). Earlier detail pages renamed with `git mv` to `flagged-detailed.html` and `verification-detailed.html`; nothing deleted.
+
+**What was built:** a single data file drives seven primary pages. The generator refuses to publish a row that names a missing source, a verified row with no value, or an unverified row that carries a value. The validator additionally checks sequential ids, an official-host allowlist, every source being used, table ids, active navigation and placeholder tokens.
+
+| Layer | File | Count |
+|---|---|---|
+| Data | `data/core.json` | 40 sources, 69 findings, 24 flags, 9 pathways, 6 coverage options, 10 California actions, 13 timeline events |
+| Build | `scripts/build_core.py` | 7 generated pages + archive |
+| Check | `scripts/check_core.py` | schema, source resolution, value rules, official hosts, page/table/nav presence |
+
+**Corrections applied (all verified against the linked official document):**
+
+| # | Earlier claim | Corrected position | Official source |
+|---|---|---|---|
+| 1 | California was "lead plaintiff" in *Massachusetts et al. v. Mehmet Oz* | California **co-leads** with Massachusetts and New Jersey; 24 attorneys general plus the governors of Kentucky and Pennsylvania; filed **June 29, 2026** | CA Attorney General press release, 6/29/2026 |
+| 2 | "$1.1B General Fund to implement the work rule / minimize procedural loss" | The **enacted 2026-27 Budget Act reflects about $1.3B GF** in H.R.1-related Medi-Cal costs. The $1.1B in the January budget is the projected MCO-tax transition cost and the ongoing cost of full-scope coverage for affected immigrants — not a work-rule fund | DHCS FY 2026-27 Budget Act Highlights, 7/1/2026 |
+| 3 | 44,000 disenrollments attributed to the work rule | Work rule: **43,000** in 2026-27 and **1.1M** by 2029-30. All H.R.1 provisions: 44,000 and 1.3M | DHCS FY 2026-27 Budget Act Highlights |
+| 4 | $1,835/month at 138% FPL | **$1,836/month** ($22,025/year) | DHCS 2026 FPL chart (Enclosure 1, ACWDL 26-01) |
+| 5 | "60–70% of coverage losses are procedural" presented as fact | Removed. No official source located; published as an open flag instead (`FL-16`) | — |
+| 6 | County eligibility workload "$196.9M" | **$196.8M GF** (DHCS); the Assembly floor report rounds to $197M | DHCS Budget Act Highlights; Assembly floor report 6/27/2026 |
+
+**Corrections closed at the data layer:** `FL-22` ($1.1B mischaracterization), `FL-23` (lead-plaintiff wording), `FL-24` ($1,835 → $1,836). The generated pages carry the corrected values; the preserved detail pages were also patched, and the five independent audit/verification pages carry a dated banner pointing to the core.
+
+**Open flags (19), unverified blanks (2), all published:** `flagged.html`. Highest-impact: personal eligibility facts not supplied; Kalshi federal tax classification unresolved (capital / ordinary / §1256 / gambling); no event-contract 1099; gross-vs-net rental income under the $580 test; individual-vs-household income; DHCS January-vs-March 2027 wording; state-count difference (CMS 43 states + DC vs CRS 40 states + DC); 2027 Covered California figures still proposed.
+
+**What the core now says, in one line:** a California resident with $0 earned income has three independent routes — in-kind work is expressly counted (the IFR's property-manager/building-superintendent example), $580 of income from any source in one month since the last renewal satisfies DHCS's member-facing test, and exclusions/exemptions or 80 hours of service/school/program remain available — but Gate 1 (household MAGI ≤138% FPL) must be true first, and a work-rule failure leaves the person deemed Medicaid-eligible and therefore **not** eligible for federal premium tax credits.
+
+**Build and link checks (run on the merged tree before the PR):**
+- `python3 scripts/build_core.py` → 7 pages + archive written, no missing source ids.
+- `python3 scripts/check_core.py` → **PASS** — 40 sources, 69 findings, 24 flags, 9 pathways, 6 coverage options, 13 timeline events. Warning only: 11 register sources are not cited by a table row.
+- `python3 scripts/check_links.py` → **All checks passed.**
+
+**PR / merge record:**
+- Branch: `arena/9ba14c05-maltaproj8` → `main`.
+- **PR: https://github.com/buffedlizard55-lab/MaltaProj8/pull/19** — opened 2026-10-18.
+- Merge: performed without waiting for approval, per the standing instruction. Flagged items do not block merge; they are published on `flagged.html`.
