@@ -89,3 +89,16 @@ Session: arena-b4c93f27. Required session branch: `arena/b4c93f27-maltaproj8` (p
 - Initial PR #3 validation passed (run 39158557775). PR: https://github.com/buffedlizard55-lab/MaltaProj8/pull/3 . Final combined-tree validation and deployment pending below.
 - Combined-tree integration produced an add/add conflict only in COORDINATION.md. Resolved by retaining the precombined board copied from current main plus this session’s addendum; both other-session logs remain intact. All other files integrated automatically without discarding work.
 - Post-integration recheck: all 24 HTML pages / 360 local links, assets and fragments resolved across the preserved root, research and coverage-guide sites. This session’s 65-row/18-source/7-page validator and relocated-path Chromium tests passed. Other session’s 52-row/9-page validator passed when run from its documented research/ working directory (initial invocation from root failed only because its script uses cwd-relative paths). Other sessions’ medical findings are preserved, not independently recertified by this session.
+
+### 05508cd2 final deployment record
+| Task | Status | Owner | Scope / evidence |
+|---|---|---|---|
+| Supplemental official-source research | done | 05508cd2 | coverage-guide/research/findings.json; 65 findings, 18 official source records; source locators and limitations published |
+| Supplemental site, integration and deployment | done | 05508cd2 | coverage-guide/** and .github/workflows/coverage-guide.yml; no primary-site edits |
+| Nine unresolved review items | needs review | 05508cd2 | Published at coverage-guide/pages/flagged.html; non-blocking, missing determinations blank |
+
+- PR #3 https://github.com/buffedlizard55-lab/MaltaProj8/pull/3 **MERGED** at 2026-10-18T19:26:29Z, merge commit `b3e365054dcff13e98b1783dc10dacf290c74926`.
+- Live supplemental dashboard: https://buffedlizard55-lab.github.io/MaltaProj8/coverage-guide/ . Existing primary site and prior research dashboard remain live and unchanged.
+- GitHub Pages dynamic build/deploy run https://github.com/buffedlizard55-lab/MaltaProj8/actions/runs/39158781290 **success**. Existing Jekyll/Pages workflow https://github.com/buffedlizard55-lab/MaltaProj8/actions/runs/39158781553 **success**. Main supplemental validation run 39158781598 and preserved research validation run 39158781502 **success**.
+- Public live URL retrieved successfully after deployment: title and all seven executive-summary rows match this session’s dashboard; official evidence links and category links present. Pages API reports built, main/root source. No failed application build or deploy remains outstanding.
+- Final scope limitation: local references across the combined tree are tested; other-session medical claims were not re-certified by this session. Official-source and full-document retrieval limits remain prominently published as review item F9. No manual user input, credentials, enrollment application or personal account access was required.
