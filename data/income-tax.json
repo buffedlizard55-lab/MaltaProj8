@@ -1,0 +1,197 @@
+{
+  "task": "T2",
+  "owner": "c8487e35",
+  "page": "income-taxes",
+  "title": "Your Income & How the IRS / ACA Counts It",
+  "blurb": "How Kalshi trading results, rental income and savings interest flow into Modified Adjusted Gross Income (MAGI) — the number Medi-Cal and Covered California actually test — plus tax treatment details. Every row links to an official source; unverified items are left blank and flagged.",
+  "verified_on": "2026-10-18",
+  "rows": [
+    {
+      "id": "INC-01",
+      "topic": "Zero earned income ≠ zero countable income",
+      "finding": "Medi-Cal and Covered California do not use \"earned income\" or pay stubs; they use MAGI (tax-based household income). Wages are only one input. Trading gains, net rental income and taxable interest all count. No job or earned income is required to qualify for either program.",
+      "value": "MAGI, not earned income, is the test",
+      "effective": "Current law",
+      "status": "verified",
+      "source_label": "HealthCare.gov — \"What's included as income\"",
+      "source_url": "https://www.healthcare.gov/income-and-household-information/income/",
+      "note": "Checked 2026-10-18. Marketplace (and state exchange) uses MAGI for both Marketplace savings and Medicaid eligibility."
+    },
+    {
+      "id": "INC-02",
+      "topic": "MAGI definition",
+      "finding": "MAGI = Adjusted Gross Income (Form 1040 line 11) PLUS untaxed foreign income, non-taxable Social Security benefits, and tax-exempt interest. For many people MAGI ≈ AGI.",
+      "value": "AGI + 3 add-backs",
+      "effective": "Current law",
+      "status": "verified",
+      "source_label": "HealthCare.gov glossary — Modified Adjusted Gross Income",
+      "source_url": "https://www.healthcare.gov/glossary/modified-adjusted-gross-income-magi/",
+      "note": "Checked 2026-10-18 on healthcare.gov."
+    },
+    {
+      "id": "INC-03",
+      "topic": "Covered California income-counting rules",
+      "finding": "Covered CA counts: wages, tips, self-employment income, unemployment, Social Security/SSDI, retirement/pension, and INVESTMENT income. It does not count: child support, gifts, VA disability payments, SSI, workers' compensation, loan proceeds, Child Tax Credit.",
+      "value": "Investment income counts; gifts/SSI/loans don't",
+      "effective": "For 2026 coverage (current page)",
+      "status": "verified",
+      "source_label": "Covered California — What is financial help? (\"What Counts as Income\")",
+      "source_url": "https://www.coveredca.com/costs/financial-help",
+      "note": "Fetched 2026-10-18. Savings interest and trading gains fall under \"investment income.\""
+    },
+    {
+      "id": "INC-04",
+      "topic": "Rental income (property management of own properties)",
+      "finding": "Net rental income reported on Schedule E flows into AGI (Form 1040 line 8) and therefore into MAGI for Medi-Cal and Covered California purposes. Rental income is not \"earned income\" for Social Security purposes, but it is fully countable for coverage.",
+      "value": "Net Schedule E rent → AGI → MAGI",
+      "effective": "Current law",
+      "status": "verified",
+      "source_label": "IRS — Instructions for Schedule E (Form 1040) & Form 1040 instructions",
+      "source_url": "https://www.irs.gov/pub/irs-pdf/i1040se.pdf",
+      "note": "Schedule E net profit/loss is reported on Form 1040 (rental real estate, royalties, partnerships, S corps). Verified via IRS Schedule E instructions (2025 ed.)."
+    },
+    {
+      "id": "INC-05",
+      "topic": "Rental losses can offset other income — up to a limit",
+      "finding": "Rental real estate losses are passive by default and generally cannot offset non-rental income. Exception: with \"active participation\" (e.g., you make management decisions such as approving tenants, rental terms, repair expenditures), up to $25,000 of loss can offset nonpassive income if MAGI ≤ $100,000; phased down 50% of the excess until fully phased out at MAGI $150,000. A separate \"real estate professional\" exception exists (Publication 925). This can legitimately lower AGI — and therefore MAGI for coverage.",
+      "value": "$25,000 special allowance; MAGI $100k–$150k phaseout",
+      "effective": "Current law",
+      "status": "verified",
+      "source_label": "IRS — Publication 527, Residential Rental Property",
+      "source_url": "https://www.irs.gov/pub/irs-pdf/p527.pdf",
+      "note": "Verified against Pub 527 and 2025 Instructions for Form 8582 (irs.gov). Real-estate-professional test is complex — see flagged item FL-05."
+    },
+    {
+      "id": "INC-06",
+      "topic": "Savings account interest",
+      "finding": "Interest on bank/savings accounts is taxable interest income (reported via Schedule B / Form 1099-INT) and is included in AGI and MAGI. Healthcare.gov instructs applicants to include all interest and dividends, \"including tax-exempt interest,\" when estimating Marketplace income.",
+      "value": "Taxable interest fully counts",
+      "effective": "Current law",
+      "status": "verified",
+      "source_label": "HealthCare.gov — What's included as income",
+      "source_url": "https://www.healthcare.gov/income-and-household-information/income/",
+      "note": "Checked 2026-10-18."
+    },
+    {
+      "id": "INC-07",
+      "topic": "Kalshi trading gains are taxable income",
+      "finding": "Event-contract profits are taxable from the first dollar. Kalshi's official documentation describes issuing Form 1099-INT (interest on cash), 1099-MISC (credits/rewards), 1099-B (crypto transfers) and 1099-DA (ZeroHash) — but NO 1099 for event-contract trading profit. Traders report from Kalshi's downloadable P&L statement. Absence of a 1099 does not remove the income from AGI/MAGI.",
+      "value": "1099-INT/MISC only; trading P&L self-reported",
+      "effective": "Per Kalshi help center, retrieved 2026-06/2026-10",
+      "status": "verified",
+      "source_label": "Kalshi Help Center (official) — What Tax Documentation Does Kalshi Provide?",
+      "source_url": "https://help.kalshi.com/en/articles/13823849-what-tax-documentation-does-kalshi-provide",
+      "note": "Kalshi company documentation (not a government source); consistent with IRS rule that all income is reportable (Form 1040 gross income). Exact character of gains is unresolved — see next row and flag FL-01."
+    },
+    {
+      "id": "INC-08",
+      "topic": "Section 1256 (60/40) treatment of Kalshi event contracts",
+      "finding": "Whether Kalshi event contracts are \"regulated futures contracts\" under IRC §1256 (60/40 split, Form 6781, mark-to-market) is UNSETTLED: no IRS ruling, regulation or notice classifies event contracts, and federal appellate courts split in 2026 on whether they are CEA \"swaps\" (3d Cir. sided with CFTC exclusivity Apr 2026; 9th Cir. Aug 28, 2026 and 6th Cir. Sept 25, 2026 sided with state gaming regulators). This repo does not assert a tax position.",
+      "value": "(unverified — no official IRS guidance)",
+      "effective": "Open question as of 2026-10-18",
+      "status": "flagged",
+      "source_label": "Kalshi Ex v. Assad (9th Cir., Aug 28 2026, slip op. via NV Gaming Control Board); CFTC press 8302-20",
+      "source_url": "https://www.gaming.nv.gov/siteassets/content/about/press-release/25-7516---kalshi-ninth-circuit-decision.pdf",
+      "note": "Flag FL-01. Either way (1256 or ordinary capital gain), NET gains are in AGI; the character mainly affects the tax rate, not whether Medi-Cal/Covered CA count it."
+    },
+    {
+      "id": "INC-09",
+      "topic": "Kalshi is a CFTC-regulated exchange (context)",
+      "finding": "KalshiEX LLC received a CFTC Order of Designation as a Designated Contract Market (DCM) on Nov 3-4, 2020; its affiliate Kalshi Klear LLC received a DCO Order of Registration Aug 29, 2024. DCM status supports the exchange's legitimacy but does NOT itself determine tax classification.",
+      "value": "CFTC-designated DCM since 2020",
+      "effective": "2020 / 2024",
+      "status": "verified",
+      "source_label": "CFTC Press Release 8302-20 (Nov 4, 2020)",
+      "source_url": "https://www.cftc.gov/PressRoom/PressReleases/8302-20",
+      "note": "Second release: https://www.cftc.gov/PressRoom/PressReleases/8957-24 (Aug 29, 2024)."
+    },
+    {
+      "id": "INC-10",
+      "topic": "Trading gains are NOT self-employment income",
+      "finding": "Gains/losses from selling capital assets (stocks, futures-type positions) held for investment are excluded from net earnings from self-employment (statute: 26 U.S.C. §1402(a)(3)(A); see Schedule SE instructions exclusion list) — unless you are a dealer in securities/commodities. Practical effect for you: no 15.3% SE tax on Kalshi results; but the gains still count for MAGI. Also means no SE-tax-based \"work\" signal — see the 2027 Medi-Cal work-requirement analysis.",
+      "value": "Excluded from SE tax (non-dealer)",
+      "effective": "Current law",
+      "status": "verified",
+      "source_label": "IRS — Instructions for Schedule SE (Form 1040) + Self-employment tax page",
+      "source_url": "https://www.irs.gov/businesses/small-businesses-self-employed/self-employment-tax-social-security-and-medicare-taxes",
+      "note": "Statutory basis 26 U.S.C. §1402(a)(3)(A). See https://www.irs.gov/instructions/i1040se for the \"income not included\" list."
+    },
+    {
+      "id": "INC-11",
+      "topic": "Capital losses can lower AGI (and thus MAGI)",
+      "finding": "Net capital losses offset capital gains with no limit; any excess loss can offset up to $3,000 of other income per year ($1,500 MFS), with unlimited carryover to future years. For a trading year with net losses, AGI (hence MAGI) can be pushed toward zero or reduced by the $3,000 — directly relevant to Medi-Cal eligibility.",
+      "value": "$3,000/yr against ordinary income + carryover",
+      "effective": "Current law",
+      "status": "verified",
+      "source_label": "IRS — Tax Topic 409, Capital gains and losses",
+      "source_url": "https://www.irs.gov/taxtopics/tc409",
+      "note": "Checked 2026-10-18. Reporting: Form 8949/Schedule D, or Form 6781 for §1256 contracts."
+    },
+    {
+      "id": "INC-12",
+      "topic": "0% federal capital-gains rate for low taxable income",
+      "finding": "For tax years beginning in 2025, net long-term capital gain is taxed at 0% if taxable income is at/below $48,350 (single). At low MAGI you may owe $0 federal tax on gains even while those gains still COUNT for Medi-Cal/Marketplace income tests (tax ≠ income for eligibility).",
+      "value": "0% rate ≤ $48,350 taxable income (TY2025)",
+      "effective": "TY2025 published; TY2026 thresholds not in this source",
+      "status": "verified",
+      "source_label": "IRS — Tax Topic 409",
+      "source_url": "https://www.irs.gov/taxtopics/tc409",
+      "note": "2026 threshold amounts: not published on the source consulted — left blank, see flag FL-06."
+    },
+    {
+      "id": "INC-13",
+      "topic": "Net Investment Income Tax (NIIT)",
+      "finding": "A 3.8% NIIT applies to net investment income (including trading gains, rents from non-professional activities, and interest) for individuals with MAGI over $200,000 ($250,000 MFJ). Irrelevant to eligibility planning but material to after-tax cash.",
+      "value": "3.8% above $200,000 MAGI (single)",
+      "effective": "Current law",
+      "status": "verified",
+      "source_label": "IRS — Tax Topic 559, Net investment income tax (linked from Topic 409)",
+      "source_url": "https://www.irs.gov/taxtopics/tc559",
+      "note": ""
+    },
+    {
+      "id": "INC-14",
+      "topic": "Federal tax filing threshold 2026 (context for CA mandate exemption)",
+      "finding": "For tax year 2026 the basic standard deduction is $16,100 single / $32,200 married filing jointly (raised from $15,000/$30,000 by the OBBBA, which set $15,750/$31,500 for TY2025). A single filer generally must file a federal return only if gross income meets/exceeds the standard deduction. Under California's individual mandate, income BELOW the federal filing threshold is an automatic exemption.",
+      "value": "2026: $16,100 (single)",
+      "effective": "TY2026 (per Rev. Proc. 2025-32)",
+      "status": "verified",
+      "source_label": "IRS — Rev. Proc. 2025-32 (standard deduction §)",
+      "source_url": "https://www.irs.gov/pub/irs-drop/rp-25-32.pdf",
+      "note": "Cross-reference: FTB health care mandate page (income below filing threshold = exempt)."
+    },
+    {
+      "id": "INC-15",
+      "topic": "Estimated tax payments on volatile gains",
+      "finding": "If you have taxable capital gains you may owe quarterly estimated tax (Form 1040-ES) — no employer withholding occurs on trading/rental income. Underpayment interest can accrue; safe-harbor rules are in Pub 505.",
+      "value": "Quarterly estimates may be required",
+      "effective": "Current law",
+      "status": "verified",
+      "source_label": "IRS — Tax Topic 409 (\"Estimated tax payments\")",
+      "source_url": "https://www.irs.gov/taxtopics/tc409",
+      "note": ""
+    },
+    {
+      "id": "INC-16",
+      "topic": "HSA as an above-the-line MAGI lever (new for 2026 in California)",
+      "finding": "Starting Jan 1, 2026, Covered California Bronze plans and the minimum-coverage (catastrophic) plan count as qualified high-deductible health plans (HDHPs), so enrollees can fund an HSA. HSA eligibility (Pub 969) requires HDHP coverage, no other coverage, not on Medicare, not a dependent — it does NOT require having earned income. Contributions are deductible above the line, reducing AGI → reducing MAGI. 2026 limits: $4,400 self-only / $8,750 family; 2026 HDHP minimum deductible $1,700/$3,400, OOP max $8,500/$17,000.",
+      "value": "$4,400/$8,750 (2026); no earned-income requirement",
+      "effective": "Jan 1, 2026 (CA plan change); TY2026 (limits)",
+      "status": "verified",
+      "source_label": "Covered California — Important Changes; IRS Pub 969; Rev. Proc. 2025-19",
+      "source_url": "https://www.coveredca.com/important-changes",
+      "note": "IRS amounts: https://www.irs.gov/pub/irs-drop/rp-25-19.pdf (calendar-year 2026 figures, also reflected in Pub 969 tip). Caveat: HSA contributions are not counted by IRS as \"work\" for the 2027 Medicaid rule."
+    },
+    {
+      "id": "INC-17",
+      "topic": "What a low-income year can look like in practice",
+      "finding": "Worked illustration (NOT a verification item; arithmetic from the verified 2026 figures): a single applicant whose 2027 MAGI = $0 (trading loss year, rental losses fully offset rents, minimal interest) is below the 138% FPL Medi-Cal line of $22,025 (2026 guideline basis) and would ordinarily land in Medi-Cal; a MAGI of, e.g., $22,000–$31,920 lands in the 2027 Covered CA state-subsidy band (0% benchmark contribution up to 150% FPL, sliding to ~2.8–5.28% at 150–200%).",
+      "value": "Illustration only — confirm at application",
+      "effective": "Plan years 2026-2027",
+      "status": "flagged",
+      "source_label": "DHCS eligibility chart; Covered CA 2027 FPL chart",
+      "source_url": "https://www.coveredca.com/pdfs/FPL-chart.pdf",
+      "note": "See also https://www.dhcs.ca.gov/medi-cal/qualify/qualify-for-medi-cal-eligibility-chart/. Actual determinations depend on the application-year rules in force."
+    }
+  ]
+}
