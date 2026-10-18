@@ -1,0 +1,62 @@
+{
+  "page": "work-requirements",
+  "sections": [
+    {
+      "id": "law",
+      "heading": "The new law, exactly",
+      "intro": "The requirement is federal law (Public Law 119-21, § 71119) and it is already written into California statute (Welfare and Institutions Code § 14005.69, as amended by AB 2161). Both texts are linked below.",
+      "table": "law"
+    },
+    {
+      "id": "subject",
+      "heading": "Who the rule applies to",
+      "table": "subject"
+    },
+    {
+      "id": "excluded",
+      "heading": "Who is never subject (specified excluded individuals)",
+      "intro": "These are statutory exclusions, not county discretion. A person in any of these categories is deemed to have demonstrated community engagement for the month and is also excused from the six-month renewal cycle. California law lists them in Welfare and Institutions Code § 14005.69(b)(2).",
+      "table": "excluded"
+    },
+    {
+      "id": "comply",
+      "heading": "How to comply in a month",
+      "intro": "Any one of these is enough for the month. They can also be combined.",
+      "table": "comply"
+    },
+    {
+      "id": "hardship",
+      "heading": "Short-term hardship exceptions (state option)",
+      "intro": "California enacted all four hardship categories in WIC § 14005.69(h). The third one is county-specific: DHCS sends a separate notice if your county qualifies.",
+      "table": "hardship"
+    },
+    {
+      "id": "timing",
+      "heading": "When compliance is checked",
+      "table": "timing"
+    },
+    {
+      "id": "noncompliance",
+      "heading": "What happens if you do not comply",
+      "table": "noncompliance"
+    },
+    {
+      "id": "california",
+      "heading": "California's implementation — the documents that govern",
+      "intro": "County eligibility workers work from these. The member-facing letter is the plain-language version of the same rules.",
+      "table": "ca-implementation"
+    },
+    {
+      "id": "state-funded",
+      "heading": "California's one extension of the federal rule",
+      "note": "Federal law requires states to apply the community engagement requirement to federally funded adults in the ACA adult group (§ 1902(a)(10)(A)(i)(VIII)). California went further and included state-funded Medi-Cal adults who meet the same criteria (AB 2161 § 14005.69(b)(1)(B)), and DHCS policy states the requirement applies \"regardless of immigration status.\" If you are a permanent resident who has completed the five-year bar you are federally funded and this makes no difference; if you are still inside the five-year bar your coverage is state-funded, and California will still apply the work rule to you from 2027.",
+      "table": "state-funded"
+    },
+    {
+      "id": "pending",
+      "heading": "Still not settled by the agencies",
+      "intro": "DHCS flags these as pending in its own policy letter. Details are on the <a href=\"flagged.html\">Flagged for Review</a> page.",
+      "table": "pending"
+    }
+  ]
+}

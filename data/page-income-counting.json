@@ -1,0 +1,34 @@
+{
+  "page": "income-counting",
+  "sections": [
+    {
+      "id": "magi",
+      "heading": "What \"household income\" means here",
+      "intro": "Medi-Cal, Covered California, the premium tax credit, and California's $580 work-rule test all use the same tax-based measure of income.",
+      "table": "magi"
+    },
+    {
+      "id": "streams",
+      "heading": "How your three income streams are treated",
+      "table": "streams"
+    },
+    {
+      "id": "income-580",
+      "heading": "The $580 test, in detail",
+      "intro": "This is the single most important rule for you. You have no earned income, so the $580 test and the 80-hour options are the two ways to satisfy the 2027 requirement.",
+      "table": "income-580"
+    },
+    {
+      "id": "fpl",
+      "heading": "2026 income limits by household size",
+      "intro": "2026 annual Federal Poverty Level figures from DHCS ACWDL 26-01 Enclosure 2, with the 213% and 266% columns from the Covered California 2027 FPL chart. The monthly column is DHCS Enclosure 1.",
+      "table": "fpl"
+    },
+    {
+      "id": "examples",
+      "heading": "Worked examples",
+      "intro": "Illustrations of how the thresholds land for a one-person household, using only the official figures above. Your own numbers will differ.",
+      "table": "examples"
+    }
+  ]
+}

@@ -21,7 +21,15 @@
 │   ├── california.json      # DHCS implementation, timelines, mitigation
 │   ├── income-types.json    # How each income type is classified + counted
 │   ├── pathways.json         # 7 ways to satisfy work requirement with 0 earned income
-│   └── magi-limits.json     # FPL / MAGI income limits 2026
+│   ├── magi-limits.json     # FPL / MAGI income limits 2026
+│   ├── sources.json         # Source register for the Extended Analysis (S1–S40)
+│   ├── flagged.json         # Open questions for the Extended Analysis (F-01–F-13)
+│   ├── page-*.json          # Page definitions (sections, headings, intros)
+│   └── entries-*.json       # Table rows for each page, each with a source id
+├── scripts/
+│   ├── build_site.py        # Renders the Extended Analysis pages from data/
+│   └── check_links.py       # Verification pass over the whole site
+├── assets/                  # Extended Analysis theme + table filter
 ├── site/
 │   └── assets/style.css     # Site theme
 ├── index.html               # Landing page (dashboard) ← GH Pages entry
@@ -39,6 +47,27 @@
 ## Verification
 
 Every table row links to an **official source** (congress.gov, federalregister.gov, cms.gov, dhcs.ca.gov, irs.gov, aspe.hhs.gov). If a value could not be confirmed from an official source, it is left blank and flagged on the Flagged for Review page. See `verification.html` on the site or `COORDINATION.md` for the verification log.
+
+### Automated verification (runs against the whole site)
+
+```bash
+python3 scripts/build_site.py     # rebuilds the Extended Analysis pages from data/
+python3 scripts/check_links.py    # verification pass; exits non-zero on any failure
+```
+
+`scripts/check_links.py` checks that every data file parses, that every published table row names a source id that exists, that verified rows carry a value and unverified rows are blank and flagged, that every source URL is https on an official domain, that every internal link and anchor on all 28 published pages resolves, that every page has a navigation and a title, and that every page renders the rows its data files define. Current result: **28 pages, 264 table rows (7 flagged/unverified), 40 sources, all checks pass.**
+
+## Extended Analysis (second section of the site)
+
+The site has three verified sections, all linked from the dashboard:
+
+| Section | Pages | Session |
+|---|---|---|
+| Core guide | `index.html`, `law.html`, `california.html`, `income.html`, `pathways.html`, `exemptions.html`, `verification.html` | arena/5d32bca3 |
+| Extended analysis | `overview.html`, `options.html`, `work-requirements.html`, `income-counting.html`, `medicaid-eligibility.html`, `covered-california.html`, `immigration-status.html`, `california-changes.html`, `timeline.html`, `apply.html`, `sources.html` | arena/6f935bbc |
+| Research dashboard | `research/` (9 pages, 52 source-linked findings) | arena/b4c93f27 |
+
+The Extended Analysis pages are generated from `data/page-*.json` and `data/entries-*.json` by `scripts/build_site.py`, with the source register in `data/sources.json` (40 official sources) and the open questions in `data/flagged.json` (13 items). The shared pages (`index.html`, `flagged.html`) and the site navigation are patched by the same script, so the dashboard, the flagged page and the top navigation stay in sync with the data.
 
 ## Sources (Primary)
 

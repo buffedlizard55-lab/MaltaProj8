@@ -1,0 +1,132 @@
+{
+  "tables": {
+    "at-a-glance": [
+      {
+        "item": "Your \"$0 income\" is almost certainly not $0 for health-program purposes",
+        "value": "Rental income, savings interest and trading income all count as household income",
+        "detail": "Medi-Cal and Covered California measure income using modified adjusted gross income (MAGI) — the tax-return concept. HealthCare.gov lists capital gains, investment income (interest and dividends), rental and royalty income, and self-employment income among the income types to count. The MAGI rules are the same ones written into 42 CFR 435.603, which California applies for most adults.",
+        "source": "S24",
+        "verified": true,
+        "also": [
+          "S35"
+        ]
+      },
+      {
+        "item": "If your MAGI is at or below 138% of the federal poverty level, Medi-Cal is the answer — $0 or low cost",
+        "value": "$22,025/yr ($1,836/mo) for a 1-person household, 2026",
+        "detail": "Most adults qualify for Medi-Cal with household income up to 138% FPL. For 2026 that is $22,025 a year for one person. You can apply any time of year, and the same application screens you for Medi-Cal and Covered California.",
+        "source": "S1",
+        "verified": true
+      },
+      {
+        "item": "New federal law: Medicaid \"community engagement\" (work) requirement begins January 1, 2027",
+        "value": "80 hours/month, or $580 income, or an exemption",
+        "detail": "Section 71119 of H.R. 1 (Public Law 119-21) requires states to condition Medicaid eligibility on community engagement for certain adults ages 19–64. California has already written this into state law: AB 2161 (Chapter 209, Statutes of 2026) amended Welfare and Institutions Code § 14005.69.",
+        "source": "S13",
+        "verified": true
+      },
+      {
+        "item": "The $580 test does not require earned income",
+        "value": "\"an income from any source of at least $580 (before taxes)\"",
+        "detail": "The member notice DHCS mails to Medi-Cal members says an income \"from any source\" of at least $580 in any month since your last renewal satisfies the rule. County policy guidance describes it as total gross income, and notes that for fluctuating income (dividends, retirement income, and similar) you can average the prior 6 months. California law defines the test using MAGI-based financial methods.",
+        "source": "S12",
+        "verified": true
+      }
+    ],
+    "decision": [
+      {
+        "item": "Household income at or below 138% FPL ($22,025 for 1 person)",
+        "value": "Medi-Cal (full scope, no premium for most)",
+        "detail": "Medi-Cal covers health, dental and vision. Apply any time of year. If you are 19–64 you are in the MAGI New Adult Group, which is subject to the work requirement starting 1/1/2027 and to six-month renewals.",
+        "source": "S7",
+        "verified": true
+      },
+      {
+        "item": "Household income above 138% FPL and at or below 400% FPL",
+        "value": "Covered California with federal premium tax credit",
+        "detail": "Federal premium tax credits require household income of at least 100% and not more than 400% of the FPL. Add the California Premium Subsidy (state money) if your income is at or below 200% FPL in 2027.",
+        "source": "S25",
+        "verified": true
+      },
+      {
+        "item": "Household income above 400% FPL",
+        "value": "Unsubsidized Covered California coverage",
+        "detail": "The 2026 FPL chart lists \"400+% FPL = Unsubsidized Coverage\". No premium tax credit; you pay the full premium.",
+        "source": "S6",
+        "verified": true
+      },
+      {
+        "item": "Household income below 100% FPL ($15,960 for 1 person)",
+        "value": "Medi-Cal — no marketplace subsidy available",
+        "detail": "The IRS states a premium tax credit requires household income of at least 100% of the FPL. Below that, the answer in California is Medi-Cal, not a marketplace plan.",
+        "source": "S25",
+        "verified": true
+      },
+      {
+        "item": "Household income 0%–138% FPL but you are not eligible for Medi-Cal for another reason",
+        "value": "Covered California premium contribution is 0% of income",
+        "detail": "The 2027 FPL chart shows the premium contribution for the benchmark Silver plan is 0% of household income below 138% FPL and from 138% to 150% FPL.",
+        "source": "S6",
+        "verified": true
+      }
+    ],
+    "work-summary": [
+      {
+        "item": "Who the rule covers",
+        "value": "Adults 19–64 in the MAGI New Adult Group",
+        "detail": "California applies the rule to the MAGI New Adult Group (aid code M1) — adults 19 to 64 with income up to 138% FPL — and to state-funded Medi-Cal adults who meet the same criteria. It applies regardless of immigration status.",
+        "source": "S10",
+        "verified": true
+      },
+      {
+        "item": "Who the rule does not cover",
+        "value": "Non-MAGI groups, children's group, pregnancy group, restricted-scope (emergency) Medi-Cal",
+        "detail": "Members covered under other Medi-Cal groups such as Non-MAGI programs, the Mandatory Children's Group or the Pregnancy Group are excluded from work and community engagement requirements.",
+        "source": "S10",
+        "verified": true
+      },
+      {
+        "item": "Way 1 — income",
+        "value": "$580 in a month (or averaged over 6 months if income fluctuates)",
+        "detail": "\"Have an income from any source of at least $580 (before taxes) in any month since your last renewal.\" Federal minimum wage $7.25 × 80 hours = $580.",
+        "source": "S12",
+        "verified": true
+      },
+      {
+        "item": "Way 2 — hours",
+        "value": "80 hours in a month of work, volunteering, community service, or a work program",
+        "detail": "A combined 80 hours works: \"Work at any kind of job, volunteer, do community service, or attend a job-training program for a combined total of at least 80 hours in any month since your last renewal.\"",
+        "source": "S12",
+        "verified": true
+      },
+      {
+        "item": "Way 3 — school",
+        "value": "Enrolled at least part time",
+        "detail": "\"Go to school at least part time in any month since your last renewal.\" Students attending less than part time can combine class and school-activity hours with work, community service or job training.",
+        "source": "S12",
+        "verified": true
+      },
+      {
+        "item": "Way 4 — exemption or short-term hardship",
+        "value": "13 categories of specified excluded individuals plus 4 hardship categories",
+        "detail": "Full lists on the <a href=\"work-requirements.html\">Work rules</a> page.",
+        "source": "S13",
+        "verified": true
+      },
+      {
+        "item": "When it is checked",
+        "value": "One month before your application month; then at each 6-month renewal",
+        "detail": "At a renewal, participation in one or more months since the last determination (they need not be consecutive) is enough.",
+        "source": "S10",
+        "verified": true
+      },
+      {
+        "item": "If you do not comply",
+        "value": "30-day notice, coverage continues during the 30 days, then loss of Medi-Cal — and no Covered California financial help",
+        "detail": "The county must first check every other basis of eligibility before denying, and must give written notice and a state hearing opportunity.",
+        "source": "S13",
+        "verified": true
+      }
+    ]
+  }
+}

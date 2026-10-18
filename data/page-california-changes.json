@@ -1,0 +1,16 @@
+{
+  "page": "california-changes",
+  "sections": [
+    {
+      "id": "changes",
+      "heading": "Every California change in this window, with its date",
+      "intro": "All of these come from H.R. 1 (Public Law 119-21) and related 2025–26 state budget and trailer-bill action.",
+      "table": "changes"
+    },
+    {
+      "id": "state-help",
+      "heading": "What California is doing to soften the federal changes",
+      "table": "state-help"
+    }
+  ]
+}

@@ -137,3 +137,96 @@ Irregularities found: (a) FTB correction of its own 2025 child-penalty figure (M
 - GitHub Pages: status **built** for commit 7a0aedba (legacy publishing, source branch main, path /). Live site: https://buffedlizard55-lab.github.io/MaltaProj8/ — this session's dashboard: https://buffedlizard55-lab.github.io/MaltaProj8/docs/ (index, executive-summary, income-taxes, medicaid, covered-california, new-laws, ca-mandate, action-plan, sources, flagged-for-review).
 - Root navigation link request to /docs/ remains open for the root-site owner (change request logged above). Flagged items: 11 (docs/flagged-for-review.html); they do not block anything.
 - Status: c8487e35 all tasks done (C1–C7).
+
+# Parallel-session addendum — arena/6f935bbc (final integration session)
+
+**Session ID:** arena/6f935bbc
+**Branch:** `arena/6f935bbc-maltaproj8`
+**Started:** 2026-10-18 (repo contained only `README.md` and the initial commit `375e859`)
+**Status:** Integrated with the work already published on `main` (sessions arena/5d32bca3 and arena/b4c93f27). Nothing from those sessions was deleted or overwritten.
+
+## Task board
+
+| # | Task | Status | Owner | Files / scope | Verification |
+|---|------|--------|-------|----------------|--------------|
+| 12 | Extended analysis data model (page + entry files, source register) | done | arena/6f935bbc | `data/sources.json`, `data/page-*.json`, `data/entries-*.json` | 264 table rows; every row names a source id that exists; 40 official sources |
+| 13 | Extended analysis pages (11) | done | arena/6f935bbc | `overview.html`, `options.html`, `work-requirements.html`, `income-counting.html`, `medicaid-eligibility.html`, `covered-california.html`, `immigration-status.html`, `california-changes.html`, `timeline.html`, `apply.html`, `sources.html` | Generated from data; no hand-typed values |
+| 14 | Build + verification scripts | done | arena/6f935bbc | `scripts/build_site.py`, `scripts/check_links.py`, `assets/style.css`, `assets/site.js` | `check_links.py` exits non-zero on failure; runs over all 28 pages |
+| 15 | Integration into the published site (navigation, dashboard page index, shared flagged page) | done | arena/6f935bbc | `index.html`, `flagged.html`, nav in the 8 shared pages | Idempotent patching by `build_site.py`; markers `PAGE-INDEX` / `EXTENDED-FLAGS` |
+| 16 | Line-by-line re-verification of the combined site | done | arena/6f935bbc | all pages, all data files | 10 corrections applied to the shared pages — see the correction log below |
+| 17 | PR, merge, GitHub Pages deploy confirmation | done | arena/6f935bbc | branch → `main` | See the deployment record at the end of this section |
+| 18 | Two silent data-to-page bugs found and fixed | done | arena/6f935bbc | `data/entries-medicaid-eligibility.json`, `data/page-sources.json` | Both pages now render their rows; the checker now fails if a page renders fewer rows than its data defines |
+
+## Verification log (official-source takeaways, this session)
+
+| Fact checked | Official source | Takeaway used on the site |
+|---|---|---|
+| Which section is the community engagement requirement | CRS R48633 (congress.gov) | § 71119 — "Requirement for States to establish Medicaid community engagement requirements for certain individuals" |
+| Statute's effective date | CRS R48633 | "effective beginning December 31, 2026, or sooner at state option" — CMS requires implementation by January 1, 2027; California: January 1, 2027 |
+| Which section covers the $35 cost sharing | CRS R48633 | § 71120, not § 71109 (71109 is alien eligibility). From Oct 1 2028, cost sharing greater than $0 and not more than $35 per service for expansion enrollees above 100% FPL; primary care, mental health, SUD, FQHC, CCBHC and RHC services excluded; prescription drugs still subject |
+| How many states adopted the ACA expansion | CRS R48633 | 40 states and DC have adopted it; 10 states have not (the shared site previously said "43 jurisdictions", which no official source supports) |
+| Hardship standard for high-unemployment areas | CRS R48633 | Unemployment rate at or above the lesser of 8% or 1.5 times the national unemployment rate (CMS has not published the implementation detail) |
+| Retroactive coverage limit from 1/1/2027 | CRS R48633 (§ 71112) | Limited to the month before the month of application |
+| Exemptions and 30-day cure period | CRS R48633 (§ 71119) | Mandatory exemptions (Medicare A/B, other mandatory pathways, inmates), excluded individuals, 4 short-term hardships, 80 hours or the income alternative, notice + 30-day cure with services continuing |
+| Effect of failing the rule on marketplace help | CRS R48633 (§ 71119) | A person who does not comply is still deemed Medicaid-eligible but is not eligible for federal subsidies to buy coverage through the exchanges |
+| Alien Medicaid funding from Oct 1 2026 | CRS R48633 (§ 71109) | Federal funding only for citizens/nationals, lawful permanent residents, Cuban/Haitian entrants and COFA residents; refugees and asylees lose federal funding (LPRs are not affected) |
+
+## Corrections applied to pages owned by the primary session (arena/5d32bca3)
+
+Each correction is a fact an official source contradicts or fills in; no content was removed, and each change is logged here.
+
+| # | Page | Was | Now | Official source |
+|---|---|---|---|---|
+| C-01 | `law.html` | "State count: 43 jurisdictions: 40 expansion states + DC + 2–3 partial-expansion waiver states" (source KFF) | "40 states and DC have adopted the ACA Medicaid expansion; 10 states have not… requirement applies to the 50 states and DC" | CRS R48633 |
+| C-02 | `law.html` | "Cost sharing: § 71109: up to $35/service for expansion 100–138% FPL from Oct 1 2028" (source KFF) | "§ 71120: cost sharing greater than $0 and not more than $35 per service for expansion enrollees above 100% FPL" | CRS R48633 |
+| C-03 | `law.html` | "Exempts primary care, MH/SUD, FQHC/RHC, prescriptions" | Excludes primary care, mental health, SUD, FQHC, CCBHC and RHC; **prescription drugs remain subject to cost sharing** | CRS R48633 |
+| C-04 | `law.html` | Citation row listed "§§71107, 71109" | Now "§§71107, 71109, 71120" | CRS R48633 |
+| C-05 | `california.html` | Oct 1 2028 cost-sharing row sourced to KFF, "100–138% FPL" | Same row, "$0.01–$35 per service … above 100% FPL … (§71120)", sourced to CRS R48633 | CRS R48633 |
+| C-06 | `exemptions.html` | "threshold TBD by Secretary/CMS — not yet published" | "unemployment rate at or above the lesser of 8% or 1.5 times the national unemployment rate (statutory standard; CMS has not published how it will be applied)" | CRS R48633 + DHCS Implementation Plan |
+| C-07 | `flagged.html` (F-05) | "High-unemployment threshold — undefined" | "Statutory standard is known, CMS implementation is not" — partly resolved, still flagged | CRS R48633 |
+| C-08 | `index.html` | Sources table items 13 (Covered USA) and 14 (KFF) presented as primary documents | Publisher cells now read "context only — not an official source"; heading says "14 documents (12 official primary sources + 2 context links)" | — |
+| C-09 | `data/entries-*.json` | `data/entries-medicail-eligibility.json` never matched its page slug, so `medicaid-eligibility.html` published with **zero** table rows | File renamed to `data/entries-medicaid-eligibility.json`; the page now renders 32 rows | — |
+| C-10 | `data/page-sources.json` | The sources table was rendered by a special case that the rewrite dropped, so `sources.html` published an **empty** table | Special case restored; the page now renders all 40 sources | — |
+
+## Irregularities still open after the line-by-line pass
+
+| # | Irregularity | Severity | Where it is published | Note |
+|---|---|---|---|---|
+| I-14 | A few rows on the core-guide pages still link to secondary sources (KFF, CHCF, CalMatters, LA Times) and to practitioner tax commentary (Monaco CPA, Camuso, CountDeFi, Awaken, Keeper, KPMG, Thomson Reuters) | Low | `california.html`, `flagged.html`, `income.html`, `verification.html`, `index.html` | Every legal value they support is also supported by an official source in the same row or is marked as a projection or a flagged item. The source policy is now stated on the dashboard. Not changed by this session because those pages belong to the primary session; listed here for the user's review. |
+| I-15 | The "43 jurisdictions" figure and the § 71109 cost-sharing attribution were published before this pass | Closed | `law.html`, `california.html` | Corrected as C-01, C-02, C-05 with CRS R48633 |
+| I-16 | `medicaid-eligibility.html` and `sources.html` were publishing with empty tables | Closed | — | Fixed as C-09, C-10; `check_links.py` now fails if a page renders fewer rows than its data defines |
+| I-17 | The shared flagged page now carries two numbering series (F-01–F-10 and I-01–I-03 from the primary session; W-01–W-13 from this session) | Informational | `flagged.html` | The W-series is what the build script writes; the F-series is the primary session's own numbering. Both are labelled on the page. |
+| I-18 | `26 U.S.C. § 1256` is cited via law.cornell.edu on `verification.html` and `flagged.html` | Low | `verification.html`, `flagged.html` | Cornell Legal Information Institute is not a government site. The official alternatives (uscode.house.gov, IRS Pub 550) are cited in the same rows. Left as the primary session wrote it. |
+
+## Deployment record (arena/6f935bbc)
+
+- **PR:** pending — see the line added after the merge below
+- **Merge conflict log:** see the four-session integration section below
+- **Branch:** `arena/6f935bbc-maltaproj8` → `main`
+- **Pages:** https://buffedlizard55-lab/MaltaProj8/ (legacy build, source `main`, path `/`)
+
+
+## Four concurrent sessions, one site (integration state)
+
+| Section | Location | Session | Content |
+|---|---|---|---|
+| Core guide | root pages (`index.html` to `verification.html`) | arena/5d32bca3 | Executive summary, law, California, income types, playbook, exemptions, verification log, flagged page |
+| Extended analysis | root pages (`overview.html` to `sources.html`) | arena/6f935bbc | 11 data-driven pages, 264 sourced rows, 40 official sources, build + verification scripts |
+| Research dashboard | `research/` | arena/b4c93f27 | 9 pages, 52 source-linked findings, own validator |
+| Coverage guide | `coverage-guide/` | arena/05508cd2 | 7 pages, 65 findings with locators and excerpts, own validator |
+
+All four sections are now reachable from the shared top navigation on every root page (the two supplemental sections were requested by the sessions that built them), and the dashboard carries a complete page index for all 35 published pages.
+
+## Merge and conflict log (arena/6f935bbc)
+
+- `git merge origin/main` (session 5d32bca3 publication): conflicts in `COORDINATION.md`, `README.md`, `flagged.html`, `index.html` only. Resolved by keeping the published pages intact and integrating on top of them, so no published content was dropped. The add/add conflicts on `index.html` and `flagged.html` were resolved by taking the published version and re-applying the integration patches (navigation, page index, extended flagged items) through `scripts/build_site.py`, which keeps the result reproducible.
+- `git pull --rebase=merges origin main` (session 05508cd2 publication, PR #3): replaying the merge commit dropped the post-merge work (the `index` to `overview` data rename, the `medicail` to `medicaid` file fix, and the rewritten build script). The rebase was undone by resetting the branch back to the pre-rebase commit `e10a1f4` and merging `origin/main` instead; that merge conflicted only in `.gitignore` and `COORDINATION.md`, both resolved by keeping both sides (union ignore list, board retained with every session's log appended). Nothing from any session was lost.
+- The `research/` and `coverage-guide/` sections were **not** re-verified by this session. Their own validators were run on the integrated tree and pass: `research/scripts/validate.py` (52 findings, 9 pages) and `coverage-guide/scripts/check.py` (65 rows, 18 sources, 7 pages, 84 local references).
+- Combined-tree verification: 35 pages, 264 extended-analysis table rows (7 flagged/unverified), 40 official sources, every internal link and anchor resolving, and no page rendering fewer rows than its data files define.
+
+## Five-session integration update (arena/6f935bbc)
+
+- A fifth session (`arena/c8487e35`, PR #4 and PR #5) published a `docs/` dashboard: 10 static pages with 76 sourced rows on income taxes, coverage and the new laws, plus `data/income-tax.json`, `data/coverage.json`, `data/laws.json`, `data/flags.json` and `tools/build-site.js`.
+- `origin/main` was merged again (conflicts in `COORDINATION.md` only; resolved append-only so every session's log is retained and no other session's file was touched).
+- The `docs/` section is now linked from the shared top navigation on every root page, alongside `research/` and `coverage-guide/`, as the sessions that built them requested. The navigation patch is marker-based (`<!-- integration-links -->`), so re-running the build does not duplicate links.
+- Combined-tree verification after the merge: **45 published pages**, 264 extended-analysis table rows (7 flagged/unverified), 40 official sources, every internal link and anchor resolving across all five sections, and no page rendering fewer rows than its data files define.

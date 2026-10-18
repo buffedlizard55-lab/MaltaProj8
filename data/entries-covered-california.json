@@ -1,0 +1,212 @@
+{
+  "tables": {
+    "which": [
+      {
+        "item": "If your household income is at or below 138% FPL",
+        "value": "Medi-Cal",
+        "detail": "Covered California: \"Californians with incomes at or below 138% of the federal poverty level\" are eligible for Medi-Cal, and it is free or low cost.",
+        "source": "S7",
+        "verified": true
+      },
+      {
+        "item": "If you need insurance and are not eligible for Medi-Cal",
+        "value": "Covered California",
+        "detail": "Covered California is \"a private health insurance marketplace where people can get income-based financial help to reduce monthly premiums.\"",
+        "source": "S7",
+        "verified": true
+      },
+      {
+        "item": "If your income is above 138% FPL",
+        "value": "Covered California with financial help (if under 400% FPL)",
+        "detail": "The federal premium tax credit covers 100%–400% FPL; the California Premium Subsidy adds state help up to 200% FPL in 2027.",
+        "source": "S25",
+        "verified": true
+      },
+      {
+        "item": "If you lose Medi-Cal for work-rule non-compliance",
+        "value": "Covered California with no financial help",
+        "detail": "DHCS member notice: \"you cannot get financial help to pay for a health plan through Covered California. That means you would have to pay the full cost of new health insurance.\" The county policy letter says the same: individuals who fail the work rule \"will not be eligible for subsidized coverage through Covered California, even if they meet all other Medi-Cal requirements.\"",
+        "source": "S12",
+        "verified": true
+      }
+    ],
+    "ptc": [
+      {
+        "item": "Income floor",
+        "value": "Household income must be at least 100% of the FPL",
+        "detail": "IRS: \"Your household income is at least 100 percent* but not more than 400 percent of the federal poverty line (FPL) for your family size.\" The IRS adds a footnote: \"Under special circumstances, you may be able to claim the PTC even though your income is below 100 percent of the federal poverty line. See the instructions for Form 8962.\" For 2026, 100% FPL for one person is $15,960.",
+        "source": "S25",
+        "verified": true,
+        "also": [
+          "S27"
+        ]
+      },
+      {
+        "item": "Income ceiling",
+        "value": "Household income must not be more than 400% of the FPL",
+        "detail": "The temporary elimination of the 400% cap applied only to tax years 2021–2025, so the cap is back for 2026 and 2027. If income exceeds 400% FPL you are not allowed a premium tax credit and must repay advance payments.",
+        "source": "S25",
+        "verified": true
+      },
+      {
+        "item": "Other conditions",
+        "value": "Not eligible for Medicaid/Medicare/CHIP, no affordable employer plan, all premiums paid by the tax due date",
+        "detail": "Also: not claimed as a dependent by another person; Married Filing Separately only with an exception; must file a return with Form 8962 if you received advance payments.",
+        "source": "S25",
+        "verified": true
+      },
+      {
+        "item": "What happens if you are below 100% FPL in California",
+        "value": "Medi-Cal, not a subsidy",
+        "detail": "Because California has expanded Medicaid, the 100% floor is not a coverage gap here — it is the line below which you are routed to Medi-Cal instead of a marketplace plan.",
+        "source": "S7",
+        "verified": true
+      }
+    ],
+    "premiums": [
+      {
+        "item": "Under 138% FPL",
+        "value": "0% of household income",
+        "detail": "Premium contribution for the benchmark Silver plan, 2027. Covered California's FPL chart.",
+        "source": "S6",
+        "verified": true
+      },
+      {
+        "item": "138% – 150% FPL",
+        "value": "0% of household income",
+        "detail": "Silver 94 plans (100%–150% FPL) have lower deductibles, co-pays and out-of-pocket maximums.",
+        "source": "S6",
+        "verified": true
+      },
+      {
+        "item": "Over 150% – 200% FPL",
+        "value": "2.8% – 5.28% of household income",
+        "detail": "Silver 87 plans. The 2027 California Premium Subsidy is designed to lower the federally-required premiums in this band: the state program \"lowers federally-required premiums for individuals between 150 and 200% FPL.\"",
+        "source": "S6",
+        "verified": true
+      },
+      {
+        "item": "Over 200% – 250% FPL",
+        "value": "6.78% – 8.66% of household income",
+        "detail": "Silver 73 plans. No state help applies above 200% FPL.",
+        "source": "S6",
+        "verified": true
+      },
+      {
+        "item": "250% – 300% FPL",
+        "value": "8.66% – 10.22% of household income",
+        "detail": "Covered California FPL chart, 2027.",
+        "source": "S6",
+        "verified": true
+      },
+      {
+        "item": "300% – 400% FPL",
+        "value": "10.22% of household income",
+        "detail": "Covered California FPL chart, 2027. Above 400% FPL there is no federal premium tax credit and no state subsidy — unsubsidized coverage.",
+        "source": "S6",
+        "verified": true
+      }
+    ],
+    "state-subsidy": [
+      {
+        "item": "2026 program",
+        "value": "Up to 165% FPL, $190 million",
+        "detail": "The 2026 California Premium Subsidy Program was available to enrollees at or below 165% FPL who were also eligible for the federal advanced premium tax credit and applied on the subsidized application. It preserved IRA-level premium subsidies for enrollees up to 150% FPL.",
+        "source": "S37",
+        "verified": true
+      },
+      {
+        "item": "2027 program",
+        "value": "Up to 200% FPL, $300 million",
+        "detail": "Covered California, July 21, 2026: the Legislature appropriated $300 million from the Health Care Affordability Reserve Fund, up from $190 million. \"More than 500,000 Californians are projected to receive a state subsidy in 2027, about 30 percent of all enrollees,\" and nearly 200,000 can choose from two Silver-tier plans with a $0 premium.",
+        "source": "S9",
+        "verified": true
+      },
+      {
+        "item": "How the 2027 design works",
+        "value": "Preserves $0-premium Silver plans up to 150% FPL and lowers premiums from 150% to 200% FPL",
+        "detail": "The 2027 program design \"preserves IRA-level premium subsidies for the lowest-income Covered California enrollees up to 150 percent FPL and lowers federally-required premiums for individuals between 150 and 200 percent FPL.\" Eligibility for the state subsidy requires eligibility for the federal APTC and applying on the subsidized application.",
+        "source": "S39",
+        "verified": true
+      },
+      {
+        "item": "Does it help if you have $0 income?",
+        "value": "No — you use Medi-Cal instead",
+        "detail": "The state subsidy supplements federal APTC, and APTC requires household income of at least 100% FPL. Below that, Medi-Cal is the program (and in California it is free or low cost).",
+        "source": "S25",
+        "verified": true
+      }
+    ],
+    "dates": [
+      {
+        "item": "October 1, 2026",
+        "value": "Current members can renew or switch plans for 2027",
+        "detail": "Renewal-period activity begins.",
+        "source": "S9",
+        "verified": true
+      },
+      {
+        "item": "November 1, 2026",
+        "value": "Open enrollment for 2027 coverage begins",
+        "detail": "\"Open enrollment, which is when anyone can sign up for a plan, runs for three months beginning Nov. 1 and ending Jan. 31, 2027.\"",
+        "source": "S9",
+        "verified": true
+      },
+      {
+        "item": "January 31, 2027",
+        "value": "Open enrollment for 2027 coverage ends",
+        "detail": "Outside open enrollment you need a qualifying life event to enroll.",
+        "source": "S9",
+        "verified": true
+      },
+      {
+        "item": "Any time of year",
+        "value": "Medi-Cal applications are accepted year-round",
+        "detail": "Medi-Cal is not tied to open enrollment.",
+        "source": "S7",
+        "verified": true
+      }
+    ],
+    "immigrant-2027": [
+      {
+        "item": "Groups that keep financial help in 2027",
+        "value": "Lawful permanent residents (green card holders), Cuban and Haitian entrants, Compact of Free Association migrants",
+        "detail": "Covered California: \"Starting in 2027, only certain groups — such as green card holders — will be eligible for financial help to lower their monthly costs.\"",
+        "source": "S8",
+        "verified": true
+      },
+      {
+        "item": "Groups that lose financial help in 2027",
+        "value": "Asylum grantees, refugees, trafficking survivors (T visa), Temporary Protected Status, work visa holders, student visa holders",
+        "detail": "Covered California lists these as the major immigrant groups who will no longer receive financial help. This follows H.R. 1. Covered California also notes: \"If you have health insurance through Covered California now, you can keep your financial help in 2026.\"",
+        "source": "S8",
+        "verified": true,
+        "also": [
+          "S36"
+        ]
+      },
+      {
+        "item": "What this means for a green card holder",
+        "value": "You keep marketplace financial help in 2027",
+        "detail": "This is a change in the law, not a change in your eligibility. Covered California: \"You can still keep your health insurance through Covered California in 2027\" — the cost changes for some groups, not for permanent residents.",
+        "source": "S8",
+        "verified": true
+      },
+      {
+        "item": "Applying does not put your immigration status at risk",
+        "value": "\"Applying will not affect your immigration status or your chances of becoming a lawful permanent resident or U.S. citizen.\"",
+        "detail": "Covered California also advises listing everyone in the household regardless of status, because household size and income drive eligibility for the whole family.",
+        "source": "S8",
+        "verified": true
+      },
+      {
+        "item": "Public charge note (if you are still seeking a green card or citizenship)",
+        "value": "",
+        "detail": "Covered California states that a federal rule finalised beginning September 2026 changes how public charge is determined, that getting financial help through Covered California may affect a green card application, and that \"Most consumers who are eligible for financial help in 2027 may not be subject to the public charge rule when they apply for admission or a green card,\" with exceptions for asylum, refugee, U visa, T visa, VAWA and Special Immigrant Juvenile Status applicants. The underlying federal rule text and its applicability to your specific case were not independently reviewed for this site.",
+        "source": "S8",
+        "verified": false,
+        "flag": "Partially verified: the statement above is quoted from Covered California (the state marketplace). The underlying federal public-charge rule and its interaction with Medi-Cal enrollment were not checked against the Federal Register or DHS guidance in this session, and how it applies to your own immigration case is fact-specific. Talk to an immigration attorney before making a decision on this point."
+      }
+    ]
+  }
+}

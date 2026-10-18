@@ -1,0 +1,274 @@
+{
+  "tables": {
+    "magi": [
+      {
+        "item": "The measure",
+        "value": "Modified Adjusted Gross Income (MAGI)",
+        "detail": "HealthCare.gov: MAGI \"is adjusted gross income (AGI) plus these, if any: untaxed foreign income, non-taxable Social Security benefits, and tax-exempt interest.\" AGI is IRS Form 1040, line 11. The same MAGI concept is used for Medicaid and CHIP, and California's Medi-Cal MAGI rules implement 42 CFR 435.603.",
+        "source": "S24",
+        "verified": true,
+        "also": [
+          "S35",
+          "S2"
+        ]
+      },
+      {
+        "item": "Whose income counts",
+        "value": "Everyone in your tax household",
+        "detail": "The tax filer, the filer's spouse, and tax dependents — including people who do not need coverage. Medi-Cal household size rules have their own adjustments for children and tax dependents; see 42 CFR 435.603(d).",
+        "source": "S24",
+        "verified": true
+      },
+      {
+        "item": "Income types that count",
+        "value": "Capital gains · investment income (interest, dividends) · rental and royalty income (net) · self-employment income · retirement/pension · Social Security (taxable and non-taxable) · tips · unemployment",
+        "detail": "This is HealthCare.gov's list of income types to count in a Marketplace application; the same MAGI methodology drives Medi-Cal income. Investment income includes \"expected interest and dividends earned on investments, including tax-exempt interest.\" Rental income is counted net of expenses.",
+        "source": "S24",
+        "verified": true
+      },
+      {
+        "item": "Income types that do not count",
+        "value": "Gifts · child support · loan proceeds · SSI · workers' compensation · veterans' disability payments · child tax credit refunds",
+        "detail": "Also on the HealthCare.gov do-not-count list. Note that Supplemental Security Income is excluded from MAGI.",
+        "source": "S24",
+        "verified": true
+      },
+      {
+        "item": "Which year's income",
+        "value": "The year of coverage, as a projection",
+        "detail": "\"Marketplace savings are based on your expected household income for the year you want coverage, not last year's income.\" Make your best estimate — a wrong estimate can mean money back at tax time.",
+        "source": "S24",
+        "verified": true
+      }
+    ],
+    "streams": [
+      {
+        "item": "Net rental income",
+        "value": "Counts as household income (net of expenses)",
+        "detail": "HealthCare.gov instructs applicants to \"Use net rental and royalty income.\" IRS Publication 527 governs what counts as rental income and which expenses are deductible. For Medi-Cal MAGI purposes the figure is your tax-reportable rental income.",
+        "source": "S24",
+        "verified": true,
+        "also": [
+          "S33"
+        ]
+      },
+      {
+        "item": "Property-management work (if it is a business)",
+        "value": "Counts as self-employment income",
+        "detail": "If you are paid to manage property as a trade or business, HealthCare.gov lists self-employment income among the types to count: \"Include the income you expect to make from your business after expenses. You'll also need to describe the type of work you do.\" Self-employment income is earned income, which would also change the work-requirement analysis.",
+        "source": "S24",
+        "verified": true
+      },
+      {
+        "item": "Savings account interest",
+        "value": "Counts as investment income",
+        "detail": "\"Include expected interest and dividends earned on investments, including tax-exempt interest.\" For the $580 work-rule test DHCS describes the measure as total gross income for the month, and California law ties it to MAGI-based financial methods.",
+        "source": "S24",
+        "verified": true
+      },
+      {
+        "item": "Kalshi trading",
+        "value": "",
+        "detail": "KalshiEX LLC is a CFTC-designated contract market (Release 8302-20, Nov 4, 2020); CFTC treats the event contracts it lists as swaps under the Commodity Exchange Act. Trading a contract is not employment, so this is investment activity, not earned income. The tax classification of gains and losses on event contracts is not addressed in any IRS guidance located on IRS.gov, so this site does not state how the gains are reported.",
+        "source": "S29",
+        "verified": false,
+        "flag": "Unverified: no IRS guidance specific to Kalshi (or to event contracts) was located on IRS.gov as of 2026-10-18, so the tax reporting character of these gains is not confirmable from an official source. The value cell is intentionally blank. Practical effect: report your trading results as investment income on the application, keep your own records, and confirm the reporting treatment with a tax professional."
+      },
+      {
+        "item": "Does any of this count as \"earned income\" for the work rule?",
+        "value": "No — and the rule does not require earned income",
+        "detail": "The federal requirement is satisfied by 80 hours of work, community service, work-program participation or half-time school, or by an income test. California's statute frames the income test as \"total monthly income, using modified adjusted gross income (MAGI)-based financial methods,\" and the member notice says \"an income from any source.\" The $580 route does not require wages.",
+        "source": "S13",
+        "verified": true
+      }
+    ],
+    "income-580": [
+      {
+        "item": "The amount",
+        "value": "$580 per month",
+        "detail": "$7.25 federal minimum wage × 80 hours. The federal minimum wage is $7.25 per hour, effective July 24, 2009, under the Fair Labor Standards Act. California requires states to use the federal minimum wage figure in this test — the state minimum wage is not used.",
+        "source": "S28",
+        "verified": true,
+        "also": [
+          "S16"
+        ]
+      },
+      {
+        "item": "How California defines it",
+        "value": "Total monthly income, MAGI-based financial methods",
+        "detail": "WIC § 14005.69(e)(6): \"The individual has a total monthly income, using modified adjusted gross income (MAGI)-based financial methods, as specified in Section 1396a(e)(14) of Title 42 of the United States Code, for their individual MAGI-based household budget, that is no less than the applicable minimum wage requirement … multiplied by 80 hours.\"",
+        "source": "S13",
+        "verified": true
+      },
+      {
+        "item": "How DHCS's county guidance describes it",
+        "value": "Total gross income for the month must meet or exceed $580",
+        "detail": "For fluctuating income: \"An individual whose gross income (including earned income, unemployment benefits, State Disability Insurance, retirement income, dividends, etc.) fluctuates has an average monthly income over the preceding 6 months that meets or exceeds this amount.\" ACWDL 25-30 is expressly labelled preliminary guidance.",
+        "source": "S10",
+        "verified": true
+      },
+      {
+        "item": "How the member notice words it",
+        "value": "\"an income from any source of at least $580 (before taxes) in any month since your last renewal\"",
+        "detail": "And: \"People whose hours change frequently or who have seasonal jobs can average at least $580 per month from any source over 6 months.\" This is the plain-language rule DHCS mails to members, and it is the wording that most directly answers the question of whether rental, interest and trading income count. They are income from a source.",
+        "source": "S12",
+        "verified": true
+      },
+      {
+        "item": "When it is measured",
+        "value": "One month in the window, not every month",
+        "detail": "At application: the calendar month immediately preceding your application month. At a six-month renewal: any one month since your last determination — months need not be consecutive. So one qualifying month in the window satisfies that renewal.",
+        "source": "S10",
+        "verified": true
+      },
+      {
+        "item": "Seasonal-worker variant",
+        "value": "Average monthly income over the preceding 6 months of at least $580",
+        "detail": "Applies to a seasonal worker as defined in section 45R(d)(5)(B) of the Internal Revenue Code. WIC § 14005.69(e)(7).",
+        "source": "S13",
+        "verified": true
+      },
+      {
+        "item": "Which figure is controlling if the descriptions differ",
+        "value": "",
+        "detail": "Three official descriptions of the same test use different language: \"total monthly income … using MAGI-based financial methods\" (statute), \"total gross income for a month\" (county guidance, labelled preliminary), and \"an income from any source … before taxes\" (member notice).",
+        "source": "S13",
+        "verified": false,
+        "flag": "Definitional inconsistency across three official California sources (statute vs. preliminary ACWDL vs. member notice) on whether the test is measured on a MAGI basis or a gross/before-tax basis. Materially this rarely changes the answer for a person whose income is well above or well below $580, but if your income sits near the line, ask your county which method it uses. Full text on the Flagged for Review page."
+      }
+    ],
+    "fpl": [
+      {
+        "item": "1",
+        "value": "$15,960 | $22,025 | $33,995 | $42,454 | $1,836",
+        "detail": "100% FPL | 138% FPL (Medi-Cal adults, aged/disabled FPL program) | 213% FPL (full-scope pregnant) | 266% FPL (children) | monthly 138% FPL",
+        "source": "S3",
+        "verified": true,
+        "also": [
+          "S4",
+          "S6",
+          "S26",
+          "S27"
+        ]
+      },
+      {
+        "item": "2",
+        "value": "$21,640 | $29,864 | $46,094 | $57,563 | $2,490",
+        "detail": "100% FPL | 138% FPL | 213% FPL | 266% FPL | monthly 138% FPL",
+        "source": "S3",
+        "verified": true,
+        "also": [
+          "S4",
+          "S6"
+        ]
+      },
+      {
+        "item": "3",
+        "value": "$27,320 | $37,702 | $58,192 | $72,672 | $3,143",
+        "detail": "100% FPL | 138% FPL | 213% FPL | 266% FPL | monthly 138% FPL",
+        "source": "S3",
+        "verified": true,
+        "also": [
+          "S4",
+          "S6"
+        ]
+      },
+      {
+        "item": "4",
+        "value": "$33,000 | $45,540 | $70,290 | $87,780 | $3,795",
+        "detail": "100% FPL | 138% FPL | 213% FPL | 266% FPL | monthly 138% FPL",
+        "source": "S3",
+        "verified": true,
+        "also": [
+          "S4",
+          "S6"
+        ]
+      },
+      {
+        "item": "5",
+        "value": "$38,680 | $53,379 | $82,389 | $102,889 | $4,450",
+        "detail": "100% FPL | 138% FPL | 213% FPL | 266% FPL | monthly 138% FPL",
+        "source": "S3",
+        "verified": true,
+        "also": [
+          "S4",
+          "S6"
+        ]
+      },
+      {
+        "item": "6",
+        "value": "$44,360 | $61,217 | $94,487 | $117,998 | $5,102",
+        "detail": "100% FPL | 138% FPL | 213% FPL | 266% FPL | monthly 138% FPL",
+        "source": "S3",
+        "verified": true,
+        "also": [
+          "S4",
+          "S6"
+        ]
+      },
+      {
+        "item": "7",
+        "value": "$50,040 | $69,056 | $106,586 | $133,107 | $5,755",
+        "detail": "100% FPL | 138% FPL | 213% FPL | 266% FPL | monthly 138% FPL",
+        "source": "S3",
+        "verified": true,
+        "also": [
+          "S4",
+          "S6"
+        ]
+      },
+      {
+        "item": "8",
+        "value": "$55,720 | $76,894 | $118,684 | $148,216 | $6,409",
+        "detail": "100% FPL | 138% FPL | 213% FPL | 266% FPL | monthly 138% FPL",
+        "source": "S3",
+        "verified": true,
+        "also": [
+          "S4",
+          "S6"
+        ]
+      },
+      {
+        "item": "Each additional person",
+        "value": "+$5,680 | +$7,839 | +$12,099 | +$15,109 | +$655",
+        "detail": "100% FPL | 138% FPL | 213% FPL | 266% FPL | monthly 138% FPL",
+        "source": "S3",
+        "verified": true,
+        "also": [
+          "S4",
+          "S6"
+        ]
+      }
+    ],
+    "examples": [
+      {
+        "item": "No income at all",
+        "value": "MAGI $0",
+        "detail": "Below 100% FPL, so no premium tax credit is available, but you are inside the 138% Medi-Cal limit — Medi-Cal is the program for you, not a marketplace plan. You would still be subject to the work rule from 2027 if you are 19–64 and not exempt; with no income you would need the 80-hour route or an exemption.",
+        "source": "S25",
+        "verified": true
+      },
+      {
+        "item": "Rent only",
+        "value": "e.g. $18,000/yr of net rental income",
+        "detail": "Under $22,025, so inside the Medi-Cal limit. If any single month of net rental income is $580 or more ($6,960/yr), the $580 test is satisfied for that month.",
+        "source": "S10",
+        "verified": true
+      },
+      {
+        "item": "Rent plus interest",
+        "value": "e.g. $20,000/yr rent + $3,000/yr interest = $23,000",
+        "detail": "Over $22,025, so outside the MAGI Medi-Cal limit for a one-person household. You would move to Covered California; the federal premium tax credit is available from 100% to 400% FPL, and the California Premium Subsidy adds state help up to 200% FPL in 2027. You would not be subject to the Medi-Cal work rule because you would not be on Medi-Cal.",
+        "source": "S6",
+        "verified": true
+      },
+      {
+        "item": "Trading income swings the MAGI figure",
+        "value": "Net gains count as capital gains in MAGI",
+        "detail": "Because MAGI starts from AGI, a large realized gain in a single year can push a household above a threshold, and losses can lower it. Because the $580 test is monthly, a good trading month can satisfy the work rule even in a year where the annual MAGI looks high.",
+        "source": "S24",
+        "verified": true
+      }
+    ]
+  }
+}

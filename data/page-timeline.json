@@ -1,0 +1,11 @@
+{
+  "page": "timeline",
+  "sections": [
+    {
+      "id": "timeline",
+      "heading": "Key dates",
+      "intro": "Dates are taken from the official sources linked in each row.",
+      "table": "timeline"
+    }
+  ]
+}

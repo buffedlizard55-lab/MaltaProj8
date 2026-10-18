@@ -1,0 +1,11 @@
+{
+  "page": "sources",
+  "sections": [
+    {
+      "id": "sources",
+      "heading": "Official sources used",
+      "intro": "Every value published on this site traces to one of these. Where a figure could not be confirmed against one of them, it is left blank and flagged.",
+      "table": "sources"
+    }
+  ]
+}

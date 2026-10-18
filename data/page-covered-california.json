@@ -1,0 +1,36 @@
+{
+  "page": "covered-california",
+  "sections": [
+    {
+      "id": "which",
+      "heading": "Medi-Cal or Covered California?",
+      "table": "which"
+    },
+    {
+      "id": "ptc",
+      "heading": "Federal premium tax credit rules",
+      "table": "ptc"
+    },
+    {
+      "id": "premiums",
+      "heading": "What you would pay on the benchmark Silver plan (2027)",
+      "table": "premiums"
+    },
+    {
+      "id": "state-subsidy",
+      "heading": "The California Premium Subsidy (state money)",
+      "note": "This is the part of the 2027 answer that is purely California. It applies on top of, not instead of, the federal credit.",
+      "table": "state-subsidy"
+    },
+    {
+      "id": "dates",
+      "heading": "Key dates",
+      "table": "dates"
+    },
+    {
+      "id": "immigrant-2027",
+      "heading": "2027 change to financial help for immigrant households",
+      "table": "immigrant-2027"
+    }
+  ]
+}

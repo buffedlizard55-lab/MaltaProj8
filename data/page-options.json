@@ -1,0 +1,44 @@
+{
+  "page": "options",
+  "sections": [
+    {
+      "id": "comparison",
+      "heading": "All options side by side",
+      "table": "comparison"
+    },
+    {
+      "id": "option-a",
+      "heading": "Option A — Medi-Cal (MAGI), if your income is at or below 138% FPL",
+      "table": "option-a"
+    },
+    {
+      "id": "option-b",
+      "heading": "Option B — Medi-Cal through the Aged & Disabled program (if you have a qualifying disability)",
+      "note": "This is the one route that removes the work rule entirely, because non-MAGI Medi-Cal groups are excluded from it.",
+      "table": "option-b"
+    },
+    {
+      "id": "option-c",
+      "heading": "Option C — Covered California with financial help",
+      "table": "option-c"
+    },
+    {
+      "id": "option-d",
+      "heading": "Option D — Covered California without financial help",
+      "table": "option-d"
+    },
+    {
+      "id": "flow",
+      "heading": "Decision path",
+      "list": [
+        "<strong>Step 1 — Find your MAGI.</strong> Add up net rental income, interest, trading results and anything else on your tax return. Use the 2026 table on the <a href=\"income-counting.html\">Income counting</a> page. If you are unsure, run the numbers with your county or a tax professional.",
+        "<strong>Step 2 — If MAGI ≤ 138% FPL ($22,025 for one person):</strong> Option A. Apply to Medi-Cal now, year-round, at no cost.",
+        "<strong>Step 3 — If you also have a qualifying disability:</strong> check Option B as well. Ask your county whether you qualify for the Aged &amp; Disabled FPL program at 138% FPL, which is not subject to the work rule, and whether your countable assets are under the limit.",
+        "<strong>Step 4 — If MAGI is above 138% FPL and at or below 400% FPL:</strong> Option C. Enroll during open enrollment (November 1, 2026 – January 31, 2027) and claim both the federal credit and the California Premium Subsidy if you are at or below 200% FPL.",
+        "<strong>Step 5 — If MAGI is above 400% FPL, or if you lose Medi-Cal for work-rule non-compliance:</strong> Option D, unsubsidized coverage.",
+        "<strong>Step 6 — Whatever you choose:</strong> from January 1, 2027, if you are on Medi-Cal as a New Adult Group member, make sure at least one month in each six-month renewal window has either $580 of income from any source or 80 hours of qualifying activity — and keep the proof.",
+        "<strong>Step 7 — Keep your contact details current</strong> with your county office. DHCS's letter warns that Medi-Cal ends if you miss renewals, and that losing it this way also ends your marketplace financial help."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "page": "immigration-status",
+  "sections": [
+    {
+      "id": "status",
+      "heading": "Your status and what it means for Medi-Cal",
+      "intro": "The DHCS status table below is the state's own statement of what happens to each group from January 2026 onward.",
+      "table": "status"
+    },
+    {
+      "id": "changes",
+      "heading": "Changes coming between 2026 and 2027",
+      "table": "changes"
+    },
+    {
+      "id": "work-rule",
+      "heading": "How immigration status interacts with the work rule",
+      "table": "work-rule"
+    },
+    {
+      "id": "marketplace",
+      "heading": "Marketplace coverage and financial help",
+      "table": "marketplace"
+    }
+  ]
+}

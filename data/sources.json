@@ -1,0 +1,325 @@
+{
+  "generated_note": "Every published value on this site traces to one of the official sources below. No other source was used to state a value.",
+  "sources": [
+    {
+      "id": "S1",
+      "name": "Medi-Cal — Eligibility by Federal Poverty Level (chart)",
+      "publisher": "California Department of Health Care Services (DHCS)",
+      "url": "https://www.dhcs.ca.gov/medi-cal/qualify/qualify-for-medi-cal-eligibility-chart/",
+      "date": "2026-10-15",
+      "type": "state agency"
+    },
+    {
+      "id": "S2",
+      "name": "ACWDL 26-01 — 2026 Federal Poverty Levels",
+      "publisher": "DHCS, Medi-Cal Eligibility Division",
+      "url": "https://www.dhcs.ca.gov/wp-content/uploads/2026/04/26-01.pdf",
+      "date": "2026-01-21",
+      "type": "state policy letter"
+    },
+    {
+      "id": "S3",
+      "name": "ACWDL 26-01 Enclosure 2 — 2026 FPL annual values",
+      "publisher": "DHCS",
+      "url": "https://www.dhcs.ca.gov/services/medi-cal-resources/medi-cal-eligibility-division/all-county-welfare-directors-medi-cal-eligibility-division-information-letters/2026-fpl-calculation-chart-annual-values-enclosure-2/",
+      "date": "2026-01-21",
+      "type": "state policy letter enclosure"
+    },
+    {
+      "id": "S4",
+      "name": "ACWDL 26-01 Enclosure 1 — 2026 FPL monthly values",
+      "publisher": "DHCS",
+      "url": "https://www.dhcs.ca.gov/services/medi-cal-resources/medi-cal-eligibility-division/all-county-welfare-directors-medi-cal-eligibility-division-information-letters/2026-fpl-calculation-chart-monthly-values-enclosure-1/",
+      "date": "2026-01-21",
+      "type": "state policy letter enclosure"
+    },
+    {
+      "id": "S5",
+      "name": "ACWDL 26-01 Enclosure 3 — Program Descriptions by FPL",
+      "publisher": "DHCS",
+      "url": "https://www.dhcs.ca.gov/services/medi-cal/eligibility/letters/Pages/ACWDL2601-Enclosure3.aspx",
+      "date": "2026-01-21",
+      "type": "state policy letter enclosure"
+    },
+    {
+      "id": "S6",
+      "name": "Program Eligibility by Federal Poverty Level for 2027 (FPL chart)",
+      "publisher": "Covered California (State Health Insurance Marketplace)",
+      "url": "https://www.coveredca.com/pdfs/FPL-chart.pdf",
+      "date": "2026-10",
+      "type": "state marketplace"
+    },
+    {
+      "id": "S7",
+      "name": "Medi-Cal (program overview and eligibility)",
+      "publisher": "Covered California",
+      "url": "https://www.coveredca.com/coverage-basics/medi-cal",
+      "date": "2026-09-27",
+      "type": "state marketplace"
+    },
+    {
+      "id": "S8",
+      "name": "Information for Immigrants",
+      "publisher": "Covered California",
+      "url": "https://www.coveredca.com/enrollment/eligibility/immigrants",
+      "date": "2026",
+      "type": "state marketplace"
+    },
+    {
+      "id": "S9",
+      "name": "Covered California Rates and Plans for 2027 (news release)",
+      "publisher": "Covered California",
+      "url": "https://www.coveredca.com/press-releases/2026/07/21/covered-california-rates-and-plans-for-2027-california-continues-fight-for-health-insurance-affordability-and-access",
+      "date": "2026-07-21",
+      "type": "state marketplace news release"
+    },
+    {
+      "id": "S10",
+      "name": "ACWDL 25-30 — Work and Community Engagement Requirements for New Adult Group",
+      "publisher": "DHCS",
+      "url": "https://www.dhcs.ca.gov/wp-content/uploads/2026/04/25-30.pdf",
+      "date": "2025-12-30",
+      "type": "state policy letter"
+    },
+    {
+      "id": "S11",
+      "name": "ACWDL 25-31 — Six-Month Renewals for New Adult Group",
+      "publisher": "DHCS",
+      "url": "https://dhcs.ca.gov/services/medi-cal/eligibility/letters/Documents/25-31.pdf",
+      "date": "2025-12-30",
+      "type": "state policy letter"
+    },
+    {
+      "id": "S12",
+      "name": "MEDIL I 26-25 — Six-Month Renewals and Work and Community Engagement Rules (outreach letter, incl. 'Dear Medi-Cal Member' notice dated 2026-08-31)",
+      "publisher": "DHCS, Medi-Cal Eligibility Division",
+      "url": "https://www.dhcs.ca.gov/wp-content/uploads/2026/09/MEDIL-I26-25.pdf",
+      "date": "2026-09-11",
+      "type": "state policy letter"
+    },
+    {
+      "id": "S13",
+      "name": "AB 2161 (Bonta) — Medi-Cal eligibility: work or community engagement. Chapter 209, Statutes of 2026 (amends WIC § 14005.69)",
+      "publisher": "California Legislative Information (leginfo.legislature.ca.gov)",
+      "url": "https://leginfo.legislature.ca.gov/faces/billTextClient.xhtml?bill_id=202520260AB2161",
+      "date": "2026-09-15",
+      "type": "state statute"
+    },
+    {
+      "id": "S14",
+      "name": "Fact sheet — Medicaid Community Engagement Requirement for Certain Individuals, Interim Final Rule with Comment Period (CMS-2454-IFC)",
+      "publisher": "Centers for Medicare & Medicaid Services (CMS)",
+      "url": "https://www.cms.gov/newsroom/fact-sheets/medicaid-community-engagement-requirement-certain-individuals-interim-final-rule-comment-period-cms",
+      "date": "2026-06-01",
+      "type": "federal agency"
+    },
+    {
+      "id": "S15",
+      "name": "Medicaid Program; Community Engagement Requirement for Certain Individuals (interim final rule, 91 FR …, doc. 2026-11094)",
+      "publisher": "Federal Register / Office of the Federal Register",
+      "url": "https://www.federalregister.gov/documents/2026/06/03/2026-11094/medicaid-program-community-engagement-requirement-for-certain-individuals",
+      "date": "2026-06-03",
+      "type": "federal rule"
+    },
+    {
+      "id": "S16",
+      "name": "State Requirements to Establish Medicaid Community Engagement Requirements (§ 71119 of P.L. 119-21) — slide deck",
+      "publisher": "CMS, Center for Medicaid and CHIP Services (Medicaid.gov)",
+      "url": "https://www.medicaid.gov/medicaid/downloads/community-engagement-overview-slide.pdf",
+      "date": "2025-12-08",
+      "type": "federal agency guidance"
+    },
+    {
+      "id": "S17",
+      "name": "CMCS Information Bulletin — § 71119 of the 'Working Families Tax Cut' Legislation, P.L. 119-21",
+      "publisher": "CMS (medicaid.gov)",
+      "url": "https://www.medicaid.gov/federal-policy-guidance/downloads/cib12082025.pdf",
+      "date": "2025-12-08",
+      "type": "federal agency guidance"
+    },
+    {
+      "id": "S18",
+      "name": "CRS Report R48633 — Health Provisions in P.L. 119-21, the FY2025 Reconciliation Law",
+      "publisher": "Congressional Research Service (Congress.gov)",
+      "url": "https://www.congress.gov/crs-product/R48633",
+      "date": "2025-08-18",
+      "type": "legislative branch analysis"
+    },
+    {
+      "id": "S19",
+      "name": "H.R. 1 (119th Congress) — enrolled text, Public Law 119-21",
+      "publisher": "Congress.gov",
+      "url": "https://www.congress.gov/bill/119th-congress/house-bill/1/text",
+      "date": "2025-07-04",
+      "type": "federal statute"
+    },
+    {
+      "id": "S20",
+      "name": "Medi-Cal Changes (2026–2027 change calendar)",
+      "publisher": "DHCS",
+      "url": "https://www.dhcs.ca.gov/medi-cal/updates/medi-cal-changes/",
+      "date": "2026-10-08",
+      "type": "state agency"
+    },
+    {
+      "id": "S21",
+      "name": "Immigration Status and Changes to Medi-Cal Eligibility (status table by population)",
+      "publisher": "DHCS",
+      "url": "https://www.dhcs.ca.gov/immigration-status-and-changes-to-medi-cal-eligibility/",
+      "date": "2026",
+      "type": "state agency"
+    },
+    {
+      "id": "S22",
+      "name": "Asset Limit Frequently Asked Questions",
+      "publisher": "DHCS",
+      "url": "https://www.dhcs.ca.gov/medi-cal/help/asset-limit-frequently-asked-questions/",
+      "date": "2026",
+      "type": "state agency FAQ"
+    },
+    {
+      "id": "S23",
+      "name": "ACWDL 26-07 — Policy Changes to Retroactive Medi-Cal Coverage Periods",
+      "publisher": "DHCS",
+      "url": "https://www.dhcs.ca.gov/wp-content/uploads/2026/04/ACWDL-26-07.pdf",
+      "date": "2026-03-12",
+      "type": "state policy letter"
+    },
+    {
+      "id": "S24",
+      "name": "What to include as income (MAGI and countable income types)",
+      "publisher": "HealthCare.gov (CMS/HHS)",
+      "url": "https://www.healthcare.gov/income-and-household-information/income/",
+      "date": "2026",
+      "type": "federal agency"
+    },
+    {
+      "id": "S25",
+      "name": "Premium Tax Credit (PTC) overview",
+      "publisher": "Internal Revenue Service (IRS)",
+      "url": "https://www.irs.gov/credits-deductions/premium-tax-credit-ptc-overview",
+      "date": "2026-07-28",
+      "type": "federal agency"
+    },
+    {
+      "id": "S26",
+      "name": "Poverty Guidelines (2026 guidelines, $15,960 for 1 person)",
+      "publisher": "HHS, Office of the Assistant Secretary for Planning and Evaluation (ASPE)",
+      "url": "https://aspe.hhs.gov/topics/poverty-economic-mobility/poverty-guidelines",
+      "date": "2026-01-15",
+      "type": "federal agency"
+    },
+    {
+      "id": "S27",
+      "name": "Annual Update of the HHS Poverty Guidelines (91 FR 1797)",
+      "publisher": "Federal Register / HHS",
+      "url": "https://www.federalregister.gov/documents/2026/01/15/2026-00755/annual-update-of-the-hhs-poverty-guidelines",
+      "date": "2026-01-15",
+      "type": "federal rule"
+    },
+    {
+      "id": "S28",
+      "name": "Minimum Wage (federal FLSA minimum wage of $7.25 per hour)",
+      "publisher": "U.S. Department of Labor",
+      "url": "https://www.dol.gov/agencies/whd/minimum-wage",
+      "date": "2026",
+      "type": "federal agency"
+    },
+    {
+      "id": "S29",
+      "name": "CFTC Designates KalshiEX LLC as a Contract Market (Release 8302-20)",
+      "publisher": "Commodity Futures Trading Commission (CFTC)",
+      "url": "https://www.cftc.gov/PressRoom/PressReleases/8302-20",
+      "date": "2020-11-04",
+      "type": "federal agency"
+    },
+    {
+      "id": "S30",
+      "name": "Apply for Medi-Cal (four ways to apply)",
+      "publisher": "DHCS",
+      "url": "https://www.dhcs.ca.gov/medi-cal/apply/",
+      "date": "2026",
+      "type": "state agency"
+    },
+    {
+      "id": "S31",
+      "name": "Qualify for Medi-Cal (screening tool and eligibility chart)",
+      "publisher": "DHCS",
+      "url": "https://www.dhcs.ca.gov/medi-cal/qualify/",
+      "date": "2026-08-25",
+      "type": "state agency"
+    },
+    {
+      "id": "S32",
+      "name": "Find a County Office",
+      "publisher": "DHCS",
+      "url": "https://www.dhcs.ca.gov/medi-cal/contact/find-a-county-office/",
+      "date": "2026",
+      "type": "state agency"
+    },
+    {
+      "id": "S33",
+      "name": "Publication 527 (2025) — Residential Rental Property",
+      "publisher": "IRS",
+      "url": "https://www.irs.gov/publications/p527",
+      "date": "2025",
+      "type": "federal agency publication"
+    },
+    {
+      "id": "S34",
+      "name": "Working Disabled Program (250% FPL)",
+      "publisher": "DHCS",
+      "url": "https://www.dhcs.ca.gov/services/Pages/TPLRD_WD_cont.aspx",
+      "date": "2026-05-07",
+      "type": "state agency"
+    },
+    {
+      "id": "S35",
+      "name": "42 CFR § 435.603 — MAGI-based income and household rules",
+      "publisher": "eCFR (National Archives / GPO)",
+      "url": "https://www.ecfr.gov/current/title-42/chapter-IV/subchapter-C/part-435/subpart-C/section-435.603",
+      "date": "2026",
+      "type": "federal regulation"
+    },
+    {
+      "id": "S36",
+      "name": "Federal Changes for Enrollers Quick Guide (H.R. 1 changes, 2027 financial help)",
+      "publisher": "Covered California (enroller toolkit)",
+      "url": "https://hbex.coveredca.com/toolkit/downloads/Federal_Changes_Guide.pdf",
+      "date": "2025-12-18",
+      "type": "state marketplace toolkit"
+    },
+    {
+      "id": "S37",
+      "name": "Financial Help Basics for Enrollers Quick Guide (2026 California Premium Subsidy, 165% FPL)",
+      "publisher": "Covered California (enroller toolkit)",
+      "url": "https://hbex.coveredca.com/toolkit/downloads/Financial_Help_Basics.pdf",
+      "date": "2025-12-18",
+      "type": "state marketplace toolkit"
+    },
+    {
+      "id": "S38",
+      "name": "Implementation Plan for New Federal Eligibility and Enrollment Changes under H.R. 1",
+      "publisher": "DHCS",
+      "url": "https://www.dhcs.ca.gov/wp-content/uploads/2026/05/DHCS-HR1-Implementation-Plan.pdf",
+      "date": "2026-05",
+      "type": "state agency plan"
+    },
+    {
+      "id": "S39",
+      "name": "2027 California State Premium Subsidy Program Design",
+      "publisher": "Covered California Board (hbex.coveredca.com / board.coveredca.com)",
+      "url": "https://board.coveredca.com/meetings/2026/May%2021,%202026/Presentation_2027_State_Premium_Subsidy_Program_Design.pdf",
+      "date": "2026-05-21",
+      "type": "state marketplace board document"
+    },
+    {
+      "id": "S40",
+      "name": "Medicare Savings Programs in California",
+      "publisher": "DHCS",
+      "url": "https://www.dhcs.ca.gov/individuals/medicare-savings-programs-in-california/",
+      "date": "2026-09-14",
+      "type": "state agency"
+    }
+  ]
+}
