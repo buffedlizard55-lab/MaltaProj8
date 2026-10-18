@@ -118,6 +118,8 @@ PAGE_INDEX = [
             ("verification.html", "Verification log", "Line-by-line source check for every published claim."),
             ("sources.html", "Source register", "All 40 official sources used in this section, with publisher and date."),
             ("flagged.html", "Flagged for Review", "Everything that could not be confirmed, and where two official sources disagree."),
+            ("verify-95219c64.html", "Independent check #1 (95219c64)", "First independent line-by-line re-verification: 13 claims re-checked, 5 nuances."),
+            ("verify-9285d712.html", "Independent check #2 (9285d712)", "Second independent re-verification: 13 claims, 2 corrections (cost-sharing §71120, 40-state count), 6 nuances."),
             ("research/index.html", "Research dashboard", "A second, independently sourced dashboard: 52 source-linked findings."),
             ("coverage-guide/index.html", "Coverage guide", "A third, independently sourced dashboard: 65 findings with locators and excerpts."),
             ("docs/index.html", "Docs dashboard", "A fourth dashboard: 10 pages, 76 sourced rows on income taxes, coverage and the new laws."),
