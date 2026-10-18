@@ -243,13 +243,18 @@
       "rows_without_direct_official_link": 7
     },
     {
+      "page": "verify-a9c46f9b.html",
+      "data_rows": 48,
+      "rows_without_direct_official_link": 39
+    },
+    {
       "page": "work-requirements.html",
       "data_rows": 58,
       "rows_without_direct_official_link": 0
     }
   ],
-  "total_data_rows": 921,
-  "rows_without_direct_official_link": 94,
+  "total_data_rows": 969,
+  "rows_without_direct_official_link": 133,
   "needs_review": [
     {
       "page": "california.html",
@@ -965,6 +970,279 @@
       "page": "verify-95219c64.html",
       "data_row": 18,
       "claim_excerpt": "N-5 Kalshi federal tax treatment still unruled As flagged on the site, no IRS Revenue Ruling/Regulation/Notice classifies Kalshi contracts as of Oct 2026. Capital-gains vs. gambling vs. \u00a71256 treatment changes MAGI, loss",
+      "external_links": [],
+      "status": "needs review: no direct official-domain link in this row"
+    },
+    {
+      "page": "verify-a9c46f9b.html",
+      "data_row": 9,
+      "claim_excerpt": "Signed July 4, 2025 as P.L. 119-21 (OBBBA) congress.gov \u201cShown Here: Public Law No: 119-21 (07/04/2025)\u201d \u2713 Verified",
+      "external_links": [],
+      "status": "needs review: no direct official-domain link in this row"
+    },
+    {
+      "page": "verify-a9c46f9b.html",
+      "data_row": 10,
+      "claim_excerpt": "CMS-2454-IFC issued Jun 1 2026, published Jun 3 2026, effective Jul 31 2026 Federal Register header \u201cPublished \u2026 06/03/2026 \u2014 Effective July 31 2026\u201d \u2713 Verified",
+      "external_links": [],
+      "status": "needs review: no direct official-domain link in this row"
+    },
+    {
+      "page": "verify-a9c46f9b.html",
+      "data_row": 11,
+      "claim_excerpt": "State deadline Jan 1 2027; good-faith delay to Dec 31 2028 H.R.1 \u00a771119(a)(1); IFC; DHCS ACWDL 25-30 \u2713 Verified",
+      "external_links": [],
+      "status": "needs review: no direct official-domain link in this row"
+    },
+    {
+      "page": "verify-a9c46f9b.html",
+      "data_row": 12,
+      "claim_excerpt": "1115 waiver cannot waive \u00a771119 H.R.1 \u00a771119(f) \u2713 Verified",
+      "external_links": [],
+      "status": "needs review: no direct official-domain link in this row"
+    },
+    {
+      "page": "verify-a9c46f9b.html",
+      "data_row": 13,
+      "claim_excerpt": "Exemptions: parents of child \u226413 or disabled individual; veterans with total disability; medically frail; pregnancy/12-mo postpartum; AI/AN; former foster youth; aged/blind/disabled; Medicare beneficiaries; SNAP/TANF-com",
+      "external_links": [],
+      "status": "needs review: no direct official-domain link in this row"
+    },
+    {
+      "page": "verify-a9c46f9b.html",
+      "data_row": 14,
+      "claim_excerpt": "Verification: application 1\u20133 month look-back; renewal \u22651 month between checks; ex parte first; 30-day cure period; 3-month outreach 91 FR 33348 \u00a7\u00a7435.149, 435.907 \u2713 Verified",
+      "external_links": [],
+      "status": "needs review: no direct official-domain link in this row"
+    },
+    {
+      "page": "verify-a9c46f9b.html",
+      "data_row": 15,
+      "claim_excerpt": "Six-month renewals for expansion adults (\u00a771107) from Jan 1 2027 DHCS MEDIL I26-25; ACWDL 25-31 \u2713 Verified",
+      "external_links": [],
+      "status": "needs review: no direct official-domain link in this row"
+    },
+    {
+      "page": "verify-a9c46f9b.html",
+      "data_row": 16,
+      "claim_excerpt": "\u00a770114 gambling-loss cap 90% for tax years after Dec 31 2025 (if Kalshi were gambling) congress.gov H.R.1 \u00a770114 \u2713 Verified",
+      "external_links": [],
+      "status": "needs review: no direct official-domain link in this row"
+    },
+    {
+      "page": "verify-a9c46f9b.html",
+      "data_row": 17,
+      "claim_excerpt": "CA calls expansion group \u201cMAGI New Adult Group, Aid Code M1\u201d ACWDL 25-30 p.2\u20133 \u2713 Verified",
+      "external_links": [],
+      "status": "needs review: no direct official-domain link in this row"
+    },
+    {
+      "page": "verify-a9c46f9b.html",
+      "data_row": 18,
+      "claim_excerpt": "Not subject: Non-MAGI, children, pregnancy group, restricted-scope emergency Medi-Cal ACWDL 25-30 p.3 \u2713 Verified",
+      "external_links": [],
+      "status": "needs review: no direct official-domain link in this row"
+    },
+    {
+      "page": "verify-a9c46f9b.html",
+      "data_row": 19,
+      "claim_excerpt": "Counties do not assess pre-2027 applicants until next renewal in 2027 ACWDL 25-30 p.2 \u201cDec 31 2026 or prior\u201d \u2713 Verified",
+      "external_links": [],
+      "status": "needs review: no direct official-domain link in this row"
+    },
+    {
+      "page": "verify-a9c46f9b.html",
+      "data_row": 20,
+      "claim_excerpt": "Hardship exemptions: disaster county + high-unemployment county (auto) + inpatient/hardship upon request DHCS Implementation Plan; ACWDL 25-30 \u2713 Verified",
+      "external_links": [],
+      "status": "needs review: no direct official-domain link in this row"
+    },
+    {
+      "page": "verify-a9c46f9b.html",
+      "data_row": 21,
+      "claim_excerpt": "High-unemployment statutory threshold = lesser of 8% or 1.5\u00d7 national rate (CRS R48633); implementation list still TBD CRS R48633; DHCS Plan \u201cnot yet defined\u201d \u2713 Verified (nuance: implementation TBD, flagged)",
+      "external_links": [],
+      "status": "needs review: no direct official-domain link in this row"
+    },
+    {
+      "page": "verify-a9c46f9b.html",
+      "data_row": 22,
+      "claim_excerpt": "CA filed challenge June 2026 multi-state suit mass.gov complaint filed Jun 29 2026; Georgetown CCF coverage \u2713 Verified",
+      "external_links": [],
+      "status": "needs review: no direct official-domain link in this row"
+    },
+    {
+      "page": "verify-a9c46f9b.html",
+      "data_row": 23,
+      "claim_excerpt": "Rental net (Schedule E) Countable Yes \u2014 DHCS MAGI chart \u201cRental real estate\u201d = countable Yes \u2014 \u201ctotal gross income\u201d includes it \u2713 Verified",
+      "external_links": [],
+      "status": "needs review: no direct official-domain link in this row"
+    },
+    {
+      "page": "verify-a9c46f9b.html",
+      "data_row": 24,
+      "claim_excerpt": "Savings interest (taxable; tax-exempt added back) Countable Yes \u2014 HealthCare.gov lists interest + DHCS chart Yes \u2713 Verified",
+      "external_links": [],
+      "status": "needs review: no direct official-domain link in this row"
+    },
+    {
+      "page": "verify-a9c46f9b.html",
+      "data_row": 25,
+      "claim_excerpt": "Kalshi futures \u2014 capital gains treatment (Schedule D net) Countable as capital gains; net gains count Yes \u2014 DHCS chart \u201cCapital gain/loss\u201d = countable Yes (if net gain) \u2713 Verified \u2014 as a reporting option (no IRS ruling o",
+      "external_links": [],
+      "status": "needs review: no direct official-domain link in this row"
+    },
+    {
+      "page": "verify-a9c46f9b.html",
+      "data_row": 26,
+      "claim_excerpt": "Kalshi \u2014 if reclassified as gambling (W2-G) Gross winnings count; losses capped at 90% from 2026 (\u00a770114) Yes \u2014 IRS \u201cGambling winnings\u201d is MAGI income Yes, but phantom income risk \u2014 flagged \u2713 Verified \u2014 statutory 90% rul",
+      "external_links": [],
+      "status": "needs review: no direct official-domain link in this row"
+    },
+    {
+      "page": "verify-a9c46f9b.html",
+      "data_row": 27,
+      "claim_excerpt": "Kalshi \u2014 \u00a71256 claim (60/40) Presented as \u201caggressive, unverified\u201d \u2014 \u2014 Unverified \u2014 flagged on flagged.html",
+      "external_links": [],
+      "status": "needs review: no direct official-domain link in this row"
+    },
+    {
+      "page": "verify-a9c46f9b.html",
+      "data_row": 28,
+      "claim_excerpt": "Self-employment / property-manager pay if business Countable gross minus business expenses Yes \u2014 HealthCare.gov \u201cself-employment\u201d Yes \u2713 Verified",
+      "external_links": [],
+      "status": "needs review: no direct official-domain link in this row"
+    },
+    {
+      "page": "verify-a9c46f9b.html",
+      "data_row": 30,
+      "claim_excerpt": "138% = Medi-Cal cap Single $22,025/yr = $1,835/mo DHCS ACWDL 26-01 Encl.2 + CHCF; HHS ASPE math 1.38\u00d715,960=22,024.8\u219222,025 \u2713 Verified",
+      "external_links": [],
+      "status": "needs review: no direct official-domain link in this row"
+    },
+    {
+      "page": "verify-a9c46f9b.html",
+      "data_row": 31,
+      "claim_excerpt": "400% = Covered CA subsidy cap (cliff back Jan 1 2026) Single $63,840/yr = $5,320/mo IRS PTC rule 100\u2013400%; DHCS FPL chart; KFF/HealthInsurance.org confirm ARP credits expired Dec 31 2025 \u2713 Verified",
+      "external_links": [],
+      "status": "needs review: no direct official-domain link in this row"
+    },
+    {
+      "page": "verify-a9c46f9b.html",
+      "data_row": 32,
+      "claim_excerpt": "scripts/build_site.py 11 extended-analysis pages + shared nav/index \u2713 Built \u2014 11 pages, shared pages updated",
+      "external_links": [],
+      "status": "needs review: no direct official-domain link in this row"
+    },
+    {
+      "page": "verify-a9c46f9b.html",
+      "data_row": 33,
+      "claim_excerpt": "scripts/check_links.py All 46 published HTML pages, 264 extended rows, 40 official sources \u2713 All checks passed",
+      "external_links": [],
+      "status": "needs review: no direct official-domain link in this row"
+    },
+    {
+      "page": "verify-a9c46f9b.html",
+      "data_row": 34,
+      "claim_excerpt": "coverage-guide/scripts/check.py 7 pages, 65 rows, 18 sources, 84 local refs \u2713 PASS (65 rows, 18 sources, blank unverified)",
+      "external_links": [],
+      "status": "needs review: no direct official-domain link in this row"
+    },
+    {
+      "page": "verify-a9c46f9b.html",
+      "data_row": 35,
+      "claim_excerpt": "research/scripts/validate.py 9 pages, 52 findings \u2713 PASS (52 findings, local links/fragments resolve)",
+      "external_links": [],
+      "status": "needs review: no direct official-domain link in this row"
+    },
+    {
+      "page": "verify-a9c46f9b.html",
+      "data_row": 36,
+      "claim_excerpt": "F-01 / W-01 Kalshi \u2014 no IRS guidance on event contracts No Revenue Ruling/Reg on IRS.gov as of Oct 2026; site preserves all four possibilities",
+      "external_links": [],
+      "status": "needs review: no direct official-domain link in this row"
+    },
+    {
+      "page": "verify-a9c46f9b.html",
+      "data_row": 37,
+      "claim_excerpt": "F-02 / W- Kalshi \u00a71256 60/40 claim IRC \u00a71256(g)(1) requires daily mark-to-market; CFTC venue alone insufficient per practitioners",
+      "external_links": [],
+      "status": "needs review: no direct official-domain link in this row"
+    },
+    {
+      "page": "verify-a9c46f9b.html",
+      "data_row": 38,
+      "claim_excerpt": "F-04 / W-04 Coverage-loss estimates (1.1M, 1.4M, 3.4M, etc.) All are projections with differing models \u2014 shown as \u201c\u26a0 Projection\u201d",
+      "external_links": [],
+      "status": "needs review: no direct official-domain link in this row"
+    },
+    {
+      "page": "verify-a9c46f9b.html",
+      "data_row": 39,
+      "claim_excerpt": "F-05 / W-08 High-unemployment threshold county list Statutory formula known (8% or 1.5\u00d7 national), implementation county list not yet published",
+      "external_links": [],
+      "status": "needs review: no direct official-domain link in this row"
+    },
+    {
+      "page": "verify-a9c46f9b.html",
+      "data_row": 40,
+      "claim_excerpt": "F-06 / W-04 DHCS ACWDL 25-30 is preliminary; IFC post-dates it ACWDL says \u201cpreliminary\u201d and \u201cmay update\u201d \u2014 site notes this",
+      "external_links": [],
+      "status": "needs review: no direct official-domain link in this row"
+    },
+    {
+      "page": "verify-a9c46f9b.html",
+      "data_row": 41,
+      "claim_excerpt": "W-03 $580 wording: statute \u201cMAGI-based\u201d vs county \u201ctotal gross income\u201d vs member letter \u201cany source\u201d Three wordings for same test \u2014 materially same answer except near $580; flagged for county clarification",
+      "external_links": [],
+      "status": "needs review: no direct official-domain link in this row"
+    },
+    {
+      "page": "verify-a9c46f9b.html",
+      "data_row": 42,
+      "claim_excerpt": "W-05 $1 differences between two DHCS FPL documents ACWDL 26-01 vs dhcs.ca.gov eligibility chart \u2014 rounding artefact; immaterial",
+      "external_links": [],
+      "status": "needs review: no direct official-domain link in this row"
+    },
+    {
+      "page": "verify-a9c46f9b.html",
+      "data_row": 43,
+      "claim_excerpt": "W-07 Work program / community service definitions DHCS says \u201cfuture letter\u201d \u2014 pending",
+      "external_links": [],
+      "status": "needs review: no direct official-domain link in this row"
+    },
+    {
+      "page": "verify-a9c46f9b.html",
+      "data_row": 44,
+      "claim_excerpt": "W-09\u2013W-13 Personal eligibility (your county, household size, disability status, immigration history) Not observable from public sources \u2014 must be confirmed with county + tax pro",
+      "external_links": [],
+      "status": "needs review: no direct official-domain link in this row"
+    },
+    {
+      "page": "verify-a9c46f9b.html",
+      "data_row": 45,
+      "claim_excerpt": "C-01 DHCS ACWDL 25-30 upload path dated Apr 2025 but footer Dec 30 2025 \u2014 metadata mismatch noted on flagged page as I-01 Low Already flagged on site; content verified against body text (the $580 table p.7). No correctio",
+      "external_links": [],
+      "status": "needs review: no direct official-domain link in this row"
+    },
+    {
+      "page": "verify-a9c46f9b.html",
+      "data_row": 46,
+      "claim_excerpt": "C-02 Member letter (MEDIL I26-25) says rules \u201cwill not go into effect until March 2027\u201d while ACWDL 25-30 and statute say Jan 1 2027 Low Already flagged (W-04). Site uses Jan 1 2027 as the operative date and notes the me",
+      "external_links": [],
+      "status": "needs review: no direct official-domain link in this row"
+    },
+    {
+      "page": "verify-a9c46f9b.html",
+      "data_row": 47,
+      "claim_excerpt": "C-03 Some secondary sources round 138% FPL to $22,026 (old year) vs official $22,025 (2026) Low Site uses HHS ASPE 2026 math ($15,960 \u00d7 1.38 = 22,024.80 \u2192 22,025) \u2014 correct for 2026.",
+      "external_links": [],
+      "status": "needs review: no direct official-domain link in this row"
+    },
+    {
+      "page": "verify-a9c46f9b.html",
+      "data_row": 48,
+      "claim_excerpt": "C-04 KFF/CHCF/LA Times/CalMatters/CPA blogs appear as citations on a few core-guide rows alongside official sources; law.cornell.edu used for \u00a71256 text Low \u2014 editorial Values they support are also supported by an offici",
       "external_links": [],
       "status": "needs review: no direct official-domain link in this row"
     }
