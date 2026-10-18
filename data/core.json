@@ -1,0 +1,1671 @@
+{
+  "meta": {
+    "title": "California Healthcare & Work Requirements — Verified 2026 Guide",
+    "description": "Verified guide to Medi-Cal and Covered California for a California resident with zero earned income: the H.R.1 community engagement rule, California implementation, income counting, and every option.",
+    "updated": "2026-10-18",
+    "session": "arena/9ba14c05-maltaproj8",
+    "disclaimer": "Research compilation, not legal, tax, or eligibility advice. County eligibility staff make the final determination. Personal facts not supplied by the reader are left blank and flagged."
+  },
+  "sources": [
+    {
+      "id": "S01",
+      "short": "H.R.1 text",
+      "title": "H.R.1 (P.L. 119-21) — full text, §71107, §71119, §70114",
+      "publisher": "Congress.gov",
+      "url": "https://www.congress.gov/bill/119th-congress/house-bill/1/text",
+      "date": "2025-07-04",
+      "official": true
+    },
+    {
+      "id": "S02",
+      "short": "CRS R48633",
+      "title": "Health Provisions in P.L. 119-21, the FY2025 Reconciliation Law",
+      "publisher": "Congressional Research Service",
+      "url": "https://www.congress.gov/crs-product/R48633",
+      "date": "2025-08-18",
+      "official": true
+    },
+    {
+      "id": "S03",
+      "short": "CMS IFR",
+      "title": "Medicaid Program; Community Engagement Requirement for Certain Individuals (CMS-2454-IFC), 91 FR 33348",
+      "publisher": "Federal Register",
+      "url": "https://www.federalregister.gov/documents/2026/06/03/2026-11094/medicaid-program-community-engagement-requirement-for-certain-individuals",
+      "date": "2026-06-03",
+      "official": true
+    },
+    {
+      "id": "S04",
+      "short": "IFR correction",
+      "title": "Correction to CMS-2454-IFC, 91 FR 39028",
+      "publisher": "Federal Register",
+      "url": "https://www.federalregister.gov/documents/2026/06/29/C1-2026-11094/medicaid-program-community-engagement-requirement-for-certain-individuals",
+      "date": "2026-06-29",
+      "official": true
+    },
+    {
+      "id": "S05",
+      "short": "CMS fact sheet",
+      "title": "Medicaid Community Engagement Requirement for Certain Individuals — Interim Final Rule with Comment Period (CMS-2454-IFC)",
+      "publisher": "Centers for Medicare & Medicaid Services",
+      "url": "https://www.cms.gov/newsroom/fact-sheets/medicaid-community-engagement-requirement-certain-individuals-interim-final-rule-comment-period-cms",
+      "date": "2026-06-01",
+      "official": true
+    },
+    {
+      "id": "S06",
+      "short": "CMS CIB",
+      "title": "CMCS Informational Bulletin: Section 71119 requirements for states",
+      "publisher": "Medicaid.gov (CMS)",
+      "url": "https://www.medicaid.gov/federal-policy-guidance/downloads/cib12082025.pdf",
+      "date": "2025-12-08",
+      "official": true
+    },
+    {
+      "id": "S07",
+      "short": "CMS IFR slides",
+      "title": "Community Engagement Requirement for Certain Individuals — IFR Overview Slide Deck",
+      "publisher": "Medicaid.gov (CMS)",
+      "url": "https://www.medicaid.gov/medicaid/downloads/ce-requirement-ifc-deck.pdf",
+      "date": "2026-07",
+      "official": true
+    },
+    {
+      "id": "S08",
+      "short": "Medicaid.gov",
+      "title": "Community Engagement — Working Families Tax Cut legislation",
+      "publisher": "Medicaid.gov (CMS)",
+      "url": "https://www.medicaid.gov/resources-for-states/working-families-tax-cut-legislation/community-engagement",
+      "date": "2026",
+      "official": true
+    },
+    {
+      "id": "S09",
+      "short": "DHCS ACWDL 25-30",
+      "title": "Work and Community Engagement Requirements for New Adult Group (ACWDL 25-30)",
+      "publisher": "California Department of Health Care Services",
+      "url": "https://www.dhcs.ca.gov/wp-content/uploads/2026/04/25-30.pdf",
+      "date": "2025-12-30",
+      "official": true
+    },
+    {
+      "id": "S10",
+      "short": "DHCS MEDIL I26-25",
+      "title": "Six-Month Renewals and Work and Community Engagement Rules Outreach Letter (MEDIL I26-25)",
+      "publisher": "California Department of Health Care Services",
+      "url": "https://www.dhcs.ca.gov/wp-content/uploads/2026/09/MEDIL-I26-25.pdf",
+      "date": "2026-09-11",
+      "official": true
+    },
+    {
+      "id": "S11",
+      "short": "DHCS Medi-Cal Changes",
+      "title": "Medi-Cal Changes — work rules, six-month eligibility checks, copayments",
+      "publisher": "California Department of Health Care Services",
+      "url": "https://www.dhcs.ca.gov/medi-cal/updates/medi-cal-changes/",
+      "date": "2026-10-08",
+      "official": true
+    },
+    {
+      "id": "S12",
+      "short": "DHCS Tracking",
+      "title": "Tracking Federal Impact: Medi-Cal Eligibility",
+      "publisher": "California Department of Health Care Services",
+      "url": "https://www.dhcs.ca.gov/tracking-federal-impact-medi-cal-eligibility/",
+      "date": "2026-09-21",
+      "official": true
+    },
+    {
+      "id": "S13",
+      "short": "DHCS Implementation Plan",
+      "title": "Implementation Plan for New Federal Eligibility and Enrollment Changes under H.R.1",
+      "publisher": "California Department of Health Care Services",
+      "url": "https://www.dhcs.ca.gov/wp-content/uploads/2026/05/DHCS-HR1-Implementation-Plan.pdf",
+      "date": "2026-01-29",
+      "official": true
+    },
+    {
+      "id": "S14",
+      "short": "DHCS ACWDL 26-01",
+      "title": "2026 Federal Poverty Levels (ACWDL 26-01)",
+      "publisher": "California Department of Health Care Services",
+      "url": "https://www.dhcs.ca.gov/services/medi-cal/eligibility/letters/Documents/26-01.pdf",
+      "date": "2026-01-21",
+      "official": true
+    },
+    {
+      "id": "S15",
+      "short": "DHCS monthly FPL chart",
+      "title": "2026 FPL Calculation Chart (Monthly Values), Enclosure 1",
+      "publisher": "California Department of Health Care Services",
+      "url": "https://www.dhcs.ca.gov/services/medi-cal-resources/medi-cal-eligibility-division/all-county-welfare-directors-medi-cal-eligibility-division-information-letters/2026-fpl-calculation-chart-monthly-values-enclosure-1/",
+      "date": "2026",
+      "official": true
+    },
+    {
+      "id": "S16",
+      "short": "DHCS eligibility chart",
+      "title": "Eligibility by Federal Poverty Level",
+      "publisher": "California Department of Health Care Services",
+      "url": "https://www.dhcs.ca.gov/medi-cal/qualify/qualify-for-medi-cal-eligibility-chart/",
+      "date": "2026",
+      "official": true
+    },
+    {
+      "id": "S17",
+      "short": "HHS ASPE 2026",
+      "title": "2026 Poverty Guidelines",
+      "publisher": "U.S. Department of Health and Human Services, ASPE",
+      "url": "https://aspe.hhs.gov/topics/poverty-economic-mobility/poverty-guidelines",
+      "date": "2026-01-15",
+      "official": true
+    },
+    {
+      "id": "S18",
+      "short": "Covered CA 2026 subsidy",
+      "title": "2026 California State Premium Subsidy Program — policy explainer",
+      "publisher": "Covered California (HBEX)",
+      "url": "https://hbex.coveredca.com/stakeholders/PDFs/2026-02_StatePremiumSub_PolicyExplainer-Final.pdf",
+      "date": "2026-02-20",
+      "official": true
+    },
+    {
+      "id": "S19",
+      "short": "Covered CA changes",
+      "title": "Important Changes — 2026 coverage",
+      "publisher": "Covered California",
+      "url": "https://www.coveredca.com/important-changes",
+      "date": "2026",
+      "official": true
+    },
+    {
+      "id": "S20",
+      "short": "Covered CA 2027 rates",
+      "title": "Covered California Rates and Plans for 2027",
+      "publisher": "Covered California",
+      "url": "https://www.coveredca.com/press-releases/2026/07/21/covered-california-rates-and-plans-for-2027-california-continues-fight-for-health-insurance-affordability-and-access",
+      "date": "2026-07-21",
+      "official": true
+    },
+    {
+      "id": "S21",
+      "short": "Kalshi tax documents",
+      "title": "What Tax Documentation Does Kalshi Provide?",
+      "publisher": "Kalshi Help Center",
+      "url": "https://help.kalshi.com/en/articles/13823849-what-tax-documentation-does-kalshi-provide",
+      "date": "2026-06-22",
+      "official": true
+    },
+    {
+      "id": "S22",
+      "short": "CA AG lawsuit",
+      "title": "Attorney General Bonta Sues Trump Administration over Unlawful Implementation of Medicaid Work Requirements for Medically Frail Individuals",
+      "publisher": "California Department of Justice, Office of the Attorney General",
+      "url": "https://oag.ca.gov/news/press-releases/attorney-general-bonta-sues-trump-administration-over-unlawful-implementation",
+      "date": "2026-06-29",
+      "official": true
+    },
+    {
+      "id": "S23",
+      "short": "DHCS Budget Act",
+      "title": "2026-27 Budget Act — Department of Health Care Services Highlights",
+      "publisher": "California Department of Health Care Services",
+      "url": "https://www.dhcs.ca.gov/wp-content/uploads/2026/07/DHCS-FY-2026-27-Budget-Act-Highlights.pdf",
+      "date": "2026-07-01",
+      "official": true
+    },
+    {
+      "id": "S24",
+      "short": "CA Budget Summary",
+      "title": "2026-27 Budget Summary — Health and Human Services",
+      "publisher": "California Department of Finance (eBudget)",
+      "url": "https://ebudget.ca.gov/2026-27/pdf/BudgetSummary/HealthandHumanServices.pdf",
+      "date": "2026",
+      "official": true
+    },
+    {
+      "id": "S25",
+      "short": "LAO Medi-Cal",
+      "title": "The 2026-27 Budget: Medi-Cal Analysis",
+      "publisher": "California Legislative Analyst's Office",
+      "url": "https://lao.ca.gov/Publications/Report/5146",
+      "date": "2026-03-02",
+      "official": true
+    },
+    {
+      "id": "S26",
+      "short": "Assembly budget report",
+      "title": "Floor Report of the 2026-27 Budget",
+      "publisher": "California Assembly Budget Committee",
+      "url": "https://abgt.assembly.ca.gov/system/files/2026-06/floor-report-of-the-2026-27-budget-june-27-2026_5.pdf",
+      "date": "2026-06-27",
+      "official": true
+    },
+    {
+      "id": "S27",
+      "short": "IRS Pub 527",
+      "title": "Publication 527: Residential Rental Property",
+      "publisher": "Internal Revenue Service",
+      "url": "https://www.irs.gov/publications/p527",
+      "date": "2025",
+      "official": true
+    },
+    {
+      "id": "S28",
+      "short": "IRS Pub 525",
+      "title": "Publication 525: Taxable and Nontaxable Income",
+      "publisher": "Internal Revenue Service",
+      "url": "https://www.irs.gov/publications/p525",
+      "date": "2025",
+      "official": true
+    },
+    {
+      "id": "S29",
+      "short": "IRS Pub 550",
+      "title": "Publication 550: Investment Income and Expenses",
+      "publisher": "Internal Revenue Service",
+      "url": "https://www.irs.gov/publications/p550",
+      "date": "2025",
+      "official": true
+    },
+    {
+      "id": "S30",
+      "short": "IRS Topic 409",
+      "title": "Topic no. 409: Capital gains and losses",
+      "publisher": "Internal Revenue Service",
+      "url": "https://www.irs.gov/taxtopics/tc409",
+      "date": "2026",
+      "official": true
+    },
+    {
+      "id": "S31",
+      "short": "IRS PTC",
+      "title": "Eligibility for the Premium Tax Credit",
+      "publisher": "Internal Revenue Service",
+      "url": "https://www.irs.gov/affordable-care-act/individuals-and-families/eligibility-for-the-premium-tax-credit",
+      "date": "2025",
+      "official": true
+    },
+    {
+      "id": "S32",
+      "short": "HealthCare.gov income",
+      "title": "Income and household information",
+      "publisher": "HealthCare.gov (CMS)",
+      "url": "https://www.healthcare.gov/income-and-household-information/income/",
+      "date": "2026",
+      "official": true
+    },
+    {
+      "id": "S33",
+      "short": "42 CFR 435.603",
+      "title": "Application of modified adjusted gross income (MAGI)",
+      "publisher": "Electronic Code of Federal Regulations",
+      "url": "https://www.ecfr.gov/current/title-42/chapter-IV/subchapter-C/part-435/subpart-G/section-435.603",
+      "date": "2026-10-15",
+      "official": true
+    },
+    {
+      "id": "S34",
+      "short": "CRS R48755",
+      "title": "Work Requirements: Comparison of Medicaid and SNAP After P.L. 119-21",
+      "publisher": "Congressional Research Service",
+      "url": "https://www.congress.gov/crs-product/R48755",
+      "date": "2025-12-11",
+      "official": true
+    },
+    {
+      "id": "S35",
+      "short": "H.R. 10357",
+      "title": "H.R.10357 — Digital Asset Tax Certainty Act (introduced 09/14/2026; §701 wagering losses)",
+      "publisher": "Congress.gov",
+      "url": "https://www.congress.gov/bill/119th-congress/house-bill/10357/text",
+      "date": "2026-09-14",
+      "official": true
+    },
+    {
+      "id": "S36",
+      "short": "Rep. Titus release",
+      "title": "Rep. Dina Titus: Fix for Gambling Loss Deduction Passes Out of Committee",
+      "publisher": "U.S. House of Representatives",
+      "url": "https://titus.house.gov/news/documentsingle.aspx?DocumentID=5932",
+      "date": "2026-09-16",
+      "official": true
+    },
+    {
+      "id": "S37",
+      "short": "CFTC Kalshi DCM",
+      "title": "CFTC Designates KalshiEX LLC as a Contract Market",
+      "publisher": "Commodity Futures Trading Commission",
+      "url": "https://www.cftc.gov/PressRoom/PressReleases/8302-20",
+      "date": "2020-11-04",
+      "official": true
+    },
+    {
+      "id": "S38",
+      "short": "DHCS H.R.1 fact sheet",
+      "title": "H.R. 1 Implementation Fact Sheet",
+      "publisher": "California Department of Health Care Services",
+      "url": "https://www.dhcs.ca.gov/file/h-r-1-implementation-fact-sheet-pdf/",
+      "date": "2026-05",
+      "official": true
+    },
+    {
+      "id": "S39",
+      "short": "Covered CA help basics",
+      "title": "Financial Help Basics for Enrollers — Quick Guide",
+      "publisher": "Covered California (HBEX)",
+      "url": "https://hbex.coveredca.com/toolkit/downloads/Financial_Help_Basics.pdf",
+      "date": "2025-12-18",
+      "official": true
+    },
+    {
+      "id": "S40",
+      "short": "HRSA compliance",
+      "title": "Health Center Program Compliance Manual, Chapter 9: Sliding Fee Discount Program",
+      "publisher": "Health Resources and Services Administration",
+      "url": "https://bphc.hrsa.gov/compliance/compliance-manual/chapter9",
+      "date": "2026",
+      "official": true
+    }
+  ],
+  "key_numbers": [
+    {
+      "label": "Work-rule income test",
+      "value": "$580 / month",
+      "detail": "80 hours × $7.25 federal minimum wage (2026). One qualifying month per renewal period is enough.",
+      "source": "S06"
+    },
+    {
+      "label": "Medi-Cal income cap (single, 2026)",
+      "value": "$22,025 / year",
+      "detail": "138% of the 2026 federal poverty guideline ($15,960). DHCS publishes $1,836/month.",
+      "source": "S16"
+    },
+    {
+      "label": "Medi-Cal monthly cap (single, 2026)",
+      "value": "$1,836 / month",
+      "detail": "DHCS 2026 monthly FPL chart, 138% column, family size 1.",
+      "source": "S15"
+    },
+    {
+      "label": "Work rules start in California",
+      "value": "Jan 1, 2027",
+      "detail": "MAGI New Adult Group (aid code M1). Federal deadline; states may start sooner.",
+      "source": "S11"
+    },
+    {
+      "label": "First six-month renewals",
+      "value": "Mar 1, 2027",
+      "detail": "Six-month renewal policy is effective Jan 1, 2027; DHCS says first affected renewal dates begin March 1, 2027.",
+      "source": "S12"
+    },
+    {
+      "label": "Covered CA subsidy cliff (single, 2026)",
+      "value": "$63,840 / year",
+      "detail": "400% FPL. No federal premium tax credit above this line for 2026.",
+      "source": "S17"
+    }
+  ],
+  "profile": [
+    {
+      "fact": "Citizenship",
+      "value": "U.S. citizen (given)",
+      "status": "given",
+      "note": "If you are actually a lawful permanent resident (green-card holder), LPRs remain qualified non-citizens for federally funded Medi-Cal; the 2026 immigration-status narrowing does not apply to LPRs.",
+      "source": "S02"
+    },
+    {
+      "fact": "Residence",
+      "value": "California (given)",
+      "status": "given",
+      "note": "County not supplied. High-unemployment and disaster-county exemptions depend on county.",
+      "source": "S16"
+    },
+    {
+      "fact": "Work",
+      "value": "Property manager (given)",
+      "status": "given",
+      "note": "Not supplied: whether you receive free/reduced rent (in-kind work), a management fee (self-employment), or manage only your own property.",
+      "source": "S03"
+    },
+    {
+      "fact": "Trading",
+      "value": "Full-time Kalshi trader (given)",
+      "status": "given",
+      "note": "Kalshi event contracts are CFTC-regulated DCM products. Their federal tax classification is not settled; see flags.",
+      "source": "S37"
+    },
+    {
+      "fact": "Income sources",
+      "value": "Kalshi, rental, savings interest (given)",
+      "status": "given",
+      "note": "Dollar amounts not supplied. Every income figure on this site is an example, not your figure.",
+      "source": "S32"
+    },
+    {
+      "fact": "Earned income",
+      "value": "$0 (given)",
+      "status": "given",
+      "note": "Zero earned income does not mean zero MAGI. Rental, interest and realized gains are still income for Medi-Cal.",
+      "source": "S32"
+    },
+    {
+      "fact": "Age 19–64",
+      "value": "",
+      "status": "unverified",
+      "note": "The work rule applies only to adults 19–64 in the MAGI New Adult Group. Not supplied.",
+      "source": "S05"
+    },
+    {
+      "fact": "Household size",
+      "value": "",
+      "status": "unverified",
+      "note": "FPL examples on this site use a one-person household. Not supplied.",
+      "source": "S16"
+    },
+    {
+      "fact": "Pregnancy / disability / Medicare",
+      "value": "",
+      "status": "unverified",
+      "note": "Each can create a mandatory exception or exclusion. Not supplied.",
+      "source": "S05"
+    },
+    {
+      "fact": "Current coverage",
+      "value": "",
+      "status": "unverified",
+      "note": "Whether you are already on Medi-Cal, Covered California, or uninsured is not supplied.",
+      "source": "S11"
+    }
+  ],
+  "gates": [
+    {
+      "id": "G1",
+      "title": "Gate 1 — Are you in the Medi-Cal MAGI New Adult Group?",
+      "body": "Medi-Cal's MAGI New Adult Group covers adults ages 19–64 who are California residents, not pregnant, not entitled to or enrolled in Medicare, and whose household MAGI is at or below 138% of the federal poverty level. For a one-person household in 2026 that is $22,025/year or $1,836/month. There is no asset test for MAGI Medi-Cal.",
+      "if_yes": "Go to Gate 2. The work rule applies from Jan 1, 2027 unless you are excluded or exempt.",
+      "if_no": "You are not eligible for MAGI Medi-Cal. Covered California has no work requirement; subsidies run from 100% to 400% FPL, with a California state subsidy up to 165% FPL in 2026 and 200% FPL in 2027.",
+      "source": "S16"
+    },
+    {
+      "id": "G2",
+      "title": "Gate 2 — Can you show one qualifying month per renewal period?",
+      "body": "If you are in the MAGI New Adult Group and not excluded or exempt, you must demonstrate community engagement for at least one month between eligibility determinations (the months need not be consecutive). In that month you need one of: 80 hours of work (including in-kind or unpaid work), 80 hours of community service, 80 hours in a work program, at least half-time education, a combination totaling 80 hours, or income of at least $580.",
+      "if_yes": "You keep Medi-Cal for that renewal period, provided you also complete the renewal itself on time.",
+      "if_no": "The county must send a notice and give you 30 calendar days to show compliance or an exemption. Coverage continues during the cure period. If you do not cure, you can be disenrolled and you are NOT eligible for federal premium tax credits while deemed Medicaid-eligible.",
+      "source": "S09"
+    }
+  ],
+  "options": [
+    {
+      "id": "O1",
+      "option": "Medi-Cal — MAGI New Adult Group (aid code M1)",
+      "who": "Adults 19–64, California residents, not pregnant, not on Medicare, household MAGI ≤ 138% FPL ($22,025/yr or $1,836/mo for one person in 2026). No asset test.",
+      "work_rule": "Yes, from Jan 1, 2027, unless excluded or exempt. One qualifying month per renewal period.",
+      "cost": "$0 premium for most enrollees; cost sharing begins Oct 1, 2028 for some services.",
+      "how": "Apply year-round at BenefitsCal or your county Medi-Cal office.",
+      "source": "S11",
+      "status": "verified"
+    },
+    {
+      "id": "O2",
+      "option": "Medi-Cal — Aged, Blind and Disabled (non-MAGI)",
+      "who": "People 65+, blind, or disabled who meet the separate non-MAGI income and asset rules.",
+      "work_rule": "No. The community engagement rule applies to the MAGI New Adult Group, not this group.",
+      "cost": "Free or share-of-cost depending on income.",
+      "how": "Apply through your county; disability determination may be required.",
+      "source": "S11",
+      "status": "verified"
+    },
+    {
+      "id": "O3",
+      "option": "Covered California — with federal premium tax credit and/or state subsidy",
+      "who": "U.S. citizens and lawfully present immigrants with household income from 100% to 400% FPL who are not eligible for Medi-Cal. For 2026, 400% FPL is $63,840 for one person.",
+      "work_rule": "No work requirement. Eligibility is income-based.",
+      "cost": "2026 federal applicable percentage: 2.10% to 9.96% of household income for the benchmark Silver plan. California adds a state subsidy at or below 165% FPL in 2026 and 200% FPL in 2027.",
+      "how": "Apply at CoveredCA.com during open enrollment (Nov 1–Jan 31) or a special enrollment period.",
+      "source": "S18",
+      "status": "verified"
+    },
+    {
+      "id": "O4",
+      "option": "Covered California — full price, no subsidy",
+      "who": "Household income above 400% FPL, or otherwise ineligible for financial help.",
+      "work_rule": "No work requirement.",
+      "cost": "Full premium. No official statewide average premium is published for your profile, so this site leaves the dollar figure blank and flags it.",
+      "how": "Apply at CoveredCA.com; compare plans by region and metal tier.",
+      "source": "S19",
+      "status": "verified"
+    },
+    {
+      "id": "O5",
+      "option": "Medicare",
+      "who": "People 65+ or under 65 with certain disabilities or end-stage renal disease.",
+      "work_rule": "No. Medicare Part A or B enrollment is a mandatory exception to the Medicaid work rule.",
+      "cost": "Federal Medicare premiums, deductibles and cost sharing apply; Medi-Cal may help with some costs for dual eligibles.",
+      "how": "Apply through Social Security.",
+      "source": "S05",
+      "status": "verified"
+    },
+    {
+      "id": "O6",
+      "option": "Community health centers — sliding-fee care",
+      "who": "Anyone, regardless of insurance or income. This is access to care, not comprehensive insurance.",
+      "work_rule": "No work requirement.",
+      "cost": "Sliding fee based on income; HRSA requires a full discount at or below 100% FPL, with possible nominal charges.",
+      "how": "Find a HRSA-funded health center and ask for the sliding-fee program.",
+      "source": "S40",
+      "status": "verified"
+    }
+  ],
+  "pathways": [
+    {
+      "id": "P1",
+      "path": "In-kind property-management work",
+      "statute": "SSA §1902(xx)(2)(A); 42 CFR 435.552(b)",
+      "what": "At least 80 hours per month of work. The federal rule defines work to include work in exchange for goods or services (“in-kind” work) and expressly says a property manager or building superintendent who receives free or reduced rent can count the hours spent on those duties.",
+      "earned": "No cash pay required",
+      "hours": "80 hrs/month",
+      "fit": "Strongest fit if you manage the building where you live or receive free/reduced rent for management duties.",
+      "source": "S03",
+      "status": "verified",
+      "note": "The federal rule is explicit. The county's documentation process for in-kind work is not yet published; keep a duty list, rent-credit agreement, and monthly hours log."
+    },
+    {
+      "id": "P2",
+      "path": "Self-employment work",
+      "statute": "42 CFR 435.552(b); DHCS ACWDL 25-30",
+      "what": "At least 80 hours per month of self-employment. DHCS lists self-employment as work. Actively managing rental property can be documented as self-employment activity even if the IRS treats the rental income as passive.",
+      "earned": "No W-2 required",
+      "hours": "80 hrs/month",
+      "fit": "Good fit if you actively manage your own rental property (showings, leasing, repairs, bookkeeping).",
+      "source": "S09",
+      "status": "verified-nuance",
+      "note": "The IRS passive-activity label does not decide the Medicaid work test, but the county may ask for proof of the activity. Confirm how your county will count owner-management hours."
+    },
+    {
+      "id": "P3",
+      "path": "$580/month income from any source",
+      "statute": "SSA §1902(xx)(2)(F); DHCS MEDIL I26-25",
+      "what": "Monthly income of at least $580. DHCS's official member outreach letter says “income from any source of at least $580 (before taxes) in any month since your last renewal.” ACWDL 25-30 says “total gross income.” CMS says states must use MAGI-based monthly household income.",
+      "earned": "No",
+      "hours": "None",
+      "fit": "Good fit if rental, interest, or realized Kalshi gains reach $580 in at least one month per renewal period.",
+      "source": "S10",
+      "status": "verified-nuance",
+      "note": "Gross-versus-net and individual-versus-household are not fully aligned across DHCS and CMS. See Flag FL-07 and FL-08."
+    },
+    {
+      "id": "P4",
+      "path": "Six-month average for seasonal or fluctuating income",
+      "statute": "SSA §1902(xx)(2)(G); DHCS ACWDL 25-30",
+      "what": "Average monthly income over the preceding six months of at least $580. Federal statute limits this to a “seasonal worker” as defined in IRC §45R(d)(5)(B). DHCS guidance also applies it to people whose hours change frequently or who have seasonal jobs.",
+      "earned": "No",
+      "hours": "None",
+      "fit": "Useful if Kalshi or rental income is lumpy and some months fall below $580.",
+      "source": "S07",
+      "status": "verified-nuance",
+      "note": "Federal and state wording differ. The state formulation is broader than the federal seasonal-worker limitation; this is flagged."
+    },
+    {
+      "id": "P5",
+      "path": "Community service or volunteering",
+      "statute": "SSA §1902(xx)(2)(B); 42 CFR 435.552(b)",
+      "what": "At least 80 hours per month of unpaid work with a structured program that benefits the community, under a public or nonprofit organization that tracks hours and can confirm them through a named contact. It cannot serve a partisan purpose.",
+      "earned": "No",
+      "hours": "80 hrs/month",
+      "fit": "Fallback if the work and income routes do not fit.",
+      "source": "S07",
+      "status": "verified",
+      "note": "Keep a signed hour log and the organization's contact information."
+    },
+    {
+      "id": "P6",
+      "path": "Work program or job training",
+      "statute": "SSA §1902(xx)(2)(C); 42 CFR 435.552(b)",
+      "what": "At least 80 hours per month in a work program as defined in section 6(o)(1) of the Food and Nutrition Act of 2008, including certain state employment and training programs and veterans' training programs.",
+      "earned": "No",
+      "hours": "80 hrs/month",
+      "fit": "Fallback; requires a qualifying program.",
+      "source": "S07",
+      "status": "verified",
+      "note": "Ask the county which local programs qualify before enrolling."
+    },
+    {
+      "id": "P7",
+      "path": "Education at least half-time",
+      "statute": "SSA §1902(xx)(2)(D); 42 CFR 435.552(b)",
+      "what": "Enrollment in an educational program at least half-time. The school or institution determines full-time, half-time, or less-than-half-time status. Less-than-half-time credit hours can be converted to hours (credit hours × 3 × 4.33) and combined with other activities.",
+      "earned": "No",
+      "hours": "No fixed floor if half-time",
+      "fit": "Fallback; tuition may apply.",
+      "source": "S07",
+      "status": "verified",
+      "note": "The site does not assume a fixed “6 credits” definition; the institution's determination controls."
+    },
+    {
+      "id": "P8",
+      "path": "Combination of activities",
+      "statute": "SSA §1902(xx)(2)(E)",
+      "what": "Any combination of work, community service, work program, and less-than-half-time education totaling at least 80 hours in the month.",
+      "earned": "No",
+      "hours": "80 hrs combined",
+      "fit": "Useful if no single activity reaches 80 hours.",
+      "source": "S01",
+      "status": "verified",
+      "note": "Hours must be documented activity by activity."
+    },
+    {
+      "id": "P9",
+      "path": "Exclusion, mandatory exception, or short-term hardship",
+      "statute": "SSA §1902(xx)(3), (9); DHCS ACWDL 25-30",
+      "what": "Certain people are excluded from the rule or deemed compliant: former foster youth under 26, American Indians/Alaska Natives, parents/caretakers of a child 13 or younger or a disabled person, veterans with a total disability rating, medically frail people, TANF/SNAP work-requirement compliance, SUD treatment participants, inmates, pregnant/postpartum people, people under 19, people on Medicare, and people in a high-unemployment or disaster county. Inpatient care and medical travel can be short-term hardships if requested.",
+      "earned": "No",
+      "hours": "None",
+      "fit": "Depends on personal facts not supplied. Ask the county to screen for every exclusion first.",
+      "source": "S09",
+      "status": "verified",
+      "note": "The IFR narrows the “medically frail” definition; that narrowing is being challenged in court. See FL-19."
+    }
+  ],
+  "findings": [
+    {
+      "id": "F01",
+      "category": "Law",
+      "finding": "The community engagement requirement is in H.R.1 §71119",
+      "value": "New SSA §1902(xx); P.L. 119-21",
+      "detail": "H.R.1, the FY2025 reconciliation law, added a new subsection (xx) to section 1902 of the Social Security Act requiring states to condition Medicaid eligibility for “applicable individuals” on community engagement.",
+      "source": "S01",
+      "status": "verified"
+    },
+    {
+      "id": "F02",
+      "category": "Law",
+      "finding": "Enactment date",
+      "value": "July 4, 2025",
+      "detail": "Signed as Public Law 119-21. CMS refers to it as the Working Families Tax Cut legislation.",
+      "source": "S01",
+      "status": "verified"
+    },
+    {
+      "id": "F03",
+      "category": "Law",
+      "finding": "Federal effective date",
+      "value": "January 1, 2027",
+      "detail": "States must implement no later than January 1, 2027, unless granted a good-faith effort exemption; a state may implement sooner. The IFR is effective July 31, 2026.",
+      "source": "S03",
+      "status": "verified"
+    },
+    {
+      "id": "F04",
+      "category": "Law",
+      "finding": "Who is an applicable individual",
+      "value": "Adults 19–64 in the ACA adult group or certain section 1115 demonstrations",
+      "detail": "Non-pregnant adults aged 19 through 64 who are not entitled to or enrolled in Medicare and who are eligible for or enrolled in the Medicaid adult group or a section 1115 demonstration providing minimum essential coverage.",
+      "source": "S05",
+      "status": "verified"
+    },
+    {
+      "id": "F05",
+      "category": "Law",
+      "finding": "Qualifying activities",
+      "value": "Work, community service, work program, half-time education, or a combination — at least 80 hours",
+      "detail": "SSA §1902(xx)(2)(A)–(E). The activities can be combined to reach 80 hours in a month.",
+      "source": "S01",
+      "status": "verified"
+    },
+    {
+      "id": "F06",
+      "category": "Law",
+      "finding": "Income alternative",
+      "value": "$580 per month (80 × $7.25)",
+      "detail": "A monthly income not less than the federal minimum wage multiplied by 80 hours. The federal minimum wage is $7.25 in 2026, so the threshold is $580.",
+      "source": "S06",
+      "status": "verified"
+    },
+    {
+      "id": "F07",
+      "category": "Law",
+      "finding": "Seasonal-worker alternative",
+      "value": "Average of at least $580 per month over the preceding 6 months",
+      "detail": "The statute limits this alternative to a seasonal worker as described in IRC §45R(d)(5)(B).",
+      "source": "S06",
+      "status": "verified"
+    },
+    {
+      "id": "F08",
+      "category": "Law",
+      "finding": "Verification and cure",
+      "value": "Reliable information first; 30-day notice; coverage continues",
+      "detail": "The state must attempt to verify with reliable information available to it before asking the individual for more. If it cannot verify, it must send a notice of noncompliance and allow 30 calendar days to demonstrate compliance or an exemption. Services continue during the cure period.",
+      "source": "S03",
+      "status": "verified"
+    },
+    {
+      "id": "F09",
+      "category": "Law",
+      "finding": "Renewal standard",
+      "value": "One or more months between determinations; months need not be consecutive",
+      "detail": "CMS interprets the statute to mean a beneficiary is compliant if they demonstrated community engagement for the number of months the state specifies during any part of the eligibility period.",
+      "source": "S06",
+      "status": "verified"
+    },
+    {
+      "id": "F10",
+      "category": "Law",
+      "finding": "Consequence of noncompliance",
+      "value": "Denial or disenrollment after cure; no federal premium tax credit while deemed Medicaid-eligible",
+      "detail": "A person who does not comply is still deemed Medicaid-eligible but is not eligible for federal subsidies to buy coverage through the exchanges. This is the most important trap in the law.",
+      "source": "S02",
+      "status": "verified"
+    },
+    {
+      "id": "F11",
+      "category": "Law",
+      "finding": "Six-month renewals",
+      "value": "Policy effective January 1, 2027; California's first affected renewal dates begin March 1, 2027",
+      "detail": "SSA §71107 requires redeterminations every six months for the adult expansion group. DHCS says the policy is effective January 1, 2027, but the first impacted members are expected to have renewal dates beginning in March 2027.",
+      "source": "S11",
+      "status": "verified-nuance"
+    },
+    {
+      "id": "F12",
+      "category": "Law",
+      "finding": "Cost sharing from October 1, 2028",
+      "value": "Up to $35 per service for some expansion enrollees above 100% FPL",
+      "detail": "SSA §71120. Primary care, mental health, substance use disorder, FQHC, CCBHC and RHC services are excluded; prescription drugs remain subject to cost sharing.",
+      "source": "S02",
+      "status": "verified"
+    },
+    {
+      "id": "F13",
+      "category": "Law",
+      "finding": "Territories",
+      "value": "Not subject",
+      "detail": "Section 1902(xx) applies to the 50 states and the District of Columbia, not U.S. territories.",
+      "source": "S06",
+      "status": "verified"
+    },
+    {
+      "id": "F14",
+      "category": "Law",
+      "finding": "Section 1115 waiver",
+      "value": "Cannot waive the requirement",
+      "detail": "The community engagement provisions cannot be waived under section 1115 demonstration authority.",
+      "source": "S06",
+      "status": "verified"
+    },
+    {
+      "id": "F15",
+      "category": "Law",
+      "finding": "The IFR was corrected on June 29, 2026",
+      "value": "91 FR 39028 (C1-2026-11094)",
+      "detail": "The correction replaces 42 CFR 435.557–435.558 and addresses verification, including the requirement to check all reliable information before requesting documentation. The site relies on the corrected text.",
+      "source": "S04",
+      "status": "verified"
+    },
+    {
+      "id": "F16",
+      "category": "Law",
+      "finding": "Multistate lawsuit challenges the IFR's medically-frail definition",
+      "value": "Commonwealth of Massachusetts et al. v. Mehmet Oz, filed June 29, 2026; California, Massachusetts and New Jersey co-lead",
+      "detail": "The complaint challenges the IFR's narrowing of the statutory “medically frail” protection, among other claims. The case is pending. California is a co-lead, not the sole lead plaintiff; the caption names Massachusetts first.",
+      "source": "S22",
+      "status": "verified"
+    },
+    {
+      "id": "F17",
+      "category": "Law",
+      "finding": "State count differs across official sources",
+      "value": "CMS: 43 states + DC provide coverage to these populations. CRS: 40 states + DC adopted the ACA expansion (Aug 2025).",
+      "detail": "The figures measure different things and different dates. The site does not use either figure to decide California eligibility.",
+      "source": "S05",
+      "status": "flagged"
+    },
+    {
+      "id": "F18",
+      "category": "California",
+      "finding": "California work-rule start date",
+      "value": "January 1, 2027",
+      "detail": "DHCS applies the rule to the MAGI New Adult Group (aid code M1). New applications on or after January 1, 2027 are screened; existing members are screened at their next renewal.",
+      "source": "S11",
+      "status": "verified"
+    },
+    {
+      "id": "F19",
+      "category": "California",
+      "finding": "First six-month renewals",
+      "value": "March 1, 2027",
+      "detail": "DHCS says some adults 19–64 in the ACA expansion group will have eligibility checked twice a year starting March 1, 2027.",
+      "source": "S11",
+      "status": "verified"
+    },
+    {
+      "id": "F20",
+      "category": "California",
+      "finding": "DHCS outreach letter says the rules start in March 2027",
+      "value": "Conflict with DHCS's January 1, 2027 work-rule date",
+      "detail": "The MEDIL I26-25 member letter says “these rules will not go into effect until March 2027.” DHCS's public Medi-Cal Changes page and Tracking page say the work rules start January 1, 2027, while six-month renewals start March 1, 2027. The letter appears to conflate the two dates. Flagged for the county or DHCS to clarify.",
+      "source": "S10",
+      "status": "flagged"
+    },
+    {
+      "id": "F21",
+      "category": "California",
+      "finding": "DHCS says income from any source counts",
+      "value": "“Income from any source of at least $580 (before taxes) in any month since your last renewal”",
+      "detail": "This is the clearest official statement that unearned income can satisfy the work rule. It appears in the member outreach letter enclosed with MEDIL I26-25.",
+      "source": "S10",
+      "status": "verified"
+    },
+    {
+      "id": "F22",
+      "category": "California",
+      "finding": "ACWDL says total gross income for a month",
+      "value": "“An individual's total gross income for a month must meet or exceed this amount”",
+      "detail": "ACWDL 25-30 also lists unemployment benefits, State Disability Insurance, retirement income and dividends as countable examples.",
+      "source": "S09",
+      "status": "verified"
+    },
+    {
+      "id": "F23",
+      "category": "California",
+      "finding": "CMS says use MAGI-based monthly household income",
+      "value": "MAGI-based monthly household income",
+      "detail": "The CMS IFR overview slide deck states that states must use MAGI-based monthly household income to determine compliance with the income test, generally the same methodology used for financial eligibility.",
+      "source": "S07",
+      "status": "verified"
+    },
+    {
+      "id": "F24",
+      "category": "California",
+      "finding": "Gross versus net rental income for the $580 test is unresolved",
+      "value": "DHCS ACWDL: gross. CMS slides: MAGI (net).",
+      "detail": "For a rental owner, gross rents and net Schedule E income can differ materially. The site does not assert which figure the county will use. Flagged.",
+      "source": "S09",
+      "status": "flagged"
+    },
+    {
+      "id": "F25",
+      "category": "California",
+      "finding": "California applies six-month averaging more broadly than the federal statute",
+      "value": "DHCS: people whose hours change frequently or who have seasonal jobs. Federal: seasonal workers only.",
+      "detail": "ACWDL 25-30 and MEDIL I26-25 extend averaging to fluctuating income. The federal statute limits the alternative to a seasonal worker under IRC §45R(d)(5)(B). Flagged.",
+      "source": "S10",
+      "status": "flagged"
+    },
+    {
+      "id": "F26",
+      "category": "California",
+      "finding": "California lists the federal exclusions and exceptions",
+      "value": "Medicare, high-unemployment county, disaster county, parents of a child 13 or younger, medically frail, and others",
+      "detail": "ACWDL 25-30 sets out the exemption table counties must apply. The high-unemployment and disaster-county exemptions apply by residence; inpatient and medical-travel hardships must be requested.",
+      "source": "S09",
+      "status": "verified"
+    },
+    {
+      "id": "F27",
+      "category": "California",
+      "finding": "High-unemployment threshold",
+      "value": "At or above the lesser of 8% or 1.5 times the national unemployment rate",
+      "detail": "The statutory standard is the lesser of the two. The CMS fact sheet phrases it less precisely; the statute and the CMS CIB control.",
+      "source": "S06",
+      "status": "verified"
+    },
+    {
+      "id": "F28",
+      "category": "California",
+      "finding": "Counties must try ex parte verification first",
+      "value": "Check reliable information before requesting documents",
+      "detail": "The corrected IFR requires the agency to check all reliable information available before requesting additional information from the individual.",
+      "source": "S04",
+      "status": "verified"
+    },
+    {
+      "id": "F29",
+      "category": "California",
+      "finding": "Coverage continues during the 30-day cure period",
+      "value": "Yes",
+      "detail": "The state must provide the individual 30 calendar days from the notice to demonstrate compliance or an exemption. Services continue during that period.",
+      "source": "S09",
+      "status": "verified"
+    },
+    {
+      "id": "F30",
+      "category": "California",
+      "finding": "The $1.1 billion figure is not work-rule implementation money",
+      "value": "Work-rule implementation: $0. Enacted H.R.1 Medi-Cal cost: about $1.3B General Fund (2026-27)",
+      "detail": "The $1.1B figure in the January 2026 budget summary is the projected MCO-tax transition cost, and separately the ongoing General Fund cost of extending full-scope coverage to affected immigrants. Neither is a work-rule fund. The enacted 2026-27 Budget Act highlights reflect about $1.3B General Fund in H.R.1-related Medi-Cal costs; county eligibility workload is funded at $196.8M General Fund.",
+      "source": "S23",
+      "status": "verified"
+    },
+    {
+      "id": "F31",
+      "category": "California",
+      "finding": "County eligibility workload funding",
+      "value": "$196.8M General Fund (DHCS); the Assembly floor report rounds to $197M",
+      "detail": "The DHCS 2026-27 Budget Act highlights state $709M one-time ($196.8M General Fund) for county workload implementing H.R.1 eligibility changes. The Assembly floor report describes the same item as $197M.",
+      "source": "S23",
+      "status": "verified"
+    },
+    {
+      "id": "F32",
+      "category": "California",
+      "finding": "California projects savings and disenrollment from the work rule",
+      "value": "Work rule: $357.6M ($90.3M GF) savings and 43,000 disenrollments in 2026-27, 1.1M by 2029-30. All H.R.1 provisions: 44,000 and 1.3M.",
+      "detail": "These are the administration's enacted-budget projections. The 43,000/1.1M figures are specific to the work and community engagement requirement; 44,000/1.3M cover all H.R.1 eligibility changes. They do not establish that every disenrollment is a work-rule failure.",
+      "source": "S23",
+      "status": "verified"
+    },
+    {
+      "id": "F33",
+      "category": "California",
+      "finding": "Covered California has no work requirement",
+      "value": "None",
+      "detail": "Covered California eligibility and financial help are income-based. The federal community engagement rule is a Medicaid rule and does not apply to the marketplace.",
+      "source": "S18",
+      "status": "verified"
+    },
+    {
+      "id": "F34",
+      "category": "California",
+      "finding": "California state premium subsidy",
+      "value": "2026: at or below 165% FPL; 0% of income below 150% FPL and 3.19%–3.91% from 150% to 165%",
+      "detail": "The 2026 state subsidy preserves IRA-level help up to 150% FPL and lowers premiums between 150% and 165% FPL. The 2027 expansion to 200% FPL is a separate finding (F65).",
+      "source": "S18",
+      "status": "verified"
+    },
+    {
+      "id": "F35",
+      "category": "California",
+      "finding": "No blanket California exemption for zero-earned-income adults",
+      "value": "No such exemption appears in DHCS guidance",
+      "detail": "California implements the federal exclusions and exceptions. The relief for a zero-earned-income adult is the income test, in-kind or self-employment work, community service, education, a work program, or a personal exclusion. The site found no general state waiver for zero earned income in ACWDL 25-30 or the Medi-Cal Changes page.",
+      "source": "S09",
+      "status": "verified"
+    },
+    {
+      "id": "F36",
+      "category": "Income",
+      "finding": "Rental income counts in MAGI on a net basis",
+      "value": "Net rental income after allowable expenses",
+      "detail": "MAGI starts with adjusted gross income. Rental real estate is reported on Schedule E after expenses. 42 CFR 435.603 sets the MAGI methodology; IRS Pub 527 explains rental income and expenses.",
+      "source": "S33",
+      "status": "verified"
+    },
+    {
+      "id": "F37",
+      "category": "Income",
+      "finding": "Rental income for the $580 test may be counted gross or net",
+      "value": "Unresolved",
+      "detail": "DHCS ACWDL 25-30 says total gross income; CMS says MAGI-based monthly household income. The site flags this rather than inferring a value.",
+      "source": "S09",
+      "status": "flagged"
+    },
+    {
+      "id": "F38",
+      "category": "Income",
+      "finding": "Savings interest counts in MAGI",
+      "value": "Taxable interest and tax-exempt interest are included",
+      "detail": "MAGI includes tax-exempt interest that is excluded from AGI. HealthCare.gov's income page and 42 CFR 435.603 describe the MAGI treatment.",
+      "source": "S32",
+      "status": "verified"
+    },
+    {
+      "id": "F39",
+      "category": "Income",
+      "finding": "Kalshi trading gains are taxable income under IRC §61",
+      "value": "Yes, when recognized",
+      "detail": "There is no exclusion for event-contract gains. The open question is how they are classified, not whether they are taxable.",
+      "source": "S28",
+      "status": "verified"
+    },
+    {
+      "id": "F40",
+      "category": "Income",
+      "finding": "No IRS guidance specific to Kalshi event contracts was located",
+      "value": "Unsettled: capital, ordinary, section 1256, or gambling",
+      "detail": "IRS publications describe the general frameworks but do not name Kalshi-type event contracts. The site treats the classification as unresolved and flags it.",
+      "source": "S29",
+      "status": "flagged"
+    },
+    {
+      "id": "F41",
+      "category": "Income",
+      "finding": "Kalshi's tax forms do not report event-contract trading profit",
+      "value": "1099-INT (interest), 1099-MISC (credits/rewards), 1099-B (crypto transfers), 1099-DA (ZeroHash digital assets); P&L statement for trading",
+      "detail": "Kalshi's own help center lists those four forms. None is described as reporting event-contract trading profit or loss; the P&L statement is a tool, not a tax form.",
+      "source": "S21",
+      "status": "verified"
+    },
+    {
+      "id": "F42",
+      "category": "Income",
+      "finding": "Section 1256 applicability is uncertain",
+      "value": "Kalshi is a CFTC designated contract market, but event contracts are described as swaps, not necessarily regulated futures contracts under IRC §1256",
+      "detail": "The CFTC designated KalshiEX as a DCM in 2020. Section 1256 applies to specified contracts; whether Kalshi event contracts qualify is a legal question the IRS has not resolved. Flagged.",
+      "source": "S37",
+      "status": "flagged"
+    },
+    {
+      "id": "F43",
+      "category": "Income",
+      "finding": "Gambling treatment is the worst outcome for a trader",
+      "value": "Winnings are gross income; losses are itemized deductions only up to winnings; the 90% loss cap applies for tax years after 2025",
+      "detail": "H.R.1 §70114 amended IRC §165(d) to limit wagering-loss deductions to 90% of losses. If Kalshi gains were treated as gambling, a break-even trader could owe tax on phantom income.",
+      "source": "S02",
+      "status": "verified"
+    },
+    {
+      "id": "F44",
+      "category": "Income",
+      "finding": "H.R. 10357 would restore the 100% wagering-loss deduction",
+      "value": "Introduced September 14, 2026; Ways and Means approved 38–5 on September 16, 2026; not enacted",
+      "detail": "The bill is the Digital Asset Tax Certainty Act. Title VII contains the wagering-loss provision. It has not passed the House or Senate, so the 90% cap remains current law.",
+      "source": "S35",
+      "status": "verified"
+    },
+    {
+      "id": "F45",
+      "category": "Income",
+      "finding": "Zero earned income does not mean zero MAGI",
+      "value": "Rental, interest and capital gains are MAGI even though they are unearned",
+      "detail": "The Medi-Cal eligibility test and the work-rule income test both look at income, not wages. A person with substantial rental or trading income can be over the Medi-Cal limit even with no W-2.",
+      "source": "S32",
+      "status": "verified"
+    },
+    {
+      "id": "F46",
+      "category": "Income",
+      "finding": "MAGI Medi-Cal has no asset test",
+      "value": "No resource test",
+      "detail": "42 CFR 435.603(g) prohibits applying an assets or resources test to individuals whose eligibility is determined under the MAGI methodology.",
+      "source": "S33",
+      "status": "verified"
+    },
+    {
+      "id": "F47",
+      "category": "Income",
+      "finding": "MAGI is household income",
+      "value": "Household size and tax filing status matter",
+      "detail": "42 CFR 435.603 defines household income by summing the MAGI-based income of every individual in the household. The site's examples use a one-person household because the reader's household size was not supplied.",
+      "source": "S33",
+      "status": "verified"
+    },
+    {
+      "id": "F48",
+      "category": "Income",
+      "finding": "A lump sum counts in the month received",
+      "value": "Yes",
+      "detail": "42 CFR 435.603(e)(1) counts a lump sum as income only in the month received. This can matter for a large Kalshi payout or a retroactive rent payment.",
+      "source": "S33",
+      "status": "verified"
+    },
+    {
+      "id": "F49",
+      "category": "Work rules",
+      "finding": "In-kind work counts",
+      "value": "Work in exchange for goods or services counts toward 80 hours",
+      "detail": "42 CFR 435.552(b), as described in the IFR. The IFR gives the example of a property manager or building superintendent who receives free or reduced rent; the hours spent on those duties count.",
+      "source": "S03",
+      "status": "verified"
+    },
+    {
+      "id": "F50",
+      "category": "Work rules",
+      "finding": "Unpaid work and internships count",
+      "value": "Yes, other than community service",
+      "detail": "The IFR defines work to include unpaid work other than community service, such as an internship or an unpaid trial period.",
+      "source": "S03",
+      "status": "verified"
+    },
+    {
+      "id": "F51",
+      "category": "Work rules",
+      "finding": "Self-employment counts",
+      "value": "Yes",
+      "detail": "DHCS lists self-employment as work. The IFR's definition of work is not limited to W-2 employment.",
+      "source": "S09",
+      "status": "verified"
+    },
+    {
+      "id": "F52",
+      "category": "Work rules",
+      "finding": "Community service has structural requirements",
+      "value": "Unpaid, structured, public or nonprofit oversight, hours tracked, named contact, nonpartisan",
+      "detail": "The organization must be able to confirm the dates, times, type of activity and hours. Informal help to a neighbor does not qualify.",
+      "source": "S07",
+      "status": "verified"
+    },
+    {
+      "id": "F53",
+      "category": "Work rules",
+      "finding": "The school determines half-time status",
+      "value": "Institution's determination controls",
+      "detail": "For less-than-half-time students using credit hours, states multiply credit hours by 3 to get hours per week and by 4.33 to get monthly hours.",
+      "source": "S07",
+      "status": "verified"
+    },
+    {
+      "id": "F54",
+      "category": "Work rules",
+      "finding": "Activities can be combined",
+      "value": "Yes, up to 80 hours total",
+      "detail": "Work, community service, work program, and less-than-half-time education hours can be added together.",
+      "source": "S07",
+      "status": "verified"
+    },
+    {
+      "id": "F55",
+      "category": "Work rules",
+      "finding": "Income can be converted to hours",
+      "value": "State option: divide monthly income by the federal minimum wage",
+      "detail": "If verified income is below $580 and the state has no hours documentation, the state may divide income by $7.25 to calculate hours, which can then be combined with other activities.",
+      "source": "S07",
+      "status": "verified"
+    },
+    {
+      "id": "F56",
+      "category": "Work rules",
+      "finding": "Documentation rules tighten in 2028",
+      "value": "Beginning January 1, 2028, documentation must be required when reasonably available",
+      "detail": "Through 2027 states have flexibility; the correction to the IFR addresses documentation and reliable-information checks.",
+      "source": "S04",
+      "status": "verified"
+    },
+    {
+      "id": "F57",
+      "category": "Work rules",
+      "finding": "Kalshi products are not necessarily “futures” for tax purposes",
+      "value": "CFTC-regulated event contracts on a designated contract market",
+      "detail": "KalshiEX has been a CFTC DCM since 2020. Its event contracts are economically binary contracts; whether they are “regulated futures contracts” under IRC §1256 is a separate tax question. Flagged.",
+      "source": "S37",
+      "status": "flagged"
+    },
+    {
+      "id": "F58",
+      "category": "Work rules",
+      "finding": "Application look-back",
+      "value": "At least the month immediately before application; states may require up to three consecutive months",
+      "detail": "CMS describes the state option in the CIB. California's ACWDL uses the month immediately preceding the month of application as the look-back month.",
+      "source": "S06",
+      "status": "verified"
+    },
+    {
+      "id": "F59",
+      "category": "Work rules",
+      "finding": "Renewal look-back",
+      "value": "Any one or more months between determinations; need not be consecutive",
+      "detail": "California's ACWDL says participation in one or more months (which do not have to be consecutive) is sufficient at renewal.",
+      "source": "S09",
+      "status": "verified"
+    },
+    {
+      "id": "F60",
+      "category": "Coverage",
+      "finding": "Medi-Cal income limit for a single adult in 2026",
+      "value": "$22,025/year or $1,836/month at 138% FPL",
+      "detail": "DHCS 2026 FPL chart and eligibility chart. The annual figure is 138% of $15,960; the monthly figure is rounded up to the next dollar.",
+      "source": "S15",
+      "status": "verified"
+    },
+    {
+      "id": "F61",
+      "category": "Coverage",
+      "finding": "400% FPL for a single adult in 2026",
+      "value": "$63,840/year",
+      "detail": "Four times the 2026 HHS poverty guideline of $15,960.",
+      "source": "S17",
+      "status": "verified"
+    },
+    {
+      "id": "F62",
+      "category": "Coverage",
+      "finding": "2026 federal premium tax credit percentages",
+      "value": "2.10% to 9.96% of household income for the benchmark Silver plan",
+      "detail": "The applicable percentage rises by income band. Above 400% FPL there is no federal premium tax credit for 2026.",
+      "source": "S18",
+      "status": "verified"
+    },
+    {
+      "id": "F63",
+      "category": "Coverage",
+      "finding": "The enhanced federal premium tax credits expired",
+      "value": "Expired December 31, 2025; the 400% subsidy cliff returned for 2026",
+      "detail": "Covered California's Important Changes page says the enhanced help ended December 31, 2025. The 2026 open-enrollment release describes the effect on middle-income enrollees.",
+      "source": "S19",
+      "status": "verified"
+    },
+    {
+      "id": "F64",
+      "category": "Coverage",
+      "finding": "2026 California state premium subsidy",
+      "value": "At or below 165% FPL; 0% of income below 150% FPL and 3.19%–3.91% from 150% to 165%",
+      "detail": "The state subsidy partially offsets the loss of the enhanced federal credit. It is available only through Covered California's subsidized application and only if the person is otherwise eligible for the federal credit.",
+      "source": "S18",
+      "status": "verified"
+    },
+    {
+      "id": "F65",
+      "category": "Coverage",
+      "finding": "2027 California state premium subsidy",
+      "value": "Up to 200% FPL; 2.8%–5.28% of income for 150%–200% FPL",
+      "detail": "Covered California's 2027 rates release says $300 million was appropriated and help extends to 200% FPL ($31,920 for an individual in 2027).",
+      "source": "S20",
+      "status": "verified"
+    },
+    {
+      "id": "F66",
+      "category": "Coverage",
+      "finding": "Failing the work rule also blocks premium tax credits",
+      "value": "No federal subsidy while deemed Medicaid-eligible",
+      "detail": "This is the trap: a person who fails the Medicaid work rule is still deemed Medicaid-eligible, so they cannot receive federal premium tax credits to buy a marketplace plan. They may reapply for Medicaid at any time.",
+      "source": "S02",
+      "status": "verified"
+    },
+    {
+      "id": "F67",
+      "category": "Coverage",
+      "finding": "Full-price Covered California premiums",
+      "value": "",
+      "detail": "No official statewide average premium for this profile was located. The site leaves the dollar figure blank and flags it rather than estimating.",
+      "source": "S19",
+      "status": "unverified"
+    },
+    {
+      "id": "F68",
+      "category": "Coverage",
+      "finding": "Aged and Disabled Medi-Cal asset limits",
+      "value": "$130,000 for one person through June 30, 2027; $21,000 from July 1, 2027",
+      "detail": "These are non-MAGI asset limits and do not apply to the MAGI New Adult Group. They matter only if the reader qualifies through age or disability.",
+      "source": "S11",
+      "status": "verified"
+    },
+    {
+      "id": "F69",
+      "category": "Coverage",
+      "finding": "Medicare is a mandatory exception",
+      "value": "Part A entitlement or Part B enrollment",
+      "detail": "A person entitled to or enrolled in Medicare Part A, or enrolled in Part B, is excepted from the community engagement requirement.",
+      "source": "S05",
+      "status": "verified"
+    }
+  ],
+  "ca_actions": [
+    {
+      "id": "A1",
+      "action": "Implements the federal work rule for the MAGI New Adult Group (M1)",
+      "detail": "DHCS instructs counties to apply the rule to M1 applicants and members from January 1, 2027, with screening at application and renewal.",
+      "source": "S09",
+      "status": "verified"
+    },
+    {
+      "id": "A2",
+      "action": "Moves M1 adults to six-month renewals",
+      "detail": "The policy is effective January 1, 2027; DHCS says the first impacted members are expected to have renewal dates beginning March 1, 2027.",
+      "source": "S11",
+      "status": "verified"
+    },
+    {
+      "id": "A3",
+      "action": "Runs multilingual outreach",
+      "detail": "DHCS began texting members in February 2026, mailed outreach notices in late August 2026, and requires the outreach letter with application materials from October 1 through December 31, 2026. Materials are translated into all threshold languages.",
+      "source": "S10",
+      "status": "verified"
+    },
+    {
+      "id": "A4",
+      "action": "Requires counties to check existing data first",
+      "detail": "Counties must attempt ex parte verification using reliable information before asking the member for documents. If verification fails, the member gets a notice and 30 calendar days to cure while coverage continues.",
+      "source": "S09",
+      "status": "verified"
+    },
+    {
+      "id": "A5",
+      "action": "Applies the federal exclusions and exceptions, including county-wide hardship",
+      "detail": "California's exemption table includes high-unemployment counties (lesser of 8% or 1.5 times the national rate), federally declared disaster counties, Medicare, pregnancy/postpartum, parents of a child 13 or younger, medically frail people, and others.",
+      "source": "S09",
+      "status": "verified"
+    },
+    {
+      "id": "A6",
+      "action": "Funds implementation and projects savings",
+      "detail": "The enacted 2026-27 budget reflects about $1.3B General Fund in H.R.1-related Medi-Cal costs and $196.8M General Fund for county eligibility workload. DHCS projects $357.6M ($90.3M General Fund) in work-rule savings in 2026-27 and 43,000 work-rule disenrollments, rising to 1.1 million by 2029-30.",
+      "source": "S23",
+      "status": "verified"
+    },
+    {
+      "id": "A7",
+      "action": "Challenges the IFR in court",
+      "detail": "California co-leads Commonwealth of Massachusetts et al. v. Mehmet Oz with Massachusetts and New Jersey; the coalition is 24 attorneys general plus the governors of Kentucky and Pennsylvania. The suit challenges the IFR's narrowing of the medically-frail protection. Filed June 29, 2026.",
+      "source": "S22",
+      "status": "verified"
+    },
+    {
+      "id": "A8",
+      "action": "Funds a state premium subsidy for Covered California",
+      "detail": "2026: $190 million appropriated, subsidy available up to 165% FPL (S18). 2027: $300 million, up to 200% FPL ($31,920 for an individual, $66,000 for a family of four). Covered California projects more than 500,000 enrollees receive it in 2027.",
+      "source": "S20",
+      "status": "verified"
+    },
+    {
+      "id": "A9",
+      "action": "Does not provide a blanket exemption for zero-earned-income adults",
+      "detail": "No such exemption appears in ACWDL 25-30 or the Medi-Cal Changes page. The state routes are the federal work, income, education, community-service and exemption routes described on this site.",
+      "source": "S09",
+      "status": "verified"
+    },
+    {
+      "id": "A10",
+      "action": "Counts in-kind work and income from any source",
+      "detail": "Federal rules define work to include work in exchange for goods or services, and the preamble gives the example of a property manager or building superintendent who receives free or reduced rent. DHCS tells members that income from any source of at least $580 before taxes in any month since the last renewal also satisfies the rule. These are the two routes that fit a resident with rental, interest and trading income but no cash wages.",
+      "source": "S09",
+      "status": "verified"
+    }
+  ],
+  "timeline": [
+    {
+      "date": "2025-07-04",
+      "event": "H.R.1 (P.L. 119-21) signed into law",
+      "source": "S01"
+    },
+    {
+      "date": "2025-12-08",
+      "event": "CMS issues the first community-engagement guidance (CMCS Informational Bulletin)",
+      "source": "S06"
+    },
+    {
+      "date": "2025-12-30",
+      "event": "DHCS issues ACWDL 25-30, California's preliminary work-rule guidance",
+      "source": "S09"
+    },
+    {
+      "date": "2026-01-21",
+      "event": "DHCS issues ACWDL 26-01 with the 2026 federal poverty levels",
+      "source": "S14"
+    },
+    {
+      "date": "2026-01-29",
+      "event": "DHCS publishes its H.R.1 implementation plan",
+      "source": "S13"
+    },
+    {
+      "date": "2026-06-01",
+      "event": "CMS issues the interim final rule (published June 3, 2026)",
+      "source": "S03"
+    },
+    {
+      "date": "2026-06-29",
+      "event": "CMS publishes a correction to the IFR; California co-leads a 24-attorney-general coalition (plus two governors) suing over the medically-frail definition",
+      "source": "S04"
+    },
+    {
+      "date": "2026-07-31",
+      "event": "IFR effective date and end of the comment period",
+      "source": "S03"
+    },
+    {
+      "date": "2026-09-11",
+      "event": "DHCS issues MEDIL I26-25 with the member outreach letter",
+      "source": "S10"
+    },
+    {
+      "date": "2027-01-01",
+      "event": "Work rules effective in California; six-month renewal policy effective; retroactive coverage limited to one month for the New Adult Group",
+      "source": "S11"
+    },
+    {
+      "date": "2027-03-01",
+      "event": "First six-month renewal dates for affected Medi-Cal members",
+      "source": "S12"
+    },
+    {
+      "date": "2028-10-01",
+      "event": "Cost sharing begins for some expansion enrollees above 100% FPL",
+      "source": "S02"
+    },
+    {
+      "date": "2028-12-31",
+      "event": "Latest date for a good-faith implementation waiver under the statute",
+      "source": "S03"
+    }
+  ],
+  "flags": [
+    {
+      "id": "FL-01",
+      "item": "Personal eligibility facts are missing",
+      "issue": "Age, household size, county, exact income amounts, tax filing status, pregnancy/disability status, and current coverage were not supplied. Every personal eligibility determination is therefore left blank.",
+      "impact": "The site can explain the rules but cannot say whether you qualify. The county must decide.",
+      "source": "S16",
+      "status": "open"
+    },
+    {
+      "id": "FL-02",
+      "item": "Kalshi federal tax classification is unresolved",
+      "issue": "No IRS revenue ruling, regulation, notice, or FAQ specific to Kalshi-type event contracts was located. Capital, ordinary, section 1256, and gambling treatments remain possible.",
+      "impact": "The classification changes MAGI, loss netting, and the 90% gambling-loss cap.",
+      "source": "S29",
+      "status": "open"
+    },
+    {
+      "id": "FL-03",
+      "item": "Kalshi does not issue a 1099 for event-contract trading profit",
+      "issue": "Kalshi's help center lists 1099-INT, 1099-MISC, 1099-B (crypto transfers) and 1099-DA (ZeroHash). None is described as reporting event-contract profit or loss.",
+      "impact": "You must reconstruct basis and proceeds from your own records or Kalshi's P&L statement.",
+      "source": "S21",
+      "status": "open"
+    },
+    {
+      "id": "FL-04",
+      "item": "Section 1256 applicability is uncertain",
+      "issue": "Kalshi is a CFTC DCM, but its event contracts are described as swaps. Whether they are regulated futures contracts under IRC §1256 has not been ruled on.",
+      "impact": "Section 1256 would impose 60/40 treatment and year-end mark-to-market, including phantom income on open positions.",
+      "source": "S37",
+      "status": "open"
+    },
+    {
+      "id": "FL-05",
+      "item": "Gambling treatment and the 90% loss cap",
+      "issue": "If Kalshi gains were treated as gambling, losses would be itemized deductions only up to winnings, and H.R.1 §70114 caps the deduction at 90% of losses for tax years after 2025.",
+      "impact": "A break-even trader could owe tax on income they did not keep.",
+      "source": "S02",
+      "status": "open"
+    },
+    {
+      "id": "FL-06",
+      "item": "H.R. 10357 is not law",
+      "issue": "The Digital Asset Tax Certainty Act would restore the 100% wagering-loss deduction. The Ways and Means Committee approved it 38–5 on September 16, 2026, but it has not passed the House or Senate.",
+      "impact": "The 90% cap remains current law for 2026 unless the bill is enacted.",
+      "source": "S35",
+      "status": "open"
+    },
+    {
+      "id": "FL-07",
+      "item": "Gross versus net rental income for the $580 test",
+      "issue": "DHCS ACWDL 25-30 says “total gross income.” CMS says states must use MAGI-based monthly household income, which uses net rental income. The two are not the same for a rental owner.",
+      "impact": "A property with high gross rents and high expenses could pass one test and fail the other.",
+      "source": "S09",
+      "status": "open"
+    },
+    {
+      "id": "FL-08",
+      "item": "Individual versus household income for the $580 test",
+      "issue": "CMS says MAGI-based monthly household income; DHCS's member letter says “your income” and “any source.”",
+      "impact": "A spouse's or tax dependent's income could matter. The reader's household is unknown.",
+      "source": "S10",
+      "status": "open"
+    },
+    {
+      "id": "FL-09",
+      "item": "Federal seasonal-only averaging versus California's broader averaging",
+      "issue": "The federal statute limits the six-month average to a seasonal worker under IRC §45R(d)(5)(B). DHCS extends it to people whose hours change frequently or who have seasonal jobs.",
+      "impact": "A Kalshi trader with lumpy income may be able to use the state formulation, but the federal limitation creates risk.",
+      "source": "S07",
+      "status": "open"
+    },
+    {
+      "id": "FL-10",
+      "item": "DHCS says the rules start January 1, 2027, but its member letter says March 2027",
+      "issue": "The MEDIL I26-25 member letter says “these rules will not go into effect until March 2027.” DHCS's public pages say the work rules start January 1, 2027 and six-month renewals start March 1, 2027.",
+      "impact": "The letter appears to conflate the two dates. A member could be misled about when to start documenting.",
+      "source": "S10",
+      "status": "open"
+    },
+    {
+      "id": "FL-11",
+      "item": "Six-month renewal date has been stated inconsistently",
+      "issue": "The January 2026 DHCS implementation plan said January 1, 2027. The current DHCS public page says March 1, 2027. The difference reflects the transition of existing members at their next renewal.",
+      "impact": "New applicants may be subject to the six-month cycle earlier than existing members. Follow the county notice.",
+      "source": "S11",
+      "status": "open"
+    },
+    {
+      "id": "FL-12",
+      "item": "DHCS's public page describes the income test as work earnings",
+      "issue": "The Medi-Cal Changes page says “work at a job and earn at least $580 a month,” while MEDIL I26-25 says “income from any source.”",
+      "impact": "The public page is narrower than the official guidance. The site relies on the official guidance and flags the discrepancy.",
+      "source": "S11",
+      "status": "open"
+    },
+    {
+      "id": "FL-13",
+      "item": "State count differs across official sources",
+      "issue": "CMS says 43 states and DC provide coverage to these populations. CRS says 40 states and DC adopted the ACA expansion as of August 2025. The data file previously said 41 expansion states plus DC plus waiver states.",
+      "impact": "No effect on California eligibility; the figures measure different things and dates.",
+      "source": "S05",
+      "status": "open"
+    },
+    {
+      "id": "FL-14",
+      "item": "High-unemployment wording differs",
+      "issue": "The statute and CMS CIB say the lesser of 8% or 1.5 times the national rate. The CMS fact sheet phrases it as “8% or 1.5 times.”",
+      "impact": "Use the statutory lesser-of standard. The county determines whether your county qualifies.",
+      "source": "S06",
+      "status": "open"
+    },
+    {
+      "id": "FL-15",
+      "item": "Full-price Covered California premiums are not published as a single official figure",
+      "issue": "Premiums vary by age, region, plan and tobacco use. No official statewide average for this profile was located.",
+      "impact": "The site leaves the dollar amount blank rather than estimating.",
+      "source": "S19",
+      "status": "unverified"
+    },
+    {
+      "id": "FL-16",
+      "item": "The 60–70% procedural-loss figure is not verified",
+      "issue": "The prior site presented “60–70% of projected national coverage losses are procedural” without an official source. This site does not use that figure. DHCS does say procedural and paperwork discontinuances are expected to rise.",
+      "impact": "Treat any specific percentage as a projection or third-party estimate, not an official fact.",
+      "source": "S13",
+      "status": "unverified"
+    },
+    {
+      "id": "FL-17",
+      "item": "In-kind work documentation process is not yet published",
+      "issue": "The federal rule explicitly counts a property manager's in-kind work, but DHCS has not published a specific form or verification standard for in-kind hours.",
+      "impact": "Keep a contemporaneous duty list, rent-credit agreement and monthly hours log; ask the county what it will accept.",
+      "source": "S03",
+      "status": "open"
+    },
+    {
+      "id": "FL-18",
+      "item": "Owner-management hours are not explicitly addressed",
+      "issue": "The IFR example is a property manager who receives free or reduced rent. Whether an owner who manages their own rental property can count those hours as self-employment is not spelled out in DHCS guidance.",
+      "impact": "The in-kind route is stronger if there is a rent-credit arrangement. The self-employment route is an alternative but may be questioned.",
+      "source": "S09",
+      "status": "open"
+    },
+    {
+      "id": "FL-19",
+      "item": "The medically-frail definition is being litigated",
+      "issue": "The IFR narrows “medically frail” to people whose condition significantly impairs their ability to comply. California and other states are challenging that narrowing.",
+      "impact": "If you rely on a health condition, the exemption standard could change while the case is pending.",
+      "source": "S22",
+      "status": "open"
+    },
+    {
+      "id": "FL-20",
+      "item": "Aged and Disabled asset limits change on July 1, 2027",
+      "issue": "The non-MAGI asset limit drops from $130,000 to $21,000 for one person on July 1, 2027.",
+      "impact": "This does not affect MAGI Medi-Cal, but it matters if you qualify through age or disability.",
+      "source": "S11",
+      "status": "open"
+    },
+    {
+      "id": "FL-21",
+      "item": "Failing the work rule also blocks premium tax credits",
+      "issue": "A person who does not comply is deemed Medicaid-eligible and is not eligible for federal subsidies to buy marketplace coverage.",
+      "impact": "The fallback is not automatically Covered California with subsidies. You must cure, reapply, or qualify for Medicaid again.",
+      "source": "S02",
+      "status": "open"
+    },
+    {
+      "id": "FL-22",
+      "item": "The site's earlier $1.1B characterization was inaccurate",
+      "issue": "The earlier site said $1.1B was appropriated “to implement” the work rule and “to minimize procedural coverage loss.” That is not what the documents say. In the January 2026 budget, $1.1B is the projected MCO-tax transition cost and, separately, the ongoing cost of full-scope coverage for affected immigrants. The enacted 2026-27 Budget Act reflects about $1.3B General Fund in H.R.1-related Medi-Cal costs.",
+      "impact": "The misattribution is removed. The enacted figure now carries the enacted source.",
+      "source": "S23",
+      "status": "closed"
+    },
+    {
+      "id": "FL-23",
+      "item": "The site's earlier “lead plaintiff” wording was imprecise",
+      "issue": "California co-leads the coalition with Massachusetts and New Jersey. The case caption names Massachusetts first.",
+      "impact": "Corrected on the primary pages; the lawsuit itself is verified.",
+      "source": "S22",
+      "status": "closed"
+    },
+    {
+      "id": "FL-24",
+      "item": "The site's earlier $1,835 monthly figure was off by $1",
+      "issue": "DHCS publishes $1,836/month at 138% FPL for a one-person household in 2026.",
+      "impact": "Corrected on the primary pages.",
+      "source": "S15",
+      "status": "closed"
+    }
+  ],
+  "action_plan": [
+    {
+      "step": 1,
+      "action": "Calculate your 2026 MAGI on a one-person household basis for comparison",
+      "detail": "Start with AGI: net rental income after Schedule E expenses, taxable interest, tax-exempt interest added back, and your Kalshi gains or losses under the tax treatment your CPA recommends. Compare the result to $22,025/year ($1,836/month).",
+      "source": "S33"
+    },
+    {
+      "step": 2,
+      "action": "If MAGI is at or below 138% FPL, apply for or keep Medi-Cal",
+      "detail": "Apply year-round at BenefitsCal or through your county. There is no asset test for MAGI Medi-Cal.",
+      "source": "S16"
+    },
+    {
+      "step": 3,
+      "action": "Document your property-management work every month",
+      "detail": "Keep a duty list, the lease or rent-credit agreement showing free or reduced rent, and a monthly hours log. The federal rule expressly counts a property manager's in-kind work. Aim for at least one month with 80 hours in each renewal period.",
+      "source": "S03"
+    },
+    {
+      "step": 4,
+      "action": "Also keep a $580 income month",
+      "detail": "Keep rent deposits, interest statements and Kalshi P&L records showing at least $580 of income from any source in at least one month per renewal period. This is a second, independent route.",
+      "source": "S10"
+    },
+    {
+      "step": 5,
+      "action": "Open every county notice and respond within 30 days",
+      "detail": "Coverage continues during the 30-day cure period. Keep your address current with the county and check BenefitsCal.",
+      "source": "S09"
+    },
+    {
+      "step": 6,
+      "action": "If MAGI is above 138% FPL, go to Covered California",
+      "detail": "There is no work requirement. Check the federal premium tax credit and the California state subsidy. If you are above 400% FPL, the federal credit is unavailable for 2026.",
+      "source": "S18"
+    },
+    {
+      "step": 7,
+      "action": "Get the Kalshi tax classification reviewed before you file",
+      "detail": "The choice between capital, ordinary, section 1256 and gambling treatment changes MAGI, loss netting and the 90% cap. Keep your own basis and proceeds records; Kalshi does not issue a 1099 for event-contract profit.",
+      "source": "S21"
+    }
+  ]
+}
