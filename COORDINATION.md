@@ -89,3 +89,31 @@ Session: arena-b4c93f27. Required session branch: `arena/b4c93f27-maltaproj8` (p
 - Initial PR #3 validation passed (run 39158557775). PR: https://github.com/buffedlizard55-lab/MaltaProj8/pull/3 . Final combined-tree validation and deployment pending below.
 - Combined-tree integration produced an add/add conflict only in COORDINATION.md. Resolved by retaining the precombined board copied from current main plus this session’s addendum; both other-session logs remain intact. All other files integrated automatically without discarding work.
 - Post-integration recheck: all 24 HTML pages / 360 local links, assets and fragments resolved across the preserved root, research and coverage-guide sites. This session’s 65-row/18-source/7-page validator and relocated-path Chromium tests passed. Other session’s 52-row/9-page validator passed when run from its documented research/ working directory (initial invocation from root failed only because its script uses cwd-relative paths). Other sessions’ medical findings are preserved, not independently recertified by this session.
+## Arena session c8487e35 — addendum (2026-10-18)
+
+**Session ID:** arena/c8487e35-maltaproj8. Started from the empty initial commit before the other sessions' claims were visible on main; on rebase at ~19:55 UTC discovered PRs #1 and #2 already merged (sessions 5d32bca3 → root site; b4c93f27 → /research). No work by either session was modified or discarded: all of this session's files are additive and non-overlapping (own files: `data/income-tax.json`, `data/coverage.json`, `data/laws.json`, `data/flags.json`, `tools/build-site.js`, `docs/**` — 10 static pages + assets). This session did not edit root `index.html`, `_config.yml`, workflows, or any other session's page/data file.
+
+### Conflict resolution record (required)
+- `git pull --rebase origin main` produced an add/add conflict in COORDINATION.md only. Resolution: adopted main's version verbatim (both other sessions' logs preserved) and appended this addendum. No other conflicted files. No history flattened; rebase continued with `--rebase` default then single merge commit via PR.
+
+### Task board (c8487e35 scope)
+| ID | Task | Status | Files touched |
+|----|------|--------|---------------|
+| C1 | Repo review + baseline | done | none (README-only at 375e859 confirmed) |
+| C2 | Income/MAGI + Kalshi/rental/interest tax rows (17 rows) | done | data/income-tax.json |
+| C3 | Medi-Cal + Covered CA 2026–27 rules (37 rows) | done | data/coverage.json |
+| C4 | P.L. 119-21 / work requirements / CA mandate (22 rows) + flags register (11) | done | data/laws.json, data/flags.json |
+| C5 | Static site generator + 10-page /docs dashboard | done | tools/build-site.js, docs/** |
+| C6 | Line-by-line source verification (method below) | done | data/*.json |
+| C7 | Integration, PR, merge, Pages check | in progress → see below | git/gh only |
+
+### Verification log (c8487e35)
+Every table row links an official source: federal .gov (cms.gov, irs.gov, aspe.hhs.gov, federalregister.gov/govinfo, ecfr.gov, cftc.gov, congress.gov), California .gov (dhcs.ca.gov incl. ACWDL 25-30 / MEDIL 24-02, ftb.ca.gov incl. Apr-2026 $450→$475 correction flash), Covered California statutory-exchange documents (coveredca.com + hbex.coveredca.com PDFs + board deck), and Kalshi's own help center only for Kalshi's own documentation practice. Full-page fetches: CMS-2454-IFC fact sheet + PR; Covered CA Important Changes / financial help / eligibility / open enrollment / 2027-rates PR / FPL-chart PDF / Financial Help Basics PDF; DHCS FPL chart + Changes + Help Center; 42 CFR 435.603 (eCFR); IRS Topic 409. Rows based on verbatim official-domain excerpts are linked for manual confirmation; no value anywhere was inferred — unconfirmable cells are blank + flagged (FL-01…FL-11) and published at docs/flagged-for-review.html.
+
+Irregularities found: (a) FTB correction of its own 2025 child-penalty figure (MND-03); (b) third-party sites still showing 2025-guideline Medi-Cal limits ($21,597) vs DHCS chart $22,025 — site follows DHCS; (c) Kalshi §1256 characterization unsettled incl. 2026 circuit split (FL-01); (d) repo/geo naming mismatch logged (FL-11).
+
+### Change requests to root-site owner (5d32bca3)
+- Request: add a link from root `index.html` navigation to `/docs/` (this session's dashboard) and to `/research/` if not present. This session did not edit root index per scope rules.
+
+### Deployment record (c8487e35)
+- PR: (recorded below after creation). Pages unaffected (root-publishing mode preserved; docs/*.html have no Jekyll front matter and are served as static files under /docs/).
