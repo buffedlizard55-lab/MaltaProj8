@@ -1,17 +1,63 @@
 {
-  "title": "MAGI Income Limits and FPL Tables (2026 Coverage Year)",
-  "source_FPL": "https://aspe.hhs.gov/topics/poverty-economic-mobility/poverty-guidelines and 91 FR 2026-00755 (Jan 15, 2026)",
-  "source_Medicaid": "https://www.dhcs.ca.gov/wp-content/uploads/2025/10/MAGI20Income20Sources2009-05-13.pdf",
-  "FPL_2026_single": "$15,960/year ($1,330/month)",
-  "FPL_2026_household_increment": "$5,680 per additional person",
-  "medicaid_expansion_limit": "138% FPL = $22,025/year ($1,836/month) for single adult (includes 5% disregard: effectively 138% = 133% + 5%)",
-  "covered_ca_subsidy_range": "100%-400% FPL = $15,960 to $63,840/year for single adult (2026). Subsidy cliff returned Jan 1, 2026 after ARP/IRA enhanced credits expired Dec 31, 2025.",
-  "thresholds_2026_single": [
-    {"fpl": "100%", "annual": 15960, "monthly": 1330, "program": "Marketplace minimum (Medi-Cal below 138% in CA)"},
-    {"fpl": "138%", "annual": 22025, "monthly": 1836, "program": "Medi-Cal eligibility cap (adult expansion)"},
-    {"fpl": "150%", "annual": 23940, "monthly": 1995, "program": "Marketplace: strong subsidies"},
-    {"fpl": "200%", "annual": 31920, "monthly": 2660, "program": "Marketplace subsidy tier"},
-    {"fpl": "400%", "annual": 63840, "monthly": 5320, "program": "Marketplace subsidy cliff (no subsidy above)"}
+  "title": "Income limits by program and coverage year (single-person reference only)",
+  "as_of": "2026-10-18",
+  "caution": "Medi-Cal 2026 and Covered California 2026 use different poverty-guideline reference years. These figures alone do not determine an individual's eligibility or subsidy.",
+  "thresholds": [
+    {
+      "program": "MAGI Medi-Cal, adult expansion",
+      "coverage_year": 2026,
+      "poverty_guideline_reference_year": 2026,
+      "fpl_percent": 138,
+      "annual_usd": 22025,
+      "monthly_usd": 1836,
+      "source": "https://www.dhcs.ca.gov/services/medi-cal-resources/medi-cal-eligibility-division/all-county-welfare-directors-medi-cal-eligibility-division-information-letters/2026-fpl-calculation-chart-monthly-values-enclosure-1/",
+      "status": "Verified; state-published figures for one person"
+    },
+    {
+      "program": "Covered California, 2026 federal APTC 400% FPL upper income reference",
+      "coverage_year": 2026,
+      "poverty_guideline_reference_year": 2025,
+      "fpl_percent": 400,
+      "annual_usd": 62600,
+      "monthly_usd": null,
+      "source": "https://hbex.coveredca.com/data-research/dashboards/OE_Dashboard.pdf",
+      "status": "Verified; see 2026 Open Enrollment Highlights, Financial Details. Other APTC eligibility criteria still apply."
+    },
+    {
+      "program": "Covered California, 2027 state premium assistance reference",
+      "coverage_year": 2027,
+      "poverty_guideline_reference_year": 2026,
+      "fpl_percent": 200,
+      "annual_usd": 31920,
+      "monthly_usd": null,
+      "source": "https://www.coveredca.com/press-releases/2026/07/21/covered-california-rates-and-plans-for-2027-california-continues-fight-for-health-insurance-affordability-and-access",
+      "status": "Verified threshold, not a guarantee of state assistance"
+    },
+    {
+      "program": "Covered California, 2027 marketplace 400% FPL reference",
+      "coverage_year": 2027,
+      "poverty_guideline_reference_year": 2026,
+      "fpl_percent": 400,
+      "annual_usd": 63840,
+      "monthly_usd": null,
+      "source": "https://www.coveredca.com/pdfs/FPL-chart.pdf",
+      "status": "Verified; 2027 marketplace, not 2026 marketplace or 2026 Medi-Cal"
+    },
+    {
+      "program": "MAGI Medi-Cal, adult expansion",
+      "coverage_year": 2027,
+      "poverty_guideline_reference_year": 2027,
+      "fpl_percent": 138,
+      "annual_usd": null,
+      "monthly_usd": null,
+      "source": "https://www.dhcs.ca.gov/services/medi-cal-resources/medi-cal-eligibility-division/all-county-welfare-directors-medi-cal-eligibility-division-information-letters/2026-fpl-calculation-chart-monthly-values-enclosure-1/",
+      "status": "Flagged: 2027 Medi-Cal 138% FPL chart not established by this 2026 chart"
+    }
   ],
-  "note": "Medi-Cal uses CURRENT monthly MAGI (with projection/annualization options). Past year tax return not determinative if income changed. If your monthly MAGI is low at application, you get Medi-Cal even if you earned more earlier in the year; inverse also true."
+  "sources": {
+    "2026_medi_cal": "https://www.dhcs.ca.gov/services/medi-cal-resources/medi-cal-eligibility-division/all-county-welfare-directors-medi-cal-eligibility-division-information-letters/2026-fpl-calculation-chart-monthly-values-enclosure-1/",
+    "2026_covered_california": "https://hbex.coveredca.com/data-research/dashboards/OE_Dashboard.pdf",
+    "2027_covered_california": "https://www.coveredca.com/pdfs/FPL-chart.pdf",
+    "federal_ptc_rules": "https://www.irs.gov/affordable-care-act/individuals-and-families/eligibility-for-the-premium-tax-credit"
+  }
 }
