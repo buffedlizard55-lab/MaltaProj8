@@ -94,7 +94,7 @@ Session: arena-b4c93f27. Required session branch: `arena/b4c93f27-maltaproj8` (p
 **Session ID:** arena/c8487e35-maltaproj8. Started from the empty initial commit before the other sessions' claims were visible on main; on rebase at ~19:55 UTC discovered PRs #1 and #2 already merged (sessions 5d32bca3 → root site; b4c93f27 → /research). No work by either session was modified or discarded: all of this session's files are additive and non-overlapping (own files: `data/income-tax.json`, `data/coverage.json`, `data/laws.json`, `data/flags.json`, `tools/build-site.js`, `docs/**` — 10 static pages + assets). This session did not edit root `index.html`, `_config.yml`, workflows, or any other session's page/data file.
 
 ### Conflict resolution record (required)
-- `git pull --rebase origin main` produced an add/add conflict in COORDINATION.md only. Resolution: adopted main's version verbatim (both other sessions' logs preserved) and appended this addendum. No other conflicted files. No history flattened; rebase continued with `--rebase` default then single merge commit via PR.
+- `git pull --rebase origin main` produced an add/add conflict in COORDINATION.md (and README.md, resolved by keeping main's root README). Resolution: adopted main's version verbatim (other sessions' logs preserved) and appended this addendum; no content by 5d32bca3/b4c93f27 altered. A second rebase conflict occurred after session arena/05508cd2 merged PR #3 (main tip b3e3650) mid-flight; resolved the same way (kept their COORDINATION.md, re-appended the c8487e35 addendum verbatim). No other conflicted files; no history flattened.
 
 ### Task board (c8487e35 scope)
 | ID | Task | Status | Files touched |
