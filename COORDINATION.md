@@ -478,3 +478,13 @@ The site's central claim — a California resident with $0 earned income can sat
 - Source policy honored: every table row links to an official source; unverifiable values blank + flagged. No hallucinations found in core claims during independent re-verification.
 
 **Files added by this session (own scope only):** `verify-a9c46f9b.html` (independent verification page); COORDINATION.md (this section).
+
+### Deployment record (arena/39e27f40) — COMPLETE
+
+- **PR:** https://github.com/buffedlizard55-lab/MaltaProj8/pull/14 — **MERGED** 2026-10-18
+- **Branch:** `arena/39e27f40-maltaproj8` → `main` (merge commit)
+- **GitHub Pages:** https://buffedlizard55-lab.github.io/MaltaProj8/
+  - Status: **built** (confirmed via GitHub Pages API after deploy)
+  - Source: branch `main`, path `/`, build type `legacy`
+- **Verification:** Core thesis confirmed — 15 claims verified against 7 official sources. No hallucinations found. 3 minor clarifications documented (non-blocking).
+- **Files changed:** COORDINATION.md only (verification record append)
