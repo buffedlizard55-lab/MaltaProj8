@@ -119,8 +119,8 @@
     },
     {
       "page": "flagged.html",
-      "data_rows": 26,
-      "rows_without_direct_official_link": 10
+      "data_rows": 31,
+      "rows_without_direct_official_link": 15
     },
     {
       "page": "immigration-status.html",
@@ -228,6 +228,11 @@
       "rows_without_direct_official_link": 16
     },
     {
+      "page": "verify-5bf2fb99.html",
+      "data_rows": 24,
+      "rows_without_direct_official_link": 9
+    },
+    {
       "page": "verify-9285d712.html",
       "data_rows": 22,
       "rows_without_direct_official_link": 10
@@ -243,8 +248,8 @@
       "rows_without_direct_official_link": 0
     }
   ],
-  "total_data_rows": 892,
-  "rows_without_direct_official_link": 80,
+  "total_data_rows": 921,
+  "rows_without_direct_official_link": 94,
   "needs_review": [
     {
       "page": "california.html",
@@ -322,6 +327,41 @@
     {
       "page": "flagged.html",
       "data_row": 1,
+      "claim_excerpt": "Primary Flagged (F-01 to F-10 + I-01 to I-03) \u2014 core thresholds, Kalshi gaps, coverage projections Kalshi IRS classification, \u00a71256, gambling cap, enrollment projections, unemployment hardship, ACWDL preliminary status, ",
+      "external_links": [],
+      "status": "needs review: no direct official-domain link in this row"
+    },
+    {
+      "page": "flagged.html",
+      "data_row": 2,
+      "claim_excerpt": "Extended Analysis flags (W-01 to W-13) \u2014 definitions, dates, program scope $580 definition wording, Jan vs Mar 2027 dates, $1 FPL rounding, pending guidance, public-charge sourcing, deferral clause, state-funded expansio",
+      "external_links": [],
+      "status": "needs review: no direct official-domain link in this row"
+    },
+    {
+      "page": "flagged.html",
+      "data_row": 3,
+      "claim_excerpt": "Docs flags (FL-01 to FL-11) \u2014 taxes, subsidies, mandate penalties Kalshi tax treatment, income-test wording, trading hours, county services, $1 differences, 2027 unknowns, external-link limits, FTB penalty correction doc",
+      "external_links": [],
+      "status": "needs review: no direct official-domain link in this row"
+    },
+    {
+      "page": "flagged.html",
+      "data_row": 4,
+      "claim_excerpt": "Research flags (9 items) \u2014 supplemental research dashboard Income classification nuances, public-charge, asset vs income, enforcement gaps research/review.html \u2192 + sources",
+      "external_links": [],
+      "status": "needs review: no direct official-domain link in this row"
+    },
+    {
+      "page": "flagged.html",
+      "data_row": 5,
+      "claim_excerpt": "Coverage-Guide flags (9 items) \u2014 third supplemental dashboard Jan/March dates, Kalshi hours, property-mgmt hours, personal eligibility, $1 FPL, earnings wording, seasonal averaging, 2027 figures coverage-guide/pages/flag",
+      "external_links": [],
+      "status": "needs review: no direct official-domain link in this row"
+    },
+    {
+      "page": "flagged.html",
+      "data_row": 6,
       "claim_excerpt": "F-01 Kalshi IRS classification \u2014 not established in this audit ; all treatments are practitioner arguments A comprehensive absence of IRS guidance has not been demonstrated. Practitioner commentary cannot verify that neg",
       "external_links": [
         "https://www.monacocpa.cpa/post/prediction-market-taxes-kalshi-polymarket-robinhood",
@@ -333,7 +373,7 @@
     },
     {
       "page": "flagged.html",
-      "data_row": 2,
+      "data_row": 7,
       "claim_excerpt": "F-02 Kalshi Section 1256 claim (60/40) \u2014 platforms suggest venue = \u00a71256 status IRC \u00a71256(g)(1) requires daily mark-to-market settlement; practitioners argue CFTC DCM status alone does not satisfy the test; no IRS confir",
       "external_links": [
         "https://www.law.cornell.edu/uscode/text/26/1256",
@@ -343,7 +383,7 @@
     },
     {
       "page": "flagged.html",
-      "data_row": 3,
+      "data_row": 8,
       "claim_excerpt": "F-03 Kalshi gambling treatment \u2014 sports contracts in particular Whether a sports event contract is a bet vs. a financial contract is unresolved in court (multiple states suing Kalshi); affects which filers face the 90% l",
       "external_links": [
         "https://tax.thomsonreuters.com/news/irs-silence-on-prediction-market-winnings-to-cause-confusion-as-world-cup-begins/",
@@ -353,7 +393,7 @@
     },
     {
       "page": "flagged.html",
-      "data_row": 4,
+      "data_row": 9,
       "claim_excerpt": "F-04 Coverage-loss estimates \u2014 all are projections/models, not facts Figures (1.1M, 1.4M, 1.2\u20131.4M, 3.4M) come from different models with different assumptions about exemptions, ex parte success, and cure rates \u2014 methodo",
       "external_links": [
         "https://www.chcf.org/resource/2026/06/05/hr1-work-requirement-affect-californians-medi-cal-policy-at-a-glance/",
@@ -364,7 +404,7 @@
     },
     {
       "page": "flagged.html",
-      "data_row": 7,
+      "data_row": 12,
       "claim_excerpt": "F-07 DHCS M1 enrollment \u2014 point-in-time figure shifts (4.8M vs. \"up to 5M\" in other DHCS docs) Enrollment is a monthly snapshot; varies with churn, retro-eligibility, and undocumented adults added to restricted-scope vs.",
       "external_links": [
         "https://www.chcf.org/resource/2026/06/05/hr1-work-requirement-affect-californians-medi-cal-policy-at-a-glance/"
@@ -373,7 +413,7 @@
     },
     {
       "page": "flagged.html",
-      "data_row": 8,
+      "data_row": 13,
       "claim_excerpt": "F-08 Kalshi 1099 gap \u2014 trading basis/proceeds must be self-reported ; no third-party verification Kalshi confirms it does NOT report contract proceeds/basis on any 1099 to the IRS; IRS relies on voluntary compliance. Und",
       "external_links": [
         "https://www.countdefi.com/blog/kalshi-taxes"
@@ -382,7 +422,7 @@
     },
     {
       "page": "flagged.html",
-      "data_row": 9,
+      "data_row": 14,
       "claim_excerpt": "F-09 H.R. 10357 (House vote Sep 16 2026 to restore gambling loss deduction to 100%) \u2014 legislative status unclear House Ways & Means voted 38\u20135 to advance H.R. 10357, which would undo the 90% gambling-loss cap for 2026 on",
       "external_links": [
         "https://www.keepertax.com/posts/how-to-file-taxes-on-kalshi-and-polymarket"
@@ -391,21 +431,21 @@
     },
     {
       "page": "flagged.html",
-      "data_row": 11,
+      "data_row": 16,
       "claim_excerpt": "I-01 DHCS ACWDL 25-30 dated Dec 30, 2025 (per footer) but uploaded to dhcs.ca.gov Apr 2025 path; document metadata mismatch \u2014 content body references MEDIL I25-18, but footer date is future-dated relative to upload path ",
       "external_links": [],
       "status": "needs review: no direct official-domain link in this row"
     },
     {
       "page": "flagged.html",
-      "data_row": 12,
+      "data_row": 17,
       "claim_excerpt": "I-02 CalMatters May 30 2025 cites age 13 vs. congress.gov/H.R.1 text vs. some summaries citing 14 \u2014 dependent-child cutoff appears as 13 (exemption) or 14 (subject) depending on whether counting inclusive/exclusive; DHCS",
       "external_links": [],
       "status": "needs review: no direct official-domain link in this row"
     },
     {
       "page": "flagged.html",
-      "data_row": 13,
+      "data_row": 18,
       "claim_excerpt": "I-03 Some early press coverage (pre-June 2026) says \"Dec 31 2026\" effective; IFC and DHCS clarify \"Jan 1, 2027\" (first quarter after Dec 31) \u2014 consistent, but phrasing caused confusion Low \u2014 clarified on law page Site st",
       "external_links": [],
       "status": "needs review: no direct official-domain link in this row"
@@ -732,6 +772,71 @@
       "page": "verification.html",
       "data_row": 45,
       "claim_excerpt": "DHCS M1 enrollment figure shifts slightly by month in different DHCS documents (4.8M vs. \"up to 5M\" depending on snapshot) Figure is point-in-time, not fixed Site cites \"as of May 2026\" with CHCF source",
+      "external_links": [],
+      "status": "needs review: no direct official-domain link in this row"
+    },
+    {
+      "page": "verify-5bf2fb99.html",
+      "data_row": 14,
+      "claim_excerpt": "V-14 Site builds clean; every internal link/anchor resolves; 46 pages, 264 extended-analysis rows (7 flagged), 40 official sources, all checks pass. All table rows link to official .gov / CoveredCA sources; unverifiable ",
+      "external_links": [],
+      "status": "needs review: no direct official-domain link in this row"
+    },
+    {
+      "page": "verify-5bf2fb99.html",
+      "data_row": 15,
+      "claim_excerpt": "V-15 GitHub Pages is live and built from current HEAD. Pages API status \u201cbuilt\u201d, no build error. buffedlizard55-lab.github.io/MaltaProj8 (Pages API) \u2713 Verified",
+      "external_links": [
+        "https://buffedlizard55-lab.github.io/MaltaProj8/"
+      ],
+      "status": "needs review: no direct official-domain link in this row"
+    },
+    {
+      "page": "verify-5bf2fb99.html",
+      "data_row": 16,
+      "claim_excerpt": "R-01 Gross vs net for $580 \u2014 wording varies by source Statute (WIC \u00a714005.69(e)(6)) says MAGI-based; ACWDL 25-30 says \u201ctotal gross income\u201d; MEDIL I26-25 says \u201cany source \u2026 $580\u201d. The site correctly uses DHCS's own gross-",
+      "external_links": [],
+      "status": "needs review: no direct official-domain link in this row"
+    },
+    {
+      "page": "verify-5bf2fb99.html",
+      "data_row": 17,
+      "claim_excerpt": "R-02 Member letter says Mar 2027, policy letters say Jan 1 2027 MEDIL I26-25 Dear Member notice says \u201crules will not go into effect until March 2027\u201d; ACWDL 25-30 and H.R.1 say Jan 1 2027 (first quarter after Dec 31 2026",
+      "external_links": [],
+      "status": "needs review: no direct official-domain link in this row"
+    },
+    {
+      "page": "verify-5bf2fb99.html",
+      "data_row": 18,
+      "claim_excerpt": "R-03 KFF/CHCF/CalMatters/LA Times figures are projections \u2014 site correctly flags them Site never presents 1.1M/1.4M/3.4M loss estimates as facts; they appear on a separate \u201cProjections\u201d table with \u26a0 Projection badge and ",
+      "external_links": [],
+      "status": "needs review: no direct official-domain link in this row"
+    },
+    {
+      "page": "verify-5bf2fb99.html",
+      "data_row": 19,
+      "claim_excerpt": "R-04 Kalshi practitioner sources cited as \u201cCountDeFi / Monaco / Camuso / awaken.tax\u201d on verification/flagged pages These are non-official domains flagged as WARN by check_links.py, but they are used only to evidence the ",
+      "external_links": [],
+      "status": "needs review: no direct official-domain link in this row"
+    },
+    {
+      "page": "verify-5bf2fb99.html",
+      "data_row": 20,
+      "claim_excerpt": "R-05 Non-official domains (ftb.ca.gov, help.kalshi.com, gaming.nv.gov) appear on docs/* pages ftb.ca.gov is a California state .gov but not in the allowlist \u2014 this session expands the allowlist note in verify text; these",
+      "external_links": [],
+      "status": "needs review: no direct official-domain link in this row"
+    },
+    {
+      "page": "verify-5bf2fb99.html",
+      "data_row": 21,
+      "claim_excerpt": "R-06 Page count \u201c45\u201d vs \u201c46\u201d Prior sessions reported 45 published pages; this session counts 46 including the new verify page itself. Not an error \u2014 just self-inclusive counting.",
+      "external_links": [],
+      "status": "needs review: no direct official-domain link in this row"
+    },
+    {
+      "page": "verify-5bf2fb99.html",
+      "data_row": 24,
+      "claim_excerpt": ">$63,840/yr (>400% FPL) Covered California at full price No Same window; consider MAGI-management strategies \u2192 if you want subsidy next year",
       "external_links": [],
       "status": "needs review: no direct official-domain link in this row"
     },
