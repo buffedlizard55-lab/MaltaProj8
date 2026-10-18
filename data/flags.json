@@ -1,0 +1,126 @@
+{
+  "task": "T4-flags",
+  "owner": "c8487e35",
+  "verified_on": "2026-10-18",
+  "flags": [
+    {
+      "id": "FL-01",
+      "title": "Kalshi event contracts: tax characterization (Section 1256 vs. ordinary capital gains) is unsettled",
+      "why": "No IRS revenue ruling, regulation, or notice classifies CFTC-DCM event contracts. In 2026 the federal appeals courts split on whether they are CEA 'swaps' (3d Cir. favored CFTC exclusivity in April 2026; 9th Cir. [Aug 28, 2026] and 6th Cir. [Sep 25, 2026] held otherwise), and further review is possible. Any '60/40' claim you see elsewhere is a position, not a rule.",
+      "impact": "Affects your tax RATE and forms (6781 vs 8949), not whether the income counts for Medi-Cal/Marketplace (net gains are in AGI either way). Net LOSS years still matter for MAGI via the $3,000 offset rule.",
+      "action": "Ask a CPA to paper a position; monitor IRS guidance and SCOTUS docket.",
+      "links": [
+        "https://help.kalshi.com/en/articles/13823849-what-tax-documentation-does-kalshi-provide",
+        "https://www.gaming.nv.gov/siteassets/content/about/press-release/25-7516---kalshi-ninth-circuit-decision.pdf",
+        "https://www.cftc.gov/PressRoom/PressReleases/8302-20"
+      ]
+    },
+    {
+      "id": "FL-02",
+      "title": "2027 Medi-Cal work requirement: whether NON-wage income (rent/interest/trading) satisfies the $580/month alternative",
+      "why": "The CMS interim-final-rule fact sheet words the alternative as 'monthly income that is not less than the federal minimum wage multiplied by 80 hours' ($580 in 2026) without a verified definition of 'income' on this page. If MAGI-basis income qualifies, your rent/interest could satisfy the rule with no work at all; if only earned income counts, it may not.",
+      "impact": "Potentially decisive for your plan if you rely on Medi-Cal in 2027+.",
+      "action": "Get a written county/DHCS answer; watch DHCS MEDIL/ACWDL letters implementing the rule for California.",
+      "links": [
+        "https://www.cms.gov/newsroom/fact-sheets/medicaid-community-engagement-requirement-certain-individuals-interim-final-rule-comment-period-cms",
+        "https://www.dhcs.ca.gov/wp-content/uploads/2026-04-25-30.pdf"
+      ]
+    },
+    {
+      "id": "FL-03",
+      "title": "Whether full-time trading counts as 80 hours of 'work' for the 2027 Medicaid requirement",
+      "why": "CMS lists employment, work programs, community service and education. Self-directed trading is not expressly addressed in the verified sources; 'work' for Medicaid purposes has historically centered on employment/self-employment — trading gains are investment activity (no SE tax), which cuts both ways.",
+      "impact": "Don't build a compliance plan on trading-hours documentation alone.",
+      "action": "Confirm with DHCS/county before relying on it; consider half-time education enrollment or volunteer hours as documented fallbacks.",
+      "links": [
+        "https://www.cms.gov/newsroom/fact-sheets/medicaid-community-engagement-requirement-certain-individuals-interim-final-rule-comment-period-cms"
+      ]
+    },
+    {
+      "id": "FL-04",
+      "title": "California exempt-surcharge amounts for tax year 2026 not yet published",
+      "why": "FTB's published page reviewed on 2026-10-18 gives TY2025 figures ($950/$475; 7.28% affordability threshold). The TY2026 indexed amounts appear when FTB updates for filing season 2027. Left blank rather than projected.",
+      "impact": "Minor — you likely avoid any penalty by having MEC all year.",
+      "action": "Re-check ftb.ca.gov health-care-mandate page in early 2027.",
+      "links": [
+        "https://www.ftb.ca.gov/file/personal/filing-situations/health-care-mandate/personal.html"
+      ]
+    },
+    {
+      "id": "FL-05",
+      "title": "Real-estate-professional / active-participation eligibility is fact-specific for you",
+      "why": "Being employed as a property manager does not automatically make you a 'real estate professional' for your OWN rentals (IRS tests involve >50% of personal services and >750 hours in real property trades/businesses in which you materially participate), and the $25,000 special allowance needs ownership plus active participation with MAGI ≤ ~$150,000. Rules verified; YOUR facts were not.",
+      "impact": "Determines whether rental losses can offset trading gains to reduce MAGI.",
+      "action": "Have a CPA test your hours/ownership facts against Pub 527 / Pub 925 before planning.",
+      "links": [
+        "https://www.irs.gov/pub/irs-pdf/p527.pdf",
+        "https://www.irs.gov/instructions/i8582"
+      ]
+    },
+    {
+      "id": "FL-06",
+      "title": "TY2026 0%-capital-gains bracket thresholds",
+      "why": "IRS Topic 409 (reviewed 2026-10-18) published TY2025 thresholds ($48,350 single). The identical 2026 bracket tables were not re-fetched in this session, so the 2026 numbers are left blank.",
+      "impact": "Only relevant to your tax bill, not eligibility.",
+      "action": "Check Rev. Proc. 2025-32 tables on irs.gov when preparing the 2026 return.",
+      "links": [
+        "https://www.irs.gov/taxtopics/tc409",
+        "https://www.irs.gov/pub/irs-drop/rp-25-32.pdf"
+      ]
+    },
+    {
+      "id": "FL-07",
+      "title": "Covered CA 2027 rates and carrier availability are preliminary",
+      "why": "The 9.9% weighted-average increase announced July 21, 2026 is a PROPOSED rate subject to Department of Health Care Review; Molina Healthcare is leaving parts of LA/Orange counties in 2027. Plan availability and premiums in your ZIP code must be confirmed in Shop & Compare.",
+      "impact": "Your actual 2027 premium numbers depend on final rates and your ZIP.",
+      "action": "Re-run Shop & Compare after Nov 1, 2026 enrollment launch.",
+      "links": [
+        "https://www.coveredca.com/press-releases/2026-07-21/covered-california-rates-and-plans-for-2027-california-continues-fight-for-health-insurance-affordability-and-access",
+        "https://www.coveredca.com/enrollment/open-enrollment"
+      ]
+    },
+    {
+      "id": "FL-08",
+      "title": "County-only coverage programs not verified",
+      "why": "Some counties run supplemental safety-net programs (e.g., LA County's My Health LA). Statewide verification of eligibility and current status was outside this session's scope; no county programs are asserted on the tables.",
+      "impact": "You may have additional local options.",
+      "action": "Tell us your California county to add a verified county-program section.",
+      "links": [
+        "https://www.dhcs.ca.gov/medi-cal/help/"
+      ]
+    },
+    {
+      "id": "FL-09",
+      "title": "Medi-Cal for ages 60–69: not fully verified",
+      "why": "DHCS eligibility letters reference the adult 19–64 expansion group; California separately covers low-income 60–69-year-olds (2022 Older Adult Expansion; share-of-cost elimination for 65+), but the exact 2026 rule for a 60–69-year-old with investment income was not re-verified line-by-line, so MED-10 remains flagged.",
+      "impact": "Only matters if you are 60+.",
+      "action": "Confirm via county office if applicable.",
+      "links": [
+        "https://dhcs.ca.gov/services/medi-cal/eligibility/letters/Documents/24-02.pdf",
+        "https://www.dhcs.ca.gov/wp-content/uploads/2025-10/Eligibility-and-Enrollment-Plan-OAE.pdf"
+      ]
+    },
+    {
+      "id": "FL-10",
+      "title": "Covered CA's \"$10/month\" and \"$0 premium\" claims are averages, not guarantees",
+      "why": "Covered CA states some plans 'cost as little as $10 per month' and that ~200,000 consumers can pick $0-premium Silver plans in 2027. Actual premiums are age-, region- and plan-specific; they were not individually re-verified for any ZIP code.",
+      "impact": "Use the official quote tool for your ZIP rather than the headline number.",
+      "action": "Shop & Compare: https://apply.coveredca.com/lw-shopandcompare/",
+      "links": [
+        "https://www.coveredca.com/important-changes",
+        "https://www.coveredca.com/press-releases/2026-07-21/covered-california-rates-and-plans-for-2027-california-continues-fight-for-health-insurance-affordability-and-access"
+      ]
+    },
+    {
+      "id": "FL-11",
+      "title": "Repo & session irregularities log",
+      "why": "(a) Repo 'MaltaProj8' contained only a README at baseline commit 375e859 — no prior data/site existed to review. (b) The workspace profile location reads 'San Pawl il-Baħar, MT' while the subject is a California resident — assumed irrelevant to the legal analysis (CA rules govern; U.S. federal tax rules apply to citizens regardless of residence abroad, which could matter for foreign-earned income but was not raised). (c) Source-side error caught and corrected: FTB initially published the 2025 child penalty as $450 (rounding error) and fixed it to $475 in April 2026 — all figures on this site are dated 2026-10-18 for that reason. (d) DHCS's chart and third-party 2026 previews briefly disagreed ($22,025 vs $21,597) because some sites still showed 2025-guideline figures; this site uses the DHCS chart as published (2026 values).",
+      "impact": "Transparency items; none change the eligibility analysis.",
+      "action": "None required.",
+      "links": [
+        "https://www.ftb.ca.gov/about-ftb/newsroom/tax-news/flash/2026/04.html",
+        "https://www.dhcs.ca.gov/medi-cal/qualify/qualify-for-medi-cal-eligibility-chart/"
+      ]
+    }
+  ]
+}
