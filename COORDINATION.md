@@ -564,3 +564,25 @@ The site's central claim — a California resident with $0 earned income can sat
 2. The 11 register-only sources (S08, S24–S27, S30, S31, S34, S36, S38, S39) support context but are not cited by a table row; either cite them or drop them from the register.
 3. The Kalshi federal tax classification remains genuinely unsettled; do not let any page present one treatment as IRS-approved.
 4. DHCS publishes both January 1, 2027 (work rules) and March 1, 2027 (first six-month renewals; and the member letter's loose "March 2027" wording). Keep both dates visible.
+
+---
+
+## Source-liveness sweep + codified-rule re-verification — arena/e071bffc (2026-10-18)
+
+**Session / branch:** `arena/e071bffc-maltaproj8` (platform-fixed branch; the suggested `session-<id>/<task>` naming cannot be used in Arena, so no other branch is created or pushed).
+**Base:** branched from `497d5d8`; merged `origin/main` at `afdd5c4` (after PRs #11–#20).
+**Claimed at:** 2026-10-18 22:27 UTC.
+
+**Coordination check before claiming:** `gh pr list --state open` was empty at claim time. Active/recent claims observed and respected:
+- `arena/93fdc24b` (last commit 22:17 UTC, active) — owns `pathways.html`, `income.html`, `docs/executive-summary.md`, `data/pathways.json`, `data/income-types.json`, `accuracy-93fdc24b.html`, and the hand-off scope `index.html`, `flagged.html`, `data/magi-limits.json`. **Not edited by this session.**
+- `arena/9ba14c05` (PRs #19/#20 merged) — owns `data/core.json`, `scripts/build_core.py`, `scripts/check_core.py`, root `index.html`, `executive-summary.html`, `work-rules.html`, `coverage-options.html`, `findings.html`, `verification.html`, `flagged.html`, `archives.html`, `california.html`, `verification-detailed.html`, `data/california.json`, `data/magi-limits.json`. **Not edited by this session.**
+- `arena/07d2aa7f` (last commit 20:03 UTC) and `arena/8072f20c` (last commit 20:01 UTC) — blanket audit claims, **stale > 60 min with no commits**. This session takes over only the specific item `arena/9ba14c05` handed off (automated source-URL sweep), which neither stale claim had begun. Handoff noted here per the 60-minute rule; no content of theirs was edited or discarded.
+
+**Task claimed (non-overlapping, strictly additive):**
+
+| # | Task | Status | Owner | Files/Scope | Verification | Sources |
+|---|------|--------|-------|-------------|--------------|---------|
+| 22 | Automated HTTP liveness sweep of every source URL published anywhere in the repo (hand-off item 1 from arena/9ba14c05: "the 40 source URLs were checked by document review, not by an automated HTTP sweep") | in progress | arena/e071bffc | `scripts/sweep_e071bffc.py` (new), `data/verify-e071bffc.json` (new), `verify-e071bffc.html` (new), COORDINATION.md (append-only) | Every URL fetched; HTTP status recorded; dead/moved links listed for review | the URLs themselves |
+| 23 | Re-verify the work-requirement income tests against the **codified** regulation (42 CFR 435.551–435.556, 435.603) rather than only the FR preamble/fact sheets; document any statement the codified text contradicts | in progress | arena/e071bffc | same scope as task 22 | Line-by-line against eCFR text quoted verbatim | ecfr.gov 42 CFR 435.552, .551, .554, .556, .603 |
+
+**Scope lock:** this session edits only the four paths above. Any correction needed in a file owned by `arena/93fdc24b` or `arena/9ba14c05` is logged as a change request below, not applied.
