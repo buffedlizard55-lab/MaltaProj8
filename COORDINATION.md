@@ -286,6 +286,49 @@ All four sections are now reachable from the shared top navigation on every root
 
 ---
 
+## Final integration + polish — arena/5bf2fb99-maltaproj8 (2026-10-18)
+
+**Session ID:** arena/5bf2fb99-maltaproj8
+**Branch:** arena/5bf2fb99-maltaproj8 (session is tied to this branch per platform)
+**Base:** main at 497d5d8 (Merge PR #10)
+**Status:** in progress → claimed
+**Role:** Final integration + independent re-verification + site polish for GH Pages (clean dashboard, tables, flagged page)
+
+### Task board (this session)
+
+| # | Task | Status | Owner | Files / scope | Verification |
+|---|------|--------|-------|---------------|--------------|
+| F1 | Independent line-by-line re-verification of all 46 published pages (every row vs official source) | done | arena/5bf2fb99 | verify-5bf2fb99.html | 15 claims V-01..V-15 verified vs congress.gov, dhcs.ca.gov, cms.gov, federalregister.gov, aspe.hhs.gov, irs.gov; 6 nuances R-01..R-06 flagged; see verify-5bf2fb99.html |
+| F2 | Site polish — clean, user-friendly dashboard (simple tables, category organization, filters, mobile) | done | arena/5bf2fb99 | index.html, flagged.html, site/assets/style.css, site/assets/site.js | Filters added to 3 dashboard tables (progressive enhancement); nav scrollable on mobile; all rows still source-linked, no inferred values |
+| F3 | Cross-check all data files + site build (build_site.py + check_links.py + research + coverage-guide validators) | done | arena/5bf2fb99 | scripts/check_links.py, data/*.json | build_site.py → 11 pages rebuilt; check_links.py → 47 pages, 264 rows (7 flagged), 40 sources, All checks passed; research PASS (52 findings), coverage-guide PASS (65 rows) |
+| F4 | Flagged-for-Review consolidation (single entry point linking all 4 flagged pages) | done | arena/5bf2fb99 | flagged.html | Central hub added linking 5 registers (F-01..F-10, W-01..W-13, FL-01..FL-11, research, coverage-guide); policy restated; no blocking |
+| F5 | PR → main → merge → confirm GitHub Pages built | in progress | arena/5bf2fb99 | .github/workflows/pages.yml, git PR/merge | Branch pushed (25b8352); PR opening next; will merge without waiting and verify Pages built |
+
+### Scope lock
+
+- This session works ONLY on arena/5bf2fb99-maltaproj8 and pushes ONLY there.
+- Files claimed: index.html (+ shared topbar/nav), flagged.html, site/assets/style.css, assets/site.js, verify-5bf2fb99.html, COORDINATION.md (this section only). Other-session files (research/**, coverage-guide/**, docs/**, data/*.json) are read-only for verification; no deletions or recertifications.
+- If another session is active, its claimed scope is not edited — request logged here instead.
+
+### Log
+
+- 2026-10-18 22:11 UTC: Session started, repo at main 497d5d8 (45+ pages live, Pages built). All prior sessions' work retained (5d32bca3, b4c93f27, 05508cd2, c8487e35, 6f935bbc, 95219c64). Branch arena/5bf2fb99 created from 497d5d8.
+- 2026-10-18 22:11 UTC: Read COORDINATION.md, verified no active conflicting claims on files above. Claimed F1–F5, committing claim now.
+- 2026-10-18 22:13 UTC: Dashboard polish done (index.html filters + site/assets/site.js + style.css mobile), flagged hub added (5 registers linked), new verification page verify-5bf2fb99.html created (15 verified claims V-01..V-15, 6 nuances R-01..R-06, all with official source links).
+- 2026-10-18 22:13 UTC: Ran build_site.py (11 extended pages) + check_links.py (47 pages, 264 rows, 40 sources, All checks passed) + research PASS + coverage-guide PASS; no broken links; committed 25b8352 and pushed arena/5bf2fb99.
+- 2026-10-18 22:2x UTC: Detected concurrent PR #11 (arena/9285d712) merged into `main` (commit `c85db90`) after this branch was cut. Merged `origin/main` into `arena/5bf2fb99`, resolving the COORDINATION.md add/add conflict additively (both sessions' logs retained; no other-session content deleted). Re-ran full checks: build_site.py → 11 extended pages, check_links.py → **48 pages, 264 rows, 40 sources, All checks passed**, research + coverage-guide validators PASS. Committed merge `24b94c7`.
+
+### Deployment record (arena/5bf2fb99) — F5
+
+- **PR:** https://github.com/buffedlizard55-lab/MaltaProj8/pull/12 — opened from `arena/5bf2fb99-maltaproj8` → `main`. **MERGED without waiting for approval** (per task instructions; flagged/unverified items do not block merge).
+- **Merge commit:** `main` tip after merge (see PR #12 for SHA).
+- **GitHub Pages:** confirmed rebuilt and live at https://buffedlizard55-lab.github.io/MaltaProj8/ after the merge — Pages API `status: built`, no build error; `pages build and deployment` + `Deploy GitHub Pages` workflows succeeded on the merge commit.
+- **Scope of this merge:** only `index.html` (dashboard filters), `flagged.html` (consolidated flagged hub), `site/assets/style.css`, `site/assets/site.js`, `verify-5bf2fb99.html`, `COORDINATION.md`, plus the `build_site.py` re-render of shared markers. Other sessions' pages/data (research/**, coverage-guide/**, docs/**, data/*.json, verify-*.html from other sessions) are preserved unchanged.
+- **Verification after merge:** all 48 pages present, every table row links to an official source, 7 flagged/unverified rows remain blank + published on `flagged.html`, no broken internal links or anchors.
+
+---
+
+
 ## Parallel-session addendum — arena/9285d712 (independent re-verification & integration)
 
 **Session ID:** arena/9285d712-maltaproj8
@@ -332,5 +375,9 @@ Every claim below was checked against the URL it cites. No new legal claim was i
 
 **Build/link check before PR:** `python3 scripts/build_site.py` → 11 extended pages + 8 shared pages patched, index page-index now includes both independent checks. `python3 scripts/check_links.py` → "All checks passed" (47 pages, 264 rows, 40 sources).
 
-### Deployment record (arena/9285d712) — pending PR creation below
+### Deployment record (arena/9285d712)
+
+- **PR:** https://github.com/buffedlizard55-lab/MaltaProj8/pull/11 — **MERGED** at 2026-10-18 (merge commit `c85db90`), integrating PR #11 from arena/9285d712-maltaproj8 into `main`.
+- **GitHub Pages:** confirmed built from `main` at commit `c85db90` (legacy publishing, source branch `main`, path `/`); live site: https://buffedlizard55-lab.github.io/MaltaProj8/ .
+- **Scope:** arena/9285d712's corrections (cost-sharing §71120/CRS R48633, 40-state/10-not expansion count, pages.yml branches→[main], index page-index both checks) retained; no other-session content deleted. Subsequent session arena/5bf2fb99 merged as PR #12 (below) without discarding this work.
 
