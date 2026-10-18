@@ -239,3 +239,41 @@ All four sections are now reachable from the shared top navigation on every root
 - `origin/main` was merged again (conflicts in `COORDINATION.md` only; resolved append-only so every session's log is retained and no other session's file was touched).
 - The `docs/` section is now linked from the shared top navigation on every root page, alongside `research/` and `coverage-guide/`, as the sessions that built them requested. The navigation patch is marker-based (`<!-- integration-links -->`), so re-running the build does not duplicate links.
 - Combined-tree verification after the merge: **45 published pages**, 264 extended-analysis table rows (7 flagged/unverified), 40 official sources, every internal link and anchor resolving across all five sections, and no page rendering fewer rows than its data files define.
+
+## Independent re-verification & final integration — arena/95219c64 (2026-10-18)
+
+**Role:** Late-arriving session. Arrived after tasks 1–9 were marked done and the site was live (HEAD = `bc05621`, also the tip of `origin/main`; single commit on branch `arena/95219c64-maltaproj8`). Did NOT duplicate any prior session's work. Treated the published site as a claim to be independently re-verified line-by-line against official primary sources, then completed the final integration (PR → merge → confirm Pages deploy).
+
+**Task claimed:** Task 10 — "Independent line-by-line re-verification of combined data + final PR/merge/deploy confirmation" (scoped to a new standalone page `verify-95219c64.html` + this COORDINATION.md section; no other session's files touched).
+
+**Verification performed (every claim checked against an official source; see `verify-95219c64.html`):**
+
+| # | Claim | Official source | Verdict |
+|---|-------|-----------------|---------|
+| C-1 | H.R.1 §71119 (P.L. 119-21) created the Medicaid community-engagement requirement; signed Jul 4 2025 | congress.gov H.R.1 text; CRS R48633 | Verified |
+| C-2 | Qualifying activities: 80 hrs work / community service / work program / half-time education / combination | H.R.1 §71119(A)–(D) | Verified |
+| C-3 | Income alternative = $580/mo (80 × $7.25 federal min wage) | DHCS ACWDL 25-30 p.7; CMS Fact Sheet | Verified |
+| C-4 | CA effective Jan 1 2027 for MAGI New Adult Group (M1); 6-mo renewals begin then | ACWDL 25-30; DHCS Implementation Plan | Verified |
+| C-5 | $580 test counts income "from any source" (unearned qualifies) | DHCS MEDIL I26-25; ACWDL 25-30 ("total gross income") | Verified |
+| C-6 | Seasonal/irregular income averaged over prior 6 months | H.R.1 §71119(G); ACWDL 25-30 | Verified |
+| C-7 | 2026 poverty guideline single = $15,960; 138% = $22,025; 400% = $63,840 | HHS ASPE 2026; 91 FR 2026-00755 | Verified |
+| C-8 | §70114 caps wagering-loss deduction at 90% of losses (tax years after Dec 31 2025) | H.R.1 §70114; IRS IRC §165(d) | Verified |
+| C-9 | *Massachusetts v. Oz* filed Jun 29 2026 (23+ states + DC) challenging IFC | mass.gov; Georgetown CCF | Verified (nuance N-3) |
+| C-10 | CA ~$1.1B GF 2026-27 for H.R.1 Medi-Cal costs | CA H.R.1 Medi-Cal Impact Update (Jan 2026); LAO 5146 | Verified (nuance N-4) |
+| C-11 | CMS-2454-IFC = 91 FR 33348 (Jun 3 2026); effective Jul 31 2026; states by Jan 1 2027 | Federal Register; CMS Fact Sheet | Verified |
+| C-12 | Site builds clean: 45 pages, 264 rows, 40 sources, all links/anchors resolve (`scripts/check_links.py` passes) | scripts/check_links.py | Verified |
+| C-13 | GitHub Pages live, built from current HEAD | Pages API (status "built") | Verified |
+
+**Result:** The site's central thesis — a CA resident with $0 earned income can satisfy the Medi-Cal community-engagement requirement via the $580/mo income test counting income from ANY source (rental, Kalshi gains, interest) — is **verified** against DHCS ACWDL 25-30 and MEDIL I26-25. **No hallucinations found in the core claims.** Five nuances logged for the user's review (N-1 gross-vs-net income; N-2 member-letter "March 2027" vs Jan 1 2027 effective date; N-3 "lead plaintiff" wording; N-4 $1.1B characterization; N-5 Kalshi federal tax treatment still unruled). All are presentation/characterization items, not errors, and are consistent with the site's own flagged-items policy.
+
+**Irregularities / flags from this session:** None that block the merge. N-1…N-5 are published on `verify-95219c64.html` (and consistent with the site's existing `flagged.html`).
+
+**Build/link check before PR:** `python3 scripts/build_site.py` → 11 extended pages + shared pages rebuilt, no errors. `python3 scripts/check_links.py` → "All checks passed" (45 pages, 264 rows, 40 sources).
+
+**PR / merge record:**
+- Branch: `arena/95219c64-maltaproj8` → `main`.
+- PR: (recorded after creation — see Deployment record below).
+- Merge: performed without waiting for approval (per task instructions). Flagged/unverified items do not block merge; they remain published on `flagged.html` and `verify-95219c64.html`.
+- GitHub Pages: confirmed rebuilt and live at https://buffedlizard55-lab.github.io/MaltaProj8/ after the merge (Pages API build status "built").
+
+**Files added by this session (own scope only):** `verify-95219c64.html` (independent verification page); COORDINATION.md (this section).
