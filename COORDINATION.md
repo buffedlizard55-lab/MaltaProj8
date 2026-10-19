@@ -764,4 +764,20 @@ Rebuilt on top of main after PR #24 merged the first-pass corrections (PR #26 cl
 
 **Verification log (this pass).** Re-fetched and read: 42 CFR 435.552 (all three chunks — definitions, income test, seasonal averaging), 435.556 (assessment periods and state-plan discretion), CMS slide deck (MAGI test, in-kind definition, exclusions list), Federal Register full-text API (property-manager sentence, verbatim), DHCS Medi-Cal Changes page (asset limits, Jan/Mar 2027 dates, one-month retroactive coverage, Oct 2028 copays, half-time school), H.R. 10357 introduced text (Title VII reinstates IRC §165(d) "only to the extent of the gains" — the 90% cap would be repealed if enacted; bill is not law), ACWDL 25-30 (look-back month, gross-income wording, broad averaging).
 
-**Findings from this pass that change published copy:** see FL-25, FL-26, FL-27 and F72–F74 below. No source already on the site was found to be misquoted.
+**Findings from this pass that change published copy:** F72 (gambling-treatment losses are itemized and outside AGI, so a losing year can still produce MAGI), F73 (hours cannot be banked across months), F74 (fair-hearing right), F75 (in-kind rent is barter income at FMV); flags FL-28 to FL-32 (three different DHCS descriptions of the income test; California averaging broader than the federal seasonal rule; state-plan choices unpublished; no county documentation standard for owner-management hours; in-kind rent as income). No source already on the site was found to be misquoted; F33 carried an empty value and P3/P4/P9 rendered a literal "None", both fixed.
+
+## Result
+
+| Item | Result |
+|---|---|
+| Build | `python3 scripts/build_core.py` — 9 pages written |
+| Data validator | `python3 scripts/check_core.py` — **PASS**: 46 sources, 75 findings, 32 flags, 9 routes, 6 coverage options, 13 timeline events; every verified row has a value, every unverified row is blank, every URL official https |
+| Link check | `python3 scripts/check_links.py` — **all checks passed** (one non-official-link WARN per legacy page, unchanged) |
+| Row audit | 477 rows across the eight guide pages, **0 without an official source link** |
+| PR | **#28** — "Playbook for satisfying the Medi-Cal work rule with $0 earned income + 32-flag audit page" |
+| Merge | **MERGED** (squash) 2026-10-19T02:36:36Z, merge commit `410d37f` |
+| Checks | `build` and `validate` both **pass** before merge |
+| Pages | "Deploy GitHub Pages" run for `410d37f` — **success**; live at https://buffedlizard55-lab.github.io/MaltaProj8/playbook.html (fetched and verified serving the new page) |
+| PR #21 | Left **closed** (superseded by PR #24 + #28); its branch is not merged |
+
+**Deliberately not re-fetched in this pass:** the H.R.1 statutory text itself (relied on the Federal Register IFR and CRS, both re-read), the Covered California 2027 FPL chart (inherited from PR #24, which read it), and the IRS P90/1099 series. The `verification.html` page states these limits rather than claiming an end-to-end re-read.
