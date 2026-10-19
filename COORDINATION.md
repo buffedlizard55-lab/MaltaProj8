@@ -657,3 +657,27 @@ It postdates every document the site was built on — DHCS ACWDL 25-30 (Dec 30 2
 2. **CR-05** is not addressed by PR #21's diff — `california.html` card 5 still says "Lead plaintiff" while the same page's June 29 timeline row says "co-leads", and `data/california.json` still dates the suit `2026-06-06`.
 3. **CR-07** — `build_site.py` will still silently regress the pages `build_core.py` owns, and no check catches it.
 4. **AB 2161 is not in `data/core.json`'s 40-source register.** The enacted statute should be registered as a source and cited by the relevant rows, otherwise the site's strongest authority lives only on this supplementary page.
+
+---
+
+## Final integration — arena/f8bfa1ff (2026-10-19)
+
+**Session ID:** arena/f8bfa1ff-maltaproj8
+**Branch:** arena/f8bfa1ff-maltaproj8 (platform-fixed)
+**Base:** main at 90ae3cf (Merge PR #23)
+**Role:** Final integration + independent re-verification + GH Pages publish (clean dashboard, all tables, flagged review, line-by-line sources)
+
+### Task board (this session) — non-overlapping claim, append-only COORDINATION edits
+
+| # | Task | Status | Owner | Files/Scope | Verification |
+|---|------|--------|-------|-------------|--------------|
+| 24 | Integrate PR #21 (arena/93fdc24b) corrections — AB 2161, MAGI vs gross, seasonal-worker-only averaging, lawsuit co-leads fix (CR-05), and durable build_site protection (CR-07) | in progress | arena/f8bfa1ff | data/california.json, california.html, data/core.json, data/pathways.json, pathways.html, data/income-types.json, income.html, data/magi-limits.json, data/sources.json, data/flagged.json, data/entries-*.json, data/page-*.json, scripts/build_site.py, scripts/build_core.py, scripts/check_core.py, index.html, flagged.html, verification.html, archives.html, accuracy-93fdc24b.html, docs/*, COORDINATION.md (append-only) | Fetch + read AB 2161 (leginfo), 42 CFR 435.552(g)(1), 26 USC 45R(d)(5)(B) via govinfo; verify against DHCS ACWDL 25-30 vs enacted statute; run build_core + check_core + check_links + check_e071bffc + research/coverage validators; confirm Pages built |
+| 25 | Re-fetch remaining 25 not-refetched sources (govinfo 45R, S06-S08, S12, S14, S18-S21, S24-S31, S34-S40) and mark sweep | in progress | arena/f8bfa1ff | data/verify-e071bffc.json, verify-e071bffc.html, scripts/build_verify_e071bffc.py, scripts/check_e071bffc.py, COORDINATION.md | HTTP fetch each URL in this session; record status fetched vs not-refetched; never mark verified without fetch |
+| 26 | Final site build + verification + PR → merge → Pages deploy | pending | arena/f8bfa1ff | .github/workflows/pages.yml, git push + PR | PR from arena/f8bfa1ff → main, merge without waiting, confirm Pages `built`, live fetch of index + verify pages |
+
+**Scope lock:** This session edits only the files listed above. It merges PR #21 (arena/93fdc24b) rather than duplicating it — no other session's files are overwritten without merging. Corrections that overlap with PR #21 are resolved by merging that branch, not by parallel edits. `research/` and `coverage-guide/` are preserved and not re-certified; their validators are re-run. COORDINATION.md is append-only.
+
+### Log — arena/f8bfa1ff
+
+- 2026-10-19 02:21 UTC: Session start, branch arena/f8bfa1ff-maltaproj8 at 90ae3cf (main). Verified main has 58 pages, 69 core findings, 40 sources, check_links PASS, Pages built (legacy, main /). Inspected PR #21 (arena/93fdc24b) — OPEN, 43-source core, 71 findings, 27 flags, corrects AB 2161, seasonal-worker, gross→MAGI, lawsuit, build_site guard. It diverged from afdd5c4 and lacks e071bffc sweep; our branch has e071bffc but lacks its corrections. Final integration will merge both.
+- 2026-10-19 02:22 UTC: Claimed tasks 24-26, committing claim now before any content edits (per protocol).
