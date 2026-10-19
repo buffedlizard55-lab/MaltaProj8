@@ -59,10 +59,25 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
-      - name: Select artifact-based Pages publishing
+      - name: Wait for any legacy Pages build before publishing verified artifact
         env:
           GH_TOKEN: ${{ github.token }}
-        run: gh api --method PUT repos/${{ github.repository }}/pages -f build_type=workflow
+        run: |
+          mode=$(gh api repos/${{ github.repository }}/pages --jq .build_type)
+          if [ "$mode" = legacy ]; then
+            for attempt in $(seq 1 60); do
+              result=$(gh api repos/${{ github.repository }}/pages/builds/latest --jq '[.commit,.status] | @tsv')
+              echo "Legacy build: $result"
+              sha=$(printf '%s' "$result" | cut -f1)
+              status=$(printf '%s' "$result" | cut -f2)
+              if [ "$sha" = "$GITHUB_SHA" ] && { [ "$status" = built ] || [ "$status" = errored ]; }; then
+                exit 0
+              fi
+              sleep 3
+            done
+            echo 'Legacy build did not settle for this commit; refusing a competing deployment.'
+            exit 1
+          fi
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
       - name: Deploy verified complete site

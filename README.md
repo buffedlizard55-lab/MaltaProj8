@@ -61,3 +61,6 @@ python3 -m http.server 8000 --bind 0.0.0.0 --directory dist
 ## Important unresolved items
 
 See the live Flagged page for complete details and official links: conflicting DHCS January/March wording, personal trading/owner-management hours, Kalshi tax character, current litigation outcome, missing personal facts, a budget PDF's omitted unit, and an extracted 2027 marketplace chart's missing dollar column. Unknown values are not treated as zero. Source publication dates are distinct from review/access dates.
+
+### Pages compatibility
+The complete-site Actions job deploys its validated artifact. Repository Pages settings currently remain in legacy mode; the integration cannot change that setting. The deployment job waits for the same commit’s automatic legacy build to finish before deploying the complete artifact, so the historical-reference banners and staged resources are the final publication.
