@@ -788,8 +788,8 @@ Rebuilt on top of main after PR #24 merged the first-pass corrections (PR #26 cl
 
 | Task | Status | Owner | Files/scope |
 |---|---|---|---|
-| Reconcile stale PR #21 and audit primary claims using freshly retrieved official evidence | in progress | arena/bf76ee37 | `data/`, `scripts/`, root HTML, `docs/`, `tools/` previously claimed by arena/93fdc24b; preserve that PR's contributions during integration |
-| Harden build, update README, publish source limitations and complete Pages deployment | in progress | arena/bf76ee37 | README.md, .github/workflows/, COORDINATION.md append-only, final shared outputs |
+| Reconcile stale PR #21 and audit primary claims using freshly retrieved official evidence | done | arena/bf76ee37 | `data/`, `scripts/`, root HTML, `docs/`, `tools/` previously claimed by arena/93fdc24b; preserve that PR's contributions during integration |
+| Harden build, update README, publish source limitations and complete Pages deployment | done | arena/bf76ee37 | README.md, .github/workflows/, COORDINATION.md append-only, final shared outputs |
 
 Claim rationale: PR #21's latest commit is 2026-10-18 22:40:34 UTC, over 60 minutes before this session. Its unfinished scope is taken over under the user's stale-claim rule; no work will be discarded. Other historic sessions have recorded completed deployments. This session is platform-fixed to `arena/bf76ee37-maltaproj8`; no alternate branch is created. Existing verification labels are not fresh evidence. Network/source retrieval failures will be flagged; an official-looking URL alone is not verification. Final integration edits only after research completes.
 
@@ -895,3 +895,21 @@ After the Pages deployment, F44/FL-06 were re-read against the introduced text o
 PR27 merged at **2026-10-19T02:42:52Z**, merge SHA **954b4e7f3c2e4a087b80b2a526bb889ff301a29d**. Its final PR CI passed all three checks. Main workflow **39191255664** passed the full validation, deterministic-build and complete artifact upload (13s), but failed at the attempted Pages-setting update before artifact deployment. Legacy Pages separately reports this SHA built; that does NOT establish publication of our staged notices. Do not label the new artifact deployed yet.
 
 Removed the unnecessary settings mutation (the earlier repository workflow already successfully deployed artifacts while settings reported legacy). The replacement waits for the same SHA's automatic legacy build to finish, then configures and deploys the validated complete artifact, avoiding legacy overwriting the staged notices. No credentials or broader permissions added. README explicitly describes the compatibility mode rather than claiming the server setting changed. Follow-up fix will be merged only after checks; then artifact publication will be verified against the actual live content.
+
+## Deploy incident and fix (2026-10-19, after PR #27)
+
+After PR #27 merged, the `Build and deploy complete healthcare guide` workflow failed on `main` at the step `Select artifact-based Pages publishing` (`gh api --method PUT repos/.../pages -f build_type=workflow`), because the workflow token cannot change repository Pages settings (`Resource not accessible by integration`, HTTP 403 — reproduced with the same token from the CLI).
+
+**Impact:** none on the published site. The repository's Pages site is published from `main` with `build_type: legacy`, and the `pages build and deployment` run for `954b4e7` completed **success**, so the site was live and current throughout.
+
+**Fix:** the deploy job and artifact upload are removed from `.github/workflows/pages.yml`; the workflow now validates and stages only, and deployment continues through legacy branch publishing (automatic on merge). A comment in the workflow records why, and what would be required to move to artifact-based publishing (repository-admin change of `build_type` to `workflow`).
+
+**Verified after the fix:** workflow green on `main`; `pages build and deployment` success for the merge commit; live pages fetched and checked.
+
+
+### bf76ee37 — completed publication and final documentation (PR33)
+While PR33 was opening, another session merged PR32 (`097498cb6f68542b3f88e5d2122ece607f3b2652`) removing artifact deployment entirely. Adopted that already-merged repair; the tentative wait-and-deploy plan above was NOT shipped. Preserved both incident logs and notified PR32's author. Corrected an important distinction: legacy Pages publishes committed main files, NOT ignored `dist` files. Staging-only historical banners are therefore not claimed live. Current primary Dashboard, Archive and Flagged pages themselves carry the historical limitations/citation-gap notices. README and workflow comments now describe the actual publication mechanism.
+
+**Live verification:** fetched `https://buffedlizard55-lab.github.io/MaltaProj8/?release=097498cb6f68542b3f88e5d2122ece607f3b2652` successfully and inspected the new “Healthcare without a paycheck” dashboard, revised separate income/activity/exclusion routes, half-time alternative, monthly MAGI wording, and unknown personal-hours notice. A first unversioned fetch returned an older cached page; the release-qualified fetch returned the new revision. Pages API reports the merged PR27 SHA built; PR32's subsequent completed deployment is separately recorded above. Task status is **done**, not a certification of the untouched ongoing PR25 subsite review or of the 97 historical citation gaps.
+
+PR33: https://github.com/buffedlizard55-lab/MaltaProj8/pull/33 — reconciles the already-merged repair, records PR27's merge SHA/time and successful live primary publication, and corrects README/workflow descriptions. No unsupported personal values filled; all 82 finding reviews, 50 sources, 38 flags and nine primary pages retained. Remaining historical citation gaps and unconfirmed values are published, not silently inferred.

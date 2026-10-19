@@ -1,4 +1,4 @@
-name: Build and deploy complete healthcare guide
+name: Validate complete healthcare guide
 on:
   push:
     branches: [main]
@@ -43,43 +43,6 @@ jobs:
         run: |
           python3 scripts/stage_site.py
           python3 scripts/check_integration.py --site dist
-      - name: Upload complete Pages artifact
-        if: github.event_name != 'pull_request'
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: dist
-  deploy:
-    if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
-    needs: validate-site
-    runs-on: ubuntu-latest
-    permissions:
-      pages: write
-      id-token: write
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    steps:
-      - name: Wait for any legacy Pages build before publishing verified artifact
-        env:
-          GH_TOKEN: ${{ github.token }}
-        run: |
-          mode=$(gh api repos/${{ github.repository }}/pages --jq .build_type)
-          if [ "$mode" = legacy ]; then
-            for attempt in $(seq 1 60); do
-              result=$(gh api repos/${{ github.repository }}/pages/builds/latest --jq '[.commit,.status] | @tsv')
-              echo "Legacy build: $result"
-              sha=$(printf '%s' "$result" | cut -f1)
-              status=$(printf '%s' "$result" | cut -f2)
-              if [ "$sha" = "$GITHUB_SHA" ] && { [ "$status" = built ] || [ "$status" = errored ]; }; then
-                exit 0
-              fi
-              sleep 3
-            done
-            echo 'Legacy build did not settle for this commit; refusing a competing deployment.'
-            exit 1
-          fi
-      - name: Configure GitHub Pages
-        uses: actions/configure-pages@v5
-      - name: Deploy verified complete site
-        id: deployment
-        uses: actions/deploy-pages@v4
+      # Publication uses the repository's existing legacy Pages build from main.
+      # It publishes committed source/generated pages, NOT the ignored dist folder.
+      # Staging is validated for local preview/export only. No separate deploy job.
