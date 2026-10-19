@@ -927,7 +927,7 @@ def flagged(data, sources):
         'They are preserved and linked here so no flagged item is reachable only by accident.</p>'
         '<ul class="big-list">'
         '<li><a href="docs/flagged-for-review.html">Docs flags</a> — taxes, subsidies and unresolved values</li>'
-        '<li><a href="research/review.html">Research flags</a> — income, public-charge and enforcement questions</li>'
+        '<li><a href="research/review.html">Research flags</a> — timing, income wording, six-month averaging, school wording, Kalshi and property-management hours</li>'
         '<li><a href="coverage-guide/pages/flagged.html">Coverage-guide flags</a> — timing, hours and FPL</li>'
         '<li><a href="audit-6fc18b58.html">Independent source audit</a> and <a href="archives.html#archive">other checks</a></li>'
         '</ul>'

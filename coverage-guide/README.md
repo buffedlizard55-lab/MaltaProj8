@@ -10,7 +10,7 @@ Official-source research dashboard on California healthcare eligibility and the 
 - Evidence register: `research/findings.json`
 - Coordination and deployment log: `../COORDINATION.md`
 
-Reviewed **October 18, 2026**. Not an eligibility determination or legal/tax advice. Individual financial amounts and Kalshi-specific classifications were not supplied or officially confirmed and remain unverified. Official date and rounding discrepancies are published, not silently resolved.
+Reviewed **October 18, 2026**; every source re-fetched and every row re-read **October 19, 2026** (arena/75b1956e), adding AB 2161 (Chapter 209, Statutes of 2026), 42 CFR 435.552, 26 U.S.C. 45R(d)(5)(B) and Covered California’s 2027 chart. Not an eligibility determination or legal/tax advice. Individual financial amounts and Kalshi-specific classifications were not supplied or officially confirmed and remain unverified. Official date and rounding discrepancies are published, not silently resolved.
 
 ## Build and check
 ```sh

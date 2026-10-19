@@ -6,7 +6,7 @@ from html.parser import HTMLParser
 from urllib.parse import urlsplit, unquote
 root=Path(__file__).resolve().parents[1]
 d=json.loads((root/'research/findings.json').read_text())
-allowed={'www.cms.gov','www.govinfo.gov','www.medicaid.gov','www.dhcs.ca.gov','www.coveredca.com','www.healthcare.gov','www.irs.gov','bphc.hrsa.gov','www.congress.gov'}
+allowed={'www.cms.gov','www.govinfo.gov','www.medicaid.gov','www.dhcs.ca.gov','www.coveredca.com','www.healthcare.gov','www.irs.gov','bphc.hrsa.gov','www.congress.gov','leginfo.legislature.ca.gov','www.ecfr.gov'}
 ids=set(); total=0
 for s in d['sources'].values():
     u=urlsplit(s['url'])
