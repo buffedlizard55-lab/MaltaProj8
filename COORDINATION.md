@@ -781,3 +781,14 @@ Rebuilt on top of main after PR #24 merged the first-pass corrections (PR #26 cl
 | PR #21 | Left **closed** (superseded by PR #24 + #28); its branch is not merged |
 
 **Deliberately not re-fetched in this pass:** the H.R.1 statutory text itself (relied on the Federal Register IFR and CRS, both re-read), the Covered California 2027 FPL chart (inherited from PR #24, which read it), and the IRS P90/1099 series. The `verification.html` page states these limits rather than claiming an end-to-end re-read.
+
+**Findings from this pass that change published copy:** see FL-25, FL-26, FL-27 and F72–F74 below. No source already on the site was found to be misquoted.
+
+## Current integration session — arena/bf76ee37-maltaproj8 (2026-10-19)
+
+| Task | Status | Owner | Files/scope |
+|---|---|---|---|
+| Reconcile stale PR #21 and audit primary claims using freshly retrieved official evidence | in progress | arena/bf76ee37 | `data/`, `scripts/`, root HTML, `docs/`, `tools/` previously claimed by arena/93fdc24b; preserve that PR's contributions during integration |
+| Harden build, update README, publish source limitations and complete Pages deployment | in progress | arena/bf76ee37 | README.md, .github/workflows/, COORDINATION.md append-only, final shared outputs |
+
+Claim rationale: PR #21's latest commit is 2026-10-18 22:40:34 UTC, over 60 minutes before this session. Its unfinished scope is taken over under the user's stale-claim rule; no work will be discarded. Other historic sessions have recorded completed deployments. This session is platform-fixed to `arena/bf76ee37-maltaproj8`; no alternate branch is created. Existing verification labels are not fresh evidence. Network/source retrieval failures will be flagged; an official-looking URL alone is not verification. Final integration edits only after research completes.
