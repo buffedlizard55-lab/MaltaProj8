@@ -1149,9 +1149,9 @@
     {
       "id": "F44",
       "category": "Income",
-      "finding": "H.R. 10357 would restore the 100% wagering-loss deduction",
-      "value": "Introduced September 14, 2026; Ways and Means approved 38–5 on September 16, 2026; not enacted",
-      "detail": "The bill is the Digital Asset Tax Certainty Act. Title VII contains the wagering-loss provision. It has not passed the House or Senate, so the 90% cap remains current law.",
+      "finding": "H.R. 10357 §701 would repeal the 90% wagering-loss cap if enacted",
+      "value": "Title VII (§701) rewrites IRC §165(d) to allow wagering losses only to the extent of wagering gains; introduced 09/14/2026; not enacted",
+      "detail": "The introduced text amends IRC §165(d) to read: losses from wagering transactions are allowed only to the extent of the gains from such transactions, effective for tax years beginning after 2025. That is the pre-2026 rule: it removes the 90% limitation added by H.R.1 §70114 rather than creating a new deduction. The bill has not passed the House or Senate, so the 90% cap remains current law. The sponsor's release describes the same change as a fix for the gambling-loss deduction; the statutory text is the authority here.",
       "source": "S35",
       "status": "verified"
     },
@@ -1630,7 +1630,7 @@
     {
       "id": "FL-06",
       "item": "H.R. 10357 is not law",
-      "issue": "The Digital Asset Tax Certainty Act would restore the 100% wagering-loss deduction. The Ways and Means Committee approved it 38–5 on September 16, 2026, but it has not passed the House or Senate.",
+      "issue": "The Digital Asset Tax Certainty Act's Title VII (§701) would rewrite IRC §165(d) so wagering losses are allowed only to the extent of wagering gains — repealing the 90% cap in H.R.1 §70114. The Ways and Means Committee approved a substitute 38–5 on September 16, 2026, but the bill has not passed the House or Senate.",
       "impact": "The 90% cap remains current law for 2026 unless the bill is enacted.",
       "source": "S35",
       "status": "open"
