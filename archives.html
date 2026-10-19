@@ -25,7 +25,7 @@
   <div class="hero-card">
     <div class="eyebrow">Archive · preserved detailed pages and supplementary dashboards</div>
     <h2>Archive — every page, clearly labelled by status.</h2>
-    <p class="lead">This page is the map of the whole site. The verified core is the six pages generated from <code>data/core.json</code>. Everything else is preserved as detailed reference or supplementary research, with an explicit status so you know what was re-checked.</p>
+    <p class="lead">This page is the map of the whole site. The verified core is the seven pages generated from <code>data/core.json</code>. Everything else is preserved as detailed reference or supplementary research, with an explicit status so you know what was re-checked.</p>
     <div class="kpis"><div class="kpi"><div class="k">Primary pages</div><div class="v">8</div><div class="d">Verified core, generated from data/core.json.</div></div><div class="kpi"><div class="k">Detailed reference pages</div><div class="v">7</div><div class="d">Preserved; two are the superseded originals.</div></div><div class="kpi"><div class="k">Extended analysis pages</div><div class="v">11</div><div class="d">Preserved generated reference.</div></div><div class="kpi"><div class="k">Supplementary sections</div><div class="v">8 pages</div><div class="d">Research, coverage guide, docs, and five independent checks.</div></div></div>
     <div class="toc"><a href="#archive">Page index</a><a href="#build">Build and verification</a><a href="#policy">Status policy</a></div>
   </div>
@@ -33,7 +33,7 @@
 </div>
 <div class="wrap">
   <h2 class="section-title" id="archive">Primary verified core (this session) <span class="badge neutral">Current</span></h2>
-  <div class="card" style="margin-bottom:12px"><p>Generated from data/core.json. Fully re-verified in this session.</p></div>
+  <div class="card" style="margin-bottom:12px"><p>Generated from data/core.json. Every row names a source; the corrected rows were re-fetched and re-checked on 2026-10-19.</p></div>
   <div class="table-wrap"><table><thead><tr><th>Page</th><th>Path</th></tr></thead><tbody><tr><td><a href="index.html">Dashboard</a></td><td><code>index.html</code></td></tr><tr><td><a href="executive-summary.html">Executive Summary</a></td><td><code>executive-summary.html</code></td></tr><tr><td><a href="work-rules.html">Work Rules</a></td><td><code>work-rules.html</code></td></tr><tr><td><a href="coverage-options.html">Coverage Options</a></td><td><code>coverage-options.html</code></td></tr><tr><td><a href="findings.html">All Findings</a></td><td><code>findings.html</code></td></tr><tr><td><a href="verification.html">Verification log</a></td><td><code>verification.html</code></td></tr><tr><td><a href="flagged.html">Flagged for Review</a></td><td><code>flagged.html</code></td></tr><tr><td><a href="archives.html">Archive (this page)</a></td><td><code>archives.html</code></td></tr></tbody></table></div>
 
   <h2 class="section-title">Detailed reference pages <span class="badge neutral">Preserved</span></h2>
@@ -49,7 +49,7 @@
   <div class="table-wrap"><table><thead><tr><th>Page</th><th>Path</th></tr></thead><tbody><tr><td><a href="research/index.html">Research dashboard (9 pages)</a></td><td><code>research/index.html</code></td></tr><tr><td><a href="coverage-guide/index.html">Coverage guide (7 pages)</a></td><td><code>coverage-guide/index.html</code></td></tr><tr><td><a href="docs/index.html">Docs dashboard (10 pages)</a></td><td><code>docs/index.html</code></td></tr><tr><td><a href="audit-6fc18b58.html">Independent audit (6fc18b58)</a></td><td><code>audit-6fc18b58.html</code></td></tr><tr><td><a href="verify-5bf2fb99.html">Independent check (5bf2fb99)</a></td><td><code>verify-5bf2fb99.html</code></td></tr><tr><td><a href="verify-9285d712.html">Independent check (9285d712)</a></td><td><code>verify-9285d712.html</code></td></tr><tr><td><a href="verify-95219c64.html">Independent check (95219c64)</a></td><td><code>verify-95219c64.html</code></td></tr><tr><td><a href="verify-a9c46f9b.html">Independent check (a9c46f9b)</a></td><td><code>verify-a9c46f9b.html</code></td></tr><tr><td><a href="verify-e071bffc.html">Source sweep + enacted-statute check (e071bffc)</a></td><td><code>verify-e071bffc.html</code></td></tr></tbody></table></div>
 <h2 class="section-title" id="build">Build and verification</h2><div class="card"><h3>Rebuild the core</h3><pre><code>python3 scripts/build_core.py
 python3 scripts/check_core.py
-python3 scripts/check_links.py</code></pre><p>The core build fails if a row names a missing source, if a verified row has no value, or if an unverified row carries a value. The link checker verifies internal links and anchors across the published site.</p><p class="hint">Data: <a href="data/core.json">data/core.json</a> · 40 official sources</p></div><h2 class="section-title" id="policy">Status policy</h2><div class="card"><ul><li><strong>Verified</strong> — the value matches an official source linked on the row.</li><li><strong>Verified — nuance</strong> — the value is official, but a related definition or date is unresolved and flagged.</li><li><strong>Flagged</strong> — official sources conflict, or the legal question is unsettled.</li><li><strong>Unverified — blank</strong> — no official value was located; the cell is blank.</li><li><strong>Preserved</strong> — earlier work retained for reference; not re-certified by this session.</li></ul></div></div>
+python3 scripts/check_links.py</code></pre><p>The core build fails if a row names a missing source, if a verified row has no value, or if an unverified row carries a value. The link checker verifies internal links and anchors across the published site.</p><p class="hint">Data: <a href="data/core.json">data/core.json</a> · 47 official sources</p></div><h2 class="section-title" id="policy">Status policy</h2><div class="card"><ul><li><strong>Verified</strong> — the value matches an official source linked on the row.</li><li><strong>Verified — nuance</strong> — the value is official, but a related definition or date is unresolved and flagged.</li><li><strong>Flagged</strong> — official sources conflict, or the legal question is unsettled.</li><li><strong>Unverified — blank</strong> — no official value was located; the cell is blank.</li><li><strong>Preserved</strong> — earlier work retained for reference; not re-certified by this session.</li></ul></div></div>
 <div class="footer">
   <p><strong>Source policy:</strong> every table row links to an official source
   (congress.gov, federalregister.gov, cms.gov, medicaid.gov, dhcs.ca.gov,
@@ -59,7 +59,7 @@ python3 scripts/check_links.py</code></pre><p>The core build fails if a row name
   <a href="flagged.html">Flagged for Review</a> ·
   <a href="archives.html">Archive of detailed pages</a></p>
   <p>Research compilation, not legal, tax, or eligibility advice. County eligibility
-  staff make the final determination. Data updated 2026-10-18. This page is
+  staff make the final determination. Data updated 2026-10-19. This page is
   generated from <a href="data/core.json">data/core.json</a>; do not hand-edit values.</p>
 </div>
 

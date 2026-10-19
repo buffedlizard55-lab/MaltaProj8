@@ -5,7 +5,7 @@ Build the primary, verified dashboard pages from data/core.json.
 Outputs (repository root):
   index.html              — clean landing dashboard
   executive-summary.html  — executive summary, options, law, California actions
-  work-rules.html         — the rule in detail, 9 practical pathways
+  work-rules.html         — the rule in detail, 10 practical routes
   coverage-options.html   — every coverage option with income bands
   findings.html           — every finding in one filterable table + source register
   archives.html           — index of the older detailed / supplementary sections
@@ -142,7 +142,7 @@ def page(title, subtitle, active, body, description=None, scripts=""):
   <a href="flagged.html">Flagged for Review</a> ·
   <a href="archives.html">Archive of detailed pages</a></p>
   <p>Research compilation, not legal, tax, or eligibility advice. County eligibility
-  staff make the final determination. Data updated 2026-10-18. This page is
+  staff make the final determination. Data updated 2026-10-19. This page is
   generated from <a href="data/core.json">data/core.json</a>; do not hand-edit values.</p>
 </div>
 {scripts}
@@ -180,7 +180,7 @@ def hero(title, eyebrow, lead, kpis, toc, side_cards, lead_html=None):
 def category_cards():
     cards = [
         ("Executive Summary", "executive-summary.html", "The one-page answer, the exact law, your options, California's actions, and the action plan."),
-        ("Work Rules", "work-rules.html", "Who is subject, 9 practical pathways for $0 earned income, the $580 test, verification, and the penalty."),
+        ("Work Rules", "work-rules.html", "Who is subject, 10 practical routes for $0 earned income, the $580 test, verification, and the penalty."),
         ("Coverage Options", "coverage-options.html", "Medi-Cal, Covered California, Medicare, and community health centers, with income bands and costs."),
         ("All Findings", "findings.html", "Every finding in one filterable table, plus the full official-source register."),
         ("The Law — line by line", "law.html", "The detailed H.R.1 §71119 table: statutory text, dates, provisions, and citations."),
@@ -219,7 +219,7 @@ def dashboard(data, sources):
     ]
     profile_rows = [
         [esc(p["fact"]), esc(p["value"]) if p["value"] else '<em>blank</em>',
-         esc(p["note"]), badge(p["status"])]
+         esc(p["note"]), source_cell(sources, p["source"]), badge(p["status"])]
         for p in data["profile"]
     ]
     gate_cards = "".join(
@@ -239,18 +239,17 @@ def dashboard(data, sources):
     lead_html = (
         '<p class="lead"><strong>Short answer:</strong> you do not need a W-2 to satisfy '
         'California\'s Medicaid work rule. There are <strong>three independent routes</strong>: '
-        'count your <strong>property-management hours</strong> (the federal rule expressly counts '
-        'in-kind work, including free or reduced rent), show <strong>$580 of income from any source</strong> '
-        'in one month, or qualify for an <strong>exclusion or exemption</strong>. If your MAGI is above '
-        'the Medi-Cal limit, <strong>Covered California has no work requirement at all</strong>. '
-        'Every row below links to an official source.</p>'
+        'count your <strong>property-management hours</strong> (42 CFR 435.552(b) counts in-kind and unpaid work), '
+        'show <strong>$580 of MAGI-based income</strong> in one month (unearned income counts), or qualify for an '
+        '<strong>exclusion or exemption</strong>. If your MAGI is above the Medi-Cal limit, '
+        '<strong>Covered California has no work requirement at all</strong>. Every row below links to an official source.</p>'
     )
     body = hero(
-        "You can satisfy the work rule with $0 earned income — if you document the right route.",
-        "Verified 2026-10-18 · H.R.1 §71119 · CMS-2454-IFC · DHCS ACWDL 25-30 / MEDIL I26-25",
+        "Two gates decide this — and the work rule may not apply to you at all.",
+        "Verified 2026-10-19 · Federal: H.R.1 §71119, 42 CFR 435.550–435.563 · California: AB 2161 (Chapter 209)",
         "",
         data["key_numbers"],
-        [("answer", "Answer in 30 seconds"), ("gates", "Two gates"), ("paths", "9 pathways"),
+        [("answer", "Answer in 30 seconds"), ("gates", "Two gates"), ("paths", "10 routes"),
          ("options", "Coverage options"), ("ca", "What California is doing"),
          ("findings", "Key findings"), ("flags", "Flagged items"), ("map", "Site map")],
         [
@@ -271,9 +270,9 @@ def dashboard(data, sources):
       <div><div class="eyebrow">Route 1 — strongest</div><h3>In-kind property-management work</h3>
       <p>If you manage the building where you live, or receive free or reduced rent for management duties, the federal rule says those hours count as work. Aim for 80 hours in at least one month per renewal period. Keep a duty list, the rent-credit agreement, and a monthly log.</p>
       <p class="hint">{source_cell(sources, "S03")}</p></div>
-      <div><div class="eyebrow">Route 2 — simplest</div><h3>$580 of income from any source</h3>
-      <p>DHCS's member letter says “income from any source of at least $580 (before taxes) in any month since your last renewal.” Rental, interest and realized Kalshi gains can all count. One month is enough.</p>
-      <p class="hint">{source_cell(sources, "S10")}</p></div>
+      <div><div class="eyebrow">Route 2 — simplest</div><h3>$580 of MAGI-based income</h3>
+      <p>42 CFR 435.552(f)(2) requires your MAGI-based household income for the month to be at least $580. Net rental income, taxable interest and realized gains count; gross rent does not. One qualifying month is enough.</p>
+      <p class="hint">{source_cell(sources, "S42")}</p></div>
       <div><div class="eyebrow">Route 3 — fallback</div><h3>Exclusion, exemption, or 80 hours of activity</h3>
       <p>If neither route fits, the rule can be met with 80 hours of community service, a work program, at least half-time school, or a combination — or you may be excluded or exempt (age, disability, caregiving, Medicare, high-unemployment county).</p>
       <p class="hint">{source_cell(sources, "S09")}</p></div>
@@ -284,12 +283,12 @@ def dashboard(data, sources):
   {section("The two gates — do them in order", "gates", f'<div class="grid2">{gate_cards}</div>', "Both gates must be true before the work rule applies. Gate 1 is an income test; Gate 2 is a work/income/exemption test.")}
 
   {section("Your profile — what is given and what is missing", "profile", table(
-      ["Fact", "Value", "What it changes", "Status"],
+      ["Fact", "Value", "What it changes", "Source", "Status"],
       profile_rows,
       table_id="profile-table",
   ), "No personal eligibility value is inferred. Blank cells are flagged. The site uses a one-person household for FPL examples only because household size was not supplied.")}
 
-  {section("9 practical pathways for $0 earned income", "paths", table(
+  {section("10 practical routes for $0 earned income (and when the rule does not apply)", "paths", table(
       ["#", "Pathway", "What satisfies it", "Earned income?", "Hours", "Best fit", "Source", "Status"],
       path_rows,
       table_id="pathways-table",
@@ -321,7 +320,7 @@ def dashboard(data, sources):
       table_id="flags-table",
   ), 'These are the highest-impact open items. <a href="flagged.html">See the full Flagged for Review page →</a>')}
 
-  {section("Site map — every category", "map", category_cards(), "The dashboard and six primary pages are the verified core. The older detailed pages and the three supplementary dashboards are preserved in the archive and are not re-certified by this session.")}
+  {section("Site map — every category", "map", category_cards(), "The dashboard and the six primary pages are the verified core. The older pages are kept in the archive for the audit trail: each carries a “Superseded” banner, several predate the 2026-10-19 MAGI correction, and none is re-certified. Where an archived page conflicts with this dashboard, the dashboard controls.")}
 </div>
 """
     return page(
@@ -341,15 +340,16 @@ def executive_summary(data, sources):
         ("Federal effective date", "January 1, 2027, unless a state starts sooner or receives a good-faith waiver (latest December 31, 2028)", "S03"),
         ("Who is subject", "Non-pregnant adults 19–64 in the ACA adult group or certain section 1115 demonstrations providing minimum essential coverage, not entitled to or enrolled in Medicare", "S05"),
         ("Qualifying activities", "Work, community service, work program, at least half-time education, or a combination — at least 80 hours in the month", "S01"),
-        ("Income alternative", "Monthly income at least the federal minimum wage × 80 hours = $580 in 2026", "S06"),
-        ("Seasonal alternative", "Average monthly income over the preceding six months of at least $580 for a seasonal worker under IRC §45R(d)(5)(B)", "S06"),
+        ("Income alternative", "MAGI-based monthly household income at least the federal minimum wage × 80 hours ($580); 42 CFR 435.552(f)(2)", "S42"),
+        ("Seasonal alternative", "Average MAGI-based income over the preceding six months of at least $580, only for a seasonal worker under IRC §45R(d)(5)(B)", "S42"),
         ("Who is excluded", "Former foster youth under 26; American Indians/Alaska Natives; parents/caretakers of a child 13 or younger or a disabled person; veterans with a total disability rating; medically frail; TANF/SNAP work-requirement compliance; SUD treatment; inmates; pregnant/postpartum", "S06"),
         ("Mandatory exceptions", "Under 19; Medicare Part A or B; another mandatory categorically needy group; recent inmate", "S07"),
         ("Hardship exceptions (state option)", "Inpatient/nursing facility/inpatient psychiatric care; medical travel; federally declared disaster county; county unemployment at or above the lesser of 8% or 1.5× the national rate", "S06"),
         ("Verification", "State must check all reliable information first; if it cannot verify, notice plus 30 calendar days to cure; coverage continues during cure", "S03"),
-        ("Renewal standard", "One or more months between determinations; the months need not be consecutive", "S06"),
+        ("Renewal standard", "One or more months between determinations; the months need not be consecutive (42 CFR 435.556(a)(2))", "S44"),
         ("Consequence", "Denial or disenrollment after cure. The person is still deemed Medicaid-eligible and is NOT eligible for federal premium tax credits", "S02"),
-        ("Six-month renewals", "SSA §71107; policy effective January 1, 2027; California's first affected renewal dates begin March 1, 2027", "S11"),
+        ("California statute", "AB 2161, Chapter 209 (approved September 14, 2026), amends WIC §14005.69; start date is \u201cno sooner than\u201d January 1, 2027 and is conditioned on systems readiness", "S41"),
+        ("Six-month renewals", "SSA §71107; policy effective January 1, 2027; DHCS lists the first six-month checks as starting March 1, 2027", "S11"),
         ("Cost sharing", "From October 1, 2028, up to $35 per service for some expansion enrollees above 100% FPL; primary care, mental health, SUD, FQHC, CCBHC and RHC excluded; prescriptions remain subject", "S02"),
         ("Territories", "Not subject", "S06"),
         ("Section 1115", "The requirement cannot be waived", "S06"),
@@ -390,7 +390,7 @@ def executive_summary(data, sources):
     }
     body = hero(
         "Executive summary: your options, the exact law, and what California is doing.",
-        "Executive summary · verified 2026-10-18",
+        "Executive summary · verified 2026-10-19",
         "",
         data["key_numbers"][:4],
         [("bottom-line", "Bottom line"), ("profile", "Your profile"), ("gates2", "Two gates"),
@@ -398,7 +398,7 @@ def executive_summary(data, sources):
          ("california", "California actions"), ("risks", "Risks"), ("plan", "Action plan"),
          ("status", "Verification status"), ("sources", "Sources")],
         [
-            '<span class="badge ok">Bottom line</span><h3 style="margin-top:10px">You have more than one route</h3><p>The strongest is your property-management work, because the federal rule expressly counts in-kind work. The simplest is $580 of income from any source in one month. The fallback is community service, school, a work program, or a personal exemption.</p>',
+            '<span class="badge ok">Bottom line</span><h3 style="margin-top:10px">You have more than one route</h3><p>The strongest is your property-management work, because the federal rule expressly counts in-kind work. The simplest is $580 of MAGI-based income in one month — unearned income counts. The fallback is community service, school, a work program, or a personal exemption.</p>',
             '<h3>What California is not doing</h3><p>California is not waiving the rule for people with zero earned income. It is implementing the federal rule and adding outreach, ex parte checks, a 30-day cure period, and a Covered California state subsidy.</p>',
             '<div class="alert warn" style="margin:0"><strong>The biggest risk is not the work itself.</strong> It is missing a renewal notice or failing to cure in 30 days. Keep your address current and open every county letter.</div>',
         ],
@@ -410,15 +410,15 @@ def executive_summary(data, sources):
     <ol class="big-list">
       <li><strong>Zero earned income is not zero income.</strong> Rental, savings interest and realized Kalshi gains are all countable income for Medi-Cal and for the $580 work-rule test. “Unearned” does not mean “ignored.”</li>
       <li><strong>Gate 1 is the Medi-Cal income limit.</strong> For a one-person household in 2026, MAGI must be at or below $22,025/year ($1,836/month). MAGI Medi-Cal has no asset test. If you are above the limit, you are not in the group the work rule governs.</li>
-      <li><strong>Gate 2 is the community engagement rule.</strong> If you are in the group, you need one qualifying month per renewal period. The strongest route for a property manager is <strong>in-kind work</strong>: CMS expressly says a property manager or building superintendent who receives free or reduced rent can count the hours. The second route is <strong>$580 of income from any source</strong> in a month.</li>
+      <li><strong>Gate 2 is the community engagement rule.</strong> If you are in the group, you need one qualifying month per renewal period. The strongest route for a property manager is <strong>in-kind work</strong>: CMS expressly says a property manager or building superintendent who receives free or reduced rent can count the hours. The second route is <strong>$580 of MAGI-based income</strong> in a month; net rent, interest and realized gains count.</li>
       <li><strong>Covered California has no work requirement.</strong> If your MAGI is between 138% and 400% FPL, you may qualify for federal help and, at or below 165% FPL in 2026 / 200% FPL in 2027, a California state subsidy. Above 400% FPL, the federal credit is unavailable for 2026.</li>
       <li><strong>Failing the Medicaid work rule blocks marketplace subsidies.</strong> You are deemed Medicaid-eligible, so you cannot get federal premium tax credits. The fallback is cure, reapply, or pay full price.</li>
     </ol>
   </div>''')}
 
   {section("Your profile: what is given and what is missing", "profile", table(
-      ["Fact", "Value", "What it changes", "Status"],
-      [[esc(p["fact"]), esc(p["value"]) if p["value"] else "<em>blank</em>", esc(p["note"]), badge(p["status"])] for p in data["profile"]],
+      ["Fact", "Value", "What it changes", "Source", "Status"],
+      [[esc(p["fact"]), esc(p["value"]) if p["value"] else "<em>blank</em>", esc(p["note"]), source_cell(sources, p["source"]), badge(p["status"])] for p in data["profile"]],
       table_id="profile-table-2",
   ), "The reader supplied citizenship, residence, work, trading, income sources, and zero earned income. Age, household size, exact amounts, disability/pregnancy status, county and current coverage were not supplied, so they are blank and flagged.")}
 
@@ -441,8 +441,8 @@ def executive_summary(data, sources):
     <p>CMS defines work to include work in exchange for goods or services, and gives the example of a property manager or building superintendent who receives free or reduced rent. The hours spent on those duties count toward 80 per month.</p>
     <p><strong>Keep:</strong> the lease or rent-credit agreement, a duty list, and a monthly hours log. Ask the county what else it wants.</p>
     <p class="hint">{source_cell(sources, "S03")}</p></div>
-    <div class="card"><div class="eyebrow">Route 2</div><h3>$580 of income from any source</h3>
-    <p>DHCS's member letter says “income from any source of at least $580 (before taxes) in any month since your last renewal.” Rental, interest and realized Kalshi gains can count. One month is enough.</p>
+    <div class="card"><div class="eyebrow">Route 2</div><h3>$580 of MAGI-based income</h3>
+    <p>42 CFR 435.552(f)(2) requires the state to use your MAGI-based household income for the month. Net rental income, taxable interest and realized gains count; gross receipts do not. DHCS's letter says “any source, before taxes” — that wording is broader than the regulation and is flagged.</p>
     <p><strong>Keep:</strong> rent deposits, interest statements, and Kalshi's P&amp;L statement.</p>
     <p class="hint">{source_cell(sources, "S10")}</p></div>
     <div class="card"><div class="eyebrow">Route 3</div><h3>Self-employment or fallback activity</h3>
@@ -478,7 +478,7 @@ def executive_summary(data, sources):
     <div class="kpi"><div class="k">Open flags</div><div class="v">{counts["open_flags"]}</div><div class="d">Published on Flagged for Review.</div></div>
     <div class="kpi"><div class="k">Official sources</div><div class="v">{counts["sources"]}</div><div class="d">Full register on the Findings page.</div></div>
   </div>
-  <div class="alert info" style="margin-top:12px">The site does not use third-party estimates to fill a value. Where an official source is silent or two official sources conflict, the row is flagged. The most important conflicts are gross-vs-net rental income, individual-vs-household income, the seasonal-only federal averaging rule, and the DHCS January-vs-March date wording.</div>''')}
+  <div class="alert info" style="margin-top:12px">The site does not use third-party estimates to fill a value. Where an official source is silent or two official sources conflict, the row is flagged. The most important irregularities are the DHCS “gross income / any source” wording against the codified MAGI rule, the state's broader seasonal averaging, the January-vs-March date wording, and the conditional high-unemployment route.</div>''')}
 
   {section("Sources used on this page", "sources", table(
       ["ID", "Source", "Publisher", "Date", "Link"],
@@ -486,7 +486,7 @@ def executive_summary(data, sources):
         f'<a href="{esc(s["url"])}" target="_blank" rel="noopener">Open ↗</a>']
        for s in data["sources"] if s["id"] in {x[2] for x in law_rows} | {o["source"] for o in data["options"]} | {a["source"] for a in data["ca_actions"]} | {p["source"] for p in data["action_plan"]} | {g["source"] for g in data["gates"]}],
       table_id="sources-2",
-  ), 'The complete 40-source register is on <a href="findings.html#sources">Findings → Source register</a>.')}
+  ), 'The complete 47-source register is on <a href="findings.html#sources">Findings → Source register</a>.')}
 </div>
 """
     return page(
@@ -494,7 +494,7 @@ def executive_summary(data, sources):
         "Executive summary · the law · your options · California actions",
         "executive-summary.html",
         body,
-        "Executive summary of California Medi-Cal work requirements for a zero-earned-income resident: the exact H.R.1 §71119 rule, nine pathways, coverage options, California actions, risks, and an action plan.",
+        "Executive summary of California Medi-Cal work requirements for a zero-earned-income resident: the exact H.R.1 §71119 rule, ten routes, coverage options, California actions, risks, and an action plan.",
     )
 
 
@@ -524,7 +524,8 @@ def work_rules(data, sources):
     )
     income_rows = [
         ("Net rental income (Schedule E)", "Counts in MAGI", "IRS Pub 527; 42 CFR 435.603", "S27"),
-        ("Gross rents", "DHCS ACWDL says “total gross income”; CMS says MAGI. Unresolved for the $580 test.", "ACWDL 25-30 vs CMS IFR slides", "S09"),
+        ("Rental income", "Counted net of allowable expenses. 42 CFR 435.552(f)(2) requires MAGI-based income (42 CFR 435.603), which starts from AGI. DHCS's “gross income” handout conflicts and is flagged.", "42 CFR 435.552(f)(2); 42 CFR 435.603", "S42"),
+        ("Rental income — state handout", "ACWDL 25-30 says “total gross income.” Preserved as an irregularity, not as the operative test.", "ACWDL 25-30", "S09"),
         ("Taxable interest", "Counts in MAGI", "42 CFR 435.603; HealthCare.gov", "S33"),
         ("Tax-exempt interest", "Added back for MAGI", "42 CFR 435.603; HealthCare.gov", "S32"),
         ("Kalshi realized gains", "Counts as income when recognized; classification unresolved", "IRC §61; no Kalshi-specific IRS guidance located", "S28"),
@@ -558,7 +559,7 @@ def work_rules(data, sources):
         "Work rules · H.R.1 §71119 · 42 CFR 435.550–435.563 · DHCS ACWDL 25-30",
         "",
         data["key_numbers"][2:],
-        [("who", "Who is subject"), ("paths2", "9 pathways"), ("income", "$580 and MAGI"),
+        [("who", "Who is subject"), ("paths2", "10 routes"), ("income", "$580 and MAGI"),
          ("verify", "Verification and cure"), ("penalty", "Penalty"), ("dates", "California dates"),
          ("quotes", "Official quotes"), ("flags2", "Open flags")],
         [
@@ -575,9 +576,9 @@ def work_rules(data, sources):
       ["#", "Pathway", "What satisfies it", "Earned income?", "Hours", "Best fit", "Note / documentation", "Source", "Status"],
       path_rows,
       table_id="pathways-table-2",
-  ), "Pathways 1–3 are the best fit for a property manager / Kalshi trader with zero earned income. Pathways 4–9 are fallbacks or personal exemptions.")}
+  ), "Routes 1–4 are the ones a property manager / Kalshi trader with zero earned income should document first. Routes 5–10 are fallbacks, exemptions, or ways to leave the group entirely.")}
 
-  {section("The $580 test and MAGI — what counts", "income", income_table, "The single most important unresolved issue is gross-vs-net rental income. DHCS's ACWDL says gross; CMS says MAGI (net). The site does not choose one. Ask the county which it will use and keep both gross and net records.")}
+  {section("The $580 test and MAGI — what counts", "income", income_table, "The codified rule is MAGI-based, so net rental income is what counts (42 CFR 435.552(f)(2); WIC §14005.69(e)(6)). DHCS's preliminary ACWDL and member letter say “gross income” and “any source,” which conflicts; keep both gross and net records and ask the county to apply the regulation.")}
 
   {section("Verification, notice, and the 30-day cure", "verify", verify_table, "The cure period is the most important protection. If you receive a notice, respond within 30 days; coverage continues while you cure.")}
 
@@ -597,15 +598,15 @@ def work_rules(data, sources):
     <h3>In-kind work — CMS IFR, 91 FR 33348</h3>
     <blockquote>“There are jobs in various sectors, ranging from domestic service to specialized facility management, where individuals may choose to accept in-kind compensation in the form of non-monetary benefits like housing, meals, or utilities. For example, an individual who performs duties as a property manager or building superintendent may receive compensation in the form of free or reduced rent. Under our definition of work at § 435.552(b), the hours the individual spends performing these duties would count toward meeting the 80-hour requirement.”</blockquote>
     <p class="hint">{source_cell(sources, "S03")}</p>
-    <h3 style="margin-top:16px">Income from any source — DHCS MEDIL I26-25</h3>
+    <h3 style="margin-top:16px">“Income from any source” — DHCS MEDIL I26-25 (broader than the regulation)</h3>
     <blockquote>“Have an income from any source of at least $580 (before taxes) in any month since your last renewal.”</blockquote>
     <p class="hint">{source_cell(sources, "S10")}</p>
-    <h3 style="margin-top:16px">Total gross income — DHCS ACWDL 25-30</h3>
+    <h3 style="margin-top:16px">“Total gross income” — DHCS ACWDL 25-30 (broader than the regulation)</h3>
     <blockquote>“An individual's total gross income for a month must meet or exceed this amount.”</blockquote>
     <p class="hint">{source_cell(sources, "S09")}</p>
-    <h3 style="margin-top:16px">MAGI-based monthly household income — CMS IFR slides</h3>
-    <blockquote>“States must use an individual's modified adjusted gross income (MAGI)-based monthly household income for Medicaid to determine compliance with the community engagement requirement (i.e., generally the same income methodology used to determine financial eligibility).”</blockquote>
-    <p class="hint">{source_cell(sources, "S07")}</p>
+    <h3 style="margin-top:16px">MAGI-based monthly income — the binding regulation</h3>
+    <blockquote>“The agency must determine the monthly income based on the individual's MAGI-based income, for their MAGI-based household, as defined at § 435.603, and applied to a month in the period under § 435.556(a), as applicable for demonstrating community engagement.”</blockquote>
+    <p class="hint">{source_cell(sources, "S42")}</p>
   </div>''')}
 
   {section("Open flags on the work rules", "flags2", table(
@@ -620,10 +621,10 @@ def work_rules(data, sources):
 """
     return page(
         "Work Rules — California Medi-Cal Community Engagement",
-        "Work rules · 9 pathways · $580 test · verification",
+        "Work rules · 10 routes · $580 MAGI test · verification",
         "work-rules.html",
         body,
-        "Detailed verified guide to the Medi-Cal community engagement rule: who is subject, nine pathways for zero earned income, what income counts, verification, the 30-day cure, and California dates.",
+        "Detailed verified guide to the Medi-Cal community engagement rule: who is subject, ten routes for zero earned income, what income counts, verification, the 30-day cure, and California dates.",
     )
 
 
@@ -636,31 +637,32 @@ def coverage_options(data, sources):
     bands = table(
         ["Income band (one person, 2026)", "Annual", "Monthly", "What it generally means", "Source"],
         [
-            ["100% FPL", "$15,960", "$1,330", "The federal poverty guideline. Medi-Cal and subsidy calculations start here.", "S17"],
-            ["138% FPL", "$22,025", "$1,836", "Medi-Cal MAGI New Adult Group upper limit (DHCS published).", "S15"],
-            ["400% FPL", "$63,840", "Not published as a monthly figure", "Upper limit for the federal premium tax credit for 2026. Above this, no federal credit.", "S17"],
+            ["100% FPL", "$15,960", "$1,330", "The federal poverty guideline. Medi-Cal and subsidy calculations start here.", source_cell(sources, "S17")],
+            ["138% FPL", "$22,025", "$1,836", "Medi-Cal MAGI New Adult Group upper limit (DHCS published).", source_cell(sources, "S15")],
+            ["400% FPL (2026 coverage)", "$62,600", "Not published as a monthly figure", "Upper limit for the federal premium tax credit for 2026 coverage: 400% of the 2025 guideline ($15,650).", source_cell(sources, "S46")],
+            ["400% FPL (2027 coverage)", "$63,840", "Not published as a monthly figure", "400% of the 2026 guideline ($15,960). This is the 2027 reference, not 2026.", source_cell(sources, "S47")],
         ],
         table_id="bands-table",
     )
     aptc = table(
         ["Household income (% FPL), 2026", "Federal applicable percentage for benchmark Silver", "Source"],
         [
-            ["Under 138%", "2.10% (generally Medi-Cal instead)", "S18"],
-            ["138% – under 150%", "3.14% – 4.19%", "S18"],
-            ["150% – under 165%", "4.19% – 4.91%", "S18"],
-            ["165% – under 200%", "4.91% – 6.60%", "S18"],
-            ["200% – under 250%", "6.60% – 8.44%", "S18"],
-            ["250% – under 300%", "8.44% – 9.96%", "S18"],
-            ["300% – 400%", "9.96%", "S18"],
-            ["Above 400%", "No federal premium tax credit for 2026", "S18"],
+            ["Under 138%", "2.10% (generally Medi-Cal instead)", source_cell(sources, "S18")],
+            ["138% – under 150%", "3.14% – 4.19%", source_cell(sources, "S18")],
+            ["150% – under 165%", "4.19% – 4.91%", source_cell(sources, "S18")],
+            ["165% – under 200%", "4.91% – 6.60%", source_cell(sources, "S18")],
+            ["200% – under 250%", "6.60% – 8.44%", source_cell(sources, "S18")],
+            ["250% – under 300%", "8.44% – 9.96%", source_cell(sources, "S18")],
+            ["300% – 400%", "9.96%", source_cell(sources, "S18")],
+            ["Above 400%", "No federal premium tax credit for 2026", source_cell(sources, "S18")],
         ],
         table_id="aptc-table",
     )
     state = table(
         ["Year", "California state subsidy", "Applicable percentage for state subsidy", "Source"],
         [
-            ["2026", "At or below 165% FPL", "0% below 150% FPL; 3.19% – 3.91% from 150% to 165%", "S18"],
-            ["2027", "Up to 200% FPL", "2.8% – 5.28% from above 150% to 200%", "S20"],
+            ["2026", "At or below 165% FPL", "0% below 150% FPL; 3.19% – 3.91% from 150% to 165%", source_cell(sources, "S18")],
+            ["2027", "Up to 200% FPL", "2.8% – 5.28% from above 150% to 200%", source_cell(sources, "S20")],
         ],
         table_id="state-table",
     )
@@ -827,7 +829,7 @@ def archives(data, sources):
             ("verification.html", "Verification log"),
             ("flagged.html", "Flagged for Review"),
             ("archives.html", "Archive (this page)"),
-        ], "Generated from data/core.json. Fully re-verified in this session."),
+        ], "Generated from data/core.json. Every row names a source; the corrected rows were re-fetched and re-checked on 2026-10-19."),
         ("Detailed reference pages", "Preserved", [
             ("law.html", "The Law — line by line"),
             ("california.html", "California / Medi-Cal"),
@@ -890,7 +892,7 @@ def archives(data, sources):
             '<h3>Why an archive?</h3><p>The earlier pages are useful detail, but they were written at different times and some contained errors. The core pages correct the highest-impact ones; the archive lets you inspect the original reasoning without treating every row as newly certified.</p>',
             '<div class="alert info" style="margin:0">If a detailed page conflicts with a core page, the core page and the official source control. The conflict should be logged on <a href="flagged.html">Flagged for Review</a>.</div>',
         ],
-        lead_html='<p class="lead">This page is the map of the whole site. The verified core is the six pages generated from <code>data/core.json</code>. Everything else is preserved as detailed reference or supplementary research, with an explicit status so you know what was re-checked.</p>',
+        lead_html='<p class="lead">This page is the map of the whole site. The verified core is the seven pages generated from <code>data/core.json</code>. Everything else is preserved as detailed reference or supplementary research, with an explicit status so you know what was re-checked.</p>',
     )
     build_card = (
         '<div class="card"><h3>Rebuild the core</h3>'
@@ -1018,11 +1020,11 @@ def verification(data, sources):
                   esc(f["issue"]), source_cell(sources, f["source"])] for f in corrections]
     body = hero(
         "Verification — what was checked, against what, and when.",
-        "Verification log · 2026-10-18 · line-by-line source audit",
+        "Verification log · 2026-10-19 · line-by-line source audit",
         "",
         [
             {"label": "Official sources", "value": str(len(data["sources"])), "detail": "Primary documents, not summaries."},
-            {"label": "Table rows checked", "value": str(len(data["findings"])), "detail": "Each row names a source."},
+            {"label": "Findings re-checked", "value": str(len(data["findings"])), "detail": "Each row names a source."},
             {"label": "Closed corrections", "value": str(len(corrections)), "detail": "Earlier errors fixed at the data layer."},
             {"label": "Build guard", "value": "3 rules", "detail": "Missing source, empty verified value, valued unverified row."},
         ],
@@ -1032,7 +1034,7 @@ def verification(data, sources):
             '<h3>Blank beats wrong</h3><p>If two official sources conflict, both are shown and the row is flagged. If none states the value, the cell stays empty.</p>',
             '<div class="alert info" style="margin:0">A row marked “verified” means the value matches the linked document. It does not mean the reader qualifies.</div>',
         ],
-        lead_html='<p class="lead">This is the audit trail behind every number on the site. It lists all 40 official documents, the corrections applied to earlier pages, and the limits of what a document review can prove.</p>',
+        lead_html='<p class="lead">This is the audit trail behind every number on the site. It lists all 47 official documents, the corrections applied to earlier pages, and the limits of what a document review can prove.</p>',
     )
     body += '<div class="wrap">'
     body += section("Method", "method", (
@@ -1044,7 +1046,7 @@ def verification(data, sources):
         '<li><strong>Guard the build.</strong> The generator refuses to publish a row with a missing source, a verified row with no value, or an unverified row that carries one.</li>'
         '</ol><p class="hint">Reproduce: <code>python3 scripts/build_core.py &amp;&amp; python3 scripts/check_core.py &amp;&amp; python3 scripts/check_links.py</code></p></div>'
     ), "The data file is <a href=\"data/core.json\">data/core.json</a>; the generator is <a href=\"scripts/build_core.py\">scripts/build_core.py</a>.")
-    body += section("Source register — all 40 official documents", "sources",
+    body += section("Source register — all 47 official documents", "sources",
                     table(["ID", "Publisher", "Document", "Date", "Link"], src_rows, table_id="source-register"),
                     "Dates are the publication or effective date shown on the document. Every finding on the site cites one of these IDs.")
     body += section("Corrections applied to earlier pages", "corrections",
@@ -1055,13 +1057,13 @@ def verification(data, sources):
         '<li><strong>It is a document review, not a legal opinion.</strong> Only a county eligibility worker, an administrative law judge, or a court can decide a specific case.</li>'
         '<li><strong>Personal facts are missing.</strong> Age, household size, county, exact income, filing status, and current coverage were not supplied, so no personal eligibility determination is made.</li>'
         '<li><strong>Guidance can change.</strong> CMS and DHCS can issue sub-regulatory guidance at any time; the source register is dated so a reader can see the vintage.</li>'
-        '<li><strong>Links can rot.</strong> <code>scripts/check_links.py</code> validates internal links and anchors; official external URLs were checked when the register was compiled.</li>'
+        '<li><strong>Links can rot.</strong> <code>scripts/check_links.py</code> validates internal links and anchors. On 2026-10-19 the primary documents behind the corrected rows were re-fetched; the remaining register entries were not re-fetched in that pass and are labelled by their publication date.</li>'
         '</ul><p class="hint">Report a conflict by citing the flag ID and the official document. Do not edit a value without a source.</p></div>'
     ))
     body += '</div>'
     return page(
         "Verification — Source Audit and Corrections",
-        "Verification log · method, 40-source register, corrections",
+        "Verification log · method, 47-source register, corrections",
         "verification.html",
         body,
         "Verification log for the California healthcare work-requirements site: method, the full 40-document official source register, corrections applied, and the limits of the review.",
