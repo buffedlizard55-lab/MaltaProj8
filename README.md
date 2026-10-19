@@ -8,6 +8,7 @@ Research for a U.S. citizen living in California who reports no earned income an
 
 - [Executive summary](https://buffedlizard55-lab.github.io/MaltaProj8/executive-summary.html)
 - [Work rules and pathways](https://buffedlizard55-lab.github.io/MaltaProj8/work-rules.html)
+- [Practical playbook](https://buffedlizard55-lab.github.io/MaltaProj8/playbook.html)
 - [Coverage options](https://buffedlizard55-lab.github.io/MaltaProj8/coverage-options.html)
 - [All findings](https://buffedlizard55-lab.github.io/MaltaProj8/findings.html)
 - [Evidence and review scope](https://buffedlizard55-lab.github.io/MaltaProj8/verification.html#current-review)
@@ -49,7 +50,7 @@ python3 scripts/check_integration.py --site dist
 
 `build_all.py` renders the Docs and extended references first, and the core last. Running it twice must be deterministic. `check_integration.py` tests review metadata, known accuracy regressions, generator ownership, all local page/asset/fragment targets and the staged artifact. It is **not an automated legal fact checker or external URL availability guarantee**.
 
-GitHub Actions validates pull requests using this same build. Only a successful main-branch build uploads and deploys the complete site to GitHub Pages. The published artifact excludes Git internals, caches and workflow files. No application, login, analytics or user-input form is required to read the research.
+GitHub Actions validates pull requests using this same build; this session merges only after checks pass. GitHub Pages then publishes the committed pages from `main` through its existing legacy build. The separate validation workflow does not upload or deploy `dist`. No application, login, analytics or user-input form is required to read the research.
 
 ## Preview
 
@@ -61,3 +62,6 @@ python3 -m http.server 8000 --bind 0.0.0.0 --directory dist
 ## Important unresolved items
 
 See the live Flagged page for complete details and official links: conflicting DHCS January/March wording, personal trading/owner-management hours, Kalshi tax character, current litigation outcome, missing personal facts, a budget PDF's omitted unit, and an extracted 2027 marketplace chart's missing dollar column. Unknown values are not treated as zero. Source publication dates are distinct from review/access dates.
+
+### Pages publication and optional export
+Repository Pages settings remain in legacy mode. The automatic Pages build publishes committed pages from `main`, not the ignored `dist/` directory. `stage_site.py` creates a local/export package with additional historical-reference banners; those staging-only banners are **not claimed to be live on Pages**. On the live site, the Dashboard, Archive and Flagged for Review pages identify the limits of preserved historical material. The validation workflow checks both committed outputs and the optional export, but the legacy Pages publication is a separate GitHub-managed run.

@@ -788,8 +788,8 @@ Rebuilt on top of main after PR #24 merged the first-pass corrections (PR #26 cl
 
 | Task | Status | Owner | Files/scope |
 |---|---|---|---|
-| Reconcile stale PR #21 and audit primary claims using freshly retrieved official evidence | in progress | arena/bf76ee37 | `data/`, `scripts/`, root HTML, `docs/`, `tools/` previously claimed by arena/93fdc24b; preserve that PR's contributions during integration |
-| Harden build, update README, publish source limitations and complete Pages deployment | in progress | arena/bf76ee37 | README.md, .github/workflows/, COORDINATION.md append-only, final shared outputs |
+| Reconcile stale PR #21 and audit primary claims using freshly retrieved official evidence | done | arena/bf76ee37 | `data/`, `scripts/`, root HTML, `docs/`, `tools/` previously claimed by arena/93fdc24b; preserve that PR's contributions during integration |
+| Harden build, update README, publish source limitations and complete Pages deployment | done | arena/bf76ee37 | README.md, .github/workflows/, COORDINATION.md append-only, final shared outputs |
 
 Claim rationale: PR #21's latest commit is 2026-10-18 22:40:34 UTC, over 60 minutes before this session. Its unfinished scope is taken over under the user's stale-claim rule; no work will be discarded. Other historic sessions have recorded completed deployments. This session is platform-fixed to `arena/bf76ee37-maltaproj8`; no alternate branch is created. Existing verification labels are not fresh evidence. Network/source retrieval failures will be flagged; an official-looking URL alone is not verification. Final integration edits only after research completes.
 
@@ -891,6 +891,11 @@ After the Pages deployment, F44/FL-06 were re-read against the introduced text o
 
 **Final pre-merge update:** PR31 appended another completed-session log while PR27 CI ran. First merge attempt correctly refused the board conflict; no partial merge occurred. Merged main explicitly, preserving both logs. The required pre-push rebase now targets this session branch’s remote tip (rather than repeatedly recreating PR21’s old merge ancestry against main); main was already fetched/merged immediately before it.
 
+### bf76ee37 — PR27 merged; deployment repair in progress
+PR27 merged at **2026-10-19T02:42:52Z**, merge SHA **954b4e7f3c2e4a087b80b2a526bb889ff301a29d**. Its final PR CI passed all three checks. Main workflow **39191255664** passed the full validation, deterministic-build and complete artifact upload (13s), but failed at the attempted Pages-setting update before artifact deployment. Legacy Pages separately reports this SHA built; that does NOT establish publication of our staged notices. Do not label the new artifact deployed yet.
+
+Removed the unnecessary settings mutation (the earlier repository workflow already successfully deployed artifacts while settings reported legacy). The replacement waits for the same SHA's automatic legacy build to finish, then configures and deploys the validated complete artifact, avoiding legacy overwriting the staged notices. No credentials or broader permissions added. README explicitly describes the compatibility mode rather than claiming the server setting changed. Follow-up fix will be merged only after checks; then artifact publication will be verified against the actual live content.
+
 ## Deploy incident and fix (2026-10-19, after PR #27)
 
 After PR #27 merged, the `Build and deploy complete healthcare guide` workflow failed on `main` at the step `Select artifact-based Pages publishing` (`gh api --method PUT repos/.../pages -f build_type=workflow`), because the workflow token cannot change repository Pages settings (`Resource not accessible by integration`, HTTP 403 — reproduced with the same token from the CLI).
@@ -900,6 +905,16 @@ After PR #27 merged, the `Build and deploy complete healthcare guide` workflow f
 **Fix:** the deploy job and artifact upload are removed from `.github/workflows/pages.yml`; the workflow now validates and stages only, and deployment continues through legacy branch publishing (automatic on merge). A comment in the workflow records why, and what would be required to move to artifact-based publishing (repository-admin change of `build_type` to `workflow`).
 
 **Verified after the fix:** workflow green on `main`; `pages build and deployment` success for the merge commit; live pages fetched and checked.
+
+
+### bf76ee37 — completed publication and final documentation (PR33)
+While PR33 was opening, another session merged PR32 (`097498cb6f68542b3f88e5d2122ece607f3b2652`) removing artifact deployment entirely. Adopted that already-merged repair; the tentative wait-and-deploy plan above was NOT shipped. Preserved both incident logs and notified PR32's author. Corrected an important distinction: legacy Pages publishes committed main files, NOT ignored `dist` files. Staging-only historical banners are therefore not claimed live. Current primary Dashboard, Archive and Flagged pages themselves carry the historical limitations/citation-gap notices. README and workflow comments now describe the actual publication mechanism.
+
+**Live verification:** fetched `https://buffedlizard55-lab.github.io/MaltaProj8/?release=097498cb6f68542b3f88e5d2122ece607f3b2652` successfully and inspected the new “Healthcare without a paycheck” dashboard, revised separate income/activity/exclusion routes, half-time alternative, monthly MAGI wording, and unknown personal-hours notice. A first unversioned fetch returned an older cached page; the release-qualified fetch returned the new revision. Pages API reports the merged PR27 SHA built; PR32's subsequent completed deployment is separately recorded above. Task status is **done**, not a certification of the untouched ongoing PR25 subsite review or of the 97 historical citation gaps.
+
+PR33: https://github.com/buffedlizard55-lab/MaltaProj8/pull/33 — reconciles the already-merged repair, records PR27's merge SHA/time and successful live primary publication, and corrects README/workflow descriptions. No unsupported personal values filled; all 82 finding reviews, 50 sources, 38 flags and nine primary pages retained. Remaining historical citation gaps and unconfirmed values are published, not silently inferred.
+
+**Live flagged-page inspection:** verified the deployed page shows 25 open + 8 blank/unverified + 5 closed corrections and 50 sources. Inspection exposed three residual inherited flag descriptions; corrected FL-04 to avoid claiming a CFTC designation decides swaps/§1256 or that no ruling exists anywhere, FL-05 to distinguish nonprofessional itemization and cite the enacted §70114 rather than a health-provisions CRS report, and FL-11 to avoid inventing a January-policy/March-renewal reconciliation or new-applicant schedule. These are source-backed precision corrections, not new personal conclusions. Current core, accuracy and integration validators pass; total flag count remains 38.
 
 ## Sub-site re-verification — arena/75b1956e-maltaproj8 (2026-10-19)
 
@@ -972,3 +987,5 @@ A targeted irs.gov search found **no IRS guidance on event contracts or Kalshi**
 - `research`: `scripts/build.py` → 9 pages, 60 findings, 21 sources; `scripts/validate.py` → **PASS** (each row has quoted evidence; local links and fragments intact).
 - `coverage-guide`: `seed_research.py` → `build.py` → `check.py` → **PASS** (68 rows, 22 sources, 7 pages, deterministic build).
 - Root, same sequence as the `validate-site` CI job: `scripts/build_all.py`; `check_core.py` **PASS**; `check_accuracy.py` **PASS**; `check_links.py` **All checks passed** (60 pages); `check_integration.py` **PASS** (60 pages, 1,557 local links/assets/fragments); `check_e071bffc.py` **PASS**; `git diff --exit-code` clean after `build_all.py` twice; `stage_site.py` + `check_integration.py --site dist` **PASS**.
+
+**Final subsite integration:** PR25 merged as 8cdd9f1 while final PR33 checks ran. Merged it intact; only the append-only board conflicted and both logs were retained. Independent research review is now complete (60 research findings/21 sources; 68 coverage-guide rows/22 sources). Applied CR-75-1 to the primary Flagged hub label. CR-75-2 and CR-75-3 are already addressed in the current primary guide by closed FL-31 and F72/S45; historical e071bffc snapshots remain explicitly historical rather than being silently rewritten. The subsite owner still owns its final deployment log.

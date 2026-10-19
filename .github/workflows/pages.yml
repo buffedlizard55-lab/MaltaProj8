@@ -1,4 +1,4 @@
-name: Build and deploy complete healthcare guide
+name: Validate complete healthcare guide
 on:
   push:
     branches: [main]
@@ -43,8 +43,6 @@ jobs:
         run: |
           python3 scripts/stage_site.py
           python3 scripts/check_integration.py --site dist
-      # Deployment: this repository's GitHub Pages site is published from the
-      # main branch (build_type "legacy"), so a merge deploys the staged files
-      # automatically via the pages-build-deployment run. No artifact upload or
-      # deploy-pages step is needed; adding one requires switching the Pages
-      # build_type to "workflow", which needs repository-admin rights.
+      # Publication uses the repository's existing legacy Pages build from main.
+      # It publishes committed source/generated pages, NOT the ignored dist folder.
+      # Staging is validated for local preview/export only. No separate deploy job.

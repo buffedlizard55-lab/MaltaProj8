@@ -2223,18 +2223,24 @@
     {
       "id": "FL-04",
       "item": "Section 1256 applicability is uncertain",
-      "issue": "Kalshi is a CFTC DCM, but its event contracts are described as swaps. Whether they are regulated futures contracts under IRC §1256 has not been ruled on.",
-      "impact": "Section 1256 would impose 60/40 treatment and year-end mark-to-market, including phantom income on open positions.",
+      "issue": "The CFTC designation establishes KalshiEX as a designated contract market; it does not establish this user’s event-contract classification under IRC §1256. The reviewed evidence does not settle that personal tax question.",
+      "impact": "Do not assume 60/40 treatment or year-end mark-to-market. Obtain contract-specific tax advice before calculating MAGI.",
       "source": "S37",
-      "status": "open"
+      "status": "open",
+      "also": [
+        "S28"
+      ]
     },
     {
       "id": "FL-05",
       "item": "Gambling treatment and the 90% loss cap",
-      "issue": "If Kalshi gains were treated as gambling, losses would be itemized deductions only up to winnings, and H.R.1 §70114 caps the deduction at 90% of losses for tax years after 2025.",
+      "issue": "If nonprofessional gambling treatment applies, Schedule A losses do not reduce AGI. Separately, enacted H.R.1 §70114 generally limits wagering-loss deductions to 90% of losses and no more than wagering gains for tax years after 2025. Business treatment and the user’s Kalshi classification are not determined.",
       "impact": "A break-even trader could owe tax on income they did not keep.",
-      "source": "S02",
-      "status": "open"
+      "source": "S01",
+      "status": "open",
+      "also": [
+        "S48"
+      ]
     },
     {
       "id": "FL-06",
@@ -2289,10 +2295,13 @@
     {
       "id": "FL-11",
       "item": "Six-month renewal date has been stated inconsistently",
-      "issue": "DHCS distinguishes the January 2027 policy date and March 2027 first affected renewal dates. This distinction does not establish the renewal date of this user.",
-      "impact": "New applicants may be subject to the six-month cycle earlier than existing members. Follow the county notice.",
-      "source": "S11",
-      "status": "open"
+      "issue": "The preliminary January 2026 DHCS implementation plan used January 1, 2027 for more frequent eligibility checks; current DHCS public guidance uses March 1, 2027. The reviewed sources do not establish a personal renewal date or justify assuming a uniform earlier date for new applicants.",
+      "impact": "Follow the actual county notice and later implementation instructions; do not infer a reconciliation of preliminary and current dates.",
+      "source": "S12",
+      "status": "open",
+      "also": [
+        "S13"
+      ]
     },
     {
       "id": "FL-12",
