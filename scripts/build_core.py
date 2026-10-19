@@ -101,7 +101,7 @@ def source_cells(sources, row):
 
 def table(headers, rows, table_id=None, cls=""):
     tid = f' id="{table_id}"' if table_id else ""
-    head = "".join(f"<th>{h}</th>" for h in headers)
+    head = "".join(f'<th scope="col">{h}</th>' for h in headers)
     body = "".join('<tr class="row">' + "".join(f"<td>{c}</td>" for c in row) + "</tr>" for row in rows)
     return (f'<div class="table-wrap"><table{tid} class="{cls}">'
             f"<thead><tr>{head}</tr></thead><tbody>{body}</tbody></table></div>")
@@ -130,6 +130,7 @@ def page(title, subtitle, active, body, description=None, scripts=""):
 <link rel="stylesheet" href="site/assets/style.css">
 </head>
 <body>
+<a class="skip-link" href="#main-content">Skip to content</a>
 <div class="topbar">
   <div class="topbar-inner">
     <div class="brand">
@@ -142,7 +143,7 @@ def page(title, subtitle, active, body, description=None, scripts=""):
     <nav class="nav" aria-label="Main">{nav}</nav>
   </div>
 </div>
-{body}
+<main id="main-content">{body}</main>
 <div class="footer">
   <p><strong>Source policy:</strong> every table row links to an official source
   (congress.gov, federalregister.gov, cms.gov, medicaid.gov, dhcs.ca.gov,
@@ -189,9 +190,9 @@ def hero(title, eyebrow, lead, kpis, toc, side_cards, lead_html=None, sources=No
 
 def category_cards():
     cards = [
+        ("Playbook", "playbook.html", "Step-by-step routes, suggested evidence, calendar, and response to a notice."),
         ("Executive Summary", "executive-summary.html", "The one-page answer, the exact law, your options, California's actions, and the action plan."),
         ("Work Rules", "work-rules.html", "Who is subject, 9 practical pathways for $0 earned income, the $580 test, verification, and the penalty."),
-        ("Playbook", "playbook.html", "The working plan: which route to use, how to document it, what counts as income, and what to do if a notice arrives."),
         ("Coverage Options", "coverage-options.html", "Medi-Cal, Covered California, Medicare, and community health centers, with income bands and costs."),
         ("All Findings", "findings.html", "Every finding in one filterable table, plus the full official-source register."),
         ("The Law — line by line", "law.html", "The detailed H.R.1 §71119 table: statutory text, dates, provisions, and citations."),
@@ -211,140 +212,47 @@ def category_cards():
 
 
 def dashboard(data, sources):
-    top_findings = [f for f in data["findings"] if f["status"] in ("verified", "verified-nuance")][:12]
-    finding_rows = [
-        [f'<span class="tag">{esc(f["id"])}</span>', esc(f["category"]),
-         f'<strong>{esc(f["finding"])}</strong><br><span class="subtle">{esc(f["detail"])}</span>',
-         esc(f["value"]), source_cells(sources, f), badge(f["status"])]
-        for f in top_findings
+    """Concise landing page; the full datasets live on category pages."""
+    picks = {"F21", "F36", "F38", "F58", "F59", "F66", "F73", "F74"}
+    rows = [
+        [f'<strong>{esc(f["finding"])}</strong>', esc(f["value"]),
+         esc(f["detail"]), source_cells(sources, f), badge(f["status"])]
+        for f in data["findings"] if f["id"] in picks
     ]
-    path_rows = [
-        [f'<span class="tag">{esc(p["id"])}</span>', f'<strong>{esc(p["path"])}</strong>',
-         esc(p["what"]), esc(p.get("earned") or "—"), esc(p.get("hours") or "—"), esc(p["fit"]),
-         source_cells(sources, p), badge(p["status"])]
-        for p in data["pathways"]
-    ]
-    option_rows = [
-        [f'<strong>{esc(o["option"])}</strong>', esc(o["who"]), esc(o["work_rule"]),
-         esc(o["cost"]), esc(o["how"]), source_cells(sources, o), badge(o["status"])]
-        for o in data["options"]
-    ]
-    profile_rows = [
-        [esc(p["fact"]), esc(p["value"]) if p["value"] else '<em>blank</em>',
-         esc(p["note"]), source_cells(sources, p), badge(p["status"])]
-        for p in data["profile"]
-    ]
-    gate_cards = "".join(
-        f'<div class="card"><div class="eyebrow">{esc(g["id"])}</div>'
-        f'<h3>{esc(g["title"])}</h3><p>{esc(g["body"])}</p>'
-        f'<p class="gate-yes"><strong>If yes:</strong> {esc(g["if_yes"])}</p>'
-        f'<p class="gate-no"><strong>If no:</strong> {esc(g["if_no"])}</p>'
-        f'<p class="hint">Source: {source_cell(sources, g["source"])}</p></div>'
-        for g in data["gates"]
-    )
-    flag_rows = [
-        [f'<span class="tag">{esc(f["id"])}</span>', f'<strong>{esc(f["item"])}</strong>',
-         esc(f["issue"]), esc(f["impact"]), source_cells(sources, f), badge(f["status"])]
-        for f in data["flags"] if f["status"] == "open"
-    ][:8]
-
-    lead_html = (
-        '<p class="lead"><strong>Short answer:</strong> you do not need a W-2 to satisfy '
-        'California\'s Medicaid work rule. There are <strong>three independent routes</strong>: '
-        'document <strong>80 hours of qualifying work</strong> (CMS expressly counts property-management duties exchanged for free or reduced rent), show <strong>$580 of properly determined household MAGI-based monthly income</strong> '
-        'in a qualifying month, or qualify for an <strong>exclusion or exemption</strong>. Which route fits you has not been established. If your MAGI is above '
-        'the Medi-Cal limit, <strong>Covered California has no work requirement at all</strong>. '
-        'Every row below links to an official source.</p>'
-    )
     body = hero(
-        "You can satisfy the work rule with $0 earned income — if you document the right route.",
-        "Verified 2026-10-19 · H.R.1 §71119 · CMS-2454-IFC · DHCS ACWDL 25-30 / MEDIL I26-25",
-        "",
-        data["key_numbers"],
-        [("answer", "Answer in 30 seconds"), ("gates", "Two gates"), ("paths", "9 pathways"),
-         ("options", "Coverage options"), ("ca", "What California is doing"),
-         ("findings", "Key findings"), ("flags", "Flagged items"), ("map", "Site map")],
+        "Healthcare without a paycheck.",
+        "California resident · U.S. citizen · reviewed October 19, 2026",
+        "Zero earned income does not mean zero healthcare income. Rent, interest and taxable investment income may count. Coverage eligibility and the new Medi-Cal work rule are two separate tests.",
+        [data["key_numbers"][0], data["key_numbers"][2], data["key_numbers"][3]],
+        [("answer", "Your options"), ("gates", "Two separate tests"),
+         ("findings", "What is confirmed"), ("map", "Explore the guide")],
         [
-            '<span class="badge ok">Start here</span><h3 style="margin-top:10px">The two gates</h3>'
-            '<p>First: are you in the Medi-Cal MAGI New Adult Group (income ≤ 138% FPL)? Second: can you show one qualifying month per renewal period? Most of the confusion disappears once you separate the two.</p>'
-            '<p><a href="executive-summary.html">Read the executive summary →</a></p>',
-            '<h3>The strongest route for a property manager</h3>'
-            '<p>CMS\'s rule defines work to include in-kind work and gives the example of a property manager or building superintendent who receives free or reduced rent. Those hours count toward 80/month.</p>'
-            '<p class="hint">42 CFR 435.552(b) · 91 FR 33348</p>',
-            '<div class="alert warn" style="margin:0"><strong>The trap:</strong> if you fail the work rule, you are still deemed Medicaid-eligible and you are <strong>not</strong> eligible for federal premium tax credits. The fallback is not automatically Covered California with a subsidy.</div>',
-        ],
-        lead_html=lead_html,
-        sources=sources,
-    ) + f"""
-<div class="wrap">
-  <div class="card" id="answer" style="border-left:4px solid #2563eb">
-    <h3>Your answer in 30 seconds</h3>
-    <div class="grid3" style="margin-top:10px">
-      <div><div class="eyebrow">Route 1 — strongest</div><h3>In-kind property-management work</h3>
-      <p>If you perform property-management duties in exchange for free or reduced rent, CMS expressly counts those hours as work. Aim for 80 documented hours in a qualifying month. If you own the rental property, ask the county whether your actual management duties qualify; ownership alone is not proof. Keep a duty list, any rent-credit agreement, and a monthly log.</p>
-      <p class="hint">{source_cell(sources, "S03")}</p></div>
-      <div><div class="eyebrow">Route 2 — if countable</div><h3>$580 of household MAGI-based monthly income</h3>
-      <p>DHCS's letter describes income from any source in a qualifying month, but later-enacted California law requires MAGI-based methods for your household budget. Countable rental and savings interest may help. Kalshi tax character, deductible expenses and your actual monthly amount are unknown; gross deposits or payouts alone do not show a pass.</p>
-      <p class="hint">{source_cell(sources, "S42")} · {source_cell(sources, "S03")} · {source_cell(sources, "S10")}</p></div>
-      <div><div class="eyebrow">Route 3 — fallback</div><h3>Exclusion, exemption, or 80 hours of activity</h3>
-      <p>If neither route fits, the rule can be met with 80 hours of community service, a work program, at least half-time school, or a combination — or you may be excluded or exempt (age, disability, caregiving, Medicare, high-unemployment county).</p>
-      <p class="hint">{source_cell(sources, "S09")}</p></div>
-    </div>
-    <div class="alert info" style="margin-top:12px"><strong>But first check Gate 1.</strong> Medi-Cal's MAGI New Adult Group is limited to household income at or below 138% FPL — $22,025/year or $1,836/month for one person in 2026. If your properly determined household MAGI is above that limit, this Medi-Cal work rule does not apply; Covered California has no work requirement. Your household size, rental net, interest and Kalshi tax amount were not supplied. The 2026 marketplace 400% FPL reference is $62,600 for one person; 2027 uses $63,840. See <a href="coverage-options.html">Coverage Options</a> and <a href="accuracy-93fdc24b.html">Accuracy update</a>.</div>
-    <p style="margin-top:14px"><a class="card-link" href="playbook.html" style="display:inline-block;padding:10px 16px;border-radius:8px;background:#2563eb;color:#fff;text-decoration:none;font-weight:600">Open the step-by-step playbook →</a></p>
-  </div>
-
-  {section("The two gates — do them in order", "gates", f'<div class="grid2">{gate_cards}</div>', "Both gates must be true before the work rule applies. Gate 1 is an income test; Gate 2 is a work/income/exemption test.")}
-
-  {section("Your profile — what is given and what is missing", "profile", table(
-      ["Fact", "Value", "What it changes", "Official context (not proof of your facts)", "Status"],
-      profile_rows,
-      table_id="profile-table",
-  ), "No personal eligibility value is inferred. The linked rule gives context, not independent proof of a reader-given fact. Blank cells are flagged; FPL examples use one person only as a reference.")}
-
-  {section("9 practical pathways for $0 earned income", "paths", table(
-      ["#", "Pathway", "What satisfies it", "Earned income?", "Hours", "Best fit", "Source", "Status"],
-      path_rows,
-      table_id="pathways-table",
-  ), "The statute has five activity categories plus two income alternatives; the table separates the practical routes, including in-kind work, self-employment, and exemptions. Every row links to the official rule.")}
-
-  {section("Every coverage option, side by side", "options", table(
-      ["Option", "Who qualifies", "Work requirement", "Cost", "How to apply", "Source", "Status"],
-      option_rows,
-      table_id="options-table",
-  ), "This table is about coverage, not just the work rule. If you are above 138% FPL, the relevant options are Covered California (no work requirement) and full-price coverage. If you are below, Medi-Cal is usually the lowest-cost option.")}
-
-  {section("What California is doing for people with $0 earned income", "ca", table(
-      ["#", "Action", "What it means", "Source", "Status"],
-      [[f'<span class="tag">{esc(a["id"])}</span>', f'<strong>{esc(a["action"])}</strong>',
-        esc(a["detail"]), source_cell(sources, a["source"]), badge(a["status"])]
-       for a in data["ca_actions"]],
-      table_id="ca-table",
-  ), "California implements the federal rule; it does not waive it. The state help is in the income test, in-kind/self-employment work, community service, education, exclusions, outreach, ex parte verification, the 30-day cure, and the state premium subsidy for Covered California.")}
-
-  {section("Key verified findings", "findings", table(
-      ["ID", "Category", "Finding", "Verified value", "Source", "Status"],
-      finding_rows,
-      table_id="key-findings-table",
-  ), 'This is a selection. <a href="findings.html">Open the full findings table →</a> (all ' + str(len(data["findings"])) + " findings, filterable, with the source register).")}
-
-  {section("Flagged for review — read these before relying on the site", "flags", table(
-      ["ID", "Item", "Issue", "Why it matters", "Source", "Status"],
-      flag_rows,
-      table_id="flags-table",
-  ), 'These are the highest-impact open items. <a href="flagged.html">See the full Flagged for Review page →</a>')}
-
-  {section("Site map — every category", "map", category_cards(), "The dashboard and seven primary pages are the verified core. The older detailed pages and the three supplementary dashboards are preserved in the archive and are not re-certified by this session.")}
-</div>
-"""
-    return page(
-        "California Healthcare & Work Requirements — Verified 2026 Dashboard",
-        "Verified dashboard — $0 earned income · Kalshi · rental · interest",
-        "index.html",
-        body,
-        "Verified dashboard for a California resident with zero earned income: Medi-Cal work rules, in-kind property-management work, the $580 income test, Covered California, and every official source.",
-        scripts='<script src="assets/site.js" defer></script>',
+            '<span class="badge ok">Executive summary</span><h3>Earned income is not the only route</h3>'
+            '<p>The income alternative, qualifying activities, education and exclusions provide different paths. '
+            'None establishes your personal eligibility without the missing facts.</p>'
+            '<p><a href="executive-summary.html">Read your options →</a></p>',
+            '<h3>Do not assume trading hours qualify</h3><p>Your owner-management hours, Kalshi tax treatment, '
+            'household, age and income amounts remain unverified. The site leaves personal results blank.</p>'
+            '<p><a href="flagged.html">See what is unresolved →</a></p>',
+        ], sources=sources,
     )
+    body += '<div class="wrap">'
+    body += section("Executive summary", "answer", table(
+        ["Route", "What it means for you", "Official source"], [
+            ["Income alternative", "At least $580 of properly determined monthly MAGI-based household income in an assessed month. Wages are not required; gross rent deposits or trading payouts are not the measure.", source_cell(sources, "S42") + " · " + source_cell(sources, "S44")],
+            ["Qualifying activity", "80 hours of qualifying work, community service, a work program or combined activities. Work includes in-kind and unpaid work. A qualifying education program at least half-time independently satisfies the condition.", source_cell(sources, "S44")],
+            ["Exclusion or hardship", "Screen for caregiving, medical frailty, pregnancy/postpartum, Medicare and the other listed categories. Personal qualification has not been established.", source_cell(sources, "S42") + " · " + source_cell(sources, "S46")],
+            ["Covered California", "Marketplace coverage does not use this Medicaid work requirement. Financial help depends on household income and other criteria. Failing the Medi-Cal work rule is NOT an automatic route to subsidized marketplace insurance.", source_cell(sources, "S31") + " · " + source_cell(sources, "S06")],
+        ], table_id="quick-answer"))
+    gates = "".join('<article class="card"><h3>'+esc(g["title"])+ '</h3><p>'+esc(g["body"])+ '</p><p class="hint">'+source_cells(sources,g)+'</p></article>' for g in data["gates"])
+    body += section("Keep the two tests separate", "gates", '<div class="grid2">'+gates+'</div>')
+    body += section("Start dates need care", "ca", '<div class="alert warn"><strong>DHCS publishes January 1, 2027 for work rules and March 1, 2027 for six-month checks.</strong> Its outreach letter says the rules start in March 2027. AB 2161 has implementation conditions. Do not treat either as your personal renewal date. '+source_cell(sources,"S11")+' · '+source_cell(sources,"S10")+' · '+source_cell(sources,"S42")+'</div>')
+    body += section("Selected findings for your situation", "findings", table(["Finding", "Confirmed value", "Details / limitation", "Official source", "Status"], rows, table_id="key-findings-table"))
+    body += '<div id="paths"></div><div id="options"></div>'
+    body += section("Explore by category", "map", category_cards())
+    body += section("Flagged for Review", "flags", '<div class="card"><p><strong>Unknown is not zero.</strong> No personal premium, eligibility decision, Kalshi tax classification or accepted trading/owner-management hours is invented. Historic audit pages remain available, but contain separately listed citation gaps and are not current advice.</p><p><a href="flagged.html">Open all flags →</a> · <a href="verification.html">Review evidence and limitations →</a></p></div>')
+    body += '</div>'
+    return page("California Healthcare — Zero Earned Income Guide", "Medi-Cal · work rules · income · coverage options", "index.html", body)
 
 
 def executive_summary(data, sources):
@@ -353,7 +261,7 @@ def executive_summary(data, sources):
         ("Signed", "July 4, 2025", "S01"),
         ("Federal effective date", "January 1, 2027, unless a state starts sooner or receives a good-faith waiver (latest December 31, 2028)", "S03"),
         ("Who is subject", "Non-pregnant adults 19–64 in the ACA adult group or certain section 1115 demonstrations providing minimum essential coverage, not entitled to or enrolled in Medicare", "S05"),
-        ("Qualifying activities", "Work, community service, work program, at least half-time education, or a combination — at least 80 hours in the month", "S01"),
+        ("Qualifying activities", "At least 80 hours of work, service, qualifying work program or combined activities; OR at least half-time education", "S01"),
         ("Income alternative", "Monthly income at least the federal minimum wage × 80 hours = $580 in 2026", "S06"),
         ("Seasonal alternative", "Average monthly income over the preceding six months of at least $580 for a seasonal worker under IRC §45R(d)(5)(B)", "S06"),
         ("Who is excluded", "Former foster youth under 26; American Indians/Alaska Natives; parents/caretakers of a child 13 or younger or a disabled person; veterans with a total disability rating; medically frail; TANF/SNAP work-requirement compliance; SUD treatment; inmates; pregnant/postpartum", "S06"),
@@ -362,7 +270,7 @@ def executive_summary(data, sources):
         ("Verification", "State must check all reliable information first; if it cannot verify, notice plus 30 calendar days to cure; coverage continues during cure", "S03"),
         ("Renewal standard", "One or more months between determinations; the months need not be consecutive", "S06"),
         ("Consequence", "Denial or disenrollment after cure. The person is still deemed Medicaid-eligible and is NOT eligible for federal premium tax credits", "S02"),
-        ("Six-month renewals", "SSA §71107; policy effective January 1, 2027; California's first affected renewal dates begin March 1, 2027", "S11"),
+        ("Six-month renewals", "P.L. 119-21 §71107; policy effective January 1, 2027; California's first affected renewal dates begin March 1, 2027", "S11"),
         ("Cost sharing", "From October 1, 2028, up to $35 per service for some expansion enrollees above 100% FPL; primary care, mental health, SUD, FQHC, CCBHC and RHC excluded; prescriptions remain subject", "S02"),
         ("Territories", "Not subject", "S06"),
         ("Section 1115", "The requirement cannot be waived", "S06"),
@@ -379,7 +287,7 @@ def executive_summary(data, sources):
     ]
     action_rows = [
         [f'<span class="tag">{esc(a["id"])}</span>', f'<strong>{esc(a["action"])}</strong>',
-         esc(a["detail"]), source_cell(sources, a["source"]), badge(a["status"])]
+         esc(a["detail"]), source_cells(sources, a), badge(a["status"])]
         for a in data["ca_actions"]
     ]
     plan_rows = [
@@ -419,8 +327,6 @@ def executive_summary(data, sources):
         sources=sources,
     ) + f"""
 <div class="wrap">
-  <div class="alert info" style="margin-bottom:14px"><strong>Want the sequence rather than the summary?</strong>
-  The <a href="playbook.html">playbook</a> sets out the four routes, the income test, the evidence pack, the calendar and the failure path.</div>
   {section("Bottom line", "bottom-line", f'''
   <div class="card">
     <ol class="big-list">
@@ -451,7 +357,7 @@ def executive_summary(data, sources):
       table_id="options-table-2",
   ), "The work rule applies only to Medi-Cal's MAGI New Adult Group. Covered California, Medicare, and community health centers do not impose it.")}
 
-  {section("Your strongest routes with zero earned income", "routes", f'''
+  {section("Potential routes without cash wages", "routes", f'''
   <div class="grid3">
     <div class="card"><div class="eyebrow">Route 1</div><h3>In-kind property-management work</h3>
     <p>CMS defines work to include work in exchange for goods or services, and gives the example of a property manager or building superintendent who receives free or reduced rent. The hours spent on those duties count toward 80 per month.</p>
@@ -462,7 +368,7 @@ def executive_summary(data, sources):
     <p><strong>Keep:</strong> rental and expense records, interest statements and full Kalshi transactions. Tax classification and exact income remain unknown.</p>
     <p class="hint">{source_cell(sources, "S42")} · {source_cell(sources, "S03")} · {source_cell(sources, "S10")}</p></div>
     <div class="card"><div class="eyebrow">Route 3</div><h3>Self-employment or fallback activity</h3>
-    <p>DHCS lists self-employment as work. If owner-management is questioned, 80 hours of community service, a work program, half-time school, or a combination also satisfies the rule.</p>
+    <p>DHCS lists self-employment as work. If owner-management is questioned, 80 hours of qualifying service, work-program or combined activities is another route. At least half-time school is an independent route with no additional 80-hour minimum.</p>
     <p><strong>Keep:</strong> a contemporaneous log and a named contact for community service.</p>
     <p class="hint">{source_cell(sources, "S09")}</p></div>
   </div>''')}
@@ -517,7 +423,7 @@ def executive_summary(data, sources):
 def work_rules(data, sources):
     path_rows = [
         [f'<span class="tag">{esc(p["id"])}</span>', f'<strong>{esc(p["path"])}</strong><br><span class="subtle">{esc(p["statute"])}</span>',
-         esc(p["what"]), esc(p.get("earned") or "—"), esc(p.get("hours") or "—"), esc(p["fit"]), esc(p["note"]),
+         esc(p["what"]), esc(p["earned"]), esc(p["hours"]), esc(p["fit"]), esc(p["note"]),
          source_cells(sources, p), badge(p["status"])]
         for p in data["pathways"]
     ]
@@ -656,10 +562,10 @@ def coverage_options(data, sources):
     # Program-year and poverty-guideline year are not interchangeable:
     # 2026 Medi-Cal uses 2026 FPL; 2026 Covered California uses 2025 FPL.
     band_data = [
-        ("2026 Medi-Cal", "100% FPL (2026 reference)", "$15,960", "$1,330", "Guideline used for the current-year Medi-Cal calculation, not the marketplace 2026 100% reference.", "S17"),
+        ("2026 Medi-Cal", "100% FPL (2026 reference)", "$15,960", "$1,330", "Guideline used for the current-year Medi-Cal calculation, not the marketplace 2026 100% reference.", "S15"),
         ("2026 Medi-Cal", "138% FPL (2026 reference)", "$22,025", "$1,836", "One-person adult expansion upper limit published by DHCS; household and monthly income must be checked.", "S15"),
         ("2026 Covered California", "400% FPL (2025 reference)", "$62,600", "", "Official plan-year 2026 single-person federal PTC upper income reference; other eligibility rules still apply.", "S41"),
-        ("2027 Covered California", "400% FPL (2026 reference)", "$63,840", "", "Marketplace plan-year 2027 reference. This is not a 2027 Medi-Cal amount.", "S43"),
+        ("2027 Covered California", "400% FPL (2026 reference)", "", "", "Percentage ceiling verified. Dollar column missing from retrieved text; not inferred. See FL-30.", "S43"),
         ("2027 Medi-Cal", "138% FPL (current-year reference)", "", "", "Not established by the 2026 DHCS chart; future guideline and household facts remain unconfirmed. Flag FL-26.", "S15"),
     ]
     bands = table(
@@ -732,7 +638,7 @@ def coverage_options(data, sources):
     <ul>
       <li><strong>100%–400% FPL:</strong> Covered California with the federal premium tax credit; the 2026 applicable percentage ranges from 2.10% to 9.96% of household income for the benchmark Silver plan.</li>
       <li><strong>At or below 165% FPL in 2026 / 200% FPL in 2027:</strong> the California state subsidy may further reduce your share.</li>
-      <li><strong>Above 400% FPL:</strong> no federal premium tax credit for 2026. You can still buy a plan at full price; the site does not estimate the premium because it varies by age, region, plan and tobacco use.</li>
+      <li><strong>Above 400% FPL:</strong> no federal premium tax credit for 2026. You can still buy a plan at full price; the site does not estimate the premium because it varies by age, rating region and plan.</li>
     </ul>
     <p class="hint">Sources: {source_cell(sources, "S18")} · {source_cell(sources, "S19")} · {source_cell(sources, "S20")} · {source_cell(sources, "S41")} · {source_cell(sources, "S43")}</p>
   </div>''')}
@@ -820,7 +726,7 @@ def findings_page(data, sources):
       <li>The statute and CRS summary for the rule, effective date, activities, income test, exemptions, penalties and six-month renewals.</li>
       <li>The CMS interim final rule, its June 29, 2026 correction, the CMS fact sheet, the December 2025 CIB, and the July 2026 IFR slide deck for the federal implementation details, including in-kind work and the MAGI income methodology.</li>
       <li>DHCS ACWDL 25-30, MEDIL I26-25, the 2026 FPL letters and charts, the Medi-Cal Changes page, the Tracking page, and the H.R.1 implementation plan for California's dates, income test, exemptions and outreach.</li>
-      <li>Covered California's 2026 Open Enrollment financial details ($62,600) and 2027 FPL chart ($63,840); the applicable FPL reference years differ from current-year Medi-Cal.</li>
+      <li>Covered California's 2026 Open Enrollment financial details ($62,600) and 2027 FPL percentage ranges; the applicable FPL reference years differ from current-year Medi-Cal.</li>
       <li>IRS publications and 42 CFR 435.603 for MAGI, rental, interest, capital gains and the no-asset-test rule.</li>
       <li>IRS recordkeeping guidance supports keeping complete transactions. The form, if any, issued for these contracts is unknown and left blank.</li>
     </ul>
@@ -852,7 +758,7 @@ def archives(data, sources):
             ("index.html", "Dashboard"),
             ("executive-summary.html", "Executive Summary"),
             ("work-rules.html", "Work Rules"),
-            ("playbook.html", "Playbook"),
+    ("playbook.html", "Playbook"),
             ("coverage-options.html", "Coverage Options"),
             ("findings.html", "All Findings"),
             ("verification.html", "Verification log"),
@@ -1067,8 +973,12 @@ def verification(data, sources):
             esc(s["publisher"]),
             f'<strong>{esc(s["title"])}</strong>',
             esc(s["date"]),
+            esc(s.get("last_checked", "")) + " — " + esc(s.get("review_scope", "")),
             f'<a href="{esc(s["url"])}" target="_blank" rel="noopener">Open ↗</a>',
         ])
+    review_rows = [[esc(f["id"]), esc(f["finding"]), esc(f.get("review", {}).get("locator", "Not freshly reviewed")),
+                    esc(f.get("review", {}).get("checked_on", "")), source_cells(sources, f), badge(f["status"])]
+                   for f in data["findings"]]
     corrections = [f for f in data["flags"] if f["status"] == "closed"]
     corr_rows = [[f'<span class="tag">{esc(f["id"])}</span>', f'<strong>{esc(f["item"])}</strong>',
                   esc(f["issue"]), source_cells(sources, f)] for f in corrections]
@@ -1077,7 +987,7 @@ def verification(data, sources):
         "Verification log · 2026-10-19 · line-by-line source audit",
         "",
         [
-            {"label": "Official sources", "value": str(len(data["sources"])), "detail": "Primary documents, not summaries."},
+            {"label": "Official sources", "value": str(len(data["sources"])), "detail": "Government and official exchange sources; includes agency summaries."},
             {"label": "Table rows checked", "value": str(len(data["findings"])), "detail": "Each row names a source."},
             {"label": "Closed corrections", "value": str(len(corrections)), "detail": "Earlier errors fixed at the data layer."},
             {"label": "Build guard", "value": "3 rules", "detail": "Missing source, empty verified value, valued unverified row."},
@@ -1101,8 +1011,8 @@ def verification(data, sources):
         '</ol><p class="hint">Reproduce: <code>python3 scripts/build_core.py &amp;&amp; python3 scripts/check_core.py &amp;&amp; python3 scripts/check_links.py</code></p></div>'
     ), "The data file is <a href=\"data/core.json\">data/core.json</a>; the generator is <a href=\"scripts/build_core.py\">scripts/build_core.py</a>.")
     body += section(f"Source register — {len(sources)} official documents", "sources",
-                    table(["ID", "Publisher", "Document", "Date", "Link"], src_rows, table_id="source-register"),
-                    "Dates identify the document's publication/effective date where shown, otherwise an explicitly labelled access date. Every core finding names a registered source ID.")
+                    table(["ID", "Publisher", "Document", "Document date", "Current check / scope", "Link"], src_rows, table_id="source-register"),
+                    "Dates identify the document's publication/effective date where shown, otherwise an explicitly labelled access date. Every core finding names a registered source ID. The current review scope and excerpts are in data/core.json and data/review-evidence.json.")
     body += section("Corrections applied to earlier pages", "corrections",
                     table(["ID", "Item", "What was wrong and what changed", "Source"], corr_rows, table_id="corrections-table"),
                     "These are recorded as closed. The generated pages carry the corrected value.")
@@ -1111,16 +1021,19 @@ def verification(data, sources):
         '<li><strong>It is a document review, not a legal opinion.</strong> Only a county eligibility worker, an administrative law judge, or a court can decide a specific case.</li>'
         '<li><strong>Personal facts are missing.</strong> Age, household size, county, exact income, filing status, and current coverage were not supplied, so no personal eligibility determination is made.</li>'
         '<li><strong>Guidance can change.</strong> CMS and DHCS can issue sub-regulatory guidance at any time; the source register is dated so a reader can see the vintage.</li>'
-        '<li><strong>Links can rot.</strong> <code>scripts/check_links.py</code> validates internal links and anchors; official external URLs were checked when the register was compiled.</li>'
+        '<li><strong>Links can rot.</strong> Automated checks cover internal links and anchors, not external uptime. Current review scopes and access dates appear below; historical register entries not fetched this session are labelled.</li>'
         '</ul><p class="hint">Report a conflict by citing the flag ID and the official document. Do not edit a value without a source.</p></div>'
     ))
     body += '</div>'
+    body += '<div class="wrap">' + section("Current finding-by-finding review", "current-review",
+        '<div class="alert info">This is a record of the specific sections read, not a claim to have audited every sentence of a long publication. Search-excerpt checks are identified. The historical dashboards are preserved with review warnings; source-link checks alone are not factual certification. eCFR is government-hosted, authoritative but not the official legal edition.</div>' +
+        table(["ID", "Finding", "Evidence location / review scope", "Checked on", "Official source", "Status"], review_rows, table_id="finding-review")) + '</div>'
     return page(
         "Verification — Source Audit and Corrections",
         f"Verification log · method, {len(sources)}-source register, corrections",
         "verification.html",
         body,
-        "Verification log for the California healthcare work-requirements site: method, the full 40-document official source register, corrections applied, and the limits of the review.",
+        "Verification log for the California healthcare work-requirements site: method, the official source register, corrections applied, and the limits of the review.",
     )
 
 
@@ -1138,15 +1051,15 @@ def playbook(data, sources):
     ]
     evidence_rows = [
         [f'<strong>{esc(r["doc"])}</strong>', esc(r["proves"]), esc(r["why"]),
-         source_cell(sources, r["source"])]
+         source_cells(sources, r)]
         for r in data["evidence"]
     ]
     cal_rows = [
         [f'<strong>{esc(r["when"])}</strong>', esc(r["what"]), esc(r["do"]),
-         source_cell(sources, r["source"])]
+         source_cells(sources, r)]
         for r in data["calendar"]
     ]
-    wanted = {"FL-28", "FL-29", "FL-30", "FL-31", "FL-32"}
+    wanted = {"FL-34", "FL-35", "FL-36", "FL-37", "FL-38"}
     flag_rows = [
         [f'<span class="tag">{esc(f["id"])}</span>', f'<strong>{esc(f["item"])}</strong>',
          esc(f["issue"]), esc(f["impact"]), source_cells(sources, f), badge(f["status"])]
@@ -1155,13 +1068,13 @@ def playbook(data, sources):
 
     body = hero(
         "The working plan: satisfy the rule with $0 earned income, and keep proof of it.",
-        "Playbook · verified 2026-10-19 · federal rule and California guidance",
+        "Playbook · reviewed 2026-10-19 · general routes, not personal approval",
         "",
         [
             {"label": "Work route", "value": "80 hrs / month", "detail": "About 18.5 hours a week. In-kind and unpaid work count.", "source": "S03"},
             {"label": "Income route", "value": "$580 / month", "detail": "MAGI-based household income, not wages.", "source": "S42"},
-            {"label": "How often", "value": "1 month", "detail": "One qualifying month per review period under California guidance.", "source": "S09"},
-            {"label": "To cure", "value": "30 days", "detail": "From the notice; coverage continues while you cure.", "source": "S09"},
+            {"label": "How often", "value": "1 month", "detail": "AB2161: previous month at application; any one month since the latest determination at renewal.", "source": "S42"},
+            {"label": "To cure", "value": "30 days", "detail": "From receipt under AB2161; receipt presumed five days after notice date.", "source": "S42"},
         ],
         [("start", "Three questions, in order"), ("routes", "The four routes"),
          ("income", "What counts as income"), ("evidence", "Evidence pack"),
@@ -1186,8 +1099,8 @@ def playbook(data, sources):
         '<div class="grid3">'
         '<div class="card"><div class="eyebrow">Question 1</div><h3>Are you in the group the rule covers?</h3>'
         '<p>The rule applies to non-pregnant adults 19–64 in the MAGI New Adult Group (or a listed 1115 demonstration), '
-        'not entitled to or enrolled in Medicare. The MAGI group has <strong>no asset test</strong>, so savings and property '
-        'do not disqualify you — only income does.</p>'
+        'not entitled to or enrolled in Medicare Part A or enrolled in Part B. The MAGI group has <strong>no asset test</strong>, so savings and property '
+        'are not tested as assets for MAGI coverage; income and other eligibility conditions still apply.</p>'
         '<p class="hint">' + source_cell(sources, "S33") + ' · ' + source_cell(sources, "S03") + '</p></div>'
         '<div class="card"><div class="eyebrow">Question 2</div><h3>Are you excluded or excepted anyway?</h3>'
         '<p>The county must screen for exclusions and exceptions before asking you to prove hours: Medicare, '
@@ -1213,9 +1126,9 @@ def playbook(data, sources):
         table_id="income-table",
     ) + (
         '<div class="alert warn" style="margin-top:14px"><strong>The Kalshi trap.</strong> '
-        'If the IRS treats event-contract trading as gambling, winnings go into AGI but losses are an itemized deduction, '
-        'allowed only up to winnings and claimed below the AGI line. A losing year could therefore still produce MAGI. '
-        'If the activity is instead capital, gains and losses net inside AGI. The character is unresolved — see '
+        'If nonprofessional gambling treatment applies, winnings go into AGI but losses are an itemized deduction, '
+        'subject from 2026 to the enacted 90%-of-losses rule, capped at gains, and claimed below the AGI line. A losing year could therefore still produce MAGI. '
+        'Capital or business treatment has different netting and deduction limitations. The character is unresolved — see '
         '<a href="flagged.html">FL-02 and FL-04</a> — and a CPA should decide it before you rely on a low-income month.</div>'
     ), "MAGI starts from adjusted gross income and adds back tax-exempt interest. Net, not gross, is the test for rent. Household income means the income of everyone counted in your MAGI household, so a spouse's income matters.")
 
@@ -1234,7 +1147,7 @@ def playbook(data, sources):
     body += section("If something goes wrong", "failure", (
         '<div class="grid2">'
         '<div class="card"><div class="eyebrow">Step 1</div><h3>Read the notice and diarise the date</h3>'
-        '<p>A Notice of Non-Compliance starts a 30-day period to show that you were compliant in the month the county '
+        '<p>Receipt of a Notice of Non-Compliance starts a 30-calendar-day period under AB2161 to show that you were compliant in the month the county '
         'reviewed, or that an exclusion or exception applies. Coverage continues during the cure period.</p>'
         '<p class="hint">' + source_cell(sources, "S09") + ' · ' + source_cell(sources, "S03") + '</p></div>'
         '<div class="card"><div class="eyebrow">Step 2</div><h3>Answer with records, not explanations</h3>'
@@ -1244,7 +1157,7 @@ def playbook(data, sources):
         '<div class="card"><div class="eyebrow">Step 3</div><h3>Ask for a hearing if the decision stands</h3>'
         '<p>Federal regulation requires the state to grant a hearing when you believe an action was erroneous, '
         'including a denial or termination. The notice states the deadline and how to request one.</p>'
-        '<p class="hint">' + source_cell(sources, "S45") + '</p></div>'
+        '<p class="hint">' + source_cell(sources, "S50") + '</p></div>'
         '<div class="card"><div class="eyebrow">Step 4</div><h3>Do not assume a marketplace subsidy</h3>'
         '<p>A person who fails the requirement is still treated as Medicaid-eligible for premium tax credit purposes, '
         'so a marketplace subsidy is not the automatic fallback. Reapply and ask for an exemption screening.</p>'
@@ -1255,8 +1168,8 @@ def playbook(data, sources):
     body += section("If your MAGI is above the Medi-Cal limit", "over", table(
         ["Your household MAGI", "What applies", "Work requirement?", "Source"],
         [
-            ["At or below 138% FPL", "Medi-Cal MAGI New Adult Group — $22,025 a year or $1,836 a month for one person in 2026", "Yes, this rule", source_cell(sources, "S15") + " · " + source_cell(sources, "S16")],
-            ["Above 138% and at or below 400% FPL", "Covered California with the federal premium tax credit — 2026 single reference $62,600; 2027 reference $63,840", "No", source_cell(sources, "S41") + " · " + source_cell(sources, "S43")],
+            ["At or below 138% FPL", "Medi-Cal MAGI New Adult Group — $22,025 a year or $1,836 a month for one person in 2026", "Only if covered, not excluded, and implemented", source_cell(sources, "S15") + " · " + source_cell(sources, "S16")],
+            ["Above 138% and at or below 400% FPL", "Covered California: possible federal premium tax credit if other eligibility conditions are met — 2026 single reference $62,600; 2027 dollar reference unconfirmed here (see FL-30)", "No", source_cell(sources, "S41") + " · " + source_cell(sources, "S43")],
             ["Above 400% FPL", "No federal premium tax credit; California's state subsidy reaches 165% FPL in 2026 and 200% FPL in 2027", "No", source_cell(sources, "S18") + " · " + source_cell(sources, "S20")],
             ["Above 400% FPL with advance credit paid", "You must repay all excess advance payments for the year", "No", source_cell(sources, "S31")],
         ],

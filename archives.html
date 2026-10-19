@@ -8,6 +8,7 @@
 <link rel="stylesheet" href="site/assets/style.css">
 </head>
 <body>
+<a class="skip-link" href="#main-content">Skip to content</a>
 <div class="topbar">
   <div class="topbar-inner">
     <div class="brand">
@@ -20,7 +21,7 @@
     <nav class="nav" aria-label="Main"><a href="index.html">Dashboard</a><a href="executive-summary.html">Executive Summary</a><a href="work-rules.html">Work Rules</a><a href="playbook.html">Playbook</a><a href="coverage-options.html">Coverage Options</a><a href="findings.html">Findings</a><a href="verification.html">Verification</a><a href="flagged.html">Flagged for Review</a></nav>
   </div>
 </div>
-
+<main id="main-content">
 <div class="hero">
   <div class="hero-card">
     <div class="eyebrow">Archive · preserved detailed pages and supplementary dashboards</div>
@@ -49,7 +50,7 @@
   <div class="card"><ul class="big-list"><li><a href="research/index.html">Research dashboard (9 pages)</a> <span class="subtle">— research/index.html</span></li><li><a href="coverage-guide/index.html">Coverage guide (7 pages)</a> <span class="subtle">— coverage-guide/index.html</span></li><li><a href="docs/index.html">Docs dashboard (10 pages)</a> <span class="subtle">— docs/index.html</span></li><li><a href="audit-6fc18b58.html">Independent audit (6fc18b58)</a> <span class="subtle">— audit-6fc18b58.html</span></li><li><a href="verify-5bf2fb99.html">Independent check (5bf2fb99)</a> <span class="subtle">— verify-5bf2fb99.html</span></li><li><a href="verify-9285d712.html">Independent check (9285d712)</a> <span class="subtle">— verify-9285d712.html</span></li><li><a href="verify-95219c64.html">Independent check (95219c64)</a> <span class="subtle">— verify-95219c64.html</span></li><li><a href="verify-a9c46f9b.html">Independent check (a9c46f9b)</a> <span class="subtle">— verify-a9c46f9b.html</span></li></ul></div>
 <h2 class="section-title" id="build">Build and verification</h2><div class="card"><h3>Rebuild the core</h3><pre><code>python3 scripts/build_core.py
 python3 scripts/check_core.py
-python3 scripts/check_links.py</code></pre><p>The core build fails if a row names a missing source, if a verified row has no value, or if an unverified row carries a value. The link checker verifies internal links and anchors across the published site.</p><p class="hint">Data: <a href="data/core.json">data/core.json</a> · 46 official sources</p></div><h2 class="section-title" id="policy">Status policy</h2><div class="card"><ul><li><strong>Verified</strong> — the value matches an official source linked on the row.</li><li><strong>Verified — nuance</strong> — the value is official, but a related definition or date is unresolved and flagged.</li><li><strong>Flagged</strong> — official sources conflict, or the legal question is unsettled.</li><li><strong>Unverified — blank</strong> — no official value was located; the cell is blank.</li><li><strong>Preserved</strong> — earlier work retained for reference; not re-certified by this session.</li></ul></div></div>
+python3 scripts/check_links.py</code></pre><p>The core build fails if a row names a missing source, if a verified row has no value, or if an unverified row carries a value. The link checker verifies internal links and anchors across the published site.</p><p class="hint">Data: <a href="data/core.json">data/core.json</a> · 51 official sources</p></div><h2 class="section-title" id="policy">Status policy</h2><div class="card"><ul><li><strong>Verified</strong> — the value matches an official source linked on the row.</li><li><strong>Verified — nuance</strong> — the value is official, but a related definition or date is unresolved and flagged.</li><li><strong>Flagged</strong> — official sources conflict, or the legal question is unsettled.</li><li><strong>Unverified — blank</strong> — no official value was located; the cell is blank.</li><li><strong>Preserved</strong> — earlier work retained for reference; not re-certified by this session.</li></ul></div></div></main>
 <div class="footer">
   <p><strong>Source policy:</strong> every table row links to an official source
   (congress.gov, federalregister.gov, cms.gov, medicaid.gov, dhcs.ca.gov,

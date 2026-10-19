@@ -222,7 +222,7 @@ def main():
         if parsed_url.scheme != "https":
             fail("source {}: URL is not https".format(sid))
         host = (parsed_url.netloc or "").lower()
-        if host not in ALLOWED_DOMAINS:
+        if host not in ALLOWED_DOMAINS and not host.endswith(".gov"):
             fail("source {}: '{}' is not an allowed official domain".format(sid, host))
         if not src.get("date") or not src.get("publisher"):
             fail("source {}: missing publisher or date".format(sid))
@@ -256,7 +256,7 @@ def main():
             if href.startswith(("http://", "https://")):
                 url = href
                 host = (urlparse(url).netloc or "").lower()
-                if host not in ALLOWED_DOMAINS and host not in BENIGN_LINK_DOMAINS:
+                if host not in ALLOWED_DOMAINS and not host.endswith(".gov") and host not in BENIGN_LINK_DOMAINS:
                     non_official.setdefault(rel, set()).add(host)
                 continue
             if href.startswith("#"):

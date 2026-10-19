@@ -1,0 +1,61 @@
+{
+  "reviewed_on": "2026-10-19",
+  "session": "arena/bf76ee37-maltaproj8",
+  "method": "Relevant-section document review with tool retrieval; search excerpts explicitly labelled in core review locations. Not a complete external-link crawler or a personal eligibility determination. A citation supports only the stated general rule; unknown personal values stay blank.",
+  "excerpts": [
+    {
+      "source": "S44",
+      "url": "https://www.ecfr.gov/current/title-42/part-435/section-435.552",
+      "locator": "435.552(f)(2)",
+      "excerpt": "The agency must determine the monthly income based on the individual's MAGI-based income, for their MAGI-based household"
+    },
+    {
+      "source": "S42",
+      "url": "https://leginfo.legislature.ca.gov/faces/billTextClient.xhtml?bill_id=202520260AB2161",
+      "locator": "14005.69(d)(2)",
+      "excerpt": "for any one month during the period between the individual’s most recent determination or redetermination"
+    },
+    {
+      "source": "S45",
+      "url": "https://www.govinfo.gov/link/uscode/26/45R",
+      "locator": "45R(d)(5)(B)",
+      "excerpt": "a worker who performs labor or services on a seasonal basis"
+    },
+    {
+      "source": "S33",
+      "url": "https://www.ecfr.gov/current/title-42/chapter-IV/subchapter-C/part-435/subpart-G/section-435.603",
+      "locator": "435.603(g)(1)",
+      "excerpt": "Apply any assets or resources test"
+    },
+    {
+      "source": "S32",
+      "url": "https://www.healthcare.gov/income-and-household-information/income/",
+      "locator": "Rental and royalty income",
+      "excerpt": "Use net rental and royalty income."
+    },
+    {
+      "source": "S10",
+      "url": "https://www.dhcs.ca.gov/wp-content/uploads/2026/09/MEDIL-I26-25.pdf",
+      "locator": "Enclosed outreach letter",
+      "excerpt": "Have an income from any source of at least $580 (before taxes) in any month since your last renewal."
+    },
+    {
+      "source": "S42",
+      "url": "https://leginfo.legislature.ca.gov/faces/billTextClient.xhtml?bill_id=202520260AB2161",
+      "locator": "14005.69(k)(1)(B)",
+      "excerpt": "30 calendar days, beginning on the date on which the notice of noncompliance is received"
+    },
+    {
+      "source": "S46",
+      "url": "https://www.ecfr.gov/current/title-42/part-435/section-435.554",
+      "locator": "Dependent child definition",
+      "excerpt": "a child 13 years of age or under who relies on another individual for care."
+    },
+    {
+      "source": "S23",
+      "url": "https://www.dhcs.ca.gov/wp-content/uploads/2026/07/DHCS-FY-2026-27-Budget-Act-Highlights.pdf",
+      "locator": "Work and Community Engagement Requirement",
+      "excerpt": "a reduction of $357.6 million ($90.3 General Fund) in 2026-27"
+    }
+  ]
+}
