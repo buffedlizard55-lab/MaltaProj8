@@ -890,3 +890,13 @@ After the Pages deployment, F44/FL-06 were re-read against the introduced text o
 | #27 | `arena/bf76ee37-maltaproj8` | open, mergeability unknown | Overlaps the root pages and predates PR #24/#28; **must be rebased** before any merge or it will revert the MAGI, FPL, AB 2161 and playbook corrections |
 
 **Final pre-merge update:** PR31 appended another completed-session log while PR27 CI ran. First merge attempt correctly refused the board conflict; no partial merge occurred. Merged main explicitly, preserving both logs. The required pre-push rebase now targets this session branch’s remote tip (rather than repeatedly recreating PR21’s old merge ancestry against main); main was already fetched/merged immediately before it.
+
+## Deploy incident and fix (2026-10-19, after PR #27)
+
+After PR #27 merged, the `Build and deploy complete healthcare guide` workflow failed on `main` at the step `Select artifact-based Pages publishing` (`gh api --method PUT repos/.../pages -f build_type=workflow`), because the workflow token cannot change repository Pages settings (`Resource not accessible by integration`, HTTP 403 — reproduced with the same token from the CLI).
+
+**Impact:** none on the published site. The repository's Pages site is published from `main` with `build_type: legacy`, and the `pages build and deployment` run for `954b4e7` completed **success**, so the site was live and current throughout.
+
+**Fix:** the deploy job and artifact upload are removed from `.github/workflows/pages.yml`; the workflow now validates and stages only, and deployment continues through legacy branch publishing (automatic on merge). A comment in the workflow records why, and what would be required to move to artifact-based publishing (repository-admin change of `build_type` to `workflow`).
+
+**Verified after the fix:** workflow green on `main`; `pages build and deployment` success for the merge commit; live pages fetched and checked.

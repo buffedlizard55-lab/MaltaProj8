@@ -43,28 +43,8 @@ jobs:
         run: |
           python3 scripts/stage_site.py
           python3 scripts/check_integration.py --site dist
-      - name: Upload complete Pages artifact
-        if: github.event_name != 'pull_request'
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: dist
-  deploy:
-    if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
-    needs: validate-site
-    runs-on: ubuntu-latest
-    permissions:
-      pages: write
-      id-token: write
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    steps:
-      - name: Select artifact-based Pages publishing
-        env:
-          GH_TOKEN: ${{ github.token }}
-        run: gh api --method PUT repos/${{ github.repository }}/pages -f build_type=workflow
-      - name: Configure GitHub Pages
-        uses: actions/configure-pages@v5
-      - name: Deploy verified complete site
-        id: deployment
-        uses: actions/deploy-pages@v4
+      # Deployment: this repository's GitHub Pages site is published from the
+      # main branch (build_type "legacy"), so a merge deploys the staged files
+      # automatically via the pages-build-deployment run. No artifact upload or
+      # deploy-pages step is needed; adding one requires switching the Pages
+      # build_type to "workflow", which needs repository-admin rights.
