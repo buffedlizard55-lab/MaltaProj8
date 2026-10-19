@@ -1,87 +1,80 @@
 {
-  "scenario": "US Citizen, Permanent CA Resident, No Earned Income, Property Manager + Kalshi Trader, Income from Kalshi Futures + Rental + Savings Interest",
-  "core_answer": "YES, you can absolutely fulfill the Medicaid/Medi-Cal work requirement with 0 earned income. The $580/month INCOME TEST is satisfied by ANY countable income source (unearned counts), not just earned income. Only ONE of the qualifying paths is needed EACH month you are checked (at least one month between 6-month renewals).",
+  "scenario": "U.S. citizen living in California; reports rental activity, savings interest and Kalshi event-contract trading but no wages; household and tax facts unknown.",
+  "as_of": "2026-10-18",
+  "core_answer": "No earned-income-only gate exists for MAGI Medi-Cal or Covered California. A $580 monthly MAGI-based household income route can meet community engagement for covered adults starting January 2027. Whether this person meets it is unknown. Six-month averaging under California's enacted statute applies to seasonal workers, not investment income merely because it fluctuates.",
   "pathways": [
     {
       "id": "P1",
-      "title": "Path 1: Income Test ($580/month) — EASIEST for this user",
-      "how": "Have gross monthly income >= $580 from any source (rental net + Kalshi net + interest combined count). For seasonal/irregular income (Kalshi trading is irregular), average >= $580 over prior 6 months counts.",
+      "title": "MAGI-based monthly income route",
+      "how": "Show at least $580 of total monthly income calculated with MAGI-based methods for the applicable household. At application the assessment looks to the preceding month; at redetermination, any month since the previous determination. Actual countable amount is unknown.",
       "requires_earned": false,
       "requires_hours": false,
-      "counts": "Rental net + Kalshi gains + interest + dividends + any other MAGI-countable income. DHCS: 'total gross income for a month must meet or exceed this amount' including unemployment benefits, SDI, retirement, dividends, etc.",
-      "evidence": "https://www.dhcs.ca.gov/wp-content/uploads/2026/04/25-30.pdf",
-      "verified": true,
-      "difficulty": "Low — passive income qualifies; no timesheet needed; verified via tax records/bank statements",
-      "example": "If your rental net is $800/mo and interest $100/mo, you already meet threshold even with $0 earned and $0 Kalshi that month. If Kalshi is your only income and you had $5,000 gain in Jan but $0 in Feb-Apr, your 6-month average may still exceed $580."
+      "evidence": "https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202520260AB2161",
+      "also": ["https://www.federalregister.gov/documents/2026/06/03/2026-11094/medicaid-program-community-engagement-requirement-for-certain-individuals"],
+      "status": "Verified rule; individual outcome flagged"
     },
     {
       "id": "P2",
-      "title": "Path 2: Self-Employment Work (Property Manager)",
-      "how": "Document property management as self-employment (Schedule C). 80 hrs/month of self-employment hours satisfies requirement AND income from it also counts toward income test.",
-      "requires_earned": true,
+      "title": "Qualifying work (including documented property-management work if accepted)",
+      "how": "Federal law provides an 80-hours-per-month work route. Landlord status alone does not establish 80 hours, Schedule C status or which activities qualify. Log actual work and seek county verification.",
+      "requires_earned": false,
       "requires_hours": true,
-      "counts": "If you materially participate and spend time managing properties, log hours. Even part-time management fees (e.g., 10% of rent collected) are self-employment earned income.",
-      "evidence": "https://www.irs.gov/businesses/small-businesses-self-employed/self-employed-individuals-tax-center",
-      "verified": true,
-      "difficulty": "Medium — need to demonstrate business activity, keep logs, file Schedule C; SE tax applies if net >=$400",
-      "example": "Manage 5 units, show 20 hrs/week of showings, leasing, maintenance coordination = ~80 hrs/month. File Schedule C for management fees.",
-      "flag": "If your rental activity is purely passive ownership (no management services), it is unearned rental income on Schedule E, not Schedule C earned work hours. Only counts for income test (P1), not work hours, unless you can document active property management as a business."
+      "evidence": "https://www.federalregister.gov/documents/2026/06/03/2026-11094/medicaid-program-community-engagement-requirement-for-certain-individuals",
+      "also": ["https://www.irs.gov/publications/p527"],
+      "status": "Verified general route; qualification of this person's work flagged"
     },
     {
       "id": "P3",
-      "title": "Path 3: Community Service / Volunteering (80 hrs/month)",
-      "how": "Volunteer or do community service >=80 hrs/month (or combine with other activities). No income needed. California will maintain list of available opportunities per MEDIL I26-25.",
+      "title": "Qualifying community service",
+      "how": "80 hours per month of qualifying community service, or combine eligible activities as allowed by federal law; document participation.",
       "requires_earned": false,
       "requires_hours": true,
-      "counts": "Any qualified community service organization; DHCS to publish local resource list.",
-      "evidence": "https://www.dhcs.ca.gov/wp-content/uploads/2026/09/MEDIL-I26-25.pdf",
-      "verified": true,
-      "difficulty": "High — 20 hrs/week unpaid time commitment; documentation burden every 6 months; risk of administrative loss if paperwork missed"
+      "evidence": "https://www.federalregister.gov/documents/2026/06/03/2026-11094/medicaid-program-community-engagement-requirement-for-certain-individuals",
+      "status": "Verified statutory route, subject to county verification"
     },
     {
       "id": "P4",
-      "title": "Path 4: Education (Half-Time Enrollment)",
-      "how": "Enroll at least half-time in an educational program, career/technical education, GED/HSE, or work program. Half-time = about 6 credit hours/term for college.",
+      "title": "Qualifying education",
+      "how": "At least half-time enrollment in a qualifying educational program is a statutory route; check actual program and enrollment documentation. Do not assume a universal credit-hour conversion.",
       "requires_earned": false,
       "requires_hours": false,
-      "counts": "Enrollment alone satisfies requirement regardless of grades; less-than-half-time can combine hours with work/volunteering to reach 80.",
-      "evidence": "https://www.dhcs.ca.gov/wp-content/uploads/2026/04/25-30.pdf",
-      "verified": true,
-      "difficulty": "Medium — tuition costs unless free community college/training; enrollment verification required"
+      "evidence": "https://www.congress.gov/bill/119th-congress/house-bill/1/text",
+      "status": "Verified general route, enrollment not established"
     },
     {
       "id": "P5",
-      "title": "Path 5: Work Program (80 hrs/month)",
-      "how": "Participate in approved job training, workforce development, or career coaching program >=80 hrs/month. Includes on-the-job training, entrepreneurship programs.",
+      "title": "Qualifying work program",
+      "how": "Participation in a qualifying work program may satisfy an 80-hour-per-month route; confirm the program and verification requirements with the county.",
       "requires_earned": false,
       "requires_hours": true,
-      "counts": "State-approved work programs; EDD workforce programs may qualify.",
-      "evidence": "https://www.dhcs.ca.gov/wp-content/uploads/2026/04/25-30.pdf",
-      "verified": true,
-      "difficulty": "Medium — must find qualifying program; California to publish list"
+      "evidence": "https://www.congress.gov/bill/119th-congress/house-bill/1/text",
+      "status": "Verified general route, participation not established"
     },
     {
       "id": "P6",
-      "title": "Path 6: Exemption (No Requirement at All)",
-      "how": "Qualify for mandatory exemption: medically frail/special medical needs (must be clinically determined), parent/caregiver of child <=13 or disabled individual, disability determination (Aged/Blind/Disabled Medi-Cal group), TANF/SNAP compliance, Medicare, American Indian/Alaska Native, etc. Exempt individuals also stay on ANNUAL renewals (not 6-month).",
+      "title": "Statutory exception from community engagement",
+      "how": "Some individuals are excepted because of age, qualifying medical condition, caregiver status, Medicare or another statutory category. No exception for this person is established. Exception from work does not alone prove exception from six-month financial checks.",
       "requires_earned": false,
       "requires_hours": false,
-      "counts": "If exempt, no hours or income test needed at all.",
-      "evidence": "https://www.cms.gov/newsroom/fact-sheets/medicaid-community-engagement-requirement-certain-individuals-interim-final-rule-comment-period-cms",
-      "verified": true,
-      "difficulty": "Only if legitimately qualifying — requires medical or other documentation; not a strategy for healthy adults without qualifying status"
+      "evidence": "https://www.federalregister.gov/documents/2026/06/03/2026-11094/medicaid-program-community-engagement-requirement-for-certain-individuals",
+      "status": "Verified general categories, personal status flagged"
     },
     {
       "id": "P7",
-      "title": "Path 7: Short-Term Hardship Exemption (California-Specific)",
-      "how": "California has opted to grant ALL optional hardship exemptions: reside in county with federally declared disaster/emergency; reside in county with high unemployment; inpatient hospital/SNF/nursing facility stay; related outpatient care; medical travel for complex condition.",
+      "title": "Temporary hardship exception",
+      "how": "A qualifying disaster, high-unemployment area, medical hardship or other statutory temporary circumstance may excuse the requirement. California implementation and county-specific eligibility are not confirmed for this person.",
       "requires_earned": false,
       "requires_hours": false,
-      "counts": "Automatically applied by state for disaster/unemployment based on residence; must request for medical/hospitalization.",
-      "evidence": "https://www.dhcs.ca.gov/federal-impacts/Documents/DHCS-HR1-Implementation-Plan.pdf",
-      "verified": true,
-      "difficulty": "Situational only — not a permanent compliance strategy, but useful for gaps"
+      "evidence": "https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202520260AB2161",
+      "also": ["https://www.dhcs.ca.gov/federal-impacts/Documents/DHCS-HR1-Implementation-Plan.pdf"],
+      "status": "Verified rule; particular county and individual eligibility flagged"
     }
   ],
-  "recommendation_for_user": "For this user's profile (healthy adult, no children under 13 described, income from passive sources + active Kalshi trading): BEST PATH is P1 Income Test. You do NOT need earned income. Your combined net rental + net Kalshi gains + interest easily exceed $580 in most months; if trading is seasonal, the 6-month averaging rule protects you. KEEP RECORDS: bank statements showing deposits, Schedule E (rental), Schedule D/6781 (Kalshi), 1099-INT. At each 6-month renewal, state will check ex parte via FTB/tax data first; only if not found will they ask you. Fallback: P3/P4 if income dips to zero for 6 straight months (rare if you have rental). Document everything 30 days after notice if asked."
+  "seasonal_averaging": {
+    "rule": "The previous six months may be averaged under California Welfare & Institutions Code §14005.69(e)(7) for seasonal workers; fluctuating trading results by themselves are insufficient to claim this method.",
+    "applies_to_person": null,
+    "evidence": "https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202520260AB2161",
+    "status": "Individual seasonal-worker status flagged"
+  },
+  "recommendation_for_user": "Request a real county or marketplace determination; retain rental expense records, interest statements and trading records; do not assume Kalshi tax character, income threshold, work hours or an exception without facts and verification. Respond to any county notice promptly."
 }

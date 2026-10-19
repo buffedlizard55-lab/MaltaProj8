@@ -5,25 +5,25 @@
   "flags": [
     {
       "id": "FL-01",
-      "title": "Kalshi event contracts: tax characterization (Section 1256 vs. ordinary capital gains) is unsettled",
-      "why": "No IRS revenue ruling, regulation, or notice classifies CFTC-DCM event contracts. In 2026 the federal appeals courts split on whether they are CEA 'swaps' (3d Cir. favored CFTC exclusivity in April 2026; 9th Cir. [Aug 28, 2026] and 6th Cir. [Sep 25, 2026] held otherwise), and further review is possible. Any '60/40' claim you see elsewhere is a position, not a rule.",
-      "impact": "Affects your tax RATE and forms (6781 vs 8949), not whether the income counts for Medi-Cal/Marketplace (net gains are in AGI either way). Net LOSS years still matter for MAGI via the $3,000 offset rule.",
-      "action": "Ask a CPA to paper a position; monitor IRS guidance and SCOTUS docket.",
+      "title": "Kalshi event-contract tax character, gains/losses and reporting not established",
+      "why": "General IRS investment and §1256 guidance and a CFTC market-designation release do not establish the federal tax character of this person's event contracts. Earlier claims that no IRS guidance exists anywhere, or that one specific filing treatment is \"mainstream\", were not official findings.",
+      "impact": "The character and permitted loss treatment can change taxable household MAGI and the healthcare program outcome; the amount cannot be guessed.",
+      "action": "Keep complete trading records, request competent tax advice and report accurately rather than selecting an unverified Schedule D/6781 position.",
       "links": [
-        "https://help.kalshi.com/en/articles/13823849-what-tax-documentation-does-kalshi-provide",
-        "https://www.gaming.nv.gov/siteassets/content/about/press-release/25-7516---kalshi-ninth-circuit-decision.pdf",
+        "https://www.irs.gov/publications/p550",
         "https://www.cftc.gov/PressRoom/PressReleases/8302-20"
       ]
     },
     {
       "id": "FL-02",
-      "title": "2027 Medi-Cal work requirement: whether NON-wage income (rent/interest/trading) satisfies the $580/month alternative",
-      "why": "The CMS interim-final-rule fact sheet words the alternative as 'monthly income that is not less than the federal minimum wage multiplied by 80 hours' ($580 in 2026) without a verified definition of 'income' on this page. If MAGI-basis income qualifies, your rent/interest could satisfy the rule with no work at all; if only earned income counts, it may not.",
-      "impact": "Potentially decisive for your plan if you rely on Medi-Cal in 2027+.",
-      "action": "Get a written county/DHCS answer; watch DHCS MEDIL/ACWDL letters implementing the rule for California.",
+      "title": "Individual $580 MAGI-based work-rule result: amount and proof still unknown",
+      "why": "The enacted California law and federal CMS rule resolve the general method: monthly MAGI-based household income; earned wages are not required. But this taxpayer's rental expenses, interest and Kalshi tax character/countable income have not been supplied. A prior-six-month average is restricted to seasonal workers.",
+      "impact": "May determine Medi-Cal community-engagement compliance after January 2027 for an adult in the covered group; there is no basis here to say the person passes.",
+      "action": "Get actual tax/household documentation, ask the county about the calculation if contested and monitor the specific notice. Do not substitute gross receipts or deposits.",
       "links": [
-        "https://www.cms.gov/newsroom/fact-sheets/medicaid-community-engagement-requirement-certain-individuals-interim-final-rule-comment-period-cms",
-        "https://www.dhcs.ca.gov/wp-content/uploads/2026-04-25-30.pdf"
+        "https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202520260AB2161",
+        "https://www.federalregister.gov/documents/2026/06/03/2026-11094/medicaid-program-community-engagement-requirement-for-certain-individuals",
+        "https://www.dhcs.ca.gov/wp-content/uploads/2026/07/MAGI-INCOME-AND-DEDUCTION-TYPES.pdf"
       ]
     },
     {
@@ -120,6 +120,18 @@
       "links": [
         "https://www.ftb.ca.gov/about-ftb/newsroom/tax-news/flash/2026/04.html",
         "https://www.dhcs.ca.gov/medi-cal/qualify/qualify-for-medi-cal-eligibility-chart/"
+      ]
+    },
+    {
+      "id": "FL-12",
+      "title": "2027 Medi-Cal FPL and personal marketplace premium are not published for this person",
+      "why": "The DHCS $22,025/year, $1,836/month one-person figures apply to 2026 Medi-Cal. The 2026 Covered California 400% FPL line is $62,600, while $63,840 is for 2027 marketplace plans. None sets a 2027 Medi-Cal limit or an individualized quote.",
+      "impact": "Using the wrong FPL reference year can falsely place a person in a coverage or subsidy band.",
+      "action": "Leave 2027 Medi-Cal and personal cost blank pending official year-specific rules and a plan quote; use the dated accuracy update in the root dashboard.",
+      "links": [
+        "https://www.dhcs.ca.gov/services/medi-cal-resources/medi-cal-eligibility-division/all-county-welfare-directors-medi-cal-eligibility-division-information-letters/2026-fpl-calculation-chart-monthly-values-enclosure-1/",
+        "https://hbex.coveredca.com/data-research/dashboards/OE_Dashboard.pdf",
+        "https://www.coveredca.com/pdfs/FPL-chart.pdf"
       ]
     }
   ]

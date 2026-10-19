@@ -9,16 +9,17 @@
 <body>
 <header class="masthead">
   <div class="wrap masthead-inner">
-    <div class="brand"><a href="index.html"><span class="brand-mark">✚</span> Healthcare Access<span class="brand-sub"> — CA · $0 earned income · verified findings</span></a></div>
-    <div class="stamp">All data verified against official sources on <strong>2026-10-18</strong></div>
+    <div class="brand"><a href="index.html"><span class="brand-mark">✚</span> Healthcare Access<span class="brand-sub"> — CA · no wages · source-linked, conditional findings</span></a></div>
+    <div class="stamp">Source audit <strong>2026-10-18</strong> · <a href="../accuracy-93fdc24b.html">Current correction</a> · <a href="../flagged.html">Open questions</a></div>
   </div>
   <nav class="wrap nav" aria-label="Primary"><a class="nav-link" href="index.html">Home</a><a class="nav-link" href="executive-summary.html">Executive Summary</a><a class="nav-link" href="income-taxes.html">Income & Taxes</a><a class="nav-link" href="medicaid.html">Medi-Cal</a><a class="nav-link active" href="covered-california.html">Covered California</a><a class="nav-link" href="new-laws.html">New Laws & Work Req.</a><a class="nav-link" href="ca-mandate.html">CA Mandate</a><a class="nav-link" href="action-plan.html">Action Plan</a><a class="nav-link" href="sources.html">All Sources</a><a class="nav-link" href="flagged-for-review.html">⚑ Flagged for Review</a></nav>
 </header>
 <main class="wrap">
+<section class="panel" role="note"><strong>Read first:</strong> The <a href="../accuracy-93fdc24b.html">dated accuracy update</a> separates 2026 and 2027 FPL years and uses the enacted MAGI-based work-rule method. Personal coverage, Kalshi tax character and actual income remain unknown. Older independent claims are preserved for review; see <a href="../flagged.html">Flagged for Review</a> and the <a href="../audit-6fc18b58.html">independent audit</a>.</section>
 
 <h1>Covered California (the state Marketplace)</h1>
 <p class="lede">Subsidized private plans when income is above the Medi-Cal line. This is where the 2026 federal subsidy changes hit hardest — and where California has substituted state money for lower-income enrollees.</p><div class="table-scroll"><table class="data">
-<thead><tr><th>ID</th><th>Topic</th><th>Verified finding</th><th>Key value</th><th>Effective</th><th>Status</th><th>Official source</th></tr></thead>
+<thead><tr><th>ID</th><th>Topic</th><th>General finding / limitation</th><th>Verified value, if available</th><th>Effective</th><th>Status</th><th>Official source</th></tr></thead>
 <tbody>
     <tr class="">
       <td class="rid">MKT-01</td>
@@ -33,11 +34,11 @@
     <tr class="">
       <td class="rid">MKT-02</td>
       <th scope="row" class="topic">Federal APTC income band, 2026</th>
-      <td class="finding">Advance Premium Tax Credit is available with income 100%–400% FPL. The pre-2021 &quot;subsidy cliff&quot; is back: above 400% FPL there is no federal premium tax credit for 2026 (and no state backfill for that band this year).</td>
-      <td class="val">100%–400% FPL; &gt;400% = $0 help</td>
+      <td class="finding">Federal premium tax credits generally require household income between 100% and 400% of the plan-year applicable FPL, plus other eligibility requirements. For a single person in 2026 Covered California uses $62,600 at 400% FPL; the $63,840 400% figure applies to 2027 marketplace plans.</td>
+      <td class="val">2026 400%: $62,600; 2027 400%: $63,840 (single)</td>
       <td class="eff">Jan 1, 2026</td>
       <td class="st"><span class="badge ok">✓ Verified</span></td>
-      <td class="src-cell"><a class="src" href="https://www.coveredca.com/pdfs/FPL-chart.pdf" target="_blank" rel="noopener">Covered California — What is financial help? + 2027 FPL chart note</a><div class="note">FPL-chart PDF footnote: &quot;Consumers with income above 400% FPL are not eligible for a federal premium tax credit.&quot;</div></td>
+      <td class="src-cell"><a class="src" href="https://hbex.coveredca.com/data-research/dashboards/OE_Dashboard.pdf" target="_blank" rel="noopener">Covered California — 2026 Enrollment Dashboard; IRS PTC eligibility</a><div class="note">2027 FPL chart: https://www.coveredca.com/pdfs/FPL-chart.pdf . Eligibility conditions: https://www.irs.gov/affordable-care-act/individuals-and-families/eligibility-for-the-premium-tax-credit .</div></td>
     </tr>
 
     <tr class="">
@@ -83,11 +84,11 @@
     <tr class="">
       <td class="rid">MKT-07</td>
       <th scope="row" class="topic">Cost-sharing reductions (Silver plans)</th>
-      <td class="finding">Household income ≤250% FPL buying a Silver plan gets Enhanced Silver lower deductibles/copays (Silver 94 at 100–150%, Silver 87 at 150–200%, Silver 73 at 200–250%). CSR applies to out-of-pocket costs, not premiums; only available with Silver plans.</td>
-      <td class="val">CSR ≤250% FPL, Silver only</td>
+      <td class="finding">Cost-sharing reductions are available to eligible marketplace enrollees who choose an Enhanced Silver plan and meet income and other criteria (generally up to 250% FPL). They are not automatically available throughout the full 100–400% federal premium-tax-credit income band.</td>
+      <td class="val">Eligible Enhanced Silver applicants, generally ≤250% FPL</td>
       <td class="eff">Current</td>
       <td class="st"><span class="badge ok">✓ Verified</span></td>
-      <td class="src-cell"><a class="src" href="https://www.coveredca.com/costs/financial-help" target="_blank" rel="noopener">Covered California — 2027 FPL chart &amp; What is financial help?</a></td>
+      <td class="src-cell"><a class="src" href="https://www.coveredca.com/costs/financial-help/" target="_blank" rel="noopener">Covered California — Financial Help (Enhanced Silver)</a></td>
     </tr>
 
     <tr class="">
@@ -162,12 +163,12 @@
 
     <tr class="">
       <td class="rid">MKT-15</td>
-      <th scope="row" class="topic">Above 400% FPL in 2026–27: full price</th>
-      <td class="finding">The Covered CA board's 2026 program design explored (but did not adopt, within the $190M budget) a 15% premium cap for incomes 400–420% FPL; adopted 2026 and 2027 designs concentrate state money at ≤165%/≤200% FPL. If your projected MAGI exceeds 400% FPL ($63,840 for 1 person at 2026 guidelines), expect no premium help for 2026 and 2027.</td>
-      <td class="val">&gt;400% FPL: no subsidy</td>
+      <th scope="row" class="topic">400% FPL references differ for 2026 and 2027 marketplace plans</th>
+      <td class="finding">For a one-person household Covered California lists 2026 marketplace 400% FPL as $62,600 and 2027 marketplace 400% FPL as $63,840. Above the applicable plan-year line, federal APTC is generally unavailable; individual cost must be obtained from a plan quote. Other eligibility conditions still apply.</td>
+      <td class="val">2026: $62,600; 2027: $63,840 (single)</td>
       <td class="eff">2026 and 2027 plan years</td>
       <td class="st"><span class="badge ok">✓ Verified</span></td>
-      <td class="src-cell"><a class="src" href="https://hbex.coveredca.com/pdfs/July%202025%20Plan%20Advisory%20Meeting%20Slide%20Deck.Final.pdf" target="_blank" rel="noopener">Covered CA Board — July 2025 Plan Management Advisory Committee deck</a><div class="note">400% = $63,840 from 2026 HHS guidelines ($15,960 × 4).</div></td>
+      <td class="src-cell"><a class="src" href="https://hbex.coveredca.com/data-research/dashboards/OE_Dashboard.pdf" target="_blank" rel="noopener">Covered California — 2026 Enrollment Dashboard, Financial Details</a><div class="note">2027 reference: https://www.coveredca.com/pdfs/FPL-chart.pdf . IRS PTC conditions: https://www.irs.gov/affordable-care-act/individuals-and-families/eligibility-for-the-premium-tax-credit .</div></td>
     </tr>
 
     <tr class="">
@@ -181,6 +182,6 @@
     </tr></tbody></table></div>
 </main>
 <footer class="footer"><div class="wrap">
-  <p>Generated from <code>data/*.json</code> by <code>tools/build-site.js</code> (session <code>c8487e35</code>). Every table row carries a link to its official source; values that could not be confirmed from an official source are left blank and listed on the <a href="flagged-for-review.html">Flagged for Review</a> page. This site is an organized research brief, not legal or tax advice.</p>
+  <p>Generated from <code>data/*.json</code> by <code>tools/build-site.js</code> (session <code>c8487e35</code>). Rows link to research sources, but a citation is not a personal eligibility determination. The <a href="../accuracy-93fdc24b.html">current accuracy update</a> and <a href="flagged-for-review.html">unresolved-items page</a> take precedence over older uncorrected descriptions. Informational, not legal or tax advice.</p>
 </div></footer>
 </body></html>

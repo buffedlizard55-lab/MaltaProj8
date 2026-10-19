@@ -15,13 +15,13 @@
     {
       "id": "excluded",
       "heading": "Who is never subject (specified excluded individuals)",
-      "intro": "These are statutory exclusions, not county discretion. A person in any of these categories is deemed to have demonstrated community engagement for the month and is also excused from the six-month renewal cycle. California law lists them in Welfare and Institutions Code § 14005.69(b)(2).",
+      "intro": "These are statutory categories, not a finding about this person. A work-rule exception does not by itself prove an exception from six-month financial eligibility checks; check the separate DHCS eligibility timeline and exceptions. <a href=\"https://www.dhcs.ca.gov/tracking-federal-impact-medi-cal-eligibility/\">DHCS timeline</a>.",
       "table": "excluded"
     },
     {
       "id": "comply",
       "heading": "How to comply in a month",
-      "intro": "Any one of these is enough for the month. They can also be combined.",
+      "intro": "These are alternative ways to satisfy the rule; combination is allowed where provided by statute. Seasonal averaging is limited to seasonal workers. None is certified for this person.",
       "table": "comply"
     },
     {
@@ -49,7 +49,7 @@
     {
       "id": "state-funded",
       "heading": "California's one extension of the federal rule",
-      "note": "Federal law requires states to apply the community engagement requirement to federally funded adults in the ACA adult group (§ 1902(a)(10)(A)(i)(VIII)). California went further and included state-funded Medi-Cal adults who meet the same criteria (AB 2161 § 14005.69(b)(1)(B)), and DHCS policy states the requirement applies \"regardless of immigration status.\" If you are a permanent resident who has completed the five-year bar you are federally funded and this makes no difference; if you are still inside the five-year bar your coverage is state-funded, and California will still apply the work rule to you from 2027.",
+      "note": "California §14005.69(b)(1)(B) also addresses certain state-funded adult coverage. The subject reports U.S. citizenship; immigration/five-year-bar status must not be inferred from this general provision. <a href=\"https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202520260AB2161\">Enacted statute</a>.",
       "table": "state-funded"
     },
     {

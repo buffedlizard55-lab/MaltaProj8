@@ -34,11 +34,12 @@
       {
         "item": "Income floor",
         "value": "Household income must be at least 100% of the FPL",
-        "detail": "IRS: \"Your household income is at least 100 percent* but not more than 400 percent of the federal poverty line (FPL) for your family size.\" The IRS adds a footnote: \"Under special circumstances, you may be able to claim the PTC even though your income is below 100 percent of the federal poverty line. See the instructions for Form 8962.\" For 2026, 100% FPL for one person is $15,960.",
-        "source": "S25",
+        "detail": "IRS generally requires household income of at least 100% and not more than 400% of the applicable poverty guideline, subject to stated below-100% special circumstances and other eligibility criteria. Do not use the $15,960 2026 HHS guideline as an automatic 2026 marketplace floor; marketplace plan years use a different FPL reference.",
+        "source": "S45",
         "verified": true,
         "also": [
-          "S27"
+          "S41",
+          "S6"
         ]
       },
       {
@@ -56,11 +57,15 @@
         "verified": true
       },
       {
-        "item": "What happens if you are below 100% FPL in California",
-        "value": "Medi-Cal, not a subsidy",
-        "detail": "Because California has expanded Medicaid, the 100% floor is not a coverage gap here — it is the line below which you are routed to Medi-Cal instead of a marketplace plan.",
-        "source": "S7",
-        "verified": true
+        "item": "Below 100% FPL: assess Medi-Cal and any special PTC circumstances",
+        "value": "Medi-Cal screening; PTC exceptions may apply",
+        "detail": "California expansion coverage is a possible route for eligible people, not a guaranteed result. IRS notes special below-100% circumstances; a Medi-Cal work-rule failure can preclude marketplace financial help.",
+        "source": "S45",
+        "verified": true,
+        "also": [
+          "S12",
+          "S31"
+        ]
       }
     ],
     "premiums": [
@@ -76,7 +81,10 @@
         "value": "0% of household income",
         "detail": "Silver 94 plans (100%–150% FPL) have lower deductibles, co-pays and out-of-pocket maximums.",
         "source": "S6",
-        "verified": true
+        "verified": true,
+        "also": [
+          "S46"
+        ]
       },
       {
         "item": "Over 150% – 200% FPL",
@@ -130,11 +138,15 @@
         "verified": true
       },
       {
-        "item": "Does it help if you have $0 income?",
-        "value": "No — you use Medi-Cal instead",
-        "detail": "The state subsidy supplements federal APTC, and APTC requires household income of at least 100% FPL. Below that, Medi-Cal is the program (and in California it is free or low cost).",
-        "source": "S25",
-        "verified": true
+        "item": "Zero income alone does not establish state-premium-subsidy eligibility",
+        "value": "Requires separate APTC/state-plan eligibility",
+        "detail": "Covered California state help supplements federal APTC for eligible enrollees, with additional plan-year income limits. A person with zero wages may have other income; determine actual household income and why Medi-Cal is unavailable. No automatic free marketplace plan.",
+        "source": "S9",
+        "verified": true,
+        "also": [
+          "S45",
+          "S12"
+        ]
       }
     ],
     "dates": [

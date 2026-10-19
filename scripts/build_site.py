@@ -54,6 +54,8 @@ PRIMARY_NAV = [
     ("coverage-guide/index.html", "Coverage Guide"),
     ("docs/index.html", "Docs Dashboard"),
     ("flagged.html", "Flagged for Review"),
+    ("accuracy-93fdc24b.html", "Accuracy Update"),
+    ("audit-6fc18b58.html", "Independent Audit"),
 ]
 
 # Pages published by the primary session that receive the shared navigation link.
@@ -75,7 +77,9 @@ PAGE_INDEX = [
         [
             ("index.html", "Dashboard", "Executive summary, the short answer, and the seven compliance paths."),
             ("overview.html", "Extended overview", "The full table set: your situation at a glance, income bands, and the decision path."),
-            ("docs/executive-summary.md", "Executive summary (Markdown)", "The long-form summary as a document you can read or print."),
+            ("docs/executive-summary.md", "Executive summary (Markdown)", "Corrected long-form guidance with year-specific sources and unresolved personal values."),
+            ("accuracy-93fdc24b.html", "Accuracy update (18 October 2026)", "Enacted MAGI income test, seasonal averaging, plan-year thresholds and live flags."),
+            ("audit-6fc18b58.html", "Independent source audit", "Earlier independently published row-link inventory and open questions."),
         ],
     ),
     (
@@ -83,7 +87,7 @@ PAGE_INDEX = [
         [
             ("law.html", "The law, line by line", "H.R. 1 § 71119 and the CMS interim final rule, quoted and cited."),
             ("work-requirements.html", "Work & community engagement rules", "Who is subject, how to comply, the $580 test, exemptions, hardship, and what happens if you miss it."),
-            ("income-counting.html", "How your income is counted", "What MAGI counts: rent, savings interest, and trading gains."),
+            ("income-counting.html", "How income is counted", "Rent, interest, and unresolved Kalshi tax character under MAGI-based methods."),
         ],
     ),
     (
@@ -115,8 +119,8 @@ PAGE_INDEX = [
     (
         "Evidence",
         [
-            ("verification.html", "Verification log", "Line-by-line source check for every published claim."),
-            ("sources.html", "Source register", "All 40 official sources used in this section, with publisher and date."),
+            ("verification.html", "Earlier verification log", "Historical checks; compare conclusions with the current accuracy update."),
+            ("sources.html", "Source register", "Official sources cited in this section, with publisher and date."),
             ("flagged.html", "Flagged for Review", "Everything that could not be confirmed, and where two official sources disagree."),
             ("verify-95219c64.html", "Independent check #1 (95219c64)", "First independent line-by-line re-verification: 13 claims re-checked, 5 nuances."),
             ("verify-9285d712.html", "Independent check #2 (9285d712)", "Second independent re-verification: 13 claims, 2 corrections (cost-sharing §71120, 40-state count), 6 nuances."),
@@ -132,7 +136,7 @@ PAGE_META = {
         "title": "Extended overview",
         "h1": "California health coverage with no earned income",
         "lede": "A research brief for a California permanent resident (or citizen) who works as a property manager and full-time Kalshi trader, has no wages, and has income from rental property, savings interest and trading. "
-                "Every value below is traced to a federal, state or Covered California source and links to it.",
+                "General rules are sourced; personal eligibility and Kalshi tax character are not established. Read the accuracy update before older pages.",
     },
     "options": {
         "title": "Your options",
@@ -213,15 +217,18 @@ def source_cell(sources, sid):
 def render_table(rows, sources, table_id):
     head = ["Item", "Value", "Details", "Source"]
     out = ['<div class="table-wrap">']
+    # Section ids are used by anchor links. Reusing them on <table> caused
+    # getElementById() to select a section, not a table, breaking row filters.
+    dom_id = "table-{}".format(table_id) if table_id else "table-entries"
     if table_id:
         out.append(
             '<div class="table-tools"><label class="search">'
             '<span class="vh">Filter rows</span>'
             '<input type="search" data-filter-for="{}" placeholder="Filter rows…" '
             'aria-label="Filter rows in this table"></label>'
-            '<span class="rowcount" data-count-for="{}"></span></div>'.format(table_id, table_id)
+            '<span class="rowcount" data-count-for="{}"></span></div>'.format(dom_id, dom_id)
         )
-    out.append('<table id="{}" class="data">'.format(table_id))
+    out.append('<table id="{}" class="data">'.format(dom_id))
     out.append("<thead><tr>" + "".join("<th>{}</th>".format(h) for h in head) + "</tr></thead>")
     out.append("<tbody>")
     for row in rows:
@@ -327,7 +334,7 @@ def page_html(slug, body, meta, sources, page_json):
       <div class="brand-badge">CA</div>
       <div>
         <h1><a class="brand-link" href="index.html">California Healthcare &amp; Work Requirements</a></h1>
-        <p>Extended analysis · no earned income · every value linked to an official source</p>
+        <p>Extended analysis · no wages-only gate · personal outcome unknown</p>
       </div>
     </div>
     <nav class="nav" aria-label="Main">{nav}</nav>
@@ -343,12 +350,13 @@ def page_html(slug, body, meta, sources, page_json):
 <div class="wrap" id="main">
   <h1>{h1}</h1>
   <p class="lede">{lede}</p>
+  <div class="callout"><strong>Current source-audit notice:</strong> Some independently authored conclusions on this site predate the later California law or mix 2026 and 2027 poverty guidelines. Read the <a href="accuracy-93fdc24b.html">dated accuracy update</a>, <a href="flagged.html">unresolved-items hub</a> and preserved <a href="audit-6fc18b58.html">independent audit</a>. A source link is not a finding that this individual qualifies.</div>
   {body}
 </div>
 
 <div class="footer">
   <div class="wrap footer-inner">
-    <p><strong>Research brief, not legal, tax or immigration advice.</strong> Every value on this site is linked to the official source it came from. If a value could not be confirmed, it is left blank and listed on the <a href="flagged.html">Flagged for Review</a> page.</p>
+    <p><strong>Research brief, not legal, tax or immigration advice.</strong> Tables link to official material, but a citation does not establish an individual benefit decision. Unresolved and legacy issues appear at <a href="flagged.html">Flagged for Review</a> and the <a href="accuracy-93fdc24b.html">current accuracy update</a>.</p>
     <p class="muted">Source list: <a href="sources.html">all official sources</a> · <a href="index.html">dashboard</a> · <a href="verification.html">verification log</a> · Page generated {updated}.</p>
   </div>
 </div>
@@ -389,14 +397,14 @@ def build_page(slug, sources):
     if slug == "overview":
         parts.insert(
             1,
-            '<section class="card card-hero" id="bottom-line"><h2>The bottom line</h2>'
-            "<ul class=\"checklist\">"
-            "<li><strong>You do not need earned income to qualify for Medi-Cal</strong> — and you do not need earned income to satisfy the 2027 work rule.</li>"
-            "<li><strong>Your income is not $0.</strong> Net rent, savings interest and trading results are all counted as MAGI income, both for the 138% FPL Medi-Cal limit and for the $580 work-rule test.</li>"
-            "<li><strong>The simplest path is Medi-Cal</strong> if your MAGI is at or below $22,025 for 2026 (one person). You can apply year-round and it costs little or nothing.</li>"
-            "<li><strong>If you are on Medi-Cal in 2027</strong>, make sure at least one month in every six-month window has either $580 of income from any source or 80 hours of work, volunteering, community service, job training or school.</li>"
-            "<li><strong>If you have a qualifying disability</strong>, the Aged &amp; Disabled Medi-Cal program is not subject to the work rule at all — but your assets are counted.</li>"
-            "</ul></section>",
+            '<section class="card card-hero" id="bottom-line"><h2>Bottom line — conditional, source linked</h2>'
+            '<ul class="checklist">'
+            '<li><strong>No wages-only gate:</strong> MAGI Medi-Cal and Covered California look to household income and other eligibility criteria, not a W-2. <a href="https://www.dhcs.ca.gov/medi-cal/help/">DHCS help</a>.</li>'
+            '<li><strong>Work-rule income route:</strong> for covered adults from January 2027, California §14005.69(e)(6) uses at least $580 of monthly MAGI-based household income; a qualifying amount for this person has not been shown. <a href="https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202520260AB2161">Enacted statute</a>.</li>'
+            '<li><strong>Seasonal-worker-only averaging:</strong> §14005.69(e)(7) does not extend a six-month average to every investor whose results fluctuate. <a href="https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202520260AB2161">Enacted statute</a>.</li>'
+            '<li><strong>Separate plan years:</strong> 2026 Medi-Cal one-person reference $22,025/year ($1,836/month); 2026 marketplace 400% FPL $62,600; 2027 marketplace 400% FPL $63,840. <a href="https://www.dhcs.ca.gov/services/medi-cal-resources/medi-cal-eligibility-division/all-county-welfare-directors-medi-cal-eligibility-division-information-letters/2026-fpl-calculation-chart-monthly-values-enclosure-1/">DHCS 2026</a> · <a href="https://hbex.coveredca.com/data-research/dashboards/OE_Dashboard.pdf">Covered CA 2026</a> · <a href="https://www.coveredca.com/pdfs/FPL-chart.pdf">Covered CA 2027</a>.</li>'
+            '<li><strong>Personal result unknown:</strong> no household, actual taxable rental/interest or Kalshi classification has been supplied. See <a href="flagged.html">Flagged for Review</a>; apply through <a href="https://www.dhcs.ca.gov/medi-cal/apply/">DHCS</a> for an agency decision.</li>'
+            '</ul></section>',
         )
 
     body = "\n".join(parts)
@@ -446,6 +454,11 @@ INTEGRATION_LINKS = [
 ]
 
 
+def is_core_generated(html):
+    """The primary core owns these pages; do not append stale legacy blocks."""
+    return 'generated from <a href="data/core.json">' in html
+
+
 def patch_shared_nav():
     """Add the section links to the shared top navigation.
 
@@ -459,6 +472,8 @@ def patch_shared_nav():
         if not os.path.exists(path):
             continue
         html = read(path)
+        if is_core_generated(html):
+            continue
         start = html.find('<nav class="nav"')
         end = html.find("</nav>", start)
         if start == -1 or end == -1:
@@ -477,8 +492,8 @@ def patch_shared_nav():
 def build_page_index_block():
     out = ['  <div class="card" id="page-index" style="margin-top:14px">',
            "    <h3>Complete page index — every page on this site</h3>",
-           '    <p class="hint">Three verified sections, one site. Each page states its own values with a link to the official source behind them.</p>',
-           '    <div class="alert info"><strong>Source policy.</strong> Every value on this site is stated from an official source — congress.gov, federalregister.gov, cms.gov, medicaid.gov, dhcs.ca.gov, coveredca.com, healthcare.gov, irs.gov, aspe.hhs.gov, leginfo.legislature.ca.gov, dol.gov, cftc.gov — and every table row links to it. Where a value could not be confirmed from an official source, the value is left blank and the item is listed on the <a href="flagged.html">Flagged for Review</a> page. A small number of secondary links (KFF, CHCF, CalMatters, the LA Times and practitioner tax commentary) appear only inside items that are already flagged, or as context; they are never the support for a published value.</div>']
+           '    <p class="hint">Sections were independently authored. Read the current accuracy update for corrected income methods and FPL years before relying on older summaries.</p>',
+           '    <div class="alert info"><strong>Read before using a figure.</strong> This is a collection of independently contributed research pages, not a personal eligibility determination. The <a href="accuracy-93fdc24b.html">18 October accuracy update</a> corrects the gross-vs-MAGI shortcut, seasonal averaging and 2026/2027 FPL years. The <a href="flagged.html">Flagged hub</a> and <a href="audit-6fc18b58.html">independent audit</a> retain unresolved items and whole-site link exceptions. Older “verified” labels do not prove every inherited claim.</div>']
     for group, items in PAGE_INDEX:
         out.append('    <h4 class="index-group">{}</h4>'.format(esc(group)))
         out.append('    <ul class="index-list">')
@@ -496,6 +511,8 @@ def patch_index(sources):
     if not os.path.exists(path):
         return False
     html = read(path)
+    if is_core_generated(html):
+        return False
     block = build_page_index_block()
     start = "<!-- PAGE-INDEX:START -->"
     end = "<!-- PAGE-INDEX:END -->"
@@ -516,11 +533,13 @@ def patch_flagged(sources):
     path = os.path.join(OUT, "flagged.html")
     if not os.path.exists(path):
         return False
-    flags = load_json("flagged.json")
     html = read(path)
+    if is_core_generated(html):
+        return False
+    flags = load_json("flagged.json")
     block = []
     block.append('<h3 class="section-title">🚩 Extended analysis — flagged items (W-01 to W-13)</h3>')
-    block.append('<div class="alert warn">These items come from the Extended Analysis section of this site. They are listed with the same rule as the items above: an unconfirmed value is left blank on the page where it would appear, and the item is recorded here with the source that was checked.</div>')
+    block.append('<div class="alert warn">Independently authored extended-analysis flags. Some older wording is broader than the enacted MAGI-based methodology. If claims differ, the <a href="accuracy-93fdc24b.html">dated accuracy update</a> and newer official text govern the current guide.</div>')
     block.append('<p class="hint">{}</p>'.format(esc(flags["intro"])))
     block.append(render_flags(flags["items"], sources, id_prefix="W"))
     start = "<!-- EXTENDED-FLAGS:START -->"

@@ -224,11 +224,16 @@
         "verified": true
       },
       {
-        "item": "Income test — the practical route for a trader",
-        "value": "Total monthly income of at least $580 (80 × $7.25 federal minimum wage)",
-        "detail": "California law (WIC § 14005.69(e)(6)) measures this as \"total monthly income, using modified adjusted gross income (MAGI)-based financial methods.\" DHCS policy guidance describes it as \"An individual's total gross income for a month must meet or exceed this amount.\" The member notice says \"an income from any source of at least $580 (before taxes) in any month since your last renewal.\" For fluctuating income, DHCS allows averaging the prior 6 months; the member notice says the same: \"People whose hours change frequently or who have seasonal jobs can average at least $580 per month from any source over 6 months.\"",
-        "source": "S10",
-        "verified": true
+        "item": "Income alternative (not a personal eligibility finding)",
+        "value": "At least $580 total monthly income under MAGI-based household methods",
+        "detail": "California WIC §14005.69(e)(6) and CMS §435.552(f) specify MAGI-based financial methods; no earned-income-only test. Earlier ACWDL 25-30 describes \"gross income\" and DHCS notice says \"from any source\", but neither establishes that every bank deposit or Kalshi payout counts. Six-month averaging under §(e)(7) is for seasonal workers, not all fluctuating traders.",
+        "source": "S13",
+        "verified": true,
+        "also": [
+          "S15",
+          "S10",
+          "S12"
+        ]
       },
       {
         "item": "Seasonal worker",
@@ -288,10 +293,13 @@
       },
       {
         "item": "Renewal frequency",
-        "value": "Every 6 months instead of 12, starting January 2027",
-        "detail": "Section 71107 of H.R. 1. Tribal members, pregnant members or those in the 12 months postpartum, and children are not subject to the six-month renewal rule.",
-        "source": "S12",
-        "verified": true
+        "value": "Six-month financial eligibility checks begin March 1, 2027 (DHCS)",
+        "detail": "Separate from the community-engagement rule, which DHCS dates to January 1, 2027. Individual renewal timing depends on the member; no claim that everyone is reviewed on the start date.",
+        "source": "S43",
+        "verified": true,
+        "also": [
+          "S11"
+        ]
       },
       {
         "item": "Retroactive coverage limit",
