@@ -731,3 +731,16 @@ It postdates every document the site was built on — DHCS ACWDL 25-30 (Dec 30 2
 - **PR:** (to be created) — will be merged without waiting per instruction; flagged/unverified do not block
 - **Pages:** legacy, main /, will be confirmed `built` via API and live fetch
 
+
+### Deployment record — arena/f8bfa1ff (task 26 COMPLETE)
+
+- **Branch:** `arena/f8bfa1ff-maltaproj8` → `main`
+- **PR: https://github.com/buffedlizard55-lab/MaltaProj8/pull/24 — MERGED 2026-10-19T02:26:21Z, merge commit `429c886604a0147bbfbe5f20fe48413ca85e34d5`.**
+- Required checks before merge: `build` → **SUCCESS** (9s), `validate` → **SUCCESS** (7s). `mergeable: MERGEABLE`, `mergeStateStatus: CLEAN`.
+- Merged **without waiting for approval**, per instruction. Flagged/unverified items did not block merge; all 4 sweep blanks + 27 flags remain published on `flagged.html` and `verify-e071bffc.html`.
+- **GitHub Pages:** `build_type: legacy`, source `main` `/`. Build for commit `429c886` polled from `building` → **`built`**, `status: built` via `gh api repos/.../pages` 2026-10-19T02:26:50Z. Direct fetch to `https://buffedlizard55-lab.github.io/MaltaProj8/` blocked by outbound allowlist, so live verification relied on Pages API (as with prior sessions). Prior session verified live fetch for same site; this session's build is identical commit that passed local `check_links` (59 pages, no broken links).
+- **Integration notes:** This merge supersedes PR #21 (arena/93fdc24b) — all 43-source corrections (AB 2161, MAGI, seasonal, FPL 2026/2027, lawsuit co-leads, $1.3B) were brought onto the e071bffc base (42 CFR 435.552/435.603, govinfo 45R) via `git checkout` of the corrected data/scripts/html and regeneration. PR #21 left open with `CONFLICTING` will be closed as integrated. No file was deleted; `verify-e071bffc.*` and `research/` + `coverage-guide/` preserved. `accuracy-93fdc24b.html` now live via `archives.html` and dashboard site map.
+- **Left for any later session:** 25 not-refetched sources remain honestly labelled (see verify-e071bffc.json); only 862 of the site's rows are task-21 accuracy-certified, the remaining 97 archival gaps are inventoried on `flagged.html` but not claimed as current advice. AB 2161 is now S42, so the strongest authority is in the core register.
+
+**Result.** Tasks 24, 25, 26 complete. The site now answers the user's 0-earned-income question with **three verified routes** (in-kind property-management work, $580 MAGI-household income counting net rental + interest + realized Kalshi gains, or 80 hrs/community service/half-time school/exemption) and a clean GH Pages dashboard (index + executive-summary + work-rules + coverage-options + findings + verification + flagged + accuracy update) with every row linked to an official source.
+
