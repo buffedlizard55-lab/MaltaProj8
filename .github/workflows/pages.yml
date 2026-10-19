@@ -1,37 +1,70 @@
-name: Deploy GitHub Pages
+name: Build and deploy complete healthcare guide
 on:
   push:
+    branches: [main]
+  pull_request:
     branches: [main]
   workflow_dispatch:
 permissions:
   contents: read
-  pages: write
-  id-token: write
 concurrency:
-  group: "pages"
+  group: healthcare-pages-${{ github.ref }}
   cancel-in-progress: false
 jobs:
-  build:
+  validate-site:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-      - name: Setup Pages
-        uses: actions/configure-pages@v5
-      - name: Build with Jekyll
-        uses: actions/jekyll-build-pages@v1
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
         with:
-          source: ./
-          destination: ./_site
-      - name: Upload artifact
+          python-version: '3.11'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Build all owned generators in order
+        run: python3 scripts/build_all.py
+      - name: Check core, evidence, regressions and local links
+        run: |
+          python3 scripts/check_core.py
+          python3 scripts/check_accuracy.py
+          python3 scripts/check_links.py
+          python3 scripts/check_integration.py
+          python3 scripts/check_e071bffc.py
+      - name: Validate preserved research sections
+        run: |
+          python3 coverage-guide/scripts/check.py
+          (cd research && python3 scripts/validate.py)
+      - name: Ensure generated files are committed and reproducible
+        run: |
+          git diff --exit-code
+          python3 scripts/build_all.py
+          git diff --exit-code
+      - name: Stage only public site resources
+        run: |
+          python3 scripts/stage_site.py
+          python3 scripts/check_integration.py --site dist
+      - name: Upload complete Pages artifact
+        if: github.event_name != 'pull_request'
         uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
   deploy:
+    if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
+    needs: validate-site
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
-    needs: build
     steps:
-      - name: Deploy to GitHub Pages
+      - name: Select artifact-based Pages publishing
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh api --method PUT repos/${{ github.repository }}/pages -f build_type=workflow
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v5
+      - name: Deploy verified complete site
         id: deployment
         uses: actions/deploy-pages@v4

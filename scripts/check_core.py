@@ -42,6 +42,7 @@ OFFICIAL_HOSTS = (
     "healthcare.gov",
     "house.gov",
     "hrsa.gov",
+    "govinfo.gov",
 )
 
 PAGES = {
@@ -138,8 +139,8 @@ def main():
     cc27 = kpis.get("Covered CA 400% reference (single, 2027)", {})
     if cc26.get("value") != "$62,600 / year" or cc26.get("source") != "S41":
         errors.append("2026 marketplace 400% FPL must use the $62,600 Covered CA plan-year source")
-    if cc27.get("value") != "$63,840 / year" or cc27.get("source") != "S43":
-        errors.append("2027 marketplace 400% FPL must be separately labelled $63,840")
+    if cc27.get("value") != "400% FPL" or cc27.get("source") != "S43":
+        errors.append("2027 marketplace must show the verified 400% ceiling, not infer a missing dollar column")
     seasonal = next((p for p in data["pathways"] if p["id"] == "P4"), {})
     if "seasonal worker" not in seasonal.get("what", "") or "lumpy Kalshi" not in seasonal.get("fit", ""):
         errors.append("seasonal averaging must not be offered solely for fluctuating trading")
@@ -223,7 +224,7 @@ def report(errors, data=None, warnings=None):
           f"{len(data['flags'])} flags, {len(data['pathways'])} pathways, "
           f"{len(data['options'])} coverage options, {len(data['timeline'])} timeline events.")
     print("      All source ids resolve, all verified rows carry values, all unverified rows are blank,")
-    print("      every registered URL is official https, all 8 pages are present, and every factual table row has a direct official link.")
+    print("      every registered URL is official https, all 9 pages are present, and every factual table row has a direct official link.")
     return 0
 
 

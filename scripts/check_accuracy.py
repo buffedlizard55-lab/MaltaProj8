@@ -162,7 +162,7 @@ def main() -> None:
     # by adding unrelated URLs. The root Flagged hub points to their register.
     legacy = []
     for file in sorted(ROOT.rglob("*.html")):
-        if any(part in {".git", "node_modules", "_site"} for part in file.parts):
+        if any(part in {".git", "node_modules", "_site", "dist", ".cache"} for part in file.parts):
             continue
         rel = file.relative_to(ROOT).as_posix()
         if rel not in OWNED_PAGES:
