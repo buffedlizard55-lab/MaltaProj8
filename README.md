@@ -42,7 +42,7 @@ python3 scripts/check_accuracy.py
 python3 scripts/check_links.py
 python3 scripts/check_integration.py
 python3 coverage-guide/scripts/check.py
-python3 research/scripts/validate.py
+(cd research && python3 scripts/validate.py)
 python3 scripts/stage_site.py
 python3 scripts/check_integration.py --site dist
 ```

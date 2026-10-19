@@ -114,7 +114,6 @@ blockquote{margin:8px 0 4px;padding:10px 14px;border-left:3px solid #bfdbfe;back
 pre{background:#0f172a;color:#e2e8f0;padding:12px 14px;border-radius:10px;overflow:auto;font-size:12.5px}
 code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace}
 td code{font-size:11.5px;color:#475569}
-=======
 /* --- table filter tools (for dashboard tables) --- */
 .table-tools{display:flex;gap:10px;align-items:center;justify-content:space-between;padding:8px 10px;border-bottom:1px solid var(--line);background:#f8fafc;border-radius:12px 12px 0 0}
 .table-tools .search input{font:inherit;font-size:13px;padding:6px 10px;border:1px solid var(--line);border-radius:8px;min-width:220px;background:#fff}
@@ -129,7 +128,6 @@ td code{font-size:11.5px;color:#475569}
   .hero-card h2{font-size:22px}
 }
 
->>>>>>> origin/main
 
 /* Accessible navigation and mobile reading; no external fonts or services. */
 .skip-link{position:absolute;top:-100px;left:16px;background:#fff;color:#163b63;padding:12px 18px;z-index:1000;border:2px solid #163b63}

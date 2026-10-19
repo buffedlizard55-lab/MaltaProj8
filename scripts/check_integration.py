@@ -7,6 +7,7 @@ from collections import Counter
 import argparse
 import hashlib
 import json
+import re
 import subprocess
 import sys
 
@@ -68,6 +69,13 @@ def main():
         subprocess.run([sys.executable, "scripts/build_site.py"], cwd=ROOT, check=True, stdout=subprocess.DEVNULL)
         if any(digest(ROOT / p) != before[p] for p in CORE):
             errors.append("extended generator modified primary pages owned by build_core.py")
+    # CSS merge remnants may silently invalidate a selector while links pass.
+    for pattern in ("*.html", "*.css", "*.js"):
+        for asset in root.rglob(pattern):
+            if any(part in SKIP for part in asset.relative_to(root).parts):
+                continue
+            if re.search(r"^(?:<<<<<<< |=======$|>>>>>>> )", asset.read_text(), re.M):
+                errors.append(f"Merge marker in {asset.relative_to(root)}")
     docs = {}
     for p in root.rglob("*.html"):
         if any(part in SKIP for part in p.relative_to(root).parts):

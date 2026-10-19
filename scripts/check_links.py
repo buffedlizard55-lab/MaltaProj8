@@ -230,7 +230,7 @@ def main():
     # ---- 5/6/7. published HTML -----------------------------------------
     page_files = []
     for dirpath, dirnames, filenames in os.walk(ROOT):
-        dirnames[:] = [d for d in dirnames if d not in (".git", "node_modules", "__pycache__")]
+        dirnames[:] = [d for d in dirnames if d not in (".git", "node_modules", "__pycache__", "dist", "_site", ".cache")]
         for fname in sorted(filenames):
             if fname.endswith(".html"):
                 rel = os.path.relpath(os.path.join(dirpath, fname), ROOT)
