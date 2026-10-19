@@ -393,6 +393,33 @@
       "url": "https://www.coveredca.com/pdfs/FPL-chart.pdf",
       "date": "2026",
       "official": true
+    },
+    {
+      "id": "S44",
+      "publisher": "Internal Revenue Service",
+      "title": "Topic no. 419: Gambling income and losses",
+      "date": "2026",
+      "url": "https://www.irs.gov/taxtopics/tc419",
+      "short": "IRS Topic 419",
+      "official": true
+    },
+    {
+      "id": "S45",
+      "publisher": "Electronic Code of Federal Regulations",
+      "title": "42 CFR 431.220 — When a hearing is required",
+      "date": "2026-10-15",
+      "url": "https://www.ecfr.gov/current/title-42/chapter-IV/subchapter-C/part-431/subpart-E/subject-group-ECFR4e89d7b32b71f9d/section-431.220",
+      "short": "42 CFR 431.220",
+      "official": true
+    },
+    {
+      "id": "S46",
+      "publisher": "Internal Revenue Service",
+      "title": "Topic no. 420: Bartering income",
+      "date": "2026",
+      "url": "https://www.irs.gov/taxtopics/tc420",
+      "short": "IRS Topic 420",
+      "official": true
     }
   ],
   "key_numbers": [
@@ -628,8 +655,8 @@
       "path": "$580/month household MAGI-based income alternative",
       "statute": "SSA §1902(xx)(2)(F); WIC §14005.69(e)(6); 42 CFR 435.552(f)",
       "what": "Monthly income of at least $580, determined using MAGI-based financial methods for the individual’s MAGI-based household budget. DHCS’s earlier letter says “income from any source” and “before taxes”; those phrases do not make gross rent, trading payouts or deposits automatically countable.",
-      "earned": "No",
-      "hours": "None",
+      "earned": "Not required",
+      "hours": "No fixed floor — $580 income test",
       "fit": "Potentially useful without wages if properly determined countable household income reaches $580 in a qualifying month. Exact rent, interest and Kalshi tax amounts are unknown.",
       "source": "S42",
       "status": "verified-nuance",
@@ -644,8 +671,8 @@
       "path": "Six-month income average for seasonal workers",
       "statute": "SSA §1902(xx)(2)(G); WIC §14005.69(e)(7)",
       "what": "A seasonal worker under IRC §45R(d)(5)(B) may meet the income alternative with an average of at least $580/month over the preceding six months, using the MAGI-based household budget. Earlier preliminary DHCS material uses broader fluctuating-hours language, but the enacted California statute requires seasonal-worker status.",
-      "earned": "No",
-      "hours": "None",
+      "earned": "Not required",
+      "hours": "No fixed floor — 6-month average",
       "fit": "Only if the applicant is a qualifying seasonal worker; lumpy Kalshi or rental income alone does not establish this route.",
       "source": "S42",
       "status": "verified-nuance",
@@ -659,7 +686,7 @@
       "path": "Community service or volunteering",
       "statute": "SSA §1902(xx)(2)(B); 42 CFR 435.552(b)",
       "what": "At least 80 hours per month of unpaid work with a structured program that benefits the community, under a public or nonprofit organization that tracks hours and can confirm them through a named contact. It cannot serve a partisan purpose.",
-      "earned": "No",
+      "earned": "Not required",
       "hours": "80 hrs/month",
       "fit": "Fallback if the work and income routes do not fit.",
       "source": "S07",
@@ -671,7 +698,7 @@
       "path": "Work program or job training",
       "statute": "SSA §1902(xx)(2)(C); 42 CFR 435.552(b)",
       "what": "At least 80 hours per month in a work program as defined in section 6(o)(1) of the Food and Nutrition Act of 2008, including certain state employment and training programs and veterans' training programs.",
-      "earned": "No",
+      "earned": "Not required",
       "hours": "80 hrs/month",
       "fit": "Fallback; requires a qualifying program.",
       "source": "S07",
@@ -683,7 +710,7 @@
       "path": "Education at least half-time",
       "statute": "SSA §1902(xx)(2)(D); 42 CFR 435.552(b)",
       "what": "Enrollment in an educational program at least half-time. The school or institution determines full-time, half-time, or less-than-half-time status. Less-than-half-time credit hours can be converted to hours (credit hours × 3 × 4.33) and combined with other activities.",
-      "earned": "No",
+      "earned": "Not required",
       "hours": "No fixed floor if half-time",
       "fit": "Fallback; tuition may apply.",
       "source": "S07",
@@ -695,7 +722,7 @@
       "path": "Combination of activities",
       "statute": "SSA §1902(xx)(2)(E)",
       "what": "Any combination of work, community service, work program, and less-than-half-time education totaling at least 80 hours in the month.",
-      "earned": "No",
+      "earned": "Not required",
       "hours": "80 hrs combined",
       "fit": "Useful if no single activity reaches 80 hours.",
       "source": "S01",
@@ -707,8 +734,8 @@
       "path": "Exclusion, mandatory exception, or short-term hardship",
       "statute": "SSA §1902(xx)(3), (9); DHCS ACWDL 25-30",
       "what": "Certain people are excluded from the rule or deemed compliant: former foster youth under 26, American Indians/Alaska Natives, parents/caretakers of a child 13 or younger or a disabled person, veterans with a total disability rating, medically frail people, TANF/SNAP work-requirement compliance, SUD treatment participants, inmates, pregnant/postpartum people, people under 19, people on Medicare, and people in a high-unemployment or disaster county. Inpatient care and medical travel can be short-term hardships if requested.",
-      "earned": "No",
-      "hours": "None",
+      "earned": "Not required",
+      "hours": "Not applicable — exemption",
       "fit": "Depends on personal facts not supplied. Ask the county to screen for every exclusion first.",
       "source": "S09",
       "status": "verified",
@@ -1021,7 +1048,7 @@
       "id": "F33",
       "category": "California",
       "finding": "Covered California has no work requirement",
-      "value": "None",
+      "value": "No work requirement applies to marketplace coverage",
       "detail": "Covered California eligibility and financial help are income-based. The federal community engagement rule is a Medicaid rule and does not apply to the marketplace.",
       "source": "S18",
       "status": "verified"
@@ -1370,6 +1397,54 @@
       "detail": "The cited DHCS chart is for 2026 only, and household size is not supplied. Do not reuse the marketplace 2027 reference as a future Medi-Cal limit.",
       "source": "S15",
       "status": "unverified"
+    },
+    {
+      "id": "F72",
+      "category": "Income counting",
+      "finding": "Gambling-treatment losses do not reduce MAGI",
+      "value": "Winnings are in AGI; losses are itemized, capped at winnings, and outside AGI",
+      "detail": "If Kalshi activity were treated as gambling, winnings are reported on Schedule 1 (inside AGI) while losses are claimed only on Schedule A, up to the winnings. Itemized deductions do not reduce AGI, so a losing year could still produce MAGI. The classification itself is unresolved (F40, F42).",
+      "source": "S44",
+      "also": [
+        "S01"
+      ],
+      "status": "verified-nuance"
+    },
+    {
+      "id": "F73",
+      "category": "Work hours",
+      "finding": "Hours count only in the month they were worked",
+      "value": "80 hours in one specific month; hours cannot be banked from another month",
+      "detail": "42 CFR 435.552(e)(2) requires hours for each activity to be determined separately and based on the time spent in that month. Because one qualifying month is enough at renewal, a heavy month can be chosen — but a strong March cannot be used to cure a blank April.",
+      "source": "S03",
+      "also": [
+        "S09"
+      ],
+      "status": "verified"
+    },
+    {
+      "id": "F74",
+      "category": "Procedure",
+      "finding": "A fair hearing is available after an adverse action",
+      "value": "Hearing on a denial, termination, reduction, or unreasonable delay",
+      "detail": "42 CFR 431.220(a)(1) requires the state to grant a hearing when an individual believes an action was erroneous. The notice states the deadline and how to ask; a hearing request preserves the record even if the county later reverses itself.",
+      "source": "S45",
+      "also": [
+        "S11"
+      ],
+      "status": "verified"
+    },
+    {
+      "id": "F75",
+      "category": "Income counting",
+      "finding": "Free or reduced rent received for management work is barter income",
+      "value": "Fair market value of the rent is included in gross income in the year received",
+      "detail": "IRS Topic 420 requires the fair market value of goods or services received from bartering to be included in gross income in the year of receipt, generally on Schedule 1 or Schedule C. Where the rent is earned by managing someone else's building, it therefore also raises MAGI. An owner occupying their own building is not bartering with themselves; the county and a CPA should confirm that no income arises.",
+      "source": "S46",
+      "also": [
+        "S32"
+      ],
+      "status": "verified-nuance"
     }
   ],
   "ca_actions": [
@@ -1740,6 +1815,63 @@
       "impact": "Statewide model outputs are not this person’s coverage outcome. Compare DHCS work-rule and all-H.R.1 projections separately.",
       "source": "S23",
       "status": "unverified"
+    },
+    {
+      "id": "FL-28",
+      "item": "California describes the income test three different ways",
+      "issue": "DHCS's public page says “work at a job and earn at least $580 a month”; its member letter says “income from any source”; the enacted statute and the regulation require MAGI-based household income.",
+      "impact": "A reader could wrongly conclude that only wages count, or that every deposit counts. Neither is the rule: net rent, interest and recognized gains count; gross receipts and returned deposits do not.",
+      "source": "S11",
+      "also": [
+        "S10",
+        "S42"
+      ],
+      "status": "open"
+    },
+    {
+      "id": "FL-29",
+      "item": "California's averaging guidance is broader than the federal rule",
+      "issue": "ACWDL 25-30 offers six-month averaging to anyone whose income fluctuates. 42 CFR 435.552(g) limits averaging to a seasonal worker described in IRC §45R(d)(5)(B). DHCS's public page now says “seasonal worker,” matching the regulation.",
+      "impact": "If you are not a statutory seasonal worker, do not rely on averaging. Use one qualifying month measured on its own.",
+      "source": "S09",
+      "also": [
+        "S03",
+        "S11"
+      ],
+      "status": "open"
+    },
+    {
+      "id": "FL-30",
+      "item": "The state-plan choices the rule depends on are not published",
+      "issue": "42 CFR 435.556(a) lets a state require one to three months at application and one or more months while enrolled, and 435.557(d) permits more frequent verification. California's guidance says the requirement is checked only at application and six-month renewal, but the state plan amendment is not posted.",
+      "impact": "The number of months California will require, and how often it will check, could change before January 2027.",
+      "source": "S03",
+      "also": [
+        "S09"
+      ],
+      "status": "open"
+    },
+    {
+      "id": "FL-31",
+      "item": "No published California standard for documenting owner-management hours",
+      "issue": "ACWDL 25-30 says further policy letters will define qualifying activities and documentation. None has been published for an owner who manages their own rental property.",
+      "impact": "The 80-hour route exists in federal rule, but the county's proof standard is unknown. A contemporaneous log is the only safeguard.",
+      "source": "S09",
+      "also": [
+        "S03"
+      ],
+      "status": "open"
+    },
+    {
+      "id": "FL-32",
+      "item": "In-kind rent may be income as well as hours",
+      "issue": "The work route counts in-kind hours, but the IRS treats bartered services as income at fair market value in the year received (Topic 420). One arrangement can therefore satisfy the hours test and add MAGI at the same time.",
+      "impact": "In-kind compensation could push household MAGI above 138% FPL, or above $580 in a month. Which effect dominates depends on facts and valuation that were not supplied.",
+      "source": "S46",
+      "also": [
+        "S03"
+      ],
+      "status": "open"
     }
   ],
   "action_plan": [
@@ -1784,6 +1916,221 @@
       "action": "Get the Kalshi tax classification reviewed before you file",
       "detail": "Federal classification affects household MAGI and loss treatment. Keep complete event-contract transaction, basis and proceeds records; an official source has not established which 1099 form (if any) Kalshi issues for those results.",
       "source": "S21"
+    }
+  ],
+  "routes": [
+    {
+      "id": "R1",
+      "route": "80 hours of work in the month",
+      "must": "At least 80 hours of work — including in-kind work and unpaid work — in the month being reviewed.",
+      "collect": "Duty list; free or reduced-rent agreement; monthly hours log; leases or management agreement; owner or witness statement.",
+      "basis": "42 CFR 435.552(a)(1), (b); 91 FR 33348 (property-manager example)",
+      "source": "S03",
+      "also": [
+        "S09"
+      ],
+      "status": "verified"
+    },
+    {
+      "id": "R2",
+      "route": "$580 of MAGI-based household income in the month",
+      "must": "Monthly MAGI-based household income of at least $580 (the federal minimum wage, $7.25, times 80 hours).",
+      "collect": "Schedule E or rent ledger with expenses; 1099-INT; Kalshi statement and P&L; prior return as a cross-check.",
+      "basis": "42 CFR 435.552(a)(6), (f)(2); WIC §14005.69(e)(6)",
+      "source": "S42",
+      "also": [
+        "S03",
+        "S32"
+      ],
+      "status": "verified"
+    },
+    {
+      "id": "R3",
+      "route": "Community service, a work program, or school",
+      "must": "80 hours of community service or a work program in the month; at least half-time enrollment; or a combination totaling 80 hours. Education hours combine only when enrollment is less than half-time.",
+      "collect": "Program timesheet or supervisor letter; school enrollment verification (the school decides half-time status).",
+      "basis": "42 CFR 435.552(a)(2)–(5), (b), (c)–(e)",
+      "source": "S03",
+      "also": [
+        "S09"
+      ],
+      "status": "verified"
+    },
+    {
+      "id": "R4",
+      "route": "Exclusion, mandatory exception, or hardship",
+      "must": "A listed status — for example a parent or caretaker of a child 13 or younger or of a disabled person, Medicare, medically frail, a recent inmate, or a state-option hardship.",
+      "collect": "Evidence of the specific status the county names (Medicare card, birth certificate, care plan, discharge papers).",
+      "basis": "42 CFR 435.553, 435.554, 435.555",
+      "source": "S03",
+      "also": [
+        "S09"
+      ],
+      "status": "verified"
+    }
+  ],
+  "income_types": [
+    {
+      "type": "Net rental income",
+      "counts": "Yes — net",
+      "how": "Schedule E: rents minus mortgage interest, property tax, insurance, repairs, depreciation and other allowable expenses.",
+      "source": "S32",
+      "also": [
+        "S27"
+      ],
+      "status": "verified"
+    },
+    {
+      "type": "Gross rent collected",
+      "counts": "No — not the test",
+      "how": "MAGI uses net rental income, not the rent check. Using gross rent overstates countable income and can push a household over 138% FPL.",
+      "source": "S32",
+      "also": [
+        "S27"
+      ],
+      "status": "verified"
+    },
+    {
+      "type": "Interest and dividends",
+      "counts": "Yes",
+      "how": "Reported on 1099-INT and 1099-DIV; already inside AGI.",
+      "source": "S32",
+      "also": [
+        "S29"
+      ],
+      "status": "verified"
+    },
+    {
+      "type": "Tax-exempt interest",
+      "counts": "Yes",
+      "how": "Added back to AGI when computing MAGI even though it is not federally taxed.",
+      "source": "S32",
+      "status": "verified"
+    },
+    {
+      "type": "Free or reduced rent received for management work",
+      "counts": "Yes — barter income at fair market value",
+      "how": "Reported on Schedule 1 or Schedule C at fair market value in the year received. Only applies where the rent is earned from managing property you do not own.",
+      "source": "S46",
+      "also": [
+        "S32"
+      ],
+      "status": "verified-nuance"
+    },
+    {
+      "type": "Kalshi realized gains",
+      "counts": "Yes, if recognized and in AGI",
+      "how": "Amount depends on classification (capital, ordinary, section 1256, or gambling). Character unresolved — see F40 and F42.",
+      "source": "S32",
+      "also": [
+        "S28"
+      ],
+      "status": "verified-nuance"
+    },
+    {
+      "type": "Kalshi losses (if gambling treatment)",
+      "counts": "No — they do not reduce MAGI",
+      "how": "Gambling losses are itemized on Schedule A only up to winnings; itemized deductions sit below AGI, so MAGI is unchanged.",
+      "source": "S44",
+      "also": [
+        "S01"
+      ],
+      "status": "verified-nuance"
+    },
+    {
+      "type": "Gifts and loan proceeds",
+      "counts": "No",
+      "how": "The Marketplace income rules list gifts and loan proceeds as income that is not counted.",
+      "source": "S32",
+      "status": "verified"
+    }
+  ],
+  "evidence": [
+    {
+      "doc": "Monthly hours log",
+      "proves": "Dates, duties and hours for each qualifying month",
+      "why": "The test is 80 hours in a specific month. A log is the only record that shows which month the hours fall in.",
+      "source": "S03"
+    },
+    {
+      "doc": "Free or reduced-rent agreement, or lease addendum",
+      "proves": "That management duties are exchanged for housing (in-kind work)",
+      "why": "CMS's own example is a property manager or building superintendent receiving free or reduced rent.",
+      "source": "S03"
+    },
+    {
+      "doc": "Duty list, management agreement, vendor invoices",
+      "proves": "The duties actually performed and who performed them",
+      "why": "Ownership of a building is not evidence of hours; the county needs the duties.",
+      "source": "S09"
+    },
+    {
+      "doc": "Schedule E or rent ledger with expenses",
+      "proves": "Net rental income for the month",
+      "why": "MAGI counts net rent, so every expense claimed should be documented.",
+      "source": "S27"
+    },
+    {
+      "doc": "1099-INT, 1099-DIV, bank statements",
+      "proves": "Taxable and tax-exempt interest",
+      "why": "Interest is MAGI even when it is small or tax-exempt.",
+      "source": "S32"
+    },
+    {
+      "doc": "Kalshi account statement and profit-and-loss report",
+      "proves": "Realized gains and losses by month",
+      "why": "The IRS recordkeeping rules require records that substantiate reported income; the platform statement is the starting point.",
+      "source": "S21"
+    },
+    {
+      "doc": "Notices from the county or DHCS",
+      "proves": "The action, the reason, and the cure deadline",
+      "why": "The 30-day cure period runs from the notice, so the date on the letter is the controlling date.",
+      "source": "S11"
+    }
+  ],
+  "calendar": [
+    {
+      "when": "Now",
+      "what": "Pick the month you will rely on and assemble its evidence.",
+      "do": "At application, California reviews the month immediately before the month of application.",
+      "source": "S09"
+    },
+    {
+      "when": "Before 1 Jan 2027",
+      "what": "Make sure Medi-Cal has your current address, phone and email.",
+      "do": "DHCS says it will send letters; a missed letter can become a missed cure deadline.",
+      "source": "S11"
+    },
+    {
+      "when": "1 Jan 2027",
+      "what": "The work rule is scheduled to start in California.",
+      "do": "Open any county letter and respond; ask first whether an exclusion or exception applies.",
+      "source": "S11"
+    },
+    {
+      "when": "On a Notice of Non-Compliance",
+      "what": "You have 30 days to show compliance or an exemption.",
+      "do": "Respond in writing, attach the log, and keep proof of submission. Coverage continues during the cure period.",
+      "source": "S09"
+    },
+    {
+      "when": "1 Mar 2027",
+      "what": "First six-month renewal dates for affected members.",
+      "do": "One qualifying month during the period is enough under California's current guidance; verify against the notice.",
+      "source": "S12"
+    },
+    {
+      "when": "1 Jul 2027",
+      "what": "Non-MAGI asset limits fall to $21,000 for one person.",
+      "do": "Relevant only if you leave the MAGI group — for example at Medicare age.",
+      "source": "S11"
+    },
+    {
+      "when": "1 Oct 2028",
+      "what": "Copays begin for some adults above 100% FPL.",
+      "do": "Up to $35 per service, capped at 5% of household income; preventive and emergency care are excluded.",
+      "source": "S02"
     }
   ]
 }

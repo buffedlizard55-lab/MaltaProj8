@@ -30,6 +30,7 @@ NAV = [
     ("index.html", "Dashboard"),
     ("executive-summary.html", "Executive Summary"),
     ("work-rules.html", "Work Rules"),
+    ("playbook.html", "Playbook"),
     ("coverage-options.html", "Coverage Options"),
     ("findings.html", "Findings"),
     ("verification.html", "Verification"),
@@ -60,7 +61,8 @@ def check(data):
     sources = {s["id"]: s for s in data["sources"]}
     problems = []
     for section in ("key_numbers", "profile", "gates", "options", "pathways",
-                    "findings", "ca_actions", "timeline", "flags", "action_plan"):
+                    "findings", "ca_actions", "timeline", "flags", "action_plan",
+                    "routes", "income_types", "evidence", "calendar"):
         for row in data[section]:
             sid = row.get("source")
             if sid and sid not in sources:
@@ -150,7 +152,7 @@ def page(title, subtitle, active, body, description=None, scripts=""):
   <a href="flagged.html">Flagged for Review</a> ·
   <a href="archives.html">Archive of detailed pages</a></p>
   <p>Research compilation, not legal, tax, or eligibility advice. County eligibility
-  staff make the final determination. Data updated 2026-10-18. This page is
+  staff make the final determination. Data updated 2026-10-19. This page is
   generated from <a href="data/core.json">data/core.json</a>; do not hand-edit values.</p>
 </div>
 {scripts}
@@ -189,6 +191,7 @@ def category_cards():
     cards = [
         ("Executive Summary", "executive-summary.html", "The one-page answer, the exact law, your options, California's actions, and the action plan."),
         ("Work Rules", "work-rules.html", "Who is subject, 9 practical pathways for $0 earned income, the $580 test, verification, and the penalty."),
+        ("Playbook", "playbook.html", "The working plan: which route to use, how to document it, what counts as income, and what to do if a notice arrives."),
         ("Coverage Options", "coverage-options.html", "Medi-Cal, Covered California, Medicare, and community health centers, with income bands and costs."),
         ("All Findings", "findings.html", "Every finding in one filterable table, plus the full official-source register."),
         ("The Law — line by line", "law.html", "The detailed H.R.1 §71119 table: statutory text, dates, provisions, and citations."),
@@ -217,7 +220,7 @@ def dashboard(data, sources):
     ]
     path_rows = [
         [f'<span class="tag">{esc(p["id"])}</span>', f'<strong>{esc(p["path"])}</strong>',
-         esc(p["what"]), esc(p["earned"]), esc(p["hours"]), esc(p["fit"]),
+         esc(p["what"]), esc(p.get("earned") or "—"), esc(p.get("hours") or "—"), esc(p["fit"]),
          source_cells(sources, p), badge(p["status"])]
         for p in data["pathways"]
     ]
@@ -255,7 +258,7 @@ def dashboard(data, sources):
     )
     body = hero(
         "You can satisfy the work rule with $0 earned income — if you document the right route.",
-        "Verified 2026-10-18 · H.R.1 §71119 · CMS-2454-IFC · DHCS ACWDL 25-30 / MEDIL I26-25",
+        "Verified 2026-10-19 · H.R.1 §71119 · CMS-2454-IFC · DHCS ACWDL 25-30 / MEDIL I26-25",
         "",
         data["key_numbers"],
         [("answer", "Answer in 30 seconds"), ("gates", "Two gates"), ("paths", "9 pathways"),
@@ -288,6 +291,7 @@ def dashboard(data, sources):
       <p class="hint">{source_cell(sources, "S09")}</p></div>
     </div>
     <div class="alert info" style="margin-top:12px"><strong>But first check Gate 1.</strong> Medi-Cal's MAGI New Adult Group is limited to household income at or below 138% FPL — $22,025/year or $1,836/month for one person in 2026. If your properly determined household MAGI is above that limit, this Medi-Cal work rule does not apply; Covered California has no work requirement. Your household size, rental net, interest and Kalshi tax amount were not supplied. The 2026 marketplace 400% FPL reference is $62,600 for one person; 2027 uses $63,840. See <a href="coverage-options.html">Coverage Options</a> and <a href="accuracy-93fdc24b.html">Accuracy update</a>.</div>
+    <p style="margin-top:14px"><a class="card-link" href="playbook.html" style="display:inline-block;padding:10px 16px;border-radius:8px;background:#2563eb;color:#fff;text-decoration:none;font-weight:600">Open the step-by-step playbook →</a></p>
   </div>
 
   {section("The two gates — do them in order", "gates", f'<div class="grid2">{gate_cards}</div>', "Both gates must be true before the work rule applies. Gate 1 is an income test; Gate 2 is a work/income/exemption test.")}
@@ -330,7 +334,7 @@ def dashboard(data, sources):
       table_id="flags-table",
   ), 'These are the highest-impact open items. <a href="flagged.html">See the full Flagged for Review page →</a>')}
 
-  {section("Site map — every category", "map", category_cards(), "The dashboard and six primary pages are the verified core. The older detailed pages and the three supplementary dashboards are preserved in the archive and are not re-certified by this session.")}
+  {section("Site map — every category", "map", category_cards(), "The dashboard and seven primary pages are the verified core. The older detailed pages and the three supplementary dashboards are preserved in the archive and are not re-certified by this session.")}
 </div>
 """
     return page(
@@ -399,7 +403,7 @@ def executive_summary(data, sources):
     }
     body = hero(
         "Executive summary: your options, the exact law, and what California is doing.",
-        "Executive summary · verified 2026-10-18",
+        "Executive summary · verified 2026-10-19",
         "",
         data["key_numbers"][:4],
         [("bottom-line", "Bottom line"), ("profile", "Your profile"), ("gates2", "Two gates"),
@@ -415,6 +419,8 @@ def executive_summary(data, sources):
         sources=sources,
     ) + f"""
 <div class="wrap">
+  <div class="alert info" style="margin-bottom:14px"><strong>Want the sequence rather than the summary?</strong>
+  The <a href="playbook.html">playbook</a> sets out the four routes, the income test, the evidence pack, the calendar and the failure path.</div>
   {section("Bottom line", "bottom-line", f'''
   <div class="card">
     <ol class="big-list">
@@ -511,7 +517,7 @@ def executive_summary(data, sources):
 def work_rules(data, sources):
     path_rows = [
         [f'<span class="tag">{esc(p["id"])}</span>', f'<strong>{esc(p["path"])}</strong><br><span class="subtle">{esc(p["statute"])}</span>',
-         esc(p["what"]), esc(p["earned"]), esc(p["hours"]), esc(p["fit"]), esc(p["note"]),
+         esc(p["what"]), esc(p.get("earned") or "—"), esc(p.get("hours") or "—"), esc(p["fit"]), esc(p["note"]),
          source_cells(sources, p), badge(p["status"])]
         for p in data["pathways"]
     ]
@@ -846,13 +852,14 @@ def archives(data, sources):
             ("index.html", "Dashboard"),
             ("executive-summary.html", "Executive Summary"),
             ("work-rules.html", "Work Rules"),
+            ("playbook.html", "Playbook"),
             ("coverage-options.html", "Coverage Options"),
             ("findings.html", "All Findings"),
             ("verification.html", "Verification log"),
             ("flagged.html", "Flagged for Review"),
             ("archives.html", "Archive (this page)"),
             ("accuracy-93fdc24b.html", "Dated accuracy update"),
-        ], "Eight pages generated from data/core.json plus a dated accuracy supplement. High-impact amounts and rules were rechecked; source presence does not certify every inherited claim or URL uptime."),
+        ], "Nine pages generated from data/core.json plus a dated accuracy supplement. High-impact amounts and rules were rechecked; source presence does not certify every inherited claim or URL uptime."),
         ("Detailed reference pages", "Preserved", [
             ("law.html", "The Law — line by line"),
             ("california.html", "California / Medi-Cal"),
@@ -903,7 +910,7 @@ def archives(data, sources):
         "Archive · preserved detailed pages and supplementary dashboards",
         "",
         [
-            {"label": "Current entry points", "value": "9", "detail": "Eight generated core pages plus the dated accuracy update."},
+            {"label": "Current entry points", "value": "10", "detail": "Nine generated core pages plus the dated accuracy update."},
             {"label": "Detailed reference pages", "value": "7", "detail": "Preserved; two are the superseded originals."},
             {"label": "Extended analysis pages", "value": "11", "detail": "Preserved generated reference."},
             {"label": "Supplementary sections", "value": "8 pages", "detail": "Research, coverage guide, docs, and five independent checks."},
@@ -1067,7 +1074,7 @@ def verification(data, sources):
                   esc(f["issue"]), source_cells(sources, f)] for f in corrections]
     body = hero(
         "Verification — what was checked, against what, and when.",
-        "Verification log · 2026-10-18 · line-by-line source audit",
+        "Verification log · 2026-10-19 · line-by-line source audit",
         "",
         [
             {"label": "Official sources", "value": str(len(data["sources"])), "detail": "Primary documents, not summaries."},
@@ -1117,6 +1124,168 @@ def verification(data, sources):
     )
 
 
+def playbook(data, sources):
+    """The step-by-step working plan for this household."""
+    route_rows = [
+        [f'<span class="tag">{esc(r["id"])}</span>', f'<strong>{esc(r["route"])}</strong>',
+         esc(r["must"]), esc(r["collect"]), esc(r["basis"]), source_cells(sources, r), badge(r["status"])]
+        for r in data["routes"]
+    ]
+    income_rows = [
+        [f'<strong>{esc(r["type"])}</strong>', esc(r["counts"]), esc(r["how"]),
+         source_cells(sources, r), badge(r["status"])]
+        for r in data["income_types"]
+    ]
+    evidence_rows = [
+        [f'<strong>{esc(r["doc"])}</strong>', esc(r["proves"]), esc(r["why"]),
+         source_cell(sources, r["source"])]
+        for r in data["evidence"]
+    ]
+    cal_rows = [
+        [f'<strong>{esc(r["when"])}</strong>', esc(r["what"]), esc(r["do"]),
+         source_cell(sources, r["source"])]
+        for r in data["calendar"]
+    ]
+    wanted = {"FL-28", "FL-29", "FL-30", "FL-31", "FL-32"}
+    flag_rows = [
+        [f'<span class="tag">{esc(f["id"])}</span>', f'<strong>{esc(f["item"])}</strong>',
+         esc(f["issue"]), esc(f["impact"]), source_cells(sources, f), badge(f["status"])]
+        for f in data["flags"] if f["id"] in wanted
+    ]
+
+    body = hero(
+        "The working plan: satisfy the rule with $0 earned income, and keep proof of it.",
+        "Playbook · verified 2026-10-19 · federal rule and California guidance",
+        "",
+        [
+            {"label": "Work route", "value": "80 hrs / month", "detail": "About 18.5 hours a week. In-kind and unpaid work count.", "source": "S03"},
+            {"label": "Income route", "value": "$580 / month", "detail": "MAGI-based household income, not wages.", "source": "S42"},
+            {"label": "How often", "value": "1 month", "detail": "One qualifying month per review period under California guidance.", "source": "S09"},
+            {"label": "To cure", "value": "30 days", "detail": "From the notice; coverage continues while you cure.", "source": "S09"},
+        ],
+        [("start", "Three questions, in order"), ("routes", "The four routes"),
+         ("income", "What counts as income"), ("evidence", "Evidence pack"),
+         ("calendar", "Calendar"), ("failure", "If something goes wrong"),
+         ("over", "If you are over the limit"), ("flags", "What is still unsettled")],
+        [
+            '<span class="badge ok">Read this first</span><h3 style="margin-top:10px">The rule tests hours or income — never a paycheck</h3>'
+            '<p>“Work” includes in-kind work and unpaid work. The income alternative counts unearned MAGI. A W-2 is not required for either.</p>'
+            '<p class="hint">42 CFR 435.552(b), (f)(2)</p>',
+            '<div class="alert warn" style="margin:0"><strong>Do not guess the month.</strong> Hours and income are tested month by month. Keep a log that shows which month each hour and each dollar falls in.</div>',
+        ],
+        lead_html=(
+            '<p class="lead">This page turns the rules into a sequence: confirm you are in the group, pick the route, '
+            'assemble the evidence, and know what to do when a notice arrives. Every row links to the official text. '
+            'Personal amounts are deliberately absent — they were not supplied, and guessing them would be worse than leaving them blank.</p>'
+        ),
+        sources=sources,
+    )
+
+    body += '<div class="wrap">'
+    body += section("Three questions, in order", "start", (
+        '<div class="grid3">'
+        '<div class="card"><div class="eyebrow">Question 1</div><h3>Are you in the group the rule covers?</h3>'
+        '<p>The rule applies to non-pregnant adults 19–64 in the MAGI New Adult Group (or a listed 1115 demonstration), '
+        'not entitled to or enrolled in Medicare. The MAGI group has <strong>no asset test</strong>, so savings and property '
+        'do not disqualify you — only income does.</p>'
+        '<p class="hint">' + source_cell(sources, "S33") + ' · ' + source_cell(sources, "S03") + '</p></div>'
+        '<div class="card"><div class="eyebrow">Question 2</div><h3>Are you excluded or excepted anyway?</h3>'
+        '<p>The county must screen for exclusions and exceptions before asking you to prove hours: Medicare, '
+        'a parent or caretaker of a child 13 or younger or of a disabled person, medically frail, recent inmate, '
+        'and the state-option hardship categories.</p>'
+        '<p class="hint">' + source_cell(sources, "S09") + ' · ' + source_cell(sources, "S03") + '</p></div>'
+        '<div class="card"><div class="eyebrow">Question 3</div><h3>Which route can you prove?</h3>'
+        '<p>Pick the route you can document with real records for one month. For a property manager, the two realistic '
+        'routes are documented management hours and net rental income. Neither is assumed for you here.</p>'
+        '<p class="hint">' + source_cell(sources, "S03") + ' · ' + source_cell(sources, "S42") + '</p></div>'
+        '</div>'
+    ), "Answer question 1 before spending time on the rest. If your household MAGI is above 138% FPL, the work rule does not apply to you at all.")
+
+    body += section("The four routes, and what each one needs", "routes", table(
+        ["#", "Route", "What must be true", "What to collect", "Official basis", "Source", "Status"],
+        route_rows,
+        table_id="playbook-routes",
+    ), "The statute sets five activity categories and two income alternatives; this table groups them by what you would actually have to prove.")
+
+    body += section("What counts as income for the $580 test", "income", table(
+        ["Income type", "Counts in MAGI?", "How to compute it", "Source", "Status"],
+        income_rows,
+        table_id="income-table",
+    ) + (
+        '<div class="alert warn" style="margin-top:14px"><strong>The Kalshi trap.</strong> '
+        'If the IRS treats event-contract trading as gambling, winnings go into AGI but losses are an itemized deduction, '
+        'allowed only up to winnings and claimed below the AGI line. A losing year could therefore still produce MAGI. '
+        'If the activity is instead capital, gains and losses net inside AGI. The character is unresolved — see '
+        '<a href="flagged.html">FL-02 and FL-04</a> — and a CPA should decide it before you rely on a low-income month.</div>'
+    ), "MAGI starts from adjusted gross income and adds back tax-exempt interest. Net, not gross, is the test for rent. Household income means the income of everyone counted in your MAGI household, so a spouse's income matters.")
+
+    body += section("Evidence pack — what to keep, and why", "evidence", table(
+        ["Document", "What it proves", "Why the county needs it", "Basis"],
+        evidence_rows,
+        table_id="evidence-table",
+    ), "Keep everything in one folder, labelled by month. The county can accept information by phone, mail, in person, or online; a complete written submission is easier to reproduce if the decision is disputed.")
+
+    body += section("Calendar — what happens when", "calendar", table(
+        ["When", "What happens", "What to do", "Source"],
+        cal_rows,
+        table_id="calendar-table",
+    ), "California dates are the state's published targets. AB 2161 conditions the start on systems readiness, and one DHCS member letter says March 2027 — see FL-10 on the Flagged page.")
+
+    body += section("If something goes wrong", "failure", (
+        '<div class="grid2">'
+        '<div class="card"><div class="eyebrow">Step 1</div><h3>Read the notice and diarise the date</h3>'
+        '<p>A Notice of Non-Compliance starts a 30-day period to show that you were compliant in the month the county '
+        'reviewed, or that an exclusion or exception applies. Coverage continues during the cure period.</p>'
+        '<p class="hint">' + source_cell(sources, "S09") + ' · ' + source_cell(sources, "S03") + '</p></div>'
+        '<div class="card"><div class="eyebrow">Step 2</div><h3>Answer with records, not explanations</h3>'
+        '<p>Send the log for the named month, the rent-credit agreement, the Schedule E, or the exemption evidence. '
+        'Ask the county to confirm in writing which month and which route it is testing.</p>'
+        '<p class="hint">' + source_cell(sources, "S21") + '</p></div>'
+        '<div class="card"><div class="eyebrow">Step 3</div><h3>Ask for a hearing if the decision stands</h3>'
+        '<p>Federal regulation requires the state to grant a hearing when you believe an action was erroneous, '
+        'including a denial or termination. The notice states the deadline and how to request one.</p>'
+        '<p class="hint">' + source_cell(sources, "S45") + '</p></div>'
+        '<div class="card"><div class="eyebrow">Step 4</div><h3>Do not assume a marketplace subsidy</h3>'
+        '<p>A person who fails the requirement is still treated as Medicaid-eligible for premium tax credit purposes, '
+        'so a marketplace subsidy is not the automatic fallback. Reapply and ask for an exemption screening.</p>'
+        '<p class="hint">' + source_cell(sources, "S02") + '</p></div>'
+        '</div>'
+    ), "These are procedural steps from the regulation and California guidance, not legal advice. A county eligibility worker or a legal-aid clinic can review a specific notice.")
+
+    body += section("If your MAGI is above the Medi-Cal limit", "over", table(
+        ["Your household MAGI", "What applies", "Work requirement?", "Source"],
+        [
+            ["At or below 138% FPL", "Medi-Cal MAGI New Adult Group — $22,025 a year or $1,836 a month for one person in 2026", "Yes, this rule", source_cell(sources, "S15") + " · " + source_cell(sources, "S16")],
+            ["Above 138% and at or below 400% FPL", "Covered California with the federal premium tax credit — 2026 single reference $62,600; 2027 reference $63,840", "No", source_cell(sources, "S41") + " · " + source_cell(sources, "S43")],
+            ["Above 400% FPL", "No federal premium tax credit; California's state subsidy reaches 165% FPL in 2026 and 200% FPL in 2027", "No", source_cell(sources, "S18") + " · " + source_cell(sources, "S20")],
+            ["Above 400% FPL with advance credit paid", "You must repay all excess advance payments for the year", "No", source_cell(sources, "S31")],
+        ],
+        table_id="over-table",
+    ), "Covered California has no work requirement. The risk above 400% FPL is repayment, not a work test.")
+
+    body += section("What is still unsettled", "flags", table(
+        ["ID", "Item", "Issue", "Why it matters", "Source", "Status"],
+        flag_rows,
+        table_id="playbook-flags",
+    ), 'The full list, including unverified values, is on <a href="flagged.html">Flagged for Review</a>. None of these blocks publication; each names the official document it was checked against.')
+
+    body += (
+        '<div class="card"><h3>What this page does not do</h3>'
+        '<p>It does not decide your eligibility, your household size, your MAGI, your Kalshi tax character, or whether your '
+        'management duties meet the county\'s standard. Those depend on facts that were not supplied. Take the evidence pack '
+        'to the county and the tax question to a CPA.</p></div>'
+    )
+    body += '</div>'
+
+    return page(
+        "Playbook — How to satisfy the Medi-Cal work rule with $0 earned income",
+        "Playbook — routes, evidence, calendar, and the failure path",
+        "playbook.html",
+        body,
+        "Step-by-step plan for a California resident with zero earned income: the four routes, what counts as MAGI, the evidence pack, the 2026-2027 calendar, and what to do after a non-compliance notice.",
+    )
+
+
 def main():
     data = load()
     sources, problems = check(data)
@@ -1126,6 +1295,7 @@ def main():
         "index.html": dashboard(data, sources),
         "executive-summary.html": executive_summary(data, sources),
         "work-rules.html": work_rules(data, sources),
+        "playbook.html": playbook(data, sources),
         "coverage-options.html": coverage_options(data, sources),
         "findings.html": findings_page(data, sources),
         "verification.html": verification(data, sources),
