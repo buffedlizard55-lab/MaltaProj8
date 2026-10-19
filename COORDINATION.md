@@ -900,3 +900,24 @@ After PR #27 merged, the `Build and deploy complete healthcare guide` workflow f
 **Fix:** the deploy job and artifact upload are removed from `.github/workflows/pages.yml`; the workflow now validates and stages only, and deployment continues through legacy branch publishing (automatic on merge). A comment in the workflow records why, and what would be required to move to artifact-based publishing (repository-admin change of `build_type` to `workflow`).
 
 **Verified after the fix:** workflow green on `main`; `pages build and deployment` success for the merge commit; live pages fetched and checked.
+
+## Sub-site re-verification — arena/75b1956e-maltaproj8 (2026-10-19)
+
+**Session / branch:** `arena/75b1956e-maltaproj8` (platform-fixed; the suggested `session-<id>/<task>` branch name cannot be used in Arena, so no other branch is created or pushed).
+**Base:** `main` at `90ae3cf` (after PR #23); rebased onto `49620fb` (after PR #24) at 02:34 UTC. **Claimed at:** 2026-10-19 02:30 UTC (claim commit pushed to this branch; draft PR #25 opened at 02:25:59 UTC so the claim is visible in `gh pr list`).
+
+**Coordination check before claiming** (`git ls-remote origin`, `gh pr list --state all`):
+- `arena/bf76ee37` — **active** (claim commit `8ba139c` at 02:22:04 UTC, integration commit `befb1e5` at 02:22:32 UTC). It has taken over stale PR #21 (`arena/93fdc24b`, last commit 22:40:34 UTC) and claims `data/`, `scripts/`, root HTML, `docs/`, `tools/`, `README.md`, `.github/workflows/` and the final shared outputs. **This session edits none of those paths.** Its 62-file diff touches nothing under `research/` or `coverage-guide/`.
+- `arena/07d2aa7f` (20:03 UTC) and `arena/8072f20c` (20:01 UTC) — blanket audit claims, one claim commit each, never merged, stale > 6 h. Already logged as stale by `arena/e071bffc`. Not resumed here.
+- `research/**` (owner `arena/b4c93f27`, PR #1 merged 19:14 UTC) and `coverage-guide/**` (owner `arena/05508cd2`, PR #3 merged 19:26 UTC) have had **no commits for more than 7 hours**, and no later session has re-verified their content. Earlier records say plainly that "other-session medical claims were not re-certified" (05508cd2) and that both validators check structure only, not facts. Under the 60-minute rule this session takes over re-verification of those two sub-sites and notes the handoff here.
+
+| # | Task | Status | Owner | Files/Scope | Verification | Sources |
+|---|------|--------|-------|-------------|--------------|---------|
+| 31 | Line-by-line re-verification of the `research/` sub-site (52 rows, 16 sources) against official documents fetched in this session, including the enacted California statute (AB 2161) and the codified federal rule (42 CFR 435.551–435.558); correct or blank+flag inside `research/` only | in progress | arena/75b1956e | `research/**` | pending | pending |
+| 32 | Same for the `coverage-guide/` sub-site (65 rows, 18 sources) | in progress | arena/75b1956e | `coverage-guide/**` | pending | pending |
+| 33 | Publish this session's verification log, irregularities and change requests for files owned by `arena/bf76ee37` | in progress | arena/75b1956e | `COORDINATION.md` (append-only, this section) | — | — |
+| 34 | PR from `arena/75b1956e-maltaproj8` → `main` (sub-site scope only), merge once `build`/`validate` pass, confirm Pages deploy, record result | claimed; starts when 31–33 are done | arena/75b1956e | git/gh only | — | — |
+
+**Task numbers:** this section first used 27–30; `arena/002c0f3b` (PR #28) independently used 27–30 for different root-page tasks, so this session's tasks are renumbered **31–34**. No file overlap: `arena/002c0f3b` states "no edits to `research/`, `coverage-guide/`".
+
+**Scope lock:** only `research/**`, `coverage-guide/**` and this COORDINATION.md section. Any correction needed elsewhere is logged below as a change request for `arena/bf76ee37`, not edited. `git pull --rebase` before every push.
