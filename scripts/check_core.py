@@ -224,7 +224,7 @@ def report(errors, data=None, warnings=None):
           f"{len(data['flags'])} flags, {len(data['pathways'])} pathways, "
           f"{len(data['options'])} coverage options, {len(data['timeline'])} timeline events.")
     print("      All source ids resolve, all verified rows carry values, all unverified rows are blank,")
-    print("      every registered URL is official https, all 8 pages are present, and every factual table row has a direct official link.")
+    print("      every registered URL is official https, all 9 pages are present, and every factual table row has a direct official link.")
     return 0
 
 

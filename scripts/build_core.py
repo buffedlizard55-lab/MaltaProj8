@@ -1071,7 +1071,7 @@ def playbook(data, sources):
         "Playbook · reviewed 2026-10-19 · general routes, not personal approval",
         "",
         [
-            {"label": "Work route", "value": "80 hrs / month", "detail": "About 18.5 hours a week. In-kind and unpaid work count.", "source": "S03"},
+            {"label": "Work route", "value": "80 hrs / month", "detail": "Qualifying in-kind or unpaid work; personal hours are not established.", "source": "S03"},
             {"label": "Income route", "value": "$580 / month", "detail": "MAGI-based household income, not wages.", "source": "S42"},
             {"label": "How often", "value": "1 month", "detail": "AB2161: previous month at application; any one month since the latest determination at renewal.", "source": "S42"},
             {"label": "To cure", "value": "30 days", "detail": "From receipt under AB2161; receipt presumed five days after notice date.", "source": "S42"},
@@ -1106,7 +1106,7 @@ def playbook(data, sources):
         '<p>The county must screen for exclusions and exceptions before asking you to prove hours: Medicare, '
         'a parent or caretaker of a child 13 or younger or of a disabled person, medically frail, recent inmate, '
         'and the state-option hardship categories.</p>'
-        '<p class="hint">' + source_cell(sources, "S09") + ' · ' + source_cell(sources, "S03") + '</p></div>'
+        '<p class="hint">' + source_cell(sources, "S42") + ' · ' + source_cell(sources, "S03") + '</p></div>'
         '<div class="card"><div class="eyebrow">Question 3</div><h3>Which route can you prove?</h3>'
         '<p>Pick the route you can document with real records for one month. For a property manager, the two realistic '
         'routes are documented management hours and net rental income. Neither is assumed for you here.</p>'
@@ -1149,7 +1149,7 @@ def playbook(data, sources):
         '<div class="card"><div class="eyebrow">Step 1</div><h3>Read the notice and diarise the date</h3>'
         '<p>Receipt of a Notice of Non-Compliance starts a 30-calendar-day period under AB2161 to show that you were compliant in the month the county '
         'reviewed, or that an exclusion or exception applies. Coverage continues during the cure period.</p>'
-        '<p class="hint">' + source_cell(sources, "S09") + ' · ' + source_cell(sources, "S03") + '</p></div>'
+        '<p class="hint">' + source_cell(sources, "S42") + ' · ' + source_cell(sources, "S03") + '</p></div>'
         '<div class="card"><div class="eyebrow">Step 2</div><h3>Answer with records, not explanations</h3>'
         '<p>Send the log for the named month, the rent-credit agreement, the Schedule E, or the exemption evidence. '
         'Ask the county to confirm in writing which month and which route it is testing.</p>'
@@ -1157,7 +1157,7 @@ def playbook(data, sources):
         '<div class="card"><div class="eyebrow">Step 3</div><h3>Ask for a hearing if the decision stands</h3>'
         '<p>Federal regulation requires the state to grant a hearing when you believe an action was erroneous, '
         'including a denial or termination. The notice states the deadline and how to request one.</p>'
-        '<p class="hint">' + source_cell(sources, "S50") + '</p></div>'
+        '<p class="hint">' + source_cell(sources, "S49") + '</p></div>'
         '<div class="card"><div class="eyebrow">Step 4</div><h3>Do not assume a marketplace subsidy</h3>'
         '<p>A person who fails the requirement is still treated as Medicaid-eligible for premium tax credit purposes, '
         'so a marketplace subsidy is not the automatic fallback. Reapply and ask for an exemption screening.</p>'

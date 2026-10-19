@@ -56,6 +56,18 @@
       "url": "https://www.dhcs.ca.gov/wp-content/uploads/2026/07/DHCS-FY-2026-27-Budget-Act-Highlights.pdf",
       "locator": "Work and Community Engagement Requirement",
       "excerpt": "a reduction of $357.6 million ($90.3 General Fund) in 2026-27"
+    },
+    {
+      "source": "S49",
+      "url": "https://www.ecfr.gov/current/title-42/part-431/section-431.220",
+      "locator": "431.220(a)(1); read with (b)",
+      "excerpt": "Any individual who requests it because he or she believes the agency has taken an action erroneously"
+    },
+    {
+      "source": "S50",
+      "url": "https://www.irs.gov/taxtopics/tc420",
+      "locator": "Reporting bartering income",
+      "excerpt": "You must include in gross income in the year of receipt the fair market value of goods or services received from bartering."
     }
   ]
 }

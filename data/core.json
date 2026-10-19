@@ -526,17 +526,6 @@
     },
     {
       "id": "S48",
-      "short": "DHCS ACWDL 26-01",
-      "title": "2026 Federal Poverty Levels (ACWDL 26-01)",
-      "publisher": "California Department of Health Care Services",
-      "url": "https://www.dhcs.ca.gov/services/medi-cal/eligibility/letters/Documents/26-01.pdf",
-      "date": "2026-01-21",
-      "official": true,
-      "last_checked": "2026-10-19",
-      "review_scope": "Freshly read during concurrent PR28 reconciliation: 42 CFR 431.220(a)(1) and (b); general hearing entitlement and exception, not a personal deadline."
-    },
-    {
-      "id": "S49",
       "publisher": "Internal Revenue Service",
       "title": "Topic no. 419: Gambling income and losses",
       "date": "2026",
@@ -544,10 +533,10 @@
       "short": "IRS Topic 419",
       "official": true,
       "last_checked": "2026-10-19",
-      "review_scope": "Freshly read during concurrent PR28 reconciliation: 42 CFR 431.220(a)(1) and (b); general hearing entitlement and exception, not a personal deadline."
+      "review_scope": "IRS Topic 419 nonprofessional gambling reporting/itemization read earlier in this review. Its generic loss language omits the enacted 2026 change; use P.L.119-21 §70114 for that change. Not a personal Kalshi classification."
     },
     {
-      "id": "S50",
+      "id": "S49",
       "publisher": "Electronic Code of Federal Regulations",
       "title": "42 CFR 431.220 — When a hearing is required",
       "date": "2026-10-15",
@@ -558,7 +547,7 @@
       "review_scope": "Freshly read during concurrent PR28 reconciliation: 42 CFR 431.220(a)(1) and (b); general hearing entitlement and exception, not a personal deadline."
     },
     {
-      "id": "S51",
+      "id": "S50",
       "publisher": "Internal Revenue Service",
       "title": "Topic no. 420: Bartering income",
       "date": "2026",
@@ -1989,7 +1978,7 @@
       "finding": "Nonprofessional gambling losses are not an AGI deduction",
       "value": "If nonprofessional gambling treatment applies: winnings enter AGI; Schedule A losses do not reduce AGI",
       "detail": "IRS Topic 419 describes nonprofessional gambling itemization, but omits the enacted 2026 change: §70114 generally limits wagering-loss deductions to 90% of losses and no more than gains. Professional/business treatment may differ. No Kalshi classification is established; a CPA must determine the applicable treatment.",
-      "source": "S49",
+      "source": "S48",
       "also": [
         "S01"
       ],
@@ -2021,7 +2010,7 @@
       "finding": "A fair hearing is available after an adverse action",
       "value": "Hearing on a denial, termination, reduction, or unreasonable delay",
       "detail": "42 CFR 431.220(a)(1) provides a requested hearing for asserted erroneous agency action, denial or unreasonable delay. Subsection (b) excepts a sole issue of an automatic change required by federal or state law. Check the actual notice for timing and continued-coverage rules; no personal deadline is inferred.",
-      "source": "S50",
+      "source": "S49",
       "also": [
         "S11"
       ],
@@ -2037,7 +2026,7 @@
       "finding": "General federal rule for barter income",
       "value": "Generally include fair market value of barter goods or services in gross income in the year received",
       "detail": "IRS Topic 420 states this general rule and distinguishes business Schedule C from other Schedule 1 reporting. It does not decide this person’s housing arrangement, exclusions, valuation, employee status, or monthly MAGI. Do not equate accepted in-kind work hours with a settled personal tax classification.",
-      "source": "S51",
+      "source": "S50",
       "also": [
         "S32"
       ],
@@ -2539,7 +2528,7 @@
       "item": "In-kind rent may be income as well as hours",
       "issue": "IRS Topic 420 gives a general fair-market-value inclusion rule for barter. Whether a particular lodging arrangement is taxable or excluded and how it enters monthly MAGI still requires its facts.",
       "impact": "Do not count housing twice or invent its value. Obtain advice on tax treatment and county income allocation before relying on it.",
-      "source": "S51",
+      "source": "S50",
       "also": [
         "S03"
       ],
@@ -2690,7 +2679,7 @@
       "type": "Free or reduced rent received for management work",
       "counts": "Generally taxable if it is barter; individual treatment unresolved",
       "how": "Topic 420 gives a general fair-market-value rule; exclusions, employee arrangements, personal valuation and monthly treatment require review. No ownership-only tax conclusion is inferred.",
-      "source": "S51",
+      "source": "S50",
       "also": [
         "S32"
       ],
@@ -2710,7 +2699,7 @@
       "type": "Kalshi losses (if gambling treatment)",
       "counts": "Nonprofessional Schedule A losses do not reduce AGI",
       "how": "Conditional on nonprofessional gambling treatment. Enacted §70114 applies the 90%-of-losses rule from 2026, capped at gains; Topic 419 alone omits that update. Personal/professional treatment remains unresolved.",
-      "source": "S49",
+      "source": "S48",
       "also": [
         "S01"
       ],

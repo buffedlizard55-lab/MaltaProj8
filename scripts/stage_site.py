@@ -14,7 +14,7 @@ DIRS = ("assets", "site", "data", "docs", "research", "coverage-guide", "scripts
 EXTS = {".html", ".css", ".js", ".json", ".md", ".csv", ".pdf", ".py", ".txt", ".png", ".jpg", ".svg"}
 SKIP = {".git", ".cache", "__pycache__", "node_modules", "dist", "build", ".venv"}
 CORE = {"index.html", "executive-summary.html", "work-rules.html", "coverage-options.html",
-        "findings.html", "verification.html", "flagged.html", "archives.html"}
+        "findings.html", "verification.html", "flagged.html", "archives.html", "playbook.html"}
 
 def main():
     if DEST.exists():

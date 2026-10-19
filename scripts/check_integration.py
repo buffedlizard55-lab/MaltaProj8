@@ -13,7 +13,7 @@ import sys
 
 ROOT = Path(__file__).resolve().parents[1]
 CORE = ("index.html", "executive-summary.html", "work-rules.html", "coverage-options.html",
-        "findings.html", "verification.html", "flagged.html", "archives.html")
+        "findings.html", "verification.html", "flagged.html", "archives.html", "playbook.html")
 SKIP = {".git", ".cache", "__pycache__", "node_modules", "dist", "build", ".venv"}
 
 class Document(HTMLParser):

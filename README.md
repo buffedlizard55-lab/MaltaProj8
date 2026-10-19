@@ -21,9 +21,9 @@ The user's age, household size, current coverage, actual countable income and ac
 
 ## Data and ownership
 
-- `data/core.json`: primary source register, 78 findings, pathway/coverage tables, flags and dated review locations.
+- `data/core.json`: primary source register, 82 findings, pathway/coverage tables, flags and dated review locations.
 - `data/review-evidence.json`: short official excerpts supporting high-impact findings; records the limits of retrieval.
-- `scripts/build_core.py`: sole generator of the eight primary pages (dashboard, executive summary, work rules, coverage options, findings, verification, flags, archive index).
+- `scripts/build_core.py`: sole generator of the nine primary pages (dashboard, executive summary, work rules, playbook, coverage options, findings, verification, flags, archive index).
 - `scripts/build_site.py`: extended reference pages; must not overwrite primary pages.
 - `tools/build-site.js`: preserved `/docs/` reference dashboard.
 - `research/` and `coverage-guide/`: independently authored, preserved research sections.
