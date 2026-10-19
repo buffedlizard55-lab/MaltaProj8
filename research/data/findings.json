@@ -406,7 +406,7 @@
       "page": "options",
       "item": "Education",
       "value": "At least half-time",
-      "detail": "School/institution determines enrollment status. CMS includes qualifying higher education, career/technical, high school and equivalency programs. A generic online course is not automatically sufficient.",
+      "detail": "School/institution determines enrollment status. CMS includes qualifying higher education, career/technical, high school and equivalency programs. A generic online course is not automatically sufficient. The DHCS member letter\u2019s \u201cpart time\u201d wording is flagged at R60.",
       "sources": [
         "deck"
       ],
@@ -976,6 +976,22 @@
       "status": "Unverified",
       "checked": "2026-10-19",
       "evidence": "DHCS Medi-Cal Changes (Copayments): \"Make more than $15,560 a year\". DHCS 2026 FPL Enclosure 1: family size 1, annual FPL 15960."
+    },
+    {
+      "id": "R60",
+      "page": "options",
+      "item": "School wording: \u201cpart time\u201d vs \u201chalf-time\u201d",
+      "value": "Statute and rule: at least half-time \u00b7 member letter: \u201cat least part time\u201d",
+      "detail": "The DHCS member letter says \"Go to school at least part time\". The enacted statute, the federal regulation and DHCS\u2019s Medi-Cal Changes page all require enrollment at least half-time, with less-than-half-time hours counted only in combination with other activities. Rely on the half-time standard; the school decides your enrollment status.",
+      "sources": [
+        "notice",
+        "ab2161",
+        "cfr552",
+        "changes"
+      ],
+      "status": "Conflict \u2014 see review",
+      "checked": "2026-10-19",
+      "evidence": "DHCS member letter: \"Go to school at least part time in any month since your last renewal.\" AB 2161 \u00a714005.69(e)(4): \"The individual is enrolled in an educational program at least half-time.\" 42 CFR 435.552(a)(4): \"enrolled in an educational program at least half-time.\" DHCS Medi-Cal Changes: \"Go to school at least half-time (usually two or three classes, or about six to eight credits each semester)\"."
     }
   ]
 }

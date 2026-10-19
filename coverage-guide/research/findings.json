@@ -327,9 +327,10 @@
           "id": "W6",
           "title": "Education",
           "value": "At least half-time enrollment in a qualifying educational program is a separate compliance route.",
-          "note": "School determines half-time status. Qualifying categories include specified higher education, career/technical, high-school and equivalency programs; not every online course qualifies.",
+          "note": "School determines half-time status. Qualifying categories include specified higher education, career/technical, high-school and equivalency programs; not every online course qualifies. The member letter’s “part time” wording is flagged at F11.",
           "sources": [
-            "S3"
+            "S3",
+            "S20"
           ],
           "evidence": "Defining Qualifying Activities; institution determines student status.",
           "status": "Official rule"
@@ -1078,6 +1079,20 @@
             "S10"
           ],
           "evidence": "Both DHCS pages re-read 2026-10-19; discrepancy reported, not resolved.",
+          "status": "Needs review"
+        },
+        {
+          "id": "F11",
+          "title": "School wording: part time versus half-time",
+          "value": "",
+          "note": "CONFIRMED WORDING DIFFERENCE: the S4 member letter says “Go to school at least part time”. AB 2161 §14005.69(e)(4), 42 CFR 435.552(a)(4) and DHCS’s S5 page require enrollment at least half-time; less-than-half-time hours count only when combined with other activities. No lower standard is assigned here.",
+          "sources": [
+            "S4",
+            "S19",
+            "S20",
+            "S5"
+          ],
+          "evidence": "S5: “Go to school at least half-time (usually two or three classes, or about six to eight credits each semester)”.",
           "status": "Needs review"
         }
       ]
