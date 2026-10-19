@@ -744,3 +744,24 @@ It postdates every document the site was built on — DHCS ACWDL 25-30 (Dec 30 2
 
 **Result.** Tasks 24, 25, 26 complete. The site now answers the user's 0-earned-income question with **three verified routes** (in-kind property-management work, $580 MAGI-household income counting net rental + interest + realized Kalshi gains, or 80 hrs/community service/half-time school/exemption) and a clean GH Pages dashboard (index + executive-summary + work-rules + coverage-options + findings + verification + flagged + accuracy update) with every row linked to an official source.
 
+
+---
+
+# Session arena/002c0f3b-maltaproj8 — playbook, final verification, integration (second pass)
+
+**Started:** 2026-10-19 03:05 UTC · **Branch:** arena/002c0f3b-maltaproj8 · **Base:** main @ 49620fb
+
+Rebuilt on top of main after PR #24 merged the first-pass corrections (PR #26 closed unmerged; its branch history was superseded).
+
+| # | Task | Status | Owner | File scope |
+|---|------|--------|-------|------------|
+| 27 | Verification pass over every numeric claim on the four data pages; record each against its official source | in progress | arena/002c0f3b | `data/core.json`, `scripts/build_core.py` |
+| 28 | Add `playbook.html` — the step-by-step plan for this household (routes, evidence pack, calendar, failure path) | pending | arena/002c0f3b | `playbook.html`, `scripts/build_core.py`, `scripts/check_core.py`, nav |
+| 29 | Fix rendering defects (None cells in the pathways table) and stale counts | pending | arena/002c0f3b | `scripts/build_core.py` |
+| 30 | Final build, link check, PR, merge, Pages deploy confirmation | pending | arena/002c0f3b | `README.md`, `COORDINATION.md`, git/PR |
+
+**Non-overlap:** no edits to `research/`, `coverage-guide/`, `docs/`, `data/sources.json`, `data/entries-*.json`, or legacy root pages. The generated seven pages plus the new eighth page are this session's scope.
+
+**Verification log (this pass).** Re-fetched and read: 42 CFR 435.552 (all three chunks — definitions, income test, seasonal averaging), 435.556 (assessment periods and state-plan discretion), CMS slide deck (MAGI test, in-kind definition, exclusions list), Federal Register full-text API (property-manager sentence, verbatim), DHCS Medi-Cal Changes page (asset limits, Jan/Mar 2027 dates, one-month retroactive coverage, Oct 2028 copays, half-time school), H.R. 10357 introduced text (Title VII reinstates IRC §165(d) "only to the extent of the gains" — the 90% cap would be repealed if enacted; bill is not law), ACWDL 25-30 (look-back month, gross-income wording, broad averaging).
+
+**Findings from this pass that change published copy:** see FL-25, FL-26, FL-27 and F72–F74 below. No source already on the site was found to be misquoted.

@@ -9,7 +9,7 @@ Rules enforced (matching the build guard and the site's published promise):
   4. source ids, finding ids and flag ids are unique and sequential;
   5. every source URL is https and on an official domain allowlist;
   6. warn on registered sources not used by a factual record;
-  7. all eight generated pages exist, have direct official row citations,
+  7. all eight guide pages exist, have direct official row citations,
      unique ids, working table filters and no None/NaN/TODO placeholders.
 
 Exit code 0 = pass. Non-zero = failure, with the reasons printed.
@@ -48,6 +48,7 @@ PAGES = {
     "index.html": "Dashboard",
     "executive-summary.html": "Executive Summary",
     "work-rules.html": "Work Rules",
+    "playbook.html": "Playbook",
     "coverage-options.html": "Coverage Options",
     "findings.html": "Findings",
     "verification.html": "Verification",
@@ -65,6 +66,10 @@ SECTIONS = (
     "timeline",
     "flags",
     "action_plan",
+    "routes",
+    "income_types",
+    "evidence",
+    "calendar",
 )
 
 
