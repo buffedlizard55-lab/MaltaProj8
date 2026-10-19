@@ -1,131 +1,159 @@
 {
-  "reviewed": "2026-10-18",
+  "reviewed": "2026-10-19",
   "sources": {
     "S1": {
       "short": "CMS rule overview",
       "url": "https://www.cms.gov/newsroom/fact-sheets/medicaid-community-engagement-requirement-certain-individuals-interim-final-rule-comment-period-cms",
       "title": "CMS-2454-IFC fact sheet, June 1, 2026",
-      "locator": "Retrieved full first chunk: Who is Affected; What the Requirement Means; Key Provisions.",
-      "excerpt": "States must generally implement no later than January 1, 2027; affected adults may use activities, half-time education, or monthly income; notice allows 30 calendar days to demonstrate compliance or exclusion."
+      "locator": "Full page re-read 2026-10-19 (both chunks): Who is Affected; What the Requirement Means; Key Provisions table.",
+      "excerpt": "States must generally implement no later than January 1, 2027; affected adults may use activities, half-time education, or monthly income (\"$580 per month in 2026\"); a notice of noncompliance allows \"30 calendar days to demonstrate compliance or that the requirement does not apply\"; disenrolled people \"may reapply at any time\"."
     },
     "S2": {
       "short": "Federal rule · official PDF",
       "url": "https://www.govinfo.gov/content/pkg/FR-2026-06-03/pdf/2026-11094.pdf",
       "title": "91 FR 33348–33482, June 3, 2026; CMS-2454-IFC",
-      "locator": "Targeted official-document search excerpts: II.C.1 Work (printed pp.33354–33355); II.C.8 Monthly Income; §435.552. Full 135-page PDF was not read end-to-end. Cross-checked against S3.",
-      "excerpt": "Countable income under §435.603(e) generally includes earned income as well as countable unearned income. Work includes money, in-kind work and unpaid work; self-employment, owning a business and independent contracting are included."
+      "locator": "Official PDF SUMMARY and DATES re-read 2026-10-19; preamble II.C.1 (Work) read through Federal Register full-text search excerpts of document 2026-11094. The 135-page rule was not read end-to-end.",
+      "excerpt": "Effective July 31, 2026; states must implement \"no later than January 1, 2027\". Preamble: \"Many individuals work for themselves by being self-employed due to starting a business, owning a business, or as an independent contractor, and these activities meet the definition of work\"; \"an individual who performs duties as a property manager or building superintendent may receive compensation in the form of free or reduced rent ... the hours the individual spends performing these duties would count toward meeting the 80-hour requirement.\""
     },
     "S3": {
       "short": "CMS implementation slides",
       "url": "https://www.medicaid.gov/medicaid/downloads/ce-requirement-ifc-deck.pdf",
       "title": "Community Engagement Requirement IFC Overview, July 2026",
-      "locator": "Retrieved chunks 0–1: Demonstrating Community Engagement; Defining Qualifying Activities; Calculating Income and Minimum Wage; Mandatory Exceptions; Specified Excluded Individuals. PDF retrieval is limited to first 30 pages.",
-      "excerpt": "States must use an individual’s MAGI-based monthly household income. Federal, not state or local, minimum wage applies. Half-time status is determined by the school. Structured nonpartisan community service is recognized."
+      "locator": "All four retrieved chunks re-read 2026-10-19: Demonstrating Community Engagement (boxes A–F); Defining Qualifying Activities; Calculating Income and Minimum Wage; Mandatory Exceptions; Specified Excluded Individuals; Short-Term Hardship; Assessing Compliance.",
+      "excerpt": "States must use an individual’s MAGI-based monthly household income and the Federal minimum wage ($7.25 x 80 = $580); state or local minimum wages may not be used. Box F: seasonal-worker averaging; \"A seasonal worker is described in section 45R(d)(5)(B)\". At application the review period is \"the 1, 2, or 3 consecutive months prior to the month of application, as specified by the State.\""
     },
     "S4": {
       "short": "DHCS September outreach",
       "url": "https://www.dhcs.ca.gov/wp-content/uploads/2026/09/MEDIL-I26-25.pdf",
       "title": "MEDIL I 26-25, September 11, 2026; enclosed August 31 member letter",
-      "locator": "Both retrieved chunks read, including enclosure: Ways You Can Meet This Rule; You Could Lose Your Medi-Cal; What You Need to Do Now.",
-      "excerpt": "Member letter says income from any source of at least $580 before taxes in any month since last renewal; says rules do not go into effect until March 2027, while body says January 1. It warns of lost Covered California financial help for noncompliance."
+      "locator": "Both chunks re-read 2026-10-19, including the enclosure: Ways You Can Meet This Rule; The 6-Month Renewal Rule; You Could Lose Your Medi-Cal; What You Need to Do Now; Questions.",
+      "excerpt": "Member letter: \"income from any source of at least $580 (before taxes) in any month since your last renewal\"; \"People whose hours change frequently or who have seasonal jobs can average at least $580 per month from any source over 6 months\"; \"these rules will not go into effect until March 2027\"; the body says section 71119 is \"effective January 1, 2027\". Noncompliance: \"you cannot get financial help to pay for a health plan through Covered California\"."
     },
     "S5": {
       "short": "DHCS current changes",
       "url": "https://www.dhcs.ca.gov/medi-cal/updates/medi-cal-changes/",
-      "title": "Medi-Cal Changes, reviewed October 18, 2026",
-      "locator": "Retrieved chunks 0–1: Adults (19–64); Work Rules; March 2027 Six-Month Eligibility Checks; asset limits.",
-      "excerpt": "Work rules start January 1, 2027. Six-month eligibility checks start March 1, 2027. Public activity bullets use job earnings wording. Non-MAGI asset rules differ from MAGI rules."
+      "title": "Medi-Cal Changes, re-read October 19, 2026",
+      "locator": "Chunks 0–1 re-read 2026-10-19: Asset Limits; Adults (19–64) Work Rules; Less Time to Get Help Paying Old Medical Bills; Six-Month Eligibility Checks; Copayments.",
+      "excerpt": "Work rules start January 1, 2027; six-month checks start March 1, 2027. Activity bullets: \"Work at a job and earn at least $580 a month\" and \"Be a seasonal worker and earn an average of $580 a month over the last six months\". Retroactive bills from January 1, 2027: one month for adults without children, two months for everyone else. Non-MAGI asset limit $130,000 (one person) through June 30, 2027; $21,000 from July 1, 2027."
     },
     "S6": {
       "short": "Covered California coverage",
       "url": "https://www.coveredca.com/coverage-basics/medi-cal",
       "title": "Medi-Cal | Covered California",
-      "locator": "Full retrieved page: How to Apply; Medi-Cal Eligibility; Get Help.",
-      "excerpt": "One application checks Medi-Cal and Covered California. Most adults qualify with household income up to 138% FPL; Medi-Cal applications year-round; Marketplace open or special enrollment. Free local enrollment help is linked."
+      "locator": "Full page re-read 2026-10-19: How to Apply; comparison table; Medi-Cal Eligibility; Get Help.",
+      "excerpt": "One application checks Medi-Cal and Covered California. \"Most adults qualify for Medi-Cal with household income up to 138% of the federal poverty level\"; Medi-Cal \"Any time of year\"; Covered California \"During open enrollment — or special enrollment\"; \"Call Covered California at (800) 300-1506.\""
     },
     "S7": {
       "short": "HealthCare.gov income",
       "url": "https://www.healthcare.gov/income-and-household-information/income/",
       "title": "Count income & household size: What to include as income",
-      "locator": "Full retrieved page: MAGI; What income types to count; Report income changes.",
-      "excerpt": "MAGI starts with AGI plus untaxed foreign income, non-taxable Social Security and tax-exempt interest. Include capital gains, interest/dividends, net rental income and self-employment after expenses. Marketplace estimates expected annual household income."
+      "locator": "Full page re-read 2026-10-19: MAGI; What income types to count; irregular income; Report income changes.",
+      "excerpt": "MAGI is AGI plus untaxed foreign income, non-taxable Social Security and tax-exempt interest. Count capital gains, interest and dividends including tax-exempt interest, \"net rental and royalty income\" and self-employment income \"after expenses\". Marketplace savings use \"expected household income for the year you want coverage\"."
     },
     "S8": {
       "short": "DHCS preliminary guidance",
       "url": "https://www.dhcs.ca.gov/wp-content/uploads/2026/04/25-30.pdf",
       "title": "ACWDL 25-30, December 30, 2025",
-      "locator": "Retrieved first chunk: Purpose; Policy; Excluded Populations. Clearly labeled preliminary, subject to change.",
-      "excerpt": "Applies to MAGI New Adult Group; existing members assessed at next scheduled 2027 renewal; other coverage groups excluded. Preliminary application example uses preceding month and individual activity compliance."
+      "locator": "Chunks 0–1 re-read 2026-10-19: Purpose; Policy; Excluded Populations; Exemptions; Qualifying Work or Community Engagement Activities; Look-Back Month. Labeled preliminary.",
+      "excerpt": "\"This ACWDL represents preliminary guidance and is subject to change based on developing federal policy guidance and state legislative changes.\" Existing members are assessed at their next scheduled 2027 renewal; applicants are checked \"in the month immediately prior to the month of application\"; work includes \"self-employment\". Its \"total gross income\" and \"fluctuating income\" wording differs from the later-enacted AB 2161 §14005.69(e)(6)–(7) (S19)."
     },
     "S9": {
-      "short": "DHCS program comparison",
+      "short": "DHCS Help Center",
       "url": "https://www.dhcs.ca.gov/medi-cal/help/",
       "title": "Medi-Cal Help Center",
-      "locator": "Official search excerpt reviewed: Comparison of Medi-Cal Program Rules; property rules. Not full-page retrieval.",
-      "excerpt": "MAGI: no property limits. Non-MAGI: must report property including vehicles, bank accounts and rental homes, with household limits."
+      "locator": "Page re-read 2026-10-19 (chunks 0, 2, 3): Qualify Comparison; Information needed to apply (\"Work for myself\", Self-Attestation); Retroactive Medi-Cal; How long will it take?",
+      "excerpt": "MAGI: \"No property limits\". Non-MAGI: \"Must report and give proof of property such as vehicles, bank accounts, or rental homes\" with limits. Self-employed applicants: \"A copy of Schedule C of the most recent tax return\" and \"A profit and loss statement for the last three months\"; self-attestation allowed without proof of income. Covered California 1-800-300-1506."
     },
     "S10": {
       "short": "DHCS annual FPL enclosure",
       "url": "https://www.dhcs.ca.gov/services/medi-cal-resources/medi-cal-eligibility-division/all-county-welfare-directors-medi-cal-eligibility-division-information-letters/2026-fpl-calculation-chart-annual-values-enclosure-2/",
       "title": "2026 FPL Calculation Chart (Annual Values), Enclosure 2",
-      "locator": "Official search table excerpt: 138% column, family sizes 1–8; rounded up to next higher dollar.",
-      "excerpt": "138% annual values: 1 $22,025; 2 $29,864; 3 $37,702; 4 $45,540; 5 $53,379; 6 $61,217; 7 $69,056; 8 $76,894. Disagrees with S12 by $1 for sizes 2, 5, 7."
+      "locator": "Full table re-read 2026-10-19: family sizes 1–12; columns 60%–400%; \"Rounded up to next higher dollar\".",
+      "excerpt": "138% annual values: 1 $22,025; 2 $29,864; 3 $37,702; 4 $45,540; 5 $53,379; 6 $61,217; 7 $69,056; 8 $76,894; 10 $92,571; 12 $108,248. Annual 100% FPL for one person: 15960. Differs from S12 by $1 for sizes 2, 5, 7, 10 and 12."
     },
     "S11": {
       "short": "DHCS monthly FPL enclosure",
       "url": "https://www.dhcs.ca.gov/services/medi-cal-resources/medi-cal-eligibility-division/all-county-welfare-directors-medi-cal-eligibility-division-information-letters/2026-fpl-calculation-chart-monthly-values-enclosure-1/",
       "title": "2026 FPL Calculation Chart (Monthly Values), Enclosure 1",
-      "locator": "Official search table excerpt: 138% monthly column, family sizes 1 and 2.",
+      "locator": "Full table re-read 2026-10-19: family sizes 1–12; monthly columns 60%–400%.",
       "excerpt": "Monthly 138% FPL: one person $1,836; two persons $2,490. Published monthly values are rounded; do not substitute annual divided by 12."
     },
     "S12": {
       "short": "DHCS public eligibility chart",
       "url": "https://www.dhcs.ca.gov/medi-cal/qualify/qualify-for-medi-cal-eligibility-chart/",
       "title": "Eligibility by Federal Poverty Level",
-      "locator": "Official search table excerpt reviewed October 18, 2026; 138% column.",
-      "excerpt": "Annual figures: 1 $22,025; 2 $29,863; 3 $37,702; 4 $45,540; 5 $53,378; 6 $61,217; 7 $69,055; 8 $76,894. Conflicting values are flagged rather than resolved by inference."
+      "locator": "Full table re-read 2026-10-19; 138% column, family sizes 1–12.",
+      "excerpt": "Annual figures: 1 $22,025; 2 $29,863; 3 $37,702; 4 $45,540; 5 $53,378; 6 $61,217; 7 $69,055; 8 $76,894; 10 $92,570; 12 $108,247. Conflicting values are flagged rather than resolved by inference."
     },
     "S13": {
       "short": "IRS trading guidance",
       "url": "https://www.irs.gov/taxtopics/tc429",
       "title": "Topic 429: Traders in securities",
-      "locator": "Official search excerpt: Investors; Traders; Mark-to-market election. General securities guidance, NOT a Kalshi classification.",
-      "excerpt": "A trader label alone does not establish tax trader status. Securities trading gains and losses are not subject to self-employment tax. This does not determine healthcare work-hour eligibility."
+      "locator": "Full page re-read 2026-10-19: Investors; Dealers; Traders; Mark-to-market election. General securities guidance, NOT a Kalshi classification.",
+      "excerpt": "\"It doesn’t matter whether you call yourself a trader or a day trader, you’re an investor for Federal income tax purposes\" unless the trading-business tests are met. \"Gains and losses from selling securities from being a trader aren’t subject to self-employment tax.\" This does not determine healthcare work-hour eligibility."
     },
     "S14": {
       "short": "IRS rental guidance",
       "url": "https://www.irs.gov/pub/irs-pdf/p527.pdf",
       "title": "Publication 527 (2025), Residential Rental Property",
-      "locator": "Official search excerpt: rental real estate and self-employment.",
-      "excerpt": "Rental real estate income generally is not included in net earnings from self-employment; substantial services may require Schedule C. Not a healthcare work-hour ruling."
+      "locator": "irs.gov text of Publication 527 (2025), Chapter 3 \"Which Forms To Use\" (Schedule C; Qualified Joint Venture), checked 2026-10-19.",
+      "excerpt": "\"Rental real estate income generally isn’t included in net earnings from self-employment subject to self-employment tax and is generally subject to the passive activity limits.\" Substantial services \"primarily for your tenant’s convenience\" are reported on Schedule C. Not a healthcare work-hour ruling."
     },
     "S15": {
       "short": "HRSA sliding-fee care",
       "url": "https://bphc.hrsa.gov/compliance/compliance-manual/chapter9",
       "title": "Health Center Compliance Manual, Chapter 9",
-      "locator": "Official search excerpts: Requirements; sliding fee discounts.",
-      "excerpt": "No patient may be denied service due to inability to pay. Full discount at/below 100% FPG, except possible nominal charge; partial discounts above 100% through 200% FPG. This is care access, not comprehensive insurance."
+      "locator": "Page re-read 2026-10-19: Requirements; Demonstrating Compliance.",
+      "excerpt": "\"no patient shall be denied service due to an individual’s inability to pay\". Full discount at or below 100% of the poverty guidelines, except possible nominal charges; partial discounts above 100% through 200%; no discount above 200%. This is care access, not comprehensive insurance."
     },
     "S16": {
       "short": "Federal correction · official PDF",
       "url": "https://www.govinfo.gov/content/pkg/FR-2026-06-29/pdf/C1-2026-11094.pdf",
       "title": "91 FR 39028–39031, June 29, 2026; correction to CMS rule",
-      "locator": "FederalRegister.gov correction retrieved chunk 1; §435.557(b); official PDF linked for legal review. Correction replaces §§435.557–435.558.",
-      "excerpt": "Agency must use reliable information available before requesting more information. Beginning January 1, 2028 documentation must be required when reasonably available; other information must be accepted when documentation is not reasonably available."
+      "locator": "Federal Register full text of C1-2026-11094 re-read 2026-10-19 (first chunk: corrected §435.557(a)–(c)); the Federal Register API lists this GovInfo PDF as the official edition.",
+      "excerpt": "Correction: \"Sec. 435.557 and Sec. 435.558 should read as follows\". The agency must use reliable information available to the State \"before requesting additional information from the individual\". Before January 1, 2028 it may require documentation or accept other information; from January 1, 2028 it \"must require documentation whenever documentation is reasonably available\"; it \"May not deny or terminate eligibility solely because the individual is unable to produce documentation where none exists\"."
     },
     "S17": {
       "short": "Enacted federal law",
       "url": "https://www.congress.gov/119/plaws/publ21/PLAW-119publ21.pdf",
       "title": "Public Law 119-21, July 4, 2025",
-      "locator": "Official search result confirms enacted law and §71119; substantive summaries cross-checked using S1–S4. Full law not read end-to-end.",
-      "excerpt": "§71119: Requirement for States to establish Medicaid community engagement requirements for certain individuals. §71107 concerns six-month renewals, as explained by DHCS S4."
+      "locator": "Official PDF re-read 2026-10-19 (chunks 0–2: header and table of contents). Full law not read end-to-end.",
+      "excerpt": "\"Public Law 119–21 ... July 4, 2025 [H.R. 1]\", 139 Stat. 72. Table of contents: \"Sec. 71107. Eligibility redeterminations.\"; \"Sec. 71119. Requirement for States to establish Medicaid community engagement requirements for certain individuals.\"; \"Sec. 71120. Modifying cost sharing requirements for certain expansion individuals\"."
     },
     "S18": {
       "short": "DHCS 2026 FPL letter",
       "url": "https://www.dhcs.ca.gov/wp-content/uploads/2026/04/26-01.pdf",
       "title": "ACWDL 26-01, January 21, 2026",
-      "locator": "Full retrieved letter, including effective dates and enclosure description.",
-      "excerpt": "For MAGI methodologies, the new 2026 FPL figures are effective January 1, 2026. Monthly and annual enclosures are provided separately."
+      "locator": "Full letter re-read 2026-10-19, including effective dates and enclosure description.",
+      "excerpt": "\"For applicants and recipients whose Medi-Cal is determined based upon Modified Adjusted Gross Income (MAGI) methodologies, the new FPL figures are effective January 1, 2026.\" Monthly and annual enclosures are provided separately."
+    },
+    "S19": {
+      "short": "California statute · AB 2161",
+      "url": "https://leginfo.legislature.ca.gov/faces/billTextClient.xhtml?bill_id=202520260AB2161",
+      "title": "AB 2161, Chapter 209, Statutes of 2026 (Welf. & Inst. Code §14005.69)",
+      "locator": "Chaptered text read in full 2026-10-19 (all four chunks): (b)(2) excluded individuals; (c) data verification; (d) start and look-back months; (e)(6)–(7) income tests; (f) deemed compliance; (h) hardships; (i) data conflicts; (k) notice and 30-day period; (n) other bases of eligibility; (q) systems readiness.",
+      "excerpt": "Approved by the Governor September 14, 2026. \"No sooner than January 1, 2027 ... and following the department’s confirmation that systems are programmed\"; applicants show \"one month immediately preceding the month during which the individual applies\"; income test uses \"modified adjusted gross income (MAGI)-based financial methods ... for their individual MAGI-based household budget\"; averaging only for \"a seasonal worker, as described in Section 45R(d)(5)(B)\"; 30 calendar days \"beginning on the date on which the notice of noncompliance is received\"."
+    },
+    "S20": {
+      "short": "Federal regulation · 42 CFR 435.552",
+      "url": "https://www.ecfr.gov/current/title-42/section-435.552",
+      "title": "42 CFR 435.552, Demonstrating community engagement (eCFR, current as of 10/15/2026)",
+      "locator": "Full section read 2026-10-19: (a)(1)–(7); (b) definitions; (c)–(e) education and combinations; (f) monthly income; (g) seasonal workers.",
+      "excerpt": "\"Work means: (i) Work in exchange for money; (ii) Work in exchange for goods or services (‘in-kind’ work); and (iii) Unpaid work (other than community service ...).\" (f)(2): monthly income is based on \"the individual’s MAGI-based income, for their MAGI-based household, as defined at § 435.603\". (g)(1): averaging only for \"a seasonal worker as described in 26 U.S.C. 45R(d)(5)(B)\"."
+    },
+    "S21": {
+      "short": "Seasonal-worker definition · 26 U.S.C. 45R",
+      "url": "https://www.govinfo.gov/content/pkg/USCODE-2024-title26/pdf/USCODE-2024-title26-subtitleA-chap1-subchapA-partIV-subpartD-sec45R.pdf",
+      "title": "26 U.S.C. 45R(d)(5)(B), U.S. Code 2024 edition (GovInfo)",
+      "locator": "Official GovInfo PDF read 2026-10-19: §45R(d)(5)(B) \"Definition of seasonal worker\".",
+      "excerpt": "\"The term ‘seasonal worker’ means a worker who performs labor or services on a seasonal basis as defined by the Secretary of Labor, including workers covered by section 500.20(s)(1) of title 29, Code of Federal Regulations and retail workers employed exclusively during holiday seasons.\""
+    },
+    "S22": {
+      "short": "Covered California 2027 FPL chart",
+      "url": "https://www.coveredca.com/pdfs/FPL-chart.pdf",
+      "title": "Program Eligibility by Federal Poverty Level for 2027",
+      "locator": "Chart and notes read 2026-10-19.",
+      "excerpt": "\"Covered California uses FPL limits from the previous year to determine eligibility for its programs.\" \"Medi-Cal uses FPL limits for the current year, as calculated by the Department of Health Care Services\". \"Consumers with income above 400% FPL are not eligible for a federal premium tax credit.\" California State Subsidy: 100%–200% FPL."
     }
   },
   "summary": [
@@ -137,9 +165,11 @@
       "sources": [
         "S2",
         "S3",
-        "S4"
+        "S4",
+        "S19",
+        "S20"
       ],
-      "evidence": "Federal rule II.C.8 includes countable unearned income; CMS slides specify MAGI monthly household income.",
+      "evidence": "CMS slides: MAGI-based monthly household income; 42 CFR 435.552(f)(2): MAGI-based income for the MAGI-based household; AB 2161 §14005.69(e)(6): MAGI-based financial methods; DHCS member letter: income from any source of at least $580 before taxes.",
       "status": "Conditional"
     },
     {
@@ -159,12 +189,14 @@
       "id": "E3",
       "title": "If income is below $580",
       "value": "Recognized alternatives include 80 hours of qualifying work, community service, a work program, or a combination; at least half-time education is its own route.",
-      "note": "No earned wages are necessary for structured qualifying unpaid community service. Own-property management and own-account Kalshi hours are not confirmed for this person.",
+      "note": "No earned wages are necessary for structured qualifying unpaid community service. The federal rule counts paid, in-kind and unpaid work, and its preamble names property managers paid in free or reduced rent and self-employed business owners. Acceptance of your own-rental management hours is not confirmed (F3); own-account Kalshi trading hours are not addressed by any official source reviewed (F2).",
       "sources": [
         "S1",
-        "S3"
+        "S3",
+        "S2",
+        "S20"
       ],
-      "evidence": "CMS activity routes and definitions.",
+      "evidence": "CMS activity routes; 42 CFR 435.552(b) work definition; 91 FR 33348 preamble II.C.1 self-employment and property-manager examples.",
       "status": "Conditional"
     },
     {
@@ -196,26 +228,28 @@
     {
       "id": "E6",
       "title": "What California is doing",
-      "value": "DHCS describes automated information use, outreach, BenefitsCal document handling and resources for paid/volunteer work, training and education.",
-      "note": "No blanket exemption for zero earned income was established in the reviewed official materials. This guide cannot enroll you or guarantee zero paperwork.",
+      "value": "DHCS describes automated information use, outreach, BenefitsCal document handling and resources for paid/volunteer work, training and education. The enacted statute (AB 2161) adds data-first verification and a duty to confirm conflicting data before adverse action. It also sets a 30-day period running from receipt of the notice and requires review of every other basis of eligibility before denial.",
+      "note": "No blanket exemption for zero earned income was established in the reviewed official materials; none of AB 2161’s listed exclusions, deemed-compliance categories or hardships is based on having no earned income. This guide cannot enroll you or guarantee zero paperwork.",
       "sources": [
         "S4",
-        "S16"
+        "S16",
+        "S19"
       ],
-      "evidence": "September outreach and corrected verification rule.",
+      "evidence": "September outreach; corrected verification rule; AB 2161 §14005.69(b)(2), (c), (f), (h), (i), (k), (n).",
       "status": "Conditional"
     },
     {
       "id": "E7",
       "title": "Act on notices, not assumptions",
-      "value": "Federal/state materials generally point to 2027; the current DHCS page says work rules January 1 and six-month checks March 1.",
+      "value": "Federal deadline January 1, 2027; California statute: no sooner than January 1, 2027 and only after DHCS confirms its systems are ready; current DHCS page: work rules January 1, six-month checks March 1.",
       "note": "A September outreach enclosure says both rules begin March 2027. Published discrepancy remains open on Flagged for Review; do not rely on a delay.",
       "sources": [
         "S1",
         "S4",
-        "S5"
+        "S5",
+        "S19"
       ],
-      "evidence": "Conflicting official dates reproduced in F1.",
+      "evidence": "Conflicting official dates reproduced in F1; AB 2161 §14005.69(d) and (q)(1).",
       "status": "Needs review"
     }
   ],
@@ -236,7 +270,7 @@
             "S1",
             "S2"
           ],
-          "evidence": "Law §71119; CMS fact sheet; 91 FR 33348 effective-date metadata.",
+          "evidence": "P.L. 119-21 table of contents (Secs. 71107, 71119); CMS fact sheet dated June 1, 2026; 91 FR 33348 DATES: effective July 31, 2026.",
           "status": "Official rule"
         },
         {
@@ -255,24 +289,27 @@
           "id": "W3",
           "title": "Income route",
           "value": "Monthly MAGI-based household income at least 80 times federal minimum wage: $580 at $7.25/hour. Countable unearned income is included.",
-          "note": "Use federal—not California—minimum wage. The threshold can change if federal minimum wage changes. This is not the upper Medi-Cal income limit.",
+          "note": "Use federal—not California—minimum wage. The threshold can change if federal minimum wage changes. This is not the upper Medi-Cal income limit. California’s statute uses the same MAGI-based household test.",
           "sources": [
             "S2",
-            "S3"
+            "S3",
+            "S19",
+            "S20"
           ],
-          "evidence": "II.C.8; Calculating Income and Minimum Wage.",
+          "evidence": "CMS Calculating Income and Minimum Wage; 42 CFR 435.552(a)(6), (f)(2); AB 2161 §14005.69(e)(6).",
           "status": "Official rule"
         },
         {
           "id": "W4",
           "title": "Work-hour route",
           "value": "At least 80 hours in a month; recognized work includes money-paid, in-kind and unpaid work. Self-employment is included in the federal discussion.",
-          "note": "A job title or a full-time trading label alone does not verify qualifying duties or hours. F2 and F3 identify unresolved applications.",
+          "note": "The federal preamble gives a property manager or building superintendent paid in free or reduced rent as an example of in-kind work whose hours count, and says self-employment (owning a business) meets the definition of work. A job title or a full-time trading label alone does not verify qualifying duties or hours. F2 and F3 identify unresolved applications.",
           "sources": [
             "S2",
-            "S3"
+            "S3",
+            "S20"
           ],
-          "evidence": "II.C.1 Work; Defining Qualifying Activities.",
+          "evidence": "91 FR 33348 preamble II.C.1; CMS Defining Qualifying Activities; 42 CFR 435.552(b).",
           "status": "Conditional"
         },
         {
@@ -311,48 +348,55 @@
         {
           "id": "W8",
           "title": "Seasonal income",
-          "value": "Seasonal workers have a preceding-six-month average income alternative at the federal threshold.",
-          "note": "Federal rule ties this to seasonal-worker criteria; DHCS outreach also mentions frequently changing hours. Do not assume irregular Kalshi profits make you a seasonal worker.",
+          "value": "Only a seasonal worker as described in 26 U.S.C. 45R(d)(5)(B) may use a preceding-six-month average income at the federal threshold.",
+          "note": "AB 2161 §14005.69(e)(7), 42 CFR 435.552(g)(1) and DHCS’s public page (“Be a seasonal worker”) all require seasonal-worker status. The DHCS member letter’s broader “hours change frequently” wording is flagged at F7. Do not assume irregular Kalshi profits make you a seasonal worker.",
           "sources": [
-            "S1",
             "S3",
+            "S19",
+            "S20",
+            "S21",
+            "S5",
             "S4"
           ],
-          "evidence": "Statutory Requirement box F; September outreach income bullet.",
-          "status": "Conditional"
+          "evidence": "CMS box F; AB 2161 §14005.69(e)(7); 42 CFR 435.552(g)(1); 26 U.S.C. 45R(d)(5)(B); DHCS Medi-Cal Changes; September outreach income bullet.",
+          "status": "Official rule"
         },
         {
           "id": "W9",
           "title": "Application look-back",
-          "value": "Federal summary requires certain new applicants to meet the rule for at least one month before application.",
-          "note": "Preliminary California ACWDL uses the immediately preceding month. Exact operative application period for this case is unresolved because guidance dates conflict; see F1/F4.",
+          "value": "California statute: an applicant shows compliance for the one month immediately before the month of application.",
+          "note": "The federal rule lets states choose 1, 2 or 3 months; AB 2161 §14005.69(d)(1) and preliminary ACWDL 25-30 both use the immediately preceding month. When the rule starts for you remains open (F1).",
           "sources": [
             "S1",
-            "S8"
+            "S3",
+            "S8",
+            "S19"
           ],
-          "evidence": "What the Requirement Means; preliminary applicant example.",
-          "status": "Conditional"
+          "evidence": "CMS What the Requirement Means; CMS Assessing Compliance Overview; ACWDL 25-30 Look-Back Month; AB 2161 §14005.69(d)(1).",
+          "status": "Official rule"
         },
         {
           "id": "W10",
           "title": "Existing-member renewal review",
-          "value": "September DHCS member notice allows a qualifying activity/income month in any month since last renewal.",
+          "value": "Enrollees show one qualifying month between the most recent determination and the next scheduled redetermination (AB 2161 §14005.69(d)(2)); the September DHCS member notice says any month since last renewal.",
           "note": "Preliminary December guidance assesses existing members at their next 2027 renewal. Do not assume monthly uploads or a six-month average for everyone. Actual notice controls case deadlines subject to law and appeal.",
           "sources": [
             "S4",
-            "S8"
+            "S8",
+            "S19"
           ],
-          "evidence": "Ways You Can Meet This Rule; Policy.",
-          "status": "Conditional"
+          "evidence": "Ways You Can Meet This Rule; Policy; AB 2161 §14005.69(d)(2).",
+          "status": "Official rule"
         },
         {
           "id": "W11",
           "title": "Six-month renewals",
           "value": "Public Law §71107 changes adult expansion renewal frequency; current DHCS page says March 1, 2027 for six-month checks.",
-          "note": "Its exception list is narrower than the work-rule exclusion list: outside new adult group, pregnancy/postpartum, AI/AN, qualifying former foster youth. Date discrepancy F1 remains open.",
+          "note": "Its exception list is narrower than the work-rule exclusion list: outside new adult group, pregnancy/postpartum, AI/AN, qualifying former foster youth. The member letter says six-month renewals begin “January 2027”. Date discrepancy F1 remains open.",
           "sources": [
             "S4",
-            "S5"
+            "S5",
+            "S17"
           ],
           "evidence": "September letter background; March 2027 Six-Month Eligibility Checks.",
           "status": "Official rule"
@@ -360,13 +404,14 @@
         {
           "id": "W12",
           "title": "Verification and notice rights",
-          "value": "Use reliable available information before asking the applicant for more. A noncompliance notice provides 30 calendar days to show compliance or non-applicability.",
-          "note": "Correction replaces §§435.557–435.558. Do not ignore a request because a data match might exist. Documentation rules change in 2028; no zero-paperwork guarantee.",
+          "value": "The state must use reliable available information before asking for more. A noncompliance notice gives 30 calendar days. In California the 30 days run from the date the notice is received (deemed 5 days after its date), and coverage continues meanwhile. Other bases of eligibility and a fair hearing must be offered before denial.",
+          "note": "Correction replaces §§435.557–435.558. From January 1, 2028 documentation is required when reasonably available, but no denial may rest solely on documentation that does not exist. Do not ignore a request because a data match might exist; no zero-paperwork guarantee.",
           "sources": [
             "S1",
-            "S16"
+            "S16",
+            "S19"
           ],
-          "evidence": "CMS What the Requirement Means; corrected §435.557(b).",
+          "evidence": "CMS What the Requirement Means; corrected §435.557(b)(2); AB 2161 §14005.69(k)(1)(B)–(E), (k)(2).",
           "status": "Official rule"
         },
         {
@@ -385,12 +430,25 @@
           "id": "W14",
           "title": "Other relevant change: past bills",
           "value": "Current DHCS page says retroactive bill coverage is reduced starting January 1, 2027: one month for adults without children; two months for everyone else.",
-          "note": "This is a separate eligibility/coverage provision, not a way to meet community engagement; specific case eligibility is not determined.",
+          "note": "This is a separate eligibility/coverage provision, not a way to meet community engagement; the Help Center still describes today’s three-month period. Specific case eligibility is not determined.",
           "sources": [
-            "S5"
+            "S5",
+            "S9"
           ],
-          "evidence": "Less Time to Get Help Paying Old Medical Bills.",
+          "evidence": "Less Time to Get Help Paying Old Medical Bills; Help Center Retroactive Medi-Cal.",
           "status": "Conditional"
+        },
+        {
+          "id": "W15",
+          "title": "California statute",
+          "value": "AB 2161 (Chapter 209, Statutes of 2026), approved September 14, 2026, amends Welfare and Institutions Code §14005.69 to implement the federal rule in Medi-Cal.",
+          "note": "It postdates preliminary ACWDL 25-30 and the August 31 member letter. It sets the look-back months, the MAGI-based income test, seasonal-only averaging, the 30-day period and other-basis review. It is implemented only after DHCS determines in writing that systems are programmed (§14005.69(q)(1)).",
+          "sources": [
+            "S19",
+            "S8"
+          ],
+          "evidence": "AB 2161 chaptered text: digest, §14005.69(d), (e), (k), (n), (q).",
+          "status": "Official rule"
         }
       ]
     },
@@ -416,11 +474,13 @@
           "id": "I2",
           "title": "Rental income",
           "value": "Use net rental and royalty income; countable unearned income may meet the engagement income threshold.",
-          "note": "Do not use gross rent without allowed expense treatment. Exact deductions, depreciation effects, losses and your resulting MAGI are not verified for your facts.",
+          "note": "Do not use gross rent without allowed expense treatment. California’s statute and the federal regulation both use MAGI-based household income for the $580 test. Exact deductions, depreciation effects, losses and your resulting MAGI are not verified for your facts.",
           "sources": [
             "S7",
             "S2",
-            "S3"
+            "S3",
+            "S19",
+            "S20"
           ],
           "evidence": "HealthCare.gov net rental instruction; federal rule countable unearned income.",
           "status": "Conditional"
@@ -442,7 +502,7 @@
           "id": "I4",
           "title": "Trading income: general rule",
           "value": "Capital gains count in the income guidance; taxable investment income is not excluded merely because it is not earned wages.",
-          "note": "Kalshi-specific tax classification, loss treatment and timing are not established. Do not assume every contract is §1256 or that turnover/payout equals countable profit. See F2.",
+          "note": "Kalshi-specific tax classification, loss treatment and timing are not established; a targeted irs.gov search on 2026-10-19 found no event-contract or Kalshi guidance. Do not assume every contract is §1256 or that turnover/payout equals countable profit. See F2.",
           "sources": [
             "S7",
             "S13"
@@ -477,14 +537,14 @@
         {
           "id": "I7",
           "title": "Assets are a separate issue",
-          "value": "DHCS program comparison lists no property limits for MAGI Medi-Cal; non-MAGI programs have property reporting and limits.",
+          "value": "DHCS lists “No property limits” for MAGI Medi-Cal; non-MAGI programs require proof of property and have limits ($130,000 for one person through June 30, 2027; $21,000 from July 1, 2027).",
           "note": "Owning rentals or savings is not itself a MAGI asset disqualification; income from them still matters. Non-MAGI alternatives require a separate review, not a blanket no-asset rule.",
           "sources": [
             "S9",
-            "S7",
-            "S5"
+            "S5",
+            "S7"
           ],
-          "evidence": "DHCS Help comparison; asset limits; income guidance.",
+          "evidence": "DHCS Help Center Qualify Comparison; Medi-Cal Changes Asset Limits; income guidance.",
           "status": "Conditional"
         },
         {
@@ -505,7 +565,7 @@
           "id": "I13",
           "title": "2026 annual reference: 3 people",
           "value": "$37,702 at 138% FPL.",
-          "note": "Reference only; both reviewed DHCS annual sources agree. Household composition and monthly income rules still apply. Sizes 2, 5 and 7 have conflicting annual figures; see F5.",
+          "note": "Reference only; both reviewed DHCS annual sources agree. Household composition and monthly income rules still apply. Sizes 2, 5, 7, 10 and 12 have conflicting annual figures; see F5.",
           "sources": [
             "S10",
             "S12"
@@ -517,7 +577,7 @@
           "id": "I14",
           "title": "2026 annual reference: 4 people",
           "value": "$45,540 at 138% FPL.",
-          "note": "Reference only; both reviewed DHCS annual sources agree. Household composition and monthly income rules still apply. Sizes 2, 5 and 7 have conflicting annual figures; see F5.",
+          "note": "Reference only; both reviewed DHCS annual sources agree. Household composition and monthly income rules still apply. Sizes 2, 5, 7, 10 and 12 have conflicting annual figures; see F5.",
           "sources": [
             "S10",
             "S12"
@@ -529,7 +589,7 @@
           "id": "I16",
           "title": "2026 annual reference: 6 people",
           "value": "$61,217 at 138% FPL.",
-          "note": "Reference only; both reviewed DHCS annual sources agree. Household composition and monthly income rules still apply. Sizes 2, 5 and 7 have conflicting annual figures; see F5.",
+          "note": "Reference only; both reviewed DHCS annual sources agree. Household composition and monthly income rules still apply. Sizes 2, 5, 7, 10 and 12 have conflicting annual figures; see F5.",
           "sources": [
             "S10",
             "S12"
@@ -541,7 +601,7 @@
           "id": "I18",
           "title": "2026 annual reference: 8 people",
           "value": "$76,894 at 138% FPL.",
-          "note": "Reference only; both reviewed DHCS annual sources agree. Household composition and monthly income rules still apply. Sizes 2, 5 and 7 have conflicting annual figures; see F5.",
+          "note": "Reference only; both reviewed DHCS annual sources agree. Household composition and monthly income rules still apply. Sizes 2, 5, 7, 10 and 12 have conflicting annual figures; see F5.",
           "sources": [
             "S10",
             "S12"
@@ -568,7 +628,7 @@
             "S5",
             "S8"
           ],
-          "evidence": "CMS Key Provisions / July slides exceptions and exclusions, cross-checked with referenced DHCS materials.",
+          "evidence": "CMS deck mandatory exceptions: \"Under the age of 19\"; Medicare Part A or Part B; other mandatory categorically needy groups. DHCS Medi-Cal Changes: rules do not apply to \"Children (0–18)\", \"Adults 65 and older\". ACWDL 25-30: Non-MAGI, Mandatory Children’s and Pregnancy groups excluded.",
           "status": "Conditional"
         },
         {
@@ -579,9 +639,10 @@
           "sources": [
             "S1",
             "S3",
-            "S5"
+            "S5",
+            "S19"
           ],
-          "evidence": "CMS Key Provisions / July slides exceptions and exclusions, cross-checked with referenced DHCS materials.",
+          "evidence": "CMS fact sheet: \"Pregnant or eligible for postpartum coverage in their state.\" DHCS: \"Pregnant people (during pregnancy and one year after)\". AB 2161 §14005.69(b)(2)(M).",
           "status": "Conditional"
         },
         {
@@ -592,9 +653,10 @@
           "sources": [
             "S1",
             "S3",
-            "S5"
+            "S5",
+            "S19"
           ],
-          "evidence": "CMS Key Provisions / July slides exceptions and exclusions, cross-checked with referenced DHCS materials.",
+          "evidence": "CMS fact sheet: \"dependent child 13 years of age and under\". DHCS: \"Parents and caregivers of children ages 0-13\". AB 2161 §14005.69(b)(2)(E): \"a dependent child 13 years of age or younger\".",
           "status": "Conditional"
         },
         {
@@ -604,9 +666,10 @@
           "note": "The federal rule has family-caregiver implementation criteria; not every informal helping relationship automatically qualifies.",
           "sources": [
             "S1",
-            "S3"
+            "S3",
+            "S19"
           ],
-          "evidence": "CMS Key Provisions / July slides exceptions and exclusions, cross-checked with referenced DHCS materials.",
+          "evidence": "CMS fact sheet: \"family caregivers of ... a disabled individual\"; CMS deck family-caregiver criteria. AB 2161 §14005.69(b)(2)(F) also lists the caregiver \"of an individual with a chronic or other health condition, disability, or functional limitation.\"",
           "status": "Conditional"
         },
         {
@@ -617,9 +680,10 @@
           "sources": [
             "S1",
             "S3",
-            "S4"
+            "S4",
+            "S19"
           ],
-          "evidence": "CMS Key Provisions / July slides exceptions and exclusions, cross-checked with referenced DHCS materials.",
+          "evidence": "CMS deck: medically frail only if a condition \"significantly impairs the individual’s ability to comply\". DHCS member letter lists serious, complex or ongoing medical and serious mental health conditions. AB 2161 §14005.69(b)(2)(H)(i)–(v).",
           "status": "Conditional"
         },
         {
@@ -629,9 +693,10 @@
           "note": "CMS slides specify 100% under 38 U.S.C. §1155. Veteran status alone is not enough.",
           "sources": [
             "S1",
-            "S3"
+            "S3",
+            "S19"
           ],
-          "evidence": "CMS Key Provisions / July slides exceptions and exclusions, cross-checked with referenced DHCS materials.",
+          "evidence": "CMS deck: \"total (100 percent) disability rating as defined under 38 U.S.C. §1155\". AB 2161 §14005.69(b)(2)(G).",
           "status": "Conditional"
         },
         {
@@ -642,9 +707,10 @@
           "sources": [
             "S1",
             "S3",
-            "S5"
+            "S5",
+            "S19"
           ],
-          "evidence": "CMS Key Provisions / July slides exceptions and exclusions, cross-checked with referenced DHCS materials.",
+          "evidence": "CMS fact sheet: \"American Indians and Alaska Natives\". AB 2161 §14005.69(b)(2)(B)–(D): Indians, Urban Indians, California Indians, and people eligible for the Indian Health Service.",
           "status": "Conditional"
         },
         {
@@ -655,9 +721,10 @@
           "sources": [
             "S3",
             "S4",
-            "S5"
+            "S5",
+            "S19"
           ],
-          "evidence": "CMS Key Provisions / July slides exceptions and exclusions, cross-checked with referenced DHCS materials.",
+          "evidence": "CMS deck: former foster care children described at section 1902(a)(10)(A)(i)(IX). DHCS: \"People under age 26 who were in foster care on their 18th birthday\". AB 2161 §14005.69(b)(2)(N): \"Foster youth or former foster youth under 26 years of age.\"",
           "status": "Conditional"
         },
         {
@@ -668,9 +735,10 @@
           "sources": [
             "S1",
             "S3",
-            "S4"
+            "S4",
+            "S19"
           ],
-          "evidence": "CMS Key Provisions / July slides exceptions and exclusions, cross-checked with referenced DHCS materials.",
+          "evidence": "CMS fact sheet: \"Meet the TANF work requirements\". DHCS member letter: \"Are meeting the CalWORKs work requirement.\" AB 2161 §14005.69(b)(2)(I).",
           "status": "Conditional"
         },
         {
@@ -681,9 +749,10 @@
           "sources": [
             "S1",
             "S3",
-            "S4"
+            "S4",
+            "S19"
           ],
-          "evidence": "CMS Key Provisions / July slides exceptions and exclusions, cross-checked with referenced DHCS materials.",
+          "evidence": "CMS fact sheet: SNAP household members who \"are not exempt from the SNAP work requirements\". DHCS member letter: \"Are receiving CalFresh and are not excused from the CalFresh work program.\" AB 2161 §14005.69(b)(2)(J).",
           "status": "Conditional"
         },
         {
@@ -693,9 +762,10 @@
           "note": "Use applicable program definitions; separate medical-frailty criteria may also matter.",
           "sources": [
             "S1",
-            "S3"
+            "S3",
+            "S19"
           ],
-          "evidence": "CMS Key Provisions / July slides exceptions and exclusions, cross-checked with referenced DHCS materials.",
+          "evidence": "CMS fact sheet: \"Participants in a drug or alcohol rehabilitation or treatment program\". AB 2161 §14005.69(b)(2)(K).",
           "status": "Conditional"
         },
         {
@@ -706,9 +776,10 @@
           "sources": [
             "S1",
             "S3",
-            "S5"
+            "S5",
+            "S19"
           ],
-          "evidence": "CMS Key Provisions / July slides exceptions and exclusions, cross-checked with referenced DHCS materials.",
+          "evidence": "CMS deck: an exception for an inmate \"at any point during the 3-month period ending on the first day of a month\". DHCS: \"People released from jail or prison in the last 90 days\". AB 2161 §14005.69(b)(2)(L) and (f)(4).",
           "status": "Conditional"
         },
         {
@@ -717,9 +788,10 @@
           "value": "For all or part of a reviewed month: Medicare Part A entitlement/enrollment, Part B enrollment, under age 19, specified other mandatory groups or excluded status can establish deemed compliance.",
           "note": "This is distinct from claiming earned income. Actual eligibility category and review month must be established.",
           "sources": [
-            "S3"
+            "S3",
+            "S19"
           ],
-          "evidence": "CMS Key Provisions / July slides exceptions and exclusions, cross-checked with referenced DHCS materials.",
+          "evidence": "CMS deck mandatory exceptions for all or part of a month. AB 2161 §14005.69(f)(1)–(5).",
           "status": "Conditional"
         },
         {
@@ -729,9 +801,10 @@
           "note": "DHCS outreach lists these circumstances. Do not assume a county qualifies: location, period, state adoption and notice must be checked.",
           "sources": [
             "S1",
-            "S4"
+            "S4",
+            "S19"
           ],
-          "evidence": "CMS Key Provisions / July slides exceptions and exclusions, cross-checked with referenced DHCS materials.",
+          "evidence": "CMS fact sheet short-term hardship options. DHCS member letter: \"If either one of these applies to your county, we will send you another notice.\" AB 2161 §14005.69(h)(1)–(4); the unemployment hardship is \"subject to a request from the department to the United States Secretary\".",
           "status": "Conditional"
         }
       ]
@@ -758,12 +831,13 @@
           "id": "C2",
           "title": "2 · Income route first",
           "value": "If countable MAGI-based monthly household income meets $580, the federal engagement income route may be available even without earned income.",
-          "note": "Recommended record set: income statements, rental income/expense records, tax records and trading statements. This is practical preparation, not an assertion that the county requires or accepts exactly these documents.",
+          "note": "Recommended record set: income statements, rental income/expense records, tax records and trading statements. DHCS’s general list for self-employed applicants asks for Schedule C and a profit-and-loss statement for the last three months. This is practical preparation, not an assertion that the county requires or accepts exactly these documents for the work rule.",
           "sources": [
             "S2",
             "S3",
             "S4",
-            "S16"
+            "S16",
+            "S9"
           ],
           "evidence": "Income methodology and available-data verification.",
           "status": "Conditional"
@@ -784,11 +858,12 @@
           "id": "C4",
           "title": "4 · Marketplace if financially ineligible",
           "value": "Covered California offers private plans; financial help is income- and eligibility-dependent. Enrollment generally requires open enrollment or a qualifying special enrollment period.",
-          "note": "Expected annual MAGI includes relevant unearned income. Plan prices, subsidy eligibility and enrollment dates for this individual are blank/unverified; do not assume work-rule denial qualifies for subsidies.",
+          "note": "Expected annual MAGI includes relevant unearned income. For 2027, Covered California uses the previous year’s FPL, offers the state subsidy at 100%–200% FPL, and gives no federal premium tax credit above 400% FPL. Plan prices, subsidy eligibility and enrollment dates for this individual are blank/unverified; do not assume work-rule denial qualifies for subsidies.",
           "sources": [
             "S6",
             "S7",
-            "S4"
+            "S4",
+            "S22"
           ],
           "evidence": "Covered California comparison; income guidance; subsidy warning.",
           "status": "Conditional"
@@ -821,10 +896,11 @@
           "id": "C7",
           "title": "California administrative help",
           "value": "DHCS says it may verify exemptions from existing information; BenefitsCal supports reporting, document upload and notices. The member letter describes investment in work/training/education resources.",
-          "note": "This is assistance implementing federal rules, not a verified blanket waiver for $0 earned income or a promise of no reporting.",
+          "note": "This is assistance implementing federal rules, not a verified blanket waiver for $0 earned income or a promise of no reporting. AB 2161 requires data-first verification, consent-based ways to add information, and confirmation of conflicting data before adverse action.",
           "sources": [
             "S4",
-            "S16"
+            "S16",
+            "S19"
           ],
           "evidence": "What You Need to Do Now and corrected verification-first rule.",
           "status": "Official rule"
@@ -845,10 +921,11 @@
           "id": "C9",
           "title": "Respond and preserve appeal rights",
           "value": "Keep contact details current, read notices and respond on time; adverse notices explain appeal rights.",
-          "note": "Recommendations: retain copies of submitted documents and notices; distinguish noncompliance denial from income denial when seeking review. No personal deadline is inferred.",
+          "note": "Recommendations: retain copies of submitted documents and notices; distinguish noncompliance denial from income denial when seeking review. AB 2161 requires the notice to state your right to a state hearing. No personal deadline is inferred.",
           "sources": [
             "S4",
-            "S1"
+            "S1",
+            "S19"
           ],
           "evidence": "What You Need to Do Now; You Could Lose Your Medi-Cal; 30-day compliance notice.",
           "status": "Conditional"
@@ -865,12 +942,13 @@
           "id": "F1",
           "title": "Operative California dates",
           "value": "",
-          "note": "CONFIRMED CONFLICT: S4 body says January 1, 2027, but its enclosed letter says both rules do not go into effect until March 2027 (and later says renewals beginning January). Current S5 says work January 1 and six-month checks March 1. Your operative application/renewal date is not assigned; do not assume a March work-rule delay.",
+          "note": "CONFIRMED CONFLICT: S4 body says January 1, 2027, but its enclosed letter says both rules do not go into effect until March 2027 (and later says renewals beginning January). Current S5 says work January 1 and six-month checks March 1. The enacted statute (S19) says “no sooner than January 1, 2027”, only after DHCS confirms its systems are ready, and implementation waits for the director’s written systems determination (§14005.69(q)(1)). No official notice of that determination was located. Your operative application/renewal date is not assigned; do not assume a March work-rule delay.",
           "sources": [
             "S1",
             "S4",
             "S5",
-            "S8"
+            "S8",
+            "S19"
           ],
           "evidence": "Read the S4 background and enclosure opening, plus S5 January/March sections. The inconsistency cannot be resolved from these texts alone.",
           "status": "Needs review"
@@ -885,20 +963,23 @@
             "S7",
             "S2"
           ],
-          "evidence": "Official-targeted IRS Kalshi/event-contract search produced no confirming official result. This is a research limitation, not proof no guidance exists.",
+          "evidence": "Official-targeted IRS Kalshi/event-contract searches (October 18 and October 19, 2026) produced no confirming official result. This is a research limitation, not proof no guidance exists.",
           "status": "Needs review"
         },
         {
           "id": "F3",
           "title": "Property management qualifying hours",
           "value": "",
-          "note": "Federal work definition includes self-employment and unpaid work, but no source reviewed resolves your own-rental management duties versus client services or confirms your documentation. Neither 80 qualifying hours nor earned-income classification is assigned.",
+          "note": "The federal preamble says a property manager or building superintendent paid in free or reduced rent can count those hours, and that self-employment (owning a business) is work. No source reviewed resolves how your county will treat hours spent managing your own rentals versus services for clients, or which records it will accept. The corrected rule bars denial solely for documentation that does not exist (§435.557(b)(2)(iii)(B)). Neither 80 qualifying hours nor earned-income classification is assigned.",
           "sources": [
             "S2",
+            "S20",
+            "S16",
+            "S9",
             "S3",
             "S14"
           ],
-          "evidence": "General healthcare work definition and IRS rental treatment do not establish the person-specific conclusion.",
+          "evidence": "91 FR 33348 preamble II.C.1; 42 CFR 435.552(b); corrected §435.557(b)(2)(iii); DHCS self-employed documents list. General rules do not establish the person-specific conclusion.",
           "status": "Needs review"
         },
         {
@@ -917,27 +998,29 @@
         },
         {
           "id": "F5",
-          "title": "Annual ceilings: sizes 2, 5 and 7",
+          "title": "Annual ceilings: sizes 2, 5, 7, 10 and 12",
           "value": "",
-          "note": "CONFIRMED CONFLICT: public DHCS S12 shows $29,863 / $53,378 / $69,055; annual enclosure S10 shows $29,864 / $53,379 / $69,056, rounded up. No single definitive annual value selected here. Monthly enclosures are distinct; do not resolve annual conflict by calculation.",
+          "note": "CONFIRMED CONFLICT: public DHCS S12 shows $29,863 / $53,378 / $69,055 / $92,570 / $108,247; annual enclosure S10 shows $29,864 / $53,379 / $69,056 / $92,571 / $108,248, rounded up. No single definitive annual value selected here. Monthly enclosures are distinct; do not resolve annual conflict by calculation.",
           "sources": [
             "S10",
             "S11",
             "S12"
           ],
-          "evidence": "Both official 138% annual columns reviewed; three one-dollar differences identified.",
+          "evidence": "Both official 138% annual columns re-read in full on 2026-10-19; five one-dollar differences identified (sizes 2, 5, 7, 10 and 12).",
           "status": "Needs review"
         },
         {
           "id": "F6",
           "title": "Public earnings wording versus federal income rule",
           "value": "",
-          "note": "CONFIRMED WORDING DIFFERENCE: S5 activity bullets say work at a job and earn $580; S4 says income from any source; S2 explicitly includes countable unearned income and S3 uses MAGI monthly household income. A wages-only interpretation is not supported by the federal rule. County treatment of your exact amounts is not assigned.",
+          "note": "CONFIRMED WORDING DIFFERENCE: S5 activity bullets say work at a job and earn $580; S4 says income from any source; S3 and S20 use MAGI-based monthly household income, and the enacted state statute (S19 §14005.69(e)(6)) uses MAGI-based financial methods for the individual’s MAGI-based household budget. A wages-only interpretation is not supported by the federal rule or the statute. County treatment of your exact amounts is not assigned.",
           "sources": [
             "S2",
             "S3",
             "S4",
-            "S5"
+            "S5",
+            "S19",
+            "S20"
           ],
           "evidence": "Federal rule II.C.8 and CMS income slide directly address countable income; public shorthand is not a replacement for the rule.",
           "status": "Needs review"
@@ -946,10 +1029,14 @@
           "id": "F7",
           "title": "Seasonal averaging for fluctuating trading",
           "value": "",
-          "note": "S4 outreach references frequently changing hours or seasonal jobs, whereas S3 ties the six-month alternative to statutory seasonal-worker status. No official source reviewed classifies own-account Kalshi trading as seasonal employment. No six-month averaging entitlement assigned.",
+          "note": "CONFIRMED CONFLICT: the S4 member letter (August 31, 2026) says people “whose hours change frequently or who have seasonal jobs” can average over six months. AB 2161 §14005.69(e)(7) (enacted September 14, 2026), 42 CFR 435.552(g)(1) and DHCS’s own S5 page limit averaging to seasonal workers. Under 26 U.S.C. 45R(d)(5)(B) a seasonal worker is someone who “performs labor or services on a seasonal basis as defined by the Secretary of Labor”. No official source reviewed classifies own-account Kalshi trading as seasonal work. No six-month averaging entitlement assigned.",
           "sources": [
             "S3",
-            "S4"
+            "S4",
+            "S5",
+            "S19",
+            "S20",
+            "S21"
           ],
           "evidence": "Do not infer seasonal-worker status from variable investment returns.",
           "status": "Needs review"
@@ -958,25 +1045,39 @@
           "id": "F8",
           "title": "2027 income ceilings and personal plan pricing",
           "value": "",
-          "note": "No 2027 upper-income chart or individualized plan quote was verified in this review. All published dollar ceilings here are explicitly 2026 reference figures. Future limits, premiums and subsidies remain blank.",
+          "note": "Covered California’s 2027 chart (S22) says marketplace programs use the previous year’s FPL, and Medi-Cal uses the current year’s FPL as calculated by DHCS. A 2027 DHCS Medi-Cal chart and individualized plan quotes were not located. All published dollar ceilings here are 2026 reference figures. Future Medi-Cal limits, premiums and subsidies remain blank.",
           "sources": [
             "S18",
-            "S6"
+            "S6",
+            "S22"
           ],
-          "evidence": "S18 is explicitly a 2026 FPL letter; Covered California directs applicants to its eligibility/application process.",
+          "evidence": "S18 is explicitly a 2026 FPL letter; S22 shows 2026 DHCS Medi-Cal values “for reference”; Covered California directs applicants to its eligibility/application process.",
           "status": "Needs review"
         },
         {
           "id": "F9",
           "title": "External link and full-document limits",
           "value": "",
-          "note": "Official pages were retrieved or checked via official search excerpts as identified in the source register. Network restrictions prevent independent automated external HTTP checks from the build environment. The 135-page rule and full public law were not read end-to-end; this is a row-scoped verification, not a certification of every line of those documents.",
+          "note": "Every source in the register was re-fetched on 2026-10-19 (arena/75b1956e) and each row re-read against it; the source register records what was read. The build itself runs no automated external HTTP checks. The 135-page rule and full public law were not read end-to-end: rule text was checked through Federal Register full-text search and the codified eCFR section. This is a row-scoped verification, not a certification of every line of those documents.",
           "sources": [
             "S2",
             "S16",
-            "S17"
+            "S17",
+            "S20"
           ],
-          "evidence": "The source register explicitly distinguishes full retrieved text, excerpts and cross-checks. Local site links are tested automatically.",
+          "evidence": "The source register distinguishes full retrieved text, search excerpts and cross-checks. Local site links are tested automatically.",
+          "status": "Needs review"
+        },
+        {
+          "id": "F10",
+          "title": "DHCS copayment income figure (October 2028)",
+          "value": "",
+          "note": "S5 says copayments from October 1, 2028 apply to adults 19–64 who “Make more than $15,560 a year”. DHCS’s own 2026 enclosure (S10) lists the one-person 100% FPL as 15960. The figures do not match, so no copayment threshold is stated here.",
+          "sources": [
+            "S5",
+            "S10"
+          ],
+          "evidence": "Both DHCS pages re-read 2026-10-19; discrepancy reported, not resolved.",
           "status": "Needs review"
         }
       ]
