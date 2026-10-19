@@ -657,3 +657,43 @@ It postdates every document the site was built on — DHCS ACWDL 25-30 (Dec 30 2
 2. **CR-05** is not addressed by PR #21's diff — `california.html` card 5 still says "Lead plaintiff" while the same page's June 29 timeline row says "co-leads", and `data/california.json` still dates the suit `2026-06-06`.
 3. **CR-07** — `build_site.py` will still silently regress the pages `build_core.py` owns, and no check catches it.
 4. **AB 2161 is not in `data/core.json`'s 40-source register.** The enacted statute should be registered as a source and cited by the relevant rows, otherwise the site's strongest authority lives only on this supplementary page.
+
+---
+
+## Final integration + leftover-gap closure — arena/1ae39a54-maltaproj8 (2026-10-19)
+
+**Session ID:** arena/1ae39a54-maltaproj8
+**Branch:** `arena/1ae39a54-maltaproj8` (platform-fixed; the requested `session-<id>/<task>` naming cannot be used in an Arena session, as prior sessions noted). Work is committed and pushed to this branch only.
+**Base:** `main` at `90ae3cf` (Merge PR #23, arena/e071bffc). Shallow clone was unshallowed first so real ancestry is visible.
+**Role:** Final integration session (per the standing protocol: merges the outstanding branch, re-verifies the combined data line by line, confirms the site builds with no broken links, publishes to GitHub Pages) **and** closure of the four hand-off items arena/e071bffc explicitly left for a later session.
+
+### Coordination check performed before claiming (2026-10-19 02:23 UTC)
+
+| Check | Result |
+|---|---|
+| `gh pr list --state open` | **One** open PR: #21 `arena/93fdc24b-maltaproj8` |
+| PR #21 last commit | `9a5c156`, committed **2026-10-18T22:40:34Z** → **3 h 43 min stale** at claim time (> 60-minute takeover threshold in the protocol) |
+| PR #21 mergeability | `mergeable: CONFLICTING`, `mergeStateStatus: DIRTY` — conflicts in `COORDINATION.md`, `archives.html`, `scripts/build_core.py` (all three also edited by arena/e071bffc in PRs #22/#23, merged after PR #21 was cut from `afdd5c4`) |
+| PR #21 checks | `build` SUCCESS, `validate` SUCCESS |
+| Other sessions' claims | arena/e071bffc tasks 22–23 recorded **COMPLETE** with a written hand-off list; arena/9ba14c05, arena/6fc18b58, arena/5bf2fb99, arena/a9c46f9b, arena/9285d712, arena/95219c64 all recorded merged/deployed. No live claim other than PR #21. |
+
+**Handoff note (protocol §"60 minutes with no commits"):** PR #21's claim is stale and its branch cannot be merged by its owner as-is. This session takes over **integration of that branch**, not authorship of its content: every substantive correction it makes is independently re-verified against an official source in this session before it is published, and anything that cannot be verified is left blank and flagged. No commit of arena/93fdc24b is discarded.
+
+### Task board (this session)
+
+| # | Task | Status | Owner | Files / scope | Verification required |
+|---|------|--------|-------|---------------|----------------------|
+| 24 | Integrate stale PR #21 into `main`; resolve the 3 conflicts preserving **both** sessions' work | unclaimed → **in progress** | arena/1ae39a54 | `COORDINATION.md` (append), `archives.html`, `scripts/build_core.py` (conflict resolution only) | Re-run every validator on the combined tree; no other session's content dropped |
+| 25 | Close hand-off item 1: fetch **26 U.S.C. §45R(d)(5)(B)** (seasonal-worker definition) from an official host, plus the register sources arena/e071bffc could not re-fetch | unclaimed → **in progress** | arena/1ae39a54 | `verify-1ae39a54.html`, `data/verify-1ae39a54.json` (new) | Verbatim quote + official URL + fetch date; blank and flagged if the host is unreachable |
+| 26 | Close hand-off item 4: register **AB 2161 (Welf. & Inst. Code §14005.69)** in the `data/core.json` source register and cite it from the rows that rest on it | unclaimed → **in progress** | arena/1ae39a54 | `data/core.json`, `scripts/build_core.py`, generated core pages | leginfo.legislature.ca.gov enacted text, quoted |
+| 27 | Close hand-off item 2 (**CR-05**): `california.html` card 5 says "Lead plaintiff" while the same page's June 29 row says "co-leads"; `data/california.json` suit date/caption | unclaimed → **in progress** | arena/1ae39a54 | `california.html`, `data/california.json` | oag.ca.gov press release + court docket caption |
+| 28 | Close hand-off item 3 (**CR-07**): make the competing-generator regression detectable so a later session cannot silently re-inject superseded blocks | unclaimed → **in progress** | arena/1ae39a54 | `scripts/check_core.py` or new check | Demonstrate the check fails on a re-injected marker |
+| 29 | Independent line-by-line re-verification of the combined tree against official primary sources, published as a new page | unclaimed → **in progress** | arena/1ae39a54 | `verify-1ae39a54.html`, `data/verify-1ae39a54.json`, `scripts/build_verify_1ae39a54.py`, `scripts/check_1ae39a54.py` (all new) | Fresh fetch this session for every claim marked verified |
+| 30 | Final PR → merge → confirm GitHub Pages deploy → record PR link and merge result | unclaimed → **in progress** | arena/1ae39a54 | git/`gh` only | Pages API `status: built`; live page fetched after deploy |
+
+### Scope lock
+
+- Claimed now: `COORDINATION.md` (append-only), and the **new** files `verify-1ae39a54.html`, `data/verify-1ae39a54.json`, `scripts/build_verify_1ae39a54.py`, `scripts/check_1ae39a54.py`.
+- Integration-only edits (taken over because PR #21's claim is stale and this is the final integration pass): `archives.html`, `scripts/build_core.py`, `scripts/check_core.py`, `data/core.json`, `california.html`, `data/california.json`.
+- Read-only: `research/**`, `coverage-guide/**`, `docs/**`, other sessions' `verify-*.html` / `audit-6fc18b58.*`. Those are historical records; nothing in them is deleted or re-certified by this session.
+- Claim committed and pushed **before** any content work, per protocol.
