@@ -9,6 +9,7 @@ for r in D['rows']:
  assert r['sources'],r['id']
  for s in r['sources']:assert s in D['sources']
  if r['status']=='Unverified':assert r['value']=='',r['id']
+ assert r.get('evidence'),('row has no quoted evidence',r['id'])
 for s in D['sources'].values():
  host=urlparse(s['url']).hostname
  assert host.endswith('.gov') or host.endswith('.coveredca.com'),host
@@ -33,5 +34,5 @@ for p in Path('.').glob('*.html'):
   assert target.exists(),f'{p}: {link}'
   if u.fragment:
    z=Check();z.feed(target.read_text());assert u.fragment in z.ids,(p,link)
-print(f'PASS: {len(D["rows"])} source-linked findings; {len(list(Path(".").glob("*.html")))} pages; local links and fragments intact.')
+print(f'PASS: {len(D["rows"])} source-linked findings (each with quoted evidence); {len(list(Path(".").glob("*.html")))} pages; local links and fragments intact.')
 print('External sources checked by research retrieval; this test does not certify remote uptime or personal eligibility.')

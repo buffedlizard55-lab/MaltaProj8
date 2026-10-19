@@ -10,7 +10,7 @@ Official-source healthcare research for a California-resident U.S. citizen with 
 - Flagged for Review (unconfirmed values blank) and official source library
 - Downloadable CSV and JSON containing stable row IDs, official source references, locators, status and review date
 
-Research date: **October 18, 2026**. General rules are distinguished from personal eligibility, which is not determined. Important unresolved issues include conflicting DHCS timing/income language, Kalshi tax classification and personal trading/property-management hour acceptance. No claim that every provision of the entire law was audited. No advice to misreport income or fabricate work.
+Research date: **October 18, 2026**; every row and source re-verified **October 19, 2026** (arena/75b1956e). Each row now carries the quote from the official source that supports it, and the register adds the enacted California statute (AB 2161, Chapter 209, Statutes of 2026), 42 CFR 435.552 and 26 U.S.C. 45R(d)(5)(B). General rules are distinguished from personal eligibility, which is not determined. Important unresolved issues include conflicting DHCS timing, income and six-month-averaging language (the member letter is broader than AB 2161), Kalshi tax classification, and whether a county will accept your own trading or property-management hours. No claim that every provision of the entire law was audited. No advice to misreport income or fabricate work.
 
 ## Build and validation
 Python 3.10+; no third-party build dependencies.
