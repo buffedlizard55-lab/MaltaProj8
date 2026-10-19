@@ -781,3 +781,21 @@ Rebuilt on top of main after PR #24 merged the first-pass corrections (PR #26 cl
 | PR #21 | Left **closed** (superseded by PR #24 + #28); its branch is not merged |
 
 **Deliberately not re-fetched in this pass:** the H.R.1 statutory text itself (relied on the Federal Register IFR and CRS, both re-read), the Covered California 2027 FPL chart (inherited from PR #24, which read it), and the IRS P90/1099 series. The `verification.html` page states these limits rather than claiming an end-to-end re-read.
+
+## Follow-up precision fix — PR #30
+
+After the Pages deployment, F44/FL-06 were re-read against the introduced text of H.R. 10357. The prior shorthand ("would restore the 100% wagering-loss deduction") invited the wrong reading. §701 actually rewrites IRC §165(d) so that wagering losses are allowed **only to the extent of wagering gains** — repealing the 90% limitation added by H.R.1 §70114, effective for tax years beginning after 2025. F44 and FL-06 now quote that operative language.
+
+| Item | Result |
+|---|---|
+| PR | **#30** — "Quote H.R. 10357 §701 precisely" |
+| Checks | `build` and `validate` pass |
+| Merge | **MERGED** (squash), merge commit `1d98949` |
+| Pages | "Deploy GitHub Pages" run for `1d98949` — **success** |
+
+## Open PRs left untouched (other sessions' scopes)
+
+| PR | Branch | State | Note |
+|---|---|---|---|
+| #25 | `arena/75b1956e-maltaproj8` | open, mergeable | Re-verifies `research/` and `coverage-guide/`; outside this session's file scope, left for its owner |
+| #27 | `arena/bf76ee37-maltaproj8` | open, mergeability unknown | Overlaps the root pages and predates PR #24/#28; **must be rebased** before any merge or it will revert the MAGI, FPL, AB 2161 and playbook corrections |
