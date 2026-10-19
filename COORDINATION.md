@@ -870,3 +870,23 @@ Freshly read IRS Topic420 (Reporting bartering income) and 42CFR431.220(a)(1)/(b
 Publishing permission note: the Arena GitHub integration could read but not update the Pages build type (HTTP403; not an authentication failure). The deploy job now explicitly sets artifact publishing using its narrowly scoped `pages: write` GitHub Actions token before deployment. This remains untested until merge; a failure will be investigated, not reported as success. Correction to the earlier staging note: public linked build scripts ARE intentionally included where preserved audit pages link to them; Git internals, workflow files, caches and dependency directories are excluded.
 
 **Latest pre-merge reconciliation:** Main then advanced through PR29's deployment log and PR30's precise H.R.10357 §701 quotation. Preserved both main updates, including F44/FL-06 wording, while retaining our source review metadata. All current tests pass again (947 maintained factual rows, 82 finding review records, 50 sources, 38 flags). Temporary dist files accidentally staged during an intermediate merge replay were removed from the final index; `git ls-files dist .cache node_modules` is empty. No generated staging artifact or browser dependency ships in Git. The final build remains deterministic. PR27 will be rechecked at the newly reconciled head before merge.
+
+## Follow-up precision fix — PR #30
+
+After the Pages deployment, F44/FL-06 were re-read against the introduced text of H.R. 10357. The prior shorthand ("would restore the 100% wagering-loss deduction") invited the wrong reading. §701 actually rewrites IRC §165(d) so that wagering losses are allowed **only to the extent of wagering gains** — repealing the 90% limitation added by H.R.1 §70114, effective for tax years beginning after 2025. F44 and FL-06 now quote that operative language.
+
+| Item | Result |
+|---|---|
+| PR | **#30** — "Quote H.R. 10357 §701 precisely" |
+| Checks | `build` and `validate` pass |
+| Merge | **MERGED** (squash), merge commit `1d98949` |
+| Pages | "Deploy GitHub Pages" run for `1d98949` — **success** |
+
+## Open PRs left untouched (other sessions' scopes)
+
+| PR | Branch | State | Note |
+|---|---|---|---|
+| #25 | `arena/75b1956e-maltaproj8` | open, mergeable | Re-verifies `research/` and `coverage-guide/`; outside this session's file scope, left for its owner |
+| #27 | `arena/bf76ee37-maltaproj8` | open, mergeability unknown | Overlaps the root pages and predates PR #24/#28; **must be rebased** before any merge or it will revert the MAGI, FPL, AB 2161 and playbook corrections |
+
+**Final pre-merge update:** PR31 appended another completed-session log while PR27 CI ran. First merge attempt correctly refused the board conflict; no partial merge occurred. Merged main explicitly, preserving both logs. The required pre-push rebase now targets this session branch’s remote tip (rather than repeatedly recreating PR21’s old merge ancestry against main); main was already fetched/merged immediately before it.
