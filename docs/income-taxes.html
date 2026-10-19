@@ -9,18 +9,19 @@
 <body>
 <header class="masthead">
   <div class="wrap masthead-inner">
-    <div class="brand"><a href="index.html"><span class="brand-mark">✚</span> Healthcare Access<span class="brand-sub"> — CA · $0 earned income · verified findings</span></a></div>
-    <div class="stamp">All data verified against official sources on <strong>2026-10-18</strong></div>
+    <div class="brand"><a href="index.html"><span class="brand-mark">✚</span> Healthcare Access<span class="brand-sub"> — CA · no wages · source-linked, conditional findings</span></a></div>
+    <div class="stamp">Source audit <strong>2026-10-18</strong> · <a href="../accuracy-93fdc24b.html">Current correction</a> · <a href="../flagged.html">Open questions</a></div>
   </div>
   <nav class="wrap nav" aria-label="Primary"><a class="nav-link" href="index.html">Home</a><a class="nav-link" href="executive-summary.html">Executive Summary</a><a class="nav-link active" href="income-taxes.html">Income & Taxes</a><a class="nav-link" href="medicaid.html">Medi-Cal</a><a class="nav-link" href="covered-california.html">Covered California</a><a class="nav-link" href="new-laws.html">New Laws & Work Req.</a><a class="nav-link" href="ca-mandate.html">CA Mandate</a><a class="nav-link" href="action-plan.html">Action Plan</a><a class="nav-link" href="sources.html">All Sources</a><a class="nav-link" href="flagged-for-review.html">⚑ Flagged for Review</a></nav>
 </header>
 <main class="wrap">
+<section class="panel" role="note"><strong>Read first:</strong> The <a href="../accuracy-93fdc24b.html">dated accuracy update</a> separates 2026 and 2027 FPL years and uses the enacted MAGI-based work-rule method. Personal coverage, Kalshi tax character and actual income remain unknown. Older independent claims are preserved for review; see <a href="../flagged.html">Flagged for Review</a> and the <a href="../audit-6fc18b58.html">independent audit</a>.</section>
 
 <h1>Your Income &amp; How the IRS / ACA Counts It</h1>
 <p class="lede">How Kalshi trading results, rental income and savings interest flow into Modified Adjusted Gross Income (MAGI) — the number Medi-Cal and Covered California actually test — plus tax treatment details. Every row links to an official source; unverified items are left blank and flagged.</p>
 <p class="fineprint">Verified 2026-10-18. Rows marked ⚑ carry no confirmed official value — see <a href="flagged-for-review.html">Flagged for Review</a>.</p>
 <div class="table-scroll"><table class="data">
-<thead><tr><th>ID</th><th>Topic</th><th>Verified finding</th><th>Key value</th><th>Effective</th><th>Status</th><th>Official source</th></tr></thead>
+<thead><tr><th>ID</th><th>Topic</th><th>General finding / limitation</th><th>Verified value, if available</th><th>Effective</th><th>Status</th><th>Official source</th></tr></thead>
 <tbody>
     <tr class="">
       <td class="rid">INC-01</td>
@@ -45,11 +46,11 @@
     <tr class="">
       <td class="rid">INC-03</td>
       <th scope="row" class="topic">Covered California income-counting rules</th>
-      <td class="finding">Covered CA counts: wages, tips, self-employment income, unemployment, Social Security/SSDI, retirement/pension, and INVESTMENT income. It does not count: child support, gifts, VA disability payments, SSI, workers' compensation, loan proceeds, Child Tax Credit.</td>
+      <td class="finding">Covered California counts taxable investment income (including interest), plus income from applicable rental, wages and other categories under MAGI rules. Event-contract results require a tax classification and actual records; they are not automatically countable as a known net amount for this person.</td>
       <td class="val">Investment income counts; gifts/SSI/loans don't</td>
       <td class="eff">For 2026 coverage (current page)</td>
       <td class="st"><span class="badge ok">✓ Verified</span></td>
-      <td class="src-cell"><a class="src" href="https://www.coveredca.com/costs/financial-help" target="_blank" rel="noopener">Covered California — What is financial help? (&quot;What Counts as Income&quot;)</a><div class="note">Fetched 2026-10-18. Savings interest and trading gains fall under &quot;investment income.&quot;</div></td>
+      <td class="src-cell"><a class="src" href="https://www.coveredca.com/costs/financial-help" target="_blank" rel="noopener">Covered California — What is financial help? (&quot;What Counts as Income&quot;)</a><div class="note">Covered California lists investment income; treatment of this individual's Kalshi trades is unresolved, not established by the general list.</div></td>
     </tr>
 
     <tr class="">
@@ -82,24 +83,24 @@
       <td class="src-cell"><a class="src" href="https://www.healthcare.gov/income-and-household-information/income/" target="_blank" rel="noopener">HealthCare.gov — What's included as income</a><div class="note">Checked 2026-10-18.</div></td>
     </tr>
 
-    <tr class="">
+    <tr class="row-flagged">
       <td class="rid">INC-07</td>
-      <th scope="row" class="topic">Kalshi trading gains are taxable income</th>
-      <td class="finding">Event-contract profits are taxable from the first dollar. Kalshi's official documentation describes issuing Form 1099-INT (interest on cash), 1099-MISC (credits/rewards), 1099-B (crypto transfers) and 1099-DA (ZeroHash) — but NO 1099 for event-contract trading profit. Traders report from Kalshi's downloadable P&amp;L statement. Absence of a 1099 does not remove the income from AGI/MAGI.</td>
-      <td class="val">1099-INT/MISC only; trading P&amp;L self-reported</td>
+      <th scope="row" class="topic">Kalshi contract profit and tax forms</th>
+      <td class="finding">Taxable income generally must be reported even without a Form 1099, but the precise tax characterization, netting and which forms are issued for this person's Kalshi contracts cannot be certified from the government materials cited here. The company's help page is contextual, not an IRS ruling.</td>
+      <td class="val"></td>
       <td class="eff">Per Kalshi help center, retrieved 2026-06/2026-10</td>
-      <td class="st"><span class="badge ok">✓ Verified</span></td>
-      <td class="src-cell"><a class="src" href="https://help.kalshi.com/en/articles/13823849-what-tax-documentation-does-kalshi-provide" target="_blank" rel="noopener">Kalshi Help Center (official) — What Tax Documentation Does Kalshi Provide?</a><div class="note">Kalshi company documentation (not a government source); consistent with IRS rule that all income is reportable (Form 1040 gross income). Exact character of gains is unresolved — see next row and flag FL-01.</div></td>
+      <td class="st"><span class="badge warn">⚑ Flagged</span></td>
+      <td class="src-cell"><a class="src" href="https://www.irs.gov/publications/p550" target="_blank" rel="noopener">IRS — Publication 550 (general investment income and reporting)</a><div class="note">Company documentation, not official tax authority: https://help.kalshi.com/en/articles/13823849-what-tax-documentation-does-kalshi-provide . Flag FL-01.</div></td>
     </tr>
 
     <tr class="row-flagged">
       <td class="rid">INC-08</td>
       <th scope="row" class="topic">Section 1256 (60/40) treatment of Kalshi event contracts</th>
-      <td class="finding">Whether Kalshi event contracts are &quot;regulated futures contracts&quot; under IRC §1256 (60/40 split, Form 6781, mark-to-market) is UNSETTLED: no IRS ruling, regulation or notice classifies event contracts, and federal appellate courts split in 2026 on whether they are CEA &quot;swaps&quot; (3d Cir. sided with CFTC exclusivity Apr 2026; 9th Cir. Aug 28, 2026 and 6th Cir. Sept 25, 2026 sided with state gaming regulators). This repo does not assert a tax position.</td>
-      <td class="val">(unverified — no official IRS guidance)</td>
+      <td class="finding">General §1256 rules do not establish that this taxpayer's Kalshi event contracts qualify for 60/40 treatment or a particular tax form. CFTC exchange designation is a regulatory fact, not an IRS contract-by-contract tax ruling.</td>
+      <td class="val"></td>
       <td class="eff">Open question as of 2026-10-18</td>
       <td class="st"><span class="badge warn">⚑ Flagged</span></td>
-      <td class="src-cell"><a class="src" href="https://www.gaming.nv.gov/siteassets/content/about/press-release/25-7516---kalshi-ninth-circuit-decision.pdf" target="_blank" rel="noopener">Kalshi Ex v. Assad (9th Cir., Aug 28 2026, slip op. via NV Gaming Control Board); CFTC press 8302-20</a><div class="note">Flag FL-01. Either way (1256 or ordinary capital gain), NET gains are in AGI; the character mainly affects the tax rate, not whether Medi-Cal/Covered CA count it.</div></td>
+      <td class="src-cell"><a class="src" href="https://www.irs.gov/publications/p550" target="_blank" rel="noopener">IRS — Publication 550 (§1256 contracts and general investment rules)</a><div class="note">CFTC designation: https://www.cftc.gov/PressRoom/PressReleases/8302-20 . No specific Kalshi tax characterization inferred. Flag FL-01.</div></td>
     </tr>
 
     <tr class="">
@@ -112,14 +113,14 @@
       <td class="src-cell"><a class="src" href="https://www.cftc.gov/PressRoom/PressReleases/8302-20" target="_blank" rel="noopener">CFTC Press Release 8302-20 (Nov 4, 2020)</a><div class="note">Second release: https://www.cftc.gov/PressRoom/PressReleases/8957-24 (Aug 29, 2024).</div></td>
     </tr>
 
-    <tr class="">
+    <tr class="row-flagged">
       <td class="rid">INC-10</td>
-      <th scope="row" class="topic">Trading gains are NOT self-employment income</th>
-      <td class="finding">Gains/losses from selling capital assets (stocks, futures-type positions) held for investment are excluded from net earnings from self-employment (statute: 26 U.S.C. §1402(a)(3)(A); see Schedule SE instructions exclusion list) — unless you are a dealer in securities/commodities. Practical effect for you: no 15.3% SE tax on Kalshi results; but the gains still count for MAGI. Also means no SE-tax-based &quot;work&quot; signal — see the 2027 Medi-Cal work-requirement analysis.</td>
-      <td class="val">Excluded from SE tax (non-dealer)</td>
+      <th scope="row" class="topic">Whether Kalshi trading is self-employment income for this taxpayer</th>
+      <td class="finding">IRS Schedule SE instructions describe general exclusions for certain investment proceeds; application depends on the taxpayer's actual business and contract classification. Neither non-dealer status nor an exemption from self-employment tax has been established for this person.</td>
+      <td class="val"></td>
       <td class="eff">Current law</td>
-      <td class="st"><span class="badge ok">✓ Verified</span></td>
-      <td class="src-cell"><a class="src" href="https://www.irs.gov/businesses/small-businesses-self-employed/self-employment-tax-social-security-and-medicare-taxes" target="_blank" rel="noopener">IRS — Instructions for Schedule SE (Form 1040) + Self-employment tax page</a><div class="note">Statutory basis 26 U.S.C. §1402(a)(3)(A). See https://www.irs.gov/instructions/i1040se for the &quot;income not included&quot; list.</div></td>
+      <td class="st"><span class="badge warn">⚑ Flagged</span></td>
+      <td class="src-cell"><a class="src" href="https://www.irs.gov/instructions/i1040se" target="_blank" rel="noopener">IRS — Instructions for Schedule SE (Form 1040)</a><div class="note">General rules cannot be applied to this taxpayer's Kalshi activity without facts and a supported tax classification. Flag FL-01.</div></td>
     </tr>
 
     <tr class="">
@@ -175,25 +176,25 @@
     <tr class="">
       <td class="rid">INC-16</td>
       <th scope="row" class="topic">HSA as an above-the-line MAGI lever (new for 2026 in California)</th>
-      <td class="finding">Starting Jan 1, 2026, Covered California Bronze plans and the minimum-coverage (catastrophic) plan count as qualified high-deductible health plans (HDHPs), so enrollees can fund an HSA. HSA eligibility (Pub 969) requires HDHP coverage, no other coverage, not on Medicare, not a dependent — it does NOT require having earned income. Contributions are deductible above the line, reducing AGI → reducing MAGI. 2026 limits: $4,400 self-only / $8,750 family; 2026 HDHP minimum deductible $1,700/$3,400, OOP max $8,500/$17,000.</td>
+      <td class="finding">IRS Publication 969 describes HSA eligibility, contribution limits and deductions for eligible individuals. Earning wages is not itself a condition for contributing; qualifying health coverage, Medicare, other coverage and dependent status matter. HSA eligibility and deductions for this person are not established by the mere availability of a Bronze plan.</td>
       <td class="val">$4,400/$8,750 (2026); no earned-income requirement</td>
       <td class="eff">Jan 1, 2026 (CA plan change); TY2026 (limits)</td>
       <td class="st"><span class="badge ok">✓ Verified</span></td>
-      <td class="src-cell"><a class="src" href="https://www.coveredca.com/important-changes" target="_blank" rel="noopener">Covered California — Important Changes; IRS Pub 969; Rev. Proc. 2025-19</a><div class="note">IRS amounts: https://www.irs.gov/pub/irs-drop/rp-25-19.pdf (calendar-year 2026 figures, also reflected in Pub 969 tip). Caveat: HSA contributions are not counted by IRS as &quot;work&quot; for the 2027 Medicaid rule.</div></td>
+      <td class="src-cell"><a class="src" href="https://www.irs.gov/publications/p969" target="_blank" rel="noopener">IRS — Publication 969, Health Savings Accounts</a><div class="note">Plan-specific 2026 changes: https://www.coveredca.com/important-changes . Do not assume a tax or MAGI reduction without personal eligibility.</div></td>
     </tr>
 
     <tr class="row-flagged">
       <td class="rid">INC-17</td>
-      <th scope="row" class="topic">What a low-income year can look like in practice</th>
-      <td class="finding">Worked illustration (NOT a verification item; arithmetic from the verified 2026 figures): a single applicant whose 2027 MAGI = $0 (trading loss year, rental losses fully offset rents, minimal interest) is below the 138% FPL Medi-Cal line of $22,025 (2026 guideline basis) and would ordinarily land in Medi-Cal; a MAGI of, e.g., $22,000–$31,920 lands in the 2027 Covered CA state-subsidy band (0% benchmark contribution up to 150% FPL, sliding to ~2.8–5.28% at 150–200%).</td>
-      <td class="val">Illustration only — confirm at application</td>
+      <th scope="row" class="topic">Unverified personal annual and monthly MAGI for coverage</th>
+      <td class="finding">No numerical scenario can be assigned without the individual's actual taxable rental amounts, interest, household and tax characterization of Kalshi contracts. The $22,025 one-person Medi-Cal reference is for 2026 only; $31,920 is a 2027 marketplace state-aid reference, not a guaranteed individual outcome.</td>
+      <td class="val"></td>
       <td class="eff">Plan years 2026-2027</td>
       <td class="st"><span class="badge warn">⚑ Flagged</span></td>
-      <td class="src-cell"><a class="src" href="https://www.coveredca.com/pdfs/FPL-chart.pdf" target="_blank" rel="noopener">DHCS eligibility chart; Covered CA 2027 FPL chart</a><div class="note">See also https://www.dhcs.ca.gov/medi-cal/qualify/qualify-for-medi-cal-eligibility-chart/. Actual determinations depend on the application-year rules in force.</div></td>
+      <td class="src-cell"><a class="src" href="https://www.dhcs.ca.gov/services/medi-cal-resources/medi-cal-eligibility-division/all-county-welfare-directors-medi-cal-eligibility-division-information-letters/2026-fpl-calculation-chart-monthly-values-enclosure-1/" target="_blank" rel="noopener">DHCS — 2026 Medi-Cal monthly FPL chart</a><div class="note">Marketplace 2027: https://www.coveredca.com/pdfs/FPL-chart.pdf . A tax or county determination is required.</div></td>
     </tr></tbody></table></div>
 
 </main>
 <footer class="footer"><div class="wrap">
-  <p>Generated from <code>data/*.json</code> by <code>tools/build-site.js</code> (session <code>c8487e35</code>). Every table row carries a link to its official source; values that could not be confirmed from an official source are left blank and listed on the <a href="flagged-for-review.html">Flagged for Review</a> page. This site is an organized research brief, not legal or tax advice.</p>
+  <p>Generated from <code>data/*.json</code> by <code>tools/build-site.js</code> (session <code>c8487e35</code>). Rows link to research sources, but a citation is not a personal eligibility determination. The <a href="../accuracy-93fdc24b.html">current accuracy update</a> and <a href="flagged-for-review.html">unresolved-items page</a> take precedence over older uncorrected descriptions. Informational, not legal or tax advice.</p>
 </div></footer>
 </body></html>

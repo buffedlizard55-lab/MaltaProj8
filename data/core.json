@@ -189,11 +189,11 @@
     },
     {
       "id": "S21",
-      "short": "Kalshi tax documents",
-      "title": "What Tax Documentation Does Kalshi Provide?",
-      "publisher": "Kalshi Help Center",
-      "url": "https://help.kalshi.com/en/articles/13823849-what-tax-documentation-does-kalshi-provide",
-      "date": "2026-06-22",
+      "short": "IRS recordkeeping",
+      "title": "Recordkeeping — substantiating income, expenses and basis",
+      "publisher": "Internal Revenue Service",
+      "url": "https://www.irs.gov/businesses/small-businesses-self-employed/recordkeeping",
+      "date": "Date not shown; accessed 2026-10-18",
       "official": true
     },
     {
@@ -366,6 +366,33 @@
       "url": "https://bphc.hrsa.gov/compliance/compliance-manual/chapter9",
       "date": "2026",
       "official": true
+    },
+    {
+      "id": "S41",
+      "short": "Covered CA 2026 enrollment",
+      "title": "2026 Open Enrollment Highlights — Financial Details (400% FPL reference)",
+      "publisher": "Covered California",
+      "url": "https://hbex.coveredca.com/data-research/dashboards/OE_Dashboard.pdf",
+      "date": "2026-01-31",
+      "official": true
+    },
+    {
+      "id": "S42",
+      "short": "CA AB 2161 (enacted)",
+      "title": "AB 2161, Chapter 209 (2026), Welfare and Institutions Code §14005.69(d)–(e): monthly MAGI-based household budget and seasonal-worker rule",
+      "publisher": "California Legislative Information",
+      "url": "https://leginfo.legislature.ca.gov/faces/billTextClient.xhtml?bill_id=202520260AB2161",
+      "date": "2026-09-14",
+      "official": true
+    },
+    {
+      "id": "S43",
+      "short": "Covered CA 2027 FPL chart",
+      "title": "Program Eligibility by Federal Poverty Level for 2027 (uses 2026 FPL for marketplace; Medi-Cal uses current-year chart)",
+      "publisher": "Covered California",
+      "url": "https://www.coveredca.com/pdfs/FPL-chart.pdf",
+      "date": "2026",
+      "official": true
     }
   ],
   "key_numbers": [
@@ -388,10 +415,13 @@
       "source": "S15"
     },
     {
-      "label": "Work rules start in California",
+      "label": "DHCS work-rule target (California)",
       "value": "Jan 1, 2027",
-      "detail": "MAGI New Adult Group (aid code M1). Federal deadline; states may start sooner.",
-      "source": "S11"
+      "detail": "DHCS currently states January 1, 2027. Enacted AB 2161 says no sooner than this date and conditions implementation on systems readiness; an appropriation-related deferral is possible.",
+      "source": "S11",
+      "also": [
+        "S42"
+      ]
     },
     {
       "label": "First six-month renewals",
@@ -401,9 +431,15 @@
     },
     {
       "label": "Covered CA subsidy cliff (single, 2026)",
+      "value": "$62,600 / year",
+      "detail": "400% of the 2025 FPL reference used for 2026 marketplace coverage. Other PTC eligibility criteria still apply.",
+      "source": "S41"
+    },
+    {
+      "label": "Covered CA 400% reference (single, 2027)",
       "value": "$63,840 / year",
-      "detail": "400% FPL. No federal premium tax credit above this line for 2026.",
-      "source": "S17"
+      "detail": "2027 marketplace reference (2026 FPL). Not the 2026 marketplace limit or a 2027 Medi-Cal limit.",
+      "source": "S43"
     }
   ],
   "profile": [
@@ -411,7 +447,7 @@
       "fact": "Citizenship",
       "value": "U.S. citizen (given)",
       "status": "given",
-      "note": "If you are actually a lawful permanent resident (green-card holder), LPRs remain qualified non-citizens for federally funded Medi-Cal; the 2026 immigration-status narrowing does not apply to LPRs.",
+      "note": "U.S. citizenship was supplied. “Permanent resident of California” describes residence here; no green-card or immigrant status is inferred.",
       "source": "S02"
     },
     {
@@ -432,7 +468,7 @@
       "fact": "Trading",
       "value": "Full-time Kalshi trader (given)",
       "status": "given",
-      "note": "Kalshi event contracts are CFTC-regulated DCM products. Their federal tax classification is not settled; see flags.",
+      "note": "KalshiEX holds a CFTC market designation; the federal tax classification and countable amount of this person’s event-contract results remain unresolved.",
       "source": "S37"
     },
     {
@@ -446,7 +482,7 @@
       "fact": "Earned income",
       "value": "$0 (given)",
       "status": "given",
-      "note": "Zero earned income does not mean zero MAGI. Rental, interest and realized gains are still income for Medi-Cal.",
+      "note": "Zero earned income does not mean zero MAGI. Countable rental and interest income may matter; how Kalshi results enter the household MAGI budget is unresolved.",
       "source": "S32"
     },
     {
@@ -483,15 +519,15 @@
       "id": "G1",
       "title": "Gate 1 — Are you in the Medi-Cal MAGI New Adult Group?",
       "body": "Medi-Cal's MAGI New Adult Group covers adults ages 19–64 who are California residents, not pregnant, not entitled to or enrolled in Medicare, and whose household MAGI is at or below 138% of the federal poverty level. For a one-person household in 2026 that is $22,025/year or $1,836/month. There is no asset test for MAGI Medi-Cal.",
-      "if_yes": "Go to Gate 2. The work rule applies from Jan 1, 2027 unless you are excluded or exempt.",
-      "if_no": "You are not eligible for MAGI Medi-Cal. Covered California has no work requirement; subsidies run from 100% to 400% FPL, with a California state subsidy up to 165% FPL in 2026 and 200% FPL in 2027.",
+      "if_yes": "Go to Gate 2. DHCS targets Jan 1, 2027 for the work rule, subject to enacted implementation conditions; screen for exclusions and exemptions.",
+      "if_no": "If household MAGI is above the Medi-Cal adult-expansion limit, review Covered California. Marketplace help requires separate income, other-coverage and tax-filing eligibility; the 2026 single-person 400% FPL reference is $62,600. It is not guaranteed.",
       "source": "S16"
     },
     {
       "id": "G2",
       "title": "Gate 2 — Can you show one qualifying month per renewal period?",
-      "body": "If you are in the MAGI New Adult Group and not excluded or exempt, you must demonstrate community engagement for at least one month between eligibility determinations (the months need not be consecutive). In that month you need one of: 80 hours of work (including in-kind or unpaid work), 80 hours of community service, 80 hours in a work program, at least half-time education, a combination totaling 80 hours, or income of at least $580.",
-      "if_yes": "You keep Medi-Cal for that renewal period, provided you also complete the renewal itself on time.",
+      "body": "If you are in the MAGI New Adult Group and not excluded or exempt, you must demonstrate community engagement for at least one month between eligibility determinations (the months need not be consecutive). In that month you need one of: 80 hours of work (including in-kind or unpaid work), 80 hours of community service, 80 hours in a work program, at least half-time education, a combination totaling 80 hours, or monthly household income of at least $580 under MAGI-based financial methods.",
+      "if_yes": "Meeting a valid route satisfies this work-rule condition for the assessed period, provided all other Medi-Cal eligibility and renewal requirements are met.",
       "if_no": "The county must send a notice and give you 30 calendar days to show compliance or an exemption. Coverage continues during the cure period. If you do not cure, you can be disenrolled and you are NOT eligible for federal premium tax credits while deemed Medicaid-eligible.",
       "source": "S09"
     }
@@ -520,12 +556,16 @@
     {
       "id": "O3",
       "option": "Covered California — with federal premium tax credit and/or state subsidy",
-      "who": "U.S. citizens and lawfully present immigrants with household income from 100% to 400% FPL who are not eligible for Medi-Cal. For 2026, 400% FPL is $63,840 for one person.",
+      "who": "U.S. citizens and lawfully present immigrants potentially eligible for marketplace financial help, subject to household MAGI, other coverage and filing rules. For 2026, the single-person 400% FPL reference is $62,600 (using 2025 FPL).",
       "work_rule": "No work requirement. Eligibility is income-based.",
       "cost": "2026 federal applicable percentage: 2.10% to 9.96% of household income for the benchmark Silver plan. California adds a state subsidy at or below 165% FPL in 2026 and 200% FPL in 2027.",
       "how": "Apply at CoveredCA.com during open enrollment (Nov 1–Jan 31) or a special enrollment period.",
-      "source": "S18",
-      "status": "verified"
+      "source": "S41",
+      "status": "verified",
+      "also": [
+        "S31",
+        "S18"
+      ]
     },
     {
       "id": "O4",
@@ -566,7 +606,7 @@
       "what": "At least 80 hours per month of work. The federal rule defines work to include work in exchange for goods or services (“in-kind” work) and expressly says a property manager or building superintendent who receives free or reduced rent can count the hours spent on those duties.",
       "earned": "No cash pay required",
       "hours": "80 hrs/month",
-      "fit": "Strongest fit if you manage the building where you live or receive free/reduced rent for management duties.",
+      "fit": "Potential fit only for documented property-management duties exchanged for free or reduced rent, as in the CMS example. An owner’s routine rental ownership is not automatically this route.",
       "source": "S03",
       "status": "verified",
       "note": "The federal rule is explicit. The county's documentation process for in-kind work is not yet published; keep a duty list, rent-credit agreement, and monthly hours log."
@@ -575,37 +615,44 @@
       "id": "P2",
       "path": "Self-employment work",
       "statute": "42 CFR 435.552(b); DHCS ACWDL 25-30",
-      "what": "At least 80 hours per month of self-employment. DHCS lists self-employment as work. Actively managing rental property can be documented as self-employment activity even if the IRS treats the rental income as passive.",
+      "what": "DHCS lists self-employment work among ways to reach 80 hours in a month. Whether an owner’s management of their own rental property meets that work definition depends on actual duties and county verification; the tax passive-activity label alone does not decide it.",
       "earned": "No W-2 required",
       "hours": "80 hrs/month",
-      "fit": "Good fit if you actively manage your own rental property (showings, leasing, repairs, bookkeeping).",
+      "fit": "Possible if actual, documented management work reaches 80 hours and the county confirms it qualifies; not automatic for ownership alone.",
       "source": "S09",
       "status": "verified-nuance",
-      "note": "The IRS passive-activity label does not decide the Medicaid work test, but the county may ask for proof of the activity. Confirm how your county will count owner-management hours."
+      "note": "Ask the county how owner-management hours are counted and what documentation is accepted; do not claim eligibility from a lease or an IRS schedule alone."
     },
     {
       "id": "P3",
-      "path": "$580/month income from any source",
-      "statute": "SSA §1902(xx)(2)(F); DHCS MEDIL I26-25",
-      "what": "Monthly income of at least $580. DHCS's official member outreach letter says “income from any source of at least $580 (before taxes) in any month since your last renewal.” ACWDL 25-30 says “total gross income.” CMS says states must use MAGI-based monthly household income.",
+      "path": "$580/month household MAGI-based income alternative",
+      "statute": "SSA §1902(xx)(2)(F); WIC §14005.69(e)(6); 42 CFR 435.552(f)",
+      "what": "Monthly income of at least $580, determined using MAGI-based financial methods for the individual’s MAGI-based household budget. DHCS’s earlier letter says “income from any source” and “before taxes”; those phrases do not make gross rent, trading payouts or deposits automatically countable.",
       "earned": "No",
       "hours": "None",
-      "fit": "Good fit if rental, interest, or realized Kalshi gains reach $580 in at least one month per renewal period.",
-      "source": "S10",
+      "fit": "Potentially useful without wages if properly determined countable household income reaches $580 in a qualifying month. Exact rent, interest and Kalshi tax amounts are unknown.",
+      "source": "S42",
       "status": "verified-nuance",
-      "note": "Gross-versus-net and individual-versus-household are not fully aligned across DHCS and CMS. See Flag FL-07 and FL-08."
+      "note": "Enacted California law and CMS require MAGI-based methods. The household and tax classification are unknown; no personal pass is established.",
+      "also": [
+        "S03",
+        "S10"
+      ]
     },
     {
       "id": "P4",
-      "path": "Six-month average for seasonal or fluctuating income",
-      "statute": "SSA §1902(xx)(2)(G); DHCS ACWDL 25-30",
-      "what": "Average monthly income over the preceding six months of at least $580. Federal statute limits this to a “seasonal worker” as defined in IRC §45R(d)(5)(B). DHCS guidance also applies it to people whose hours change frequently or who have seasonal jobs.",
+      "path": "Six-month income average for seasonal workers",
+      "statute": "SSA §1902(xx)(2)(G); WIC §14005.69(e)(7)",
+      "what": "A seasonal worker under IRC §45R(d)(5)(B) may meet the income alternative with an average of at least $580/month over the preceding six months, using the MAGI-based household budget. Earlier preliminary DHCS material uses broader fluctuating-hours language, but the enacted California statute requires seasonal-worker status.",
       "earned": "No",
       "hours": "None",
-      "fit": "Useful if Kalshi or rental income is lumpy and some months fall below $580.",
-      "source": "S07",
+      "fit": "Only if the applicant is a qualifying seasonal worker; lumpy Kalshi or rental income alone does not establish this route.",
+      "source": "S42",
       "status": "verified-nuance",
-      "note": "Federal and state wording differ. The state formulation is broader than the federal seasonal-worker limitation; this is flagged."
+      "note": "Seasonal-worker status for this person has not been established. Use the one-month method or another qualifying activity instead of assuming blanket averaging.",
+      "also": [
+        "S01"
+      ]
     },
     {
       "id": "P5",
@@ -854,18 +901,24 @@
       "category": "California",
       "finding": "DHCS says income from any source counts",
       "value": "“Income from any source of at least $580 (before taxes) in any month since your last renewal”",
-      "detail": "This is the clearest official statement that unearned income can satisfy the work rule. It appears in the member outreach letter enclosed with MEDIL I26-25.",
+      "detail": "DHCS’s member-facing letter uses this wording; AB 2161 later specifies MAGI-based financial methods for the individual’s MAGI-based household budget. It does not make gross payouts or deposits countable by default.",
       "source": "S10",
-      "status": "verified"
+      "status": "verified",
+      "also": [
+        "S42"
+      ]
     },
     {
       "id": "F22",
       "category": "California",
-      "finding": "ACWDL says total gross income for a month",
+      "finding": "Pre-enactment ACWDL describes total gross monthly income",
       "value": "“An individual's total gross income for a month must meet or exceed this amount”",
-      "detail": "ACWDL 25-30 also lists unemployment benefits, State Disability Insurance, retirement income and dividends as countable examples.",
+      "detail": "The preliminary county letter uses this phrase. California’s later enacted AB 2161 §14005.69(e)(6) specifies MAGI-based household financial methods; do not apply the gross wording in isolation.",
       "source": "S09",
-      "status": "verified"
+      "status": "verified",
+      "also": [
+        "S42"
+      ]
     },
     {
       "id": "F23",
@@ -879,20 +932,27 @@
     {
       "id": "F24",
       "category": "California",
-      "finding": "Gross versus net rental income for the $580 test is unresolved",
-      "value": "DHCS ACWDL: gross. CMS slides: MAGI (net).",
-      "detail": "For a rental owner, gross rents and net Schedule E income can differ materially. The site does not assert which figure the county will use. Flagged.",
-      "source": "S09",
-      "status": "flagged"
+      "finding": "Enacted California income method resolves preliminary gross wording",
+      "value": "MAGI-based financial methods for the individual’s MAGI-based household budget",
+      "detail": "Earlier ACWDL 25-30 says total gross income, but enacted AB 2161 §14005.69(e)(6) and CMS require MAGI-based household methods. Actual allowable rental expenses and tax treatment remain person-specific.",
+      "source": "S42",
+      "status": "verified-nuance",
+      "also": [
+        "S03",
+        "S09"
+      ]
     },
     {
       "id": "F25",
       "category": "California",
-      "finding": "California applies six-month averaging more broadly than the federal statute",
-      "value": "DHCS: people whose hours change frequently or who have seasonal jobs. Federal: seasonal workers only.",
-      "detail": "ACWDL 25-30 and MEDIL I26-25 extend averaging to fluctuating income. The federal statute limits the alternative to a seasonal worker under IRC §45R(d)(5)(B). Flagged.",
-      "source": "S10",
-      "status": "flagged"
+      "finding": "California’s enacted seasonal averaging route is limited to seasonal workers",
+      "value": "Seasonal-worker status plus six-month average of at least $580/month",
+      "detail": "AB 2161 §14005.69(e)(7) limits the alternative to a seasonal worker under IRC §45R(d)(5)(B). Earlier county guidance referred more broadly to variable hours; it does not establish a general trading-income averaging rule.",
+      "source": "S42",
+      "status": "verified",
+      "also": [
+        "S01"
+      ]
     },
     {
       "id": "F26",
@@ -934,8 +994,8 @@
       "id": "F30",
       "category": "California",
       "finding": "The $1.1 billion figure is not work-rule implementation money",
-      "value": "Work-rule implementation: $0. Enacted H.R.1 Medi-Cal cost: about $1.3B General Fund (2026-27)",
-      "detail": "The $1.1B figure in the January 2026 budget summary is the projected MCO-tax transition cost, and separately the ongoing General Fund cost of extending full-scope coverage to affected immigrants. Neither is a work-rule fund. The enacted 2026-27 Budget Act highlights reflect about $1.3B General Fund in H.R.1-related Medi-Cal costs; county eligibility workload is funded at $196.8M General Fund.",
+      "value": "The earlier $1.1B figure was not a work-rule allocation; enacted H.R.1-related Medi-Cal costs are about $1.3B General Fund (2026–27)",
+      "detail": "No source establishes a $0 work-rule implementation budget. The January $1.1B figure refers to other specified costs, not a dedicated work-rule allocation; see DHCS enacted Budget Act highlights.",
       "source": "S23",
       "status": "verified"
     },
@@ -996,11 +1056,14 @@
     {
       "id": "F37",
       "category": "Income",
-      "finding": "Rental income for the $580 test may be counted gross or net",
-      "value": "Unresolved",
-      "detail": "DHCS ACWDL 25-30 says total gross income; CMS says MAGI-based monthly household income. The site flags this rather than inferring a value.",
-      "source": "S09",
-      "status": "flagged"
+      "finding": "This person’s countable monthly rental amount for the $580 test",
+      "value": "",
+      "detail": "Enacted law specifies MAGI-based household methods; IRS Publication 527 discusses rental receipts and allowable expenses. No rent ledger, expenses, household facts or verified tax reporting were supplied, so leave the amount blank.",
+      "source": "S42",
+      "status": "unverified",
+      "also": [
+        "S27"
+      ]
     },
     {
       "id": "F38",
@@ -1014,11 +1077,11 @@
     {
       "id": "F39",
       "category": "Income",
-      "finding": "Kalshi trading gains are taxable income under IRC §61",
-      "value": "Yes, when recognized",
-      "detail": "There is no exclusion for event-contract gains. The open question is how they are classified, not whether they are taxable.",
+      "finding": "Taxable event-contract gains: amount and character unresolved",
+      "value": "Taxable if recognized under applicable federal tax rules; this person’s amount and category are undetermined",
+      "detail": "General tax rules include recognized gains in income, but no Kalshi-specific classification is established here. Do not label a particular payout, gross proceeds or a net result taxable without transaction and tax facts.",
       "source": "S28",
-      "status": "verified"
+      "status": "verified-nuance"
     },
     {
       "id": "F40",
@@ -1032,11 +1095,11 @@
     {
       "id": "F41",
       "category": "Income",
-      "finding": "Kalshi's tax forms do not report event-contract trading profit",
-      "value": "1099-INT (interest), 1099-MISC (credits/rewards), 1099-B (crypto transfers), 1099-DA (ZeroHash digital assets); P&L statement for trading",
-      "detail": "Kalshi's own help center lists those four forms. None is described as reporting event-contract trading profit or loss; the P&L statement is a tool, not a tax form.",
+      "finding": "Tax-form reporting of Kalshi event-contract profit",
+      "value": "",
+      "detail": "The IRS recordkeeping page explains how to substantiate income and deductions; it does not establish what 1099, if any, this platform issues for event contracts. Platform practices and the relevant tax form remain unverified by an official government publication.",
       "source": "S21",
-      "status": "verified"
+      "status": "unverified"
     },
     {
       "id": "F42",
@@ -1050,11 +1113,11 @@
     {
       "id": "F43",
       "category": "Income",
-      "finding": "Gambling treatment is the worst outcome for a trader",
-      "value": "Winnings are gross income; losses are itemized deductions only up to winnings; the 90% loss cap applies for tax years after 2025",
-      "detail": "H.R.1 §70114 amended IRC §165(d) to limit wagering-loss deductions to 90% of losses. If Kalshi gains were treated as gambling, a break-even trader could owe tax on phantom income.",
+      "finding": "Conditional wagering-loss rules (Kalshi application unresolved)",
+      "value": "IRC §165(d) generally limits wagering losses to 90% after 2025 if wagering treatment applies",
+      "detail": "This is a conditional statutory rule, not a classification of Kalshi contracts or a prediction of this person’s tax bill. Gambling treatment has not been established.",
       "source": "S02",
-      "status": "verified"
+      "status": "verified-nuance"
     },
     {
       "id": "F44",
@@ -1097,7 +1160,7 @@
       "category": "Income",
       "finding": "A lump sum counts in the month received",
       "value": "Yes",
-      "detail": "42 CFR 435.603(e)(1) counts a lump sum as income only in the month received. This can matter for a large Kalshi payout or a retroactive rent payment.",
+      "detail": "42 CFR 435.603(e)(1) generally counts a taxable lump sum in the month received. This does not mean an entire Kalshi payout is automatically a taxable lump sum; its tax character and basis remain unknown.",
       "source": "S33",
       "status": "verified"
     },
@@ -1213,9 +1276,9 @@
       "id": "F61",
       "category": "Coverage",
       "finding": "400% FPL for a single adult in 2026",
-      "value": "$63,840/year",
-      "detail": "Four times the 2026 HHS poverty guideline of $15,960.",
-      "source": "S17",
+      "value": "$62,600/year (2026 marketplace coverage; 2025 FPL reference)",
+      "detail": "Covered California’s 2026 Open Enrollment Highlights explicitly states 400% FPL is $62,600 for one individual and $128,600 for a family of four in 2026. The 2027 marketplace reference uses $63,840 for one person.",
+      "source": "S41",
       "status": "verified"
     },
     {
@@ -1289,6 +1352,24 @@
       "detail": "A person entitled to or enrolled in Medicare Part A, or enrolled in Part B, is excepted from the community engagement requirement.",
       "source": "S05",
       "status": "verified"
+    },
+    {
+      "id": "F70",
+      "category": "Covered California",
+      "finding": "400% FPL marketplace reference for one person in 2027",
+      "value": "$63,840/year (2027 marketplace; 2026 FPL reference)",
+      "detail": "Covered California uses the previous year’s poverty guideline for marketplace eligibility. This is not the 2026 coverage-year cliff.",
+      "source": "S43",
+      "status": "verified"
+    },
+    {
+      "id": "F71",
+      "category": "Medi-Cal",
+      "finding": "2027 MAGI Medi-Cal 138% FPL dollar limit for this household",
+      "value": "",
+      "detail": "The cited DHCS chart is for 2026 only, and household size is not supplied. Do not reuse the marketplace 2027 reference as a future Medi-Cal limit.",
+      "source": "S15",
+      "status": "unverified"
     }
   ],
   "ca_actions": [
@@ -1449,11 +1530,11 @@
     },
     {
       "id": "FL-03",
-      "item": "Kalshi does not issue a 1099 for event-contract trading profit",
-      "issue": "Kalshi's help center lists 1099-INT, 1099-MISC, 1099-B (crypto transfers) and 1099-DA (ZeroHash). None is described as reporting event-contract profit or loss.",
-      "impact": "You must reconstruct basis and proceeds from your own records or Kalshi's P&L statement.",
+      "item": "Tax form for Kalshi event-contract trading is not verified",
+      "issue": "An official federal source describing what 1099, if any, Kalshi issues for event-contract results was not established. General IRS recordkeeping guidance does not specify this platform’s forms.",
+      "impact": "Keep complete transactions, basis and proceeds records; obtain qualified tax advice without assuming a missing 1099 means no tax duty.",
       "source": "S21",
-      "status": "open"
+      "status": "unverified"
     },
     {
       "id": "FL-04",
@@ -1481,27 +1562,37 @@
     },
     {
       "id": "FL-07",
-      "item": "Gross versus net rental income for the $580 test",
-      "issue": "DHCS ACWDL 25-30 says “total gross income.” CMS says states must use MAGI-based monthly household income, which uses net rental income. The two are not the same for a rental owner.",
-      "impact": "A property with high gross rents and high expenses could pass one test and fail the other.",
-      "source": "S09",
-      "status": "open"
+      "item": "Preliminary gross-income wording versus enacted MAGI method",
+      "issue": "ACWDL 25-30 says “total gross income,” but later-enacted AB 2161 §14005.69(e)(6) requires MAGI-based financial methods for the individual’s household budget. The actual rent/expenses and tax reporting are unknown.",
+      "impact": "Use the enacted MAGI-based method, not gross rent receipts or bank deposits. Ask the county to apply the later statute to the documented household income.",
+      "source": "S42",
+      "status": "open",
+      "also": [
+        "S03",
+        "S09"
+      ]
     },
     {
       "id": "FL-08",
-      "item": "Individual versus household income for the $580 test",
-      "issue": "CMS says MAGI-based monthly household income; DHCS's member letter says “your income” and “any source.”",
-      "impact": "A spouse's or tax dependent's income could matter. The reader's household is unknown.",
-      "source": "S10",
-      "status": "open"
+      "item": "Household composition for the $580 income alternative is unknown",
+      "issue": "Enacted AB 2161 §14005.69(e)(6) refers to the individual’s MAGI-based household budget. The outreach letter’s “your income” wording does not establish a single-person household.",
+      "impact": "The household and tax-filing facts were not supplied. Ask the county how income from household members is counted.",
+      "source": "S42",
+      "status": "open",
+      "also": [
+        "S10"
+      ]
     },
     {
       "id": "FL-09",
-      "item": "Federal seasonal-only averaging versus California's broader averaging",
-      "issue": "The federal statute limits the six-month average to a seasonal worker under IRC §45R(d)(5)(B). DHCS extends it to people whose hours change frequently or who have seasonal jobs.",
-      "impact": "A Kalshi trader with lumpy income may be able to use the state formulation, but the federal limitation creates risk.",
-      "source": "S07",
-      "status": "open"
+      "item": "Seasonal-worker status is not established for this applicant",
+      "issue": "Federal law and enacted AB 2161 §14005.69(e)(7) require a seasonal worker for the six-month average. Earlier preliminary DHCS material mentioned variable hours, but lumpy Kalshi trading by itself is not proof of seasonal work.",
+      "impact": "Do not average six trading months as an automatic fallback; establish seasonal-worker status or use another route.",
+      "source": "S42",
+      "status": "open",
+      "also": [
+        "S01"
+      ]
     },
     {
       "id": "FL-10",
@@ -1622,6 +1713,33 @@
       "impact": "Corrected on the primary pages.",
       "source": "S15",
       "status": "closed"
+    },
+    {
+      "id": "FL-25",
+      "item": "Earlier core used a 2027 marketplace FPL figure for 2026 coverage",
+      "issue": "The 2026 Covered California Open Enrollment Highlights explicitly places 400% FPL at $62,600 for one individual in plan year 2026. The $63,840 reference belongs to 2027 marketplace coverage.",
+      "impact": "The primary dashboard, findings and coverage bands now separate the two plan years.",
+      "source": "S41",
+      "also": [
+        "S43"
+      ],
+      "status": "closed"
+    },
+    {
+      "id": "FL-26",
+      "item": "2027 Medi-Cal income limit for this household",
+      "issue": "A 2026 DHCS Medi-Cal chart and a 2027 marketplace FPL chart do not determine the 2027 Medi-Cal limit. The applicant’s household size is unknown.",
+      "impact": "The future Medi-Cal dollar amount is blank, not copied from a different year or program.",
+      "source": "S15",
+      "status": "unverified"
+    },
+    {
+      "id": "FL-27",
+      "item": "Earlier third-party California coverage-loss forecasts not reverified",
+      "issue": "Older detail pages quoted CHCF, urban-model and news figures with no directly linked official underlying model. Only DHCS’s own enacted-budget projections are carried as published values here; other figures remain blank.",
+      "impact": "Statewide model outputs are not this person’s coverage outcome. Compare DHCS work-rule and all-H.R.1 projections separately.",
+      "source": "S23",
+      "status": "unverified"
     }
   ],
   "action_plan": [
@@ -1664,7 +1782,7 @@
     {
       "step": 7,
       "action": "Get the Kalshi tax classification reviewed before you file",
-      "detail": "The choice between capital, ordinary, section 1256 and gambling treatment changes MAGI, loss netting and the 90% cap. Keep your own basis and proceeds records; Kalshi does not issue a 1099 for event-contract profit.",
+      "detail": "Federal classification affects household MAGI and loss treatment. Keep complete event-contract transaction, basis and proceeds records; an official source has not established which 1099 form (if any) Kalshi issues for those results.",
       "source": "S21"
     }
   ]

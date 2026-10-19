@@ -4,13 +4,13 @@
     {
       "id": "at-a-glance",
       "heading": "Your situation at a glance",
-      "intro": "Four findings decide everything else on this site. Each one is quoted from an official source, linked in the table.",
+      "intro": "Rules and gaps for the stated profile, not a county eligibility determination. For corrected 2026/2027 FPL years and statutory income methods see the <a href=\"accuracy-93fdc24b.html\">dated accuracy update</a>.",
       "table": "at-a-glance"
     },
     {
       "id": "decision-table",
       "heading": "What you can get, by income band",
-      "intro": "Medi-Cal and Covered California use the same application and the same household-income measure (MAGI). Find the row that matches your household income. Amounts are 2026 Federal Poverty Level based.",
+      "intro": "Program reference years differ: 2026 Medi-Cal uses the 2026 DHCS chart; 2026 marketplace uses its own 2026 plan-year reference. Other eligibility and household facts still matter. <a href=\"accuracy-93fdc24b.html#limits\">Year-specific source table</a>.",
       "table": "decision"
     },
     {
@@ -23,21 +23,20 @@
       "id": "do-now",
       "heading": "What to do now",
       "list": [
-        "<strong>Estimate your MAGI household income for 2026</strong> (not just your paychecks): net rental income, savings interest, and any net trading gains count. See <a href=\"income-counting.html\">Income counting</a>. If it is $22,025 or less for a one-person household, you are inside the Medi-Cal limit ($1,836/month).",
-        "<strong>Apply to Medi-Cal (or Covered California) right now.</strong> Medi-Cal can be applied for at any time of year — not just during open enrollment. One application screens you for both programs. See <a href=\"apply.html\">Apply</a>.",
-        "<strong>Count your monthly income against the $580 test.</strong> You do not need earned income. The rule accepts \"an income from any source of at least $580 (before taxes) in any month\" — rental income, interest and trading income all count. See <a href=\"work-requirements.html\">Work rules</a>.",
-        "<strong>Line up a fallback of 80 hours.</strong> If a month falls under $580, volunteering, community service, a work program, or half-time school in that month satisfies the rule. School can be combined with the other hours.",
-        "<strong>Check for an exemption.</strong> A qualifying disability, caregiving for a child 13 or younger or a disabled person, pregnancy, CalFresh or CalWORKs work-requirement compliance, veteran with a total disability, tribal membership, and high-unemployment-county residence can excuse you entirely."
+        "<strong>Gather actual household income records</strong> — taxable rental results, savings interest and full event-contract trading records. The person's Kalshi tax character is not established here. See <a href=\"income-counting.html\">income sources and flags</a>.",
+        "<strong>Apply for a real determination</strong> through <a href=\"https://www.dhcs.ca.gov/medi-cal/apply/\">DHCS</a> or <a href=\"https://www.coveredca.com/\">Covered California</a>. Medi-Cal accepts applications year-round; marketplace enrollment has its own window/SEP.",
+        "<strong>Assess the work-rule month separately</strong> if you are a covered adult beginning January 2027: monthly income must be determined using MAGI-based household methods under <a href=\"https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202520260AB2161\">§14005.69(e)(6)</a>, not gross deposits. Averaging is specified for seasonal workers.",
+        "<strong>Consider other verified routes and exceptions</strong> rather than inventing work hours or medical/seasonal status. See <a href=\"work-requirements.html\">work-rule options</a> and <a href=\"flagged.html\">unresolved items</a>."
       ]
     },
     {
       "id": "limits",
       "heading": "What this site does and does not do",
       "list": [
-        "Every number on this site comes from a federal, state, or Covered California source and links to it.",
-        "Your own income figures, county of residence, age, disability status, and immigration history are facts I cannot see. The tables are built around the thresholds, not around assumptions about you.",
-        "Values that could not be confirmed from an official source are left blank and listed on the <a href=\"flagged.html\">Flagged for Review</a> page rather than estimated.",
-        "This is research, not legal, tax, or immigration advice. For your own case, ask your county Medi-Cal office (DHCS: <a href=\"https://www.dhcs.ca.gov/medi-cal/contact/find-a-county-office/\">find a county office</a>) and a tax professional."
+        "Independent sections were written at different times; older \"verified\" labels are not a fresh certification. Use the <a href=\"accuracy-93fdc24b.html\">current accuracy update</a> and <a href=\"audit-6fc18b58.html\">independent audit</a> when a statement conflicts.",
+        "Age, household composition, actual countable income, Kalshi tax characterization and county determination are not given. Do not infer them.",
+        "Unconfirmed values are blank where corrected and visible at <a href=\"flagged.html\">Flagged for Review</a>. Legacy exceptions are also inventoried on the independent audit.",
+        "Research only, not legal/tax/benefits advice; apply through <a href=\"https://www.dhcs.ca.gov/medi-cal/apply/\">DHCS</a> for a case decision."
       ]
     }
   ]

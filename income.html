@@ -1,210 +1,46 @@
 <!doctype html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Income Types — How Each Income Is Counted — California Healthcare Guide</title>
-<link rel="stylesheet" href="site/assets/style.css">
-</head>
-<body>
-<div class="topbar"><div class="topbar-inner"><div class="brand"><div class="brand-badge">CA</div><div><h1>California Healthcare & Work Requirements</h1><p>Income Deep Dive — IRS, MAGI, Work Test</p></div></div>
-<nav class="nav"><a href="index.html">Dashboard</a><a href="law.html">The Law</a><a href="california.html">California</a><a class="active" href="income.html">Income Types</a><a href="pathways.html">0-Earned Playbook</a><a href="exemptions.html">Exemptions</a><a href="verification.html">Verification</a><a href="flagged.html">Flagged for Review</a>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Rent, interest &amp; Kalshi: what counts · California healthcare</title>
+<link rel="stylesheet" href="site/assets/style.css"></head><body>
+<div class="topbar"><div class="topbar-inner"><div class="brand"><div class="brand-badge">CA</div><div><h1>California Healthcare &amp; Work Requirements</h1><p>Income types · sourced rules, unverified personal amounts</p></div></div>
+<nav class="nav" aria-label="Site"><a href="index.html">Dashboard</a><a href="law.html">The Law</a><a href="california.html">California</a><a class="active" href="income.html">Income Types</a><a href="pathways.html">Work Routes</a><a href="flagged.html">Flagged for Review</a><a href="accuracy-93fdc24b.html">Accuracy Update</a>
       <!-- integration-links --><a href="overview.html">Extended Analysis</a><a href="research/index.html">Research Dashboard</a><a href="coverage-guide/index.html">Coverage Guide</a><a href="docs/index.html">Docs Dashboard</a><!-- /integration-links -->
     </nav></div></div>
-
-<div class="wrap">
-  <div class="hero-card" style="margin-top:16px">
-    <div class="eyebrow">IRS Classification vs. Medi-Cal MAGI vs. $580 Work Test</div>
-    <h2>How Rental, Interest & Kalshi Income Are Counted</h2>
-    <p class="lead">Three different lenses: (1) how the IRS labels it (earned vs. unearned), (2) whether it raises your MAGI toward the Medi-Cal income <em>limit</em>, and (3) whether it satisfies the <em>work-requirement income test</em>. They are not the same question. Your three income streams all count for (2) and (3) — which is what matters.</p>
-    <div class="alert info"><strong>Key distinction:</strong> The IRS calls rental, interest, and investment gains “unearned income” — but Medi-Cal and the work test still count them. “Unearned” does not mean “not counted.” It only means “not from active labor” for tax purposes.</div>
-  </div>
-
-  <h3 class="section-title">Master Income Table — Every Type That Matters to You</h3>
-  <p class="hint">Columns: IRS earned? · Counts in MAGI (affects Medi-Cal eligibility limit)? · Counts for $580 work test (alternative to 80 hrs)? Every row has a source; unverified rows flagged.</p>
-  <div class="table-wrap"><table>
-    <thead><tr><th>Income Type</th><th>IRS: Earned?</th><th>Counts in MAGI?</th><th>Counts for $580 Work Test?</th><th>How It’s Reported</th><th>Source</th><th>Status</th></tr></thead>
-    <tbody>
-      <tr>
-        <td><strong>Rental real estate — net (your main passive)</strong></td>
-        <td><span class="badge bad">No — unearned</span> (IRS Pub 525; Sch E)</td>
-        <td><span class="badge ok">Yes — net</span> (gross rents − mortgage interest, taxes, insurance, repairs, depreciation)</td>
-        <td><span class="badge ok">Yes</span> — gross rental added to monthly income tally</td>
-        <td>Schedule E (net); losses can reduce MAGI</td>
-        <td><a href="https://www.irs.gov/publications/p525" target="_blank">IRS Pub 525</a> · <a href="https://www.dhcs.ca.gov/wp-content/uploads/2025/10/MAGI20Income20Sources2009-05-13.pdf" target="_blank">DHCS MAGI Sources (line 17, Sch E → Count)</a></td>
-        <td><span class="tag verified">✓ Verified</span></td>
-      </tr>
-      <tr>
-        <td><strong>Savings account interest (including tax-exempt)</strong></td>
-        <td><span class="badge bad">No — unearned</span> (Form 1099-INT)</td>
-        <td><span class="badge ok">Yes — gross</span> (taxable + tax-exempt added back)</td>
-        <td><span class="badge ok">Yes</span></td>
-        <td>Form 1040 lines 8a+8b; 1099-INT box 1/3</td>
-        <td><a href="https://www.irs.gov/publications/p525" target="_blank">IRS Pub 525</a> · <a href="https://www.dhcs.ca.gov/wp-content/uploads/2026/07/MAGI-INCOME-AND-DEDUCTION-TYPES.pdf" target="_blank">DHCS MAGI chart: Interest → Count Gross</a></td>
-        <td><span class="tag verified">✓ Verified</span></td>
-      </tr>
-      <tr id="kalshi" style="background:#fffbeb">
-        <td><strong>Kalshi event contracts — Capital gains treatment</strong> <em>(most common practitioner position)</em></td>
-        <td><span class="badge bad">No — unearned</span></td>
-        <td><span class="badge ok">Yes — net</span> (gains − losses netted; up to $3k net loss offsets other income/yr; carryforward thereafter)</td>
-        <td><span class="badge ok">Yes</span> — capital gains are listed as countable income on DHCS/Covered CA job aids</td>
-        <td>Form 8949 → Sch D (short-term if held ≤1 yr; most Kalshi trades are). Net gains counted.</td>
-        <td><a href="https://www.dhcs.ca.gov/wp-content/uploads/2025/10/MAGI20Income20Sources2009-05-13.pdf" target="_blank">DHCS MAGI (Sch D → Count)</a> · <a href="https://www.dhcs.ca.gov/wp-content/uploads/2026/07/MAGI-INCOME-AND-DEDUCTION-TYPES.pdf" target="_blank">DHCS Chart — Cap Gains → Count</a></td>
-        <td><span class="tag flagged">⚠ IRS has NO ruling — majority practitioner consensus, not official</span></td>
-      </tr>
-      <tr style="background:#fef2f2">
-        <td><strong>Kalshi — Gambling treatment</strong> <em>(risk for sports bets)</em></td>
-        <td><span class="badge bad">No — unearned</span></td>
-        <td><span class="badge bad">Yes — GROSS (worst)</span> (winnings counted at gross; losses are Schedule A itemized deductions → do NOT reduce MAGI)</td>
-        <td><span class="badge ok">Yes</span> — but inferred; not explicitly listed in DHCS income-test examples</td>
-        <td>Sch 1 Line 8b (winnings); Sch A line 16 (losses, ≤ winnings, ≤90% of losses from 2026). Break-even on $100k/$100k → $10k phantom taxable.</td>
-        <td><a href="https://www.irs.gov/publications/p525" target="_blank">IRS Pub 525 Gambling</a> · <a href="https://www.congress.gov/bill/119th-congress/house-bill/1/text" target="_blank">H.R.1 §70114 (90% cap from 2026)</a></td>
-        <td><span class="tag flagged">⚠ Risk position — increases your MAGI vs. capital treatment</span></td>
-      </tr>
-      <tr style="background:#fef2f2">
-        <td><strong>Kalshi — §1256 treatment</strong> <em>(aggressive)</em></td>
-        <td><span class="badge bad">No — unearned</span></td>
-        <td><span class="badge ok">Yes — net</span> (60% LTCG / 40% STCG, mark-to-market year-end; phantom income on open positions)</td>
-        <td><span class="badge ok">Yes</span></td>
-        <td>Form 6781. Blended rate ~26.8% at top bracket.</td>
-        <td><a href="https://www.irs.gov/publications/p550" target="_blank">IRS Pub 550 (§1256)</a> — list does NOT name Kalshi-type contracts; <a href="https://www.monacocpa.cpa/post/prediction-market-taxes-kalshi-polymarket-robinhood" target="_blank">Practitioner note →</a></td>
-        <td><span class="tag flagged">⚠ Unverified / aggressive — CFTC DCM ≠ auto §1256 status per IRC §1256(g)(1)</span></td>
-      </tr>
-      <tr>
-        <td><strong>Property management fees (self-employment)</strong></td>
-        <td><span class="badge ok">Yes — earned</span> (Schedule C; SE tax 15.3% if net ≥$400)</td>
-        <td><span class="badge ok">Yes — net</span> (gross fees − ordinary & necessary expenses)</td>
-        <td><span class="badge ok">Yes — both as income AND as 80-hr work hours</span></td>
-        <td>Schedule C line 1; SE on Schedule SE</td>
-        <td><a href="https://www.irs.gov/businesses/small-businesses-self-employed/self-employed-individuals-tax-center" target="_blank">IRS SE Center</a></td>
-        <td><span class="tag verified">✓ Verified</span></td>
-      </tr>
-      <tr>
-        <td><strong>Unemployment (EDD/UI)</strong></td>
-        <td><span class="badge bad">No — unearned</span> (1099-G; federal taxable, CA-exempt)</td>
-        <td><span class="badge ok">Yes</span></td>
-        <td><span class="badge ok">Yes — explicitly listed in DHCS ACWDL 25-30</span></td>
-        <td>Form 1040; 1099-G box 1</td>
-        <td><a href="https://www.dhcs.ca.gov/wp-content/uploads/2026/04/25-30.pdf" target="_blank">DHCS ACWDL 25-30, p.7 (unemployment benefits counted)</a></td>
-        <td><span class="tag verified">✓ Verified</span></td>
-      </tr>
-      <tr>
-        <td><strong>SSDI / Social Security / retirement / pension</strong></td>
-        <td><span class="badge bad">No — unearned</span></td>
-        <td><span class="badge ok">Yes</span> (taxable + non-taxable SS added back)</td>
-        <td><span class="badge ok">Yes</span> — listed in DHCS income-test examples</td>
-        <td>Form 1040 lines 12a/12b; SSA-1099</td>
-        <td><a href="https://www.medicaid.gov/federal-policy-guidance/downloads/cib12082025.pdf" target="_blank">Medicaid CIB 12/08/2025</a></td><td><span class="tag verified">✓ Verified</span></td>
-      </tr>
-      <tr>
-        <td>Dividends (qualified/ordinary)</td><td><span class="badge bad">No</span></td><td><span class="badge ok">Yes</span></td><td><span class="badge ok">Yes</span></td><td>1099-DIV → Sch B / 1040 line 9</td><td><a href="https://www.dhcs.ca.gov/wp-content/uploads/2026/07/MAGI-INCOME-AND-DEDUCTION-TYPES.pdf" target="_blank">DHCS MAGI chart</a></td><td><span class="tag verified">✓ Verified</span></td></tr>
-      <tr>
-        <td>Wages / salaries / tips</td><td><span class="badge ok">Yes</span></td><td><span class="badge ok">Yes</span></td><td><span class="badge ok">Yes</span></td><td>W-2</td><td><a href="https://www.irs.gov/publications/p525" target="_blank">IRS Pub 525</a></td><td><span class="tag verified">✓ Verified</span></td></tr>
-      <tr style="opacity:0.85">
-        <td>Gifts / inheritance (one-time)</td><td><span class="badge bad">No</span></td><td><span class="badge bad">No — NOT counted</span></td><td><span class="badge bad">No</span></td><td>Not reported</td><td><a href="https://www.medicaid.gov/state-resource-center/mac-learning-collaboratives/downloads/part-2-income.pdf" target="_blank">CMS MAGI-2 Income PDF</a></td><td><span class="tag verified">✓ Verified</span></td></tr>
-      <tr style="opacity:0.85">
-        <td>Child support received</td><td><span class="badge bad">No</span></td><td><span class="badge bad">No</span></td><td><span class="badge bad">No</span></td><td>Not reported</td><td><a href="https://www.medicaid.gov/state-resource-center/mac-learning-collaboratives/downloads/part-2-income.pdf" target="_blank">CMS MAGI-2 Income PDF</a></td><td><span class="tag verified">✓ Verified</span></td></tr>
-      <tr style="opacity:0.85">
-        <td>SNAP / TANF / SSI / workers' comp</td><td><span class="badge bad">No</span></td><td><span class="badge bad">No</span></td><td><span class="badge bad">No</span></td><td>Not reported</td><td><a href="https://www.medicaid.gov/state-resource-center/mac-learning-collaboratives/downloads/part-2-income.pdf" target="_blank">CMS MAGI-2 Income PDF</a></td><td><span class="tag verified">✓ Verified</span></td></tr>
-    </tbody>
-  </table></div>
-
-  <h3 class="section-title" id="kalshi">Kalshi Deep Dive — Why Classification Changes Everything</h3>
-  <div class="alert warn"><strong>The IRS has issued NO Revenue Ruling, Treasury Regulation, Notice, Private Letter Ruling, or FAQ on Kalshi event contracts as of Oct 2026.</strong> Multiple practitioner guides state this explicitly (Thomson Reuters, CountDeFi, awaken.tax, Monaco CPA, Camuso CPA, GreenTraderTax, KPMG). The exchange’s CFTC DCM status does NOT decide the tax treatment.</div>
-
-  <div class="table-wrap" style="margin-top:12px"><table>
-    <thead><tr><th>Classification</th><th>Where Reported</th><th>Gains Taxed</th><th>Losses</th><th>90% Gambling Cap from 2026?</th><th>MAGI Effect</th><th>Work Test?</th><th>Likelihood / Notes</th></tr></thead>
-    <tbody>
-      <tr>
-        <td><strong>Capital gains (Schedule D)</strong> — short-term</td>
-        <td>8949 → D</td>
-        <td>Ordinary rates (10-37%) on net; most Kalshi trades are short-term anyway</td>
-        <td>Net losses offset gains; up to $3k/yr vs. ordinary income; carry forward</td>
-        <td><span class="badge ok">No</span></td>
-        <td>Net gains only — <strong>most favorable for MAGI</strong></td>
-        <td>Yes</td>
-        <td>Most common in practice; best MAGI + loss flexibility</td>
-      </tr>
-      <tr style="background:#fef2f2">
-        <td><strong>Gambling (Schedule 1 + A)</strong></td>
-        <td>1-8b (winnings) + Schedule A (losses)</td>
-        <td>Ordinary rates on <strong>gross</strong> winnings</td>
-        <td>Only if itemize; capped at winnings; from 2026 only 90% of losses deductible → $100k/$100k break-even still taxed on $10k</td>
-        <td><span class="badge bad">YES — OBBBA §70114</span></td>
-        <td>Gross winnings — <strong>least favorable</strong>; losses do NOT reduce MAGI</td>
-        <td>Yes (but not explicit in DHCS list)</td>
-        <td>Risk highest for sports contracts; states (NV) arguing Kalshi sports = gambling</td>
-      </tr>
-      <tr style="background:#fef2f2">
-        <td><strong>§1256 (Form 6781)</strong> — 60/40</td>
-        <td>6781 → Schedule D</td>
-        <td>~26.8% blended top rate (60% LTCG + 40% STCG)</td>
-        <td>3-yr carryback available; mark-to-market creates year-end phantom income on open positions</td>
-        <td><span class="badge ok">No</span></td>
-        <td>Net marked-to-market</td>
-        <td>Yes</td>
-        <td>Aggressive — requires mark-to-market daily settlement test per IRC §1256(g)(1); venue alone insufficient</td>
-      </tr>
-      <tr>
-        <td><strong>Ordinary (other income)</strong></td>
-        <td>Schedule 1, Line 8z</td>
-        <td>Ordinary rates</td>
-        <td>Narrow; whether netting allowed is unresolved</td>
-        <td><span class="badge ok">No</span></td>
-        <td>Depends</td>
-        <td>Yes</td>
-        <td>Conservative default in some consumer guides</td>
-      </tr>
-    </tbody>
-  </table></div>
-
-  <div class="grid2" style="margin-top:14px">
-    <div class="card">
-      <h3>What Kalshi Actually Reports to You (and the IRS)</h3>
-      <div class="table-wrap"><table>
-        <thead><tr><th>Kalshi Form</th><th>What It Covers</th><th>Does It Cover Trading Gains?</th></tr></thead>
-        <tbody>
-          <tr><td>1099-INT</td><td>Interest paid on your cash balance</td><td><span class="badge bad">No</span></td></tr>
-          <tr><td>1099-MISC</td><td>Credits and rewards</td><td><span class="badge bad">No</span></td></tr>
-          <tr><td>1099-B / 1099-DA</td><td>Crypto transfers via ZeroHash</td><td><span class="badge bad">No</span></td></tr>
-          <tr><td>P&L statement (FIFO)</td><td>Trading activity by year — fees, rebates</td><td><span class="badge warn">Not a tax form — self-report basis</span></td></tr>
-        </tbody>
-      </table></div>
-      <p class="hint">Source: <a href="https://www.countdefi.com/blog/kalshi-taxes" target="_blank">CountDeFi Kalshi Taxes 2026 →</a> and <a href="https://camusocpa.com/kalshi-tax-reporting/" target="_blank">Camuso CPA →</a>. <strong>You must self-track cost basis and proceeds for every trade; the IRS expects you to report even without a 1099.</strong></p>
-    </div>
-    <div class="card">
-      <h3>For Your Situation — Recommendation</h3>
-      <p><strong>If you trade primarily non-sports contracts</strong> (economics, Fed rates, weather, indices, politics): capital-gains treatment is the defensible mainstream and is <strong>best for MAGI</strong> (keeps you in Medi-Cal or subsidy-eligible) and for loss netting. Document holding periods.</p>
-      <p style="margin-top:8px"><strong>If you trade sports contracts:</strong> understand you carry higher gambling-classification risk and the 90% loss-cap phantom income. Keep immaculate records and consider a CPA letter supporting your filing position.</p>
-      <p style="margin-top:8px"><strong>The $580 work test is independent of which tax treatment you choose.</strong> DHCS will look at countable monthly income from any source — you can document income via bank deposits + P&L even if the IRS classification is later disputed.</p>
-      <div class="alert ok" style="margin-top:10px">For MAGI: <strong>net Kalshi gain</strong> under capital treatment is what raises your MAGI. A $30k rental + $10k Kalshi net + $1k interest = $41k annual MAGI — well above Medi-Cal but squarely in <strong>Covered California subsidies</strong>. A $8k rental + $2k interest + $1k Kalshi net = $11k — <strong>Medi-Cal</strong> (pass $580 work test in months you received income).</div>
-    </div>
-  </div>
-
-  <h3 class="section-title">Rental Income — What’s “Net”?</h3>
-  <div class="card">
-    <p>Medi-Cal and Covered CA count <strong>net</strong> rental income: gross rents minus allowable expenses on Schedule E.</p>
-    <div class="table-wrap" style="margin-top:10px"><table>
-      <thead><tr><th>Schedule E Item</th><th>Counts?</th><th>Effect on MAGI / Work Test</th></tr></thead>
-      <tbody>
-        <tr><td>Gross rents collected</td><td>Gross</td><td>Starting point</td></tr>
-        <tr><td>Mortgage interest, property tax, insurance</td><td>Deductible</td><td>Lowers countable rental income</td></tr>
-        <tr><td>Repairs, maintenance, management fees, utilities (if landlord-paid)</td><td>Deductible</td><td>Lowers countable rental income</td></tr>
-        <tr><td>Depreciation</td><td>Deductible on paper</td><td>Can create a Schedule E “loss” even with positive cash flow — this <strong>lowers MAGI</strong> while cash flow still satisfies $580 work test</td></tr>
-        <tr><td>Vacancy loss / uncollected rent</td><td>Not collected = not counted</td><td>0 in that month</td></tr>
-        <tr><td>Security deposits (not forfeited)</td><td>Not income until applied/forfeited</td><td>Not counted until forfeited</td></tr>
-      </tbody>
-    </table></div>
-    <p class="hint">Source: <a href="https://www.irs.gov/publications/p527" target="_blank">IRS Publication 527 — Residential Rental Property</a> · <a href="https://www.dhcs.ca.gov/wp-content/uploads/2025/10/MAGI20Income20Sources2009-05-13.pdf" target="_blank">DHCS MAGI Sources: Rental real estate → Count, 1040 line 17 (Sch E)</a></p>
-  </div>
-
-  <div class="card" style="margin-top:14px">
-    <h3>Unearned vs. Earned — The IRS Definition</h3>
-    <p>Per IRS <a href="https://www.irs.gov/instructions/i8615" target="_blank">Instructions for Form 8615</a> and <a href="https://www.irs.gov/individuals/international-taxpayers/foreign-earned-income-exclusion-what-is-foreign-earned-income" target="_blank">Foreign Earned Income Exclusion page</a>:</p>
-    <p style="margin-top:8px"><strong>Earned:</strong> wages, salaries, tips, professional fees, other amounts received as pay for personal services actually performed — plus ≤30% of net business profits when capital is a material income-producing factor (e.g., property sales with personal services). · <strong>Unearned:</strong> dividends, interest, capital gains, gambling winnings, rents, royalties, pensions, annuities, alimony (pre-2019), Social Security benefits. Rental income is unearned unless personal services are performed in connection with rent production.</p>
-    <p class="hint">This classification matters for IRA contribution eligibility, EITC, and self-employment tax — <strong>not</strong> for whether you can pass the Medi-Cal $580 income test. The work test deliberately drops the earned/unearned distinction.</p>
-  </div>
+<main class="wrap">
+<div class="hero-card" style="margin-top:24px;border-left:4px solid #2563eb">
+  <div class="eyebrow">IRS + DHCS + enacted California law · 18 October 2026</div>
+  <h2>Tax character and countable amount come before the $580 question.</h2>
+  <p class="lead">For MAGI Medi-Cal and marketplace coverage, it is incorrect to add up gross rent deposits, full event-contract payouts and bank balances. California's work-rule income alternative uses <strong>MAGI-based household financial methods</strong>, not an earnings-only test but not a cash-receipts test either. [<a href="https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202520260AB2161">§14005.69(e)(6)</a> · <a href="https://www.federalregister.gov/documents/2026/06/03/2026-11094/medicaid-program-community-engagement-requirement-for-certain-individuals">CMS §435.552(f)</a>] The actual monthly countable income for this profile is <strong>— unknown</strong>.</p>
+  <div class="toc"><a href="#income-table">Income sources</a><a href="#kalshi">Kalshi — flagged</a><a href="#rent">Rental records</a><a href="#timing">Timing</a><a href="flagged.html">Flagged for Review</a></div>
 </div>
-<div class="footer">MaltaProj8 · <a href="index.html">Dashboard</a> · <a href="verification.html">Verification</a> · <a href="flagged.html">Flagged for Review</a></div>
-</body>
-</html>
+<h2 class="section-title" id="income-table">Income by source — no assumed filing positions</h2>
+<div class="table-wrap"><table><thead><tr><th>Source</th><th>Verified general rule</th><th>Person-specific value / tax question</th><th>Official source</th></tr></thead><tbody>
+<tr><td>Savings-account interest</td><td>Taxable interest enters adjusted gross income; tax-exempt interest may be added back for coverage MAGI. Savings <em>principal</em> is not interest income.</td><td><strong>— Unknown.</strong> Need statements and household MAGI treatment.</td><td><a href="https://www.dhcs.ca.gov/wp-content/uploads/2026/07/MAGI-INCOME-AND-DEDUCTION-TYPES.pdf">DHCS MAGI chart</a> · <a href="https://www.irs.gov/affordable-care-act/individuals-and-families/eligibility-for-the-premium-tax-credit">IRS PTC MAGI definition</a></td></tr>
+<tr><td>Rental property</td><td>Taxable rental result is determined after applicable income, deductions and loss limitations (usually reported on Schedule E). Do not count gross rent as taxable net or assume a loss is deductible.</td><td><strong>— Unknown.</strong> Receipts, eligible expenses, depreciation and loss limits not provided.</td><td><a href="https://www.irs.gov/publications/p527">IRS Publication 527</a> · <a href="https://www.dhcs.ca.gov/wp-content/uploads/2026/07/MAGI-INCOME-AND-DEDUCTION-TYPES.pdf">DHCS MAGI chart</a></td></tr>
+<tr><td>Kalshi event contracts</td><td>The linked CFTC designation identifies a regulated market, <em>not</em> an IRS tax character. General investment-tax rules do not classify these particular contracts for this taxpayer.</td><td><strong>— Flagged.</strong> Tax form, category, offset of losses, period of gain and countable amount cannot be supplied responsibly.</td><td><a href="https://www.cftc.gov/PressRoom/PressReleases/8302-20">CFTC market designation</a> · <a href="https://www.irs.gov/publications/p550">IRS Pub. 550</a></td></tr>
+<tr><td>Actual property-management work</td><td>Qualifying documented work may help meet the 80-hour route; rental property ownership does not itself establish Schedule C business income or hours.</td><td><strong>— Flagged.</strong> No separate fees, qualifying hours or county verification provided.</td><td><a href="https://www.irs.gov/publications/p527">IRS rental vs. service income</a> · <a href="https://www.federalregister.gov/documents/2026/06/03/2026-11094/medicaid-program-community-engagement-requirement-for-certain-individuals">CMS community-engagement rule</a></td></tr>
+</tbody></table></div>
+<div class="alert info" style="margin-top:14px">The question is <strong>two different calculations</strong>: the applicable MAGI income test for enrollment in a coverage program, and, starting in 2027 for certain adult Medi-Cal members, a qualifying month of MAGI-based household income of at least $580 <em>or</em> another qualifying route/exception. The new work rule does not mean a person must have a W-2. [<a href="https://www.dhcs.ca.gov/medi-cal/updates/medi-cal-changes/">DHCS work rules</a> · <a href="https://www.dhcs.ca.gov/wp-content/uploads/2026/07/MAGI-INCOME-AND-DEDUCTION-TYPES.pdf">DHCS MAGI chart</a>]</div>
+
+<h2 class="section-title" id="kalshi">Kalshi event contracts — tax classification is still flagged</h2>
+<p>Do not choose a tax treatment because it would produce better Medi-Cal or marketplace eligibility. The current official sources here establish general tax rules and the CFTC status of the exchange, <strong>not</strong> the federal income-tax character of the individual's particular event-contract trades. The gross payout, deposits, nominal stake and platform withdrawal are not automatically taxable profit. Work from actual records and qualified tax advice; then report the resulting income correctly to the county/exchange. [<a href="https://www.irs.gov/publications/p550">IRS Publication 550</a> · <a href="https://www.cftc.gov/PressRoom/PressReleases/8302-20">CFTC Release 8302-20</a> · <a href="https://www.dhcs.ca.gov/wp-content/uploads/2026/07/MAGI-INCOME-AND-DEDUCTION-TYPES.pdf">DHCS MAGI chart</a>]</p>
+<div class="table-wrap"><table><thead><tr><th>Tax idea seen in older commentary</th><th>What can actually be said</th><th>Outcome for this person</th><th>Official source to consult</th></tr></thead><tbody>
+<tr><td>Capital-gain treatment</td><td>General rules for sales of capital assets and capital-loss limits exist; they do not prove that this contract is a capital asset. Do not preselect Schedule D or promise netting.</td><td><strong>— Unconfirmed.</strong></td><td><a href="https://www.irs.gov/taxtopics/tc409">IRS Topic 409, capital gains/losses</a></td></tr>
+<tr><td>§1256 treatment / 60-40</td><td>§1256 has specific statutory definitions and tests; CFTC exchange designation alone does not decide this contract's federal tax treatment.</td><td><strong>— Unconfirmed.</strong></td><td><a href="https://www.irs.gov/publications/p550">IRS Publication 550, §1256 rules</a> · <a href="https://www.cftc.gov/PressRoom/PressReleases/8302-20">CFTC release</a></td></tr>
+<tr><td>Wagering/gambling treatment</td><td>Federal wagering-loss deductions have statutory limitations, including changes in P.L. 119-21; their application to these contracts is not established by those general provisions.</td><td><strong>— Unconfirmed.</strong> No “phantom-income” number for this person.</td><td><a href="https://www.congress.gov/bill/119th-congress/house-bill/1/text">P.L. 119-21 §70114</a> · <a href="https://www.irs.gov/taxtopics/tc419">IRS Topic 419</a></td></tr>
+<tr><td>Service/business income</td><td>Personal services and trade/business income have different rules. Trading full-time, without more, is not evidence for a particular filing status here.</td><td><strong>— Unconfirmed.</strong></td><td><a href="https://www.irs.gov/publications/p550">IRS Pub. 550</a> · <a href="https://www.irs.gov/businesses/small-businesses-self-employed/self-employed-individuals-tax-center">IRS self-employment center</a></td></tr>
+</tbody></table></div>
+
+<h2 class="section-title" id="rent">Rental income — records instead of invented cash-flow scenarios</h2>
+<div class="table-wrap"><table><thead><tr><th>Item</th><th>General tax treatment</th><th>Personal amount</th><th>Official source</th></tr></thead><tbody>
+<tr><td>Rents received</td><td>Report rental income under the applicable IRS rules; the gross receipt is a starting point, not automatically the MAGI result.</td><td><strong>—</strong></td><td><a href="https://www.irs.gov/publications/p527">IRS Pub. 527, income from rentals</a></td></tr>
+<tr><td>Deductible expenses and depreciation</td><td>Only applicable, allowable deductions reduce the rental tax result; timing and expense classifications matter.</td><td><strong>—</strong></td><td><a href="https://www.irs.gov/publications/p527">IRS Pub. 527, rental expenses and depreciation</a></td></tr>
+<tr><td>Rental losses</td><td>Passive activity and other limitations may stop a reported loss from reducing current taxable income.</td><td><strong>—</strong></td><td><a href="https://www.irs.gov/publications/p527">IRS Pub. 527, passive activity limitations</a></td></tr>
+<tr><td>Security deposit / uncollected rent</td><td>Generally refundable deposits and rent never collected have different treatment from retained deposits/rents actually paid; apply the publication to the real facts.</td><td><strong>—</strong></td><td><a href="https://www.irs.gov/publications/p527">IRS Pub. 527, security deposits and uncollected rent</a></td></tr>
+</tbody></table></div>
+
+<h2 class="section-title" id="timing">Timing, averaging and eligibility</h2>
+<p>California's enacted assessment uses the preceding month at application and a month between determinations at redetermination. A prior-six-month average under §14005.69(e)(7) is limited to <strong>seasonal workers</strong>. Do not infer that variable trading, vacancies or irregular interest automatically qualify. California dates the work rule to <strong>January 1, 2027</strong> and six-month eligibility checks to <strong>March 1, 2027</strong>. [<a href="https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202520260AB2161">California §14005.69(d)–(e)</a> · <a href="https://www.dhcs.ca.gov/tracking-federal-impact-medi-cal-eligibility/">DHCS implementation timeline</a>]</p>
+<p>For enrollment, the <a href="https://www.dhcs.ca.gov/services/medi-cal-resources/medi-cal-eligibility-division/all-county-welfare-directors-medi-cal-eligibility-division-information-letters/2026-fpl-calculation-chart-monthly-values-enclosure-1/">2026 one-person Medi-Cal chart</a> gives $22,025/year and $1,836/month; the <a href="https://hbex.coveredca.com/data-research/dashboards/OE_Dashboard.pdf">2026 Covered California dashboard</a> uses $62,600 at 400% FPL. For the <em>2027 marketplace</em>, the 400% figure is <a href="https://www.coveredca.com/pdfs/FPL-chart.pdf">$63,840</a>. All other requirements and household facts still apply. See the <a href="accuracy-93fdc24b.html">full dated correction</a> and <a href="flagged.html">flagged questions</a>.</p>
+</main><footer class="footer">MaltaProj8 · Research update 2026-10-18 · <a href="index.html">Dashboard</a> · <a href="pathways.html">Work routes</a> · <a href="docs/executive-summary.md">Executive summary</a></footer>
+</body></html>

@@ -44,12 +44,12 @@
     "streams": [
       {
         "item": "Net rental income",
-        "value": "Counts as household income (net of expenses)",
-        "detail": "HealthCare.gov instructs applicants to \"Use net rental and royalty income.\" IRS Publication 527 governs what counts as rental income and which expenses are deductible. For Medi-Cal MAGI purposes the figure is your tax-reportable rental income.",
-        "source": "S24",
+        "value": "Taxable rental amount, subject to deductions/loss limitations",
+        "detail": "IRS Publication 527 describes rental receipts, allowable expenses and loss limits. DHCS lists taxable Schedule E rental income. Gross rent and bank deposits are not automatically MAGI; the individual's figure has not been supplied.",
+        "source": "S33",
         "verified": true,
         "also": [
-          "S33"
+          "S42"
         ]
       },
       {
@@ -62,17 +62,23 @@
       {
         "item": "Savings account interest",
         "value": "Counts as investment income",
-        "detail": "\"Include expected interest and dividends earned on investments, including tax-exempt interest.\" For the $580 work-rule test DHCS describes the measure as total gross income for the month, and California law ties it to MAGI-based financial methods.",
-        "source": "S24",
-        "verified": true
+        "detail": "Taxable interest enters MAGI, and tax-exempt interest may be added back under coverage MAGI rules. Account principal is not interest income; actual amount is unknown.",
+        "source": "S42",
+        "verified": true,
+        "also": [
+          "S45"
+        ]
       },
       {
         "item": "Kalshi trading",
         "value": "",
-        "detail": "KalshiEX LLC is a CFTC-designated contract market (Release 8302-20, Nov 4, 2020); CFTC treats the event contracts it lists as swaps under the Commodity Exchange Act. Trading a contract is not employment, so this is investment activity, not earned income. The tax classification of gains and losses on event contracts is not addressed in any IRS guidance located on IRS.gov, so this site does not state how the gains are reported.",
+        "detail": "CFTC designation establishes the exchange's market status, not the federal tax character or gain/loss method for this person. General IRS investment rules do not supply a Kalshi-specific filing answer.",
         "source": "S29",
         "verified": false,
-        "flag": "Unverified: no IRS guidance specific to Kalshi (or to event contracts) was located on IRS.gov as of 2026-10-18, so the tax reporting character of these gains is not confirmable from an official source. The value cell is intentionally blank. Practical effect: report your trading results as investment income on the application, keep your own records, and confirm the reporting treatment with a tax professional."
+        "flag": "Tax character, deductible losses, reporting form and monthly countable amount are not established by the official material cited here; do not assert that trading gains automatically satisfy the $580 route.",
+        "also": [
+          "S44"
+        ]
       },
       {
         "item": "Does any of this count as \"earned income\" for the work rule?",
@@ -102,17 +108,24 @@
       },
       {
         "item": "How DHCS's county guidance describes it",
-        "value": "Total gross income for the month must meet or exceed $580",
-        "detail": "For fluctuating income: \"An individual whose gross income (including earned income, unemployment benefits, State Disability Insurance, retirement income, dividends, etc.) fluctuates has an average monthly income over the preceding 6 months that meets or exceeds this amount.\" ACWDL 25-30 is expressly labelled preliminary guidance.",
+        "value": "Earlier preliminary county letter uses \"total gross income\"",
+        "detail": "ACWDL 25-30 includes a broad fluctuating-income example, but labels itself preliminary. The later federal CMS §435.552(f)–(g) and enacted California §14005.69(e)(6)–(7) specify MAGI-based household income and restrict six-month averaging to seasonal workers. Do not use the letter as a blanket permission to average trading gains.",
         "source": "S10",
-        "verified": true
+        "verified": true,
+        "also": [
+          "S13",
+          "S15"
+        ]
       },
       {
         "item": "How the member notice words it",
         "value": "\"an income from any source of at least $580 (before taxes) in any month since your last renewal\"",
-        "detail": "And: \"People whose hours change frequently or who have seasonal jobs can average at least $580 per month from any source over 6 months.\" This is the plain-language rule DHCS mails to members, and it is the wording that most directly answers the question of whether rental, interest and trading income count. They are income from a source.",
+        "detail": "The member notice describes income from any source before taxes and discusses variable hours/seasonal jobs. It is a plain-language notice, not a tax ruling on gross rental receipts, investment losses or event-contract payouts. Read alongside the later MAGI-based statute.",
         "source": "S12",
-        "verified": true
+        "verified": true,
+        "also": [
+          "S13"
+        ]
       },
       {
         "item": "When it is measured",
@@ -129,12 +142,17 @@
         "verified": true
       },
       {
-        "item": "Which figure is controlling if the descriptions differ",
+        "item": "Reconciling earlier gross wording with operative MAGI-based methodology",
         "value": "",
-        "detail": "Three official descriptions of the same test use different language: \"total monthly income … using MAGI-based financial methods\" (statute), \"total gross income for a month\" (county guidance, labelled preliminary), and \"an income from any source … before taxes\" (member notice).",
+        "detail": "California §14005.69(e)(6) and CMS §435.552(f) specify MAGI-based household methods. The preliminary county letter and member notice use broader everyday language; neither establishes a tax-character shortcut for this person.",
         "source": "S13",
         "verified": false,
-        "flag": "Definitional inconsistency across three official California sources (statute vs. preliminary ACWDL vs. member notice) on whether the test is measured on a MAGI basis or a gross/before-tax basis. Materially this rarely changes the answer for a person whose income is well above or well below $580, but if your income sits near the line, ask your county which method it uses. Full text on the Flagged for Review page."
+        "flag": "The person's actual household MAGI, monthly timing, rental deductions and Kalshi tax character remain unknown. Seek a county determination if the evidence used for the monthly calculation is disputed.",
+        "also": [
+          "S15",
+          "S10",
+          "S12"
+        ]
       }
     ],
     "fpl": [
@@ -242,32 +260,47 @@
     ],
     "examples": [
       {
-        "item": "No income at all",
-        "value": "MAGI $0",
-        "detail": "Below 100% FPL, so no premium tax credit is available, but you are inside the 138% Medi-Cal limit — Medi-Cal is the program for you, not a marketplace plan. You would still be subject to the work rule from 2027 if you are 19–64 and not exempt; with no income you would need the 80-hour route or an exemption.",
-        "source": "S25",
-        "verified": true
+        "item": "Earned wages not required for MAGI coverage",
+        "value": "No wages-only gate",
+        "detail": "Eligibility must still be determined by the agency from actual household income, age and coverage facts; having no wages does not certify $0 MAGI.",
+        "source": "S31",
+        "verified": true,
+        "also": [
+          "S42"
+        ]
       },
       {
-        "item": "Rent only",
-        "value": "e.g. $18,000/yr of net rental income",
-        "detail": "Under $22,025, so inside the Medi-Cal limit. If any single month of net rental income is $580 or more ($6,960/yr), the $580 test is satisfied for that month.",
-        "source": "S10",
-        "verified": true
+        "item": "Actual countable rental result for this person",
+        "value": "",
+        "detail": "Taxable rental income can be affected by deductible expenses and passive-loss limitations.",
+        "source": "S33",
+        "verified": false,
+        "flag": "Not provided. Gross deposits and hypothetical cash flow cannot establish taxable Schedule E income or monthly work-rule qualification.",
+        "also": [
+          "S42"
+        ]
       },
       {
-        "item": "Rent plus interest",
-        "value": "e.g. $20,000/yr rent + $3,000/yr interest = $23,000",
-        "detail": "Over $22,025, so outside the MAGI Medi-Cal limit for a one-person household. You would move to Covered California; the federal premium tax credit is available from 100% to 400% FPL, and the California Premium Subsidy adds state help up to 200% FPL in 2027. You would not be subject to the Medi-Cal work rule because you would not be on Medi-Cal.",
-        "source": "S6",
-        "verified": true
+        "item": "Actual interest and full household MAGI for this person",
+        "value": "",
+        "detail": "Taxable interest and tax-exempt-interest add-backs depend on the actual financial records.",
+        "source": "S42",
+        "verified": false,
+        "flag": "Not provided. Cannot place this person in a Medi-Cal or marketplace band without year-specific amounts and other eligibility facts.",
+        "also": [
+          "S45"
+        ]
       },
       {
-        "item": "Trading income swings the MAGI figure",
-        "value": "Net gains count as capital gains in MAGI",
-        "detail": "Because MAGI starts from AGI, a large realized gain in a single year can push a household above a threshold, and losses can lower it. Because the $580 test is monthly, a good trading month can satisfy the work rule even in a year where the annual MAGI looks high.",
-        "source": "S24",
-        "verified": true
+        "item": "Kalshi event-contract amount and MAGI effect",
+        "value": "",
+        "detail": "CFTC designation does not decide federal tax reporting; consult IRS general guidance and record actual transactions.",
+        "source": "S29",
+        "verified": false,
+        "flag": "No Kalshi-specific federal tax character or this person's transaction results established by the official material cited; no invented favorable loss netting.",
+        "also": [
+          "S44"
+        ]
       }
     ]
   }

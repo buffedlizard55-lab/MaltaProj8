@@ -4,7 +4,7 @@
     {
       "id": "magi",
       "heading": "What \"household income\" means here",
-      "intro": "Medi-Cal, Covered California, the premium tax credit, and California's $580 work-rule test all use the same tax-based measure of income.",
+      "intro": "Medi-Cal and Covered California use program-specific MAGI rules. California's income route for the 2027 work rule uses monthly MAGI-based household financial methods; do not equate it with gross cash receipts. <a href=\"https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202520260AB2161\">Enacted §14005.69(e)(6)</a>.",
       "table": "magi"
     },
     {
@@ -15,19 +15,19 @@
     {
       "id": "income-580",
       "heading": "The $580 test, in detail",
-      "intro": "This is the single most important rule for you. You have no earned income, so the $580 test and the 80-hour options are the two ways to satisfy the 2027 requirement.",
+      "intro": "No earned-wage gate, but this person's countable amount is unknown. Prior-six-month averaging under the enacted provision is for seasonal workers only; a lumpy trading month is not proof. <a href=\"accuracy-93fdc24b.html#rules\">Current correction</a>.",
       "table": "income-580"
     },
     {
       "id": "fpl",
       "heading": "2026 income limits by household size",
-      "intro": "2026 annual Federal Poverty Level figures from DHCS ACWDL 26-01 Enclosure 2, with the 213% and 266% columns from the Covered California 2027 FPL chart. The monthly column is DHCS Enclosure 1.",
+      "intro": "These are 2026 DHCS Medi-Cal FPL figures (annual DHCS Enclosure 2 and monthly Enclosure 1). They are not the 2026 marketplace 400% FPL threshold ($62,600 for one person); see <a href=\"accuracy-93fdc24b.html#limits\">separate plan-year table</a>.",
       "table": "fpl"
     },
     {
       "id": "examples",
-      "heading": "Worked examples",
-      "intro": "Illustrations of how the thresholds land for a one-person household, using only the official figures above. Your own numbers will differ.",
+      "heading": "Why no personal dollar scenarios are filled in",
+      "intro": "Earlier invented rent, interest and Kalshi scenarios were removed. The resulting taxable amounts are unknown; each row cites the official general rule and flags missing personal values.",
       "table": "examples"
     }
   ]

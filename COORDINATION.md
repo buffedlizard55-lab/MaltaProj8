@@ -681,3 +681,53 @@ It postdates every document the site was built on — DHCS ACWDL 25-30 (Dec 30 2
 
 - 2026-10-19 02:21 UTC: Session start, branch arena/f8bfa1ff-maltaproj8 at 90ae3cf (main). Verified main has 58 pages, 69 core findings, 40 sources, check_links PASS, Pages built (legacy, main /). Inspected PR #21 (arena/93fdc24b) — OPEN, 43-source core, 71 findings, 27 flags, corrects AB 2161, seasonal-worker, gross→MAGI, lawsuit, build_site guard. It diverged from afdd5c4 and lacks e071bffc sweep; our branch has e071bffc but lacks its corrections. Final integration will merge both.
 - 2026-10-19 02:22 UTC: Claimed tasks 24-26, committing claim now before any content edits (per protocol).
+
+### Verification — arena/f8bfa1ff (tasks 24-25)
+
+**Re-fetched and read in this session (official hosts only):**
+
+| Source | URL | Locator | Takeaway |
+|--------|-----|---------|----------|
+| AB 2161 (enacted) | https://leginfo.legislature.ca.gov/faces/billTextClient.xhtml?bill_id=202520260AB2161 | WIC §14005.69(d)–(e)(6)–(e)(7) | No sooner than Jan 1 2027; MAGI-based household budget for $580; seasonal-worker-only averaging (IRC 45R(d)(5)(B)) |
+| 42 CFR 435.552 | https://www.ecfr.gov/current/title-42/chapter-IV/subchapter-C/part-435/subpart-F/subject-group-ECFRae6babdeed513af/section-435.552 | (a)(6)–(a)(7), (b) Work = in-kind, (f)(2) MAGI household, (g)(1) seasonal only | One month vs six-month average narrowly limited; work includes in-kind (property manager example) |
+| 42 CFR 435.603 | https://www.ecfr.gov/current/title-42/chapter-IV/subchapter-C/part-435/subpart-G/section-435.603 | (d)(1), (e)(1) | MAGI = AGI + tax-exempt interest; lump sum counted only in month received |
+| 26 USC 45R(d)(5)(B) | https://www.govinfo.gov/content/pkg/USCODE-2024-title26/pdf/USCODE-2024-title26-subtitleA-chap1-subchapA-partIV-subpartD-sec45R.pdf | p.301 | Seasonal worker = performs labor on seasonal basis as defined by Secretary of Labor, incl. 29 CFR 500.20(s)(1) + retail holiday workers |
+| CRS R48633 | https://www.congress.gov/crs-product/R48633 | §71119, §71120 | 40 states + DC expansion; cost sharing §71120 not §71109; 80 hrs or $580; seasonal etc. |
+| CMS IFR 91 FR 33348 + correction 91 FR 39028 | https://www.federalregister.gov/documents/2026/06/03/2026-11094/... | Document Details | Effective Jul 31 2026; 80 hrs; MAGI; seasonal; states by Jan 1 2027 |
+| DHCS ACWDL 25-30, MEDIL I26-25, Medi-Cal Changes, Tracking, Implementation Plan, FPL charts, eligibility chart, ASPE 2026, CoveredCA 2026/2027, CFTC Kalshi DCM, CA AG lawsuit (Jun 29 2026), DHCS Budget Act, IRS Pubs 527/525/550 | (see data/core.json S01–S43) | — | Cross-checked PR21's corrections against these; gross→MAGI, seasonal, lawsuit co-leads, FPL $1,836/$22,025/$62,600/$63,840, $1.3B budget etc. all verified |
+
+**Not re-fetched this session but carried from PR21's verified sweep (marked not-refetched in verify-e071bffc.json, not re-certified here):** S06, S07, S08, S12, S14, S18, S19, S24–S31, S34–S40 (13 of PR21's 43 were not direct-fetched but are official https on allowlist; their values are not inferred).
+
+**Corrections applied by this session (merged from PR21 + one fix):**
+
+| # | File | Was | Now | Source |
+|---|------|-----|-----|--------|
+| C-11 | data/california.json timeline | 2026-06-06 "California v. Oz" | 2026-06-29 "California co-leads..." | oag.ca.gov Jun 29 + AB 2161 |
+| C-12 | data/california.json mitigation 5 | "Lead plaintiff" | "California co-leads with MA and NJ..." | oag.ca.gov |
+| C-13 | data/california.json qualifying activities | "Gross $580, 6-mo averaging for fluctuating" | "MAGI-based household budget; seasonal-worker-only averaging" | AB 2161 §14005.69(e)(6)(7) + 42 CFR 435.552 |
+| C-14 | data/california.json who_subject | "4.8M Californians" blanket | "if otherwise applicable... not known" | AB 2161 |
+| C-15 | data/core.json sources | 40 sources, no AB 2161 | 43 sources, S41 2026 OE $62,600, S42 AB 2161, S43 2027 $63,840 | hbex 2026 dashboard, leginfo, coveredca 2027 |
+| C-16 | data/core.json findings | 69 findings, $63,840 as 2026 cliff | 71 findings, $62,600 for 2026, $63,840 labelled 2027; seasonal limited; gross→MAGI flagged | S41–S43 |
+| C-17 | scripts/build_core.py | archival_pages missing verify-e071bffc, gap count 92 | Added verify-e071bffc, now 97 gaps across 7 pages | check_accuracy |
+| C-18 | scripts/build_site.py | Could regress index/flagged | Now skips dashboard index and flagged (PR21 guard) | observed 82-insertion regression prior |
+
+**Checks on final tree (before PR):**
+
+- `python3 scripts/build_core.py` → 71 findings, 43 sources, no missing ids
+- `python3 scripts/check_core.py` → PASS (43 sources, 71 findings, 27 flags, 9 pathways, 6 options, 13 timeline)
+- `python3 scripts/build_site.py` → 11 extended pages, shared pages nav only, dashboard index no, flagged no
+- `node tools/build-site.js` → 10 docs pages, 76 rows, 12 flags
+- `python3 scripts/check_links.py` → All checks passed (59 pages, 264 extended rows, 46 extended sources)
+- `python3 scripts/check_accuracy.py` → PASS (862 rows across 28 pages, 92→97 gaps now correctly inventoried, accuracy regression checks passed)
+- `python3 scripts/check_e071bffc.py` → PASS (21 fetched, 25 not-refetched, 4 blank, 0 dead FR paths)
+- `research/scripts/validate.py` → PASS (52 findings, 9 pages)
+- `coverage-guide/scripts/check.py` → PASS (65 rows, 18 sources, 7 pages)
+
+**Result:** PR21's substantive corrections (MAGI vs gross, seasonal-worker-only, 2026 vs 2027 FPL, lawsuit co-leads, budget $1.3B) are now on main-line history together with e071bffc's sweep (codified regulation + enacted statute). No value is marked verified without an official source. CR-05 and CR-07 closed; AB 2161 now in core register (S42). 25 not-refetched remain honestly labelled, not inferred.
+
+### PR / merge / deployment — arena/f8bfa1ff (task 26)
+
+- **Branch:** arena/f8bfa1ff-maltaproj8 → main
+- **PR:** (to be created) — will be merged without waiting per instruction; flagged/unverified do not block
+- **Pages:** legacy, main /, will be confirmed `built` via API and live fetch
+
